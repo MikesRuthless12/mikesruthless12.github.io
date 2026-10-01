@@ -8,10 +8,12 @@
       content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
     />
     <title>Freally</title>
-    <!-- The company's own mark (owner, 2026-10-01), from icons/make_icons.py. -->
-    <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" href="favicon-192.png" type="image/png" />
-    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <!-- The company's own mark (owner, 2026-10-01), from icons/make_icons.py. ⚠ `?v=` busts
+         the browser's favicon cache: it held on to the Flipcopy icon this page used before.
+         Bump it whenever the mark changes. -->
+    <link rel="icon" href="favicon.ico?v=2" sizes="any" />
+    <link rel="icon" href="favicon-192.png?v=2" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2" />
     <style>
       :root {
         color-scheme: dark;
