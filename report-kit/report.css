@@ -1,0 +1,170 @@
+/* The report page: the Freally family's ground and lime, one column, RTL-safe. */
+:root {
+  color-scheme: dark;
+  --bg: #090c09;
+  --surface: #121712;
+  --border: #263026;
+  --text: #ecf1ec;
+  --muted: #a3aea3;
+  --primary: #9af524;
+  --bad: #ff8a7a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.55 system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+header,
+main {
+  width: min(100% - 32px, 760px);
+  margin-inline: auto;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding-block: 16px 0;
+}
+
+/* The app's icon and name, at the top of its own report page. */
+.brand {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  margin-block: 8px 24px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.brand img {
+  border-radius: 24px;
+}
+
+.brand-name {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+h1 {
+  text-align: center;
+}
+
+.lang {
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+select,
+input,
+textarea,
+button {
+  font: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+select {
+  padding: 4px 8px;
+}
+
+main {
+  padding-block-end: 64px;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-block: 8px 16px;
+}
+
+h2 {
+  font-size: 1.15rem;
+  margin-block: 28px 4px;
+}
+
+.note {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-block: 8px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+th,
+td {
+  padding: 8px 12px;
+  text-align: start;
+  vertical-align: top;
+  border-block-end: 1px solid var(--border);
+}
+
+th {
+  width: 32%;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.mono {
+  font-family: ui-monospace, 'Cascadia Mono', Consolas, monospace;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+label {
+  display: block;
+  margin-block: 16px 6px;
+}
+
+textarea,
+input {
+  width: 100%;
+  padding: 10px 12px;
+}
+
+textarea:focus,
+input:focus,
+select:focus,
+button:focus-visible {
+  outline: 2px solid var(--primary);
+  outline-offset: 1px;
+}
+
+button {
+  margin-block-start: 8px;
+  padding: 10px 22px;
+  background: var(--primary);
+  color: #0b1406;
+  border: 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: progress;
+}
+
+.status.good {
+  color: var(--primary);
+}
+
+.status.bad {
+  color: var(--bad);
+}
