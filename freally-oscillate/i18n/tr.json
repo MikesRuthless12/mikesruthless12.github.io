@@ -1,6 +1,7 @@
 {
   "nav.skip": "İçeriğe geç",
   "nav.home": "Ana sayfa",
+  "nav.features": "Özellikler",
   "nav.documentation": "Belgeler",
   "nav.changelog": "Değişiklikler",
   "nav.language": "Dil",
@@ -53,6 +54,7 @@
   "honest.updater.body": "Bir güncelleme denetimi, ve yalnızca düğmeye bastığında ya da başlangıçta denetimi açtığında — varsayılan olarak kapalıdır. Tek bir durağan dosya ister, senin veya makinen hakkında hiçbir şey göndermez, her güncelleme imzalıdır ve hiçbiri senin seçimin olmadan kurulmaz.",
   "footer.licence": "Özel mülk yazılım — Tüm Hakları Saklıdır. © Mike Weaver. Bugün kullanımı ücretsizdir; gelecekteki sürümler satılabilir. Açık kaynak değildir.",
   "footer.yours": "Onunla yaptığın şey senindir. Oscillate'in yazarı, onunla oluşturduğun projeler, MIDI, ses veya render'lar üzerinde hiçbir mülkiyet iddia etmez.",
+  "featuresPage.title": "Yapabildiği her şey",
   "docs.title": "Belgeler",
   "docs.contents": "İçindekiler",
   "docs.toc.start": "Başlangıç",

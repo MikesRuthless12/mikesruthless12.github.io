@@ -1,6 +1,7 @@
 {
   "nav.skip": "Przejdź do treści",
   "nav.home": "Strona główna",
+  "nav.features": "Funkcje",
   "nav.documentation": "Dokumentacja",
   "nav.changelog": "Zmiany",
   "nav.language": "Język",
@@ -53,6 +54,7 @@
   "honest.updater.body": "Sprawdzenie aktualizacji, i tylko wtedy, gdy naciśniesz przycisk albo włączysz sprawdzanie przy starcie — domyślnie jest wyłączone. Prosi o jeden statyczny plik i nie wysyła niczego o tobie ani o twoim komputerze, każda aktualizacja jest podpisana, i żadna nie jest instalowana bez twojego wyboru.",
   "footer.licence": "Oprogramowanie zastrzeżone — wszelkie prawa zastrzeżone. © Mike Weaver. Dziś darmowe w użyciu; przyszłe wersje mogą być sprzedawane. Nie open source.",
   "footer.yours": "To, co z nim stworzysz, należy do ciebie. Autor Oscillate nie rości sobie żadnych praw do projektów, MIDI, dźwięku ani renderów, które w nim wykonasz.",
+  "featuresPage.title": "Wszystko, co potrafi",
   "docs.title": "Dokumentacja",
   "docs.contents": "Spis treści",
   "docs.toc.start": "Pierwsze kroki",

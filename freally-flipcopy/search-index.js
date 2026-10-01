@@ -7,6 +7,96 @@
  */
 window.FLIPCOPY_SEARCH_INDEX = [
  {
+  "url": "features.html#numbers",
+  "heading": "By the numbers",
+  "text": "Each figure is what version 1.0 is built to do, counted from its plan and from the shared Freally code it runs on. Nothing is rounded up. 2 directions: audio → MIDI and MIDI → audio 6 kinds of part it copies: drums, bass, melody, countermelody, chords and a sung line 1,648 instruments to play a MIDI copy through 16 bars: the longest loop the glass takes 5 file formats it writes: MIDI, WAV, AIFF, FLAC and MP3 3 plugin formats, plus a standalone app 3 operating systems: Windows, macOS and Linux 18 languages 0 AI models $0 price today"
+ },
+ {
+  "url": "features.html#free",
+  "heading": "Free today",
+  "text": "Everything Flipcopy does today is free, for everyone: no paid tier, no subscription, no account and no trial that runs out. The copies you make are yours, as far as the files you copied were yours to use. Freally Flipcopy is free today, but it might not be free forever: future versions may be sold."
+ },
+ {
+  "url": "features.html#inside",
+  "heading": "What version 1.0 does",
+  "text": ""
+ },
+ {
+  "url": "features.html#copier",
+  "heading": "The copier",
+  "text": "A photoreal copy machine rendered in Blender, with its own sounds. Put a clip on the glass and it prints the real thing — the waveform, or every note — with its data: tempo, length, notes or levels."
+ },
+ {
+  "url": "features.html#start",
+  "heading": "Only the green START copies",
+  "text": "Dropping a clip only places it on the glass. Nothing is copied until you press START; STOP cancels a scan and HOME clears the glass, so nothing happens that you did not ask for."
+ },
+ {
+  "url": "features.html#audio-to-midi",
+  "heading": "Audio → MIDI, in parts",
+  "text": "A loop comes out as the parts in it — drums on their own lanes, bass, melody, a countermelody where there is one, and the chord progression — one page and one MIDI file each, from a single scan. A part that is not there gets no page. Or copy a sung line on its own."
+ },
+ {
+  "url": "features.html#midi-to-audio",
+  "heading": "MIDI → audio, through real instruments",
+  "text": "A MIDI file played through any of the 1,648 instruments Freally MIDI Master uses — a sound for each part and a drum machine for the drums — and printed as one audio page per part, plus the whole mix. WAV, AIFF, FLAC or MP3, at the sample rate and bit depth you choose."
+ },
+ {
+  "url": "features.html#drag",
+  "heading": "Drag the copy",
+  "text": "Every page wears a lime-green frame: grab it and drop the file on a track. Or drag the whole stack — All parts lands as one track per part, Complete mix as one clip. Each file is named the way your DAW should show it, such as Loop - Bassline - 120 BPM - C# Minor."
+ },
+ {
+  "url": "features.html#copies",
+  "heading": "Copies are forever",
+  "text": "Every copy is a real, verified file in your Copies folder — numbered, and never moved, overwritten or deleted, so a project that uses it never loses it. Page back through every copy you have made, save one again, show it in its folder, or put it back on the glass."
+ },
+ {
+  "url": "features.html#browser",
+  "heading": "The browser and the Preview Player",
+  "text": "A file browser from Freally Oscillate: up to 128 folders, back and forward, tags, stars and a keyboard walk. The preview shows the real waveform or the notes, plays MIDI through the same sound the copy uses, and plays a finished stack in sync, with an A/B against the original."
+ },
+ {
+  "url": "features.html#studio",
+  "heading": "The Studio",
+  "text": "Open any copy in a piano roll, one tab per part, edited exactly as in Freally MIDI Master. Hear it through any instrument, shape it on a mixer with realistic knobs, play it through your own drum kit or one of your samples, and send the edit back to the glass to print as a new copy."
+ },
+ {
+  "url": "features.html#settings",
+  "heading": "Settings on the touch screen",
+  "text": "The copier's own screen holds the copy settings: which parts, the grid and swing, the tempo and where it comes from, the sound for each part, the file format and the tail. A build gate checks that each setting really changes the copy."
+ },
+ {
+  "url": "features.html#daw",
+  "heading": "In every DAW",
+  "text": "CLAP and VST3 on Windows, macOS and Linux, AU on macOS, and a standalone app for working without a DAW — and for Pro Tools, by dragging. Saved with your project, safe in many instances at once, and able to scan straight from a track."
+ },
+ {
+  "url": "features.html#skins",
+  "heading": "Skins, light and dark",
+  "text": "Five skins, each a raised chassis rendered in Blender and shared by every Freally app, in light and dark, beside plain light and dark modes. The copier is rendered again for each one, so it always stands on its own ground."
+ },
+ {
+  "url": "features.html#offline",
+  "heading": "Offline, private, no AI",
+  "text": "No telemetry and no model. Every copy is made by classic signal processing, and the plugin and the app never go online. The one exception is an update check that stays off unless you switch it on, run by a separate program."
+ },
+ {
+  "url": "features.html#compare",
+  "heading": "Side by side with the commercial tools",
+  "text": "Freally Flipcopy 1.0 next to the commercial tools producers use to turn audio into MIDI and MIDI into audio. Every cell for another product comes from its maker's own pages, checked on 1 October 2026, and prices are US list prices as of October 2026. ✓ has it ◐ partly ✗ does not — not verified Feature Freally Flipcopy 1.0 Melodyne 5 Studio RipX DAW PRO Ableton Live 12 Suite Logic Pro AnthemScore 6 Professional Price (USD, October 2026) Free today $699 $198 $749 $199.99 $39 Turns audio into MIDI ✓ has it ✓ has it ✓ has it ✓ has it ✓ has it ✓ has it One loop split into its parts, each its own MIDI file ✓ has it ✗ does not separates notes, not instruments ✓ has it by instrument ◐ partly stems first, then each by hand ◐ partly stems first, then each by hand ◐ partly Turns MIDI into audio through built-in instruments ✓ has it — not verified ✓ has it ✓ has it ✓ has it ✗ does not plays it, but exports no audio Drag the result straight onto a DAW track ✓ has it ◐ partly in some DAWs, through ARA — not verified — not verified — not verified — not verified Works inside a DAW as a plugin ✓ has it CLAP · VST3 · AU ✓ has it VST3 · AU · AAX · ARA ◐ partly VST3/ARA · AudioSuite sends audio to its"
+ },
+ {
+  "url": "features.html#why",
+  "heading": "Why it is built the way it is",
+  "text": "Classic signal processing Onsets, pitch tracking, chroma and a deterministic renderer, with no model anywhere. The same file, the same settings and the same version give the same copy, byte for byte, every time. What you see is what you drag Every page is drawn from the bytes of the file it drags. The notes, tempo and length on the paper are the notes, tempo and length that land on your track. Honest copies No blank pages and no guesses dressed up as a transcription. Chords say they are a progression, a clip too long for the glass is refused with its length rather than cut, and a sung line left alone says so. It stays on your machine No telemetry and no cloud. Your files and your copies never leave your computer, and a build gate fails if networking code is ever added to the plugin or the app. It follows your DAW The plugin reads your project's tempo and never changes it, and every tempo Flipcopy prints names where it came from: the loop, the file, its name, your DAW, or you. Nothing reaches your mix by accident The copier's sounds and the preview play quietly through the plugin, and never into a bounce. While they are silent, your track's audio passes through untouched."
+ },
+ {
+  "url": "features.html#coming",
+  "heading": "What is still coming",
+  "text": "Stated plainly, because a feature list that hides its gaps is not worth reading. This page is version 1.0, and Flipcopy is built one rung at a time: not everything on it is built yet. Each rung on the road to 1.0 is marked with its state. Done built and tagged, but not a download Planned still to be built, on the way to 1.0 The goal version 1.0 itself, and the first downloads this site will offer See every rung on the road to 1.0 What 1.0 does not do It does not write out every note of a chord heard in a mixed recording: chords come back as the progression, and the page says so. It copies loops, not whole songs: the glass takes clips of up to 16 bars, and refuses a longer one with its length. It does not separate a mixed recording into audio stems: a loop's parts come out as MIDI. It is not a Pro Tools plugin: in Pro Tools, use the standalone app and drag the copy onto the timeline. There are no downloads before version 1.0, and none on this page. Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source. The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of t"
+ },
+ {
   "url": "documentation.html#start",
   "heading": "Getting started",
   "text": "Flipcopy runs inside your DAW as a CLAP, VST3 or AU plugin, or on its own as a standalone app. Put it on any audio track: it passes the track's audio through exactly as it arrives, so it is safe to leave in place. There are no downloads before version 1.0.0, and the source code is private."

@@ -1,6 +1,7 @@
 {
   "nav.skip": "Skip to the content",
   "nav.home": "Home",
+  "nav.features": "Features",
   "nav.documentation": "Documentation",
   "nav.changelog": "Changelog",
   "nav.language": "Language",
@@ -53,6 +54,7 @@
   "honest.updater.body": "An update check, and only when you press the button or switch on checking at launch — it is off by default. It asks for one static file and sends nothing about you or your machine, every update is signed, and none is ever installed without your choice.",
   "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
   "footer.yours": "What you make with it is yours. Oscillate's author claims no ownership of the projects, MIDI, audio or renders you create with it.",
+  "featuresPage.title": "Everything it does",
   "docs.title": "Documentation",
   "docs.contents": "Contents",
   "docs.toc.start": "Getting started",

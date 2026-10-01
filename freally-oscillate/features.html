@@ -1,0 +1,615 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Features — Freally Oscillate</title>
+    <meta
+      name="description"
+      content="Everything Freally Oscillate 1.0 does, and a side-by-side with the leading commercial DAWs. Free today; future versions may be sold."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="oscillate-icon.png" alt="" width="28" height="28" />
+          <span>Freally Oscillate</span>
+        </a>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+            <!-- ⚠ Filled by site.js: English first, the other seventeen alphabetically. -->
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ⛔⛔ THE FEATURES PAGE DESCRIBES VERSION 1.0 — NOT BEFORE IT, NOT AFTER IT.
+         The owner, 2026-10-01: compare what the apps will have at v1.0.0,
+         because that is when they start selling. Nothing planned after 1.0 is
+         on this page, and the page says which version it describes.
+
+         ⚠ Every block inside <main> is keyed by its own English
+         (scripts/build-docs-site.mjs, `features`), so a corrected comparison
+         cell is a new key and no language can keep the old claim. The sources
+         for every competitor cell are kept outside the repository, with their
+         URLs and the date they were read. -->
+    <main id="main">
+      <section class="hero">
+        <img class="mark" src="oscillate-icon.png" alt="" width="96" height="96" />
+        <h1 data-i18n="featuresPage.title">Everything it does</h1>
+        <p class="tagline" data-i18n-html="features.7ffdfbe91dc1">
+          A full DAW with a room in it: up to four producers in one session, live, with no account
+          and no server.
+        </p>
+        <p class="sub" data-i18n-html="features.02a7818a6ee0">
+          This page describes Freally Oscillate as it will be at version 1.0 — the rung the ladder
+          ends on — and nothing planned after it.
+        </p>
+        <div class="chips" role="list">
+          <span role="listitem">Windows</span>
+          <span role="listitem">macOS</span>
+          <span role="listitem">Linux</span>
+          <span role="listitem">VST3</span>
+          <span role="listitem">CLAP</span>
+        </div>
+      </section>
+
+      <section id="numbers">
+        <h2 data-i18n-html="features.ba087e4b0991">By the numbers</h2>
+        <p class="summary" data-i18n-html="features.89a259592591">
+          Every figure is a count of what version 1.0 carries. Nothing is estimated and nothing is
+          rounded up.
+        </p>
+        <div class="stat-grid">
+          <div class="stat">
+            <p class="n">4</p>
+            <p class="l" data-i18n-html="features.7ec427c672a2">producers in one room</p>
+          </div>
+          <div class="stat">
+            <p class="n">69</p>
+            <p class="l" data-i18n-html="features.d6f79cef6f38">instruments and effects of its own</p>
+          </div>
+          <div class="stat">
+            <p class="n">1 648</p>
+            <p class="l" data-i18n-html="features.3a6743460cf9">instruments in Freally Secretarium</p>
+          </div>
+          <div class="stat">
+            <p class="n">~90</p>
+            <p class="l" data-i18n-html="features.18c9c4777852">scales in the piano roll</p>
+          </div>
+          <div class="stat">
+            <p class="n">11</p>
+            <p class="l" data-i18n-html="features.7241e8c55883">drum kits</p>
+          </div>
+          <div class="stat">
+            <p class="n">5</p>
+            <p class="l" data-i18n-html="features.79067e736ea9">skins, each in light and dark</p>
+          </div>
+          <div class="stat">
+            <p class="n">18</p>
+            <p class="l" data-i18n-html="features.9bb4817f8251">languages, right-to-left included</p>
+          </div>
+          <div class="stat">
+            <p class="n">0</p>
+            <p class="l" data-i18n-html="features.09b3154dfa60">accounts to make</p>
+          </div>
+          <div class="stat">
+            <p class="n">0</p>
+            <p class="l" data-i18n-html="features.35b8cb8439d7">AI models</p>
+          </div>
+          <div class="stat free">
+            <p class="n">$0</p>
+            <p class="l" data-i18n-html="features.38055402e560">price today</p>
+          </div>
+        </div>
+        <p class="note" data-i18n-html="features.9df8f17ef9b5">
+          Freally Secretarium plays the same instrument library as Freally MIDI Master: one library,
+          pinned by both, rather than two copies that drift apart.
+        </p>
+      </section>
+
+      <section id="free" class="free-banner">
+        <h2 data-i18n-html="features.da9afac0d7b7">It is free today. All of it.</h2>
+        <p data-i18n-html="features.f997324cb19b">
+          Every feature, for everyone. No paid tier, no trial that runs out, no licence key, no
+          account and no in-app purchase.
+        </p>
+        <p data-i18n-html="features.22f1bb054323">
+          What you make with it is yours. Oscillate's author claims no ownership of the projects,
+          MIDI, audio or renders you create with it, and asks for no royalty and no credit.
+        </p>
+        <p class="stated" data-i18n="notice.freeToday">
+          Freally Oscillate is free today, but it might not be free forever: future versions may be
+          sold.
+        </p>
+      </section>
+
+      <section id="what">
+        <h2 data-i18n-html="features.c74ea9dc9cd2">What it does</h2>
+
+        <h3 class="group-title" data-i18n-html="features.542aa51c9ff9">The room</h3>
+        <div class="grid">
+          <article class="card">
+            <h4 data-i18n-html="features.45a1b4ecfbf5">A room with no server behind it</h4>
+            <p data-i18n-html="features.c3ea64baf32c">
+              Send a room code to whoever you are working with and up to three other producers can
+              join your session: their cursors on your timeline, chat, voice, camera tiles and
+              screen share. Peer to peer, with no account and no server in the middle.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.225507990407">Your undo is yours</h4>
+            <p data-i18n-html="features.cb2c6359ccf6">
+              <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes back your last change and never somebody else's,
+              even while their edits are arriving. The edit log behind it is also the room's sync,
+              Session Rewind and the Split Sheet.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.056c3540052c">Takeover</h4>
+            <p data-i18n-html="features.be31856f2db7">
+              Hand one track to a collaborator and take it back with one key. While they hold it
+              they are the only writer for it — including you — and that is enforced where edits
+              are checked, not only in the interface.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.f4d5f7765113">Kumite</h4>
+            <p data-i18n-html="features.d3a91a73c5cc">
+              A beat battle mode in which each turn owns its own bars. The countdown is a
+              countdown; the bars are the rule, so two computers can never disagree about whose
+              edit was legal.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.6ed23a3037fc">The Split Sheet</h4>
+            <p data-i18n-html="features.68481398e863">
+              Who wrote what, derived from the edit log, with work anybody undid netted out. A
+              starting point for a conversation about credit, not a legal document — and it says
+              so.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.6ffb37f5c47d">Takes travel; samples never do</h4>
+            <p data-i18n-html="features.2dc43d70f9ea">
+              A take recorded in the room lands on everybody's timeline. A sample you bought is
+              never sent: the room sends the reference, and a collaborator without the pack is told
+              which samples they need.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="group-title" data-i18n-html="features.7af9b8fa849d">The DAW</h3>
+        <div class="grid">
+          <article class="card">
+            <h4 data-i18n-html="features.2e5511855cbc">The arrangement</h4>
+            <p data-i18n-html="features.b9277cfd1dc1">
+              Unlimited audio and MIDI tracks, clips drawn from what they are, automation on every
+              fader, pan and device control, comping, groups, markers, and tempo and time-signature
+              maps. A pattern placed ten times is one pattern: edit it once and every placement
+              changes, until you make one unique.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.3933d56d65a8">The Cut and Session Rewind</h4>
+            <p data-i18n-html="features.7e57d69f84a4">
+              Draw a blade stroke across the arrangement and it splits every clip it crosses, the
+              angle of the stroke setting the crossfade. Scrub the session's history like a video,
+              and branch from any point in it.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.dac11b27d868">The piano roll</h4>
+            <p data-i18n-html="features.8b5fc8a25fa8">
+              Around ninety scales with highlighting, snapping and folding, ghost notes from any
+              other clip, a velocity lane with a handle per note, lanes for how often each note
+              plays and how far its velocity wanders, and a keyboard where one key can play a whole
+              chord.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.a4592301df0c">Recording and comping</h4>
+            <p data-i18n-html="features.3b56c85ac1f3">
+              Audio recording and a hardware MIDI keyboard on Windows, macOS and Linux. Takes stack
+              under each other, you choose the parts you want, and the takes you did not choose are
+              never deleted. Audio is written to disk as it arrives, so a crash costs the last
+              block rather than the take.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.0baacdf5d6c4">Your plugins, each in a process of its own</h4>
+            <p data-i18n-html="features.5fab46c33502">
+              VST3 and CLAP. A plugin that crashes greys out its device and leaves the session
+              running. Delay compensation is graph-wide and proved by a null test, and a plugin
+              this machine does not have becomes a named placeholder, so a project opened somewhere
+              else stays in time.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.74ed3ebdb3f9">Its own instruments and effects</h4>
+            <p data-i18n-html="features.07e3bfdc40c6">
+              Sixty-nine devices, among them Freally Secretarium and its 1 648 instruments. Each
+              panel is drawn from the device's own description, so the number on a knob is the
+              number the audio is using, and a device's settings copy as one line you can paste
+              into a chat.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.afc35db2da83">Devices that read the arrangement</h4>
+            <p data-i18n-html="features.8d6419ade018">
+              Six devices do what a plugin cannot, because a plugin cannot see the song it is in: a
+              compressor already holding the chorus when it arrives, a gate that opens for a hit
+              before it happens, a delay that empties into the bar line. None of the six adds
+              latency.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.bdb597b1232d">The mixer</h4>
+            <p data-i18n-html="features.4d7f4826526b">
+              A strip per track with a fader, pan, mute, solo, the device rack and a meter drawn
+              from the audio the engine actually produced. The Masking Radar names two tracks
+              fighting for the same band and the frequency; the loudness panel shows integrated and
+              short-term LUFS, the range and true peak against what each streaming service
+              targets.
+            </p>
+          </article>
+        </div>
+
+        <h3 class="group-title" data-i18n-html="features.9ba30d3c0160">Finishing and sharing</h3>
+        <div class="grid">
+          <article class="card">
+            <h4 data-i18n-html="features.787726eabc9d">The Lyric Lane</h4>
+            <p data-i18n-html="features.7d820a1cb209">
+              Lyrics as a lane on the timeline, locked to the playhead and split into syllables,
+              imported from <code>.txt</code> or <code>.lrc</code> and copied into the project —
+              in type meant to be sung from across the room.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.c01fa2f5481f">Session cards and Session Timelapse</h4>
+            <p data-i18n-html="features.ef0a07e0d7a5">
+              One shortcut renders a 1200×630 picture of the session to post. Session Timelapse rebuilds
+              the whole session from its edit log as an animated picture with chapters — even a
+              session nobody thought to record.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.8b8dc99cf84d">Your session opens without Oscillate</h4>
+            <p data-i18n-html="features.3ab5583a8c27">
+              The companion folder writes stems and MIDI that any other DAW can open, lined up at
+              bar 1, in the format, sample rate and bit depth you choose.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.d91ad4caafa2">The family look</h4>
+            <p data-i18n-html="features.d65f870603be">
+              Knobs, faders and buttons rendered in Blender, five skins in light and dark beside
+              both themes, short interface sounds you can switch off, and eighteen languages with
+              real right-to-left — the same look in every Freally app.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.c87ebc921598">Nothing phones home</h4>
+            <p data-i18n-html="features.1c72614b8ea2">
+              No account and no telemetry. It uses the network on three occasions only: a room you
+              opened or joined, the address lookup while that room is set up, and an update check
+              that is off until you switch it on. Crash reports stay on your disk unless you choose
+              to send one.
+            </p>
+          </article>
+          <article class="card">
+            <h4 data-i18n-html="features.ae2bbaa95738">No AI, enforced by the build</h4>
+            <p data-i18n-html="features.db3a0428cdec">
+              No model, no inference, nothing generative. A build gate walks the dependency graph
+              and fails on any inference runtime or model file, so it is a property of the build
+              rather than a sentence on a website.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="compare">
+        <h2 data-i18n-html="features.389cb06662bc">Side by side with the leading DAWs</h2>
+        <p class="summary" data-i18n-html="features.1b20c8037295">
+          Freally Oscillate as it will be at version 1.0, beside seven commercial products as they
+          are sold on 1 October 2026 — taken from each one's own product pages, shop, manual and
+          support articles. Prices are list prices in US dollars.
+        </p>
+        <p class="legend" data-i18n-html="features.aa00ad05f380">✓ yes · ◐ partly · ✗ no · — could not be verified</p>
+        <div class="cmp-wrap">
+          <table class="cmp">
+            <caption data-i18n-html="features.dbdcc26cbc1a">Freally Oscillate 1.0 and seven commercial DAWs, feature by feature</caption>
+            <thead>
+              <tr>
+                <td></td>
+                <th scope="col" class="us" data-i18n-html="features.0c4e9f0c201a">Freally Oscillate 1.0</th>
+                <th scope="col" data-i18n-html="features.2088ae055e42">FL Studio 2026</th>
+                <th scope="col" data-i18n-html="features.c2373bf58922">Ableton Live 12</th>
+                <th scope="col" data-i18n-html="features.89d4cb070d7f">Logic Pro</th>
+                <th scope="col" data-i18n-html="features.dec97310271f">Bitwig Studio 6</th>
+                <th scope="col" data-i18n-html="features.41e8da85de51">Cubase Pro 15</th>
+                <th scope="col" data-i18n-html="features.9a8405135cab">Pro Tools</th>
+                <th scope="col" data-i18n-html="features.4da4dbb45aea">Soundtrap</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" data-i18n-html="features.a6a1efe40897">Price on 1 October 2026, in US dollars</th>
+                <td class="us yes" data-i18n-html="features.4ade5154bd22">Free today</td>
+                <td data-i18n-html="features.20f8fb981865">$99–$449, one-time</td>
+                <td data-i18n-html="features.566c95f474af">$99–$749, one-time</td>
+                <td data-i18n-html="features.19be45f9b5eb">$199.99 one-time, or $12.99 a month</td>
+                <td data-i18n-html="features.5e5b2a65eaea">$99–$399, one-time</td>
+                <td data-i18n-html="features.7113d664c5d8">$579.99, one-time</td>
+                <td data-i18n-html="features.9a1ba45b0bfd">Free Intro; $99–$599 a year</td>
+                <td data-i18n-html="features.385bc90ff4a3">Free plan; $11.99–$20.99 a month</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.40cbef707220">Runs on Windows, macOS and Linux</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="part" data-i18n-html="features.afe7f785d926">◐ Windows, macOS</td>
+                <td class="part" data-i18n-html="features.afe7f785d926">◐ Windows, macOS</td>
+                <td class="no" data-i18n-html="features.c02a66460ff9">✗ macOS only</td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="part" data-i18n-html="features.afe7f785d926">◐ Windows, macOS</td>
+                <td class="part" data-i18n-html="features.afe7f785d926">◐ Windows, macOS</td>
+                <td class="part" data-i18n-html="features.31952706bb1b">◐ apps for Windows and macOS; Linux in a browser</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.3cb6a5ed0829">Hosts VST3 plugins</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.ab6e58b553b7">✗ Audio Units only</td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d0d8fa1416f1">✗ AAX only</td>
+                <td class="part" data-i18n-html="features.09e2fa97ea97">◐ effects only, on the top plan</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.dcbac1a42d75">Hosts CLAP plugins</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.3592cc9add20">A crashing plugin leaves the session running</th>
+                <td class="us yes" data-i18n-html="features.267bac1a08e9">✓ every plugin, always</td>
+                <td class="part" data-i18n-html="features.9b75d8b20a79">◐ optional, VST only</td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="yes" data-i18n-html="features.d0bc68c62271">✓ on Apple silicon</td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="unk" data-i18n-html="features.593424210ca4">—<span class="vh"> Not verified</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.fc8d60587699">Usable with no account at all</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.b7d5af4a8c98">Several producers working in one session at once</th>
+                <td class="us yes" data-i18n-html="features.6f9b560c0171">✓ up to four, live</td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="part" data-i18n-html="features.cf4d84255382">◐ recording one remote performer</td>
+                <td class="part" data-i18n-html="features.05f04e8a572a">◐ track by track, through the cloud</td>
+                <td class="yes" data-i18n-html="features.99798cb8a154">✓ live, in its cloud</td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.956234fe74b6">Voice and camera with collaborators, built in</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="yes" data-i18n-html="features.ef0655bb8dc6">✓ with that performer</td>
+                <td class="no" data-i18n-html="features.83f153e5c98e">✗ text chat only</td>
+                <td class="yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.9f3893904d3d">Collaboration with no server and no account in the middle</th>
+                <td class="us yes" data-i18n-html="features.23ec6f77561a">✓ peer to peer</td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.4c5f872abb2f">Hand a track to a collaborator, then take it back</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="part" data-i18n-html="features.5f5bf995e8ca">◐ track ownership, by request</td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.c3b01984557c">A beat-battle mode</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.1d662dd62590">A split sheet derived from who edited what</th>
+                <td class="us yes" data-i18n-html="features.0dfd13c67000">✓<span class="vh"> Yes</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n-html="features.e6195e7cff54">No AI or machine-learning features</th>
+                <td class="us yes" data-i18n-html="features.075020ef1114">✓ enforced by a build gate</td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="yes" data-i18n-html="features.4da6af0cec55">✓ none listed</td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+                <td class="no" data-i18n-html="features.d17622c7bb39">✗<span class="vh"> No</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note" data-i18n-html="features.e5498b8a441d">
+          <strong>The short version:</strong> every other product on that table asks for an account,
+          and each asks for money for its full feature set. Two of them let several people edit
+          one project — Pro Tools track by track through its cloud, Soundtrap live in its own cloud.
+          Oscillate puts four producers in one arrangement live, peer to peer, with no account, and
+          it is free today.
+        </p>
+        <p class="note" data-i18n-html="features.1889a974beb4">
+          Compiled on 1 October 2026. A ✗ for a feature means it is not in that product's own
+          feature lists, release notes or manual on that date. Products change, and this table
+          describes them as they were then. Product names are the trademarks of their owners.
+        </p>
+      </section>
+
+      <section id="why">
+        <h2 data-i18n-html="features.6977b748edc2">Why it is built the way it is</h2>
+
+        <h3 class="kicker" data-i18n-html="features.662d60837a2d">No server, so nothing to switch off</h3>
+        <p class="summary" data-i18n-html="features.85567c225aa3">
+          A room code is the connection offer itself. With no server there is nothing to keep
+          running, nothing to pay for and nothing anybody can turn off — which is also why a room
+          holds four producers and not forty: every peer sends to every other peer.
+        </p>
+
+        <h3 class="kicker" data-i18n-html="features.16275f3a5af9">One log, four uses</h3>
+        <p class="summary" data-i18n-html="features.d2a4cd186952">
+          Every edit is an operation in one log. Undo, the room's sync, Session Rewind and the Split
+          Sheet are four readings of it, which is why your undo can be yours alone and why credit
+          can be derived rather than typed in.
+        </p>
+
+        <h3 class="kicker" data-i18n-html="features.af0df7623348">A crash is one device, not the session</h3>
+        <p class="summary" data-i18n-html="features.600105cd00bc">
+          Every hosted plugin runs in a process of its own, and the application itself cannot even
+          load one. A plugin that falls over greys out its device, and the transport keeps playing.
+        </p>
+
+        <h3 class="kicker" data-i18n-html="features.908ec1ae94d2">The number you see is the number in the audio</h3>
+        <p class="summary" data-i18n-html="features.b6fc9acbd76d">
+          Meters are drawn from what the engine produced, a knob's readout from the value the DSP
+          is using, and a measurement that fell behind says so. Nothing on screen is a prediction.
+        </p>
+
+        <h3 class="kicker" data-i18n-html="features.944f018d9f74">It stays on your machine</h3>
+        <p class="summary" data-i18n-html="features.70a55e97f377">
+          Your projects, audio and MIDI leave your computer only when you are in a room with
+          somebody — and then they go straight to the people in it, not through anybody's cloud.
+        </p>
+      </section>
+
+      <section id="coming">
+        <h2 data-i18n-html="features.bd873b549bc7">What is still coming</h2>
+        <p class="summary" data-i18n-html="features.735112899b1c">
+          Stated plainly, because a feature list that hides its gaps is not worth reading.
+          Everything above is what version 1.0 is planned to have, and this is what still stands
+          between here and there.
+        </p>
+        <ul>
+          <li data-i18n-html="features.5ea6fea0e17d">
+            <strong>Two more rungs of features</strong>: 0.6.0, identity — the Lyric Lane, Session
+            Timelapse, session cards and the credits page — and 0.6.5, the family look and the right
+            instruments: the Blender-rendered hardware, the five skins, the interface sounds and one
+            instrument library with Freally MIDI Master.
+          </li>
+          <li data-i18n-html="features.423615e1b37c">
+            <strong>A public beta</strong>, then a release candidate hardened against what the beta
+            finds.
+          </li>
+          <li data-i18n-html="features.7f321bf60efc">
+            <strong>The first downloads</strong>, at 1.0.0. There are none before then, on this
+            page or anywhere else.
+          </li>
+          <li data-i18n-html="features.e1158416235c">Every rung is on <a href="index.html#ladder">the road to 1.0</a>.</li>
+        </ul>
+
+        <h3 data-i18n-html="features.d9d391384838">What 1.0 will not do</h3>
+        <ul>
+          <li data-i18n-html="features.7d48e18b39c1"><strong>Host AU or VST2 plugins.</strong> It hosts VST3 and CLAP.</li>
+          <li data-i18n-html="features.a1eea7d00cdd">
+            <strong>Use ASIO.</strong> On Windows the low-latency path is WASAPI exclusive, and
+            Oscillate tells you which mode you actually got.
+          </li>
+          <li data-i18n-html="features.1bcf2a5c1071">
+            <strong>Hold more than four producers in a room.</strong> The fifth connection is where
+            an ordinary home upload gives out.
+          </li>
+          <li data-i18n-html="features.37e6fd7fe6f5">
+            <strong>Relay a connection that will not form.</strong> Roughly one in ten will not
+            without a relay in the middle; Oscillate names the cause, and Settings takes your own
+            relay.
+          </li>
+          <li data-i18n-html="features.d32646eadd7e">
+            <strong>Share a screen from macOS.</strong> Screen share is Windows and Linux; on macOS
+            the button is absent and says why.
+          </li>
+          <li data-i18n-html="features.5590fbf60cd6">
+            <strong>Carry pitch bend, the mod wheel or pressure from a hardware keyboard.</strong>
+            Notes, velocity and the sustain pedal are carried.
+          </li>
+        </ul>
+        <p class="note" data-i18n-html="features.3b50036d04c0">
+          No beta on this page, no preview build, no early access. Until 1.0.0 the honest answer to
+          “where do I get it” is <em>not yet</em>.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          What you make with it is yours. Oscillate's author claims no ownership of the projects,
+          MIDI, audio or renders you create with it.
+        </p>
+      </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,6 +1,7 @@
 {
   "nav.skip": "Tới nội dung",
   "nav.home": "Trang chủ",
+  "nav.features": "Tính năng",
   "nav.documentation": "Tài liệu",
   "nav.changelog": "Thay đổi",
   "nav.language": "Ngôn ngữ",
@@ -53,6 +54,7 @@
   "honest.updater.body": "Một lần kiểm tra cập nhật, và chỉ khi bạn nhấn nút hoặc bật kiểm tra lúc khởi động — mặc định là tắt. Nó xin một tệp tĩnh và không gửi bất cứ điều gì về bạn hay máy của bạn; mọi bản cập nhật đều có chữ ký, và không bản nào được cài nếu bạn không chọn.",
   "footer.licence": "Phần mềm độc quyền — Bảo lưu mọi quyền. © Mike Weaver. Hiện miễn phí sử dụng; các phiên bản sau này có thể được bán. Không phải mã nguồn mở.",
   "footer.yours": "Những gì bạn làm ra bằng nó là của bạn. Tác giả Oscillate không đòi quyền sở hữu với các dự án, MIDI, âm thanh hay bản kết xuất mà bạn tạo bằng nó.",
+  "featuresPage.title": "Mọi thứ nó làm được",
   "docs.title": "Tài liệu",
   "docs.contents": "Mục lục",
   "docs.toc.start": "Bắt đầu",

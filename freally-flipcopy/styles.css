@@ -482,6 +482,234 @@ pre code {
   margin-block-start: 0;
 }
 
+/* ── The features page ────────────────────────────────────────────────── */
+
+/* ⛔ Read by a screen reader, never seen: the words behind a ✓ or a ✗, so a
+ * comparison cell is never only a symbol. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin-block: var(--space-6) var(--space-2);
+}
+
+.stat-grid li {
+  max-width: none;
+}
+
+.stat {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4) var(--space-3);
+  text-align: center;
+}
+
+.stat__n {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat__l {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--color-text-2);
+}
+
+.stat--free .stat__n {
+  color: var(--color-success);
+}
+
+/* The "free today" box: the honest box's shape, in the START key's green. */
+.free-banner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-inline-start: 3px solid var(--color-primary);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4) var(--space-6);
+}
+
+.free-banner h2 {
+  margin-block-start: 0;
+  border-block-end: 0;
+  padding-block-end: 0;
+  color: var(--color-primary);
+}
+
+.free-banner p:last-child {
+  margin-block-end: 0;
+  font-weight: 600;
+}
+
+.cmp-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-6);
+  list-style: none;
+  padding: 0;
+  margin-block: var(--space-3);
+  color: var(--color-text-2);
+  font-size: 0.875rem;
+}
+
+.cmp-legend li {
+  max-width: none;
+}
+
+.cmp-mark {
+  display: inline-block;
+  min-width: 1.25em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.cmp-mark.yes {
+  color: var(--color-success);
+}
+
+.cmp-mark.part {
+  color: var(--color-warning);
+}
+
+.cmp-mark.no,
+.cmp-mark.unknown {
+  color: var(--color-text-3);
+}
+
+/* ⚠ The table is wider than a phone: it scrolls inside its own frame, never
+ * the page. Focusable so a keyboard reader can scroll it too. */
+.cmp-wrap {
+  /* ⚠ The containing block of the cells' hidden words: without it they are
+   * placed against the page and widen it past a phone's screen. */
+  position: relative;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  margin-block: var(--space-4);
+}
+
+table.cmp {
+  width: 100%;
+  min-width: 860px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.cmp th,
+.cmp td {
+  padding: var(--space-2) var(--space-3);
+  border-block-end: 1px solid var(--color-border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cmp thead th {
+  color: var(--color-text-2);
+  font-weight: 600;
+  vertical-align: bottom;
+  background: var(--color-surface);
+}
+
+.cmp tbody tr:last-child > * {
+  border-block-end: 0;
+}
+
+.cmp th[scope='row'] {
+  text-align: start;
+  font-weight: 500;
+  color: var(--color-text);
+  min-width: 240px;
+}
+
+/* Flipcopy's own column, first and lit. */
+.cmp .us {
+  background: color-mix(in srgb, var(--color-primary) 9%, transparent);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.cmp thead th.us {
+  color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 14%, var(--color-surface));
+}
+
+/* ⛔ The verdict is a symbol and a word (the word for screen readers), and
+ * the symbol differs as well as the colour: ✓ ◐ ✗ —. */
+.cmp .yes {
+  color: var(--color-success);
+}
+
+.cmp .part {
+  color: var(--color-warning);
+}
+
+.cmp .no {
+  color: var(--color-text-3);
+}
+
+.cmp .unknown {
+  color: var(--color-text-3);
+}
+
+.cmp .note {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-2);
+}
+
+.cmp .price {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.why h3 {
+  color: var(--color-primary);
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-block: var(--space-6) var(--space-1);
+}
+
+.why p {
+  margin-block-start: 0;
+  color: var(--color-text-2);
+}
+
+.states {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.states li {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
+}
+
 /* ── The manual ───────────────────────────────────────────────────────── */
 
 .manual {

@@ -1,6 +1,7 @@
 {
   "nav.skip": "Ir para o conteúdo",
   "nav.home": "Início",
+  "nav.features": "Recursos",
   "nav.documentation": "Documentação",
   "nav.changelog": "Mudanças",
   "nav.language": "Idioma",
@@ -53,6 +54,7 @@
   "honest.updater.body": "Uma verificação de atualização, e só quando você aperta o botão ou liga a verificação ao iniciar — ela vem desligada. Ela pede um único arquivo estático e não envia nada sobre você nem sobre a sua máquina, toda atualização é assinada, e nenhuma é instalada sem a sua escolha.",
   "footer.licence": "Proprietário — Todos os direitos reservados. © Mike Weaver. Gratuito para usar hoje; versões futuras poderão ser vendidas. Não é de código aberto.",
   "footer.yours": "O que você faz com ele é seu. O autor do Oscillate não reivindica propriedade sobre os projetos, MIDI, áudio ou renderizações que você cria com ele.",
+  "featuresPage.title": "Tudo o que ele faz",
   "docs.title": "Documentação",
   "docs.contents": "Conteúdo",
   "docs.toc.start": "Primeiros passos",

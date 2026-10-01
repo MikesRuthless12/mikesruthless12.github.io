@@ -1,6 +1,7 @@
 {
   "nav.skip": "본문으로 건너뛰기",
   "nav.home": "홈",
+  "nav.features": "기능",
   "nav.documentation": "문서",
   "nav.changelog": "변경 내역",
   "nav.language": "언어",
@@ -53,6 +54,7 @@
   "honest.updater.body": "업데이트 확인이며, 버튼을 누르거나 시작 시 확인을 켠 경우에만 일어납니다 — 기본값은 꺼짐입니다. 정적 파일 하나를 요청할 뿐 당신이나 당신의 기기에 대해 아무것도 보내지 않고, 모든 업데이트는 서명되어 있으며, 당신의 선택 없이는 하나도 설치되지 않습니다.",
   "footer.licence": "독점 소프트웨어 — 모든 권리 보유. © Mike Weaver. 지금은 무료로 사용할 수 있지만, 향후 버전은 판매될 수 있습니다. 오픈소스는 아닙니다.",
   "footer.yours": "당신이 만든 것은 당신의 것입니다. Oscillate의 저자는 당신이 만든 프로젝트, MIDI, 오디오, 렌더에 대해 어떠한 소유권도 주장하지 않습니다.",
+  "featuresPage.title": "할 수 있는 모든 것",
   "docs.title": "문서",
   "docs.contents": "목차",
   "docs.toc.start": "시작하기",

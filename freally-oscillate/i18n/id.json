@@ -1,6 +1,7 @@
 {
   "nav.skip": "Lompat ke konten",
   "nav.home": "Beranda",
+  "nav.features": "Fitur",
   "nav.documentation": "Dokumentasi",
   "nav.changelog": "Perubahan",
   "nav.language": "Bahasa",
@@ -53,6 +54,7 @@
   "honest.updater.body": "Pemeriksaan pembaruan, dan hanya ketika kamu menekan tombol atau menyalakan pemeriksaan saat dijalankan — bawaannya mati. Ia meminta satu berkas statis dan tidak mengirim apa pun tentang kamu atau mesinmu, setiap pembaruan ditandatangani, dan tidak ada yang dipasang tanpa pilihanmu.",
   "footer.licence": "Berpemilik — Seluruh Hak Dilindungi. © Mike Weaver. Gratis digunakan saat ini; versi mendatang mungkin dijual. Bukan sumber terbuka.",
   "footer.yours": "Apa yang kamu buat dengannya adalah milikmu. Penulis Oscillate tidak mengklaim kepemilikan atas proyek, MIDI, audio atau render yang kamu buat dengannya.",
+  "featuresPage.title": "Semua yang bisa dilakukannya",
   "docs.title": "Dokumentasi",
   "docs.contents": "Daftar isi",
   "docs.toc.start": "Memulai",
