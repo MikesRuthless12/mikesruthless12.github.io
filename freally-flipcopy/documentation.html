@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Documentation — Freally Flipcopy</title>
+    <meta
+      name="description"
+      content="How to use Freally Flipcopy: the window, the licence agreement, languages and privacy. The full illustrated manual arrives with the beta."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="flipcopy-icon.png" alt="" width="28" height="28" />
+          <span>Freally Flipcopy</span>
+        </a>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <a href="download.html" data-downloads-link data-i18n="nav.download">Download</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1 data-i18n="docs.title">Documentation</h1>
+      <p data-i18n="docs.intro">
+        This manual grows with every version. Right now it covers what version 0.2.0 does; the full illustrated manual, with a screenshot for every step, arrives with the beta.
+      </p>
+
+      <div class="search">
+        <input
+          type="search"
+          placeholder="Search the documentation"
+          aria-label="Search the documentation"
+          data-i18n-attr="placeholder:search.placeholder,aria-label:search.placeholder"
+        />
+        <ul class="search-results" aria-live="polite"></ul>
+      </div>
+
+      <div class="manual">
+        <nav class="manual-toc" aria-label="Contents" data-i18n-attr="aria-label:docs.contents">
+          <ol>
+            <li><a href="#start" data-i18n="docs.start.title">Getting started</a></li>
+            <li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li>
+            <li><a href="#window" data-i18n="docs.window.title">The window</a></li>
+            <li><a href="#copier" data-i18n="docs.copier.title">Making a copy</a></li>
+            <li><a href="#language" data-i18n="docs.language.title">Languages</a></li>
+            <li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li>
+          </ol>
+        </nav>
+
+        <div class="manual-body">
+          <section>
+            <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
+            <p data-i18n="docs.start.p1">
+              Flipcopy runs inside your DAW as a CLAP, VST3 or AU plugin, or on its own as a
+              standalone app. Put it on any audio track: it passes the track's audio through
+              exactly as it arrives, so it is safe to leave in place.
+            </p>
+            <p data-i18n="docs.start.p2">
+              There are no downloads before version 1.0.0, and the source code is private.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="agreement" data-i18n="docs.agreement.title">The licence agreement</h2>
+            <p data-i18n="docs.agreement.p1">
+              The first time Flipcopy opens it shows its licence agreement. Read it to the end and
+              Agree becomes available. Until you agree, Flipcopy reads nothing, copies nothing and
+              adds nothing to your track's audio.
+            </p>
+            <p data-i18n="docs.agreement.p2">
+              Your answer is kept on your computer and shared by every open copy of Flipcopy, in
+              every DAW and in the standalone app. If you decline, choose Read it again whenever
+              you are ready.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="window" data-i18n="docs.window.title">The window</h2>
+            <p data-i18n="docs.window.p1">
+              On one side is the browser, with the preview player docked under it. The rest of the
+              window is the stage, where the copier stands. Drag the line between them to make the
+              browser wider or narrower, or focus it and use the arrow keys.
+            </p>
+            <p data-i18n="docs.window.p2">
+              The browser arrives in version 0.4.0. Until then the stage belongs to the copier.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="copier" data-i18n="docs.copier.title">Making a copy</h2>
+            <p data-i18n="docs.copier.p1">
+              Drop a MIDI file on the copier — from Explorer or Finder, anywhere on the window — or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Dropping a file never starts a copy.
+            </p>
+            <p data-i18n="docs.copier.p2">
+              Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy — the MIDI played through a default instrument at the file’s tempo — slides out onto the tray. Esc or the red STOP key cancels it; the grey HOME key clears the glass.
+            </p>
+            <p data-i18n="docs.copier.p3">
+              The copy is a real WAV file in Documents/Freally Flipcopy/Copies, numbered, and never moved, overwritten or deleted. Grab it by the lime frame round the printed clip and drag it straight onto a track in your DAW. Copying audio to MIDI arrives in version 0.3.0.
+            </p>
+            <p data-i18n="docs.copier.p4">
+              The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="language" data-i18n="docs.language.title">Languages</h2>
+            <p data-i18n="docs.language.p1">
+              Flipcopy speaks eighteen languages. It starts in your system's language; to choose
+              another, open Settings with the gear at the top of the browser and pick one. The
+              choice applies to every copy of Flipcopy on the computer.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
+            <p data-i18n="docs.privacy.p1">
+              Flipcopy has no account and no telemetry, and the plugin and standalone app contain
+              no networking code at all. Your files and your copies never leave your computer.
+            </p>
+            <p data-i18n="docs.privacy.p2">
+              It contains no AI of any kind: every copy is made by classic, deterministic signal
+              processing, and a build gate fails if a machine-learning library is ever added.
+            </p>
+          </section>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          The copies you make are yours, as far as the files you copied were yours to use.
+          Flipcopy's author claims no ownership of them.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="search-index.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

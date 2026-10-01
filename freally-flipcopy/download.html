@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Download — Freally Flipcopy</title>
+    <meta
+      name="description"
+      content="There are no downloads before version 1.0.0, and the source code of Freally Flipcopy is private."
+    />
+    <!-- ⚠ Not indexed while there is nothing here. A search result promising a
+         download that does not exist is worse than no search result. -->
+    <meta name="robots" content="noindex" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="flipcopy-icon.png" alt="" width="28" height="28" />
+          <span>Freally Flipcopy</span>
+        </a>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <a href="download.html" data-downloads-link data-i18n="nav.download">Download</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1 data-i18n="download.title">Download</h1>
+
+      <!--
+        ⛔⛔ THIS PAGE IS BUILT AND SWITCHED OFF until v1.0.0 (roadmap TASK-137
+        flips it; FR-045).
+
+        ▶ The owner's instruction: "with downloads only coming at v1.0.0". The
+        page exists now because it is far easier to review a real page than an
+        imagined one. `site.js` hides the navigation link; anybody who types the
+        URL gets a page that tells them the truth instead of a 404.
+      -->
+      <div class="notice stop">
+        <strong data-i18n="download.none">There is nothing to download yet, and that is on purpose.</strong>
+        <span data-i18n="download.noneBody"
+          >No beta on this page, no preview build, no early access. Flipcopy ships when every gate
+          is green on all three operating systems.</span
+        >
+      </div>
+
+      <p data-i18n="notice.price">
+        Freally Flipcopy is free today, but it might not be free forever: future versions may be sold.
+      </p>
+      <p data-i18n="download.private">
+        Flipcopy's source code is private, so there is nothing to build from either.
+      </p>
+
+      <section>
+        <h2 data-i18n="download.whenTitle">When there will be</h2>
+        <p data-i18n="download.whenBody">
+          At version 1.0.0. The ladder on the home page shows where the work is now.
+        </p>
+        <p>
+          <a href="index.html#ladder" data-i18n="download.ladderLink">The road to 1.0 →</a>
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          The copies you make are yours, as far as the files you copied were yours to use.
+          Flipcopy's author claims no ownership of them.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>

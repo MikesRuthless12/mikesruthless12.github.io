@@ -1,0 +1,119 @@
+{
+  "note": "The public version ladder. `phase` must equal the private roadmap's ladder, row for row (scripts/check-ladder.mjs); `summary` is written for the site and never copied from a private document. States: done, planned, goal, later.",
+  "rungs": [
+    {
+      "version": "v0.1.0",
+      "phase": "Phase 0 — Foundation & CI spine",
+      "state": "done",
+      "summary": "The foundation: the plugin loads as CLAP, VST3 and AU and as a standalone app, passes your audio through untouched, asks you to accept its licence, and every quality gate runs."
+    },
+    {
+      "version": "v0.2.0",
+      "phase": "Phase 1 — The copier and the first copy",
+      "state": "done",
+      "summary": "The copier and the first copy: the machine in the window, the green START, and a MIDI file copied into audio you drag straight into your DAW."
+    },
+    {
+      "version": "v0.3.0",
+      "phase": "Phase 2 — Audio → MIDI: the magic moment",
+      "state": "done",
+      "summary": "Audio to MIDI: drop a loop on the glass, press START, and drag out its drums, bass, melody and chords as MIDI."
+    },
+    {
+      "version": "v0.4.0",
+      "phase": "Phase 3 — The File Browser & Preview Player",
+      "state": "planned",
+      "summary": "The file browser and preview player: find a sample or a MIDI clip, hear it, see it, and drag it onto the glass. Everything essential is here."
+    },
+    {
+      "version": "v0.5.0",
+      "phase": "Phase 4 — The touch screen",
+      "state": "planned",
+      "summary": "The touch screen: copy settings, instruments for your copies, file formats, and the history of every copy you have made."
+    },
+    {
+      "version": "v0.5.5",
+      "phase": "Phase 4.5 — The Studio",
+      "state": "planned",
+      "summary": "The Studio: open any copy in a piano roll, change its notes, hear it through any instrument, and print your edit as a new copy."
+    },
+    {
+      "version": "v0.5.7",
+      "phase": "Phase 4.7 — The mixer and your own instruments",
+      "state": "planned",
+      "summary": "The mixer and your own instruments: realistic knobs to shape every part, your own drum kits and samples, favourites, and one instrument library shared by every Freally app."
+    },
+    {
+      "version": "v0.5.9",
+      "phase": "Phase 4.9 — Skins and light mode",
+      "state": "planned",
+      "summary": "Skins and light mode: five skins, each a raised chassis rendered in Blender and the same across every Freally app, in light and dark, beside a new light mode."
+    },
+    {
+      "version": "v0.6.0",
+      "phase": "Phase 5 — In every DAW",
+      "state": "planned",
+      "summary": "In every DAW: saved with your project, several copies at once, scanning straight from a track, and checked DAW by DAW."
+    },
+    {
+      "version": "v0.7.0",
+      "phase": "Phase 6 — Standalone, macOS, Linux & the promo",
+      "state": "planned",
+      "summary": "The standalone app at full strength, macOS and Linux, and the video of the copier at work."
+    },
+    {
+      "version": "v0.8.0",
+      "phase": "Phase 7 — Accuracy, realism & performance",
+      "state": "planned",
+      "summary": "Accuracy, realism and speed: better transcriptions, a more convincing machine, and every performance budget enforced."
+    },
+    {
+      "version": "v1.0.0-beta",
+      "phase": "Phase 8 — Beta: hardened",
+      "state": "planned",
+      "summary": "Hardened: installers for three systems, the optional update check, and the full illustrated manual. Still no downloads on this site."
+    },
+    {
+      "version": "v1.0.0-rc",
+      "phase": "Phase 9 — Release candidate",
+      "state": "planned",
+      "summary": "The release candidate: every file reviewed and every host tested by hand."
+    },
+    {
+      "version": "v1.0.0",
+      "phase": "Phase 10 — The release",
+      "state": "goal",
+      "summary": "The release — and the first downloads this site has ever offered."
+    },
+    {
+      "version": "v1.1.0",
+      "phase": "Post-1.0 Build 1",
+      "state": "later",
+      "summary": "The document feeder: copy a whole folder in one go."
+    },
+    {
+      "version": "v1.3.0",
+      "phase": "Post-1.0 Build 3",
+      "state": "later",
+      "summary": "Score copies: MusicXML and a staff-notation print."
+    },
+    {
+      "version": "v1.4.0",
+      "phase": "Post-1.0 Build 4",
+      "state": "later",
+      "summary": "Bridges to the other Freally products."
+    },
+    {
+      "version": "v1.5.0",
+      "phase": "Post-1.0 Build 5",
+      "state": "later",
+      "summary": "Pro Tools as a plugin (AAX), if Avid's terms allow it for a free product."
+    },
+    {
+      "version": "v1.6.0",
+      "phase": "Post-1.0 Build 6",
+      "state": "later",
+      "summary": "Groove copies, and rough, AI-free stem copies."
+    }
+  ]
+}

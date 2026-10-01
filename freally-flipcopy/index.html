@@ -1,0 +1,370 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Freally Flipcopy — a copy machine for your clips</title>
+    <meta
+      name="description"
+      content="Put it on the glass. Press START. Drag the copy. Audio in, MIDI out; MIDI in, audio out. A free CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux. Offline and 100% AI-free."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="flipcopy-icon.png" alt="" width="28" height="28" />
+          <span>Freally Flipcopy</span>
+        </a>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <a href="download.html" data-downloads-link data-i18n="nav.download">Download</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+            <!-- ⚠ Filled by site.js: English first, the other seventeen alphabetically. -->
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <img class="mark" src="flipcopy-icon.png" alt="" width="96" height="96" />
+        <h1>Freally Flipcopy</h1>
+        <p class="tagline" data-i18n="hero.tagline">
+          Put it on the glass. Press START. Drag the copy.
+        </p>
+        <p class="sub" data-i18n="hero.sub">
+          Audio in, MIDI out. MIDI in, audio out. Free, offline and 100% AI-free.
+        </p>
+        <p class="sub" data-i18n="notice.price">
+          Freally Flipcopy is free today, but it might not be free forever: future versions may be sold.
+        </p>
+        <ul class="chips">
+          <li>CLAP</li>
+          <li>VST3</li>
+          <li>AU</li>
+          <li data-i18n="hero.chipStandalone">Standalone</li>
+          <li>Windows</li>
+          <li>macOS</li>
+          <li>Linux</li>
+        </ul>
+        <p class="sub">
+          <strong data-i18n="hero.noDownloads"
+            >In development. There are no downloads until version 1.0.0, and the source code is private.</strong
+          >
+        </p>
+      </section>
+
+      <section id="what">
+        <h2 data-i18n="what.title">What it is</h2>
+        <p data-i18n="what.p1">
+          Turning a loop into MIDI, or a MIDI file into audio, usually means a chain of tools, an
+          export, a re-import and a lot of guessing about what came out.
+        </p>
+        <p data-i18n="what.p2">
+          Flipcopy is a copy machine. Put an audio file or a MIDI file on its glass and it prints
+          the original — the real waveform, or every note, with its data. Press the green START and
+          it prints the copy in the other form: audio in, MIDI out; MIDI in, audio out.
+        </p>
+        <p data-i18n="what.p3">
+          The copy comes out as a printed page with a lime-green frame around its clip. Grab the
+          frame and drag it onto a track in your DAW. Every copy is a real file that stays where it
+          is, so your project never loses it.
+        </p>
+      </section>
+
+      <section id="see">
+        <h2 data-i18n="see.title">See it copy</h2>
+        <p data-i18n="see.intro">
+          The copier, rendered in Blender: the original lands on the glass, the lid closes, the lamp
+          sweeps, and the copy slides out onto the tray.
+        </p>
+        <div class="stories">
+          <figure class="story">
+            <div class="story__frame" dir="ltr">
+              <video
+                src="media/copier-story-audio-to-midi.mp4#t=0.001"
+                controls
+                playsinline
+                preload="metadata"
+                width="640"
+                height="360"
+              ></video>
+              <button
+                type="button"
+                class="story__start"
+                aria-label="Press START to watch it copy"
+                data-i18n-attr="aria-label:see.start"
+              >
+                START
+              </button>
+            </div>
+            <figcaption data-i18n="see.audioToMidi">
+              Audio in, MIDI out: a page for each layer — melody, chords, bassline and
+              countermelody.
+            </figcaption>
+          </figure>
+          <figure class="story">
+            <div class="story__frame" dir="ltr">
+              <video
+                src="media/copier-story-midi-to-audio.mp4#t=0.001"
+                controls
+                playsinline
+                preload="metadata"
+                width="640"
+                height="360"
+              ></video>
+              <button
+                type="button"
+                class="story__start"
+                aria-label="Press START to watch it copy"
+                data-i18n-attr="aria-label:see.start"
+              >
+                START
+              </button>
+            </div>
+            <figcaption data-i18n="see.midiToAudio">MIDI in, audio out.</figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section id="features">
+        <h2 data-i18n="features.title">What is in it</h2>
+        <div class="grid">
+          <article class="card">
+            <h3 data-i18n="features.copier.title">The copier</h3>
+            <p data-i18n="features.copier.body">
+              A photoreal copy machine rendered in Blender. Put a clip on the glass and it prints
+              the real thing: every note, or the real waveform, with its tempo, length and levels.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.start.title">The green START</h3>
+            <p data-i18n="features.start.body">
+              Dropping a clip only places it on the glass. Nothing is copied until you press START,
+              so nothing happens that you did not ask for.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.audioToMidi.title">Audio → MIDI</h3>
+            <p data-i18n="features.audioToMidi.body">
+              The drums, bass, melody, countermelody and chords found in a loop, one page each,
+              printed back to back from a single scan, so they drag into your DAW as separate
+              tracks.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.midiToAudio.title">MIDI → audio</h3>
+            <p data-i18n="features.midiToAudio.body">
+              A MIDI file played through a real instrument, and drums through a drum machine,
+              printed as an audio file you can drag.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.drag.title">Drag the copy</h3>
+            <p data-i18n="features.drag.body">
+              Every page wears a lime-green frame around its clip. Grab it and drop it on a track.
+              The file is real, and Flipcopy never overwrites or deletes it.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.browser.title">The browser</h3>
+            <p data-i18n="features.browser.body">
+              A file browser with a preview player, from Freally Oscillate. It shows a waveform for
+              audio and the notes for MIDI, and plays MIDI through the instrument the copy uses.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.daw.title">In any DAW</h3>
+            <p data-i18n="features.daw.body">
+              CLAP, VST3 and AU, plus a standalone app for working without a DAW and for Pro Tools.
+              Windows, macOS and Linux.
+            </p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.free.title">Free, offline, no AI</h3>
+            <p data-i18n="features.free.body">
+              No tier, no account, no telemetry, no network, no model. Classic signal processing,
+              enforced by a build gate rather than promised.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ladder">
+        <h2 data-i18n="ladder.title">The road to 1.0</h2>
+        <p data-i18n="ladder.intro">
+          One line per version. This is the same ladder the private plan follows — if one moves,
+          both move, and a build gate compares them.
+        </p>
+        <table class="ladder">
+          <thead>
+            <tr>
+              <th data-i18n="ladder.version">Version</th>
+              <th data-i18n="ladder.state">State</th>
+              <th data-i18n="ladder.lands">What it lands</th>
+            </tr>
+          </thead>
+          <!-- LADDER:START — generated from docs/ladder.json by scripts/build-docs-site.mjs. Do not edit by hand. -->
+<tbody>
+            <tr>
+              <td><code>v0.1.0</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v0.1.0">The foundation: the plugin loads as CLAP, VST3 and AU and as a standalone app, passes your audio through untouched, asks you to accept its licence, and every quality gate runs.</td>
+            </tr>
+            <tr>
+              <td><code>v0.2.0</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v0.2.0">The copier and the first copy: the machine in the window, the green START, and a MIDI file copied into audio you drag straight into your DAW.</td>
+            </tr>
+            <tr>
+              <td><code>v0.3.0</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v0.3.0">Audio to MIDI: drop a loop on the glass, press START, and drag out its drums, bass, melody and chords as MIDI.</td>
+            </tr>
+            <tr>
+              <td><code>v0.4.0</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.4.0">The file browser and preview player: find a sample or a MIDI clip, hear it, see it, and drag it onto the glass. Everything essential is here.</td>
+            </tr>
+            <tr>
+              <td><code>v0.5.0</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.5.0">The touch screen: copy settings, instruments for your copies, file formats, and the history of every copy you have made.</td>
+            </tr>
+            <tr>
+              <td><code>v0.5.5</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.5.5">The Studio: open any copy in a piano roll, change its notes, hear it through any instrument, and print your edit as a new copy.</td>
+            </tr>
+            <tr>
+              <td><code>v0.5.7</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.5.7">The mixer and your own instruments: realistic knobs to shape every part, your own drum kits and samples, favourites, and one instrument library shared by every Freally app.</td>
+            </tr>
+            <tr>
+              <td><code>v0.5.9</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.5.9">Skins and light mode: five skins, each a raised chassis rendered in Blender and the same across every Freally app, in light and dark, beside a new light mode.</td>
+            </tr>
+            <tr>
+              <td><code>v0.6.0</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.6.0">In every DAW: saved with your project, several copies at once, scanning straight from a track, and checked DAW by DAW.</td>
+            </tr>
+            <tr>
+              <td><code>v0.7.0</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.7.0">The standalone app at full strength, macOS and Linux, and the video of the copier at work.</td>
+            </tr>
+            <tr>
+              <td><code>v0.8.0</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v0.8.0">Accuracy, realism and speed: better transcriptions, a more convincing machine, and every performance budget enforced.</td>
+            </tr>
+            <tr>
+              <td><code>v1.0.0-beta</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v1.0.0-beta">Hardened: installers for three systems, the optional update check, and the full illustrated manual. Still no downloads on this site.</td>
+            </tr>
+            <tr>
+              <td><code>v1.0.0-rc</code></td>
+              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
+              <td data-i18n="ladder.rung.v1.0.0-rc">The release candidate: every file reviewed and every host tested by hand.</td>
+            </tr>
+            <tr>
+              <td><code>v1.0.0</code></td>
+              <td><span class="state state-goal" data-i18n="ladder.state.goal">The goal</span></td>
+              <td data-i18n="ladder.rung.v1.0.0">The release — and the first downloads this site has ever offered.</td>
+            </tr>
+            <tr>
+              <td><code>v1.1.0</code></td>
+              <td><span class="state state-later" data-i18n="ladder.state.later">Later</span></td>
+              <td data-i18n="ladder.rung.v1.1.0">The document feeder: copy a whole folder in one go.</td>
+            </tr>
+            <tr>
+              <td><code>v1.3.0</code></td>
+              <td><span class="state state-later" data-i18n="ladder.state.later">Later</span></td>
+              <td data-i18n="ladder.rung.v1.3.0">Score copies: MusicXML and a staff-notation print.</td>
+            </tr>
+            <tr>
+              <td><code>v1.4.0</code></td>
+              <td><span class="state state-later" data-i18n="ladder.state.later">Later</span></td>
+              <td data-i18n="ladder.rung.v1.4.0">Bridges to the other Freally products.</td>
+            </tr>
+            <tr>
+              <td><code>v1.5.0</code></td>
+              <td><span class="state state-later" data-i18n="ladder.state.later">Later</span></td>
+              <td data-i18n="ladder.rung.v1.5.0">Pro Tools as a plugin (AAX), if Avid's terms allow it for a free product.</td>
+            </tr>
+            <tr>
+              <td><code>v1.6.0</code></td>
+              <td><span class="state state-later" data-i18n="ladder.state.later">Later</span></td>
+              <td data-i18n="ladder.rung.v1.6.0">Groove copies, and rough, AI-free stem copies.</td>
+            </tr>
+          </tbody>
+      <!-- LADDER:END -->
+        </table>
+        <p class="sub" data-i18n="ladder.note">
+          A version that is done is built and tagged. It is not a download: there are none, and
+          there will not be until 1.0.0.
+        </p>
+      </section>
+
+      <section id="honest">
+        <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+        <div class="honest">
+          <h3 data-i18n="honest.transcription.title">A MIDI copy of a mix is a transcription</h3>
+          <p data-i18n="honest.transcription.body">
+            Finding notes in a finished mix is hard, and Flipcopy does it with classic signal
+            processing rather than a model. It will miss some notes and hear some that are not
+            there. It prints what it found, and says what it could not do.
+          </p>
+
+          <h3 data-i18n="honest.chords.title">Chords come back as a progression</h3>
+          <p data-i18n="honest.chords.body">
+            A chord part is printed as the progression it follows, not the exact voicing that was
+            played, and the page says so in so many words.
+          </p>
+
+          <h3 data-i18n="honest.downloads.title">There are no downloads before 1.0.0</h3>
+          <p data-i18n="honest.downloads.body">
+            No beta on this page, no preview build, no early access. A copier that half-works is
+            worse than one that is not there yet.
+          </p>
+
+          <h3 data-i18n="honest.network.title">It never goes online</h3>
+          <p data-i18n="honest.network.body">
+            The plugin and the standalone app contain no networking code at all, and a build gate
+            fails if any is added. A later version may add an update check that is off unless you
+            switch it on, run by a separate program.
+          </p>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          The copies you make are yours, as far as the files you copied were yours to use.
+          Flipcopy's author claims no ownership of them.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+/* Freally MIDI Master — documentation search index.
+   © 2026 Mike Weaver — All Rights Reserved.
+
+   Hand-maintained alongside documentation.html. Each entry is one section:
+   its anchor, its title, and the words worth matching on. Keep it in step when
+   a section is added or renamed — a stale anchor searches to a dead link. */
+
+window.SEARCH_INDEX = [
+  {
+    id: 'formats',
+    title: 'Formats & hosts',
+    body: 'CLAP VST3 AU AudioUnit standalone Ableton Live 12 FL Studio Reaper Bitwig Logic host DAW MIDI generator plugin format',
+  },
+  {
+    id: 'install',
+    title: 'Installing',
+    body: 'install download release plugin folder CommonProgramFiles Library Audio Plug-Ins clap vst3 Windows macOS Linux path',
+  },
+  {
+    id: 'loop',
+    title: 'The core loop',
+    body: 'pick generate hear reroll keep seed workflow getting started first run',
+  },
+  {
+    id: 'roster',
+    title: 'The roster',
+    body: 'combobox autocomplete type to filter arrow dropdown artist genre search fuzzy autosuggest mainstream underground style parameters Metro Boomin OsamaSon trap drill disclaimer descriptive reference era tempo range moods writes does not write parts covered coverage silence empty tab',
+  },
+  {
+    id: 'moods',
+    title: 'Moods',
+    body: 'mood moods any pinned dark bounce melodic minimal dusty jazzy hard cowbell memphis brazilian shuffle ballad barnburner range variety kind of record inherited lineage',
+  },
+  {
+    id: 'own-style',
+    title: 'Your own style, and training it',
+    body: 'original workflow own artist own style build save train training fit fitted kept takes star thirty roster yours inherit extends export import copy samples consent disk space no machine learning offline midi file',
+  },
+  {
+    id: 'pads',
+    title: 'The drum pads',
+    body: 'pad pads drum lane lanes kick snare clap closed hat open hat perc rim crash mute unmute green red dot play audition drag drop sample one-shot shuffle re-roll randomize clear built in swap lane picker layer two per lane remembered per artist',
+  },
+  {
+    id: 'browser',
+    title: 'The sample browser',
+    body: 'browser file explorer categories places place counts count instruments factory expansion expansions drum packs kits one-shots factory packs loops tree folder folders subfolder subfolders library add folder remove star starred favourite favorites yellow reveal windows explorer finder arrow keys up down left right expand collapse retract audition preview reverse backwards waveform wav aiff flac mp3 m4a ogg mid midi rail width persist filter type-to-filter search narrow large library two thousand files fast scroll virtualized missing drive unplugged reconnect check again recent history',
+  },
+  {
+    id: 'midi-import',
+    title: 'Dropping a MIDI file in',
+    body: 'midi mid import drag drop generator song tab arrangement sections split separate parts bass melody countermelody counter chords drums reason routed why filename file name 808 trigger pitch register tempo bpm adopt session gm drum channel overlap onsets voices layered play audition hear preview listen neutral instrument sound',
+  },
+  {
+    id: 'generators',
+    title: 'The six generators',
+    body: 'drums melody countermelody bassline chords song arrangement hats rolls 808 kick snare clap percussion phrase scale degrees key',
+  },
+  {
+    id: 'instrument',
+    title: 'The instrument',
+    body: 'synth synthesiser synthesizer instrument sound preset factory library 225 instruments 69 genres engine wavetable bowed piano reed wind string vocal modal percussion impact signature drum machine keyboard octave velocity typing bed play in hardware controller MIDI input channel transpose pitch bend curve knobs reverb delay drive volume pan envelope save sound category PACK sample rack one-shot swap export normalize polyphony voices',
+  },
+  {
+    id: 'into-your-daw',
+    title: 'Getting it into your DAW',
+    body: 'DAW host drag drop export MIDI mid audio wav track clip Ableton Live FL Studio Reaper Bitwig Logic Pro VST3 CLAP AU multi-track playlist channel route instrument tempo warp acid Windows macOS Linux',
+  },
+  {
+    id: 'export-formats',
+    title: 'Bounced audio',
+    body: 'export bounce audio format WAV AIFF 16-bit 24-bit 32-bit float sample rate 44100 48000 88200 96000 176400 192000 192k stem render acid chunk tempo drag loop warp',
+  },
+  {
+    id: 'song-mode',
+    title: 'Song Mode',
+    body: 'song mode arrangement timeline section intro verse hook chorus bridge outro pre-chorus structure form clip loop tile re-roll reroll lock unlock audition solo mute drill in export stems multi-track marker playhead seek switch-up drop-out fade',
+  },
+  {
+    id: 'tempo',
+    title: 'Tempo, key & auto-sync',
+    body: 'tempo bpm key scale time signature auto-sync host DAW pin precedence follow project 140 92 session chips',
+  },
+  {
+    id: 'seeds',
+    title: 'Seeds & reproducibility',
+    body: 'seed reproducible deterministic copy paste same beat regenerate random fresh identical',
+  },
+  {
+    id: 'presets',
+    title: 'Presets',
+    body: 'preset factory user save load delete named session data directory tempo pin',
+  },
+  {
+    id: 'patterns',
+    title: 'The pattern library',
+    words:
+      'pattern library save saved load notes kit sounds swap file json data directory backup share crash outlives project take keep named',
+  },
+  {
+    id: 'takes',
+    title: 'Your takes, and locking a drum',
+    words:
+      'takes history variation generations back forward step recall seed artist mood bars pins tempo key used lock locked padlock lane re-roll reroll hold L browse browsable persist persists survives restart counter grouped by artist clear empty find what you like',
+  },
+  {
+    id: 'session',
+    title: 'Session state',
+    body: 'session state save project file restore reopen window size persist inputs regeneration arrangement song edited stored',
+  },
+  {
+    id: 'shortcuts',
+    title: 'Keyboard shortcuts',
+    body: 'keyboard shortcut hotkey undo redo ctrl cmd z y right rail K toggle',
+  },
+  {
+    id: 'standalone',
+    title: 'The standalone',
+    body: 'standalone no DAW own window tempo flag command line testing iteration',
+  },
+  {
+    id: 'privacy',
+    title: 'Privacy & the network',
+    body: 'privacy telemetry account cloud offline no outbound connection local network denylist gate crash report never sent web app delivered fetched collaboration room buddy presence STUN exception upload',
+  },
+  {
+    id: 'faq',
+    title: 'Questions people actually ask',
+    body: 'FAQ questions is this AI machine learning training data neural network legal legality copyright infringement sue lawsuit lawyer artist endorsed approved affiliated permission sample clearance sell release commercial monetise monetize distribute royalty own my output original novelty guard plagiarism quote melody stolen phone home offline drum loops one shots where did they come from licence rights',
+  },
+  {
+    id: 'bugs',
+    title: 'Reporting a bug',
+    body: 'bug report crash panic fault email author contact issue host DAW log CLAP VST3 version crashes folder APPDATA Application Support crash log where are the logs recover panel',
+  },
+  {
+    id: 'licence',
+    title: 'Licence',
+    body: 'licence license proprietary source code private all rights reserved not open source redistribute derivatives music is yours royalty attribution',
+  },
+];

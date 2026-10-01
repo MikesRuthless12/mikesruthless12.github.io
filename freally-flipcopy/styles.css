@@ -1,0 +1,663 @@
+/*
+ * Freally Flipcopy — the docs site, built exactly like Freally Oscillate's
+ * (FR-045), dark-only like the app (owner, 2026-09-26: no theme button).
+ *
+ * ⛔⛔ NO CDN, NO ANALYTICS, NO TRACKER, NO EMBEDDED FONT, NO THIRD-PARTY
+ * SCRIPT. The site is as offline-honest as the application, and
+ * `scripts/site.test.mjs` fails on any absolute URL in a `src`, `href` or
+ * `@import` that is not a link a reader clicks.
+ *
+ * ⛔ **The token values are the application's own**, copied from
+ * `src/styles/tokens.css` rather than re-chosen — the site's ground is the
+ * copier's surround, `#090c09`. ⚠ Copied, not imported: the site is static HTML
+ * published by GitHub Pages and cannot import a file that only exists inside a
+ * Vite build, so `scripts/site.test.mjs` compares the values here against
+ * `src/styles/tokens.css` and fails when they drift.
+ *
+ * ⚠ The OS's own fonts, as on Oscillate's site: no `@font-face` and no font
+ * file, so every script the reader's system supports renders at once.
+ */
+
+:root {
+  color-scheme: dark;
+
+  --color-bg: #090c09;
+  --color-surface: #131813;
+  --color-surface-2: #1a211a;
+  --color-border: #27302a;
+  --color-primary: #79d920;
+  --color-primary-hot: #8cf523;
+  --color-on-primary: #090c09;
+  --color-signal: #22d3ee;
+  --color-text: #e8eaf0;
+  --color-text-2: #9aa3b2;
+  --color-text-3: #858fa0;
+  --color-success: #4ade80;
+  --color-warning: #fbbf24;
+  --color-error: #f87171;
+
+  --font-ui:
+    system-ui, -apple-system, 'Segoe UI Variable Text', 'Segoe UI', Roboto, 'Noto Sans',
+    'Helvetica Neue', Arial, sans-serif;
+  --font-display:
+    system-ui, -apple-system, 'Segoe UI Variable Display', 'Segoe UI', Roboto, 'Noto Sans',
+    sans-serif;
+  --font-mono:
+    ui-monospace, 'Cascadia Mono', 'SF Mono', 'DejaVu Sans Mono', Consolas, 'Liberation Mono',
+    monospace;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-12: 3rem;
+
+  --radius-control: 6px;
+  --radius-panel: 10px;
+  --measure: 68ch;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  /* ⚠ A deep link from the search results must not land under the sticky
+     header. This is what makes `#a-section` actually readable. */
+  scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-ui);
+  font-size: 1rem;
+  line-height: 1.6;
+  -webkit-text-size-adjust: 100%;
+}
+
+/* ⛔ RTL is real, not a `direction` attribute over a left-aligned layout.
+ * Everything below uses logical properties, so Arabic mirrors rather than
+ * merely right-aligning. */
+[dir='rtl'] .site-nav a,
+[dir='rtl'] .ladder th,
+[dir='rtl'] .ladder td {
+  text-align: start;
+}
+
+a {
+  color: var(--color-primary);
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+a:hover {
+  color: var(--color-primary-hot);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* ⛔ A keyboard reader lands here first. Without it the whole nav has to be
+ * tabbed through on every page. */
+.skip {
+  position: absolute;
+  inset-inline-start: -9999px;
+  top: 0;
+  padding: var(--space-2) var(--space-4);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  z-index: 20;
+}
+
+.skip:focus {
+  inset-inline-start: 0;
+}
+
+/* ── The header ───────────────────────────────────────────────────────── */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-block-end: 1px solid var(--color-border);
+}
+
+.site-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-family: var(--font-display);
+  font-weight: 650;
+  color: var(--color-text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.wordmark img {
+  width: 28px;
+  height: 28px;
+}
+
+.site-nav {
+  display: flex;
+  gap: var(--space-4);
+  margin-inline-start: auto;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.site-nav a {
+  color: var(--color-text-2);
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.site-nav a:hover,
+.site-nav a[aria-current='page'] {
+  color: var(--color-text);
+}
+
+.site-nav a[aria-current='page'] {
+  text-decoration: underline;
+  text-decoration-color: var(--color-primary);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
+}
+
+select.locale {
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  padding: var(--space-1) var(--space-2);
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* ── Layout ───────────────────────────────────────────────────────────── */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4) var(--space-12);
+}
+
+section {
+  margin-block-end: var(--space-12);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  margin-block: 0 var(--space-4);
+}
+
+h2 {
+  font-size: clamp(1.375rem, 3vw, 1.75rem);
+  margin-block: var(--space-8) var(--space-4);
+  padding-block-end: var(--space-2);
+  border-block-end: 1px solid var(--color-border);
+}
+
+h3 {
+  font-size: 1.125rem;
+  margin-block: var(--space-6) var(--space-2);
+}
+
+p,
+li {
+  max-width: var(--measure);
+}
+
+code,
+kbd {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  background: var(--color-surface-2);
+  border: 1px solid var(--color-border);
+  border-radius: 4px;
+  padding: 0.1em 0.35em;
+}
+
+kbd {
+  box-shadow: 0 1px 0 var(--color-border);
+}
+
+pre {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4);
+  overflow-x: auto;
+}
+
+pre code {
+  background: none;
+  border: none;
+  padding: 0;
+}
+
+/* ── The hero ─────────────────────────────────────────────────────────── */
+
+.hero {
+  text-align: center;
+  padding-block: var(--space-12) var(--space-8);
+}
+
+.hero img.mark {
+  width: 96px;
+  height: 96px;
+}
+
+.hero .tagline {
+  font-size: clamp(1.125rem, 2.5vw, 1.375rem);
+  color: var(--color-text);
+  margin-inline: auto;
+  max-width: 46ch;
+}
+
+.hero .sub {
+  color: var(--color-text-2);
+  margin-inline: auto;
+  max-width: 52ch;
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin-block: var(--space-6);
+}
+
+.chips li {
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  border-radius: 999px;
+  padding: var(--space-1) var(--space-3);
+  font-size: 0.875rem;
+  color: var(--color-text-2);
+  max-width: none;
+}
+
+/* ── The feature grid ─────────────────────────────────────────────────── */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: var(--space-4);
+}
+
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4);
+}
+
+.card h3 {
+  margin-block-start: 0;
+}
+
+.card p {
+  color: var(--color-text-2);
+  margin-block-end: 0;
+  max-width: none;
+}
+
+/* ── The ladder ───────────────────────────────────────────────────────── */
+
+.ladder {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9375rem;
+}
+
+.ladder th,
+.ladder td {
+  text-align: start;
+  padding: var(--space-2) var(--space-3);
+  border-block-end: 1px solid var(--color-border);
+  vertical-align: top;
+}
+
+.ladder th {
+  color: var(--color-text-2);
+  font-weight: 600;
+}
+
+.ladder td:first-child {
+  font-family: var(--font-mono);
+  white-space: nowrap;
+}
+
+/* ⛔ The state is a word as well as a colour. A reader who cannot tell the
+ * green from the grey still reads "done" and "planned". */
+.state {
+  font-size: 0.8125rem;
+  border-radius: 999px;
+  padding: 0.1em 0.6em;
+  border: 1px solid currentcolor;
+  white-space: nowrap;
+}
+
+.state-done {
+  color: var(--color-success);
+}
+
+.state-planned {
+  color: var(--color-text-3);
+}
+
+.state-goal {
+  color: var(--color-primary);
+}
+
+/* ── See it copy: the two copier stories ──────────────────────────────── */
+
+.stories {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--space-6);
+}
+
+.stories figure {
+  margin: 0;
+}
+
+.stories video {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+}
+
+/* The frame the START sits in: exactly the picture, so a position in it is a
+ * position in the video (16:9, the renders' 640 × 360). */
+.story__frame {
+  position: relative;
+  container-type: inline-size;
+}
+
+/* ⛔ The copier's green START, labelled (owner, 2026-09-26: *"an angled
+ * 'Start' … over the green button"*). Centred on the key where the renders
+ * draw it — (388, 266) of 640 × 360 — and turned to the touch panel's 11°
+ * tilt. The key is ten pixels across in the render, so the label is a readable
+ * green tag over it, and it is the button: pressing it plays the story, the
+ * product's own rule. Hidden while the story plays; back when it stops. */
+.story__start {
+  position: absolute;
+  inset-inline-start: 60.66%;
+  inset-block-start: 73.94%;
+  translate: -50% -50%;
+  rotate: 11deg;
+  padding: 0.18em 0.55em;
+  border: 0;
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+  font: 800 max(9px, 2.1cqi) / 1 var(--font-display);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow:
+    0 0 0 2px color-mix(in srgb, var(--color-bg) 70%, transparent),
+    0 0 12px color-mix(in srgb, var(--color-primary) 55%, transparent);
+}
+
+.story__start:hover {
+  background: var(--color-primary-hot);
+}
+
+.story__start:focus-visible {
+  outline: 2px solid var(--color-text);
+  outline-offset: 2px;
+}
+
+.story__start[hidden] {
+  display: none;
+}
+
+.stories figcaption {
+  color: var(--color-text-2);
+  font-size: 0.875rem;
+  margin-block-start: var(--space-2);
+}
+
+/* ── The honest section ───────────────────────────────────────────────── */
+
+.honest {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-inline-start: 3px solid var(--color-warning);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4) var(--space-6);
+}
+
+.honest h3 {
+  margin-block-start: var(--space-4);
+}
+
+.honest > :first-child {
+  margin-block-start: 0;
+}
+
+/* ── The manual ───────────────────────────────────────────────────────── */
+
+.manual {
+  display: grid;
+  grid-template-columns: minmax(200px, 240px) 1fr;
+  gap: var(--space-8);
+  align-items: start;
+}
+
+@media (max-width: 860px) {
+  .manual {
+    grid-template-columns: 1fr;
+  }
+
+  .manual-toc {
+    position: static;
+    max-height: none;
+  }
+}
+
+.manual-toc {
+  position: sticky;
+  top: 5rem;
+  max-height: calc(100vh - 7rem);
+  overflow-y: auto;
+  font-size: 0.9375rem;
+}
+
+.manual-toc ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.manual-toc a {
+  display: block;
+  padding: var(--space-1) var(--space-2);
+  color: var(--color-text-2);
+  text-decoration: none;
+  border-inline-start: 2px solid transparent;
+}
+
+.manual-toc a:hover {
+  color: var(--color-text);
+  border-inline-start-color: var(--color-primary);
+}
+
+/* ⛔⛔ THE ANNOTATED SCREENSHOTS (roadmap TASK-120).
+ *
+ * ⚠ The red box is drawn INTO the picture by the capture pass, never here: it
+ * has to be aligned to the real element, and CSS on this page knows nothing
+ * about where that element was. So this is only the frame around it. */
+figure.shot {
+  margin: var(--space-6) 0;
+  max-width: 100%;
+}
+
+figure.shot img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  background: var(--color-surface);
+}
+
+figure.shot figcaption {
+  color: var(--color-text-2);
+  font-size: 0.875rem;
+  margin-block-start: var(--space-2);
+  max-width: var(--measure);
+}
+
+/* ── Search ───────────────────────────────────────────────────────────── */
+
+.search {
+  position: relative;
+  margin-block-end: var(--space-6);
+}
+
+.search input {
+  width: 100%;
+  max-width: 34rem;
+  background: var(--color-surface-2);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-control);
+  padding: var(--space-2) var(--space-3);
+  font: inherit;
+}
+
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-2) 0 0;
+  max-width: 34rem;
+}
+
+.search-results li {
+  border-block-end: 1px solid var(--color-border);
+  padding: var(--space-2) 0;
+  max-width: none;
+}
+
+.search-results a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.search-results p {
+  margin: var(--space-1) 0 0;
+  color: var(--color-text-2);
+  font-size: 0.875rem;
+  max-width: none;
+}
+
+.search-empty {
+  color: var(--color-text-2);
+  font-size: 0.9375rem;
+}
+
+/* ── The notice a hidden page carries ─────────────────────────────────── */
+
+.notice {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-inline-start: 3px solid var(--color-signal);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4) var(--space-6);
+  margin-block-end: var(--space-8);
+}
+
+.notice.stop {
+  border-inline-start-color: var(--color-error);
+}
+
+/* ── The footer ───────────────────────────────────────────────────────── */
+
+.site-footer {
+  border-block-start: 1px solid var(--color-border);
+  color: var(--color-text-2);
+  font-size: 0.875rem;
+}
+
+.site-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: var(--space-8) var(--space-4);
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4) var(--space-8);
+  justify-content: space-between;
+}
+
+.site-footer p {
+  margin: 0;
+  max-width: 52ch;
+}
+
+/* ⚠ Print: the reader who prints a procedure wants the screenshots and not the
+ * chrome. */
+@media print {
+  .site-header,
+  .site-footer,
+  .search,
+  .manual-toc,
+  .skip {
+    display: none;
+  }
+
+  .manual {
+    grid-template-columns: 1fr;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+  }
+}

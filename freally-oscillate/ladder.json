@@ -1,0 +1,96 @@
+{
+  "$comment": [
+    "⛔⛔ THE PUBLIC VERSION LADDER — TASK-131. ONE LADDER, AND THIS IS IT.",
+    "",
+    "▶ The private roadmap says it in its own words: 'This is the same ladder published",
+    "on the docs site. If one moves, both move.' This file is what makes that",
+    "enforceable rather than remembered — docs/index.html is GENERATED from it, and",
+    "scripts/check-docs-site.mjs compares it against CHANGELOG.md's 'The ladder'",
+    "table on every machine, and against the private roadmap's table as well on a",
+    "machine that has one.",
+    "",
+    "⚠ A rung added here and nowhere else fails the gate. A rung added to CHANGELOG",
+    "and not here fails it too — it is checked in both directions, because a public",
+    "page that is missing a rung and a changelog that has invented one are the same",
+    "kind of lie told from opposite ends.",
+    "",
+    "⛔ 'state' is what the site prints beside each rung and there are exactly three:",
+    "   done    — built and on this branch",
+    "   planned — specified, not built",
+    "   goal    — the destination",
+    "⚠ It is NOT a claim that a tag exists. Only v0.0.1 and v0.4.0 are tagged; the",
+    "site never says 'released', because charter rule 5 means nothing is."
+  ],
+  "rungs": [
+    {
+      "version": "v0.0.1",
+      "state": "done",
+      "summary": "Foundation, the CI spine, the licence and the EULA — and an empty window that already installs on three operating systems."
+    },
+    {
+      "version": "v0.1.0",
+      "state": "done",
+      "summary": "The shell and the audio engine. It looks like Oscillate and it makes a sound."
+    },
+    {
+      "version": "v0.2.0",
+      "state": "done",
+      "summary": "The project and the arrangement view. It is a DAW."
+    },
+    {
+      "version": "v0.2.5",
+      "state": "done",
+      "summary": "The editors — piano roll, drum grid, automation, comping, the Cut, Kata, Session Rewind."
+    },
+    {
+      "version": "v0.3.0",
+      "state": "done",
+      "summary": "Plugin hosting and the stock devices — VST3 and CLAP out of process, and sixty-nine of its own."
+    },
+    {
+      "version": "v0.4.0",
+      "state": "done",
+      "summary": "The writing tools — the File Explorer, Stem-to-Generators and the export path."
+    },
+    {
+      "version": "v0.4.5",
+      "state": "done",
+      "summary": "The web go/no-go, the drop onto the timeline, per-device faces and exclusive audio."
+    },
+    {
+      "version": "v0.5.0",
+      "state": "done",
+      "summary": "The room, core — serverless connection, presence, sync and chat."
+    },
+    {
+      "version": "v0.5.5",
+      "state": "done",
+      "summary": "The room, live — voice, video, screen share, Takeover, Kumite and the Split Sheet."
+    },
+    {
+      "version": "v0.6.0",
+      "state": "planned",
+      "summary": "Identity — the Lyric Lane, Session Timelapse, session cards and the credits page."
+    },
+    {
+      "version": "v0.6.5",
+      "state": "planned",
+      "summary": "The family look and the right instruments — Blender-rendered knobs, faders and buttons, five skins in light and dark, interface sounds, a dark title bar, and one instrument library shared with Freally MIDI Master."
+    },
+    {
+      "version": "v1.0.0b",
+      "state": "planned",
+      "summary": "The public beta, the auto-updater, this site and the illustrated manual. No downloads on this page."
+    },
+    {
+      "version": "v1.0.0RC",
+      "state": "planned",
+      "summary": "Hardening, optimisation and the full review sweep — aimed by what the beta finds."
+    },
+    {
+      "version": "v1.0.0",
+      "state": "goal",
+      "summary": "Stable. And the first downloads that have ever existed."
+    }
+  ]
+}

@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title data-i18n="roster.e6123a9e">Freally MIDI Master — Styles the plugin can generate in</title>
+    <meta data-i18n-attrs="content:roster.ec336309"
+      name="description"
+      content="The musical styles Freally MIDI Master can generate in, searchable by era, genre and tier. Hand-authored style parameters, never trained on anyone's audio. Names are descriptive references only — no affiliation or endorsement."
+    />
+    <!-- ⛔⛔ **NOINDEX, DELIBERATELY, AND IT COSTS THE SEO ON PURPOSE.**
+         TASK-105 built this page as *"the 'we probably got them' proof + SEO
+         surface"*. The proof half is worth keeping; the SEO half is the one
+         thing on this site that uses 2,413 real people's names to pull their
+         search traffic toward a product. Describing a style to somebody already
+         using the tool is nominative use; ranking for their name is using their
+         identity to build a user base, which is the core of what right of
+         publicity covers. Owner's decision, 2026-09-10. Delete this line to
+         reverse it. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
+    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* ⛔ **What makes the full A–Z list affordable.** The browser skips
+         layout and paint for any row that is off screen, so 2,413 rows cost
+         about what the visible dozen cost. The intrinsic size is a row's real
+         height, which keeps the scrollbar proportional while rows are skipped. */
+      table.roster tbody tr {
+        content-visibility: auto;
+        contain-intrinsic-size: auto 38px;
+      }
+
+      /* ⚠ The flagship models are the ones a producer is most likely to be
+         looking for, so the tier column marks them rather than merely naming
+         them. Colour is not the only signal — the word is still there. */
+      .flag-flagship {
+        color: var(--accent-2);
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <nav data-i18n-attrs="aria-label:roster.5b6825d3" class="nav" aria-label="Site">
+      <a data-i18n="roster.70f8bb9a" href="index.html">Home</a>
+      <a data-i18n="roster.fc338f87" href="features.html">Features</a>
+      <a data-i18n="roster.9e9cf322" href="documentation.html">Documentation</a>
+      <a data-i18n="roster.e55198ac" href="roster.html" aria-current="page">Roster</a>
+      <a data-i18n="roster.164b3d48" href="changelog.html">Changelog</a>
+    </nav>
+
+    <main>
+      <h1 data-i18n="roster.40f89a05">The roster</h1>
+      <!-- ⛔ **The sentence is keyed, the element is not.** `#count` is written
+           by `docs-roster.mjs`; swapping this paragraph's innerHTML for a
+           translation would wipe the number it had just put there. -->
+      <p class="summary">
+        <span data-i18n="roster.827703c6">Every artist, producer and genre the plugin models.</span> <strong id="count">Loading…</strong>
+      </p>
+
+      <!-- ⛔ The claim that matters most on this page, and it is not a feature
+           list. Anyone reading a list of artist names beside a music tool will
+           want to know what was done with their music. Nothing was. -->
+      <p data-i18n="roster.8d0c67df" class="note">
+        <strong>These are hand-authored parameters, not training data.</strong> Nobody's audio was
+        analysed to build any of this. Each entry is a set of numbers a human wrote down from
+        published research — tempo ranges, swing, which beats a kick lands on — and the names are
+        used the way a genre name is used, to say what a style sounds like. There is no model
+        trained on anyone here, and the plugin generates original patterns rather than reproducing
+        any recording.
+      </p>
+
+      <p data-i18n="roster.fb1a2b56" class="note">
+        <strong>No affiliation, endorsement, or authorship is implied or claimed.</strong> No artist,
+        producer, label, publisher, or rights-holder listed here has endorsed, sponsored, approved,
+        reviewed, or is connected with this software in any way. No name below is used as a brand or
+        product name, or as a badge of origin for this software or for anything it generates. All
+        trademarks and names are the property of their respective owners.
+        <a href="legal/disclaimer.md">Read the full disclaimer</a>.
+      </p>
+
+      <div class="roster-controls">
+        <!-- ⛔ **The word is keyed, the label is not** — this one wraps the live
+             `#q` input, and replacing it would recreate the box and drop both its
+             listener and whatever the reader had typed. The placeholder travels on
+             the input itself. -->
+        <label>
+          <span data-i18n="roster.bce06414">Search</span>
+          <input data-i18n-attrs="placeholder:roster.e13848fc" id="q" type="search" placeholder="Name, genre or era" autocomplete="off" />
+        </label>
+        <label>
+          <span>Type</span>
+          <select id="type">
+            <option data-i18n="roster.6a720856" value="">All</option>
+            <option data-i18n="roster.1528d87e" value="artist">Artists</option>
+            <option data-i18n="roster.a44fa04f" value="producer">Producers</option>
+            <option data-i18n="roster.96817ade" value="genre">Genres</option>
+          </select>
+        </label>
+        <label>
+          <span>Tier</span>
+          <select id="tier">
+            <option data-i18n="roster.6a720856" value="">All</option>
+            <option data-i18n="roster.ab64ea9b" value="flagship">Flagship</option>
+            <option data-i18n="roster.2dfa6607" value="standard">Standard</option>
+          </select>
+        </label>
+      </div>
+
+      <p id="shown" class="summary" aria-live="polite"></p>
+
+      <table class="roster">
+        <thead>
+          <tr>
+            <th data-i18n="roster.2a864697">Style of</th>
+            <th data-i18n="roster.3deb7456">Type</th>
+            <th data-i18n="roster.f37a89cb">Era</th>
+            <th data-i18n="roster.96817ade">Genres</th>
+            <th data-i18n="roster.5bd44ebe">Tier</th>
+          </tr>
+        </thead>
+        <tbody id="rows">
+          <tr>
+            <td data-i18n="roster.55ac5448" colspan="5">Loading the roster…</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+
+    <script>
+      /* The roster browser (TASK-105).
+
+         ⛔⛔ GENERATED, NEVER HAND-MAINTAINED. `roster.json` is written by
+         `node scripts/docs-roster.mjs`, walking the same registry the CI gate
+         walks; `--check` fails the build when the published file disagrees
+         with `data/`. A hand-written list of 1,318 models would have been
+         wrong the day it shipped and would have gone on being wrong quietly.
+
+         ⚠ THIS COMMENT NAMED A SECOND, WRONG GENERATOR until 2026-09-10 — a
+         `cargo run -p datasetc` line that does not produce this file — while
+         the note further down named the real one. Two statements of one
+         contract, in one file, about the artifact that had already gone 1,095
+         models stale once.
+
+         ⚠ No framework and no build step: this page is served by GitHub Pages
+         straight from the repository, like every other page on this site. */
+      (function () {
+        var rows = document.getElementById('rows');
+        var count = document.getElementById('count');
+        var shown = document.getElementById('shown');
+        var q = document.getElementById('q');
+        var typeFilter = document.getElementById('type');
+        var tier = document.getElementById('tier');
+        var models = [];
+
+        /* ⛔ **The dataset's key is not the word a producer reads.** These cells
+           were drawing the raw values — "flagship", "artist" — which is the
+           dataset's spelling rather than the product's, and it made the tier
+           column look like debug output on a public page. The filter still
+           matches on the raw value; only the rendering changes. */
+        function label(value) {
+          if (!value) return '—';
+          return String(value).charAt(0).toUpperCase() + String(value).slice(1);
+        }
+
+        function escape(text) {
+          return String(text).replace(/[&<>"]/g, function (c) {
+            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
+          });
+        }
+
+        /* ⛔⛔ **EVERY MODEL IS DRAWN, A–Z.** This used to stop at 300 rows,
+           which — sorted by name — meant the published roster silently ended at
+           "Darius Rucker" and 2,100 artists a producer might search for looked
+           like ones this product does not have. The cap was there because 2,413
+           rows is ~12,000 DOM nodes and that is a visible stall on a phone.
+           ▶ The fix is `content-visibility: auto` on the rows (see the sheet
+           above), which lets the browser skip layout and paint for everything
+           off screen — so the list is complete *and* the first screen is cheap.
+           `contain-intrinsic-size` keeps the scrollbar honest while it does. */
+
+        function draw() {
+          var needle = q.value.trim().toLowerCase();
+          var wantType = typeFilter.value;
+          var wantTier = tier.value;
+
+          var matched = models.filter(function (m) {
+            if (wantType && m.type !== wantType) return false;
+            if (wantTier && m.tier !== wantTier) return false;
+            if (!needle) return true;
+            /* ⚠ Built once when the roster lands, not per keystroke — see below. */
+            return m.hay.indexOf(needle) !== -1;
+          });
+
+          shown.textContent =
+            matched.length === models.length
+              ? ''
+              : matched.length + ' of ' + models.length + ' match';
+
+          if (matched.length === 0) {
+            rows.innerHTML = '<tr><td colspan="5">Nothing matches that.</td></tr>';
+            return;
+          }
+
+          rows.innerHTML = matched
+            .map(function (m) {
+              return (
+                '<tr><td>' +
+                escape(m.name) +
+                '</td><td>' +
+                escape(label(m.type)) +
+                '</td><td>' +
+                escape(m.era) +
+                '</td><td>' +
+                escape(m.genres.join(', ')) +
+                '</td><td>' +
+                (m.tier === 'flagship'
+                  ? '<span class="flag-flagship">Flagship</span>'
+                  : escape(label(m.tier))) +
+                '</td></tr>'
+              );
+            })
+            .join('');
+        }
+
+        /* ⛔⛔ **`no-store`, because a cached roster is a roster that lies.**
+           This file is regenerated from `data/` by `scripts/docs-roster.mjs`, and
+           a browser holding yesterday's copy would draw a smaller roster with no
+           sign anything was wrong — which is exactly how it came to be published
+           1,095 models short. */
+        fetch('roster.json', { cache: 'no-store' })
+          .then(function (r) {
+            if (!r.ok) throw new Error(String(r.status));
+            return r.json();
+          })
+          .then(function (data) {
+            models = data.models || [];
+            /* ⚠ **The search haystack, built once.** Doing it inside the filter
+               meant 2,413 joins, concatenations and toLowerCase allocations on
+               every single keystroke. */
+            models.forEach(function (m) {
+              m.hay = (m.name + ' ' + m.era + ' ' + m.genres.join(' ')).toLowerCase();
+            });
+            var artists = models.filter(function (m) { return m.type === 'artist'; }).length;
+            var producers = models.filter(function (m) { return m.type === 'producer'; }).length;
+            var genres = models.filter(function (m) { return m.type === 'genre'; }).length;
+            count.textContent =
+              models.length + ' models — ' + artists + ' artists, ' + producers +
+              ' producers, ' + genres + ' genres.';
+            draw();
+          })
+          .catch(function () {
+            /* ⚠ Says what went wrong rather than sitting on "Loading…" for ever.
+               A page that never resolves is indistinguishable from a slow one.
+
+               ⛔⛔ **AND IT NAMES THE ONE CAUSE A PERSON ACTUALLY HITS.** Opening
+               this page by double-clicking the file gives it a `file://` origin,
+               and browsers refuse `fetch` from there — so the roster is empty,
+               every filter honestly answers "Nothing matches that", and the
+               dropdowns look broken when they are not. The old message said only
+               "did not load", which sent a reader hunting the filters instead of
+               the URL. A readout that does not say *why* is barely better than
+               one that says nothing. */
+            var isFile = location.protocol === 'file:';
+            count.textContent = isFile
+              ? 'The roster cannot load from a file:// page.'
+              : 'The roster could not be loaded.';
+            rows.innerHTML = isFile
+              ? '<tr><td colspan="5">This page is open as a local <strong>file</strong>, and' +
+                ' browsers block data requests from <code>file://</code> pages. Serve the' +
+                ' folder over HTTP instead — for example' +
+                ' <code>python -m http.server 8123</code> inside <code>docs/</code> — and open' +
+                ' <code>http://localhost:8123/roster.html</code>.</td></tr>'
+              : '<tr><td colspan="5">roster.json did not load. Try refreshing.</td></tr>';
+          });
+
+        q.addEventListener('input', draw);
+        typeFilter.addEventListener('change', draw);
+        tier.addEventListener('change', draw);
+      })();
+    </script>
+    <script src="i18n.js"></script>
+  </body>
+</html>

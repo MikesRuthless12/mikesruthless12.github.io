@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <title>Freally</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="freally-flipcopy/favicon-192.png" />
+    <style>
+      :root {
+        color-scheme: dark;
+        --bg: #090c09;
+        --surface: #121712;
+        --border: #263026;
+        --text: #ecf1ec;
+        --primary: #9af524;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        background: var(--bg);
+        color: var(--text);
+        font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif;
+      }
+      main {
+        width: min(100% - 32px, 760px);
+        padding-block: 48px;
+      }
+      h1 {
+        margin: 0 0 32px;
+        text-align: center;
+        font-size: 2.4rem;
+        letter-spacing: 0.02em;
+      }
+      ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 16px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      a {
+        display: grid;
+        justify-items: center;
+        gap: 12px;
+        padding: 24px 12px;
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        background: var(--surface);
+        color: var(--text);
+        font-weight: 600;
+        text-align: center;
+        text-decoration: none;
+      }
+      a:hover,
+      a:focus-visible {
+        border-color: var(--primary);
+        color: var(--primary);
+      }
+      img {
+        width: 96px;
+        height: 96px;
+        border-radius: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Freally</h1>
+      <ul>
+        <li>
+          <a href="freally-flipcopy/index.html"
+            ><img src="freally-flipcopy/favicon-192.png" alt="" />Freally Flipcopy</a
+          >
+        </li>
+        <li>
+          <a href="freally-midi-master/index.html"
+            ><img src="freally-midi-master/favicon-192.png" alt="" />Freally MIDI Master</a
+          >
+        </li>
+        <li>
+          <a href="freally-oscillate/index.html"
+            ><img src="freally-oscillate/favicon-192.png" alt="" />Freally Oscillate</a
+          >
+        </li>
+        <li>
+          <a href="freally-unloop/index.html"
+            ><img src="freally-unloop/favicon-192.png" alt="" />Freally Unloop</a
+          >
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>

@@ -1,0 +1,202 @@
+/* The docs site skeleton. The full site — built the way Freally MIDI Master's
+ * and Freally Oscillate's are — is roadmap TASK-155A; this carries the product
+ * colours from src/styles/tokens.css so the two never look like strangers. */
+
+:root {
+  color-scheme: dark;
+  --bg: #0b0b0d;
+  --surface: #141418;
+  --border: #2a2a33;
+  --primary: #9af524;
+  --text: #ececf1;
+  --text-2: #a0a3b1;
+  --warning: #fbbf24;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color-scheme: light;
+    --bg: #f6f6f8;
+    --surface: #ffffff;
+    --border: #d4d7de;
+    --primary: #447505;
+    --text: #16171c;
+    --text-2: #4a4f5c;
+    --warning: #935c06;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif;
+}
+
+a {
+  color: var(--primary);
+}
+
+.hero,
+main,
+.footer {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+.hero {
+  padding-top: 64px;
+  text-align: center;
+}
+
+.hero__mark {
+  border-radius: 20px;
+}
+
+.hero__name {
+  margin: 12px 0 0;
+  font-size: 2.6rem;
+  letter-spacing: 0.02em;
+}
+
+.hero__line {
+  margin: 4px 0 20px;
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.hero__lede {
+  max-width: 64ch;
+  margin: 0 auto;
+  color: var(--text-2);
+}
+
+.hero__formats {
+  color: var(--text-2);
+  font-size: 0.9rem;
+}
+
+.notice {
+  display: inline-block;
+  margin: 16px 0 0;
+  padding: 10px 16px;
+  border: 1px solid var(--warning);
+  border-radius: 10px;
+  background: var(--surface);
+}
+
+section {
+  margin-top: 48px;
+}
+
+h2 {
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 6px;
+}
+
+.steps li,
+.charter li {
+  margin: 8px 0;
+}
+
+.ladder-wrap {
+  overflow-x: auto;
+}
+
+.ladder {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.92rem;
+}
+
+.ladder th,
+.ladder td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border);
+  text-align: start;
+  vertical-align: top;
+}
+
+.ladder td:first-child {
+  white-space: nowrap;
+  font-family: ui-monospace, 'Cascadia Code', monospace;
+}
+
+.ladder .is-current td {
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.footer {
+  margin-top: 64px;
+  padding-bottom: 48px;
+  color: var(--text-2);
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+/* The keyboard-shortcut sheet (TASK-088): written from the app's own table. */
+.keys {
+  inline-size: 100%;
+  margin-block-end: 1.5rem;
+  border-collapse: collapse;
+}
+
+.keys td {
+  padding-block: 0.25rem;
+  vertical-align: top;
+}
+
+.keys td + td {
+  text-align: end;
+  white-space: nowrap;
+}
+
+kbd {
+  display: inline-block;
+  padding: 0 0.3rem;
+  border: 1px solid currentColor;
+  border-radius: 4px;
+  font-family: ui-monospace, monospace;
+  font-size: 0.85em;
+}
+
+/* The eighteen languages, as plain links: the site runs no script, so each
+ * language is a page of its own (scripts/docs-i18n.mjs). */
+.langs {
+  max-width: 920px;
+  margin: 0 auto;
+  padding: 12px 16px 0;
+}
+
+.langs ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px 12px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.85rem;
+}
+
+.langs a {
+  color: var(--text-2);
+  text-decoration: none;
+}
+
+.langs a:hover,
+.langs a[aria-current='page'] {
+  color: var(--primary);
+}
+
+.langs a[aria-current='page'] {
+  font-weight: 600;
+}
