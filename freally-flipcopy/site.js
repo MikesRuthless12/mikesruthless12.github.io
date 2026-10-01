@@ -361,8 +361,6 @@
     }
   }
 
-  }
-
   /**
    * ⛔ The copier stories wait for a press (owner, 2026-09-26): shown with
    * their sound, never playing by themselves (no `autoplay`, not `muted`), and
