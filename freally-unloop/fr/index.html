@@ -27,29 +27,35 @@
           <img src="../favicon-32.png" alt="" width="28" height="28" />
           <span>Freally Unloop</span>
         </a>
-        <details class="locale">
-          <summary aria-label="Langues">Français</summary>
-          <ul>
-            <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
-            <li><a href="../ar/index.html" lang="ar" hreflang="ar">العربية</a></li>
-            <li><a href="../zh-CN/index.html" lang="zh-CN" hreflang="zh-CN">简体中文</a></li>
-            <li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li>
-            <li><a href="../fr/index.html" lang="fr" hreflang="fr" aria-current="page">Français</a></li>
-            <li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li>
-            <li><a href="../hi/index.html" lang="hi" hreflang="hi">हिन्दी</a></li>
-            <li><a href="../id/index.html" lang="id" hreflang="id">Bahasa Indonesia</a></li>
-            <li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li>
-            <li><a href="../ja/index.html" lang="ja" hreflang="ja">日本語</a></li>
-            <li><a href="../ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
-            <li><a href="../pl/index.html" lang="pl" hreflang="pl">Polski</a></li>
-            <li><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
-            <li><a href="../ru/index.html" lang="ru" hreflang="ru">Русский</a></li>
-            <li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li>
-            <li><a href="../tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
-            <li><a href="../uk/index.html" lang="uk" hreflang="uk">Українська</a></li>
-            <li><a href="../vi/index.html" lang="vi" hreflang="vi">Tiếng Việt</a></li>
-          </ul>
-        </details>
+        <div class="site-header-end">
+          <nav class="site-nav" aria-label="Site">
+            <a href="index.html" aria-current="page">Accueil</a>
+            <a href="features.html">Fonctionnalités</a>
+          </nav>
+          <details class="locale">
+            <summary aria-label="Langues">Français</summary>
+            <ul>
+              <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
+              <li><a href="../ar/index.html" lang="ar" hreflang="ar">العربية</a></li>
+              <li><a href="../zh-CN/index.html" lang="zh-CN" hreflang="zh-CN">简体中文</a></li>
+              <li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li>
+              <li><a href="../fr/index.html" lang="fr" hreflang="fr" aria-current="page">Français</a></li>
+              <li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li>
+              <li><a href="../hi/index.html" lang="hi" hreflang="hi">हिन्दी</a></li>
+              <li><a href="../id/index.html" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+              <li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li>
+              <li><a href="../ja/index.html" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="../ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="../pl/index.html" lang="pl" hreflang="pl">Polski</a></li>
+              <li><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
+              <li><a href="../ru/index.html" lang="ru" hreflang="ru">Русский</a></li>
+              <li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li>
+              <li><a href="../tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
+              <li><a href="../uk/index.html" lang="uk" hreflang="uk">Українська</a></li>
+              <li><a href="../vi/index.html" lang="vi" hreflang="vi">Tiếng Việt</a></li>
+            </ul>
+          </details>
+        </div>
       </div>
     </header>
     <!-- LANGS:END -->
@@ -91,32 +97,32 @@
         <div class="ladder-wrap">
           <table class="ladder">
             <thead>
-              <tr><th scope="col">Version</th><th scope="col">Étape</th><th scope="col">Ce qui arrive</th></tr>
+              <tr><th scope="col">Version</th><th scope="col">Étape</th><th scope="col">Ce qui arrive</th><th scope="col">Statut</th></tr>
             </thead>
             <tbody>
-              <tr data-version="v0.1.0" data-build="F — Foundation"><td>v0.1.0</td><td>F — Les fondations</td><td>Le plugin (CLAP, VST3, AU) et l’application autonome se chargent et laissent passer l’audio ; l’ossature de l’éditeur, les jetons de design, 18 langues, tous les contrôles qualité, la CI locale sous Windows et Linux, les validateurs de plugins, les tests navigateur.</td></tr>
-              <tr data-version="v0.2.0" data-build="P — The Planner"><td>v0.2.0</td><td>P — Le planificateur</td><td>N’importe lequel des 2 413 artistes, producteurs et genres devient un plan d’arrangement déterministe, avec plusieurs modes par genre.</td></tr>
-              <tr data-version="v0.3.0" data-build="M — The magic moment"><td>v0.3.0</td><td>M — Le moment magique</td><td>Une seule instance sur un beat en boucle joue tout le morceau en direct — sans clics, sans latence, synchronisée avec votre DAW.</td></tr>
-              <tr data-version="v0.4.0" data-build="R — Roles &amp; the Conductor"><td>v0.4.0</td><td>R — Les rôles &amp; le chef d’orchestre</td><td>Une instance par partie, dirigées comme un seul morceau, avec la table de mixage complète.</td></tr>
-              <tr data-version="v0.5.0" data-build="C — Capture, preview &amp; print"><td>v0.5.0</td><td>C — Capture, pré-écoute &amp; rendu</td><td>Capture, pré-écoute dans Unloop, rendu en WAV/AIFF/FLAC/MP3, glisser-déposer, projets de boucles et la Bibliothèque de boucles — parcourir, écouter et découper vos boucles, rouvrir les projets récents — le premier produit complet : le MVP.</td></tr>
-              <tr class="is-current" data-version="v0.6.0" data-build="T — The timeline"><td>v0.6.0</td><td>T — La timeline</td><td>Déplacer, copier, scinder et redimensionner les clips ; fondus, faders et automation ; verrouiller et relancer ; annuler et rétablir à l’infini ; l’étagère des arrangements et les fichiers <code>.unarr</code> ; chaque modification au clavier. <em>Actuelle.</em></td></tr>
-              <tr data-version="v0.6.5" data-build="L — The look"><td>v0.6.5</td><td>L — L’apparence</td><td>Potentiomètres, faders et boutons rendus dans Blender, cinq skins en clair et en sombre, des sons d’interface et une barre de titre sombre — identiques dans chaque app Freally.</td></tr>
-              <tr data-version="v0.7.0" data-build="X — MIDI"><td>v0.7.0</td><td>X — MIDI</td><td>Audio vers MIDI, boucles MIDI en entrée, le modèle de morceau MIDI, le Docteur vélocité, l’export MIDI par glisser-déposer.</td></tr>
-              <tr data-version="v0.8.0" data-build="S — Standalone &amp; web"><td>v0.8.0</td><td>S — Application autonome &amp; web</td><td>Le mode pistes séparées dans l’application autonome et l’application web, l’adoption du tempo, le Docteur boucle.</td></tr>
-              <tr data-version="v0.9.0" data-build="E — Expression &amp; the Doctor"><td>v0.9.0</td><td>E — Expression &amp; le Docteur</td><td>Rêver à nouveau, effets de transition synthétisés, changements de beat, le Docteur arrangement, modèles, apprentissage MIDI.</td></tr>
-              <tr data-version="v0.10.0" data-build="D — The dataset at scale"><td>v0.10.0</td><td>D — Le jeu de données à grande échelle</td><td>Chaque genre en plusieurs modes, des centaines d’artistes et de producteurs phares, chaque nom résolu honnêtement.</td></tr>
-              <tr data-version="v1.0.0b" data-build="H — Beta: hardened"><td>v1.0.0b</td><td>H — Bêta : renforcée</td><td>Fonctionnellement complète : cas limites, accessibilité, 18 langues, budgets de performance, installateurs pour trois systèmes.</td></tr>
-              <tr data-version="v1.0.0-rc" data-build="Release candidate"><td>v1.0.0-rc</td><td>Version candidate</td><td>Relue de fond en comble avec chaque bug corrigé, puis testée à la main dans de vraies DAW sur chaque système disponible — avec l’application web complète et ce site terminés.</td></tr>
-              <tr data-version="v1.0.0" data-build="The release"><td>v1.0.0</td><td>La sortie</td><td>Les téléchargements s’ouvrent, et l’application web est mise en ligne.</td></tr>
-              <tr data-version="v1.1.0" data-build="Post-1.0 Build 1"><td>v1.1.0</td><td>Étape 1 après la 1.0</td><td>Profondeur des variations.</td></tr>
-              <tr data-version="v1.2.0" data-build="Post-1.0 Build 2"><td>v1.2.0</td><td>Étape 2 après la 1.0</td><td>Profondeur des gestes.</td></tr>
-              <tr data-version="v1.3.0" data-build="Post-1.0 Build 3"><td>v1.3.0</td><td>Étape 3 après la 1.0</td><td>Un arrangement attentif au chant.</td></tr>
-              <tr data-version="v1.4.0" data-build="Post-1.0 Build 4"><td>v1.4.0</td><td>Étape 4 après la 1.0</td><td>Jeu live &amp; DJ.</td></tr>
-              <tr data-version="v1.5.0" data-build="Post-1.0 Build 5"><td>v1.5.0</td><td>Étape 5 après la 1.0</td><td>Le pont vers Freally MIDI Master.</td></tr>
-              <tr data-version="v1.6.0" data-build="Post-1.0 Build 6"><td>v1.6.0</td><td>Étape 6 après la 1.0</td><td>Profondeur du catalogue &amp; du jeu de données.</td></tr>
-              <tr data-version="v1.7.0" data-build="Post-1.0 Build 7"><td>v1.7.0</td><td>Étape 7 après la 1.0</td><td>Export &amp; interopérabilité.</td></tr>
-              <tr data-version="v1.8.0" data-build="Post-1.0 Build 8"><td>v1.8.0</td><td>Étape 8 après la 1.0</td><td>Profondeur du flux de travail &amp; de l’accessibilité.</td></tr>
-              <tr data-version="v1.9.0" data-build="Post-1.0 Build 9"><td>v1.9.0</td><td>Étape 9 après la 1.0</td><td>Intégration Freally.</td></tr>
+              <tr data-version="v0.1.0" data-build="F — Foundation"><td>v0.1.0</td><td>F — Les fondations</td><td>Le plugin (CLAP, VST3, AU) et l’application autonome se chargent et laissent passer l’audio ; l’ossature de l’éditeur, les jetons de design, 18 langues, tous les contrôles qualité, la CI locale sous Windows et Linux, les validateurs de plugins, les tests navigateur.</td><td class="state state--done">Terminé</td></tr>
+              <tr data-version="v0.2.0" data-build="P — The Planner"><td>v0.2.0</td><td>P — Le planificateur</td><td>N’importe lequel des 2 413 artistes, producteurs et genres devient un plan d’arrangement déterministe, avec plusieurs modes par genre.</td><td class="state state--done">Terminé</td></tr>
+              <tr data-version="v0.3.0" data-build="M — The magic moment"><td>v0.3.0</td><td>M — Le moment magique</td><td>Une seule instance sur un beat en boucle joue tout le morceau en direct — sans clics, sans latence, synchronisée avec votre DAW.</td><td class="state state--done">Terminé</td></tr>
+              <tr data-version="v0.4.0" data-build="R — Roles &amp; the Conductor"><td>v0.4.0</td><td>R — Les rôles &amp; le chef d’orchestre</td><td>Une instance par partie, dirigées comme un seul morceau, avec la table de mixage complète.</td><td class="state state--done">Terminé</td></tr>
+              <tr data-version="v0.5.0" data-build="C — Capture, preview &amp; print"><td>v0.5.0</td><td>C — Capture, pré-écoute &amp; rendu</td><td>Capture, pré-écoute dans Unloop, rendu en WAV/AIFF/FLAC/MP3, glisser-déposer, projets de boucles et la Bibliothèque de boucles — parcourir, écouter et découper vos boucles, rouvrir les projets récents — le premier produit complet : le MVP.</td><td class="state state--done">Terminé</td></tr>
+              <tr class="is-current" data-version="v0.6.0" data-build="T — The timeline"><td>v0.6.0</td><td>T — La timeline</td><td>Déplacer, copier, scinder et redimensionner les clips ; fondus, faders et automation ; verrouiller et relancer ; annuler et rétablir à l’infini ; l’étagère des arrangements et les fichiers <code>.unarr</code> ; chaque modification au clavier. <em>Actuelle.</em></td><td class="state state--done">Terminé</td></tr>
+              <tr data-version="v0.6.5" data-build="L — The look"><td>v0.6.5</td><td>L — L’apparence</td><td>Potentiomètres, faders et boutons rendus dans Blender, cinq skins en clair et en sombre, des sons d’interface et une barre de titre sombre — identiques dans chaque app Freally.</td><td class="state">Prévu</td></tr>
+              <tr data-version="v0.7.0" data-build="X — MIDI"><td>v0.7.0</td><td>X — MIDI</td><td>Audio vers MIDI, boucles MIDI en entrée, le modèle de morceau MIDI, le Docteur vélocité, l’export MIDI par glisser-déposer.</td><td class="state">Prévu</td></tr>
+              <tr data-version="v0.8.0" data-build="S — Standalone &amp; web"><td>v0.8.0</td><td>S — Application autonome &amp; web</td><td>Le mode pistes séparées dans l’application autonome et l’application web, l’adoption du tempo, le Docteur boucle.</td><td class="state">Prévu</td></tr>
+              <tr data-version="v0.9.0" data-build="E — Expression &amp; the Doctor"><td>v0.9.0</td><td>E — Expression &amp; le Docteur</td><td>Rêver à nouveau, effets de transition synthétisés, changements de beat, le Docteur arrangement, modèles, apprentissage MIDI.</td><td class="state">Prévu</td></tr>
+              <tr data-version="v0.10.0" data-build="D — The dataset at scale"><td>v0.10.0</td><td>D — Le jeu de données à grande échelle</td><td>Chaque genre en plusieurs modes, des centaines d’artistes et de producteurs phares, chaque nom résolu honnêtement.</td><td class="state">Prévu</td></tr>
+              <tr data-version="v1.0.0b" data-build="H — Beta: hardened"><td>v1.0.0b</td><td>H — Bêta : renforcée</td><td>Fonctionnellement complète : cas limites, accessibilité, 18 langues, budgets de performance, installateurs pour trois systèmes.</td><td class="state">Prévu</td></tr>
+              <tr data-version="v1.0.0-rc" data-build="Release candidate"><td>v1.0.0-rc</td><td>Version candidate</td><td>Relue de fond en comble avec chaque bug corrigé, puis testée à la main dans de vraies DAW sur chaque système disponible — avec l’application web complète et ce site terminés.</td><td class="state">Prévu</td></tr>
+              <tr data-version="v1.0.0" data-build="The release"><td>v1.0.0</td><td>La sortie</td><td>Les téléchargements s’ouvrent, et l’application web est mise en ligne.</td><td class="state state--goal">L’objectif</td></tr>
+              <tr data-version="v1.1.0" data-build="Post-1.0 Build 1"><td>v1.1.0</td><td>Étape 1 après la 1.0</td><td>Profondeur des variations.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.2.0" data-build="Post-1.0 Build 2"><td>v1.2.0</td><td>Étape 2 après la 1.0</td><td>Profondeur des gestes.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.3.0" data-build="Post-1.0 Build 3"><td>v1.3.0</td><td>Étape 3 après la 1.0</td><td>Un arrangement attentif au chant.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.4.0" data-build="Post-1.0 Build 4"><td>v1.4.0</td><td>Étape 4 après la 1.0</td><td>Jeu live &amp; DJ.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.5.0" data-build="Post-1.0 Build 5"><td>v1.5.0</td><td>Étape 5 après la 1.0</td><td>Le pont vers Freally MIDI Master.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.6.0" data-build="Post-1.0 Build 6"><td>v1.6.0</td><td>Étape 6 après la 1.0</td><td>Profondeur du catalogue &amp; du jeu de données.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.7.0" data-build="Post-1.0 Build 7"><td>v1.7.0</td><td>Étape 7 après la 1.0</td><td>Export &amp; interopérabilité.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.8.0" data-build="Post-1.0 Build 8"><td>v1.8.0</td><td>Étape 8 après la 1.0</td><td>Profondeur du flux de travail &amp; de l’accessibilité.</td><td class="state">Après la 1.0</td></tr>
+              <tr data-version="v1.9.0" data-build="Post-1.0 Build 9"><td>v1.9.0</td><td>Étape 9 après la 1.0</td><td>Intégration Freally.</td><td class="state">Après la 1.0</td></tr>
             </tbody>
           </table>
         </div>

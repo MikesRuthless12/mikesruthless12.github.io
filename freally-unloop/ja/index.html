@@ -27,29 +27,35 @@
           <img src="../favicon-32.png" alt="" width="28" height="28" />
           <span>Freally Unloop</span>
         </a>
-        <details class="locale">
-          <summary aria-label="言語">日本語</summary>
-          <ul>
-            <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
-            <li><a href="../ar/index.html" lang="ar" hreflang="ar">العربية</a></li>
-            <li><a href="../zh-CN/index.html" lang="zh-CN" hreflang="zh-CN">简体中文</a></li>
-            <li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li>
-            <li><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a></li>
-            <li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li>
-            <li><a href="../hi/index.html" lang="hi" hreflang="hi">हिन्दी</a></li>
-            <li><a href="../id/index.html" lang="id" hreflang="id">Bahasa Indonesia</a></li>
-            <li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li>
-            <li><a href="../ja/index.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></li>
-            <li><a href="../ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
-            <li><a href="../pl/index.html" lang="pl" hreflang="pl">Polski</a></li>
-            <li><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
-            <li><a href="../ru/index.html" lang="ru" hreflang="ru">Русский</a></li>
-            <li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li>
-            <li><a href="../tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
-            <li><a href="../uk/index.html" lang="uk" hreflang="uk">Українська</a></li>
-            <li><a href="../vi/index.html" lang="vi" hreflang="vi">Tiếng Việt</a></li>
-          </ul>
-        </details>
+        <div class="site-header-end">
+          <nav class="site-nav" aria-label="サイト">
+            <a href="index.html" aria-current="page">ホーム</a>
+            <a href="features.html">機能</a>
+          </nav>
+          <details class="locale">
+            <summary aria-label="言語">日本語</summary>
+            <ul>
+              <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
+              <li><a href="../ar/index.html" lang="ar" hreflang="ar">العربية</a></li>
+              <li><a href="../zh-CN/index.html" lang="zh-CN" hreflang="zh-CN">简体中文</a></li>
+              <li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li>
+              <li><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a></li>
+              <li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li>
+              <li><a href="../hi/index.html" lang="hi" hreflang="hi">हिन्दी</a></li>
+              <li><a href="../id/index.html" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+              <li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li>
+              <li><a href="../ja/index.html" lang="ja" hreflang="ja" aria-current="page">日本語</a></li>
+              <li><a href="../ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="../pl/index.html" lang="pl" hreflang="pl">Polski</a></li>
+              <li><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
+              <li><a href="../ru/index.html" lang="ru" hreflang="ru">Русский</a></li>
+              <li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li>
+              <li><a href="../tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
+              <li><a href="../uk/index.html" lang="uk" hreflang="uk">Українська</a></li>
+              <li><a href="../vi/index.html" lang="vi" hreflang="vi">Tiếng Việt</a></li>
+            </ul>
+          </details>
+        </div>
       </div>
     </header>
     <!-- LANGS:END -->
@@ -91,32 +97,32 @@
         <div class="ladder-wrap">
           <table class="ladder">
             <thead>
-              <tr><th scope="col">バージョン</th><th scope="col">ビルド</th><th scope="col">含まれるもの</th></tr>
+              <tr><th scope="col">バージョン</th><th scope="col">ビルド</th><th scope="col">含まれるもの</th><th scope="col">状況</th></tr>
             </thead>
             <tbody>
-              <tr data-version="v0.1.0" data-build="F — Foundation"><td>v0.1.0</td><td>F — 土台</td><td>プラグイン（CLAP、VST3、AU）とスタンドアロンが読み込まれ、オーディオを通します。エディターの外枠、デザイントークン、18 言語、すべての品質ゲート、Windows と Linux でのローカル CI、プラグインバリデーター、ブラウザーテスト。</td></tr>
-              <tr data-version="v0.2.0" data-build="P — The Planner"><td>v0.2.0</td><td>P — プランナー</td><td>2,413 のアーティスト、プロデューサー、ジャンルのどれもが決定論的なアレンジプランになり、ジャンルごとに複数のモードがあります。</td></tr>
-              <tr data-version="v0.3.0" data-build="M — The magic moment"><td>v0.3.0</td><td>M — 魔法の瞬間</td><td>ループするビート上の 1 つのインスタンスが、曲全体をライブで演奏します — クリックノイズなし、レイテンシーゼロ、DAW と同期。</td></tr>
-              <tr data-version="v0.4.0" data-build="R — Roles &amp; the Conductor"><td>v0.4.0</td><td>R — ロールとコンダクター</td><td>パートごとに 1 つのインスタンスを置き、1 曲としてまとめて指揮し、フルコンソールを備えます。</td></tr>
-              <tr data-version="v0.5.0" data-build="C — Capture, preview &amp; print"><td>v0.5.0</td><td>C — キャプチャ、プレビュー、バウンス</td><td>キャプチャ、Unloop 内でのプレビュー、WAV/AIFF/FLAC/MP3 へのバウンス、ドラッグでの書き出し、ループプロジェクト、そしてループライブラリ — ループを閲覧・試聴・カットし、最近のプロジェクトを開き直す — 初めての完全な製品、MVP。</td></tr>
-              <tr class="is-current" data-version="v0.6.0" data-build="T — The timeline"><td>v0.6.0</td><td>T — タイムライン</td><td>クリップの移動、コピー、分割、リサイズ。フェード、フェーダー、オートメーション。ロックと引き直し。無制限の元に戻す／やり直す。アレンジシェルフと <code>.unarr</code> ファイル。すべての編集をキーボードから。<em>現在の段階。</em></td></tr>
-              <tr data-version="v0.6.5" data-build="L — The look"><td>v0.6.5</td><td>L — 見た目</td><td>Blender でレンダリングしたノブ、フェーダー、ボタン、ライトとダークの 5 つのスキン、インターフェースサウンド、ダークなタイトルバー — Freally のすべてのアプリで共通です。</td></tr>
-              <tr data-version="v0.7.0" data-build="X — MIDI"><td>v0.7.0</td><td>X — MIDI</td><td>オーディオから MIDI への変換、MIDI ループの読み込み、MIDI ソングテンプレート、ベロシティドクター、MIDI のドラッグ書き出し。</td></tr>
-              <tr data-version="v0.8.0" data-build="S — Standalone &amp; web"><td>v0.8.0</td><td>S — スタンドアロンと Web</td><td>スタンドアロンと Web アプリのステムモード、テンポ追従、ループドクター。</td></tr>
-              <tr data-version="v0.9.0" data-build="E — Expression &amp; the Doctor"><td>v0.9.0</td><td>E — 表現とドクター</td><td>リ・ドリーム、合成によるトランジション FX、ビートスイッチ、アレンジドクター、テンプレート、MIDI ラーン。</td></tr>
-              <tr data-version="v0.10.0" data-build="D — The dataset at scale"><td>v0.10.0</td><td>D — 大規模なデータセット</td><td>すべてのジャンルを複数のモードで、数百人の代表的なアーティストとプロデューサー、そしてすべての名前を正直に解決。</td></tr>
-              <tr data-version="v1.0.0b" data-build="H — Beta: hardened"><td>v1.0.0b</td><td>H — ベータ：堅牢化</td><td>機能完成：エッジケース、アクセシビリティ、18 言語、パフォーマンス予算、3 つのシステム向けのインストーラー。</td></tr>
-              <tr data-version="v1.0.0-rc" data-build="Release candidate"><td>v1.0.0-rc</td><td>リリース候補</td><td>隅々までレビューしてすべてのバグを修正し、利用できるすべてのシステム上の実際の DAW で手作業でテスト — 完成した Web アプリとこのサイトも仕上げて。</td></tr>
-              <tr data-version="v1.0.0" data-build="The release"><td>v1.0.0</td><td>正式リリース</td><td>ダウンロードが始まり、Web アプリが公開されます。</td></tr>
-              <tr data-version="v1.1.0" data-build="Post-1.0 Build 1"><td>v1.1.0</td><td>1.0 以降 ビルド 1</td><td>バリエーションの深化。</td></tr>
-              <tr data-version="v1.2.0" data-build="Post-1.0 Build 2"><td>v1.2.0</td><td>1.0 以降 ビルド 2</td><td>ムーブの深化。</td></tr>
-              <tr data-version="v1.3.0" data-build="Post-1.0 Build 3"><td>v1.3.0</td><td>1.0 以降 ビルド 3</td><td>ボーカルを考慮したアレンジ。</td></tr>
-              <tr data-version="v1.4.0" data-build="Post-1.0 Build 4"><td>v1.4.0</td><td>1.0 以降 ビルド 4</td><td>パフォーマンスと DJ。</td></tr>
-              <tr data-version="v1.5.0" data-build="Post-1.0 Build 5"><td>v1.5.0</td><td>1.0 以降 ビルド 5</td><td>Freally MIDI Master ブリッジ。</td></tr>
-              <tr data-version="v1.6.0" data-build="Post-1.0 Build 6"><td>v1.6.0</td><td>1.0 以降 ビルド 6</td><td>ロスターとデータセットの深化。</td></tr>
-              <tr data-version="v1.7.0" data-build="Post-1.0 Build 7"><td>v1.7.0</td><td>1.0 以降 ビルド 7</td><td>書き出しと相互運用。</td></tr>
-              <tr data-version="v1.8.0" data-build="Post-1.0 Build 8"><td>v1.8.0</td><td>1.0 以降 ビルド 8</td><td>ワークフローとアクセシビリティの深化。</td></tr>
-              <tr data-version="v1.9.0" data-build="Post-1.0 Build 9"><td>v1.9.0</td><td>1.0 以降 ビルド 9</td><td>Freally との統合。</td></tr>
+              <tr data-version="v0.1.0" data-build="F — Foundation"><td>v0.1.0</td><td>F — 土台</td><td>プラグイン（CLAP、VST3、AU）とスタンドアロンが読み込まれ、オーディオを通します。エディターの外枠、デザイントークン、18 言語、すべての品質ゲート、Windows と Linux でのローカル CI、プラグインバリデーター、ブラウザーテスト。</td><td class="state state--done">完了</td></tr>
+              <tr data-version="v0.2.0" data-build="P — The Planner"><td>v0.2.0</td><td>P — プランナー</td><td>2,413 のアーティスト、プロデューサー、ジャンルのどれもが決定論的なアレンジプランになり、ジャンルごとに複数のモードがあります。</td><td class="state state--done">完了</td></tr>
+              <tr data-version="v0.3.0" data-build="M — The magic moment"><td>v0.3.0</td><td>M — 魔法の瞬間</td><td>ループするビート上の 1 つのインスタンスが、曲全体をライブで演奏します — クリックノイズなし、レイテンシーゼロ、DAW と同期。</td><td class="state state--done">完了</td></tr>
+              <tr data-version="v0.4.0" data-build="R — Roles &amp; the Conductor"><td>v0.4.0</td><td>R — ロールとコンダクター</td><td>パートごとに 1 つのインスタンスを置き、1 曲としてまとめて指揮し、フルコンソールを備えます。</td><td class="state state--done">完了</td></tr>
+              <tr data-version="v0.5.0" data-build="C — Capture, preview &amp; print"><td>v0.5.0</td><td>C — キャプチャ、プレビュー、バウンス</td><td>キャプチャ、Unloop 内でのプレビュー、WAV/AIFF/FLAC/MP3 へのバウンス、ドラッグでの書き出し、ループプロジェクト、そしてループライブラリ — ループを閲覧・試聴・カットし、最近のプロジェクトを開き直す — 初めての完全な製品、MVP。</td><td class="state state--done">完了</td></tr>
+              <tr class="is-current" data-version="v0.6.0" data-build="T — The timeline"><td>v0.6.0</td><td>T — タイムライン</td><td>クリップの移動、コピー、分割、リサイズ。フェード、フェーダー、オートメーション。ロックと引き直し。無制限の元に戻す／やり直す。アレンジシェルフと <code>.unarr</code> ファイル。すべての編集をキーボードから。<em>現在の段階。</em></td><td class="state state--done">完了</td></tr>
+              <tr data-version="v0.6.5" data-build="L — The look"><td>v0.6.5</td><td>L — 見た目</td><td>Blender でレンダリングしたノブ、フェーダー、ボタン、ライトとダークの 5 つのスキン、インターフェースサウンド、ダークなタイトルバー — Freally のすべてのアプリで共通です。</td><td class="state">予定</td></tr>
+              <tr data-version="v0.7.0" data-build="X — MIDI"><td>v0.7.0</td><td>X — MIDI</td><td>オーディオから MIDI への変換、MIDI ループの読み込み、MIDI ソングテンプレート、ベロシティドクター、MIDI のドラッグ書き出し。</td><td class="state">予定</td></tr>
+              <tr data-version="v0.8.0" data-build="S — Standalone &amp; web"><td>v0.8.0</td><td>S — スタンドアロンと Web</td><td>スタンドアロンと Web アプリのステムモード、テンポ追従、ループドクター。</td><td class="state">予定</td></tr>
+              <tr data-version="v0.9.0" data-build="E — Expression &amp; the Doctor"><td>v0.9.0</td><td>E — 表現とドクター</td><td>リ・ドリーム、合成によるトランジション FX、ビートスイッチ、アレンジドクター、テンプレート、MIDI ラーン。</td><td class="state">予定</td></tr>
+              <tr data-version="v0.10.0" data-build="D — The dataset at scale"><td>v0.10.0</td><td>D — 大規模なデータセット</td><td>すべてのジャンルを複数のモードで、数百人の代表的なアーティストとプロデューサー、そしてすべての名前を正直に解決。</td><td class="state">予定</td></tr>
+              <tr data-version="v1.0.0b" data-build="H — Beta: hardened"><td>v1.0.0b</td><td>H — ベータ：堅牢化</td><td>機能完成：エッジケース、アクセシビリティ、18 言語、パフォーマンス予算、3 つのシステム向けのインストーラー。</td><td class="state">予定</td></tr>
+              <tr data-version="v1.0.0-rc" data-build="Release candidate"><td>v1.0.0-rc</td><td>リリース候補</td><td>隅々までレビューしてすべてのバグを修正し、利用できるすべてのシステム上の実際の DAW で手作業でテスト — 完成した Web アプリとこのサイトも仕上げて。</td><td class="state">予定</td></tr>
+              <tr data-version="v1.0.0" data-build="The release"><td>v1.0.0</td><td>正式リリース</td><td>ダウンロードが始まり、Web アプリが公開されます。</td><td class="state state--goal">目標</td></tr>
+              <tr data-version="v1.1.0" data-build="Post-1.0 Build 1"><td>v1.1.0</td><td>1.0 以降 ビルド 1</td><td>バリエーションの深化。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.2.0" data-build="Post-1.0 Build 2"><td>v1.2.0</td><td>1.0 以降 ビルド 2</td><td>ムーブの深化。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.3.0" data-build="Post-1.0 Build 3"><td>v1.3.0</td><td>1.0 以降 ビルド 3</td><td>ボーカルを考慮したアレンジ。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.4.0" data-build="Post-1.0 Build 4"><td>v1.4.0</td><td>1.0 以降 ビルド 4</td><td>パフォーマンスと DJ。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.5.0" data-build="Post-1.0 Build 5"><td>v1.5.0</td><td>1.0 以降 ビルド 5</td><td>Freally MIDI Master ブリッジ。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.6.0" data-build="Post-1.0 Build 6"><td>v1.6.0</td><td>1.0 以降 ビルド 6</td><td>ロスターとデータセットの深化。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.7.0" data-build="Post-1.0 Build 7"><td>v1.7.0</td><td>1.0 以降 ビルド 7</td><td>書き出しと相互運用。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.8.0" data-build="Post-1.0 Build 8"><td>v1.8.0</td><td>1.0 以降 ビルド 8</td><td>ワークフローとアクセシビリティの深化。</td><td class="state">1.0 以降</td></tr>
+              <tr data-version="v1.9.0" data-build="Post-1.0 Build 9"><td>v1.9.0</td><td>1.0 以降 ビルド 9</td><td>Freally との統合。</td><td class="state">1.0 以降</td></tr>
             </tbody>
           </table>
         </div>

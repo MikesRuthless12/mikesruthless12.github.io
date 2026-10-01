@@ -27,29 +27,35 @@
           <img src="../favicon-32.png" alt="" width="28" height="28" />
           <span>Freally Unloop</span>
         </a>
-        <details class="locale">
-          <summary aria-label="Языки">Русский</summary>
-          <ul>
-            <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
-            <li><a href="../ar/index.html" lang="ar" hreflang="ar">العربية</a></li>
-            <li><a href="../zh-CN/index.html" lang="zh-CN" hreflang="zh-CN">简体中文</a></li>
-            <li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li>
-            <li><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a></li>
-            <li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li>
-            <li><a href="../hi/index.html" lang="hi" hreflang="hi">हिन्दी</a></li>
-            <li><a href="../id/index.html" lang="id" hreflang="id">Bahasa Indonesia</a></li>
-            <li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li>
-            <li><a href="../ja/index.html" lang="ja" hreflang="ja">日本語</a></li>
-            <li><a href="../ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
-            <li><a href="../pl/index.html" lang="pl" hreflang="pl">Polski</a></li>
-            <li><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
-            <li><a href="../ru/index.html" lang="ru" hreflang="ru" aria-current="page">Русский</a></li>
-            <li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li>
-            <li><a href="../tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
-            <li><a href="../uk/index.html" lang="uk" hreflang="uk">Українська</a></li>
-            <li><a href="../vi/index.html" lang="vi" hreflang="vi">Tiếng Việt</a></li>
-          </ul>
-        </details>
+        <div class="site-header-end">
+          <nav class="site-nav" aria-label="Сайт">
+            <a href="index.html" aria-current="page">Главная</a>
+            <a href="features.html">Возможности</a>
+          </nav>
+          <details class="locale">
+            <summary aria-label="Языки">Русский</summary>
+            <ul>
+              <li><a href="../index.html" lang="en" hreflang="en">English</a></li>
+              <li><a href="../ar/index.html" lang="ar" hreflang="ar">العربية</a></li>
+              <li><a href="../zh-CN/index.html" lang="zh-CN" hreflang="zh-CN">简体中文</a></li>
+              <li><a href="../nl/index.html" lang="nl" hreflang="nl">Nederlands</a></li>
+              <li><a href="../fr/index.html" lang="fr" hreflang="fr">Français</a></li>
+              <li><a href="../de/index.html" lang="de" hreflang="de">Deutsch</a></li>
+              <li><a href="../hi/index.html" lang="hi" hreflang="hi">हिन्दी</a></li>
+              <li><a href="../id/index.html" lang="id" hreflang="id">Bahasa Indonesia</a></li>
+              <li><a href="../it/index.html" lang="it" hreflang="it">Italiano</a></li>
+              <li><a href="../ja/index.html" lang="ja" hreflang="ja">日本語</a></li>
+              <li><a href="../ko/index.html" lang="ko" hreflang="ko">한국어</a></li>
+              <li><a href="../pl/index.html" lang="pl" hreflang="pl">Polski</a></li>
+              <li><a href="../pt-BR/index.html" lang="pt-BR" hreflang="pt-BR">Português (Brasil)</a></li>
+              <li><a href="../ru/index.html" lang="ru" hreflang="ru" aria-current="page">Русский</a></li>
+              <li><a href="../es/index.html" lang="es" hreflang="es">Español</a></li>
+              <li><a href="../tr/index.html" lang="tr" hreflang="tr">Türkçe</a></li>
+              <li><a href="../uk/index.html" lang="uk" hreflang="uk">Українська</a></li>
+              <li><a href="../vi/index.html" lang="vi" hreflang="vi">Tiếng Việt</a></li>
+            </ul>
+          </details>
+        </div>
       </div>
     </header>
     <!-- LANGS:END -->
@@ -91,32 +97,32 @@
         <div class="ladder-wrap">
           <table class="ladder">
             <thead>
-              <tr><th scope="col">Версия</th><th scope="col">Сборка</th><th scope="col">Что приносит</th></tr>
+              <tr><th scope="col">Версия</th><th scope="col">Сборка</th><th scope="col">Что приносит</th><th scope="col">Статус</th></tr>
             </thead>
             <tbody>
-              <tr data-version="v0.1.0" data-build="F — Foundation"><td>v0.1.0</td><td>F — Фундамент</td><td>Плагин (CLAP, VST3, AU) и отдельное приложение загружаются и пропускают аудио; оболочка редактора, дизайн-токены, 18 языков, все проверки качества, локальный CI на Windows и Linux, валидаторы плагинов, браузерные тесты.</td></tr>
-              <tr data-version="v0.2.0" data-build="P — The Planner"><td>v0.2.0</td><td>P — Планировщик</td><td>Любой из 2 413 артистов, продюсеров и жанров превращается в детерминированный план аранжировки с несколькими режимами для каждого жанра.</td></tr>
-              <tr data-version="v0.3.0" data-build="M — The magic moment"><td>v0.3.0</td><td>M — Волшебный момент</td><td>Один экземпляр на зацикленном бите исполняет весь трек вживую — без щелчков, с нулевой задержкой, синхронно с вашей DAW.</td></tr>
-              <tr data-version="v0.4.0" data-build="R — Roles &amp; the Conductor"><td>v0.4.0</td><td>R — Роли и дирижёр</td><td>По экземпляру на каждую партию, все под одним дирижёром как единый трек, с полным микшером.</td></tr>
-              <tr data-version="v0.5.0" data-build="C — Capture, preview &amp; print"><td>v0.5.0</td><td>C — Захват, превью и рендер</td><td>Захват, превью внутри Unloop, рендер в WAV/AIFF/FLAC/MP3, перетаскивание наружу, проекты лупов и Библиотека лупов — просматривайте, прослушивайте и нарезайте свои лупы, заново открывайте недавние проекты — первый законченный продукт: MVP.</td></tr>
-              <tr class="is-current" data-version="v0.6.0" data-build="T — The timeline"><td>v0.6.0</td><td>T — Таймлайн</td><td>Перемещение, копирование, разделение и изменение длины клипов; фейды, фейдеры и автоматизация; блокировка и переброс; неограниченные отмена и повтор; полка аранжировок и файлы <code>.unarr</code>; любая правка с клавиатуры. <em>Текущая.</em></td></tr>
-              <tr data-version="v0.6.5" data-build="L — The look"><td>v0.6.5</td><td>L — Внешний вид</td><td>Ручки, фейдеры и кнопки, отрендеренные в Blender, пять скинов в светлом и тёмном вариантах, звуки интерфейса и тёмная строка заголовка — одинаковые во всех приложениях Freally.</td></tr>
-              <tr data-version="v0.7.0" data-build="X — MIDI"><td>v0.7.0</td><td>X — MIDI</td><td>Аудио в MIDI, MIDI-лупы на входе, MIDI-шаблон трека, Доктор велосити, перетаскивание MIDI наружу.</td></tr>
-              <tr data-version="v0.8.0" data-build="S — Standalone &amp; web"><td>v0.8.0</td><td>S — Отдельное приложение и веб</td><td>Режим стемов в отдельном приложении и веб-приложении, подгонка под темп, Доктор лупов.</td></tr>
-              <tr data-version="v0.9.0" data-build="E — Expression &amp; the Doctor"><td>v0.9.0</td><td>E — Выразительность и Доктор</td><td>Re-Dream, синтезированные FX переходов, смены бита, Доктор аранжировки, шаблоны, MIDI learn.</td></tr>
-              <tr data-version="v0.10.0" data-build="D — The dataset at scale"><td>v0.10.0</td><td>D — Датасет в полном объёме</td><td>Каждый жанр в нескольких режимах, сотни флагманских артистов и продюсеров, и каждое имя честно находит своё соответствие.</td></tr>
-              <tr data-version="v1.0.0b" data-build="H — Beta: hardened"><td>v1.0.0b</td><td>H — Бета: укрепление</td><td>Все функции на месте: пограничные случаи, доступность, 18 языков, бюджеты производительности, установщики для трёх систем.</td></tr>
-              <tr data-version="v1.0.0-rc" data-build="Release candidate"><td>v1.0.0-rc</td><td>Релиз-кандидат</td><td>Проверка сверху донизу с исправлением всех ошибок, затем ручное тестирование в настоящих DAW на всех доступных системах — а также полностью готовые веб-приложение и этот сайт.</td></tr>
-              <tr data-version="v1.0.0" data-build="The release"><td>v1.0.0</td><td>Релиз</td><td>Открываются загрузки, и запускается веб-приложение.</td></tr>
-              <tr data-version="v1.1.0" data-build="Post-1.0 Build 1"><td>v1.1.0</td><td>Сборка 1 после 1.0</td><td>Глубина вариаций.</td></tr>
-              <tr data-version="v1.2.0" data-build="Post-1.0 Build 2"><td>v1.2.0</td><td>Сборка 2 после 1.0</td><td>Глубина приёмов.</td></tr>
-              <tr data-version="v1.3.0" data-build="Post-1.0 Build 3"><td>v1.3.0</td><td>Сборка 3 после 1.0</td><td>Аранжировка с учётом вокала.</td></tr>
-              <tr data-version="v1.4.0" data-build="Post-1.0 Build 4"><td>v1.4.0</td><td>Сборка 4 после 1.0</td><td>Живые выступления и DJ.</td></tr>
-              <tr data-version="v1.5.0" data-build="Post-1.0 Build 5"><td>v1.5.0</td><td>Сборка 5 после 1.0</td><td>Мост к Freally MIDI Master.</td></tr>
-              <tr data-version="v1.6.0" data-build="Post-1.0 Build 6"><td>v1.6.0</td><td>Сборка 6 после 1.0</td><td>Глубина списка имён и датасета.</td></tr>
-              <tr data-version="v1.7.0" data-build="Post-1.0 Build 7"><td>v1.7.0</td><td>Сборка 7 после 1.0</td><td>Экспорт и совместимость.</td></tr>
-              <tr data-version="v1.8.0" data-build="Post-1.0 Build 8"><td>v1.8.0</td><td>Сборка 8 после 1.0</td><td>Глубина рабочего процесса и доступности.</td></tr>
-              <tr data-version="v1.9.0" data-build="Post-1.0 Build 9"><td>v1.9.0</td><td>Сборка 9 после 1.0</td><td>Интеграция с Freally.</td></tr>
+              <tr data-version="v0.1.0" data-build="F — Foundation"><td>v0.1.0</td><td>F — Фундамент</td><td>Плагин (CLAP, VST3, AU) и отдельное приложение загружаются и пропускают аудио; оболочка редактора, дизайн-токены, 18 языков, все проверки качества, локальный CI на Windows и Linux, валидаторы плагинов, браузерные тесты.</td><td class="state state--done">Готово</td></tr>
+              <tr data-version="v0.2.0" data-build="P — The Planner"><td>v0.2.0</td><td>P — Планировщик</td><td>Любой из 2 413 артистов, продюсеров и жанров превращается в детерминированный план аранжировки с несколькими режимами для каждого жанра.</td><td class="state state--done">Готово</td></tr>
+              <tr data-version="v0.3.0" data-build="M — The magic moment"><td>v0.3.0</td><td>M — Волшебный момент</td><td>Один экземпляр на зацикленном бите исполняет весь трек вживую — без щелчков, с нулевой задержкой, синхронно с вашей DAW.</td><td class="state state--done">Готово</td></tr>
+              <tr data-version="v0.4.0" data-build="R — Roles &amp; the Conductor"><td>v0.4.0</td><td>R — Роли и дирижёр</td><td>По экземпляру на каждую партию, все под одним дирижёром как единый трек, с полным микшером.</td><td class="state state--done">Готово</td></tr>
+              <tr data-version="v0.5.0" data-build="C — Capture, preview &amp; print"><td>v0.5.0</td><td>C — Захват, превью и рендер</td><td>Захват, превью внутри Unloop, рендер в WAV/AIFF/FLAC/MP3, перетаскивание наружу, проекты лупов и Библиотека лупов — просматривайте, прослушивайте и нарезайте свои лупы, заново открывайте недавние проекты — первый законченный продукт: MVP.</td><td class="state state--done">Готово</td></tr>
+              <tr class="is-current" data-version="v0.6.0" data-build="T — The timeline"><td>v0.6.0</td><td>T — Таймлайн</td><td>Перемещение, копирование, разделение и изменение длины клипов; фейды, фейдеры и автоматизация; блокировка и переброс; неограниченные отмена и повтор; полка аранжировок и файлы <code>.unarr</code>; любая правка с клавиатуры. <em>Текущая.</em></td><td class="state state--done">Готово</td></tr>
+              <tr data-version="v0.6.5" data-build="L — The look"><td>v0.6.5</td><td>L — Внешний вид</td><td>Ручки, фейдеры и кнопки, отрендеренные в Blender, пять скинов в светлом и тёмном вариантах, звуки интерфейса и тёмная строка заголовка — одинаковые во всех приложениях Freally.</td><td class="state">Запланировано</td></tr>
+              <tr data-version="v0.7.0" data-build="X — MIDI"><td>v0.7.0</td><td>X — MIDI</td><td>Аудио в MIDI, MIDI-лупы на входе, MIDI-шаблон трека, Доктор велосити, перетаскивание MIDI наружу.</td><td class="state">Запланировано</td></tr>
+              <tr data-version="v0.8.0" data-build="S — Standalone &amp; web"><td>v0.8.0</td><td>S — Отдельное приложение и веб</td><td>Режим стемов в отдельном приложении и веб-приложении, подгонка под темп, Доктор лупов.</td><td class="state">Запланировано</td></tr>
+              <tr data-version="v0.9.0" data-build="E — Expression &amp; the Doctor"><td>v0.9.0</td><td>E — Выразительность и Доктор</td><td>Re-Dream, синтезированные FX переходов, смены бита, Доктор аранжировки, шаблоны, MIDI learn.</td><td class="state">Запланировано</td></tr>
+              <tr data-version="v0.10.0" data-build="D — The dataset at scale"><td>v0.10.0</td><td>D — Датасет в полном объёме</td><td>Каждый жанр в нескольких режимах, сотни флагманских артистов и продюсеров, и каждое имя честно находит своё соответствие.</td><td class="state">Запланировано</td></tr>
+              <tr data-version="v1.0.0b" data-build="H — Beta: hardened"><td>v1.0.0b</td><td>H — Бета: укрепление</td><td>Все функции на месте: пограничные случаи, доступность, 18 языков, бюджеты производительности, установщики для трёх систем.</td><td class="state">Запланировано</td></tr>
+              <tr data-version="v1.0.0-rc" data-build="Release candidate"><td>v1.0.0-rc</td><td>Релиз-кандидат</td><td>Проверка сверху донизу с исправлением всех ошибок, затем ручное тестирование в настоящих DAW на всех доступных системах — а также полностью готовые веб-приложение и этот сайт.</td><td class="state">Запланировано</td></tr>
+              <tr data-version="v1.0.0" data-build="The release"><td>v1.0.0</td><td>Релиз</td><td>Открываются загрузки, и запускается веб-приложение.</td><td class="state state--goal">Цель</td></tr>
+              <tr data-version="v1.1.0" data-build="Post-1.0 Build 1"><td>v1.1.0</td><td>Сборка 1 после 1.0</td><td>Глубина вариаций.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.2.0" data-build="Post-1.0 Build 2"><td>v1.2.0</td><td>Сборка 2 после 1.0</td><td>Глубина приёмов.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.3.0" data-build="Post-1.0 Build 3"><td>v1.3.0</td><td>Сборка 3 после 1.0</td><td>Аранжировка с учётом вокала.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.4.0" data-build="Post-1.0 Build 4"><td>v1.4.0</td><td>Сборка 4 после 1.0</td><td>Живые выступления и DJ.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.5.0" data-build="Post-1.0 Build 5"><td>v1.5.0</td><td>Сборка 5 после 1.0</td><td>Мост к Freally MIDI Master.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.6.0" data-build="Post-1.0 Build 6"><td>v1.6.0</td><td>Сборка 6 после 1.0</td><td>Глубина списка имён и датасета.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.7.0" data-build="Post-1.0 Build 7"><td>v1.7.0</td><td>Сборка 7 после 1.0</td><td>Экспорт и совместимость.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.8.0" data-build="Post-1.0 Build 8"><td>v1.8.0</td><td>Сборка 8 после 1.0</td><td>Глубина рабочего процесса и доступности.</td><td class="state">После 1.0</td></tr>
+              <tr data-version="v1.9.0" data-build="Post-1.0 Build 9"><td>v1.9.0</td><td>Сборка 9 после 1.0</td><td>Интеграция с Freally.</td><td class="state">После 1.0</td></tr>
             </tbody>
           </table>
         </div>
