@@ -221,6 +221,12 @@
     });
   }
 
+  // ⚠ A second report opened in the same tab changes only the fragment, which
+  // reloads nothing: read the new report from the start.
+  window.addEventListener('hashchange', function () {
+    window.location.reload();
+  });
+
   lang = pickLanguage();
   languages();
   $('email').addEventListener('input', checkEmail);
