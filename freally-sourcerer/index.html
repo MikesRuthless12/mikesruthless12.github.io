@@ -12,10 +12,18 @@
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <style>
-      :root { color-scheme: dark; --bg: #090c09; --text: #ecf1ec; --muted: #a3aea3; --primary: #9af524; }
+      /* Dark only, like every Freally site (owner, 2026-10-01). */
+      :root { color-scheme: dark; --bg: #090c09; --surface: #1a211a; --border: #27302a; --text: #ecf1ec; --muted: #a3aea3; --primary: #9af524; }
       * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; text-align: center; }
-      main { width: min(100% - 32px, 640px); padding-block: 48px; }
+      body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; }
+      /* The header bar, like Freally Flipcopy's: the product left, the language right. */
+      .site-header { position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-block-end: 1px solid var(--border); }
+      .site-header-inner { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 16px; }
+      .wordmark { display: flex; align-items: center; gap: 8px; font-weight: 650; color: var(--text); text-decoration: none; letter-spacing: -0.01em; font-size: 1rem; }
+      .wordmark img { width: 28px; height: 28px; }
+      select.locale { margin-inline-start: auto; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font: inherit; font-size: 0.875rem; cursor: pointer; }
+      main { flex: 1; display: grid; place-items: center; text-align: center; padding: 48px 16px; }
+      .card { width: min(100%, 640px); }
       .icon { display: block; width: 160px; height: 160px; margin: 0 auto 24px; }
       h1 { font-size: 2.4rem; margin: 0 0 16px; }
       p { color: var(--muted); margin: 0 0 28px; }
@@ -25,11 +33,23 @@
   <body>
     <!-- A holding page (owner, 2026-10-01): this product's documentation is being
          rebuilt in the shared Freally design, and nothing is downloadable yet. -->
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="favicon-32.png" alt="" width="28" height="28" />
+          <span>Freally Sourcerer</span>
+        </a>
+        <!-- ⚠ Filled by holding.js: English first, the other seventeen alphabetically. -->
+        <select class="locale" aria-label="Language"></select>
+      </div>
+    </header>
     <main>
-      <img class="icon" src="sourcerer-icon.png" alt="" width="160" height="160" />
-      <h1>Freally Sourcerer</h1>
-      <p id="line">Documentation is coming soon. There are no downloads yet.</p>
-      <a id="home" href="../index.html">freallyproducts.com</a>
+      <div class="card">
+        <img class="icon" src="sourcerer-icon.png" alt="" width="160" height="160" />
+        <h1>Freally Sourcerer</h1>
+        <p id="line">Documentation is coming soon. There are no downloads yet.</p>
+        <a id="home" href="../index.html">freallyproducts.com</a>
+      </div>
     </main>
     <script src="/report-kit/holding.js"></script>
   </body>

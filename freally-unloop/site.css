@@ -13,18 +13,8 @@
   --warning: #fbbf24;
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color-scheme: light;
-    --bg: #f6f6f8;
-    --surface: #ffffff;
-    --border: #d4d7de;
-    --primary: #447505;
-    --text: #16171c;
-    --text-2: #4a4f5c;
-    --warning: #935c06;
-  }
-}
+/* ⛔ Dark only, like every Freally site (owner, 2026-10-01: *"i do not want light
+ * and dark to be available"*). There is no light palette and no media query. */
 
 * {
   box-sizing: border-box;
@@ -170,33 +160,113 @@ kbd {
 
 /* The eighteen languages, as plain links: the site runs no script, so each
  * language is a page of its own (scripts/docs-i18n.mjs). */
-.langs {
-  max-width: 920px;
+/* ── The header bar: like Freally Flipcopy's (owner, 2026-10-01) ───────── */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-block-end: 1px solid var(--border);
+}
+
+.site-header-inner {
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 12px 16px 0;
-}
-
-.langs ul {
+  padding: 12px 16px;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 4px 12px;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  font-size: 0.85rem;
+  align-items: center;
+  gap: 16px;
 }
 
-.langs a {
-  color: var(--text-2);
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 650;
+  color: var(--text);
   text-decoration: none;
+  letter-spacing: -0.01em;
 }
 
-.langs a:hover,
-.langs a[aria-current='page'] {
+.wordmark img {
+  width: 28px;
+  height: 28px;
+}
+
+/* The language menu, drawn like Flipcopy's language select. */
+.locale {
+  position: relative;
+  margin-inline-start: auto;
+  font-size: 0.875rem;
+}
+
+.locale summary {
+  list-style: none;
+  position: relative;
+  min-width: 10rem;
+  padding: 4px 30px 4px 10px;
+  cursor: pointer;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+}
+
+.locale summary::-webkit-details-marker {
+  display: none;
+}
+
+.locale summary::after {
+  content: '';
+  position: absolute;
+  inset-inline-end: 12px;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border: solid var(--text-2);
+  border-width: 0 1.5px 1.5px 0;
+  transform: translateY(-70%) rotate(45deg);
+}
+
+.locale[open] summary,
+.locale summary:focus-visible {
+  border-color: var(--primary);
+}
+
+.locale ul {
+  position: absolute;
+  inset-inline-end: 0;
+  top: calc(100% + 4px);
+  z-index: 20;
+  min-width: 100%;
+  max-height: 70vh;
+  margin: 0;
+  padding: 4px 0;
+  overflow-y: auto;
+  list-style: none;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.5);
+}
+
+.locale a {
+  display: block;
+  padding: 4px 12px;
+  color: var(--text);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.locale a:hover,
+.locale a:focus-visible {
   color: var(--primary);
+  background: var(--bg);
 }
 
-.langs a[aria-current='page'] {
+.locale a[aria-current='page'] {
+  color: var(--primary);
   font-weight: 600;
 }
