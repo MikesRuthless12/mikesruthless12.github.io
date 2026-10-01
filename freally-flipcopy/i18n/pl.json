@@ -3,7 +3,6 @@
   "nav.home": "Strona główna",
   "nav.documentation": "Dokumentacja",
   "nav.changelog": "Dziennik zmian",
-  "nav.download": "Pobierz",
   "hero.tagline": "Połóż to na szybie. Naciśnij START. Przeciągnij kopię.",
   "hero.sub": "Audio na wejściu, MIDI na wyjściu. MIDI na wejściu, audio na wyjściu. Darmowe, offline i w 100% bez AI.",
   "notice.price": "Freally Flipcopy jest dziś darmowy, ale może nie być darmowy na zawsze: przyszłe wersje mogą być sprzedawane.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "Nie zawiera żadnego rodzaju AI: każda kopia jest tworzona za pomocą klasycznego, deterministycznego przetwarzania sygnału, a bramka budowania kończy się niepowodzeniem, jeśli kiedykolwiek zostanie dodana biblioteka uczenia maszynowego.",
   "search.placeholder": "Przeszukaj dokumentację",
   "docs.contents": "Spis treści",
-  "download.title": "Pobierz",
-  "download.none": "Na razie nie ma nic do pobrania, i to celowo.",
-  "download.noneBody": "Żadnej wersji beta na tej stronie, żadnej wersji testowej, żadnego wczesnego dostępu. Flipcopy zostanie wydany, gdy każda bramka będzie zielona na wszystkich trzech systemach operacyjnych.",
-  "download.private": "Kod źródłowy Flipcopy jest prywatny, więc nie ma też z czego zbudować go samodzielnie.",
-  "download.whenTitle": "Kiedy się pojawi",
-  "download.whenBody": "Przy wersji 1.0.0. Drabina na stronie głównej pokazuje, na jakim etapie jest teraz praca.",
-  "download.ladderLink": "Droga do 1.0 →",
   "search.none": "Nic na tej stronie nie pasuje do tego zapytania."
 }

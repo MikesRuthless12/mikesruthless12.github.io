@@ -3,21 +3,15 @@
   "nav.home": "Trang chủ",
   "nav.documentation": "Tài liệu",
   "nav.changelog": "Thay đổi",
-  "nav.download": "Tải về",
   "nav.language": "Ngôn ngữ",
-  "nav.theme": "Giao diện",
-
   "hero.tagline": "Một DAW nơi bốn nhà sản xuất cùng làm việc trong một phiên.",
   "hero.sub": "Miễn phí, ưu tiên ngoại tuyến và 100 % không AI. Windows · macOS · Linux.",
   "hero.noDownloads": "Đang phát triển. Chưa có bản tải xuống nào cho đến phiên bản 1.0.0, và mã nguồn là riêng tư.",
-
   "notice.freeToday": "Hiện tại Freally Oscillate miễn phí, nhưng có thể sẽ không miễn phí mãi mãi: các phiên bản sau này có thể được bán.",
-
   "what.title": "Đây là gì",
   "what.p1": "Mọi DAW đều là phần mềm một người. Làm một bản thu cùng ai đó ở nước khác vẫn có nghĩa là xuất stem, tải lên, chờ, nhập lại và đánh mất mạch — và sáu tháng sau chẳng ai nhớ ai đã viết dòng bass.",
   "what.p2": "Oscillate là một DAW đầy đủ được dựng trên giả định ngược lại. Bạn dán một mã phòng vào khung chat và tối đa ba nhà sản xuất khác bước vào phiên của bạn: bạn thấy camera của họ, nghe thấy họ, con trỏ của họ di chuyển trên dòng thời gian của bạn — và khi xong, nó in ra một bảng chia phần ghi rõ ai viết gì.",
   "what.p3": "Hiện tại nó miễn phí, và phía sau không có máy chủ nào. Mã phòng chính là lời mời kết nối: người đầu tiên dán một mã, sau đó phòng tự chuyển tiếp cho tất cả những người còn lại. Không có gì phải duy trì, không có gì phải trả, không có gì ai đó có thể tắt đi.",
-
   "features.title": "Bên trong có gì",
   "features.room.title": "Phòng",
   "features.room.body": "Tối đa bốn nhà sản xuất, nối thẳng máy với máy, không tài khoản và không máy chủ. Con trỏ trực tiếp, trò chuyện, giọng nói, ô camera và chia sẻ màn hình. Lệnh hoàn tác của bạn lấy lại thay đổi của bạn và không bao giờ của người khác.",
@@ -35,7 +29,6 @@
   "features.kumite.body": "Một chế độ đấu beat trong đó mỗi lượt sở hữu các ô nhịp của riêng mình, và một sổ ghi tác quyền rút ra từ nhật ký chỉnh sửa, đã trừ đi phần việc ai đó đã hoàn tác.",
   "features.free.title": "Miễn phí, và không AI",
   "features.free.body": "Không có gói, không có bản dùng thử, không tài khoản, không khoá bản quyền. Không mô hình, không suy luận, không có thứ gì «thông minh» — và đó không phải lời hứa: một cổng kiểm tra khi biên dịch sẽ thất bại ngay khi bất kỳ runtime học máy nào lọt vào đồ thị phụ thuộc.",
-
   "ladder.title": "Đường tới 1.0",
   "ladder.intro": "Mỗi bậc một dòng. Đây chính là chiếc thang mà kế hoạch nội bộ đi theo — một bên nhích thì cả hai nhích, và một cổng kiểm tra đối chiếu chúng.",
   "ladder.version": "Phiên bản",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "Đã lên kế hoạch",
   "ladder.state.goal": "Đích đến",
   "ladder.note": "Một bậc đã xong là đã được dựng và nằm trên nhánh phát triển. Đó không phải bản tải về: hiện không có bản nào, và sẽ không có cho tới 1.0.0.",
-
   "honest.title": "Những điều phần lớn trang web đẩy xuống cuối",
   "honest.peers.title": "Bốn nhà sản xuất, không phải năm",
   "honest.peers.body": "Một phòng chứa bốn người. Không có máy chủ chuyển tiếp âm thanh, nên mỗi người gửi tới tất cả những người còn lại, và kết nối thứ năm là chỗ đường tải lên gia đình thông thường cạn kiệt. Bốn là con số chạy được, không phải con số nghe hay.",
@@ -59,10 +51,8 @@
   "honest.ai.body": "Một cổng kiểm tra đi khắp đồ thị phụ thuộc và thất bại trước bất kỳ runtime suy luận nào, bất kỳ tệp mô hình nào, và bất kỳ thư viện phân tích hay báo lỗi nào. Đó là tính chất của bản dựng chứ không phải một câu trên website.",
   "honest.updater.title": "Kết nối duy nhất mà ứng dụng tạo ra",
   "honest.updater.body": "Một lần kiểm tra cập nhật, và chỉ khi bạn nhấn nút hoặc bật kiểm tra lúc khởi động — mặc định là tắt. Nó xin một tệp tĩnh và không gửi bất cứ điều gì về bạn hay máy của bạn; mọi bản cập nhật đều có chữ ký, và không bản nào được cài nếu bạn không chọn.",
-
   "footer.licence": "Phần mềm độc quyền — Bảo lưu mọi quyền. © Mike Weaver. Hiện miễn phí sử dụng; các phiên bản sau này có thể được bán. Không phải mã nguồn mở.",
   "footer.yours": "Những gì bạn làm ra bằng nó là của bạn. Tác giả Oscillate không đòi quyền sở hữu với các dự án, MIDI, âm thanh hay bản kết xuất mà bạn tạo bằng nó.",
-
   "docs.title": "Tài liệu",
   "docs.contents": "Mục lục",
   "docs.toc.start": "Bắt đầu",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "Riêng tư và mạng",
   "docs.toc.limits": "Các giới hạn, nói thẳng",
   "docs.toc.troubleshooting": "Xử lý sự cố",
-
   "search.label": "Tìm trong hướng dẫn",
   "search.placeholder": "mã phòng, lượng tử hoá, độc quyền…",
-  "search.none": "Không có gì trên trang này khớp với điều đó.",
-
-  "download.title": "Tải về",
-  "download.none": "Chưa có gì để tải, và đó là chủ ý. Trang này không có beta, không có bản xem trước, không có truy cập sớm. Một DAW chạy được một nửa còn tệ hơn một DAW chưa có mặt, nên Oscillate sẽ ra khi toàn bộ ma trận chất lượng xanh trên cả ba hệ điều hành.",
-  "download.whenTitle": "Khi nào sẽ có",
-  "download.whenBody": "Ở phiên bản 1.0.0. Chiếc thang trên trang chủ cho biết công việc hiện đang ở đâu, và mỗi bậc trên đó là một bản dựng ai đó thật sự dùng được, chứ không phải một ngày ai đó đoán ra.",
-  "download.ladderLink": "Đường tới 1.0 →"
+  "search.none": "Không có gì trên trang này khớp với điều đó."
 }

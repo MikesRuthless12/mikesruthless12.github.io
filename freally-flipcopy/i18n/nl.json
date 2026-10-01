@@ -3,7 +3,6 @@
   "nav.home": "Startpagina",
   "nav.documentation": "Documentatie",
   "nav.changelog": "Wijzigingslog",
-  "nav.download": "Downloaden",
   "hero.tagline": "Leg het op de glasplaat. Druk op START. Sleep de kopie.",
   "hero.sub": "Audio erin, MIDI eruit. MIDI erin, audio eruit. Gratis, offline en 100% zonder AI.",
   "notice.price": "Freally Flipcopy is vandaag gratis, maar misschien niet voor altijd: toekomstige versies kunnen worden verkocht.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "Het bevat geen enkele vorm van AI: elke kopie wordt gemaakt met klassieke, deterministische signaalverwerking, en een build-poort faalt als er ooit een machine-learning-bibliotheek wordt toegevoegd.",
   "search.placeholder": "Doorzoek de documentatie",
   "docs.contents": "Inhoud",
-  "download.title": "Downloaden",
-  "download.none": "Er is nog niets om te downloaden, en dat is met opzet.",
-  "download.noneBody": "Geen bèta op deze pagina, geen previewbuild, geen vroege toegang. Flipcopy verschijnt zodra elke poort groen is op alle drie de besturingssystemen.",
-  "download.private": "De broncode van Flipcopy is privé, dus er is ook niets om zelf uit te bouwen.",
-  "download.whenTitle": "Wanneer het er zal zijn",
-  "download.whenBody": "Bij versie 1.0.0. De ladder op de startpagina laat zien waar het werk nu staat.",
-  "download.ladderLink": "De weg naar 1.0 →",
   "search.none": "Niets op deze site komt daarmee overeen."
 }

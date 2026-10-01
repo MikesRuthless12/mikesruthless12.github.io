@@ -3,21 +3,15 @@
   "nav.home": "Startseite",
   "nav.documentation": "Dokumentation",
   "nav.changelog": "Änderungen",
-  "nav.download": "Download",
   "nav.language": "Sprache",
-  "nav.theme": "Erscheinungsbild",
-
   "hero.tagline": "Eine DAW, in der vier Produzierende gleichzeitig an derselben Session arbeiten.",
   "hero.sub": "Kostenlos, offline-first und zu 100 % KI-frei. Windows · macOS · Linux.",
   "hero.noDownloads": "In Entwicklung. Es gibt keine Downloads vor Version 1.0.0, und der Quellcode ist privat.",
-
   "notice.freeToday": "Freally Oscillate ist heute kostenlos, aber vielleicht nicht für immer: Künftige Versionen könnten verkauft werden.",
-
   "what.title": "Was es ist",
   "what.p1": "Jede DAW ist Einzelspieler-Software. Eine Platte mit jemandem in einem anderen Land zu machen heißt immer noch: Stems exportieren, hochladen, warten, wieder importieren — und den Faden verlieren. Ein halbes Jahr später weiß niemand mehr, wer die Bassline geschrieben hat.",
   "what.p2": "Oscillate ist eine vollständige DAW, die auf der gegenteiligen Annahme aufbaut. Du fügst einen Raumcode in einen Chat ein, und bis zu drei weitere Produzierende kommen in deine Session: Du siehst ihre Kameras, hörst sie, ihre Cursor bewegen sich auf deiner Timeline — und am Ende druckt Oscillate ein Split Sheet, das festhält, wer was geschrieben hat.",
   "what.p3": "Es ist heute kostenlos, und es steht kein Server dahinter. Der Raumcode ist das Verbindungsangebot: Die erste Person fügt einen Code ein, danach vermittelt der Raum für alle anderen. Nichts, das laufen muss, nichts zu bezahlen, nichts, das jemand abschalten kann.",
-
   "features.title": "Was drin ist",
   "features.room.title": "Der Raum",
   "features.room.body": "Bis zu vier Produzierende, direkt miteinander verbunden, ohne Konto und ohne Server. Live-Cursor, Chat, Sprache, Kamerabilder und Bildschirmfreigabe. Dein Rückgängig nimmt deine Änderung zurück und nie die von jemand anderem.",
@@ -35,7 +29,6 @@
   "features.kumite.body": "Ein Beat-Battle-Modus, in dem jeder Zug seine eigenen Takte besitzt, und ein Urheberschaftsregister, das aus dem Bearbeitungsprotokoll abgeleitet wird — wobei rückgängig gemachte Arbeit herausgerechnet ist.",
   "features.free.title": "Kostenlos, und ohne KI",
   "features.free.body": "Keine Stufen, keine Testphase, kein Konto, kein Lizenzschlüssel. Kein Modell, keine Inferenz, nichts „Smartes“ — und das erzwingt ein Build-Gate, das bei jeder ML-Laufzeit im Abhängigkeitsgraphen fehlschlägt, statt ein Versprechen zu bleiben.",
-
   "ladder.title": "Der Weg zu 1.0",
   "ladder.intro": "Eine Zeile pro Sprosse. Es ist dieselbe Leiter, der auch der interne Plan folgt — bewegt sich eine, bewegen sich beide, und ein Build-Gate vergleicht sie.",
   "ladder.version": "Version",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "Geplant",
   "ladder.state.goal": "Das Ziel",
   "ladder.note": "Eine fertige Sprosse ist gebaut und liegt im Entwicklungszweig. Sie ist kein Download: Die gibt es nicht, und bis 1.0.0 wird es sie nicht geben.",
-
   "honest.title": "Die Dinge, die die meisten Seiten nach unten schieben",
   "honest.peers.title": "Vier Produzierende, und nicht fünf",
   "honest.peers.body": "Ein Raum fasst vier Personen. Kein Server leitet Audio weiter, also sendet jeder an jeden — und bei der fünften Verbindung ist ein gewöhnlicher heimischer Upload am Ende. Vier ist die Zahl, die funktioniert, nicht die Zahl, die gut klingt.",
@@ -59,10 +51,8 @@
   "honest.ai.body": "Ein Build-Gate läuft den Abhängigkeitsgraphen ab und schlägt bei jeder Inferenz-Laufzeit, jeder Modelldatei und jeder Analyse- oder Absturzmelde-Bibliothek fehl. Das ist eine Eigenschaft des Builds und kein Satz auf einer Website.",
   "honest.updater.title": "Die eine Verbindung, die die Anwendung aufbaut",
   "honest.updater.body": "Eine Update-Prüfung, und nur wenn du die Schaltfläche drückst oder die Prüfung beim Start einschaltest — standardmäßig ist sie aus. Sie fordert eine einzige statische Datei an und sendet nichts über dich oder deinen Rechner, jedes Update ist signiert, und keines wird ohne deine Entscheidung installiert.",
-
   "footer.licence": "Proprietär — alle Rechte vorbehalten. © Mike Weaver. Heute kostenlos nutzbar; künftige Versionen könnten verkauft werden. Kein Open Source.",
   "footer.yours": "Was du damit machst, gehört dir. Der Autor von Oscillate erhebt keinerlei Anspruch auf die Projekte, MIDI-Daten, Audiodateien oder Renderings, die du damit erstellst.",
-
   "docs.title": "Dokumentation",
   "docs.contents": "Inhalt",
   "docs.toc.start": "Erste Schritte",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "Datenschutz und Netzwerk",
   "docs.toc.limits": "Die Grenzen, klar benannt",
   "docs.toc.troubleshooting": "Fehlersuche",
-
   "search.label": "Das Handbuch durchsuchen",
   "search.placeholder": "Raumcode, quantisieren, exklusiv …",
-  "search.none": "Auf dieser Seite passt nichts dazu.",
-
-  "download.title": "Download",
-  "download.none": "Es gibt noch nichts herunterzuladen, und das ist Absicht. Keine Beta auf dieser Seite, kein Vorabbuild, kein Early Access. Eine DAW, die halb funktioniert, ist schlimmer als eine, die es noch nicht gibt — Oscillate erscheint, wenn die gesamte Qualitätsmatrix auf allen drei Betriebssystemen grün ist.",
-  "download.whenTitle": "Wann es welche geben wird",
-  "download.whenBody": "Mit Version 1.0.0. Die Leiter auf der Startseite zeigt, wo die Arbeit gerade steht, und jede Sprosse darauf ist ein Build, den jemand benutzen könnte — kein geratenes Datum.",
-  "download.ladderLink": "Der Weg zu 1.0 →"
+  "search.none": "Auf dieser Seite passt nichts dazu."
 }

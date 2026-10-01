@@ -3,7 +3,6 @@
   "nav.home": "ホーム",
   "nav.documentation": "ドキュメント",
   "nav.changelog": "変更履歴",
-  "nav.download": "ダウンロード",
   "hero.tagline": "ガラス面に置く。START を押す。コピーをドラッグする。",
   "hero.sub": "オーディオを入れれば MIDI が出る。MIDI を入れればオーディオが出る。無料、オフライン、そして AI を一切使わない。",
   "notice.price": "Freally Flipcopy は現在無料ですが、ずっと無料とは限りません。将来のバージョンは販売される可能性があります。",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "いかなる種類の AI も含まれていません。すべてのコピーは古典的で決定論的な信号処理によって作られており、機械学習ライブラリが追加されればビルドゲートが失敗します。",
   "search.placeholder": "ドキュメントを検索",
   "docs.contents": "目次",
-  "download.title": "ダウンロード",
-  "download.none": "今のところダウンロードできるものはありません。それは意図的なものです。",
-  "download.noneBody": "このページにベータ版はなく、プレビュービルドもアーリーアクセスもありません。Flipcopy は、3つすべてのオペレーティングシステムですべてのゲートが緑になったときに出荷されます。",
-  "download.private": "Flipcopy のソースコードは非公開のため、自分でビルドすることもできません。",
-  "download.whenTitle": "いつ提供されるか",
-  "download.whenBody": "バージョン 1.0.0 のときです。ホームページのはしごが、作業が今どこまで進んでいるかを示しています。",
-  "download.ladderLink": "1.0 までの道のり →",
   "search.none": "このサイトには一致するものがありません。"
 }

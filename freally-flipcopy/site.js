@@ -30,22 +30,14 @@
   'use strict';
 
   /**
-   * ⛔⛔ THE DOWNLOAD FLAG — roadmap TASK-137 IS THE ONE LINE THAT FLIPS IT.
+   * ⛔⛔ NO DOWNLOADS, AND NO DOWNLOAD PAGE OR LINK, BEFORE `v1.0.0`.
    *
-   * ▶ Owner's instruction: *"with downloads only coming at v1.0.0"* — **no
-   * downloads and no installers appear anywhere on this site until `v1.0.0`**
-   * (`scripts/check-no-downloads.mjs` enforces it on every page). `download.html`
-   * is built — it is easier to review a real page than an imagined one — and it
-   * is reachable by typing the URL, where it says plainly that there is nothing
-   * there yet.
-   *
-   * ⚠ What this flag controls is the **navigation link**, which is the only
-   * thing a reader would find by looking. ⛔ It is NOT a security boundary and
-   * it does not pretend to be: a static site cannot hide a file it publishes.
-   * The page itself is honest instead of hidden, which is the version of this
-   * that cannot be embarrassing.
+   * ▶ The owner, 2026-10-01: *"remove those download links now"* — v1.0.0 is
+   * when the apps start selling. There was a built-but-hidden `download.html`;
+   * it is gone, with its navigation link. Roadmap TASK-137 adds both at
+   * `v1.0.0`, and `scripts/check-no-downloads.mjs` refuses any download on any
+   * page before then.
    */
-  var DOWNLOADS_LIVE = false;
 
   /** ⛔ English first, the other seventeen alphabetically by code. Always. */
   var LOCALES = [
@@ -369,12 +361,6 @@
     }
   }
 
-  function applyDownloadFlag() {
-    if (DOWNLOADS_LIVE) return;
-    var links = document.querySelectorAll('[data-downloads-link]');
-    for (var i = 0; i < links.length; i += 1) {
-      links[i].hidden = true;
-    }
   }
 
   /**
@@ -417,7 +403,6 @@
   function start() {
     buildPicker();
     markCurrentPage();
-    applyDownloadFlag();
     wireStories();
     apply(initialLocale());
   }

@@ -3,7 +3,6 @@
   "nav.home": "Beranda",
   "nav.documentation": "Dokumentasi",
   "nav.changelog": "Log perubahan",
-  "nav.download": "Unduh",
   "hero.tagline": "Letakkan di kaca. Tekan START. Seret salinannya.",
   "hero.sub": "Audio masuk, MIDI keluar. MIDI masuk, audio keluar. Gratis, luring, dan 100% bebas AI.",
   "notice.price": "Freally Flipcopy gratis saat ini, tetapi mungkin tidak gratis selamanya: versi mendatang mungkin dijual.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "Ia tidak mengandung AI dalam bentuk apa pun: setiap salinan dibuat melalui pemrosesan sinyal klasik yang deterministik, dan sebuah gerbang build akan gagal jika suatu saat pustaka pembelajaran mesin ditambahkan.",
   "search.placeholder": "Cari dalam dokumentasi",
   "docs.contents": "Daftar isi",
-  "download.title": "Unduh",
-  "download.none": "Belum ada yang bisa diunduh, dan itu memang disengaja.",
-  "download.noneBody": "Tidak ada beta di halaman ini, tidak ada build pratayang, tidak ada akses awal. Flipcopy dirilis saat setiap gerbang hijau di ketiga sistem operasi.",
-  "download.private": "Kode sumber Flipcopy bersifat privat, jadi tidak ada juga yang bisa dibangun sendiri.",
-  "download.whenTitle": "Kapan itu akan ada",
-  "download.whenBody": "Pada versi 1.0.0. Tangga di halaman beranda menunjukkan sejauh mana pekerjaan sekarang.",
-  "download.ladderLink": "Jalan menuju 1.0 →",
   "search.none": "Tidak ada yang cocok di situs ini."
 }

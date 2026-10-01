@@ -3,21 +3,15 @@
   "nav.home": "Home",
   "nav.documentation": "Documentazione",
   "nav.changelog": "Modifiche",
-  "nav.download": "Download",
   "nav.language": "Lingua",
-  "nav.theme": "Tema",
-
   "hero.tagline": "Una DAW dove quattro producer lavorano nella stessa sessione insieme.",
   "hero.sub": "Gratuita, offline prima di tutto e al 100 % senza IA. Windows · macOS · Linux.",
   "hero.noDownloads": "In sviluppo. Non ci sono download fino alla versione 1.0.0, e il codice sorgente è privato.",
-
   "notice.freeToday": "Freally Oscillate è gratuita oggi, ma potrebbe non esserlo per sempre: le versioni future potrebbero essere vendute.",
-
   "what.title": "Che cos'è",
   "what.p1": "Ogni DAW è un software per una persona sola. Fare un disco con qualcuno in un altro Paese vuol dire ancora esportare gli stem, caricarli, aspettare, reimportarli e perdere il filo — e sei mesi dopo nessuno ricorda chi ha scritto la linea di basso.",
   "what.p2": "Oscillate è una DAW completa costruita sull'assunto opposto. Incolli un codice stanza in una chat e fino a tre altri producer entrano nella tua sessione: vedi le loro camere, li senti, i loro cursori si muovono sulla tua timeline, e alla fine stampa uno split sheet che dice chi ha scritto cosa.",
   "what.p3": "Oggi è gratuita, e dietro non c'è nessun server. Il codice stanza è l'offerta di connessione: la prima persona incolla un codice e da lì in poi la stanza fa da ponte per tutti gli altri. Niente da tenere acceso, niente da pagare, niente che qualcuno possa spegnere.",
-
   "features.title": "Che cosa c'è dentro",
   "features.room.title": "La stanza",
   "features.room.body": "Fino a quattro producer, da pari a pari, senza account e senza server. Cursori in tempo reale, chat, voce, riquadri camera e condivisione schermo. Il tuo annulla ritira la tua modifica e mai quella di un altro.",
@@ -35,7 +29,6 @@
   "features.kumite.body": "Una modalità beat battle in cui ogni turno possiede le proprie battute, e un registro di paternità ricavato dal log delle modifiche, con il lavoro annullato scontato.",
   "features.free.title": "Gratuita, e senza IA",
   "features.free.body": "Nessun livello, nessuna prova, nessun account, nessuna chiave di licenza. Nessun modello, nessuna inferenza, niente di «intelligente» — e lo impone un controllo di build che fallisce se un runtime di machine learning entra nel grafo delle dipendenze, invece di restare una promessa.",
-
   "ladder.title": "La strada verso 1.0",
   "ladder.intro": "Una riga per gradino. È la stessa scala che segue il piano interno — se uno si muove, si muovono entrambi, e un controllo di build li confronta.",
   "ladder.version": "Versione",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "Previsto",
   "ladder.state.goal": "L'obiettivo",
   "ladder.note": "Un gradino fatto è costruito ed è nel ramo di sviluppo. Non è un download: non ce ne sono, e non ce ne saranno fino a 1.0.0.",
-
   "honest.title": "Le cose che quasi tutti i siti mettono in fondo",
   "honest.peers.title": "Quattro producer, e non cinque",
   "honest.peers.body": "Una stanza tiene quattro persone. Nessun server inoltra l'audio, quindi ognuno invia a tutti gli altri, e la quinta connessione è dove una normale banda in salita domestica finisce. Quattro è il numero che funziona, non quello che suonava bene.",
@@ -59,10 +51,8 @@
   "honest.ai.body": "Un controllo di build percorre il grafo delle dipendenze e fallisce davanti a qualsiasi runtime di inferenza, qualsiasi file di modello e qualsiasi libreria di analytics o di segnalazione crash. È una proprietà della build, non una frase su un sito.",
   "honest.updater.title": "L'unica connessione che fa l'applicazione",
   "honest.updater.body": "Un controllo degli aggiornamenti, e solo quando premi il pulsante o attivi il controllo all'avvio — è disattivato di default. Chiede un singolo file statico e non invia nulla su di te o sul tuo computer, ogni aggiornamento è firmato, e nessuno viene installato senza una tua scelta.",
-
   "footer.licence": "Proprietario — Tutti i diritti riservati. © Mike Weaver. Gratuito da usare oggi; le versioni future potrebbero essere vendute. Non open source.",
   "footer.yours": "Quello che ci fai è tuo. L'autore di Oscillate non rivendica alcuna proprietà sui progetti, sul MIDI, sull'audio o sui render che crei con essa.",
-
   "docs.title": "Documentazione",
   "docs.contents": "Indice",
   "docs.toc.start": "Per iniziare",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "Privacy e rete",
   "docs.toc.limits": "I limiti, detti chiaramente",
   "docs.toc.troubleshooting": "Risoluzione dei problemi",
-
   "search.label": "Cerca nel manuale",
   "search.placeholder": "codice stanza, quantizza, esclusivo…",
-  "search.none": "Su questo sito non c'è niente che corrisponda.",
-
-  "download.title": "Download",
-  "download.none": "Non c'è ancora nulla da scaricare, ed è voluto. Nessuna beta su questa pagina, nessuna anteprima, nessun accesso anticipato. Una DAW che funziona a metà è peggio di una che non c'è ancora, quindi Oscillate esce quando l'intera matrice di qualità è verde su tutti e tre i sistemi operativi.",
-  "download.whenTitle": "Quando ce ne saranno",
-  "download.whenBody": "Alla versione 1.0.0. La scala nella home dice a che punto è il lavoro, e ogni gradino è una build che qualcuno potrebbe usare, non una data indovinata.",
-  "download.ladderLink": "La strada verso 1.0 →"
+  "search.none": "Su questo sito non c'è niente che corrisponda."
 }

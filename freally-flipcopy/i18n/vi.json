@@ -3,7 +3,6 @@
   "nav.home": "Trang chủ",
   "nav.documentation": "Tài liệu",
   "nav.changelog": "Nhật ký thay đổi",
-  "nav.download": "Tải xuống",
   "hero.tagline": "Đặt lên mặt kính. Nhấn START. Kéo bản sao ra.",
   "hero.sub": "Đưa âm thanh vào, MIDI ra. Đưa MIDI vào, âm thanh ra. Miễn phí, ngoại tuyến và 100% không dùng AI.",
   "notice.price": "Freally Flipcopy hiện miễn phí, nhưng có thể không miễn phí mãi mãi: các phiên bản sau này có thể được bán.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "Nó không chứa bất kỳ dạng AI nào: mọi bản sao đều được tạo ra bằng xử lý tín hiệu cổ điển, xác định, và một cổng kiểm tra khi dựng sẽ thất bại nếu có thư viện học máy nào từng được thêm vào.",
   "search.placeholder": "Tìm kiếm trong tài liệu",
   "docs.contents": "Mục lục",
-  "download.title": "Tải xuống",
-  "download.none": "Hiện chưa có gì để tải xuống, và điều đó là có chủ ý.",
-  "download.noneBody": "Không có bản beta trên trang này, không có bản dựng thử, không có quyền truy cập sớm. Flipcopy chỉ ra mắt khi mọi cổng kiểm tra đều xanh trên cả ba hệ điều hành.",
-  "download.private": "Mã nguồn của Flipcopy là riêng tư, nên cũng không có gì để tự biên dịch.",
-  "download.whenTitle": "Khi nào sẽ có",
-  "download.whenBody": "Ở phiên bản 1.0.0. Chiếc thang trên trang chủ cho thấy công việc hiện đang ở đâu.",
-  "download.ladderLink": "Con đường đến 1.0 →",
   "search.none": "Không có gì trên trang này khớp với điều đó."
 }

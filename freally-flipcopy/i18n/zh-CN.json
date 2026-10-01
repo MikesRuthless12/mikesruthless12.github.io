@@ -3,7 +3,6 @@
   "nav.home": "首页",
   "nav.documentation": "文档",
   "nav.changelog": "更新日志",
-  "nav.download": "下载",
   "hero.tagline": "把它放到玻璃上。按下 START。拖走复印件。",
   "hero.sub": "音频进，MIDI 出；MIDI 进，音频出。免费、离线，100% 不含 AI。",
   "notice.price": "Freally Flipcopy 目前免费，但未必永远免费：未来版本可能会出售。",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "它不含任何形式的 AI：每一份复印件都由经典的、确定性的信号处理生成，一旦加入任何机器学习库，构建门禁就会失败。",
   "search.placeholder": "搜索文档",
   "docs.contents": "目录",
-  "download.title": "下载",
-  "download.none": "目前还没有任何可供下载的内容，这是刻意为之。",
-  "download.noneBody": "这个页面上没有测试版，没有预览构建，没有抢先体验。Flipcopy 会在三大操作系统上所有门禁都变绿时才发布。",
-  "download.private": "Flipcopy 的源代码不公开，因此也无法自行构建。",
-  "download.whenTitle": "什么时候会有",
-  "download.whenBody": "在 1.0.0 版本。首页上的阶梯图显示了目前的工作进度。",
-  "download.ladderLink": "通往 1.0 之路 →",
   "search.none": "本站没有与之匹配的内容。"
 }

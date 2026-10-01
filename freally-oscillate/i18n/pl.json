@@ -3,21 +3,15 @@
   "nav.home": "Strona główna",
   "nav.documentation": "Dokumentacja",
   "nav.changelog": "Zmiany",
-  "nav.download": "Pobieranie",
   "nav.language": "Język",
-  "nav.theme": "Motyw",
-
   "hero.tagline": "DAW, w którym czterech producentów pracuje w tej samej sesji naraz.",
   "hero.sub": "Darmowy, działający offline i w 100 % bez AI. Windows · macOS · Linux.",
   "hero.noDownloads": "W trakcie tworzenia. Do wersji 1.0.0 nie ma plików do pobrania, a kod źródłowy jest prywatny.",
-
   "notice.freeToday": "Freally Oscillate jest dziś darmowy, ale może nie być darmowy na zawsze: przyszłe wersje mogą być sprzedawane.",
-
   "what.title": "Co to jest",
   "what.p1": "Każdy DAW to program dla jednej osoby. Zrobienie płyty z kimś z innego kraju wciąż oznacza eksport stemów, wysyłanie, czekanie, ponowny import i utratę wątku — a pół roku później nikt nie pamięta, kto napisał linię basu.",
   "what.p2": "Oscillate to pełny DAW zbudowany na odwrotnym założeniu. Wklejasz kod pokoju na czacie i do trzech innych producentów wchodzi do twojej sesji: widzisz ich kamery, słyszysz ich, ich kursory poruszają się po twojej osi czasu, a na koniec program drukuje split sheet mówiący, kto co napisał.",
   "what.p3": "Dziś jest darmowy, a za nim nie stoi żaden serwer. Kod pokoju jest samą ofertą połączenia: pierwsza osoba wkleja kod, a potem pokój pośredniczy dla wszystkich pozostałych. Nic, co musi działać, nic do opłacenia, nic, co ktoś mógłby wyłączyć.",
-
   "features.title": "Co jest w środku",
   "features.room.title": "Pokój",
   "features.room.body": "Do czterech producentów, bezpośrednio między komputerami, bez konta i bez serwera. Kursory na żywo, czat, głos, kafelki kamer i udostępnianie ekranu. Twoje cofnięcie cofa twoją zmianę i nigdy cudzą.",
@@ -35,7 +29,6 @@
   "features.kumite.body": "Tryb bitwy bitów, w którym każda tura ma własne takty, oraz rejestr autorstwa wyprowadzony z dziennika edycji, z odliczoną pracą, którą ktoś cofnął.",
   "features.free.title": "Za darmo, i bez AI",
   "features.free.body": "Bez poziomów, bez wersji próbnej, bez konta, bez klucza licencyjnego. Bez modelu, bez wnioskowania, bez niczego «inteligentnego» — i pilnuje tego bramka kompilacji, która przerywa budowanie, gdy do grafu zależności trafi jakiekolwiek środowisko uczenia maszynowego, zamiast zostać obietnicą.",
-
   "ladder.title": "Droga do 1.0",
   "ladder.intro": "Jedna linia na szczebel. To ta sama drabina, którą podąża plan wewnętrzny — jeśli jeden się przesunie, przesuwają się oba, a bramka kompilacji je porównuje.",
   "ladder.version": "Wersja",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "Planowane",
   "ladder.state.goal": "Cel",
   "ladder.note": "Gotowy szczebel jest zbudowany i leży w gałęzi rozwojowej. To nie jest plik do pobrania: takich nie ma i nie będzie przed 1.0.0.",
-
   "honest.title": "Rzeczy, które większość stron wrzuca na sam dół",
   "honest.peers.title": "Czterech producentów, a nie pięciu",
   "honest.peers.body": "Pokój mieści cztery osoby. Żaden serwer nie przekazuje dźwięku, więc każdy wysyła do każdego, a piąte połączenie to miejsce, w którym zwykłe domowe łącze wysyłające się kończy. Cztery to liczba, która działa, a nie liczba, która ładnie brzmiała.",
@@ -59,10 +51,8 @@
   "honest.ai.body": "Bramka kompilacji przechodzi graf zależności i przerywa budowanie przy każdym środowisku wnioskowania, każdym pliku modelu i każdej bibliotece analityki lub raportowania awarii. To właściwość kompilacji, a nie zdanie na stronie.",
   "honest.updater.title": "Jedno połączenie, które nawiązuje aplikacja",
   "honest.updater.body": "Sprawdzenie aktualizacji, i tylko wtedy, gdy naciśniesz przycisk albo włączysz sprawdzanie przy starcie — domyślnie jest wyłączone. Prosi o jeden statyczny plik i nie wysyła niczego o tobie ani o twoim komputerze, każda aktualizacja jest podpisana, i żadna nie jest instalowana bez twojego wyboru.",
-
   "footer.licence": "Oprogramowanie zastrzeżone — wszelkie prawa zastrzeżone. © Mike Weaver. Dziś darmowe w użyciu; przyszłe wersje mogą być sprzedawane. Nie open source.",
   "footer.yours": "To, co z nim stworzysz, należy do ciebie. Autor Oscillate nie rości sobie żadnych praw do projektów, MIDI, dźwięku ani renderów, które w nim wykonasz.",
-
   "docs.title": "Dokumentacja",
   "docs.contents": "Spis treści",
   "docs.toc.start": "Pierwsze kroki",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "Prywatność i sieć",
   "docs.toc.limits": "Ograniczenia, powiedziane wprost",
   "docs.toc.troubleshooting": "Rozwiązywanie problemów",
-
   "search.label": "Szukaj w podręczniku",
   "search.placeholder": "kod pokoju, kwantyzacja, wyłączny…",
-  "search.none": "Nic na tej stronie do tego nie pasuje.",
-
-  "download.title": "Pobieranie",
-  "download.none": "Nie ma jeszcze nic do pobrania i jest to zamierzone. Na tej stronie nie ma bety, nie ma wersji zapowiadającej, nie ma wczesnego dostępu. DAW, który działa w połowie, jest gorszy niż taki, którego jeszcze nie ma — Oscillate wychodzi, gdy cała macierz jakości świeci na zielono na wszystkich trzech systemach.",
-  "download.whenTitle": "Kiedy się pojawią",
-  "download.whenBody": "W wersji 1.0.0. Drabina na stronie głównej mówi, gdzie jest teraz praca, a każdy jej szczebel to wersja, której ktoś mógłby użyć, a nie data, którą ktoś zgadł.",
-  "download.ladderLink": "Droga do 1.0 →"
+  "search.none": "Nic na tej stronie do tego nie pasuje."
 }

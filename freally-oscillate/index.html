@@ -12,30 +12,6 @@
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
     <link rel="stylesheet" href="styles.css" />
-    <script>
-      /*
-       * ⛔⛔ **THE STORED THEME, BEFORE THE FIRST PAINT.**
-       *
-       * ▶ `site.js` is the last script on the page and it loads after
-       * `i18n.js`, so a reader who chose light saw the DARK page until ~200 KB
-       * of JavaScript had arrived and run. That is exactly the flash
-       * `src/main.tsx` goes to trouble to avoid in the application — "a white
-       * flash in a dark room, which is the worst version of it" — and the site
-       * had it in the other direction.
-       *
-       * ⚠ Inline and in the head on purpose: an external file is a round trip,
-       * and a round trip is the flash. ⛔ It is first-party, ~200 bytes, and
-       * reads nothing but this site's own stored choice.
-       */
-      try {
-        var stored = localStorage.getItem('oscillate.docs.theme');
-        if (stored === 'light' || stored === 'dark') {
-          document.documentElement.setAttribute('data-theme', stored);
-        }
-      } catch (e) {
-        /* a private window, or storage blocked. The page still paints. */
-      }
-    </script>
   </head>
   <body>
     <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
@@ -50,11 +26,9 @@
           <a href="index.html" data-i18n="nav.home">Home</a>
           <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
           <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <a href="download.html" data-downloads-link data-i18n="nav.download">Download</a>
           <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
             <!-- ⚠ Filled by site.js: English first, the other seventeen alphabetically. -->
           </select>
-          <button type="button" class="theme" data-i18n="nav.theme">Theme</button>
         </nav>
       </div>
     </header>

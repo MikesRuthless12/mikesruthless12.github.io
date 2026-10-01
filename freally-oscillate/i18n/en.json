@@ -3,21 +3,15 @@
   "nav.home": "Home",
   "nav.documentation": "Documentation",
   "nav.changelog": "Changelog",
-  "nav.download": "Download",
   "nav.language": "Language",
-  "nav.theme": "Theme",
-
   "hero.tagline": "A DAW where four producers work in the same session at once.",
   "hero.sub": "Free, offline-first, and 100% AI-free. Windows · macOS · Linux.",
   "hero.noDownloads": "In development. There are no downloads until version 1.0.0, and the source code is private.",
-
   "notice.freeToday": "Freally Oscillate is free today, but it might not be free forever: future versions may be sold.",
-
   "what.title": "What it is",
   "what.p1": "Every DAW is single-player software. Making a record with someone in another country still means exporting stems, uploading them, waiting, re-importing, and losing the thread — and six months later nobody remembers who wrote the bassline.",
   "what.p2": "Oscillate is a full DAW built around the opposite assumption. You paste a room code into a chat and up to three other producers drop into your session: you see their cameras, you hear them, their cursors move on your timeline, and when you are finished it prints a split sheet saying who wrote what.",
   "what.p3": "It is free today, and there is no server behind it. The room code is the connection offer, so the first person to join pastes a code and after that the room relays for everybody else. Nothing to keep running, nothing to pay for, nothing anybody can switch off.",
-
   "features.title": "What is in it",
   "features.room.title": "The room",
   "features.room.body": "Up to four producers, peer to peer, with no account and no server. Live cursors, chat, voice, camera tiles and screen share. Your undo takes back your change and never somebody else's.",
@@ -35,7 +29,6 @@
   "features.kumite.body": "A beat battle mode where each turn owns its own bars, and an authorship ledger derived from the edit log with work anybody undid netted out.",
   "features.free.title": "Free, and no AI",
   "features.free.body": "No tier, no trial, no account, no licence key. No model, no inference, no \"smart\" anything — and that is enforced by a build gate that fails on any ML runtime entering the dependency graph, not left as a promise.",
-
   "ladder.title": "The road to 1.0",
   "ladder.intro": "One line per rung. This is the same ladder the private plan follows — if one moves, both move, and a build gate compares them.",
   "ladder.version": "Version",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "Planned",
   "ladder.state.goal": "The goal",
   "ladder.note": "A rung that is done is built and on the development branch. It is not a download: there are none, and there will not be until 1.0.0.",
-
   "honest.title": "The things most sites put at the bottom",
   "honest.peers.title": "Four producers, and not five",
   "honest.peers.body": "A room holds four people. There is no server relaying audio, so every peer sends to every other peer, and the fifth connection is where an ordinary home upload gives out. Four is the number that works rather than the number that sounded good.",
@@ -59,10 +51,8 @@
   "honest.ai.body": "A build gate walks the dependency graph and fails on any inference runtime, any model file, and any analytics or crash-reporting library. It is a property of the build rather than a sentence on a website.",
   "honest.updater.title": "The one connection the application makes",
   "honest.updater.body": "An update check, and only when you press the button or switch on checking at launch — it is off by default. It asks for one static file and sends nothing about you or your machine, every update is signed, and none is ever installed without your choice.",
-
   "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
   "footer.yours": "What you make with it is yours. Oscillate's author claims no ownership of the projects, MIDI, audio or renders you create with it.",
-
   "docs.title": "Documentation",
   "docs.contents": "Contents",
   "docs.toc.start": "Getting started",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "Privacy and the network",
   "docs.toc.limits": "The limits, stated plainly",
   "docs.toc.troubleshooting": "Troubleshooting",
-
   "search.label": "Search the manual",
   "search.placeholder": "room code, quantize, exclusive…",
-  "search.none": "Nothing on this site matches that.",
-
-  "download.title": "Download",
-  "download.none": "There is nothing to download yet, and that is on purpose. No beta on this page, no preview build, no early access. A DAW that half-works is worse than one that is not there yet, so Oscillate ships when the whole quality matrix is green on all three operating systems.",
-  "download.whenTitle": "When there will be",
-  "download.whenBody": "At version 1.0.0. The ladder on the home page says where the work is now, and every rung on it is a build somebody could use rather than a date somebody guessed.",
-  "download.ladderLink": "The road to 1.0 →"
+  "search.none": "Nothing on this site matches that."
 }

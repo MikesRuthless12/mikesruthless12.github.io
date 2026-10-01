@@ -3,7 +3,6 @@
   "nav.home": "Home",
   "nav.documentation": "Documentation",
   "nav.changelog": "Changelog",
-  "nav.download": "Download",
   "hero.tagline": "Put it on the glass. Press START. Drag the copy.",
   "hero.sub": "Audio in, MIDI out. MIDI in, audio out. Free, offline and 100% AI-free.",
   "notice.price": "Freally Flipcopy is free today, but it might not be free forever: future versions may be sold.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "It contains no AI of any kind: every copy is made by classic, deterministic signal processing, and a build gate fails if a machine-learning library is ever added.",
   "search.placeholder": "Search the documentation",
   "docs.contents": "Contents",
-  "download.title": "Download",
-  "download.none": "There is nothing to download yet, and that is on purpose.",
-  "download.noneBody": "No beta on this page, no preview build, no early access. Flipcopy ships when every gate is green on all three operating systems.",
-  "download.private": "Flipcopy's source code is private, so there is nothing to build from either.",
-  "download.whenTitle": "When there will be",
-  "download.whenBody": "At version 1.0.0. The ladder on the home page shows where the work is now.",
-  "download.ladderLink": "The road to 1.0 →",
   "search.none": "Nothing on this site matches that."
 }

@@ -3,7 +3,6 @@
   "nav.home": "Início",
   "nav.documentation": "Documentação",
   "nav.changelog": "Registro de alterações",
-  "nav.download": "Baixar",
   "hero.tagline": "Coloque no vidro. Pressione START. Arraste a cópia.",
   "hero.sub": "Áudio na entrada, MIDI na saída. MIDI na entrada, áudio na saída. Gratuito, offline e 100% livre de IA.",
   "notice.price": "O Freally Flipcopy é gratuito hoje, mas pode não ser gratuito para sempre: versões futuras poderão ser vendidas.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "Ele não contém nenhum tipo de IA: cada cópia é feita por processamento de sinal clássico e determinístico, e uma barreira de build falha se uma biblioteca de aprendizado de máquina for adicionada algum dia.",
   "search.placeholder": "Pesquisar na documentação",
   "docs.contents": "Sumário",
-  "download.title": "Baixar",
-  "download.none": "Ainda não há nada para baixar, e isso é de propósito.",
-  "download.noneBody": "Nenhuma beta nesta página, nenhuma build de prévia, nenhum acesso antecipado. O Flipcopy é lançado quando todas as barreiras estiverem verdes nos três sistemas operacionais.",
-  "download.private": "O código-fonte do Flipcopy é privado, então também não há nada para compilar por conta própria.",
-  "download.whenTitle": "Quando vai existir",
-  "download.whenBody": "Na versão 1.0.0. A escada na página inicial mostra em que ponto está o trabalho agora.",
-  "download.ladderLink": "O caminho até a 1.0 →",
   "search.none": "Nada neste site corresponde a isso."
 }

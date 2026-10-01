@@ -26,21 +26,18 @@
   'use strict';
 
   /**
-   * ⛔⛔ THE DOWNLOAD FLAG — TASK-154 IS THE ONE LINE THAT FLIPS IT.
+   * ⛔⛔ NO DOWNLOADS, AND NO DOWNLOAD PAGE OR LINK, BEFORE `v1.0.0`.
    *
-   * ▶ Owner's standing instruction and charter rule 5: **no downloads and no
-   * installers appear anywhere on this site until `v1.0.0`.** `download.html`
-   * is built — it is easier to review a real page than an imagined one — and it
-   * is reachable by typing the URL, where it says plainly that there is nothing
-   * there yet.
+   * ▶ The owner, 2026-10-01: *"remove those download links now"* — v1.0.0 is
+   * when the apps start selling. The built-but-hidden `download.html` is gone
+   * with its navigation link; TASK-154 adds both, and
+   * `scripts/check-docs-site.mjs` refuses any download link before then.
    *
-   * ⚠ What this flag controls is the **navigation link**, which is the only
-   * thing a reader would find by looking. ⛔ It is NOT a security boundary and
-   * it does not pretend to be: a static site cannot hide a file it publishes.
-   * The page itself is honest instead of hidden, which is the version of this
-   * that cannot be embarrassing.
+   * ⛔ **Dark only** (owner, 2026-10-01: *"i want only the dark theme for
+   * 'Freally Oscillate''s page … i do not want light and dark to be
+   * available"*). The Theme button, the stored choice and the light palette are
+   * gone; every Freally site is dark.
    */
-  var DOWNLOADS_LIVE = false;
 
   /** ⛔ English first, the other seventeen alphabetically by code. Always. */
   var LOCALES = [
@@ -65,7 +62,6 @@
   ];
 
   var STORE_LOCALE = 'oscillate.docs.locale';
-  var STORE_THEME = 'oscillate.docs.theme';
 
   function stored(key) {
     try {
@@ -327,26 +323,6 @@
     });
   }
 
-  function buildTheme() {
-    var button = document.querySelector('button.theme');
-    if (button === null) return;
-    // ⚠ **Reading and applying the stored theme is NOT done here.** A ~200-byte
-    // inline script in each page's `<head>` does it before the first paint —
-    // this file arrives after `i18n.js` and would flash the wrong theme for the
-    // length of that download. All that is left here is the button.
-    button.addEventListener('click', function () {
-      // ⚠ Reads what is actually painted rather than what was stored, so the
-      // first press from the system default flips to the opposite of what the
-      // reader is looking at.
-      var painted =
-        document.documentElement.getAttribute('data-theme') ||
-        (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
-      var next = painted === 'light' ? 'dark' : 'light';
-      document.documentElement.setAttribute('data-theme', next);
-      remember(STORE_THEME, next);
-    });
-  }
-
   function markCurrentPage() {
     var here = location.pathname.split('/').pop() || 'index.html';
     var links = document.querySelectorAll('.site-nav a[href]');
@@ -357,19 +333,9 @@
     }
   }
 
-  function applyDownloadFlag() {
-    if (DOWNLOADS_LIVE) return;
-    var links = document.querySelectorAll('[data-downloads-link]');
-    for (var i = 0; i < links.length; i += 1) {
-      links[i].hidden = true;
-    }
-  }
-
   function start() {
     buildPicker();
-    buildTheme();
     markCurrentPage();
-    applyDownloadFlag();
     apply(initialLocale());
   }
 

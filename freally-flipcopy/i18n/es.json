@@ -3,7 +3,6 @@
   "nav.home": "Inicio",
   "nav.documentation": "Documentación",
   "nav.changelog": "Registro de cambios",
-  "nav.download": "Descargar",
   "hero.tagline": "Ponlo sobre el cristal. Pulsa START. Arrastra la copia.",
   "hero.sub": "Audio a MIDI. MIDI a audio. Gratis, sin conexión y 100 % libre de IA.",
   "notice.price": "Freally Flipcopy es gratis hoy, pero podría no serlo para siempre: las versiones futuras podrían venderse.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "No contiene ningún tipo de IA: cada copia se hace mediante procesamiento de señal clásico y determinista, y un control de compilación falla si alguna vez se añade una biblioteca de aprendizaje automático.",
   "search.placeholder": "Buscar en la documentación",
   "docs.contents": "Contenido",
-  "download.title": "Descargar",
-  "download.none": "Todavía no hay nada que descargar, y es a propósito.",
-  "download.noneBody": "Ninguna beta en esta página, ninguna versión previa, ningún acceso anticipado. Flipcopy se publica cuando todos los controles están en verde en los tres sistemas operativos.",
-  "download.private": "El código fuente de Flipcopy es privado, así que tampoco hay nada a partir de lo cual compilarlo.",
-  "download.whenTitle": "Cuándo la habrá",
-  "download.whenBody": "En la versión 1.0.0. La escalera en la página de inicio muestra dónde está el trabajo ahora.",
-  "download.ladderLink": "El camino hacia la 1.0 →",
   "search.none": "Nada en este sitio coincide con eso."
 }

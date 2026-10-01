@@ -3,21 +3,15 @@
   "nav.home": "Beranda",
   "nav.documentation": "Dokumentasi",
   "nav.changelog": "Perubahan",
-  "nav.download": "Unduhan",
   "nav.language": "Bahasa",
-  "nav.theme": "Tema",
-
   "hero.tagline": "Sebuah DAW tempat empat produser bekerja di sesi yang sama sekaligus.",
   "hero.sub": "Gratis, mengutamakan offline, dan 100 % tanpa AI. Windows · macOS · Linux.",
   "hero.noDownloads": "Dalam pengembangan. Tidak ada unduhan sampai versi 1.0.0, dan kode sumbernya privat.",
-
   "notice.freeToday": "Freally Oscillate gratis hari ini, tetapi mungkin tidak gratis selamanya: versi-versi mendatang bisa saja dijual.",
-
   "what.title": "Apa ini",
   "what.p1": "Setiap DAW adalah perangkat lunak untuk satu orang. Membuat rekaman bersama seseorang di negara lain masih berarti mengekspor stem, mengunggah, menunggu, mengimpor lagi, dan kehilangan alurnya — dan enam bulan kemudian tidak ada yang ingat siapa yang menulis bass line-nya.",
   "what.p2": "Oscillate adalah DAW lengkap yang dibangun di atas asumsi sebaliknya. Kamu menempelkan kode ruang ke obrolan dan sampai tiga produser lain masuk ke sesimu: kamu melihat kamera mereka, mendengar mereka, kursor mereka bergerak di timeline-mu, dan ketika selesai ia mencetak split sheet yang menyebut siapa menulis apa.",
   "what.p3": "Ia gratis hari ini, dan tidak ada server di belakangnya. Kode ruang itu sendiri adalah tawaran koneksi: orang pertama menempel kode, dan setelah itu ruang meneruskan untuk semua yang lain. Tidak ada yang harus tetap menyala, tidak ada yang harus dibayar, tidak ada yang bisa dimatikan siapa pun.",
-
   "features.title": "Apa isinya",
   "features.room.title": "Ruang",
   "features.room.body": "Sampai empat produser, langsung antar komputer, tanpa akun dan tanpa server. Kursor langsung, obrolan, suara, kotak kamera dan berbagi layar. Undo-mu menarik kembali perubahanmu dan tidak pernah milik orang lain.",
@@ -35,7 +29,6 @@
   "features.kumite.body": "Mode adu beat tempat setiap giliran memiliki biramanya sendiri, dan buku kepengarangan yang diturunkan dari log penyuntingan, dengan pekerjaan yang dibatalkan sudah dikurangi.",
   "features.free.title": "Gratis, dan tanpa AI",
   "features.free.body": "Tidak ada tingkatan, tidak ada masa coba, tidak ada akun, tidak ada kunci lisensi. Tidak ada model, tidak ada inferensi, tidak ada apa pun yang «pintar» — dan itu bukan janji: sebuah gerbang build gagal begitu ada runtime machine learning masuk ke graf dependensi.",
-
   "ladder.title": "Jalan menuju 1.0",
   "ladder.intro": "Satu baris per anak tangga. Ini tangga yang sama yang diikuti rencana internal — kalau satu bergeser, keduanya bergeser, dan sebuah gerbang build membandingkannya.",
   "ladder.version": "Versi",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "Direncanakan",
   "ladder.state.goal": "Tujuannya",
   "ladder.note": "Anak tangga yang selesai sudah dibangun dan ada di cabang pengembangan. Ia bukan unduhan: tidak ada unduhan, dan tidak akan ada sampai 1.0.0.",
-
   "honest.title": "Hal-hal yang kebanyakan situs taruh paling bawah",
   "honest.peers.title": "Empat produser, bukan lima",
   "honest.peers.body": "Satu ruang menampung empat orang. Tidak ada server yang meneruskan audio, jadi setiap orang mengirim ke semua orang lain, dan koneksi kelima adalah titik ketika unggahan rumahan biasa habis. Empat adalah angka yang bekerja, bukan angka yang enak didengar.",
@@ -59,10 +51,8 @@
   "honest.ai.body": "Sebuah gerbang build menelusuri graf dependensi dan gagal pada runtime inferensi apa pun, berkas model apa pun, dan pustaka analitik atau pelaporan crash apa pun. Itu sifat dari build, bukan kalimat di sebuah situs.",
   "honest.updater.title": "Satu-satunya koneksi yang dibuat aplikasi",
   "honest.updater.body": "Pemeriksaan pembaruan, dan hanya ketika kamu menekan tombol atau menyalakan pemeriksaan saat dijalankan — bawaannya mati. Ia meminta satu berkas statis dan tidak mengirim apa pun tentang kamu atau mesinmu, setiap pembaruan ditandatangani, dan tidak ada yang dipasang tanpa pilihanmu.",
-
   "footer.licence": "Berpemilik — Seluruh Hak Dilindungi. © Mike Weaver. Gratis digunakan saat ini; versi mendatang mungkin dijual. Bukan sumber terbuka.",
   "footer.yours": "Apa yang kamu buat dengannya adalah milikmu. Penulis Oscillate tidak mengklaim kepemilikan atas proyek, MIDI, audio atau render yang kamu buat dengannya.",
-
   "docs.title": "Dokumentasi",
   "docs.contents": "Daftar isi",
   "docs.toc.start": "Memulai",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "Privasi dan jaringan",
   "docs.toc.limits": "Batasannya, terus terang",
   "docs.toc.troubleshooting": "Mengatasi masalah",
-
   "search.label": "Cari di manual",
   "search.placeholder": "kode ruang, kuantisasi, eksklusif…",
-  "search.none": "Tidak ada di situs ini yang cocok dengan itu.",
-
-  "download.title": "Unduhan",
-  "download.none": "Belum ada yang bisa diunduh, dan itu memang disengaja. Tidak ada beta di halaman ini, tidak ada versi pratinjau, tidak ada akses awal. DAW yang jalan setengah lebih buruk daripada yang belum ada, jadi Oscillate keluar ketika seluruh matriks mutu hijau di ketiga sistem operasi.",
-  "download.whenTitle": "Kapan akan ada",
-  "download.whenBody": "Pada versi 1.0.0. Tangga di beranda menyebutkan di mana pekerjaan berada sekarang, dan setiap anak tangganya adalah build yang benar-benar bisa dipakai orang, bukan tanggal yang ditebak seseorang.",
-  "download.ladderLink": "Jalan menuju 1.0 →"
+  "search.none": "Tidak ada di situs ini yang cocok dengan itu."
 }

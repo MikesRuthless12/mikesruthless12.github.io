@@ -3,7 +3,6 @@
   "nav.home": "Ana Sayfa",
   "nav.documentation": "Belgeler",
   "nav.changelog": "Değişiklik günlüğü",
-  "nav.download": "İndir",
   "hero.tagline": "Camın üzerine koyun. START'a basın. Kopyayı sürükleyin.",
   "hero.sub": "Ses girer, MIDI çıkar. MIDI girer, ses çıkar. Ücretsiz, çevrimdışı ve %100 yapay zekâsız.",
   "notice.price": "Freally Flipcopy bugün ücretsiz, ancak sonsuza dek ücretsiz kalmayabilir: gelecekteki sürümler satılabilir.",
@@ -99,12 +98,5 @@
   "docs.privacy.p2": "Hiçbir tür yapay zekâ içermez: her kopya klasik, deterministik sinyal işlemeyle yapılır ve bir makine öğrenimi kitaplığı eklenirse bir derleme kontrolü başarısız olur.",
   "search.placeholder": "Belgelerde ara",
   "docs.contents": "İçindekiler",
-  "download.title": "İndir",
-  "download.none": "Şu anda indirilecek hiçbir şey yok ve bu bilerek böyle.",
-  "download.noneBody": "Bu sayfada beta yok, önizleme sürümü yok, erken erişim yok. Flipcopy, her üç işletim sisteminde de her kontrol yeşil olduğunda yayınlanır.",
-  "download.private": "Flipcopy'nin kaynak kodu özeldir, dolayısıyla kendiniz derleyebileceğiniz bir şey de yok.",
-  "download.whenTitle": "Ne zaman olacak",
-  "download.whenBody": "Sürüm 1.0.0'da. Ana sayfadaki merdiven, çalışmanın şu anda nerede olduğunu gösterir.",
-  "download.ladderLink": "1.0'a giden yol →",
   "search.none": "Bu sitede buna uyan bir şey yok."
 }

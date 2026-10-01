@@ -3,21 +3,15 @@
   "nav.home": "首页",
   "nav.documentation": "文档",
   "nav.changelog": "更新记录",
-  "nav.download": "下载",
   "nav.language": "语言",
-  "nav.theme": "主题",
-
   "hero.tagline": "一个让四位制作人同时在同一个工程里工作的 DAW。",
   "hero.sub": "免费，离线优先，100% 无 AI。Windows · macOS · Linux。",
   "hero.noDownloads": "开发中。1.0.0 版之前不提供下载，源代码也不公开。",
-
   "notice.freeToday": "Freally Oscillate 目前免费，但未必永远免费：未来的版本可能会出售。",
-
   "what.title": "它是什么",
   "what.p1": "每一个 DAW 都是单人软件。跟另一个国家的人一起做一张唱片，至今仍然意味着导出分轨、上传、等待、再导入，然后丢掉思路——半年之后，没人记得贝斯线是谁写的。",
   "what.p2": "Oscillate 是一个建立在相反假设之上的完整 DAW。你把房间码贴进聊天里，最多三位制作人就进入你的工程：你看得到他们的摄像头，听得到他们，他们的光标在你的时间线上移动；做完之后，它会打印一张分成表，写清楚谁写了什么。",
   "what.p3": "它目前免费，而且背后没有服务器。房间码本身就是连接邀约：第一个人贴上一个码，之后房间会替其他所有人转接。没有需要一直运行的东西，没有要付的钱，也没有谁能关掉的东西。",
-
   "features.title": "里面有什么",
   "features.room.title": "房间",
   "features.room.body": "最多四位制作人，点对点，没有账号也没有服务器。实时光标、聊天、语音、摄像头画面和屏幕共享。你的撤销撤回你的改动，永远不会撤回别人的。",
@@ -35,7 +29,6 @@
   "features.kumite.body": "一个节拍对战模式，每一轮拥有自己的小节；以及一份从编辑日志推导出来的署名账本，被谁撤销的工作会被扣除。",
   "features.free.title": "免费，且没有 AI",
   "features.free.body": "没有等级、没有试用、没有账号、没有授权码。没有模型、没有推理、没有任何「智能」——而且这不是承诺：只要有机器学习运行时进入依赖图，构建关卡就会失败。",
-
   "ladder.title": "通往 1.0 的路",
   "ladder.intro": "每一级一行。这与内部计划遵循的是同一把梯子——一边动，两边都动，并且有构建关卡来比对它们。",
   "ladder.version": "版本",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "计划中",
   "ladder.state.goal": "目标",
   "ladder.note": "已完成的一级是已构建并在开发分支上的。它不是下载：现在没有下载，在 1.0.0 之前也不会有。",
-
   "honest.title": "大多数网站放在最底下的那些话",
   "honest.peers.title": "四位制作人，而不是五位",
   "honest.peers.body": "一个房间容纳四个人。没有服务器转发音频，所以每个人都要发给其他所有人，而第五条连接正是普通家庭上行带宽耗尽的地方。四是行得通的数字，不是听起来好听的数字。",
@@ -59,10 +51,8 @@
   "honest.ai.body": "构建关卡会走一遍依赖图，遇到任何推理运行时、任何模型文件、任何分析或崩溃上报库都会失败。这是构建的性质，而不是网站上的一句话。",
   "honest.updater.title": "应用唯一会建立的连接",
   "honest.updater.body": "检查更新，而且只在你按下按钮，或者你打开了启动时检查的时候——默认是关闭的。它只请求一个静态文件，不发送任何关于你或你这台机器的信息；每一个更新都有签名，而且没有你的选择就不会安装任何一个。",
-
   "footer.licence": "专有软件——保留所有权利。© Mike Weaver。目前可免费使用；未来版本可能会出售。并非开源。",
   "footer.yours": "你用它做出来的东西是你的。Oscillate 的作者对你用它创建的工程、MIDI、音频或渲染成品不主张任何所有权。",
-
   "docs.title": "文档",
   "docs.contents": "目录",
   "docs.toc.start": "开始使用",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "隐私与网络",
   "docs.toc.limits": "把限制说清楚",
   "docs.toc.troubleshooting": "疑难排解",
-
   "search.label": "搜索手册",
   "search.placeholder": "房间码、量化、独占…",
-  "search.none": "本站没有与之匹配的内容。",
-
-  "download.title": "下载",
-  "download.none": "目前还没有可下载的东西，这是有意为之。这个页面上没有 beta、没有预览版、没有抢先体验。一个只能用一半的 DAW 比一个还不存在的更糟，所以 Oscillate 会在整套质量矩阵在三个操作系统上全绿时才发布。",
-  "download.whenTitle": "什么时候会有",
-  "download.whenBody": "在 1.0.0。首页上的梯子说明工作现在到了哪一级，而上面的每一级都是有人真的能用的构建，不是谁猜的日期。",
-  "download.ladderLink": "通往 1.0 的路 →"
+  "search.none": "本站没有与之匹配的内容。"
 }

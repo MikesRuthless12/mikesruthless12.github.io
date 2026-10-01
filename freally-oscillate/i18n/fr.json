@@ -3,21 +3,15 @@
   "nav.home": "Accueil",
   "nav.documentation": "Documentation",
   "nav.changelog": "Journal des modifications",
-  "nav.download": "Téléchargement",
   "nav.language": "Langue",
-  "nav.theme": "Thème",
-
   "hero.tagline": "Un DAW où quatre producteurs travaillent dans la même session en même temps.",
   "hero.sub": "Gratuit, hors ligne d'abord, et 100 % sans IA. Windows · macOS · Linux.",
   "hero.noDownloads": "En développement. Aucun téléchargement avant la version 1.0.0, et le code source est privé.",
-
   "notice.freeToday": "Freally Oscillate est gratuit aujourd'hui, mais il pourrait ne pas l'être pour toujours : les versions futures pourraient être vendues.",
-
   "what.title": "Ce que c'est",
   "what.p1": "Tous les DAW sont des logiciels solo. Faire un disque avec quelqu'un à l'autre bout du monde, c'est encore exporter des stems, les envoyer, attendre, les réimporter — et perdre le fil. Six mois plus tard, personne ne se souvient qui a écrit la ligne de basse.",
   "what.p2": "Oscillate est un DAW complet bâti sur l'hypothèse inverse. Vous collez un code de salon dans une conversation et jusqu'à trois autres producteurs arrivent dans votre session : vous voyez leurs caméras, vous les entendez, leurs curseurs bougent sur votre timeline — et à la fin il imprime une feuille de répartition qui dit qui a écrit quoi.",
   "what.p3": "C'est gratuit aujourd'hui, et il n'y a aucun serveur derrière. Le code de salon est l'offre de connexion : la première personne colle un code, puis le salon relaie pour tous les autres. Rien à maintenir en marche, rien à payer, rien que quiconque puisse éteindre.",
-
   "features.title": "Ce qu'il contient",
   "features.room.title": "Le salon",
   "features.room.body": "Jusqu'à quatre producteurs, de pair à pair, sans compte et sans serveur. Curseurs en direct, discussion, voix, vignettes caméra et partage d'écran. Votre annulation reprend votre modification et jamais celle d'un autre.",
@@ -35,7 +29,6 @@
   "features.kumite.body": "Un mode de battle de beats où chaque tour possède ses propres mesures, et un registre de paternité dérivé du journal des modifications, le travail annulé étant déduit.",
   "features.free.title": "Gratuit, et sans IA",
   "features.free.body": "Pas de palier, pas d'essai, pas de compte, pas de clé de licence. Aucun modèle, aucune inférence, rien d'« intelligent » — et c'est imposé par un contrôle de compilation qui échoue dès qu'un moteur d'apprentissage entre dans le graphe de dépendances, plutôt que laissé à l'état de promesse.",
-
   "ladder.title": "La route vers 1.0",
   "ladder.intro": "Une ligne par échelon. C'est la même échelle que suit le plan interne — si l'un bouge, les deux bougent, et un contrôle de compilation les compare.",
   "ladder.version": "Version",
@@ -45,7 +38,6 @@
   "ladder.state.planned": "Prévu",
   "ladder.state.goal": "L'objectif",
   "ladder.note": "Un échelon fait est construit et présent sur la branche de développement. Ce n'est pas un téléchargement : il n'y en a aucun, et il n'y en aura pas avant 1.0.0.",
-
   "honest.title": "Ce que la plupart des sites mettent tout en bas",
   "honest.peers.title": "Quatre producteurs, et pas cinq",
   "honest.peers.body": "Un salon accueille quatre personnes. Aucun serveur ne relaie l'audio : chacun envoie à tous les autres, et la cinquième connexion est l'endroit où un débit montant domestique ordinaire s'épuise. Quatre est le nombre qui fonctionne, pas celui qui sonnait bien.",
@@ -59,10 +51,8 @@
   "honest.ai.body": "Un contrôle de compilation parcourt le graphe de dépendances et échoue devant tout moteur d'inférence, tout fichier de modèle et toute bibliothèque d'analyse ou de rapport de plantage. C'est une propriété du build, pas une phrase sur un site.",
   "honest.updater.title": "La seule connexion que fait l'application",
   "honest.updater.body": "Une vérification de mise à jour, et seulement quand vous appuyez sur le bouton ou activez la vérification au démarrage — elle est désactivée par défaut. Elle demande un seul fichier statique et n'envoie rien sur vous ni sur votre machine, chaque mise à jour est signée, et aucune n'est installée sans votre choix.",
-
   "footer.licence": "Propriétaire — Tous droits réservés. © Mike Weaver. Utilisation gratuite aujourd'hui ; les versions futures pourraient être vendues. Ce n'est pas un logiciel libre.",
   "footer.yours": "Ce que vous faites avec lui vous appartient. L'auteur d'Oscillate ne revendique aucune propriété sur les projets, le MIDI, l'audio ou les rendus que vous créez avec.",
-
   "docs.title": "Documentation",
   "docs.contents": "Sommaire",
   "docs.toc.start": "Premiers pas",
@@ -86,14 +76,7 @@
   "docs.toc.privacy": "Vie privée et réseau",
   "docs.toc.limits": "Les limites, dites franchement",
   "docs.toc.troubleshooting": "Dépannage",
-
   "search.label": "Rechercher dans le manuel",
   "search.placeholder": "code de salon, quantifier, exclusif…",
-  "search.none": "Rien sur ce site ne correspond.",
-
-  "download.title": "Téléchargement",
-  "download.none": "Il n'y a encore rien à télécharger, et c'est voulu. Pas de bêta sur cette page, pas de version d'essai, pas d'accès anticipé. Un DAW qui marche à moitié est pire qu'un DAW qui n'existe pas encore — Oscillate sortira quand toute la matrice de qualité sera au vert sur les trois systèmes.",
-  "download.whenTitle": "Quand il y en aura",
-  "download.whenBody": "À la version 1.0.0. L'échelle de la page d'accueil dit où en est le travail, et chaque échelon est une version que quelqu'un pourrait utiliser, pas une date devinée.",
-  "download.ladderLink": "La route vers 1.0 →"
+  "search.none": "Rien sur ce site ne correspond."
 }

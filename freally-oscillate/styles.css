@@ -23,7 +23,7 @@
  */
 
 :root {
-  /* ── Dark, the default and the signature look ─────────────────────────── */
+  /* ── Dark, the only look: every Freally site is dark (owner, 2026-10-01) ── */
   --color-bg: #0b0c10;
   --color-surface: #14161c;
   --color-surface-2: #1b1e26;
@@ -60,46 +60,6 @@
   --radius-control: 6px;
   --radius-panel: 10px;
   --measure: 68ch;
-}
-
-/* ⛔ Light is NOT an inversion — the dark accents are unreadable on white, so
- * these are the application's own light values, chosen to clear their ratio on
- * a white surface. Same resolution order the app uses: the media query first,
- * then an explicit choice. */
-@media (prefers-color-scheme: light) {
-  :root:not([data-theme='dark']) {
-    --color-bg: #fafafc;
-    --color-surface: #ffffff;
-    --color-surface-2: #f1f2f6;
-    --color-border: #d8dbe3;
-    --color-primary: #4a7a15;
-    --color-primary-hot: #3e6712;
-    --color-signal: #0e7490;
-    --color-text: #14161c;
-    --color-text-2: #4b5361;
-    --color-text-3: #5f6673;
-    --color-success: #15803d;
-    --color-warning: #b45309;
-    --color-error: #b91c1c;
-    --color-info: #1d4ed8;
-  }
-}
-
-:root[data-theme='light'] {
-  --color-bg: #fafafc;
-  --color-surface: #ffffff;
-  --color-surface-2: #f1f2f6;
-  --color-border: #d8dbe3;
-  --color-primary: #4a7a15;
-  --color-primary-hot: #3e6712;
-  --color-signal: #0e7490;
-  --color-text: #14161c;
-  --color-text-2: #4b5361;
-  --color-text-3: #5f6673;
-  --color-success: #15803d;
-  --color-warning: #b45309;
-  --color-error: #b91c1c;
-  --color-info: #1d4ed8;
 }
 
 * {
@@ -233,8 +193,7 @@ a:hover {
   text-decoration-thickness: 2px;
 }
 
-select.locale,
-button.theme {
+select.locale {
   background: var(--color-surface-2);
   color: var(--color-text);
   border: 1px solid var(--color-border);
