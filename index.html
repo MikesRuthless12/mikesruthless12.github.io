@@ -7,7 +7,7 @@
       http-equiv="Content-Security-Policy"
       content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
     />
-    <title>Freally</title>
+    <title>Freally Products</title>
     <!-- The company's own mark (owner, 2026-10-01), from icons/make_icons.py. ⚠ `?v=` busts
          the browser's favicon cache: it held on to the Flipcopy icon this page used before.
          Bump it whenever the mark changes. -->
@@ -45,6 +45,70 @@
         font-size: 2.4rem;
         letter-spacing: 0.02em;
       }
+      /* ⛔ The title turns on its Y axis like every Freally app's wordmark (owner,
+       * 2026-10-01: "the spinning on the Y-Axis that all my apps have, but ensure it
+       * says 'Freally Products' … keep it the same font size and green though like my
+       * icons"). Ported from the apps' SpinningWordmark, number for number: ten
+       * stacked layers make a solid extrusion rather than a flipping sheet, the
+       * perspective sits on the parent, it holds on each face (0–14%, 50–64%) and
+       * eases through the edges over 7 s, and backfaces stay visible. Two changes:
+       * the face is the icons' green instead of white, and it keeps this heading's
+       * size. ⚠ Pure CSS, because this page runs no script. */
+      .wordmark {
+        perspective: 760px;
+        display: grid;
+        place-items: center;
+        overflow: visible;
+      }
+      .wordmark__spin {
+        transform-style: preserve-3d;
+        display: grid;
+        place-items: center;
+        animation: wordmark-turn 7000ms cubic-bezier(0.62, 0, 0.38, 1) infinite;
+      }
+      .wordmark__layer {
+        grid-area: 1 / 1;
+        white-space: nowrap;
+        backface-visibility: visible;
+        user-select: none;
+      }
+      /* The glow, on the face and the shoulder only: on all ten it fogs the letters. */
+      .wordmark__layer[data-depth='0'] {
+        text-shadow:
+          0 0 8px color-mix(in srgb, var(--primary) 60%, transparent),
+          0 0 24px color-mix(in srgb, var(--primary) 34%, transparent);
+      }
+      .wordmark__layer[data-depth='1'] {
+        text-shadow: 0 0 14px color-mix(in srgb, var(--primary) 50%, transparent);
+      }
+      @keyframes wordmark-turn {
+        0%,
+        14% {
+          transform: rotateY(0deg);
+        }
+        50%,
+        64% {
+          transform: rotateY(180deg);
+        }
+        100% {
+          transform: rotateY(360deg);
+        }
+      }
+      /* Held at an angle for anyone who asks for less motion: the depth stays. */
+      @media (prefers-reduced-motion: reduce) {
+        .wordmark__spin {
+          animation: none;
+          transform: rotateY(-22deg);
+        }
+      }
+      .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+        clip: rect(0 0 0 0);
+        white-space: nowrap;
+      }
       ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
@@ -80,7 +144,21 @@
   </head>
   <body>
     <main>
-      <h1>Freally</h1>
+      <h1 class="wordmark" dir="ltr">
+        <span class="visually-hidden">Freally Products</span>
+        <span class="wordmark__spin">
+          <span class="wordmark__layer" data-depth="9" style="transform: translateZ(-27px); color: color-mix(in srgb, var(--primary) 34%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="8" style="transform: translateZ(-24px); color: color-mix(in srgb, var(--primary) 43%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="7" style="transform: translateZ(-21px); color: color-mix(in srgb, var(--primary) 51%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="6" style="transform: translateZ(-18px); color: color-mix(in srgb, var(--primary) 59%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="5" style="transform: translateZ(-15px); color: color-mix(in srgb, var(--primary) 67%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="4" style="transform: translateZ(-12px); color: color-mix(in srgb, var(--primary) 75%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="3" style="transform: translateZ(-9px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="2" style="transform: translateZ(-6px); color: color-mix(in srgb, var(--primary) 92%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="1" style="transform: translateZ(-3px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))" aria-hidden="true">Freally Products</span>
+          <span class="wordmark__layer" data-depth="0" style="transform: translateZ(0px); color: var(--primary)" aria-hidden="true">Freally Products</span>
+        </span>
+      </h1>
       <ul>
         <li>
           <a href="freally-flipcopy/index.html"
