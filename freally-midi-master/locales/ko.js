@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.ko = {
   "changelog.eb387a68": "설치 프로그램은 서명되지 않았습니다: Windows에서는 SmartScreen, macOS에서는 Gatekeeper가 나타날 것입니다. 플랫폼별 단계는 릴리스 노트를 참고하세요.",
   "changelog.a1a0c41c": "© 2026 Mike Weaver — 모든 권리 보유.",
   "changelog.7b283e3a": "Freally MIDI Master의 릴리스 내역 — 모든 버전을 최신순으로, 그리고 각 버전에서 바뀐 모든 것.",
+  "index.e9b450d1": "완료",
 };

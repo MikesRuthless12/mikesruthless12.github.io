@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.fr = {
   "changelog.c3c020b2": "Le menu de la zone de notification (Show / Quit) n’est pas traduit.",
   "changelog.eb387a68": "Les installateurs ne sont pas signés : attendez-vous à SmartScreen sous Windows et à Gatekeeper sous macOS. Consultez les notes de version pour les étapes propres à chaque plateforme.",
   "changelog.a1a0c41c": "© 2026 Mike Weaver — Tous droits réservés.",
+  "index.e9b450d1": "Fait",
 };

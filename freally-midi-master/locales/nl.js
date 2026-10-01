@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.nl = {
   "documentation.fdd933a8": "Draait in een eigen venster",
   "documentation.dc3decbb": "Details",
   "documentation.cd05c2a9": "Dus: als je het meldt, vermeld dan welke host, welk formaat (CLAP of VST3) en welke OS-versie, en voeg het nieuwste bestand uit de map hierboven toe. Nam de crash de hele DAW mee, voeg dan ook het logboek toe dat je DAW schreef — als de host sneuvelt, is er misschien geen venster van ons meer over om vanuit te schrijven.",
+  "index.e9b450d1": "Klaar",
 };

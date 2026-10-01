@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.it = {
   "documentation.fdd933a8": "Funziona in una finestra propria",
   "documentation.dc3decbb": "Dettagli",
   "documentation.cd05c2a9": "Quindi: quando lo segnali, indica quale host, quale formato (CLAP o VST3) e quale versione del sistema operativo, e allega il file più recente dalla cartella qui sopra. Se il crash ha fatto cadere l'intera DAW, allega anche il log scritto dalla tua DAW: quando l'host muore, potrebbe non restarci nessuna finestra da cui scrivere.",
+  "index.e9b450d1": "Fatto",
 };

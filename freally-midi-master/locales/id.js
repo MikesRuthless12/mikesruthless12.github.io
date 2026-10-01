@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.id = {
   "changelog.eb387a68": "Installer tidak ditandatangani: bersiaplah menghadapi SmartScreen di Windows dan Gatekeeper di macOS. Lihat catatan rilis untuk langkah per platform.",
   "changelog.a1a0c41c": "© 2026 Mike Weaver — Semua hak dilindungi.",
   "changelog.7b283e3a": "Riwayat rilis Freally MIDI Master — setiap versi, yang terbaru lebih dulu, dan semua yang berubah di dalamnya.",
+  "index.e9b450d1": "Selesai",
 };

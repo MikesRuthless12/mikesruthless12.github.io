@@ -1303,4 +1303,5 @@ window.FREALLY_I18N.ar = {
   "changelog.eb387a68": "المُثبِّتات غير موقّعة: توقّع SmartScreen على Windows وGatekeeper على macOS. انظر ملاحظات الإصدار للخطوات الخاصة بكل منصة.",
   "changelog.a1a0c41c": "© 2026 Mike Weaver — جميع الحقوق محفوظة.",
   "changelog.7b283e3a": "سجل إصدارات Freally MIDI Master — كل إصدار، الأحدث أولًا، وكل ما تغيّر فيه.",
+  "index.e9b450d1": "منجز",
 };

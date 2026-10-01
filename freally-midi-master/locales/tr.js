@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.tr = {
   "changelog.eb387a68": "Yükleyiciler imzasız: Windows’ta SmartScreen’i ve macOS’ta Gatekeeper’ı bekle. Platform başına adımlar için sürüm notlarına bak.",
   "changelog.a1a0c41c": "© 2026 Mike Weaver — Tüm hakları saklıdır.",
   "changelog.7b283e3a": "Freally MIDI Master sürüm geçmişi — her sürüm, en yeniden eskiye, ve her birinde değişen her şey.",
+  "index.e9b450d1": "Tamamlandı",
 };

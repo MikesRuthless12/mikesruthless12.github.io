@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.es = {
   "changelog.eb387a68": "Los instaladores no están firmados: espera SmartScreen en Windows y Gatekeeper en macOS. Consulta las notas de la versión para los pasos de cada plataforma.",
   "changelog.a1a0c41c": "© 2026 Mike Weaver — Todos los derechos reservados.",
   "changelog.7b283e3a": "Historial de versiones de Freally MIDI Master — cada versión, de la más reciente a la más antigua, y todo lo que cambió en ella.",
+  "index.e9b450d1": "Hecho",
 };

@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.vi = {
   "changelog.ff263f3a": "<strong>Cả năm bộ tạo đều dùng được trong plugin.</strong> Melody, melody đối và bassline vẫn luôn nằm trong động cơ mà cầu nối lại từ chối chúng với thông báo «chưa được triển khai» — lời từ chối nằm ở cầu nối chứ không phải ở thứ nó báo về.",
   "changelog.ff3d760f": "⛔ Được sửa bởi cùng thay đổi đó: các kệ rò sang nhau. <em>Gói mở rộng gốc 2 → Keys</em> liệt kê mọi nhạc cụ Keys trên cả năm kệ, vì kệ chỉ là một thư mục trên màn hình và hoàn toàn không có mặt trong truy vấn.",
   "changelog.ff46ee2c": "<span class=\"badge done\">0.4.0</span> <span class=\"date\">29 tháng 7 năm 2026</span>",
+  "index.e9b450d1": "Xong",
 };

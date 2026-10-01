@@ -1299,4 +1299,5 @@ window.FREALLY_I18N['pt-BR'] = {
   "documentation.fdd933a8": "Roda na própria janela",
   "documentation.dc3decbb": "Detalhes",
   "documentation.cd05c2a9": "Então: ao relatar, diga qual host, qual formato (CLAP ou VST3) e qual versão do sistema, e anexe o arquivo mais recente da pasta acima. Se a falha derrubou a DAW inteira, anexe também o log que a sua DAW gravou — quando o host morre, pode não sobrar nenhuma janela nossa de onde escrever.",
+  "index.e9b450d1": "Pronto",
 };

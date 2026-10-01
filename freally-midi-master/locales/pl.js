@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.pl = {
   "documentation.fdd933a8": "Działa we własnym oknie",
   "documentation.dc3decbb": "Szczegóły",
   "documentation.cd05c2a9": "Zatem: zgłaszając to, podaj host, format (CLAP lub VST3) i wersję systemu oraz dołącz najnowszy plik z folderu powyżej. Jeśli awaria położyła cały DAW, dołącz też log zapisany przez twój DAW — gdy host pada, może nie zostać nam żadne okno, z którego dałoby się pisać.",
+  "index.e9b450d1": "Gotowe",
 };

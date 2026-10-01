@@ -1299,4 +1299,5 @@ window.FREALLY_I18N['zh-CN'] = {
   "documentation.fdd933a8": "在独立窗口中运行",
   "documentation.dc3decbb": "详情",
   "documentation.cd05c2a9": "所以：报告时请说明宿主、格式（CLAP 或 VST3）和操作系统版本，并附上上面文件夹中最新的文件。如果崩溃让整个 DAW 退出了，也请附上你的 DAW 写下的日志——宿主崩溃时，我们可能已经没有窗口可以写入了。",
+  "index.e9b450d1": "已完成",
 };

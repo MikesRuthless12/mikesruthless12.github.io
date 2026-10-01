@@ -1299,4 +1299,5 @@ window.FREALLY_I18N.hi = {
   "changelog.eb387a68": "इंस्टॉलर बिना हस्ताक्षर के हैं: Windows पर SmartScreen और macOS पर Gatekeeper की अपेक्षा करें। प्रति-प्लैटफ़ॉर्म क़दमों के लिए रिलीज़ नोट्स देखें।",
   "changelog.a1a0c41c": "© 2026 Mike Weaver — सर्वाधिकार सुरक्षित।",
   "changelog.7b283e3a": "Freally MIDI Master का रिलीज़ इतिहास — हर संस्करण, सबसे नया पहले, और उसमें जो कुछ भी बदला।",
+  "index.e9b450d1": "पूरा",
 };
