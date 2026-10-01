@@ -36,6 +36,7 @@
   "changelog.d83f5fbfd523": "Ruang, inti — koneksi tanpa server, kehadiran, sinkronisasi, obrolan",
   "changelog.c21fe15a529f": "Ruang, langsung — suara, video, berbagi layar, Serah terima, Kumite, split sheet",
   "changelog.571f8aeed035": "Identitas — jalur lirik, Selang waktu sesi, kartu sesi, halaman kredit",
+  "changelog.00b30d434c3f": "Tampilan keluarga, sama di setiap aplikasi Freally — kenop, fader, dan tombol yang dirender di Blender, lima skin dalam mode terang dan gelap, suara antarmuka, dan bilah judul gelap — serta satu pustaka instrumen yang dibagikan dengan Freally MIDI Master",
   "changelog.ecdf0887f962": "Tampilan keluarga dan instrumen yang tepat — knop, fader dan tombol hasil render Blender, lima skin dalam mode terang dan gelap, suara antarmuka, bilah judul gelap, dan satu pustaka instrumen yang dipakai bersama Freally MIDI Master",
   "changelog.2700bc8e8217": "Beta publik, updater otomatis, situs dokumentasi dan manual bergambar",
   "changelog.8f1649305291": "Pengerasan, optimisasi dan sapuan tinjauan menyeluruh, diarahkan oleh beta",

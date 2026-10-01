@@ -36,6 +36,7 @@
   "changelog.d83f5fbfd523": "Pokój, rdzeń — połączenie bez serwera, obecność, synchronizacja, czat",
   "changelog.c21fe15a529f": "Pokój, na żywo — głos, wideo, udostępnianie ekranu, Przekazanie, Kumite, split sheet",
   "changelog.571f8aeed035": "Tożsamość — ścieżka tekstu, Poklatkowy zapis sesji, karty sesji, strona podziękowań",
+  "changelog.00b30d434c3f": "Wygląd rodziny, taki sam w każdej aplikacji Freally — pokrętła, suwaki i przyciski renderowane w Blenderze, pięć skórek w wersji jasnej i ciemnej, dźwięki interfejsu i ciemny pasek tytułu — oraz jedna biblioteka instrumentów wspólna z Freally MIDI Master",
   "changelog.ecdf0887f962": "Rodzinny wygląd i właściwe instrumenty — pokrętła, suwaki i przyciski renderowane w Blenderze, pięć skórek w wersji jasnej i ciemnej, dźwięki interfejsu, ciemny pasek tytułu i jedna biblioteka instrumentów wspólna z Freally MIDI Master",
   "changelog.2700bc8e8217": "Publiczna beta, automatyczny aktualizator, strona dokumentacji i ilustrowany podręcznik",
   "changelog.8f1649305291": "Utwardzanie, optymalizacja i pełny przegląd, ukierunkowane przez betę",

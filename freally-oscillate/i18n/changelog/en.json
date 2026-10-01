@@ -994,6 +994,7 @@
   "changelog.d83f5fbfd523": "The room, core — serverless connection, presence, sync, chat",
   "changelog.c21fe15a529f": "The room, live — voice, video, screen share, Takeover, Kumite, the Split Sheet",
   "changelog.571f8aeed035": "Identity — the Lyric Lane, Session Timelapse, session cards, the credits page",
+  "changelog.00b30d434c3f": "The family look, the same in every Freally app — Blender-rendered knobs, faders and buttons, five skins in light and dark, interface sounds and a dark title bar — and one instrument library shared with Freally MIDI Master",
   "changelog.ecdf0887f962": "The family look and the right instruments — Blender-rendered knobs, faders and buttons, five skins in light and dark, interface sounds, a dark title bar, and one instrument library shared with Freally MIDI Master",
   "changelog.2700bc8e8217": "The public beta, the auto-updater, the docs site and the illustrated manual",
   "changelog.8f1649305291": "Hardening, optimisation and the full review sweep, aimed by the beta",
