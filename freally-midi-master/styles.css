@@ -46,49 +46,73 @@ body {
   color: var(--text);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
   line-height: 1.55;
-  background:
-    radial-gradient(1200px 600px at 50% -10%, var(--bg-top), transparent 60%),
-    linear-gradient(180deg, #0a1408 0%, var(--bg-bottom) 100%);
-  background-color: var(--bg-bottom);
-  background-attachment: fixed;
+  /* ⛔ The one ground every Freally site shares, flat, as on Flipcopy's (owner,
+     2026-10-02: "i want all 4 pages to be like 'Flipcopy''s"). */
+  background: #090c09;
 }
 
-/* ---- Site nav ---- */
+/* ---- Site header: Flipcopy's, so every Freally site has the same top ----
+   The product on the left; the pages and the language on the right (owner,
+   2026-10-02: "i want all 4 pages to be like 'Flipcopy''s"). */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, #090c09 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-block-end: 1px solid var(--border);
+}
+
+.site-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.wordmark {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 650;
+  color: var(--text);
+  text-decoration: none;
+  letter-spacing: -0.01em;
+}
+
+.wordmark img {
+  width: 28px;
+  height: 28px;
+}
+
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 8px;
+  gap: 16px;
   flex-wrap: wrap;
-  padding: 16px 20px 0;
+  margin-inline-start: auto;
 }
 
 .nav a {
-  padding: 7px 16px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
   color: var(--muted);
   text-decoration: none;
-  font-size: 0.94rem;
-  font-weight: 600;
-  background: rgba(255, 255, 255, 0.02);
-  transition:
-    border-color 0.15s ease,
-    color 0.15s ease,
-    background 0.15s ease;
+  font-size: 0.9375rem;
 }
 
 .nav a:hover,
-.nav a:focus-visible {
-  border-color: var(--accent);
+.nav a:focus-visible,
+.nav a[aria-current="page"] {
   color: var(--text);
-  background: rgba(121, 217, 32, 0.1);
 }
 
 .nav a[aria-current="page"] {
-  border-color: var(--accent);
-  color: var(--text);
-  background: rgba(121, 217, 32, 0.14);
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-underline-offset: 6px;
+  text-decoration-thickness: 2px;
 }
 
 /* ---- Hero ---- */
@@ -109,13 +133,10 @@ body {
 
 .hero h1 {
   margin: 18px 0 8px;
-  font-size: clamp(2.4rem, 6vw, 4rem);
-  font-weight: 800;
-  letter-spacing: -0.02em;
-  background: linear-gradient(135deg, var(--accent), var(--accent-2));
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  color: var(--text);
 }
 
 .hero .tagline {
@@ -689,37 +710,26 @@ figure.shot figcaption {
 }
 
 /* ── The language picker ───────────────────────────────────────────────────
-   In the site nav, which is the top of every page. A pill like its neighbours,
-   so it reads as one more thing in the same row rather than as a control bolted
-   on beside them. */
+   Built by i18n.js at the end of the nav, and drawn like Flipcopy's language
+   select: a plain box, the current language's own name, no globe. */
 .lang {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
-  padding: 5px 10px 5px 12px;
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.02);
-}
-
-.lang:hover,
-.lang:focus-within {
-  border-color: var(--accent);
 }
 
 .lang__label {
-  font-size: 0.94rem;
-  line-height: 1;
+  display: none;
 }
 
 .lang select {
-  border: 0;
-  background: transparent;
-  color: var(--muted);
+  background: var(--panel-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 8px;
   font: inherit;
-  font-size: 0.94rem;
-  font-weight: 600;
-  padding: 2px 2px 2px 0;
+  font-size: 0.875rem;
+  cursor: pointer;
 }
 
 .lang select:focus-visible {
