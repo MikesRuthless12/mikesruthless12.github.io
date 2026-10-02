@@ -97,12 +97,14 @@ body {
   padding: 40px 20px 28px;
 }
 
+/* The same size as every Freally site's mark: 96px, as on Flipcopy, Oscillate
+ * and Unloop (owner, 2026-10-02: "keep the icon at the top the same size as the
+ * other pages ... do not keep it as a bigger size"). */
 .hero .logo {
-  border-radius: 22px;
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.45);
-  width: 288px;
-  max-width: 72vw;
-  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.45);
+  width: 96px;
+  height: 96px;
 }
 
 .hero h1 {
