@@ -1,24 +1,21 @@
 /*
- * Freally Oscillate — the docs site. TASK-130.
+ * Freally Teleprompt — the docs site, built exactly like Freally Flipcopy's
+ * (the Freally family's sites are one design), dark-only (owner: no light
+ * palette, no theme button).
  *
  * ⛔⛔ NO CDN, NO ANALYTICS, NO TRACKER, NO EMBEDDED FONT, NO THIRD-PARTY
- * SCRIPT. The site is as offline-honest as the application, and
- * `scripts/check-docs-site.mjs` fails the build on any absolute URL in a
- * `src`, `href` or `@import` that is not a link a reader clicks.
+ * SCRIPT. `scripts/site.test.mjs` fails on any absolute URL in a `src`, `href`
+ * or `@import` that is not a link a reader clicks.
  *
- * ⛔ **The token values are the family's own** — Freally Flipcopy's site
- * palette, its ground the flat `#090c09` (owner, 2026-10-01/02: *"i want all 4
- * pages to be like 'Flipcopy''s and not different from one another"*). Every
- * Freally docs site carries these same values, and `scripts/check-docs-site.mjs`
- * pins them, so the sites cannot drift apart one colour at a time.
+ * ⛔ **The token values are the family's own**, Flipcopy's site palette — the
+ * green of Freally Teleprompt's icon — and `scripts/site.test.mjs` pins them,
+ * so the four sites cannot drift apart one colour at a time.
  *
- * ⛔ § F-24: the OS's own fonts. No `@font-face`, no font file, no Google
- * Fonts. Every script the reader's system supports renders, and none of them
- * renders as tofu waiting for a download.
+ * ⚠ The OS's own fonts: no `@font-face` and no font file, so every script the
+ * reader's system supports renders at once.
  */
 
 :root {
-  /* ── Dark, the only look: every Freally site is dark (owner, 2026-10-01) ── */
   color-scheme: dark;
 
   --color-bg: #090c09;
@@ -35,7 +32,6 @@
   --color-success: #4ade80;
   --color-warning: #fbbf24;
   --color-error: #f87171;
-  --color-info: #60a5fa;
 
   --font-ui:
     system-ui, -apple-system, 'Segoe UI Variable Text', 'Segoe UI', Roboto, 'Noto Sans',
@@ -391,6 +387,11 @@ pre code {
   color: var(--color-primary);
 }
 
+/* A planned step has no version number until it ships; the dash is quiet. */
+.ladder .unnumbered {
+  color: var(--color-text-3);
+}
+
 /* ── The honest section ───────────────────────────────────────────────── */
 
 .honest {
@@ -407,6 +408,234 @@ pre code {
 
 .honest > :first-child {
   margin-block-start: 0;
+}
+
+/* ── The features page ────────────────────────────────────────────────── */
+
+/* ⛔ Read by a screen reader, never seen: the words behind a ✓ or a ✗, so a
+ * comparison cell is never only a symbol. */
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin-block: var(--space-6) var(--space-2);
+}
+
+.stat-grid li {
+  max-width: none;
+}
+
+.stat {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4) var(--space-3);
+  text-align: center;
+}
+
+.stat__n {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 2rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--color-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.stat__l {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: var(--color-text-2);
+}
+
+.stat--free .stat__n {
+  color: var(--color-success);
+}
+
+/* The "free today" box: the honest box's shape, in the START key's green. */
+.free-banner {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-inline-start: 3px solid var(--color-primary);
+  border-radius: var(--radius-panel);
+  padding: var(--space-4) var(--space-6);
+}
+
+.free-banner h2 {
+  margin-block-start: 0;
+  border-block-end: 0;
+  padding-block-end: 0;
+  color: var(--color-primary);
+}
+
+.free-banner p:last-child {
+  margin-block-end: 0;
+  font-weight: 600;
+}
+
+.cmp-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-6);
+  list-style: none;
+  padding: 0;
+  margin-block: var(--space-3);
+  color: var(--color-text-2);
+  font-size: 0.875rem;
+}
+
+.cmp-legend li {
+  max-width: none;
+}
+
+.cmp-mark {
+  display: inline-block;
+  min-width: 1.25em;
+  text-align: center;
+  font-weight: 700;
+}
+
+.cmp-mark.yes {
+  color: var(--color-success);
+}
+
+.cmp-mark.part {
+  color: var(--color-warning);
+}
+
+.cmp-mark.no,
+.cmp-mark.unknown {
+  color: var(--color-text-3);
+}
+
+/* ⚠ The table is wider than a phone: it scrolls inside its own frame, never
+ * the page. Focusable so a keyboard reader can scroll it too. */
+.cmp-wrap {
+  /* ⚠ The containing block of the cells' hidden words: without it they are
+   * placed against the page and widen it past a phone's screen. */
+  position: relative;
+  overflow-x: auto;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-panel);
+  margin-block: var(--space-4);
+}
+
+table.cmp {
+  width: 100%;
+  min-width: 860px;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.cmp th,
+.cmp td {
+  padding: var(--space-2) var(--space-3);
+  border-block-end: 1px solid var(--color-border);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cmp thead th {
+  color: var(--color-text-2);
+  font-weight: 600;
+  vertical-align: bottom;
+  background: var(--color-surface);
+}
+
+.cmp tbody tr:last-child > * {
+  border-block-end: 0;
+}
+
+.cmp th[scope='row'] {
+  text-align: start;
+  font-weight: 500;
+  color: var(--color-text);
+  min-width: 240px;
+}
+
+/* Teleprompt's own column, first and lit. */
+.cmp .us {
+  background: color-mix(in srgb, var(--color-primary) 9%, transparent);
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.cmp thead th.us {
+  color: var(--color-primary);
+  background: color-mix(in srgb, var(--color-primary) 14%, var(--color-surface));
+}
+
+/* ⛔ The verdict is a symbol and a word (the word for screen readers), and
+ * the symbol differs as well as the colour: ✓ ◐ ✗ —. */
+.cmp .yes {
+  color: var(--color-success);
+}
+
+.cmp .part {
+  color: var(--color-warning);
+}
+
+.cmp .no {
+  color: var(--color-text-3);
+}
+
+.cmp .unknown {
+  color: var(--color-text-3);
+}
+
+.cmp .note {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--color-text-2);
+}
+
+.cmp .price {
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.why h3 {
+  color: var(--color-primary);
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-block: var(--space-6) var(--space-1);
+}
+
+.why p {
+  margin-block-start: 0;
+  color: var(--color-text-2);
+}
+
+.states {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+
+.states li {
+  display: flex;
+  gap: var(--space-3);
+  align-items: baseline;
 }
 
 /* ── The manual ───────────────────────────────────────────────────────── */
@@ -456,51 +685,11 @@ pre code {
   border-inline-start-color: var(--color-primary);
 }
 
-/* ⛔⛔ THE ANNOTATED SCREENSHOTS — § F-33.
- *
- * ⚠ The red box is drawn INTO the picture by the capture pass, never here: it
- * has to be aligned to the real element, and CSS on this page knows nothing
- * about where that element was. So this is only the frame around it. */
-figure.shot {
-  margin: var(--space-6) 0;
-  max-width: 100%;
-}
-
-figure.shot img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-panel);
-  background: var(--color-surface);
-}
-
-figure.shot figcaption {
-  color: var(--color-text-2);
-  font-size: 0.875rem;
-  margin-block-start: var(--space-2);
-  max-width: var(--measure);
-}
-
 /* ── Search ───────────────────────────────────────────────────────────── */
 
 .search {
   position: relative;
   margin-block-end: var(--space-6);
-}
-
-/* The box reads like every Freally site's: the placeholder and nothing beside
- * it. Its label stays, for a screen reader. */
-.search-label {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  padding: 0;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-  border: 0;
 }
 
 .search input {
@@ -549,7 +738,7 @@ figure.shot figcaption {
 .notice {
   background: var(--color-surface);
   border: 1px solid var(--color-border);
-  border-inline-start: 3px solid var(--color-info);
+  border-inline-start: 3px solid var(--color-signal);
   border-radius: var(--radius-panel);
   padding: var(--space-4) var(--space-6);
   margin-block-end: var(--space-8);
@@ -557,202 +746,6 @@ figure.shot figcaption {
 
 .notice.stop {
   border-inline-start-color: var(--color-error);
-}
-
-/* ── The features page ────────────────────────────────────────────────── */
-
-/* ⚠ Read by a screen reader and by nobody else: the ✓ / ✗ / ◐ cells say their
- * word as well as drawing their mark, because a mark alone is a colour-only
- * meaning in a different costume. */
-.vh {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip-path: inset(50%);
-  white-space: nowrap;
-}
-
-.chips span {
-  border: 1px solid var(--color-border);
-  background: var(--color-surface);
-  border-radius: 999px;
-  padding: var(--space-1) var(--space-3);
-  font-size: 0.875rem;
-  color: var(--color-text-2);
-}
-
-.summary {
-  color: var(--color-text-2);
-}
-
-.stat-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: var(--space-3);
-  margin-block: var(--space-6) var(--space-4);
-}
-
-.stat {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-panel);
-  padding: var(--space-4) var(--space-3);
-  text-align: center;
-}
-
-.stat p {
-  margin: 0;
-  max-width: none;
-}
-
-.stat .n {
-  font-family: var(--font-display);
-  font-size: 2rem;
-  font-weight: 750;
-  line-height: 1.1;
-  color: var(--color-primary);
-  font-variant-numeric: tabular-nums;
-}
-
-.stat .l {
-  margin-block-start: var(--space-1);
-  font-size: 0.8125rem;
-  color: var(--color-text-2);
-}
-
-.stat.free .n {
-  color: var(--color-success);
-}
-
-.free-banner {
-  background: var(--color-surface);
-  border: 1px solid var(--color-border);
-  border-inline-start: 3px solid var(--color-success);
-  border-radius: var(--radius-panel);
-  padding: var(--space-4) var(--space-6);
-}
-
-.free-banner h2 {
-  margin-block-start: 0;
-  border: none;
-  padding: 0;
-  color: var(--color-success);
-}
-
-.free-banner .stated {
-  color: var(--color-text);
-  font-weight: 600;
-}
-
-.group-title {
-  color: var(--color-text-2);
-  font-size: 0.8125rem;
-  font-weight: 650;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-block: var(--space-8) var(--space-3);
-}
-
-.card h4 {
-  font-family: var(--font-display);
-  font-size: 1.0625rem;
-  line-height: 1.3;
-  margin-block: 0 var(--space-2);
-}
-
-.legend {
-  color: var(--color-text-2);
-  font-size: 0.9375rem;
-}
-
-/* ⛔ The table scrolls inside its own box rather than widening the page: at
- * phone width eight products do not fit, and a page that scrolls sideways
- * drags its header and its prose with it. The row names stay put. */
-.cmp-wrap {
-  /* ⚠ A containing block for the cells' screen-reader words (`.vh` is
-   * absolutely positioned): without it they are placed against the page, not
-   * this box, and drag the whole page sideways at phone width. */
-  position: relative;
-  overflow-x: auto;
-  margin-block: var(--space-4);
-  border: 1px solid var(--color-border);
-  border-radius: var(--radius-panel);
-}
-
-table.cmp {
-  width: 100%;
-  min-width: 920px;
-  border-collapse: collapse;
-  font-size: 0.875rem;
-}
-
-table.cmp caption {
-  caption-side: top;
-  text-align: start;
-  padding: var(--space-3) var(--space-3) 0;
-  color: var(--color-text-2);
-  font-size: 0.8125rem;
-}
-
-table.cmp th,
-table.cmp td {
-  padding: var(--space-2) var(--space-3);
-  border-block-end: 1px solid var(--color-border);
-  text-align: center;
-  vertical-align: middle;
-}
-
-table.cmp thead th {
-  color: var(--color-text-2);
-  font-weight: 600;
-  vertical-align: bottom;
-}
-
-table.cmp tbody th {
-  text-align: start;
-  font-weight: 500;
-  color: var(--color-text);
-  min-width: 15rem;
-  position: sticky;
-  inset-inline-start: 0;
-  background: var(--color-surface);
-  z-index: 1;
-}
-
-table.cmp .us {
-  background: color-mix(in srgb, var(--color-primary) 9%, transparent);
-  font-weight: 600;
-}
-
-table.cmp thead th.us {
-  color: var(--color-primary);
-  background: color-mix(in srgb, var(--color-primary) 14%, transparent);
-}
-
-table.cmp .yes {
-  color: var(--color-success);
-}
-
-table.cmp .part {
-  color: var(--color-warning);
-}
-
-table.cmp .no {
-  color: var(--color-text-3);
-}
-
-table.cmp .unk {
-  color: var(--color-text-3);
-}
-
-.kicker {
-  color: var(--color-primary);
-}
-
-.note {
-  color: var(--color-text-2);
-  font-size: 0.9375rem;
 }
 
 /* ── The footer ───────────────────────────────────────────────────────── */

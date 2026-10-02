@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title data-i18n="meta.title.docs">Documentation — Freally Teleprompt</title>
+    <meta
+      name="description"
+      content="How to use Freally Teleprompt 1.5.0: writing and importing scripts, pause chips, pacing by characters per second or BPM, rehearsal, pedals and hotkeys, the projector and the network mirror, read-aloud, autocomplete, dictation and privacy."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="teleprompt-icon.png" alt="" width="28" height="28" />
+          <span>Freally Teleprompt</span>
+        </a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1 data-i18n="docs.title">Documentation</h1>
+      <p data-i18n="docs.intro">
+        How to use Freally Teleprompt, from the first launch to a read on the rig.
+      </p>
+
+      <div class="search">
+        <input
+          type="search"
+          placeholder="Search the documentation"
+          aria-label="Search the documentation"
+          data-i18n-attr="placeholder:search.placeholder,aria-label:search.placeholder"
+        />
+        <ul class="search-results" aria-live="polite"></ul>
+      </div>
+
+      <div class="manual">
+        <nav class="manual-toc" aria-label="Contents" data-i18n-attr="aria-label:docs.contents">
+          <ol>
+            <li><a href="#start" data-i18n="docs.start.title">Getting started</a></li>
+            <li><a href="#write" data-i18n="docs.write.title">Write a script</a></li>
+            <li><a href="#import" data-i18n="docs.import.title">Import a document</a></li>
+            <li><a href="#find" data-i18n="docs.find.title">Find and replace</a></li>
+            <li><a href="#markers" data-i18n="docs.markers.title">Section markers</a></li>
+            <li><a href="#pauses" data-i18n="docs.pauses.title">Pause chips</a></li>
+            <li><a href="#pacing" data-i18n="docs.pacing.title">Pacing: characters per second or BPM</a></li>
+            <li><a href="#tempo" data-i18n="docs.tempo.title">Tempo, bars and the click</a></li>
+            <li><a href="#rehearsal" data-i18n="docs.rehearsal.title">Rehearsal and the timing report</a></li>
+            <li><a href="#skip" data-i18n="docs.skip.title">Words you do not perform</a></li>
+            <li><a href="#playback" data-i18n="docs.playback.title">Playback and the transport</a></li>
+            <li><a href="#shortcuts" data-i18n="docs.shortcuts.title">Shortcuts, pedals and hotkeys</a></li>
+            <li><a href="#countdown" data-i18n="docs.countdown.title">Start countdown</a></li>
+            <li><a href="#projector" data-i18n="docs.projector.title">The projector</a></li>
+            <li><a href="#mirror" data-i18n="docs.mirror.title">The network mirror</a></li>
+            <li><a href="#read-aloud" data-i18n="docs.readAloud.title">Read aloud</a></li>
+            <li><a href="#autocomplete" data-i18n="docs.autocomplete.title">Autocomplete</a></li>
+            <li><a href="#dictation" data-i18n="docs.dictation.title">Dictation</a></li>
+            <li><a href="#settings" data-i18n="docs.settings.title">Appearance, languages and settings</a></li>
+            <li><a href="#access" data-i18n="docs.access.title">The tour and accessibility</a></li>
+            <li><a href="#problems" data-i18n="docs.problems.title">Problems and updates</a></li>
+            <li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li>
+          </ol>
+        </nav>
+
+        <div class="manual-body">
+          <section>
+            <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
+            <p data-i18n="docs.start.p1">
+              Freally Teleprompt is a teleprompter for Windows, macOS and Linux, for presenters,
+              streamers, podcasters, actors, singers and rappers. It opens as one window — your
+              scripts, the editor, the preview and the projector controls — and needs no account.
+            </p>
+            <p data-i18n="docs.start.p2">
+              The first time it opens, it shows its licence agreement. Scroll to the end, then
+              choose I Agree, or Decline &amp; Quit. The app cannot be used until you agree; your
+              answer is remembered, and you are asked again only if the agreement changes.
+            </p>
+            <p data-i18n="docs.start.p3">
+              A one-minute tour then shows the editor, the pace controls and the projector. Type or
+              paste a script, set your pace and press play.
+            </p>
+            <p data-i18n="docs.start.p4">
+              There are no downloads on this site, and the source code is private.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="write" data-i18n="docs.write.title">Write a script</h2>
+            <p data-i18n="docs.write.p1">
+              Scripts are .ftscript files: plain text in one folder, readable in any text editor.
+              Open Scripts on the toolbar to create, open, rename and delete them. A recent list
+              takes you back to what you were working on, everything is saved as you type, and the
+              app reopens the script you had open last.
+            </p>
+            <p data-i18n="docs.write.p2">
+              Type in the editor or paste from anywhere. Under the read-time estimate, a live word
+              and character count shows what you will actually perform — skipped labels and pause
+              marks are not counted — and a warning marks any line long enough to be a whole
+              paragraph.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="import" data-i18n="docs.import.title">Import a document</h2>
+            <p data-i18n="docs.import.p1">
+              Press Import on the toolbar and choose a Word document (.docx), an RTF, a PDF, a plain
+              text file or a Markdown file. You see the text it produced, and a report, before
+              anything is saved.
+            </p>
+            <p data-i18n="docs.import.p2">
+              Paragraphs are kept; bold, fonts and colours are flattened, because a prompter shows
+              one typeface. Curly quotes, long dashes and ellipses become plain ones, and a file
+              saved in an older encoding is read correctly, and the report says so.
+            </p>
+            <p data-i18n="docs.import.p3">
+              Pictures, footnotes, comments, headers and footers, link addresses and embedded
+              objects are counted and listed, never dropped quietly. A PDF has no such structure,
+              so for a PDF the report says it could not tell.
+            </p>
+            <p data-i18n="docs.import.p4">
+              Name the script — a name is suggested from the file — and press Import. It is added to
+              your library and opened, and it never overwrites a script that already exists.
+              Markdown headings arrive as # lines, so a Markdown script comes with its section
+              markers.
+            </p>
+            <p data-i18n="docs.import.p5">
+              A typeset dash becomes an ordinary hyphen, and two of them never turn into a pause, so
+              an imported play does not arrive full of pauses nobody wrote. A text file you wrote
+              with real pause marks keeps them.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="find" data-i18n="docs.find.title">Find and replace</h2>
+            <p data-i18n="docs.find.p1">
+              Press Ctrl+F, or Find on the toolbar, to search the open script. The match count
+              updates as you type; Enter goes to the next match and Shift+Enter to the previous
+              one, wrapping round at both ends.
+            </p>
+            <p data-i18n="docs.find.p2">
+              Match case and whole words only narrow the search, and what you type is searched for
+              literally. Replace changes the current match and Replace all changes every one;
+              either is undone with a single Ctrl+Z.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="markers" data-i18n="docs.markers.title">Section markers</h2>
+            <p data-i18n="docs.markers.p1">
+              Begin a line with # — # Verse 2, # Q&amp;A, ## Bridge — and it becomes a section
+              marker. Any line that is one of your skip words, such as [Chorus], is a marker too.
+              There is nothing to set up.
+            </p>
+            <p data-i18n="docs.markers.p2">
+              Markers appear in a jump list beside the seek bar, which shows the section you are
+              in, and are ruled onto the seek bar itself. Next and Previous walk them; Previous goes
+              to the top of the section you are in first, like a previous-track button. Choosing
+              one moves every screen, the projector included.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="pauses" data-i18n="docs.pauses.title">Pause chips</h2>
+            <p data-i18n="docs.pauses.p1">
+              Type -- (a space, two dashes, a space) for a short pause, or --N for a hold of N
+              seconds. Each becomes a chip in the editor: the cursor sits only before or after it,
+              one Backspace removes it, and Shift with an arrow key selects it whole. Set the
+              length of a plain -- under Settings → Reading.
+            </p>
+            <p data-i18n="docs.pauses.p2">
+              Copy and paste carry chips intact, and pasted text has its spacing tidied so every
+              pause lands as a clean chip. While the script plays, each pause lights up as the read
+              reaches it and the scroll holds for its length — on the preview, the projector and
+              the network mirror alike.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="pacing" data-i18n="docs.pacing.title">Pacing: characters per second or BPM</h2>
+            <p data-i18n="docs.pacing.p1">
+              Set the speed in characters per second: a real reading rate that every screen
+              follows, whatever its font size. Or switch to BPM, from 20 to 250, to read lyrics and
+              verses in time with a track.
+            </p>
+            <p data-i18n="docs.pacing.p2">
+              Both drive the same engine, and changing either while the script runs re-paces it at
+              once.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="tempo" data-i18n="docs.tempo.title">Tempo, bars and the click</h2>
+            <p data-i18n="docs.tempo.p1">
+              A tempo becomes a reading speed through one number: how many characters you read in
+              a beat. Under Settings → Timing → Your own tempo, press Tap three times or more at the
+              tempo you perform at, then choose Use this tempo; Back to the default undoes it. The
+              BPM box then offers only the tempos the engine can reach.
+            </p>
+            <p data-i18n="docs.tempo.p2">
+              With BPM on, or the click switched on, the bar and beat appear above the seek bar and
+              bar lines are ruled onto it. Set the beats in a bar, from 2 to 12, under Settings →
+              Timing.
+            </p>
+            <p data-i18n="docs.tempo.p3">
+              Tick Play a click at the current tempo for a quiet tick on every beat, higher on the
+              first beat of each bar; the start countdown becomes its count-in. The app makes the
+              sound itself and times every tick against the audio clock, so it does not drift. It
+              stays silent while read-aloud is speaking.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="rehearsal" data-i18n="docs.rehearsal.title">Rehearsal and the timing report</h2>
+            <p data-i18n="docs.rehearsal.p1">
+              Tick Rehearse, and time my read under the transport, press play and read aloud as you
+              would on the day. Pause, go back, change the speed: all of it is part of the
+              measurement.
+            </p>
+            <p data-i18n="docs.rehearsal.p2">
+              Untick it and the rehearsal report opens: one row per section, with the time it
+              should have taken at your pace, the time it took and the difference. Sections are your
+              paragraphs, or your section markers when the script is divided by them. If you read
+              at a different pace, the report offers that speed, and one click applies it.
+            </p>
+            <p data-i18n="docs.rehearsal.p3">
+              While you rehearse, a quiet warning appears once the read is three seconds or more
+              behind or ahead of its plan. Rehearsal records timings and nothing else: it
+              opens no microphone and keeps no audio, and it cannot run together with read-aloud.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="skip" data-i18n="docs.skip.title">Words you do not perform</h2>
+            <p data-i18n="docs.skip.p1">
+              Section labels — Chorus, Verse 2, Bridge — are landmarks you see coming but never say.
+              List them under Settings → Timing → Words you do not perform, one per line. The list
+              starts empty, because it changes how a script is timed.
+            </p>
+            <p data-i18n="docs.skip.p2">
+              A line that is nothing but a label is skipped whole: brackets, hashes, a colon and a
+              trailing number are seen through, so Chorus, [Verse 1], ## Bridge and Chorus: all
+              match. The same word inside a real line skips only itself. Matching ignores capitals
+              and only matches whole words.
+            </p>
+            <p data-i18n="docs.skip.p3">
+              Skipped text stays on screen, dimmed, so the talent still sees it coming, and
+              read-aloud never says it. Because a label takes no time, the scroll passes it at once
+              — and your lyrics stay on the bar you wrote them for.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="playback" data-i18n="docs.playback.title">Playback and the transport</h2>
+            <p data-i18n="docs.playback.p1">
+              Play, pause, stop, rewind and fast-forward are on-screen buttons; hold rewind or
+              fast-forward to keep going. Spin the mouse wheel to scrub, click a word to start from
+              it, or hover over the seek bar to see the words at that point.
+            </p>
+            <p data-i18n="docs.playback.p2">
+              The seek bar shows the elapsed and total read time, pauses included. A reading guide
+              keeps the current word on the reading line, and the last lit word never scrolls out
+              of sight.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="shortcuts" data-i18n="docs.shortcuts.title">Shortcuts, pedals and hotkeys</h2>
+            <p data-i18n="docs.shortcuts.p1">
+              Open Shortcuts on the toolbar. Press the binding you want to change, then press the
+              key, remote or pedal you want; Escape leaves it as it was. Search by a command's name
+              or by the key itself. If two commands share a key, both rows say so; clear one with ×,
+              or choose Restore defaults.
+            </p>
+            <p data-i18n="docs.shortcuts.p2">
+              Most foot pedals and presenter remotes send ordinary keys, usually F13 to F24, so they
+              bind with no driver and no setup. Bindings follow the physical key, not the letter
+              printed on it, so they survive a change of keyboard layout.
+            </p>
+            <p data-i18n="docs.shortcuts.p3">
+              The Anywhere column asks your system to deliver a key even when another app is in
+              front — a camera app, a DAW or OBS. Nothing is claimed until you set it, and a key
+              another program already owns says so. Under Wayland on Linux, apps cannot claim keys
+              system-wide, and the dialog tells you.
+            </p>
+            <p data-i18n="docs.shortcuts.p4">
+              While you are writing, the space bar, the arrow keys and Home type as normal: a bare
+              key runs its command only outside the editor.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="countdown" data-i18n="docs.countdown.title">Start countdown</h2>
+            <p data-i18n="docs.countdown.p1">
+              Set Countdown before starting under Settings → Reading, and pressing play counts down
+              that many seconds first, on the preview and the projector, so the talent has a moment
+              before the first word moves. With the click on, the countdown is also the count-in.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="projector" data-i18n="docs.projector.title">The projector</h2>
+            <p data-i18n="docs.projector.p1">
+              Press Projector and choose the display the talent reads from: the script fills that
+              screen edge to edge. Turn on the mirror for beam-splitter glass, where the reflection
+              would otherwise read backwards. The projector has its own transport, seek bar and
+              keys for the person reading.
+            </p>
+            <p data-i18n="docs.projector.p2">
+              The preview and the projector lay the script out at the same width and scale it to
+              fit, so they break lines in the same places. Check that the mirrored text reads
+              correctly through your own glass before a shoot.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="mirror" data-i18n="docs.mirror.title">The network mirror</h2>
+            <p data-i18n="docs.mirror.p1">
+              To show the script on a phone, tablet or second laptop, open Settings → Network →
+              Mirror to my network and tick Mirror the script to devices on my network. Tick Allow
+              other devices, not just this computer as well — without it, the mirror answers only
+              on this computer — and press Apply. A link and a QR code appear: scan the code, or
+              open the link in a browser on the same network.
+            </p>
+            <p data-i18n="docs.mirror.p2">
+              The mirror follows the same engine, so every device is on the same word as the
+              operator. Each device sets its own text size with A− and A+ without changing anyone
+              else's screen.
+            </p>
+            <p data-i18n="docs.mirror.p3">
+              The page is served by the app itself, straight to your devices — never through this
+              website, which a browser would not let reach a device on your network anyway. It is
+              read-only: no browser can start, stop, seek or edit anything. Its link carries a key
+              that changes every time the app starts. It is plain HTTP, so the key is not encrypted
+              on the way: use it on a network you trust, not on public Wi-Fi.
+            </p>
+            <p data-i18n="docs.mirror.p4">
+              If a device cannot connect: check both switches; make sure it is on the same network,
+              not on mobile data or a guest network that keeps devices apart; allow the app through
+              your firewall for private networks when your system asks; and if Settings says the
+              mirror could not start, change the port and press Apply again.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="read-aloud" data-i18n="docs.readAloud.title">Read aloud</h2>
+            <p data-i18n="docs.readAloud.p1">
+              Tick Read aloud with per-OS speech synthesis to hear the script in your system's own
+              voices: Windows OneCore or SAPI, macOS AVSpeechSynthesis, or Speech Dispatcher or
+              espeak-ng on Linux. No voice is bundled with the app.
+            </p>
+            <p data-i18n="docs.readAloud.p2">
+              The transport, the seek bar and a click on a word drive the speech, and the highlight
+              follows it — word by word where the system reports word boundaries, at your pace
+              elsewhere. Pauses become short silences, and -- is never read out as "dash".
+            </p>
+            <p data-i18n="docs.readAloud.p3">
+              Read-aloud is for the preview only: it never moves the projector. The checkbox is
+              locked while a read is playing or paused, until you press Stop. Check that it speaks
+              on the computer you will present from, especially on Linux.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="autocomplete" data-i18n="docs.autocomplete.title">Autocomplete</h2>
+            <p data-i18n="docs.autocomplete.p1">
+              As you write, the rest of the word appears dimmed ahead of the cursor; finish a word
+              and press space, and it can offer a whole common phrase. Tab accepts, Esc dismisses,
+              and typing on ignores it.
+            </p>
+            <p data-i18n="docs.autocomplete.p2">
+              Each of the 18 languages has its own word and phrase lists — 463,985 words and
+              344,891 phrases in all — inside the app, and only the language you write in is
+              loaded. Under Settings → Editor, turn it on or off and choose its language, which can
+              differ from the app's.
+            </p>
+            <p data-i18n="docs.autocomplete.p3">
+              The lists are built from the Tatoeba sentence collection (CC BY 2.0 FR), credited in
+              the NOTICE file that comes with the app. It is a dictionary lookup — instant,
+              predictable and offline, with no model.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="dictation" data-i18n="docs.dictation.title">Dictation</h2>
+            <p data-i18n="docs.dictation.p1">
+              Open Settings → Voice, tick Write my script by speaking and press Apply. A round
+              record button appears above the script: press it and talk, and what you say is
+              written where your cursor is. Press it again to stop; the microphone is open only in
+              between.
+            </p>
+            <p data-i18n="docs.dictation.p2">
+              Dictated text is ordinary script text, and Ctrl+Z takes back one thing you said, not
+              the whole session. Expect to tidy punctuation and names: it is a quick way to a
+              draft, not a finished script.
+            </p>
+            <p data-i18n="docs.dictation.p3">
+              Dictation understands English only. It uses Vosk, an open-source speech recogniser,
+              with a small English speech model — a trained neural network of about 40 MB — that
+              ships inside the app. It runs on your computer, works with no connection, uploads and
+              downloads nothing, and saves nothing but the text you see. It is off until you switch
+              it on. If the script is mirrored to your network, dictated words reach those devices
+              as they are written, like typing.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="settings" data-i18n="docs.settings.title">Appearance, languages and settings</h2>
+            <p data-i18n="docs.settings.p1">
+              Under Settings → Appearance, set the typeface, weight and text colour, the side
+              margins, the line spacing and where the reading guide sits; the font size is under
+              Reading. They apply to the preview, the projector and the network mirror together.
+            </p>
+            <p data-i18n="docs.settings.p2">
+              Settings work on a draft: nothing changes until you press Apply, and Cancel restores
+              what you had. Choose one of 18 languages, or Same as my system. The theme is Dark,
+              Light or Same as my system; the reading surface stays high-contrast whichever you
+              choose.
+            </p>
+            <p data-i18n="docs.settings.p3">
+              With Minimize to the system tray on, under Settings → General, minimising puts the app
+              in the tray instead of the taskbar. Show the tour again, also under General, replays
+              the welcome tour.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="access" data-i18n="docs.access.title">The tour and accessibility</h2>
+            <p data-i18n="docs.access.p1">
+              The first time the app opens, after the licence, a four-step tour shows the editor
+              and its pause marks, the pace controls and the projector. Skip, Esc or a click
+              outside it closes it for good; Settings → General → Show the tour again brings it
+              back.
+            </p>
+            <p data-i18n="docs.access.p2">
+              Every control shows a focus ring when you reach it from the keyboard. Tab stays inside
+              an open dialog, Esc closes it, and focus returns to the button that opened it. The
+              seek bar is a real slider: the arrow keys move one character, Page Up and Page Down a
+              screenful, and Home and End go to either end.
+            </p>
+            <p data-i18n="docs.access.p3">
+              If your system asks for reduced motion, animations and blur are dropped while the
+              script itself still scrolls; with reduced transparency, dialogs dim the background
+              instead of blurring it.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="problems" data-i18n="docs.problems.title">Problems and updates</h2>
+            <p data-i18n="docs.problems.p1">
+              When something goes wrong that the app can tell you about, its message has a Report
+              button beside it. After a crash, the next launch shows a strip with Report and
+              Dismiss.
+            </p>
+            <p data-i18n="docs.problems.p2">
+              Report opens the Freally Teleprompt report page in your browser, with the technical
+              details already filled in: you can read them, but not change them. Add what you were
+              doing and, if you like, an email address. Nothing is sent unless you press Send on
+              that page, and nothing is ever sent in the background.
+            </p>
+            <p data-i18n="docs.problems.p3">
+              Once per launch, the app asks GitHub whether a newer version exists. If there is one,
+              you see its version number and release notes and choose yes or no; an update is
+              checked against a signing key inside the app before it installs. When you are
+              offline or already up to date, it says nothing. Check for updates on the toolbar asks
+              again at any time.
+            </p>
+          </section>
+
+          <section>
+            <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
+            <p data-i18n="docs.privacy.p1">
+              No account and no telemetry. Your scripts are .ftscript files on your computer, where
+              you save them, and the app's author never receives them.
+            </p>
+            <p data-i18n="docs.privacy.p2">
+              The only request the app makes to the internet is the update check, which sends no
+              script, no settings and no identifier. A problem report leaves only from the report
+              page in your browser, when you press Send. The projector and the network mirror stay
+              on your own displays and your own network.
+            </p>
+            <p data-i18n="docs.privacy.p3">
+              Machine learning is used in one place: dictation's speech model, which runs on your
+              computer and is off until you switch it on. Autocomplete is a dictionary lookup,
+              read-aloud uses your system's own voices, and nothing you type or say is sent to an
+              AI service.
+            </p>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          Your scripts are yours. They stay on your computer, and the app's author never receives,
+          stores or relays them.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="search-index.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
