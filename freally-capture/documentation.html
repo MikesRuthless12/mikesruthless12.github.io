@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-i18n-bundles="manual">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Documentation — Freally Capture</title>
+    <meta
+      name="description"
+      content="How to use Freally Capture 1.2.1: scenes and sources, filters, the mixer, recording, going live, multistream, remote guests, automation and privacy."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="capture-icon.png" alt="" width="28" height="28" />
+          <span>Freally Capture</span>
+        </a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <h1 data-i18n="docs.title">Documentation</h1>
+      <p data-i18n="docs.intro">
+        How to use Freally Capture, version 1.2.1: build a scene, record it, go live, and everything around them. Every section says which systems a feature works on when it is not all three.
+      </p>
+
+      <div class="search">
+        <input
+          type="search"
+          placeholder="Search the documentation"
+          aria-label="Search the documentation"
+          data-i18n-attr="placeholder:search.placeholder,aria-label:search.placeholder"
+        />
+        <ul class="search-results" aria-live="polite"></ul>
+      </div>
+
+      <div class="manual">
+        <nav class="manual-toc" aria-label="Contents" data-i18n-attr="aria-label:docs.contents">
+          <ol>
+            <!-- TOC:START — generated from docs/manual.md by scripts/build-docs-site.mjs. Do not edit by hand. -->
+            <li><a href="#getting-started" data-i18n-html="manual.831d0f72d242">Getting started</a></li>
+            <li><a href="#build-a-scene" data-i18n-html="manual.46e49bd74b1d">Build a scene</a></li>
+            <li><a href="#filters" data-i18n-html="manual.87eca68fecaa">Filters and transitions</a></li>
+            <li><a href="#compositor-fx" data-i18n-html="manual.2c0c025b4264">Compositor and visual effects</a></li>
+            <li><a href="#overlays" data-i18n-html="manual.3879f0c73d18">Overlays and more sources</a></li>
+            <li><a href="#countdown" data-i18n-html="manual.de10be5dcf2c">The Starting Soon countdown</a></li>
+            <li><a href="#audio" data-i18n-html="manual.84f506f4fca5">The audio mixer</a></li>
+            <li><a href="#record" data-i18n-html="manual.bfdd510698ef">Record</a></li>
+            <li><a href="#recording-depth" data-i18n-html="manual.691bff5377a8">Recording and replay depth</a></li>
+            <li><a href="#go-live" data-i18n-html="manual.a9f690169703">Go live</a></li>
+            <li><a href="#broadcast-safety" data-i18n-html="manual.973adc03e43c">Broadcast safety</a></li>
+            <li><a href="#sources-devices" data-i18n-html="manual.5199babf9b90">Sources and devices</a></li>
+            <li><a href="#automation" data-i18n-html="manual.f77f10d8c967">Automation and control</a></li>
+            <li><a href="#multistream" data-i18n-html="manual.1f3fd1c7ddc9">Multistream</a></li>
+            <li><a href="#streaming-insight" data-i18n-html="manual.c08320c45003">Streaming reliability and insight</a></li>
+            <li><a href="#virtual-camera" data-i18n-html="manual.46bad2cb618f">Virtual camera</a></li>
+            <li><a href="#browser-source" data-i18n-html="manual.98839b8e6880">Browser source</a></li>
+            <li><a href="#game-capture" data-i18n-html="manual.9c0c8f127dd9">Game capture</a></li>
+            <li><a href="#replay" data-i18n-html="manual.43fae75af922">Replay buffer</a></li>
+            <li><a href="#teleprompter" data-i18n-html="manual.4b598d5daf11">Teleprompter</a></li>
+            <li><a href="#remote" data-i18n-html="manual.7fb5d22a1670">Remote control</a></li>
+            <li><a href="#production" data-i18n-html="manual.6664edd9ad4c">Remote guests and show production</a></li>
+            <li><a href="#studio-management" data-i18n-html="manual.e8630fabd4e5">Studio management and workflow</a></li>
+            <li><a href="#settings" data-i18n-html="manual.74a883a037bc">Settings</a></li>
+            <li><a href="#report" data-i18n-html="manual.59274c49ac87">Reporting a problem</a></li>
+            <li><a href="#privacy" data-i18n-html="manual.69bd78234ffb">Privacy and the network</a></li>
+            <!-- TOC:END -->
+          </ol>
+        </nav>
+
+        <div class="manual-body">
+          <!-- MANUAL:START — generated from docs/manual.md by scripts/build-docs-site.mjs. Do not edit by hand. -->
+          <h2 id="getting-started" data-i18n-html="manual.831d0f72d242">Getting started</h2>
+          <p data-i18n-html="manual.f2f53974b760">Freally Capture is a desktop studio for Windows, macOS and Linux. This manual describes version 1.2.1, the current release.</p>
+          <ol>
+          <li data-i18n-html="manual.4b5f10daa08b">Open Freally Capture. The first time, it asks you to accept its licence agreement; then a setup wizard checks your graphics card and processor and proposes an encoder, a canvas size and a bitrate, with the reason for each.</li>
+          <li data-i18n-html="manual.fe88634050bf">The studio opens on the program preview with the <strong>Scenes</strong>, <strong>Sources</strong>, <strong>Mixer</strong> and <strong>Controls</strong> docks. There is no account and no sign-in.</li>
+          <li data-i18n-html="manual.4c937d2528ca">On <strong>macOS</strong>, allow <strong>Screen Recording</strong> — and <strong>Camera</strong> and <strong>Microphone</strong> if you use them — in System Settings → Privacy &amp; Security, then reopen the app. On <strong>Linux with Wayland</strong>, the desktop's own dialog asks which screen or window to share.</li>
+          <li data-i18n-html="manual.adc8f305f8f8">Add your first source (see <a href="#build-a-scene">Build a scene</a>) and you are ready to record or go live.</li>
+          </ol>
+          <h2 id="build-a-scene" data-i18n-html="manual.46e49bd74b1d">Build a scene</h2>
+          <p data-i18n-html="manual.f779d891c1f2">A scene is a stack of sources composed on the graphics card. A source can be shared by several scenes.</p>
+          <ol>
+          <li data-i18n-html="manual.5a1c5f778fdb">In the <strong>Sources</strong> dock, click <strong>Add Source</strong> and pick a type: <strong>Display</strong>, <strong>Window</strong>, <strong>Game</strong>, <strong>Webcam / Capture Card</strong>, <strong>Browser</strong>, <strong>Media</strong>, <strong>Image</strong>, <strong>Text</strong>, <strong>Color</strong> or <strong>Audio</strong>.</li>
+          <li data-i18n-html="manual.2a2d9e2015b5">Add a <strong>Display Capture</strong>: the program preview fills with your screen.</li>
+          <li data-i18n-html="manual.80c8e9c8176f">Add a <strong>Webcam</strong> source, drag it to a corner of the canvas and resize it with its handles.</li>
+          <li data-i18n-html="manual.264150f36676">Add an <strong>Image</strong> or <strong>Browser</strong> overlay on top. The order of the list is the order on the canvas: the top of the list is the front.</li>
+          <li data-i18n-html="manual.a329c46899d6">Create more scenes in the <strong>Scenes</strong> dock — for example &quot;Starting Soon&quot;, &quot;Gameplay&quot; and &quot;Be Right Back&quot; — and switch between them.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.9c8d5730d1bb"><strong>Tip:</strong> Change a shared source's properties once and it changes in every scene that uses it.</p>
+          </blockquote>
+          <blockquote>
+          <p data-i18n-html="manual.fd869e76d280"><strong>The preview:</strong> on Windows, macOS and Linux with X11, the program preview is painted straight from the graphics card, so dragging, scaling and rotating feel instant. On Wayland a standard preview is used, with the same on-canvas editing.</p>
+          </blockquote>
+          <h2 id="filters" data-i18n-html="manual.87eca68fecaa">Filters and transitions</h2>
+          <p data-i18n-html="manual.36a962cf3902">Stack filters on each source, on the graphics card, and choose how one scene gives way to the next.</p>
+          <h3 id="filters-add-a-chroma-key" data-i18n-html="manual.4708b4dbab34">Add a chroma key</h3>
+          <ol>
+          <li data-i18n-html="manual.9df34cebcaf5">Right-click a source — a green-screen camera, say — and choose <strong>Filters</strong>.</li>
+          <li data-i18n-html="manual.9981601a6174">Add <strong>Chroma Key</strong> and adjust the <strong>key color</strong>, <strong>similarity</strong>, <strong>smoothness</strong> and <strong>spill</strong>: the keyed color disappears live on the canvas.</li>
+          <li data-i18n-html="manual.b76bd309a9f6">Add more filters as you need them — <strong>Color Correction</strong>, <strong>LUT</strong>, <strong>Blur</strong>, <strong>Mask</strong>, <strong>Sharpen</strong> — and drag them to reorder the chain.</li>
+          </ol>
+          <h3 id="filters-set-a-transition" data-i18n-html="manual.db41fe5a40e4">Set a transition</h3>
+          <ol>
+          <li data-i18n-html="manual.bea9e11be98d">In <strong>Controls</strong>, open the transition picker, choose <strong>Cut</strong>, <strong>Fade</strong>, <strong>Slide</strong>, <strong>Swipe</strong>, <strong>Stinger</strong> or <strong>Luma Wipe</strong>, and set a duration.</li>
+          <li data-i18n-html="manual.eada58ce5b2e">For a <strong>Stinger</strong>, pick the media and its transition point; for a <strong>Luma Wipe</strong>, pick the gradient and its softness.</li>
+          <li data-i18n-html="manual.79756cb8b209">Switch scenes to see the transition play. In Studio Mode it plays when you send the preview to the program.</li>
+          </ol>
+          <h2 id="compositor-fx" data-i18n-html="manual.2c0c025b4264">Compositor and visual effects</h2>
+          <p data-i18n-html="manual.b768e85eff32">3D tilt, downstream keyers, freeze and clone, a family of blurs, motion transitions with rules, a shader studio, bezier masks and track-matte stingers.</p>
+          <h3 id="compositor-fx-3d-tilt-and-perspective" data-i18n-html="manual.d2b720eca5a5">3D tilt and perspective</h3>
+          <ol>
+          <li data-i18n-html="manual.d665cc2f2296">Open <strong>Edit Transform</strong> on an item and set <strong>Tilt X</strong>, <strong>Tilt Y</strong> and a <strong>Perspective</strong> strength to pin the source in 3D. A transform with no tilt renders exactly as before.</li>
+          </ol>
+          <h3 id="compositor-fx-downstream-keyers" data-i18n-html="manual.c4077ba2b72d">Downstream keyers</h3>
+          <ol>
+          <li data-i18n-html="manual.d4220af54ed9">Open <strong>Tools → Downstream Keyers</strong> and add any source as a layer over the <strong>program output</strong>, above every scene and through every scene change — a station logo, a LIVE badge, a lower third.</li>
+          <li data-i18n-html="manual.0677e571c1f8">Reorder the layers and set each one's opacity, position, size and on or off. They appear in the preview, the recording, the stream and the multiview alike.</li>
+          </ol>
+          <h3 id="compositor-fx-freeze-frame-and-source-cloning" data-i18n-html="manual.1e484119e149">Freeze-frame and source cloning</h3>
+          <ol>
+          <li data-i18n-html="manual.4cdb8e22f58b">Right-click a source, open <strong>Filters</strong> and add <strong>Freeze</strong>: it holds the last frame in the program, the preview, the recording and the stream together. Switch it off to unfreeze.</li>
+          <li data-i18n-html="manual.59fd957b48dc">Click the <strong>Clone</strong> button (⧉) on a source's row to place one feed in several scenes or spots, each clone with its own transform and filters.</li>
+          </ol>
+          <h3 id="compositor-fx-blurs" data-i18n-html="manual.a90410d6b30c">Blurs</h3>
+          <ol>
+          <li data-i18n-html="manual.eeb69e428aa3">In a source's <strong>Filters</strong>, add one of the blurs beside the Gaussian: <strong>directional</strong> (a motion streak at an angle), <strong>radial</strong> (a spin around a center), <strong>zoom</strong> (a dolly-zoom streak) or <strong>pixelate</strong> (a mosaic).</li>
+          </ol>
+          <h3 id="compositor-fx-the-move-transition-and-transition-rules" data-i18n-html="manual.54261c9f6b8f">The move transition and transition rules</h3>
+          <ol>
+          <li data-i18n-html="manual.ef17a04962be">Choose the <strong>Move</strong> transition: items in both scenes glide from their old position, scale, rotation and crop to the new ones instead of cutting, and items in only one scene fade in or out.</li>
+          <li data-i18n-html="manual.e31792f9e737">Open <strong>Tools → Transition Rules</strong> to give one pair of scenes its own transition and duration. For an item's own entrance, set a <strong>Reveal</strong> fade-in under <strong>Edit Transform</strong>.</li>
+          </ol>
+          <h3 id="compositor-fx-the-wgsl-shader-studio" data-i18n-html="manual.bb4e30a1ea68">The WGSL shader studio</h3>
+          <ol>
+          <li data-i18n-html="manual.e475acf03bea">Add a <strong>user WGSL effect</strong> as a filter and edit it live. Its sliders are made from <code>// @param</code> annotations, and a built-in gallery has grayscale, invert, scanlines and vignette.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.424ca3316822"><strong>Tip:</strong> A shader is compiled and checked as you type. An invalid shader is ignored and the source renders unfiltered — never a crash.</p>
+          </blockquote>
+          <h3 id="compositor-fx-bezier-masks" data-i18n-html="manual.c24e8b5ee2c0">Bezier masks</h3>
+          <ol>
+          <li data-i18n-html="manual.37870edaacbc">Add the <strong>freehand mask</strong> filter and draw a closed path: drag the handles, double-click to add a point, right-click to remove one. It has preset shapes, a feather for each edge, and invert.</li>
+          <li data-i18n-html="manual.f44ad1306530">Export any path as a grayscale <strong>luma-wipe</strong> pattern to reuse the shape as a transition.</li>
+          </ol>
+          <h3 id="compositor-fx-track-matte-stingers" data-i18n-html="manual.e4c8b0c52b3e">Track-matte stingers</h3>
+          <ol>
+          <li data-i18n-html="manual.b35494db6ce6">Set a stinger to carry its transparency as a <strong>track matte</strong>, with the fill and the matte <strong>side by side</strong> or <strong>stacked</strong>, so transparency survives codecs that drop it (H.264 and HEVC). Optionally <strong>duck the program audio</strong> under the stinger's own sound while it plays.</li>
+          </ol>
+          <h2 id="overlays" data-i18n-html="manual.3879f0c73d18">Overlays and more sources</h2>
+          <p data-i18n-html="manual.cea21c089e39">Replay, playlists, titles, meters, a stats overlay, timers, an input overlay and two network feeds, all from the <strong>Sources</strong> dock's <strong>+ / Add Source</strong> menu.</p>
+          <h3 id="overlays-instant-replay" data-i18n-html="manual.4a459b922e4b">Instant replay</h3>
+          <ol>
+          <li data-i18n-html="manual.2e042aa67065">Arm the replay buffer first (<strong>Arm Replay</strong> in the <strong>Controls</strong> dock), then choose <strong>Instant Replay</strong> from <strong>+ / Add Source</strong> and place it in a scene.</li>
+          <li data-i18n-html="manual.d7645da473a6">Roll the last seconds into the program with your replay hotkey — copied without re-encoding and played at <strong>100%</strong>, <strong>50%</strong> or <strong>25%</strong> speed, slowed down rather than with invented frames. Scrub or pause while it plays.</li>
+          <li data-i18n-html="manual.5b8095e70de0">At the end the source clears itself, so the show returns to live on its own.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.6433eaab9b10"><strong>Tip:</strong> Slow-motion replay is silent on purpose: slowed-down audio would smear, so it is left out rather than faked.</p>
+          </blockquote>
+          <h3 id="overlays-media-playlist-and-background-music" data-i18n-html="manual.f0b63d46cd74">Media playlist and background music</h3>
+          <ol>
+          <li data-i18n-html="manual.37ed12f9d130">Add <strong>Media Playlist (gapless)</strong> and build an ordered list with in and out points and cue points for each item. The whole list plays through one decoder, so the joins are frame-exact and truly gapless.</li>
+          <li data-i18n-html="manual.ef41fa6ad9b5">Choose how it runs — <strong>loop</strong>, <strong>shuffle</strong> or <strong>hold last</strong> — and step through it with the next and previous hotkeys. An audio-only playlist shows the <strong>current track's name</strong> on the canvas and plays through its own mixer strip; click that strip's <strong>Monitor</strong> button to hear it.</li>
+          <li data-i18n-html="manual.6e641ae2bd92">For music that plays without anything on screen, choose <strong>+ / Add Source → Background Music…</strong> instead and pick one or more <code>.mp3</code>, <code>.wav</code> or <code>.flac</code> files, shuffled if you like. It mutes a video backdrop's own sound, so only one thing is ever heard.</li>
+          </ol>
+          <h3 id="overlays-the-title-and-scoreboard-designer" data-i18n-html="manual.b9aad55133bf">The title and scoreboard designer</h3>
+          <ol>
+          <li data-i18n-html="manual.5382c093aaef">Add <strong>Title / Scoreboard</strong> to open the designer: stack <strong>text</strong>, <strong>image</strong> and <strong>shape</strong> layers, with outlined and shadowed text and animations in and out (fade, slide, wipe).</li>
+          <li data-i18n-html="manual.7b8fea70655a">Bind fields to a watched file (a CSV cell or a JSON pointer) or to a studio variable, then control it live: change a name, edit the score or play the animation without touching the scene.</li>
+          </ol>
+          <h3 id="overlays-the-audio-visualizer" data-i18n-html="manual.88a9422e37a9">The audio visualizer</h3>
+          <ol>
+          <li data-i18n-html="manual.87f4a5bdd624">Add <strong>Audio Visualizer</strong> and pick a style — <strong>spectrum bars</strong>, an <strong>oscilloscope</strong> or stereo <strong>VU meters</strong> — then bind it to any mixer strip, track or the master mix. It shows a backdrop video's sound too.</li>
+          <li data-i18n-html="manual.0ae90a461adb">In the source's <strong>Properties</strong>, switch on <strong>Classic colors</strong> for the green, yellow and red bands, or leave it off for one solid color. Size, bar count and fall rate are there too.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.0d1ceffb08ba"><strong>Tip:</strong> The visualizer listens <strong>after the fader</strong>, so a muted source shows flat: it shows exactly what you hear.</p>
+          </blockquote>
+          <h3 id="overlays-the-stats-overlay-split-timer-and-input-overlay" data-i18n-html="manual.ec642e1cf0cc">The stats overlay, split timer and input overlay</h3>
+          <ol>
+          <li data-i18n-html="manual.6b4fe6f81cb0">Add <strong>Performance Stats (HUD)</strong> to show the stats dock's measured numbers on the canvas — frames per second, CPU, memory, GPU compose time, dropped frames and live bitrate — each line on or off. GPU utilization is left out on purpose, because it is not measured.</li>
+          <li data-i18n-html="manual.cbd8a4b88736">Add <strong>Speedrun Split Timer</strong>, import a LiveSplit <code>.lss</code> file, and run it with global split, undo, skip and reset hotkeys against your personal best, best segments or average. The file is only read; a run is never written back.</li>
+          <li data-i18n-html="manual.fbf4bbeaf903">Add <strong>Input Overlay (keys/pad)</strong> to show the keyboard, mouse and gamepad live, in one of four layouts (WASD, a compact keyboard, a twin-stick pad, an 8-way fight stick). Keyboard and mouse work on Windows; gamepads work on all three systems.</li>
+          </ol>
+          <h3 id="overlays-the-social-and-channels-bar" data-i18n-html="manual.bf794edb3c25">The social and channels bar</h3>
+          <ol>
+          <li data-i18n-html="manual.5f898056ef11">Add <strong>Social Bar</strong> from <strong>+ / Add Source</strong>: a panel listing your handles. Pick a platform for each row — <strong>YouTube, Twitch, Kick, X, Instagram, TikTok, Facebook, Discord</strong> as colored badges, or <strong>Custom</strong> with your own label and color — and type the handle (for example <code>@mychannel</code>). Add an optional header line (&quot;Follow me&quot;), reorder the rows, and set the text size and colors.</li>
+          <li data-i18n-html="manual.1dab9389547a">Every field stays editable in the source's <strong>Properties</strong>. Rows with no handle are skipped, so you can keep a full list and fill in only what you use.</li>
+          </ol>
+          <h3 id="overlays-the-featured-chat-message" data-i18n-html="manual.1a4ac3c2e0bf">The featured chat message</h3>
+          <ol>
+          <li data-i18n-html="manual.c5d58a7d58be">Open <strong>Tools → Featured Chat Message…</strong> (or the command palette). It lists the newest lines from every running chat overlay: click <strong>Feature</strong> on one to pin it to the program as a banner that viewers of the stream and the recording see.</li>
+          <li data-i18n-html="manual.162d364796a2">Set the <strong>banner</strong> and <strong>text</strong> colors in the dialog, and click <strong>Clear</strong> to take it off air. The pin itself clears on restart, by design: yesterday's shout-out never haunts today's show.</li>
+          </ol>
+          <h3 id="overlays-cursor-highlight-and-click-effects" data-i18n-html="manual.89a84c53e014">Cursor highlight and click effects</h3>
+          <ol>
+          <li data-i18n-html="manual.d0a5d9fb047d">Right-click a Display or Window capture, open <strong>Filters</strong> and add <strong>Cursor effects</strong>: a <strong>cursor halo</strong> (color and radius), color-coded left and right <strong>click ripples</strong>, and optional <strong>keystroke ghosting</strong> beside the pointer. Changes show live.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.4a17c44757e4"><strong>Note:</strong> Cursor effects work on Windows only; macOS and Linux draw the cursor themselves. The input overlay and keystroke ghosting read input <strong>only while they are on</strong>, and draw it straight into the picture: nothing is stored or logged.</p>
+          </blockquote>
+          <h3 id="overlays-network-sources-lan-ingest-and-freally-link" data-i18n-html="manual.8bdb1aadf964">Network sources: LAN ingest and Freally Link</h3>
+          <ol>
+          <li data-i18n-html="manual.797fe86a1fe8">Add <strong>LAN Ingest (SRT/RTMP listener)</strong> to open a listener on this computer, then point a phone camera app, an encoder or a second computer at the address shown (with a QR code). It lands in the scene with its own mixer strip. SRT can carry an optional AES passphrase; RTMP has no authentication of its own, so the form prefers SRT.</li>
+          <li data-i18n-html="manual.e2761818ccef">To share between two copies of Freally Capture, turn on the <strong>Freally Link</strong> output on the <strong>sending</strong> computer and set its <strong>pairing key</strong> — it cannot be turned on without one. On the <strong>receiving</strong> computer, add <strong>Freally Link (another instance)</strong>, click <strong>Scan the LAN</strong> and type the key: the sender's program appears as a source. Neither side needs ffmpeg, and a receiver without the key never sees a frame.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.a793cb271e32"><strong>Note:</strong> Both network sources are <strong>off until you add them</strong>, stay on your own network, and never touch the internet: nothing finds you, and nothing dials out.</p>
+          </blockquote>
+          <h2 id="countdown" data-i18n-html="manual.de10be5dcf2c">The Starting Soon countdown</h2>
+          <p data-i18n-html="manual.71b47ef78ea4">A pre-show holding screen in one click: a big countdown to showtime over an image, a GIF, a video, a gradient or music, which flashes at zero and waits for you to cut to the show.</p>
+          <h3 id="countdown-add-the-countdown" data-i18n-html="manual.303493002776">Add the countdown</h3>
+          <ol>
+          <li data-i18n-html="manual.f78f2994b5d5">In the <strong>Sources</strong> dock, open <strong>+ / Add Source</strong> and choose <strong>Starting Soon…</strong>. It places a full-canvas countdown — a caption above a big number — on the scene.</li>
+          <li data-i18n-html="manual.c4bff5a4f06e">Type the <strong>caption</strong> (&quot;Starting Soon&quot;, &quot;Be Right Back&quot;), then set the time with the <strong>clock picker</strong>: an <strong>hour</strong> (1–12), a <strong>minute</strong> in five-minute steps, and <strong>AM</strong> or <strong>PM</strong>. The source counts down to that time of day.</li>
+          <li data-i18n-html="manual.59b00df516f1">At zero the countdown <strong>flashes and holds at 0:00:00</strong> — it never switches scenes by itself. Cut to your live scene when you are ready. Every field stays editable in the source's <strong>Properties</strong>.</li>
+          </ol>
+          <h3 id="countdown-choose-a-backdrop" data-i18n-html="manual.1dfb2d817d39">Choose a backdrop</h3>
+          <ol>
+          <li data-i18n-html="manual.edc2450aeecd">Pick the fill: a two-color <strong>Gradient</strong> (the default), a <strong>Solid</strong> color, an <strong>Image</strong> (click <strong>Browse…</strong>), or <strong>Transparent</strong> to let a source underneath show through.</li>
+          <li data-i18n-html="manual.07a5fd9ac032">Choose a <strong>GIF</strong> or a <strong>video</strong> file and it loops behind the numbers, <strong>scaled to fit and centered</strong>, so the whole picture shows and nothing is cropped.</li>
+          <li data-i18n-html="manual.1cda5be75376">Add <strong>background music</strong> from the dialog's <strong>Browse…</strong> (MP3, WAV, FLAC, M4A, AAC, OGG or Opus). It loops, you hear it in the preview, and it is part of the recording and the stream. A video backdrop's own sound is muted, so only one thing is ever heard.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.b39b6b7add20"><strong>Tip:</strong> For music behind a plain screen, leave the backdrop on Gradient or Transparent and add the music: a clean countdown with a soundtrack.</p>
+          </blockquote>
+          <h2 id="audio" data-i18n-html="manual.84f506f4fca5">The audio mixer</h2>
+          <p data-i18n-html="manual.480e299c8728">Mix every audio source, send it to up to 6 tracks, and clean up your microphone — all live.</p>
+          <ol>
+          <li data-i18n-html="manual.bcbc220b3e63">Each audio source is a strip in the <strong>Mixer</strong>: its name, a level meter, a fader, mute, monitor, filters and track dots (1–6).</li>
+          <li data-i18n-html="manual.03b920dc5376">Drag a fader to set the level, click <strong>mute</strong> or <strong>monitor</strong>, and send the source to any of the 6 tracks.</li>
+          <li data-i18n-html="manual.9a9991c7dc36">Open a source's <strong>filters</strong> and add <strong>Denoise</strong> (classic signal processing, no AI), <strong>Noise Gate</strong>, <strong>Compressor</strong>, <strong>Limiter</strong>, <strong>EQ</strong> or <strong>Gain</strong>.</li>
+          <li data-i18n-html="manual.1a58b91bc5aa">Bind a <strong>push-to-talk</strong> or <strong>push-to-mute</strong> hotkey, and watch the <strong>LUFS</strong> meter for the program's loudness.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.7158a36ed4d5"><strong>macOS note:</strong> macOS does not give apps &quot;what you hear&quot; by itself. Use ScreenCaptureKit audio (macOS 13 or later) where it is available, or install a virtual device such as BlackHole and choose it as your system-audio source. Freally Capture guides you, and keeps recording even if one source cannot open.</p>
+          </blockquote>
+          <h2 id="record" data-i18n-html="manual.bfdd510698ef">Record</h2>
+          <p data-i18n-html="manual.e39b756fce99">Record the program on several tracks with your graphics card's hardware encoder, or losslessly in Capture's own format.</p>
+          <ol>
+          <li data-i18n-html="manual.ad438c2dbf4b">In <strong>Settings → Output</strong>, pick an encoder. Freally Capture finds <strong>NVENC</strong>, <strong>Quick Sync</strong>, <strong>AMF</strong>, <strong>VAAPI</strong> or <strong>VideoToolbox</strong> and chooses the best; <strong>x264</strong> on the processor is always there as a fallback.</li>
+          <li data-i18n-html="manual.3bc1870f8449">Choose a container — <strong>MP4</strong>, <strong>MKV</strong>, <strong>MOV</strong> or <strong>WebM</strong> — or Capture's own lossless <strong>freally-video</strong> format (<code>.frec</code>), which needs nothing else installed.</li>
+          <li data-i18n-html="manual.e2a332927058">Send sources to audio tracks (up to 6) so the microphone, the system sound and your guests stay separate for editing. Optionally turn on <strong>file splitting</strong> and <strong>a separate-track local copy while streaming</strong>.</li>
+          <li data-i18n-html="manual.e0fa2f5a9430">Click <strong>Start Recording</strong> in <strong>Controls</strong>. A green <strong>REC</strong> dot shows the time and the number of tracks. Click <strong>Stop</strong> to finish the file.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.b1eb969490f1"><strong>Codec note:</strong> MP4 with H.264 and AAC (and HEVC or AV1) uses codecs covered by patents, provided by <strong>ffmpeg</strong>, which is <em>not bundled</em>: Freally Capture downloads it the first time you need it and checks it. The lossless <strong>freally-video</strong> format needs nothing downloaded.</p>
+          </blockquote>
+          <h2 id="recording-depth" data-i18n-html="manual.691bff5377a8">Recording and replay depth</h2>
+          <p data-i18n-html="manual.3c2d08430816">Everything around the file: separate recordings of each source, a clip trimmer, real transparency, splitting and markers on events, tasks after recording, an integrity check and SMPTE timecode. All of it is off until you turn it on, and none of it goes online.</p>
+          <h3 id="recording-depth-per-source-iso-recording" data-i18n-html="manual.537ffa2b9063">Per-source ISO recording</h3>
+          <ol>
+          <li data-i18n-html="manual.e57aa725fa41">Open <strong>Settings → Output</strong> and find <strong>ISO recording</strong>. Turn on <strong>Record &quot;{name}&quot; as its own ISO file</strong> for each source you want clean: each is recorded before compositing, at the canvas size and frame rate, so every file lines up with the program on an editing timeline. Each remote guest is a source, so each guest gets a file too.</li>
+          <li data-i18n-html="manual.4bce8f25ec9c">Leave <strong>Record with the source's filters</strong> checked for the processed look, or uncheck it for the raw source, and pick each recording's <strong>ISO format</strong> and <strong>ISO video encoder</strong>. Audio is taken after the filters but before the fader and mute, so a mixing decision never silences an ISO file.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.7f29ae4e2c55"><strong>Tip:</strong> Two ISO recordings are comfortable on a mid-range graphics card; each one more costs another render and encode, and the panel says so.</p>
+          </blockquote>
+          <h3 id="recording-depth-the-replay-and-clip-trimmer" data-i18n-html="manual.b2aad668b8b9">The replay and clip trimmer</h3>
+          <ol>
+          <li data-i18n-html="manual.c8af16e1cd4f">Open a saved recording in the <strong>Trim</strong> window from the recordings list, step through it with <strong>Back one frame</strong> and <strong>Forward one frame</strong>, and set your points with <strong>Set in</strong> and <strong>Set out</strong> while you watch.</li>
+          <li data-i18n-html="manual.1f80dfd03a36">Check the badge before you export. A green <em>&quot;Exports without re-encoding&quot;</em> means the in point sits on a keyframe (near-instant and lossless); the amber badge warns that it will re-encode — press <strong>Keyframe</strong> to snap the in point for a lossless cut. Click <strong>Export clip</strong>, or <strong>9:16</strong> to export a vertical version.</li>
+          </ol>
+          <h3 id="recording-depth-recording-with-transparency" data-i18n-html="manual.8a92b0b480f4">Recording with transparency</h3>
+          <ol>
+          <li data-i18n-html="manual.79bfd450e6aa">In <strong>Settings → Output</strong>, turn on <strong>Record with transparency (alpha)</strong> to record the program over a transparent background to Capture's <code>.frec</code> format. The recording gets its own transparent render, so your preview and stream keep the normal picture. From the recordings list, export a <strong>ProRes 4444</strong> or <strong>QuickTime Animation (QTRLE)</strong> <code>.mov</code> for your editor; MP4 and MKV flatten the transparency.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.fade0a9d0454"><strong>Note:</strong> Transparency is only a flag in the <code>.frec</code> header, so these files play everywhere <code>.frec</code> does, and older files open as opaque.</p>
+          </blockquote>
+          <h3 id="recording-depth-splitting-and-automatic-markers" data-i18n-html="manual.33e5c9a96c5d">Splitting and automatic markers</h3>
+          <ol>
+          <li data-i18n-html="manual.5596d47693a3">In the split settings for <code>.frec</code>, choose to start a new file on a <strong>scene switch</strong>, a <strong>marker</strong> or a <strong>rundown step</strong>. Each part starts on that event's exact frame, and a part lasts at least one second, so a burst of events cannot make a pile of tiny files.</li>
+          <li data-i18n-html="manual.7fc20a49c196">Turn on <strong>Drop chapter markers automatically on studio events</strong> to mark scene switches, saved replays, reconnects, bursts of dropped frames, alarms and rule actions as chapters. They go into MKV chapter titles and the <code>.chapters.txt</code> file beside the recording, next to the markers you place with your hotkey.</li>
+          </ol>
+          <h3 id="recording-depth-after-recording-the-pipeline-and-the-integrity-check" data-i18n-html="manual.519fceb746f3">After recording: the pipeline and the integrity check</h3>
+          <ol>
+          <li data-i18n-html="manual.561bb55d7a18">Build a <strong>Post-record pipeline</strong> for each profile from a fixed set of steps — <strong>Verify</strong>, <strong>Remux to MP4</strong>, <strong>Normalize loudness</strong>, <strong>Rename</strong>, <strong>Move to folder</strong>, <strong>Copy to folder</strong>, <strong>Reveal in file manager</strong> and <strong>Notify Lua scripts</strong>. It runs in the background with a live queue and stops at the first failure. There is deliberately no &quot;run any command&quot; step.</li>
+          <li data-i18n-html="manual.2f93cddd1f21">Run the integrity check after a recording or whenever you like, for a plain OK, warning or fail on the <strong>container</strong>, <strong>video continuity</strong>, <strong>audio continuity</strong>, <strong>audio and video interleaving</strong> and <strong>duration</strong>. <code>.frec</code> files get the deep check; other files get a structure and decode check through ffmpeg.</li>
+          </ol>
+          <h3 id="recording-depth-export-a-shareable-copy-when-you-stop" data-i18n-html="manual.0d291aee5546">Export a shareable copy when you stop</h3>
+          <ol>
+          <li data-i18n-html="manual.124d2a00ed27">In <strong>Settings → Output</strong>, with the container set to <code>.frec</code>, tick <strong>Also save a shareable MP4 next to the master</strong>. When a recording finishes, a background export writes an <code>.mp4</code> anyone can play beside the lossless master.</li>
+          <li data-i18n-html="manual.a37303723389">The copy appears in the post-record queue, is named so it never overwrites anything, and never touches the master. It is off until you turn it on.</li>
+          </ol>
+          <h3 id="recording-depth-smpte-ltc-timecode" data-i18n-html="manual.7ed8656eb1ff">SMPTE LTC timecode</h3>
+          <ol>
+          <li data-i18n-html="manual.3d97874c3064">Open <strong>SMPTE Timecode (LTC)</strong>, turn on <strong>Generate LTC onto a track</strong>, and pick the mixer track and frame rate to feed external recorders and cameras. Set <strong>Read LTC from</strong> to an audio input to show a timecode line on the stats overlay and to stamp LTC chapter markers. Classic audio timecode, fully offline, accurate to one frame at 24, 25 and 30 fps.</li>
+          </ol>
+          <h2 id="go-live" data-i18n-html="manual.a9f690169703">Go live</h2>
+          <p data-i18n-html="manual.8f6df4580812">Stream straight from your computer to a platform over RTMP or RTMPS — never through a server of ours.</p>
+          <ol>
+          <li data-i18n-html="manual.dba22b61cdcc">Open <strong>Settings → Stream</strong> and click <strong>Add target</strong>. Pick <strong>Twitch</strong>, <strong>YouTube</strong>, <strong>Kick</strong>, <strong>Facebook</strong>, <strong>Trovo</strong> or <strong>Custom RTMP</strong>.</li>
+          <li data-i18n-html="manual.2192731aac47">Paste your <strong>stream key</strong> — kept on your computer and shown masked — and set the bitrate and encoder for that service.</li>
+          <li data-i18n-html="manual.040014e94f16">Click <strong>Go Live</strong> in <strong>Controls</strong>. The <strong>LIVE</strong> light comes on, and the stats dock shows your bitrate, dropped frames and the stream's health.</li>
+          <li data-i18n-html="manual.0cd441959cb4">If your connection drops, Freally Capture <strong>reconnects by itself</strong>, and your local recording keeps running whatever the stream does. Set a <strong>stream delay</strong> if you want one.</li>
+          <li data-i18n-html="manual.dc8ebcea4893">Click <strong>End Stream</strong> to stop.</li>
+          </ol>
+          <h2 id="broadcast-safety" data-i18n-html="manual.973adc03e43c">Broadcast safety</h2>
+          <p data-i18n-html="manual.53fa9293a65e">Not losing the show — before, during and after.</p>
+          <h3 id="broadcast-safety-before-the-go-live-pre-flight" data-i18n-html="manual.de8792b14216">Before: the go-live pre-flight</h3>
+          <p data-i18n-html="manual.ed9a4b7bfaf5">Clicking <strong>Go Live</strong> first runs a checklist: stream targets have keys, a usable encoder is found, every source is healthy and there is enough disk space for the recording — each green or red, with a one-click fix — plus reminders about microphone and desktop-audio levels and the replay buffer, which never block a screen-only show. A setting can <strong>hold Go Live until every blocking check is green</strong>; otherwise &quot;Go Live anyway&quot; is there.</p>
+          <h3 id="broadcast-safety-during-alarms-health-and-failover" data-i18n-html="manual.9b63c5c64ba1">During: alarms, health and failover</h3>
+          <ol>
+          <li data-i18n-html="manual.9c386b745073"><strong>Safety alarms</strong> watch while you are live or recording: silent program audio, sustained clipping, a black or frozen picture, and a low-disk <em>forecast</em> (&quot;about 22 minutes left at the current bitrate&quot;). They appear as a banner you can dismiss, and screen readers announce them — never a dialog that interrupts the show.</li>
+          <li data-i18n-html="manual.b7c8c66a5330">The <strong>source health dashboard</strong> (command palette → &quot;Source health…&quot;) lists every source's state, frame rate, the age of its last frame, dropped frames and restarts, with <strong>Restart</strong> and <strong>Properties</strong> for each.</li>
+          <li data-i18n-html="manual.92bd60ef963b">If the hardware encoder fails in the middle of a stream or recording — a driver reset, the graphics card under strain — <strong>encoder failover</strong> switches to another hardware encoder or to x264. The stream reconnects and stays up, the recording continues in a new file, and a message says exactly what happened. Network problems never cause a switch.</li>
+          <li data-i18n-html="manual.50a02fe4fe7b">The <strong>panic button</strong> (a global hotkey you choose) cuts the program — and the vertical canvas and any projectors — to a privacy slate, stops every capture and mutes all audio, the microphone included, while the stream and recording stay connected. Coming back takes a deliberate two-step confirmation. Set the slate's color or image beside the hotkey in <strong>Settings → Hotkeys</strong>.</li>
+          </ol>
+          <h3 id="broadcast-safety-after-safe-recordings-and-an-orderly-quit" data-i18n-html="manual.a73a2857361e">After: safe recordings and an orderly quit</h3>
+          <ol>
+          <li data-i18n-html="manual.bf07b060e7e7">MP4 and MOV recordings are written in <strong>fragments</strong>, so a crash or a power cut still leaves a playable file (MKV and <code>.frec</code> already were). If a session ends in the middle of a recording, the next launch offers a one-click <strong>repair</strong> into a <code>(repaired)</code> copy; the original is never touched.</li>
+          <li data-i18n-html="manual.da5eeb31c1b8">Quitting while live, recording or with replay armed shows what will happen, then shuts down <strong>in order</strong>: end the stream, finish the recording, save the replay buffer, save your work.</li>
+          <li data-i18n-html="manual.26b3f2c32e05"><strong>Recording file names</strong> follow a template (<strong>Settings → Output</strong>) built from tokens — <code>{prefix}</code> <code>{date}</code> <code>{time}</code> <code>{scene}</code> <code>{profile}</code> <code>{canvas}</code> <code>{marker-count}</code> <code>{counter}</code> — for recordings, replays and stills, with their own folders for replays and stills.</li>
+          <li data-i18n-html="manual.27c3f23547ac"><strong>Export diagnostics</strong> saves a bundle of technical details to a file on your computer, built from a strict allowlist so that stream keys, passwords, file paths and names are never in it. You can read what it holds first; it stays where you save it and is never sent anywhere.</li>
+          </ol>
+          <h2 id="sources-devices" data-i18n-html="manual.5199babf9b90">Sources and devices</h2>
+          <p data-i18n-html="manual.306121fdda68">Everything between the glass and the canvas: test signals, sync calibration, text from a file, timers, the hotkey map, mixer depth and real device controls.</p>
+          <h3 id="sources-devices-test-signals-and-a-v-sync-calibration" data-i18n-html="manual.5eacf1ee941f">Test signals and A/V sync calibration</h3>
+          <ol>
+          <li data-i18n-html="manual.920b7abd63cc">Add a <strong>Test Signal</strong> source (<strong>Sources → + → Test Signal</strong>): color bars, a calibration grid, a motion sweep, a 1 kHz lineup tone at −20 dBFS, or a combined <strong>flash and beep</strong> for audio-video sync — picture and sound made from one clock. Check a projector, an encoder or a stream target with no camera plugged in.</li>
+          <li data-i18n-html="manual.788073298328">Open the <strong>A/V sync calibration</strong> workbench (command palette → &quot;A/V sync calibration…&quot;). Pick the camera and microphone to line up, point the camera at the flashing program (the dialog can open a fullscreen projector for it), and let it measure for about twelve seconds. It finds the flash and the beep over several cycles and offers to apply the measured offset to the microphone; the manual slider stays as a fallback. The measurement runs through your screen and speakers, so their own small delays are part of it — and a failure says <em>why</em>.</li>
+          </ol>
+          <h3 id="sources-devices-timers-clocks-and-text-from-a-file" data-i18n-html="manual.825c83c405fb">Timers, clocks and text from a file</h3>
+          <ol>
+          <li data-i18n-html="manual.85622b429b51">A <strong>Timer</strong> source shows a clock (with your own format and an optional fixed UTC offset), a <strong>countdown</strong> (for a length of time, or to the next time of day — at zero it can flash or switch scene), a <strong>stopwatch</strong>, or the <strong>time since you went live or started recording</strong>. Start, pause and reset it from its <strong>Properties</strong>, or bind the two global hotkeys that drive <em>every</em> timer at once (<strong>Settings → Hotkeys</strong>).</li>
+          <li data-i18n-html="manual.fcd4f802968f">A <strong>Text</strong> source can <strong>read from a watched file</strong> (<strong>Properties → Read from file</strong>): a whole <code>.txt</code> file, one CSV cell (by column name or number), or one JSON value (a pointer such as <code>/teams/0/score</code>). Changes show within half a second. Scoreboards and lower thirds with no service behind them.</li>
+          </ol>
+          <h3 id="sources-devices-the-hotkey-map-and-the-mixer-console" data-i18n-html="manual.1d106549f0ce">The hotkey map and the mixer console</h3>
+          <ol>
+          <li data-i18n-html="manual.5d6ad89f147c">The <strong>hotkey map</strong> (command palette → &quot;Hotkey map…&quot;) lists <em>every</em> binding — global actions and each source's push-to-talk and push-to-mute — searchable and filterable, and flags conflicts honestly: the same shortcut written two ways is shown as shared, and a key the system refused (because another app owns it) says so. <strong>Export cheat sheet</strong> writes a Markdown reference into your Downloads folder.</li>
+          <li data-i18n-html="manual.e32e382b9753">Every mixer strip has <strong>pan</strong> (stereo balance; centered is exactly no pan, and a double-click resets it), <strong>PFL solo</strong> (the monitor hears only the soloed strips; the program mix never changes) and a <strong>mono</strong> fold-down. Pan and mono are in the strip's &quot;⋯&quot; menu; solo is on the strip itself.</li>
+          </ol>
+          <h3 id="sources-devices-device-depth-deinterlacing-and-camera-controls" data-i18n-html="manual.5dbd70dfc92d">Device depth: deinterlacing and camera controls</h3>
+          <ol>
+          <li data-i18n-html="manual.f8e60899a881">A video capture device's <strong>Properties</strong> offer <strong>deinterlacing</strong> for interlaced feeds, such as capture cards fed by older cameras and consoles: discard, bob, linear, blend or motion-adaptive, with the field order. It runs the same on every system; changing it restarts the device.</li>
+          <li data-i18n-html="manual.34192e6d30fd"><strong>Camera controls</strong> — exposure, white balance, focus, zoom, gain and more — appear in the same <strong>Properties</strong> while the camera runs. Windows and Linux use the standard UVC controls; macOS shows whatever the system reports, which is often nothing, and the panel says so rather than showing sliders that do nothing. Every adjustment is saved in a <strong>profile for that camera</strong>, applied again when it is plugged back in or the app restarts; <strong>Reset profile</strong> returns the defaults.</li>
+          </ol>
+          <h2 id="automation" data-i18n-html="manual.f77f10d8c967">Automation and control</h2>
+          <p data-i18n-html="manual.726216fb4de1">Let the studio drive itself with rules, macros and hardware controllers — every one of them limited to one fixed list of studio commands, so no automation can name a file, start a program or reach the internet.</p>
+          <h3 id="automation-rules-macros-and-variables" data-i18n-html="manual.193521bd4921">Rules, macros and variables</h3>
+          <ol>
+          <li data-i18n-html="manual.e8ee7ccab125">Open <strong>Tools → Automation Rules &amp; Macros…</strong> and add a rule. Pick one of nine triggers (a scene switch, the stream starting or stopping, the recording starting or stopping, a source error, an audio level crossing a line, the system going idle, a window taking focus, a time of day, or a watched file changing), add conditions (a variable's value, live, recording), and choose a studio action. Every rule starts <strong>disabled</strong>: turn it on to arm it.</li>
+          <li data-i18n-html="manual.5deaa7ba718f">Build a macro as a named list of steps — run an action, wait, set a variable — with a repeat count and an optional global hotkey. Run it from the app, a hotkey, a rule or the remote-control API.</li>
+          <li data-i18n-html="manual.30ee5b1326f2">Set a studio <strong>variable</strong> in a macro and use it as <code>{{name}}</code> inside any Text source: the text changes the moment the macro sets the value.</li>
+          </ol>
+          <h3 id="automation-controllers-midi-osc-and-the-touch-panel" data-i18n-html="manual.5eb10fc04538">Controllers: MIDI, OSC and the touch panel</h3>
+          <ol>
+          <li data-i18n-html="manual.ba0c838f1688">Open <strong>Tools → MIDI Control…</strong> and teach it a pad, knob or fader for an action, a macro, a scene switch, a mixer fader or a mute — with lights and motorized faders that follow the studio's real state. No MIDI port opens until you pick one.</li>
+          <li data-i18n-html="manual.cc993cb0d974">Turn on <strong>Listen for OSC</strong> to let TouchOSC-style controllers and lighting desks send addresses such as <code>/scene/switch</code>, <code>/record/start</code>, <code>/macro/run</code> and <code>/mixer/vol</code>. It is off by default and listens only on this computer unless you allow your network. OSC has no password of its own.</li>
+          <li data-i18n-html="manual.134e5f4269f9">Open <strong>Tools → LAN Panel &amp; Tally…</strong> to serve a control page — scene buttons with live tally, mixer faders and action keys — to any phone through a QR code. Every request needs the password, and it listens only on this computer unless you allow your network. The tally page shows full-screen red or green; add <code>?scene=NAME</code> to watch one scene.</li>
+          </ol>
+          <h3 id="automation-hotkey-chords-and-layers" data-i18n-html="manual.fc4cd96b860d">Hotkey chords and layers</h3>
+          <ol>
+          <li data-i18n-html="manual.ec4a9a334753">In a hotkey field, bind a plain shortcut (Ctrl+Shift+M) or a two-step chord (Ctrl+K, then 3) — the second key is claimed only while the chord is waiting. Give a binding a <strong>Layer</strong> so it works only while that layer is active; layers stay switched until you change them.</li>
+          </ol>
+          <h3 id="automation-cameras-and-the-show-rundown" data-i18n-html="manual.70ad05980925">Cameras and the show rundown</h3>
+          <ol>
+          <li data-i18n-html="manual.24b33b058b99">Open <strong>Tools → PTZ Cameras…</strong>, add a camera by its VISCA-over-IP address, store named pan, tilt and zoom presets, and link a preset to a scene so going to that scene recalls the shot. PTZ stays on your network, and a camera exists only because you typed its address: nothing is searched for.</li>
+          <li data-i18n-html="manual.c9d86b995c5a">Open <strong>Tools → Show Rundown…</strong> and list the steps — a scene, how long it holds, and optional actions — advancing by hand or automatically, with a live &quot;next up&quot; and the time remaining. A rundown switches scenes the ordinary, undoable way and never edits your scene collection.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.5c94bed2d737"><strong>Note:</strong> Every rule, macro, MIDI or OSC binding, panel button and rundown step goes through the same fixed list of commands as the remote-control API, so no controller can do what the app's own buttons cannot. Every network listener is off by default and stays on this computer unless you allow your network, and the OSC and panel settings warn you that network traffic is unencrypted before the port opens.</p>
+          </blockquote>
+          <h2 id="multistream" data-i18n-html="manual.1f3fd1c7ddc9">Multistream</h2>
+          <p data-i18n-html="manual.dcac0a03a29b">Stream to several platforms at once — straight from your computer, with no relay service in between.</p>
+          <ol>
+          <li data-i18n-html="manual.42d9628818da">Add two or more stream targets in <strong>Settings → Stream</strong> and turn each one on.</li>
+          <li data-i18n-html="manual.4144fe0d9694">Give a platform its own encoder settings if it needs a different bitrate.</li>
+          <li data-i18n-html="manual.cb21d6bb96be">Click <strong>Go Live</strong>: you broadcast to every target that is on, at once. The stats dock shows each target's health and bitrate, and one target failing never takes down the others.</li>
+          <li data-i18n-html="manual.aba9a5f55973">Optionally record a separate-track local copy at the same time, and save replays with the replay hotkey while you stream.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.af9343c245a7"><strong>Free today:</strong> every feature — multistream, SRT and WHIP, every filter, scripting, replay, the transition packs and the remote-control API — is free today, for everyone. Future versions may be sold.</p>
+          </blockquote>
+          <h2 id="streaming-insight" data-i18n-html="manual.c08320c45003">Streaming reliability and insight</h2>
+          <p data-i18n-html="manual.532ab322d03c">Rehearse, measure and explain your show. Everything here is off or neutral by default, and none of it goes online.</p>
+          <h3 id="streaming-insight-the-network-simulator" data-i18n-html="manual.80390ae1a9d7">The network simulator</h3>
+          <ol>
+          <li data-i18n-html="manual.7e620ced841e">In <strong>Settings → Stream</strong>, open the <strong>Network simulator (rehearsals)</strong> and choose a <strong>Profile</strong> — <strong>Hotel Wi-Fi</strong>, <strong>Mobile hotspot</strong>, or <strong>Custom</strong> with your own <strong>Bandwidth</strong>, <strong>Latency</strong>, <strong>Jitter</strong> and scheduled <strong>Outage</strong> times. It affects only a rehearsal's local output, so you can practise reconnects, multistream and bitrate choices; it can never slow down a real broadcast.</li>
+          </ol>
+          <h3 id="streaming-insight-rehearsal-mode" data-i18n-html="manual.b22d8c51e0bd">Rehearsal mode</h3>
+          <ol>
+          <li data-i18n-html="manual.083772633b86">Press the violet <strong>Rehearse</strong> button to run the whole pipeline — compositor, encoder, muxer and the real reconnect logic — into a local stand-in with <strong>nothing leaving the computer</strong>. A <strong>REHEARSAL</strong> badge marks every live control, and your stream keys are never even read, so you can rehearse before you have them. You can also record the rehearsal.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.184d64047c4c"><strong>Tip:</strong> Pair a rehearsal with the network simulator to practise reconnecting over a weak, unsteady connection well before the day.</p>
+          </blockquote>
+          <h3 id="streaming-insight-the-dropped-frame-timeline" data-i18n-html="manual.d2381a584d24">The dropped-frame timeline</h3>
+          <ol>
+          <li data-i18n-html="manual.a6a72c5410a8">The <strong>Session timeline</strong> records the whole session — render time, encoder queue, each target's bitrate and dropped frames, reconnects, scene switches, markers and alarms — on one zoomable graph. Where the stats dock shows <em>now</em>, the timeline answers &quot;what happened at minute 43?&quot; afterwards.</li>
+          </ol>
+          <h3 id="streaming-insight-the-session-report-and-the-encoder-benchmark" data-i18n-html="manual.6e9fee1e85fa">The session report and the encoder benchmark</h3>
+          <ol>
+          <li data-i18n-html="manual.9dd812cbf648">Turn on <strong>Write a session report (HTML + Markdown) next to the recording</strong> in <strong>Settings → Stream</strong> for a local summary when the session ends: uptime, average and peak bitrate per target, the time spent down, the reconnects, markers, alarms and the recording's location. It stays on your computer and is off by default.</li>
+          <li data-i18n-html="manual.a9e574b7bd8d">Use <strong>Run encoder benchmark…</strong> to measure short encodes with every encoder, preset and resolution your computer has — about a minute, fully offline — then <strong>Apply to recording settings</strong> from the result. Failures are listed, not hidden, and the benchmark refuses to run while you are live or recording.</li>
+          </ol>
+          <h3 id="streaming-insight-sources-only-on-the-stream-or-only-in-the-recording" data-i18n-html="manual.fae310275ed2">Sources only on the stream, or only in the recording</h3>
+          <ol>
+          <li data-i18n-html="manual.191da176dd0d">On a source's row, use <strong>Show on stream</strong> / <strong>Hide on stream</strong> and <strong>Show in recording</strong> / <strong>Hide in recording</strong> to keep alerts and chat on the live stream while the recording stays clean, from one canvas. The main eye button still controls everything, and the preview, projectors and multiview always show the whole program.</li>
+          </ol>
+          <h2 id="virtual-camera" data-i18n-html="manual.46bad2cb618f">Virtual camera</h2>
+          <p data-i18n-html="manual.69ebe5277092">Use your program as a webcam in any video-call app. <strong>Windows only in 1.2.1.</strong></p>
+          <ol>
+          <li data-i18n-html="manual.ba2b6aa952f7">Click <strong>Start Virtual Camera</strong> in <strong>Controls</strong>. Freally Capture adds a system camera called <strong>&quot;Freally Capture Virtual Camera&quot;</strong>.</li>
+          <li data-i18n-html="manual.cb3cb4585f19">In Zoom, Meet, Discord or Teams, choose that camera in the video settings: your program becomes the webcam.</li>
+          <li data-i18n-html="manual.83db59f4a370">Click <strong>Stop Virtual Camera</strong> to remove it.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.91c51d55639b"><strong>Per system:</strong> on <strong>Windows</strong> the camera registers for your user, with no administrator rights, and is removed when you stop it. It is <strong>not yet code-signed</strong>, so Windows may warn about it and a hardened video-call app may refuse it; a full test inside a live call is still to be done. The <strong>macOS</strong> and <strong>Linux</strong> cameras are separate components that are <em>not in this release</em>. Freally Capture never installs a system component without asking, on any system.</p>
+          </blockquote>
+          <h2 id="browser-source" data-i18n-html="manual.98839b8e6880">Browser source</h2>
+          <p data-i18n-html="manual.3ba821584b20">Put a live web page — an alert overlay, a scoreboard, a chat widget — straight into a scene.</p>
+          <ol>
+          <li data-i18n-html="manual.895f07f428cd">In <strong>Sources</strong>, click <strong>+</strong> and choose <strong>Browser</strong>.</li>
+          <li data-i18n-html="manual.868ee19e975e">Paste an <strong>http://</strong> or <strong>https://</strong> address and set the size and frame rate to render it at.</li>
+          <li data-i18n-html="manual.292e94b0a782">The first time, Freally Capture offers to install the <strong>Browser Runtime</strong> component. It is downloaded when you ask for it and checked against its hash — never bundled with the app — and you can remove it again from <strong>Tools → Components</strong>.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.cd6d7fbd46ee"><strong>Only http and https load.</strong> The rule covers every page change, not just the address you type: if a page tries to move to <code>file://</code>, <code>javascript:</code> or <code>data:</code> — by a redirect, a script, a pop-up or a frame — the move is <strong>cancelled</strong>, so a page cannot read your files. On Windows the page runs in Chromium's sandbox. The runtime is <strong>not yet code-signed</strong>. The page's sound is not captured yet: this version is picture only.</p>
+          </blockquote>
+          <h2 id="game-capture" data-i18n-html="manual.9c0c8f127dd9">Game capture</h2>
+          <p data-i18n-html="manual.2c08692420b8">Capture an exclusive-fullscreen game that ordinary window capture cannot see. <strong>Windows only.</strong></p>
+          <ol>
+          <li data-i18n-html="manual.9d162e3861e9">In <strong>Sources</strong>, click <strong>+</strong> and choose <strong>Game Capture</strong>. <strong>Read the notice first</strong>: it explains the risk in plain words.</li>
+          <li data-i18n-html="manual.4264b41a7732">Accept the risk <em>for that one game</em>, then pick the running game from the list.</li>
+          <li data-i18n-html="manual.ab3e826e90f1">Freally Capture loads a small hook into that game and takes its frames at the game's own frame rate.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.082fd06e18f9"><strong>Read this before you use it.</strong> Game capture works by <strong>loading a DLL into the game</strong>. Anti-cheat and antivirus software may treat that as tampering, and it can get an account <strong>banned</strong>. Nothing is ever loaded automatically: you agree <strong>for one game at a time</strong>, and that agreement can never be used for another game — and it never travels inside a shared scene collection. If a game refuses the hook, Freally Capture falls back to ordinary <strong>Window Capture</strong> with a message rather than failing. HDR games and Direct3D 12 games use Window Capture too. On macOS and Linux this source is not offered.</p>
+          </blockquote>
+          <h2 id="replay" data-i18n-html="manual.43fae75af922">Replay buffer</h2>
+          <p data-i18n-html="manual.40bc664c1c0b">Keep the last moments in memory, so a hotkey saves what just happened.</p>
+          <ol>
+          <li data-i18n-html="manual.7a69241c10c2">Click <strong>Start Replay Buffer</strong> in <strong>Controls</strong>. Freally Capture keeps the last seconds in a buffer of a fixed size.</li>
+          <li data-i18n-html="manual.684aecea2ba0">Bind a global <strong>Save Replay</strong> hotkey in <strong>Settings</strong>.</li>
+          <li data-i18n-html="manual.66c44777e965">Press it to save the last seconds to a file — without interrupting your stream or your main recording. A &quot;Replay saved&quot; message confirms it.</li>
+          </ol>
+          <h2 id="teleprompter" data-i18n-html="manual.4b598d5daf11">Teleprompter</h2>
+          <p data-i18n-html="manual.b7fc474ded62">A smooth-scrolling script for the person on camera — on a panel in the app, a fullscreen projector that can be mirrored, and the LAN touch panel, all at once.</p>
+          <ol>
+          <li data-i18n-html="manual.f1c548f77750">Open the teleprompter from <strong>Tools</strong>, type or paste your script, and set the speed and font. Pace it in <strong>characters per second</strong>, or switch to <strong>BPM</strong> (50–250 beats per minute) to read lyrics in time with music; either change re-paces a running scroll.</li>
+          <li data-i18n-html="manual.3a86eb91938d"><strong>Pause chips:</strong> type <code> -- </code> for a beat or <code> --N </code> for an N-second hold and it becomes a single chip — the cursor steps over it, one Delete or Backspace removes it, and copy and paste keep it whole.</li>
+          <li data-i18n-html="manual.dc7539148aed"><strong>Start countdown:</strong> arm an optional 3-2-1 lead-in, shown on both the operator's preview and the projector, so the reader has a beat before the text moves.</li>
+          <li data-i18n-html="manual.f5113c573ac4"><strong>Open the projector</strong> for the reader (mirror mode flips it for beam-splitter glass). Opening it closes the operator window, so you can run the stream from the main window while they read; with a countdown armed, the projector goes back to the top, counts down and plays. Play, pause, stop, rewind, fast-forward and restart from the on-screen controls, a hotkey, MIDI, OSC or the LAN panel — every control stays in step.</li>
+          <li data-i18n-html="manual.5298a60b0152"><strong>Read aloud</strong> previews the script with your system's own speech: Windows' built-in voices, macOS's, and on Linux <code>spd-say</code> or <code>espeak-ng</code> where installed. No speech engine is bundled.</li>
+          <li data-i18n-html="manual.5de1b5efa245"><strong>Autocomplete</strong> suggests words and phrases in light grey as you type; press Tab to accept. Each of the 18 languages has its own dictionary on your computer, loaded only for the language you are writing in.</li>
+          </ol>
+          <h2 id="remote" data-i18n-html="manual.7fb5d22a1670">Remote control</h2>
+          <p data-i18n-html="manual.b2ba73efdcec">Drive the studio from a Stream Deck or a Companion-style controller — off by default, password-protected, on your own computer.</p>
+          <ol>
+          <li data-i18n-html="manual.6396674fcd28">Open <strong>Settings → Remote Control</strong>, turn on the <strong>WebSocket API</strong> (off by default), and set a <strong>password</strong>.</li>
+          <li data-i18n-html="manual.56e0d6d295bb">It listens on <code>127.0.0.1</code> — this computer only — unless you explicitly allow your network.</li>
+          <li data-i18n-html="manual.344e52e3eba1">Point a Companion or Stream Deck client at the address shown. Switch scenes, run transitions, mute and unmute, start and stop recording, and save replays from hardware buttons.</li>
+          </ol>
+          <h2 id="production" data-i18n-html="manual.6664edd9ad4c">Remote guests and show production</h2>
+          <p data-i18n-html="manual.75ce17238f9b">Turn a remote-guest session into a produced show: up to eight guests, drawing on the live program, a green room, private cues, each guest's connection at a glance, and an automatic grid. Everything here is off or unbound by default, and nothing connects until you invite someone.</p>
+          <h3 id="production-multi-guest-sessions" data-i18n-html="manual.02d9e34002c8">Multi-guest sessions</h3>
+          <ol>
+          <li data-i18n-html="manual.5a6c2ec7640d">Start a remote-guest session and share the invite link or its QR code: <strong>you plus up to eight guests</strong>, a gallery of one to nine. Each guest is a tile with their own mute controls, connection quality, cue channel and one-click seat on air.</li>
+          <li data-i18n-html="manual.34a323a45540">A guest opens the link in a web browser — nothing to install — and taps <strong>Join</strong> to send their camera and microphone. A guest who has Freally Capture can open the same invite in the app instead. An invite expires after the time you choose.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.4e31042e4a6f"><strong>Note:</strong> Pictures and sound go directly between you and each guest, peer to peer and encrypted in transit; only the connection handshake crosses a public signalling service. Sessions are tested at four guests; more depends on your bandwidth and processor.</p>
+          </blockquote>
+          <h3 id="production-telestrator-draw-on-the-live-program" data-i18n-html="manual.33ff43cd0616">Telestrator: draw on the live program</h3>
+          <ol>
+          <li data-i18n-html="manual.d29f651d6eb9">Open the <strong>Telestrator</strong> and pick a tool — <strong>Pen</strong>, <strong>Highlighter</strong>, <strong>Arrow</strong> or <strong>Ellipse</strong> — then draw straight onto the program. Your marks are part of the picture the moment you draw them, so they appear in the recording and the stream, not just your preview.</li>
+          <li data-i18n-html="manual.9aa7fc0273fb">Let marks <strong>Fade</strong> after a while, or switch to <strong>Whiteboard mode</strong> to <strong>Keep</strong> them until you clear them. Drawing follows a tablet's pressure, and <strong>Clear marks</strong> can be bound to a hotkey (unbound by default).</li>
+          </ol>
+          <h3 id="production-the-green-room" data-i18n-html="manual.fc81cd8d37ae">The green room</h3>
+          <ol>
+          <li data-i18n-html="manual.c87beb96ec64">Turn on the <strong>Green room</strong> and new guests wait off air while you check their camera and microphone in the <strong>Green-room preview</strong>. When they are ready, click <strong>Seat on air</strong>. The guest sees a &quot;you're in the green room&quot; banner, in the app or on the web page.</li>
+          </ol>
+          <h3 id="production-cue-and-talk" data-i18n-html="manual.1d47c8224f50">Cue and talk</h3>
+          <ol>
+          <li data-i18n-html="manual.569d461035c1">Send a guest a private <strong>Cue</strong> — with presets such as <strong>30 seconds</strong>, <strong>Wrap up</strong>, <strong>You're next</strong> and <strong>Speak up</strong> — over the session's existing peer-to-peer channel. The guest sees it with a live countdown, never in the program.</li>
+          </ol>
+          <h3 id="production-the-connection-quality-dashboard" data-i18n-html="manual.c66c9d5359bf">The connection-quality dashboard</h3>
+          <ol>
+          <li data-i18n-html="manual.4541cc1ee0f5">Watch each guest's connection live — round-trip time, packet loss, the resolution and frame rate you receive, and jitter — with a green, amber or red badge and a small history graph, so a weakening connection shows before your viewers notice.</li>
+          </ol>
+          <h3 id="production-automatic-guest-grids" data-i18n-html="manual.bf8e764221e5">Automatic guest grids</h3>
+          <ol>
+          <li data-i18n-html="manual.ffe3c227cdfc">Turn on <strong>Auto-grid</strong> to keep seated guests in a tidy grid of one to nine that rearranges itself as guests join, leave or are seated, or press the arrange button to do it now. Each seat publishes its guest's name as a <code>{{guestN}}</code> variable, so a title source becomes a nameplate that updates by itself.</li>
+          </ol>
+          <h2 id="studio-management" data-i18n-html="manual.e8630fabd4e5">Studio management and workflow</h2>
+          <p data-i18n-html="manual.c8c487196725">Make a whole layout portable and shareable, keep named versions of your scenes, theme the app, and put your favourite actions one tap away — all on your computer, with no server.</p>
+          <h3 id="studio-management-scene-packs-and-versions" data-i18n-html="manual.f87995a7cf6c">Scene packs and versions</h3>
+          <ol>
+          <li data-i18n-html="manual.074bb2bf9453">Open the workspace dialog from <strong>Scene Collection → Manage Scene Collections…</strong>: the pack, compare, snapshot, backup and dock-layout tools are all there.</li>
+          <li data-i18n-html="manual.8dce3a052a05">Click <strong>Export pack…</strong> to bundle the current collection and its files (images, media, LUTs, masks, fonts) into one portable <code>.fcappack</code>. Web addresses and network paths are listed as <em>external</em> rather than bundled, and fonts are flagged for their licences.</li>
+          <li data-i18n-html="manual.c1bba88df9c5">Click <strong>Import pack…</strong> and pick a <code>.fcappack</code>: it arrives as a new collection, finds its files on this computer, and switches to it.</li>
+          <li data-i18n-html="manual.69e7b9f6e8ab">Click <strong>Compare &amp; merge…</strong> to compare the current collection with another collection, a pack or a snapshot. Review the added, removed and changed scenes, sources, transforms, filters and visibility, then pick exactly which changes to bring in. Picking a scene brings the sources it uses.</li>
+          <li data-i18n-html="manual.862a75c84629">Click <strong>Snapshots…</strong>, name a checkpoint and choose <strong>Save snapshot</strong>. <strong>Restore</strong> brings it back later — your current layout is saved as a snapshot first, so a restore is never one-way. Up to 50 snapshots are kept, with their disk use shown.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.8058b1480d14"><strong>Tip:</strong> Snapshots are named history beside autosave and undo. Take one before a risky change, and you always have a labelled point to come back to.</p>
+          </blockquote>
+          <h3 id="studio-management-backup-restore-and-portable-mode" data-i18n-html="manual.1d55a62a5fdf">Backup, restore and portable mode</h3>
+          <ol>
+          <li data-i18n-html="manual.250b89a976de">In the workspace dialog, click <strong>Backup &amp; restore…</strong>, then <strong>Export backup…</strong> to save everything — settings, profiles and scene collections — in one <code>.fcapbackup</code> file.</li>
+          <li data-i18n-html="manual.560e7e269f11">On a new computer, click <strong>Restore from backup…</strong>, tick what to bring in (<strong>Settings</strong>, <strong>Scene collections</strong>, <strong>Profiles</strong>) and choose <strong>Restore selected</strong>. Restart Freally Capture afterwards to load the restored collections and profiles.</li>
+          <li data-i18n-html="manual.5b26da4b8793">To run from a USB stick, put a file called <code>freally-portable.txt</code> beside the program: all of its data then lives in the program's folder instead of your user profile. <strong>Settings → About</strong> shows whether portable mode is on and where the data is.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.a31a49d41d7d"><strong>Note:</strong> Stream keys and passwords are never written into a backup — enter them again after restoring.</p>
+          </blockquote>
+          <h3 id="studio-management-themes-layouts-and-quick-actions" data-i18n-html="manual.5b446c4ea972">Themes, layouts and quick actions</h3>
+          <ol>
+          <li data-i18n-html="manual.8eea476bde73">Open <strong>Settings → Appearance</strong> and pick the <strong>Custom</strong> theme to edit the palette, with live <strong>contrast warnings</strong>, then <strong>Export .fctheme…</strong> or <strong>Import .fctheme…</strong> to share it.</li>
+          <li data-i18n-html="manual.7cc0bc3a4e74">In the workspace dialog's <strong>Dock layouts</strong>, save the current arrangement under a name and click a saved layout to switch to it.</li>
+          <li data-i18n-html="manual.c9044c09b979">In <strong>Settings</strong>, type in <strong>Search settings…</strong> to jump to any setting; a marker shows which categories you have changed since you opened it.</li>
+          <li data-i18n-html="manual.a4640858ad4d">Choose <strong>Tools → Quick actions…</strong> to open the button grid. Click <strong>Edit</strong>, then <strong>Add button</strong>, set each button's label and color, and add <strong>pages</strong>. A button can switch a scene, run a macro, play a soundboard pad or run a studio command.</li>
+          </ol>
+          <blockquote>
+          <p data-i18n-html="manual.74ff6472576d"><strong>Tip:</strong> Quick-action buttons run the same studio commands as hotkeys, and the grid is shared with the LAN touch panel: set it up once and it is on your phone too.</p>
+          </blockquote>
+          <h2 id="settings" data-i18n-html="manual.74a883a037bc">Settings</h2>
+          <p data-i18n-html="manual.5feaf4600834">Profiles, scene collections, hotkeys and language. Everything is free today, so there is nothing to activate. <strong>Settings</strong> is one window with categories — General, Appearance, Streaming, Output, Replay, Hotkeys, Network, Accessibility and About — opened from the <strong>menu bar</strong> (File, Edit, View, Docks, Profile, Scene Collection, Tools and Help).</p>
+          <ol>
+          <li data-i18n-html="manual.9f6a04e85e39"><strong>Apply means apply.</strong> The Settings window edits a copy: nothing changes until you click <strong>Apply</strong> or <strong>OK</strong>, and <strong>Cancel</strong> puts back exactly what you had, the theme preview included.</li>
+          <li data-i18n-html="manual.3fc0968ef6f9"><strong>Profiles and scene collections:</strong> keep separate setups — &quot;Streaming&quot; and &quot;Local recording&quot;, say — and switch between them without restarting, from the <strong>Profile</strong> and <strong>Scene Collection</strong> menus.</li>
+          <li data-i18n-html="manual.ce6f52861bdb"><strong>Hotkeys:</strong> bind every action from a list that cannot clash — choose a shortcut for one action and it disappears from every other action's list, so two features never share a key. <strong>None</strong> frees it again.</li>
+          <li data-i18n-html="manual.be52349f05be"><strong>Accessibility:</strong> choose the mixer's meter colors, including a color-blind-safe set. The whole app works from the keyboard, and screen readers announce going live, recording, reconnecting and dropped frames.</li>
+          <li data-i18n-html="manual.a79c94673558"><strong>Language:</strong> choose one of 18 languages; the app changes at once, and Arabic reads right to left.</li>
+          </ol>
+          <h2 id="report" data-i18n-html="manual.59274c49ac87">Reporting a problem</h2>
+          <p data-i18n-html="manual.c02ed8aec89d">You decide whether a problem reaches the developer, and you see exactly what would be sent.</p>
+          <ol>
+          <li data-i18n-html="manual.4ed327c34aeb">When the app shows an error it caused itself, a <strong>Report</strong> button appears beside it.</li>
+          <li data-i18n-html="manual.95da4b53fdcc">After a crash, the next launch offers <strong>Report</strong> or <strong>Dismiss</strong>.</li>
+          <li data-i18n-html="manual.6207904599f4"><strong>Report</strong> opens Freally Capture's report page on this site in your browser, with the technical facts already filled in: you can read them, but not change them. Add what you were doing and, if you like, an email address. Nothing is sent unless you press <strong>Send</strong> there.</li>
+          <li data-i18n-html="manual.6acd4e789ccd">Nothing is ever sent in the background, and <strong>Dismiss</strong> sends nothing at all.</li>
+          </ol>
+          <h2 id="privacy" data-i18n-html="manual.69bd78234ffb">Privacy and the network</h2>
+          <p data-i18n-html="manual.42f9b04c2640">Freally Capture has no account and no telemetry, and there is no cloud service of ours. Here is exactly what goes online, and what does not.</p>
+          <ol>
+          <li data-i18n-html="manual.81fe73d241a8"><strong>No account, no telemetry.</strong> The app never asks you to sign in and never sends your scenes, recordings or any usage data anywhere.</li>
+          <li data-i18n-html="manual.3735a28566e9"><strong>Your stream goes straight to the platform.</strong> It travels from your computer to the services you set up — there is no relay server of ours.</li>
+          <li data-i18n-html="manual.512b8fa00684"><strong>Your recordings stay on your computer,</strong> in the folder you choose. Nothing is uploaded.</li>
+          <li data-i18n-html="manual.c299fcfa1fde"><strong>Your stream keys stay on your computer,</strong> shown masked and sent only to the service you stream to.</li>
+          <li data-i18n-html="manual.414a08bd0219"><strong>Remote guests connect peer to peer.</strong> Only the session's handshake crosses a public signalling service, and only when you start a session.</li>
+          <li data-i18n-html="manual.20c95c4687b3"><strong>A chat overlay reads public chat</strong> from the channel you point it at, the way a signed-out viewer would — no account, key or sign-in.</li>
+          <li data-i18n-html="manual.efe87d55bed1"><strong>Two components are downloaded only when you first need them:</strong> ffmpeg, for the codecs the platforms require, and the browser runtime, for the browser source. Each comes from its own publisher and is checked before use.</li>
+          <li data-i18n-html="manual.3601a272b3b0"><strong>An update check</strong> fetches one small file once per launch, and when you choose <strong>Check for updates…</strong>. Nothing about you or your computer is sent with it, and nothing is installed unless you say yes.</li>
+          <li data-i18n-html="manual.11abc96d8e21"><strong>A problem report is sent only when you press Send</strong> on the report page, after you have read what it holds (see <a href="#report">Reporting a problem</a>).</li>
+          <li data-i18n-html="manual.804fa6536d40"><strong>No AI.</strong> Every filter — noise suppression, chroma key, tone-mapping — is classic signal processing. The app contains no machine-learning model and downloads none.</li>
+          </ol>
+          <!-- MANUAL:END -->
+        </div>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          What you record and stream is yours, and so is the responsibility for it. Freally Capture's author never receives, stores or relays any of it.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script src="search-index.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>

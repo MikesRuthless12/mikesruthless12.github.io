@@ -1,0 +1,95 @@
+{
+  "note": "The public version ladder, rendered onto index.html by scripts/build-docs-site.mjs. The rungs after v0.23.0 follow the order the old site published (\"one phase per build\", v0.24.0 to v0.33.0, then v1.0.0); there is no private roadmap in this repository to hold them to. `summary` is written for the site. States: done, planned, goal, later.",
+  "rungs": [
+    {
+      "version": "v0.19.84",
+      "phase": "Phases 0–12 — the first public build",
+      "state": "done",
+      "summary": "The first public build: file-name search kept current by each system's own change journal, the query language, the app and its settings, in eighteen languages on Windows, macOS and Linux."
+    },
+    {
+      "version": "v0.21.0",
+      "phase": "Build 1 — Must-Have, slice 1 of 3",
+      "state": "done",
+      "summary": "Must-have features, part 1 of 3: duplicates, empty folders, Everything's file lists, and every action on a result from its right-click menu."
+    },
+    {
+      "version": "v0.22.0",
+      "phase": "Build 2 — Must-Have, slice 2 of 3",
+      "state": "done",
+      "summary": "Must-have features, part 2 of 3: the index follows the disk live, Index Health, renaming in bulk with undo, unplugged drives that stay searchable, and a command line for scripts."
+    },
+    {
+      "version": "v0.23.0",
+      "phase": "Build 3 — Must-Have, slice 3 of 3 · stable",
+      "state": "done",
+      "summary": "Must-have features, part 3 of 3, and the stable release: portable mode, audio and video in the preview, Quick Look, a regular-expression builder, and a report of the folders search cannot see. Its fix release, 0.23.2, is the current version."
+    },
+    {
+      "version": "v0.24.0",
+      "phase": "Build 4 — Property lens: images and video",
+      "state": "planned",
+      "summary": "The property lens for images and video: dimensions, camera data, codecs and duration, searchable and shown as columns."
+    },
+    {
+      "version": "v0.25.0",
+      "phase": "Build 5 — Property lens: documents, binaries and packages",
+      "state": "planned",
+      "summary": "The property lens for documents, programs and packages: authors and page counts, architectures and signatures, installers, shortcuts, archives, fonts, mail and databases."
+    },
+    {
+      "version": "v0.26.0",
+      "phase": "Build 6 — Music tags and audio pro",
+      "state": "planned",
+      "summary": "Music tags, and more for people who work with audio."
+    },
+    {
+      "version": "v0.27.0",
+      "phase": "Build 7 — Duplicates and disk hygiene",
+      "state": "planned",
+      "summary": "Duplicates and disk clean-up."
+    },
+    {
+      "version": "v0.28.0",
+      "phase": "Build 8 — Tags, notes and collections",
+      "state": "planned",
+      "summary": "Tags, notes and collections for your files."
+    },
+    {
+      "version": "v0.29.0",
+      "phase": "Build 9 — Power query",
+      "state": "planned",
+      "summary": "Power search: macros, snapshots, monitors and file hashes."
+    },
+    {
+      "version": "v0.30.0",
+      "phase": "Build 10 — Views and windows",
+      "state": "planned",
+      "summary": "Views and windows."
+    },
+    {
+      "version": "v0.31.0",
+      "phase": "Build 11 — Launcher and OS integration",
+      "state": "planned",
+      "summary": "A launcher, and closer ties to your operating system."
+    },
+    {
+      "version": "v0.32.0",
+      "phase": "Build 12 — CLI, TUI and automation",
+      "state": "planned",
+      "summary": "The command line, a terminal interface, and automation."
+    },
+    {
+      "version": "v0.33.0",
+      "phase": "Build 13 — LAN, catalogs and index pro",
+      "state": "planned",
+      "summary": "Searching across your local network, catalogues, and index tools for power users."
+    },
+    {
+      "version": "v1.0.0",
+      "phase": "Build 14 — Code and knowledge lenses · 1.0",
+      "state": "goal",
+      "summary": "The code and knowledge lenses, and the release: version 1.0."
+    }
+  ]
+}

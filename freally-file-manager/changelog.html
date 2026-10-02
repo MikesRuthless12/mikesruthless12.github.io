@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Changelog — Freally File Manager</title>
+    <meta
+      name="description"
+      content="Every notable change to Freally File Manager, version by version."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="file-manager-icon.png" alt="" width="28" height="28" />
+          <span>Freally File Manager</span>
+        </a>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <!--
+        ⛔ GENERATED BODY. Between the markers below is scripts/site/changelog.md,
+        rendered by scripts/build-docs-site.mjs — never kept by hand.
+        `node scripts/build-docs-site.mjs` rewrites it and `--check` fails when it
+        is out of date.
+      -->
+      <!-- CHANGELOG:START -->
+      <h1 data-i18n="nav.changelog">Changelog</h1>
+      <p data-i18n-html="changelog.1514cf901bca">All notable changes to Freally File Manager, newest first. Every version here is built and tagged; there are no downloads on this site yet.</p>
+      <h2 id="1-0-0-2026-08-22-the-correctness-release" data-i18n-html="changelog.086fc6b9eb45">[1.0.0] — 2026-08-22 — The correctness release</h2>
+      <p data-i18n-html="changelog.490081990d07">Every feature from 0.22.0 is here. What changed is a full review of the code, section by section, and the fixes that came out of it. Several of them could lose data without ever showing an error.</p>
+      <h3 id="1-0-0-2026-08-22-the-correctness-release-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+      <ul>
+      <li data-i18n-html="changelog.f485232d66fe"><strong>Shortcut folders.</strong> Copying a folder that is itself a shortcut (a symbolic link or a junction) copied nothing and reported success, and in sync the same flaw could empty the other side. Such a folder is now refused, with the reason.</li>
+      <li data-i18n-html="changelog.b5ca80d81af1"><strong>Cancelling.</strong> Cancelling a large folder copy could hang instead of stopping. A copy can now be cancelled at any point.</li>
+      <li data-i18n-html="changelog.02ca0292cb02"><strong>The S3 server.</strong> Files uploaded by the AWS command line or an AWS library were stored damaged, and uploads larger than about 8 MB failed outright. Both now arrive byte for byte, and a cut-off upload is refused instead of stored.</li>
+      <li data-i18n-html="changelog.00349386830d"><strong>Sync databases.</strong> A sync pair whose database sat inside one of its own folders treated that database as a file to sync, and could delete it in the middle of a run.</li>
+      <li data-i18n-html="changelog.f1d849633a99"><strong>SFTP.</strong> SFTP remotes never connected: every connection test failed, whatever the settings. They connect now.</li>
+      <li data-i18n-html="changelog.fd3bac863255"><strong>Encryption.</strong> Encryption could fall back to writing plain files when its key could not be prepared. It now stops the job instead.</li>
+      <li data-i18n-html="changelog.94d9edfe63bf"><strong>Read-only server.</strong> One kind of request could still write to a server set to read-only. None can now.</li>
+      <li data-i18n-html="changelog.44b306c0f111"><strong>Progress.</strong> A resumed scan reported the wrong number of files, so progress bars were wrong in both directions.</li>
+      <li data-i18n-html="changelog.e19d94517f4b"><strong>Cloud sign-in.</strong> Signing in to a cloud account could fail for no visible reason, and abandoning a sign-in leaked a thread each time.</li>
+      <li data-i18n-html="changelog.b4dfc2b6c682"><strong>Known hosts.</strong> An SFTP server pinned in a <code>known_hosts</code> file was refused whenever it offered any key type but the first one listed, which is most of the time.</li>
+      <li data-i18n-html="changelog.042c3c3e6ae5"><strong>Notifications.</strong> ntfy notifications arrived as raw code instead of the message.</li>
+      <li data-i18n-html="changelog.6e72325e73e3"><strong>Dialogs.</strong> Escape closed the wrong dialog when two were open, and a few Settings panels were laid out wrongly.</li>
+      <li data-i18n-html="changelog.acdd2a3d27ea"><strong>The administrator prompt (security).</strong> On Linux and macOS, another program running as you could swap in its own connection while the password prompt was open, and be the one running as administrator once you approved. The prompt can no longer be taken over that way.</li>
+      <li data-i18n-html="changelog.577866d56150"><strong>Capital letters.</strong> On Windows and macOS, <code>Photo.jpg</code> and <code>photo.jpg</code> are one file, but sync treated them as two, copied each over the other, and could then delete the survivor. They are one file again.</li>
+      <li data-i18n-html="changelog.f029d4f5e78c"><strong>Network drives.</strong> Serving a folder that lives on a network drive no longer lets one slow response hold up every other request.</li>
+      <li data-i18n-html="changelog.0ab356a87732"><strong>The helper.</strong> The installers left out the small helper that does anything needing administrator rights, so on an installed copy those actions failed, such as retrying a copy refused for permissions or changing the right-click menu. The helper now ships beside the app.</li>
+      <li data-i18n-html="changelog.87a38eb16185"><strong>Check for updates.</strong> It failed every time, on every system. It now reads the list of updates published with each release.</li>
+      <li data-i18n-html="changelog.7a7604d1c245"><strong>Release notes.</strong> The Updates pane repeated the changelog link four times and showed it as dead text. The notes now appear once, with a link that opens in your browser.</li>
+      <li data-i18n-html="changelog.9b82b2eda918"><strong>Documentation</strong> that promised behaviour the code did not have was corrected.</li>
+      </ul>
+      <h2 id="0-22-0-2026-08-19-hashing-reports-scheduling-and-portability" data-i18n-html="changelog.d04ef101813e">[0.22.0] — 2026-08-19 — Hashing, reports, scheduling and portability</h2>
+      <h3 id="0-22-0-2026-08-19-hashing-reports-scheduling-and-portability-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+      <ul>
+      <li data-i18n-html="changelog.68724824e3df"><strong>Hash inspector.</strong> Hash any files or folders with any of the eight algorithms, paste a checksum to compare against, or compare two files. On Windows it is also in the right-click menu.</li>
+      <li data-i18n-html="changelog.c3b19859a18b"><strong>Copy reports.</strong> Export any finished job as a printable HTML report, CSV or JSON, with every file's checksum, size and status, and sign it with your own key if you like, so anyone can check it without Freally File Manager.</li>
+      <li data-i18n-html="changelog.19be8c01d283"><strong>Re-verify.</strong> Compare a folder with its copy again, months later, without writing a byte: what matches, what differs, what is missing and what was added.</li>
+      <li data-i18n-html="changelog.66e001519d0e"><strong>Filename doctor.</strong> Before a copy, find names the destination cannot hold, such as reserved names, characters it does not allow, trailing dots and spaces, paths that are too long and names that differ only in capital letters, and rename them.</li>
+      <li data-i18n-html="changelog.497980a00899"><strong>Copy from a list.</strong> Import a list of paths from a TXT, CSV or JSON file as the files to copy, flat or keeping their folders.</li>
+      <li data-i18n-html="changelog.e70e0cbe1516"><strong>Plan reports.</strong> Export what a copy will add, replace, skip or find in conflict, before a single byte moves.</li>
+      <li data-i18n-html="changelog.650a70fbc1fb"><strong>Salvage.</strong> Copy what can still be read of a file on a failing drive, fill the unreadable spots with zeros, keep a map of the gaps, and retry only the gaps later.</li>
+      <li data-i18n-html="changelog.098ec7cfa416"><strong>One prompt for many files.</strong> When many files were refused for permissions, approve one list and retry them all through a single administrator prompt.</li>
+      <li data-i18n-html="changelog.f231630df24f"><strong>Schedules.</strong> Create, edit and remove entries in your system's own scheduler (Task Scheduler, launchd or systemd), with the next run time shown and no administrator rights needed.</li>
+      <li data-i18n-html="changelog.9d433f36b4af"><strong>Drive queues.</strong> Correct the drive detection when it is wrong: make folders share one queue, or split them apart, with a number of workers for each.</li>
+      <li data-i18n-html="changelog.1be51474008d"><strong>Prioritize.</strong> Pause the other running jobs while one finishes, then resume exactly those.</li>
+      <li data-i18n-html="changelog.60c6175a344d"><strong>Favourites.</strong> Bookmark sources, destinations and source-to-destination pairs, and keep a recent pair as a favourite in one click.</li>
+      <li data-i18n-html="changelog.332cc7aa8523"><strong>Portable mode.</strong> <code>--portable</code>, or a marker file beside the app, keeps settings and profiles beside it. History, the resume journal and saved cloud passwords still stay on the computer, and Settings says so.</li>
+      <li data-i18n-html="changelog.2eb9e1222a1d"><strong>Accessibility.</strong> Escape closes the topmost dialog from anywhere, reduced motion is honoured everywhere, focus is always visible, and a screen reader hears the running, done and failed counts.</li>
+      <li data-i18n-html="changelog.3c3c4afca24f"><strong>Source-stability guard.</strong> A file that changes while it is being copied is flagged, copied again once, or failed, as you choose.</li>
+      <li data-i18n-html="changelog.1d54a1bf0dc3"><strong>Start at login.</strong> Start minimized to the tray, so the right-click menu, the paste shortcut and schedules work from the moment you sign in.</li>
+      </ul>
+      <h3 id="0-22-0-2026-08-19-hashing-reports-scheduling-and-portability-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+      <ul>
+      <li data-i18n-html="changelog.8dbeb02b73fb"><strong>Settings could discard your data.</strong> Saving Settings reset pinned tray destinations, repositories, cloud accounts, sync pairs and more to their defaults. Every group now survives a save, and a test makes sure of it.</li>
+      </ul>
+      <h2 id="0-20-0-2026-07-20-safety-nets" data-i18n-html="changelog.3e59c181d02c">[0.20.0] — 2026-07-20 — Safety nets</h2>
+      <h3 id="0-20-0-2026-07-20-safety-nets-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+      <ul>
+      <li data-i18n-html="changelog.245019914a17"><strong>Undo.</strong> Ctrl+Z, or Undo on a history row, shows what reversing the newest copy or move will touch, then does it. Copied files go to the Recycle Bin or Trash, and only if they still match what was copied.</li>
+      <li data-i18n-html="changelog.6632a5f505b6"><strong>Delete to the Recycle Bin or Trash</strong>, and an option to send a moved file's original there instead of deleting it.</li>
+      <li data-i18n-html="changelog.8242fb20ac7f"><strong>Retry failed.</strong> Copy again only the files that failed in a job, or export their list.</li>
+      <li data-i18n-html="changelog.6b92af518239"><strong>Two new choices for existing files.</strong> Overwrite only if the content differs, or skip if identical and ask otherwise.</li>
+      <li data-i18n-html="changelog.dca682f75970"><strong>Eject.</strong> Safely remove the drive a job wrote to.</li>
+      <li data-i18n-html="changelog.e2eb082a0eff"><strong>No sleep while copying.</strong> The computer stays awake while any job runs.</li>
+      <li data-i18n-html="changelog.d2392c075c64"><strong>Checksum files.</strong> Make <code>.md5</code>, <code>.sha1</code>, <code>.sha256</code>, <code>.sha512</code>, <code>.b3</code> or <code>.sfv</code> files for a whole folder, and drop one on the window to check every file it lists.</li>
+      <li data-i18n-html="changelog.95c1ab071772"><strong>Take over Windows' copy.</strong> Optionally route Explorer's own copy and paste through Freally File Manager, with a one-click way back. Every paste offers a plain system copy or a verified one.</li>
+      <li data-i18n-html="changelog.a20adfb45e43"><strong>Licence agreement.</strong> It is shown the first time the app opens.</li>
+      </ul>
+      <h2 id="0-19-85-2026-07-01-the-library-and-backup-tools" data-i18n-html="changelog.be1a948a30a9">[0.19.85] — 2026-07-01 — The Library and backup tools</h2>
+      <h3 id="0-19-85-2026-07-01-the-library-and-backup-tools-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+      <ul>
+      <li data-i18n-html="changelog.d28e3ce211c4"><strong>The Library.</strong> One timeline of every snapshot, with how much is stored against how much it represents: back up chosen folders, and restore any snapshot to wherever you choose.</li>
+      <li data-i18n-html="changelog.eeb0847e8169"><strong>Compressed, compacted storage.</strong> Snapshots can be compressed, and maintenance reclaims and compacts the space nothing uses any more, with every long task shown in Tasks.</li>
+      <li data-i18n-html="changelog.c73e54bfcf32"><strong>Compare and reports.</strong> Compare two snapshots, and see statistics and charts of the repository.</li>
+      <li data-i18n-html="changelog.f9c43f8de8b1"><strong>Repository keys.</strong> Several passwords for one repository, and a recovery key.</li>
+      <li data-i18n-html="changelog.905de5db76c9"><strong>Replicate.</strong> Copy a repository to a second place, sending only what the other side lacks.</li>
+      <li data-i18n-html="changelog.ed05f802fa45"><strong>Other backup tools.</strong> Bring in a restic, Borg or Kopia repository with <code>freally migrate</code>, and write one back out with <code>freally export</code>.</li>
+      </ul>
+      <h3 id="0-19-85-2026-07-01-the-library-and-backup-tools-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+      <ul>
+      <li data-i18n-html="changelog.9310ff4d82b1">Fifteen problems found in a full review, including ways a backup could lose data without saying so.</li>
+      </ul>
+      <h2 id="0-19-84-2026-06-27-the-first-release" data-i18n-html="changelog.9124de6aa268">[0.19.84] — 2026-06-27 — The first release</h2>
+      <ul>
+      <li data-i18n-html="changelog.facf44888f54"><strong>Byte-exact copy and move</strong> through each system's fastest path, with instant clones on file systems that support them, and folders of any size streamed without filling memory.</li>
+      <li data-i18n-html="changelog.36feaab53bd3"><strong>Verify after copy</strong> with eight checksums, from CRC32 and xxHash3 to SHA-256 and BLAKE3.</li>
+      <li data-i18n-html="changelog.d269986b29b2"><strong>Pause, resume and cancel</strong> any job, choose what happens to files that already exist, and retry a file refused for permissions with administrator rights.</li>
+      <li data-i18n-html="changelog.294162447b0a"><strong>Resume after a crash or a reboot</strong> from a journal of each copy's progress.</li>
+      <li data-i18n-html="changelog.59d391bd4f36"><strong>History and totals</strong>: every job recorded, filtered, exported as CSV and run again with one click.</li>
+      <li data-i18n-html="changelog.bcb57f6f639f"><strong>Filters</strong>: include and exclude patterns, sizes, dates and file attributes.</li>
+      <li data-i18n-html="changelog.e262b2471351"><strong>Two-way sync</strong> with conflict detection, mirror and contribute modes, and a live mirror that syncs every saved change.</li>
+      <li data-i18n-html="changelog.f299d8319e86"><strong>Speed limits</strong>, fixed or on a schedule.</li>
+      <li data-i18n-html="changelog.7ba87a11a88a"><strong>Nothing quietly lost</strong>: sparse files, alternate data streams, extended attributes and the downloaded-from-the-internet mark are kept, and a locked file on Windows can be copied from a snapshot.</li>
+      <li data-i18n-html="changelog.a0a934ff3831"><strong>Your desktop</strong>: right-click menus on Windows, macOS and Linux, a paste shortcut that works from anywhere, and a tray icon.</li>
+      <li data-i18n-html="changelog.2180818af954"><strong>A file server</strong> over WebDAV, HTTP, an S3-compatible API or SFTP, with <code>freally serve</code> for computers without a screen.</li>
+      <li data-i18n-html="changelog.d49f07823c77"><strong>The <code>freally</code> command line</strong>, with JSON-lines output, documented exit codes, and jobs you can plan before running them.</li>
+      <li data-i18n-html="changelog.e50cd2fc0077"><strong>Why is it slow?</strong> A badge names what is holding a copy back.</li>
+      <li data-i18n-html="changelog.3d3204d8e967"><strong>18 languages</strong>, Arabic right to left.</li>
+      </ul>
+      <!-- CHANGELOG:END -->
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p>
+        <p data-i18n="footer.yours">The files you copy, sync and serve stay yours. Freally File Manager's author claims no ownership of them.</p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>

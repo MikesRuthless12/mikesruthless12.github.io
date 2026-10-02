@@ -1,0 +1,30 @@
+{
+  "note": "The public version ladder: one rung per released tag, oldest first. `summary` is written for the site and never copied from a private document (no task IDs, no planned work). States: done, planned, goal, later. scripts/site.test.mjs holds every done rung to a section in scripts/site/changelog.md.",
+  "rungs": [
+    {
+      "version": "v0.19.84",
+      "state": "done",
+      "summary": "The first release: byte-exact copies with optional verification, resume after a crash, history, two-way sync and live mirror, the file server and the command line, in 18 languages."
+    },
+    {
+      "version": "v0.19.85",
+      "state": "done",
+      "summary": "The Library: deduplicated snapshots you can back up, compare and restore, and repositories you can bring in from or export to restic, Borg and Kopia."
+    },
+    {
+      "version": "v0.20.0",
+      "state": "done",
+      "summary": "Safety nets: undo the last copy or move, delete to the Recycle Bin or Trash, retry only the files that failed, checksum files, and eject a drive when a job is done."
+    },
+    {
+      "version": "v0.22.0",
+      "state": "done",
+      "summary": "Hashing, reports and scheduling: a hash inspector, signed copy reports, re-verify, damaged-media salvage, schedules, favourites, portable mode and accessibility."
+    },
+    {
+      "version": "v1.0.0",
+      "state": "done",
+      "summary": "The correctness release: a full review of the code, section by section, and every fix that came out of it."
+    }
+  ]
+}

@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Features — Freally Capture</title>
+    <meta
+      name="description"
+      content="Everything Freally Capture 1.2.1 does — scenes on the GPU, multi-track recording, multistream straight from your machine, remote guests, a virtual camera — side by side with the commercial studios. Free today; future versions may be sold."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="capture-icon.png" alt="" width="28" height="28" />
+          <span>Freally Capture</span>
+        </a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <img class="mark" src="capture-icon.png" alt="" width="96" height="96" />
+        <h1 data-i18n="featuresPage.title">Everything it does</h1>
+        <p class="tagline" data-i18n="featuresPage.lead">
+          A live-streaming and recording studio on your own computer: scenes composed on the graphics card, multi-track recording, and multistream to every platform at once, straight from your machine.
+        </p>
+        <p class="sub" data-i18n="featuresPage.version">
+          This page describes Freally Capture 1.2.1, the released version: everything on it is in 1.2.1, and nothing planned for later is on it.
+        </p>
+        <ul class="chips">
+          <li data-i18n="hero.chipDesktop">Desktop app</li>
+          <li>Windows</li>
+          <li>macOS</li>
+          <li>Linux</li>
+          <li>RTMP</li>
+          <li>SRT</li>
+          <li>WHIP</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="numbers" data-i18n="featuresPage.numbers.title">By the numbers</h2>
+        <p data-i18n="featuresPage.numbers.intro">
+          Each figure is what version 1.2.1 does, counted from its code and its changelog. Nothing is rounded up.
+        </p>
+        <ul class="stat-grid">
+          <li class="stat">
+            <span class="stat__n">3</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.systems">operating systems: Windows, macOS and Linux</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">4</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.protocols">streaming protocols: RTMP, RTMPS, SRT and WHIP</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">5</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.platforms">platforms built in — Twitch, YouTube, Kick, Facebook and Trovo — plus any server of your own</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">6</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.tracks">audio tracks in one recording</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">5</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.encoders">families of hardware encoder: NVENC, Quick Sync, AMF, VAAPI and VideoToolbox</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">8</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.guests">remote guests in one session</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">18</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.languages">languages</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">0</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.accounts">accounts to create</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">0</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.ai">AI models</span>
+          </li>
+          <li class="stat stat--free">
+            <span class="stat__n">$0</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.price">price today</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="free-banner">
+        <h2 id="free" data-i18n="featuresPage.free.title">Free today</h2>
+        <p data-i18n="featuresPage.free.body">
+          Everything Freally Capture does today is free, for everyone: no paid tier, no subscription, no account, no watermark and no trial that runs out. What you record and stream is yours.
+        </p>
+        <p data-i18n="notice.price">
+          Freally Capture is free today, but it might not be free forever: future versions may be sold.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="inside" data-i18n="featuresPage.cards.title">What version 1.2.1 does</h2>
+        <div class="grid">
+          <article class="card">
+            <h3 id="scenes" data-i18n="featuresPage.cards.scenes.title">Scenes and sources on the GPU</h3>
+            <p data-i18n="featuresPage.cards.scenes.body">
+              Displays, windows, games, webcams and capture cards, web pages, media, playlists, images, text, timers and test signals, composed live on the graphics card. Nested scenes, groups, shared sources, a vertical 9:16 canvas, and undo for every edit.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="effects" data-i18n="featuresPage.cards.effects.title">Filters and transitions</h3>
+            <p data-i18n="featuresPage.cards.effects.body">
+              Chroma key, color correction, LUTs, masks, a family of blurs, 3D tilt and your own WGSL shaders, on each source. Cut, fade, slide, stinger, luma wipe and a move transition that glides items from scene to scene.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="studio" data-i18n="featuresPage.cards.studio.title">Studio Mode and monitoring</h3>
+            <p data-i18n="featuresPage.cards.studio.body">
+              Stage the next shot in the preview and send it to the program when it is ready. A multiview, fullscreen projectors on any display, downstream keyers over every scene, and a stats dock with real numbers.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="multistream" data-i18n="featuresPage.cards.multistream.title">Multistream, straight from your machine</h3>
+            <p data-i18n="featuresPage.cards.multistream.body">
+              Go live on several platforms at once over RTMP, RTMPS, SRT or WHIP, with no relay service in between. Each target reconnects on its own, so one failing never takes down the rest.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="recording" data-i18n="featuresPage.cards.recording.title">Recording that survives</h3>
+            <p data-i18n="featuresPage.cards.recording.body">
+              Hardware encoders, with x264 as a fallback, to MP4, MKV, MOV or WebM, or Capture's own lossless format; up to six audio tracks; a clean file for each source; recordings that survive a crash, and a repair on the next launch.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="audio" data-i18n="featuresPage.cards.audio.title">A broadcast audio console</h3>
+            <p data-i18n="featuresPage.cards.audio.body">
+              Noise suppression, gate, compressor, limiter, parametric EQ and de-esser on every strip, with ducking, an auto-mixer, loudness normalization, a soundboard and podcast recording. Classic signal processing, with no AI.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="replay" data-i18n="featuresPage.cards.replay.title">Instant replay</h3>
+            <p data-i18n="featuresPage.cards.replay.body">
+              A rolling replay buffer that saves the last moments with one key, and a replay source that rolls them back into the show at full, half or quarter speed. A clip trimmer exports without re-encoding when it can.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="guests" data-i18n="featuresPage.cards.guests.title">Remote guests from a browser</h3>
+            <p data-i18n="featuresPage.cards.guests.body">
+              Up to eight guests join from a link, in a web browser, with nothing to install. A green room, private cues, each guest's connection at a glance, and an automatic grid with nameplates.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="safety" data-i18n="featuresPage.cards.safety.title">Broadcast safety</h3>
+            <p data-i18n="featuresPage.cards.safety.body">
+              A pre-flight before going live, alarms for silence, clipping, a frozen picture and a filling disk, encoder failover mid-show, a panic button, a rehearsal mode that sends nothing, and a quit that finishes everything in order.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="automation" data-i18n="featuresPage.cards.automation.title">Automation and control</h3>
+            <p data-i18n="featuresPage.cards.automation.body">
+              Rules, macros and variables; MIDI and OSC controllers; a touch panel and tally lights on your phone; PTZ cameras; a show rundown; a WebSocket API for Stream Deck; Lua scripts and plugins. All off by default.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="deep" data-i18n="featuresPage.cards.deep.title">Virtual camera, browser source, game capture</h3>
+            <p data-i18n="featuresPage.cards.deep.body">
+              Your program as a webcam for video-call apps; any web page rendered as a source; and exclusive-fullscreen games through a hook you approve game by game. Windows first, with the gaps stated below.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="private" data-i18n="featuresPage.cards.private.title">Local, private, no AI</h3>
+            <p data-i18n="featuresPage.cards.private.body">
+              No account, no telemetry and no cloud service of ours. Your recordings and stream keys stay on your computer, and no filter uses a model: every one is classic signal processing.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- COMPARE:START — the comparison. Every cell for another product is from its maker's own pages, checked on 2026-10-02 (each cell's URL and quote are in the owner's sources file); a cell that could not be verified, or rests only on an absence, reads "—". -->
+      <section>
+        <h2 id="compare" data-i18n="featuresPage.compare.title">Side by side with the commercial studios</h2>
+        <p data-i18n="featuresPage.compare.intro">Freally Capture next to the commercial studios people use to stream and record. Capture's column is the released version, 1.2.1. Every cell for another product comes from its maker's own pages, checked on 2 October 2026, and prices are US list prices as of October 2026.</p>
+        <ul class="cmp-legend">
+          <li><span class="cmp-mark yes" aria-hidden="true">✓</span> <span data-i18n="featuresPage.compare.legend.yes">has it</span></li>
+          <li><span class="cmp-mark part" aria-hidden="true">◐</span> <span data-i18n="featuresPage.compare.legend.partly">partly</span></li>
+          <li><span class="cmp-mark no" aria-hidden="true">✗</span> <span data-i18n="featuresPage.compare.legend.no">does not</span></li>
+          <li><span class="cmp-mark unknown" aria-hidden="true">—</span> <span data-i18n="featuresPage.compare.legend.unknown">not verified</span></li>
+        </ul>
+        <div class="cmp-wrap" role="region" tabindex="0" aria-labelledby="compare">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden" data-i18n="featuresPage.compare.feature">Feature</span></th>
+                <th scope="col" class="us">Freally Capture&nbsp;1.2.1</th>
+                <th scope="col">Streamlabs Ultra</th>
+                <th scope="col">XSplit Broadcaster Premium</th>
+                <th scope="col">vMix&nbsp;Pro</th>
+                <th scope="col">Wirecast&nbsp;Pro</th>
+                <th scope="col">Ecamm&nbsp;Pro</th>
+                <th scope="col">Restream Studio Standard</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.price">Price (USD, October 2026)</th>
+                <td class="us yes"><span data-i18n="featuresPage.compare.freeToday">Free today</span></td>
+                <td class="price"><span data-i18n="featuresPage.compare.price.streamlabs">$27 a month or $189 a year</span></td>
+                <td class="price"><span data-i18n="featuresPage.compare.price.xsplit">$14.99 a month, $59.99 a year or $119.99 once</span></td>
+                <td class="price"><span data-i18n="featuresPage.compare.price.vmix">$1,200 once</span></td>
+                <td class="price"><span data-i18n="featuresPage.compare.price.wirecast">$79 a month, or $504 a year</span></td>
+                <td class="price"><span data-i18n="featuresPage.compare.price.ecamm">$40 a month or $384 a year</span></td>
+                <td class="price"><span data-i18n="featuresPage.compare.price.restream">$19 a month or $190 a year</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.systems">Runs on Windows, macOS and Linux</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">Windows · macOS · Linux</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows · macOS</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows · macOS</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">macOS</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.browser">in a web browser</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.multistream">Streams to several platforms at once</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.channels3">3 channels on this plan</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.direct">…straight from your computer, with no relay service in between</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.servers">through the maker's servers</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.servers">through the maker's servers</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.srt">SRT output</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.business">Business plan and up</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.whip">WHIP (WebRTC) output</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.customStream">Custom Stream output</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.beta">in beta</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.vcam">A virtual camera for video calls</th>
+                <td class="us part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.windowsOnly">Windows only, for now</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.guests">Guests join from a web browser</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.p2p">up to 8, peer to peer</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.collab">up to 11 guests or cameras</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.vmixCall">up to 8, through vMix Call</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.rendezvous">up to 7, through Rendezvous</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.ecammGuests">up to 10 on Apple Silicon</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.restreamGuests">10 on screen, host included</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.replay">Instant replay</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.tracks">Several audio tracks in one recording</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.tracks6">up to 6 tracks</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.tracks6">up to 6 tracks</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.tracks5">5 tracks</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.channels">as channels, AVI or WAV only</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.tracks8">up to 8 tracks</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.separateFiles">as separate files</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.professional">Professional plan and up</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.account">Works without an account</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.recordingOnly">only for recording</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.licenceAccount">licence tied to an account</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.key">a licence key</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.signIn">needs a sign-in</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.signIn">needs a sign-in</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.noAi">No AI features</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.aiHighlights">AI game highlights</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.aiBackground">AI background removal</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.aiBackground">AI background removal</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.aiClips">AI clips and music</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p data-i18n="featuresPage.compare.summary">What Freally Capture has that they don't: it is the only desktop app here that runs on Linux as well as Windows and macOS, and the only one that is free. Four of the six need an account and four have AI features; Capture has neither, and it multistreams straight from your computer, where Streamlabs and Restream relay your stream through their own servers.</p>
+        <p data-i18n="featuresPage.compare.theyWin">Where they win: Wirecast Pro records up to 8 audio tracks to Capture's 6, and Streamlabs Ultra takes up to 11 guests or cameras and Ecamm up to 10, to Capture's 8. Streamlabs, XSplit, vMix, Wirecast and Ecamm all have a virtual camera; Capture's works on Windows only in 1.2.1 and is not yet code-signed.</p>
+        <p data-i18n="featuresPage.compare.obs">OBS Studio is free and open source too, runs on all three systems, and has SRT, WHIP, a virtual camera, a replay buffer and six audio tracks. Streaming to several platforms at once needs a third-party plugin there; in Capture it is built in, along with guests who join from a browser.</p>
+        <p data-i18n="featuresPage.compare.asOf">Capture's price is today's: it is free today, and future versions may be sold. The other products change too; this table is as of 2 October 2026.</p>
+      </section>
+      <!-- COMPARE:END -->
+
+      <section class="why">
+        <h2 id="why" data-i18n="featuresPage.why.title">Why it is built the way it is</h2>
+
+        <h3 data-i18n="featuresPage.why.local.title">It stays on your machine</h3>
+        <p data-i18n="featuresPage.why.local.body">
+          A streaming tool should never become "connect your channel". There is no account to make and no relay of ours in the middle: your stream goes from your computer to the platforms you chose.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.owned.title">Its own engine</h3>
+        <p data-i18n="featuresPage.why.owned.body">
+          The compositor, the audio engine and the lossless recording format are Capture's own. The codecs the platforms require come from ffmpeg, downloaded the first time you need it rather than bundled.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.dsp.title">Classic signal processing</h3>
+        <p data-i18n="featuresPage.why.dsp.body">
+          Noise suppression, keying and tone-mapping are formulas, not models. The same input and the same settings give the same result, and nothing is downloaded to make them work.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.safe.title">Off until you turn it on</h3>
+        <p data-i18n="featuresPage.why.safe.body">
+          Every network listener, every automation and every risky capture is off by default. Game capture asks you for each game, and a shared scene collection can never carry that permission.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.honest.title">Honest about its gaps</h3>
+        <p data-i18n="featuresPage.why.honest.body">
+          When a feature works only on one system, is not code-signed yet, or still owes a live test, the app, the changelog and this page say so.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="limits" data-i18n="featuresPage.limits.title">What 1.2.1 does not do</h2>
+        <ul>
+          <li data-i18n="featuresPage.limits.vcam">
+            The virtual camera works on Windows only; the macOS and Linux cameras are not in this release.
+          </li>
+          <li data-i18n="featuresPage.limits.game">
+            Game capture works on Windows only and copies Direct3D 11 games; HDR and Direct3D 12 games fall back to window capture.
+          </li>
+          <li data-i18n="featuresPage.limits.browser">
+            The browser source shows a page's picture but not its sound yet.
+          </li>
+          <li data-i18n="featuresPage.limits.signed">
+            The virtual camera's system component and the browser runtime are not code-signed yet, and two live tests are still owed: the camera inside a real video call, and game capture in a protected game.
+          </li>
+          <li data-i18n="featuresPage.limits.cursor">
+            Cursor effects and the keyboard and mouse input overlay work on Windows only.
+          </li>
+          <li data-i18n="featuresPage.limits.ai">
+            It has no AI features — no AI background removal, captions or highlight clips — by design.
+          </li>
+        </ul>
+        <p data-i18n="featuresPage.limits.downloads">
+          There are no downloads on this site, and none on this page.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          What you record and stream is yours, and so is the responsibility for it. Freally Capture's author never receives, stores or relays any of it.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>

@@ -1,0 +1,593 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Join a Freally Capture session</title>
+    <meta
+      name="description"
+      content="Join a Freally Capture remote-guest session from your browser, with nothing to install. Your camera and microphone go peer to peer to the host."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- PeerJS 1.5.5 (MIT) — vendored, no CDN (see THIRD-PARTY-NOTICES.md). -->
+    <script src="vendor/peerjs.min.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="capture-icon.png" alt="" width="28" height="28" />
+          <span>Freally Capture</span>
+        </a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <!--
+      ⛔ The guest's end of a Freally Capture remote-guest session (TASK-R3): the
+      page the app's invite QR opens on a phone. It is a working page, not a
+      brochure — `ui/src/remote/invite.ts` (WEB_JOIN_BASE) points here — so it
+      kept its protocol when it took the site's design and its 18 languages.
+    -->
+    <main id="main" class="join">
+      <section class="hero">
+        <img class="mark" src="capture-icon.png" alt="" width="96" height="96" />
+        <h1 data-i18n="join.title">Join as a remote guest</h1>
+      </section>
+
+      <div class="join-card">
+        <p class="join-status" id="status" aria-live="polite">Checking your invite…</p>
+        <div class="join-buttons">
+          <button type="button" class="join-btn" id="joinBtn" disabled data-i18n="join.button.join">
+            Join with camera and mic
+          </button>
+          <button type="button" class="join-btn" id="muteBtn" hidden>Mute my mic</button>
+          <button type="button" class="join-btn secondary" id="shareBtn" hidden>Share my screen</button>
+          <button type="button" class="join-btn secondary" id="leaveBtn" hidden data-i18n="join.button.leave">
+            Leave
+          </button>
+        </div>
+        <p class="join-banner" id="greenBanner" hidden data-i18n="join.greenRoom">
+          You're in the green room — the host is checking your camera and mic. You'll go on air shortly.
+        </p>
+        <div class="join-banner join-cue" id="cueBanner" hidden>
+          <span class="join-cue__tag" data-i18n="join.cue">CUE</span>
+          <span class="join-cue__text" id="cueText"></span>
+          <span class="join-cue__count" id="cueCountdown"></span>
+        </div>
+        <div class="join-videos" id="videos">
+          <div>
+            <video id="selfView" autoplay muted playsinline></video>
+            <p data-i18n="join.selfLabel">You — this is what the host receives.</p>
+          </div>
+          <div id="hostShareWrap" hidden>
+            <video id="hostView" autoplay playsinline></video>
+            <p data-i18n="join.hostSharing">The host is sharing their view.</p>
+          </div>
+        </div>
+        <p class="join-fine" data-i18n="join.fine">
+          Nothing connects until you tap Join. Your camera and microphone travel directly to the host, peer to peer over WebRTC and encrypted in transit; only the connection handshake crosses a public signalling service. This page runs in your browser and uploads nothing else. The host can hear, seat, mute or remove you, and you are part of whatever they record or stream.
+        </p>
+        <p class="join-fine" id="appLinkWrap" hidden>
+          <span data-i18n="join.appPrompt">Have Freally Capture installed?</span>
+          <a id="appLink" href="#" data-i18n="join.appLink">Open this invite in the app instead</a>
+        </p>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.yours">
+          What you record and stream is yours, and so is the responsibility for it. Freally Capture's author never receives, stores or relays any of it.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+    <script>
+      "use strict";
+      // The guest end of a Freally Capture remote-guests session, in the
+      // browser (TASK-R3's web join page — phone guests, no install). Speaks
+      // the exact protocol the app's guest uses (ui/src/remote/spike.ts):
+      //   * data channel "control" messages: {t:"host"|"self"|"allowCenter"|
+      //     "centerReq"|"cue"|"greenRoom"|"bye"}
+      //   * a media call carrying cam+mic; the host answers with talkback
+      //   * an optional outbound screen-share call, metadata {kind:"screen"}
+      //   * auto-rejoin with capped exponential backoff on an unexplained drop
+      // Invite tokens are base64url JSON {v:1, p:<host peer id>, exp:<ms>} —
+      // mirrors ui/src/remote/invite.ts (kept in sync BY HAND; bump both).
+      //
+      // ⛔ Every string this script writes goes through T(key, English): the
+      // English is the source of truth (scripts/site.test.mjs holds
+      // docs/i18n/en.json to it), and site.js returns the reader's language.
+
+      const $ = (id) => document.getElementById(id);
+      const statusEl = $("status");
+      const joinBtn = $("joinBtn");
+      const muteBtn = $("muteBtn");
+      const shareBtn = $("shareBtn");
+      const leaveBtn = $("leaveBtn");
+
+      function T(key, english, values) {
+        if (typeof window.CAPTURE_T === "function") return window.CAPTURE_T(key, english, values);
+        return english.replace(/\{\{(\w+)\}\}/g, (whole, name) =>
+          values && name in values ? String(values[name]) : whole,
+        );
+      }
+
+      // The status line remembers what it says, so a change of language
+      // repaints it in the new one.
+      let lastStatus = () => T("join.status.checking", "Checking your invite…");
+      function say(render) {
+        lastStatus = render;
+        statusEl.textContent = render();
+      }
+
+      // ---- Green room (CAP-N54) + cues (CAP-N55) --------------------------
+      function showGreenRoom(staged) {
+        $("greenBanner").hidden = !staged;
+      }
+
+      let cueTimer = null;
+      function showCue(text, seconds) {
+        if (cueTimer) window.clearInterval(cueTimer);
+        const banner = $("cueBanner");
+        $("cueText").textContent = String(text || "").slice(0, 200);
+        const countEl = $("cueCountdown");
+        banner.hidden = false;
+        const start = Date.now();
+        const linger = (typeof seconds === "number" ? seconds : 8) * 1000 + 2000;
+        const tick = () => {
+          if (typeof seconds === "number") {
+            const left = Math.max(0, Math.ceil(seconds - (Date.now() - start) / 1000));
+            countEl.textContent = T("join.seconds", "{{n}} s", { n: left });
+          } else {
+            countEl.textContent = "";
+          }
+          if (Date.now() - start > linger) {
+            window.clearInterval(cueTimer);
+            cueTimer = null;
+            banner.hidden = true;
+          }
+        };
+        tick();
+        cueTimer = window.setInterval(tick, 250);
+      }
+
+      // ---- Invite parsing (mirrors invite.ts) ------------------------------
+      // ⛔ `#` as well as `?`/`&`: the app's web-join link carries the token in
+      // the FRAGMENT (`join.html#token=…`, invite.ts `webJoinLink`), so it
+      // never reaches a server log. Matching only `?`/`&` read no token from
+      // a fragment, and every scanned QR said "No invite in this link".
+      function parseToken(input) {
+        const match = (input || "").match(/[?&#]token=([^&\s]+)/);
+        if (match) return decodeURIComponent(match[1]);
+        return null;
+      }
+
+      function resolveInvite(token, now) {
+        let payload;
+        try {
+          payload = JSON.parse(atob(token.replace(/-/g, "+").replace(/_/g, "/")));
+        } catch {
+          return { ok: false, reason: "malformed" };
+        }
+        if (
+          typeof payload !== "object" ||
+          payload === null ||
+          payload.v !== 1 ||
+          typeof payload.p !== "string" ||
+          !payload.p ||
+          typeof payload.exp !== "number"
+        ) {
+          return { ok: false, reason: "malformed" };
+        }
+        if (now > payload.exp) return { ok: false, reason: "expired" };
+        return { ok: true, peerId: payload.p, exp: payload.exp };
+      }
+
+      const token = parseToken(window.location.hash) || parseToken(window.location.search);
+
+      // Offer the native deep link for anyone who has the app installed — so a
+      // machine that scanned the QR (or opened this URL) isn't forced through
+      // the browser guest.
+      if (token) {
+        const appLink = $("appLink");
+        appLink.href = "freally://join?token=" + encodeURIComponent(token);
+        $("appLinkWrap").hidden = false;
+      }
+
+      function inviteNow() {
+        if (!token) return { ok: false, reason: "missing" };
+        return resolveInvite(token, Date.now());
+      }
+
+      // ---- Session state ---------------------------------------------------
+      const REJOIN_MAX_ATTEMPTS = 8;
+      let live = null; // { peer, conn, call, camStream, screenCall, screenStream, hostAudio, byeReason }
+      let rejoin = null; // { timer, attempt }
+      let hostGate = false; // the host muted us (locks the mute button)
+      let selfGate = false; // our own mute
+
+      function describeInvite() {
+        const invite = inviteNow();
+        if (invite.ok) {
+          say(() => {
+            const minutes = Math.max(1, Math.round((invite.exp - Date.now()) / 60000));
+            const time =
+              minutes >= 60
+                ? T("join.hours", "{{n}} h", { n: Math.round(minutes / 60) })
+                : T("join.minutes", "{{n}} min", { n: minutes });
+            return T(
+              "join.status.invited",
+              "You're invited. The invite is valid for about {{time}} — tap Join when you're ready.",
+              { time },
+            );
+          });
+          joinBtn.disabled = false;
+        } else if (invite.reason === "expired") {
+          say(() => T("join.status.expired", "This invite has expired — ask the host for a new link."));
+          joinBtn.disabled = true;
+        } else if (invite.reason === "missing") {
+          say(() =>
+            T("join.status.missing", "No invite in this link — open the exact link or QR code the host shared."),
+          );
+          joinBtn.disabled = true;
+        } else {
+          say(() =>
+            T("join.status.damaged", "This invite looks damaged — ask the host to share the link again."),
+          );
+          joinBtn.disabled = true;
+        }
+      }
+
+      function renderMute() {
+        if (hostGate) {
+          muteBtn.textContent = T("join.button.mutedByHost", "Muted by the host");
+          muteBtn.className = "join-btn muted-locked";
+          muteBtn.disabled = true;
+        } else if (selfGate) {
+          muteBtn.textContent = T("join.button.unmute", "Unmute my mic");
+          muteBtn.className = "join-btn muted-self";
+          muteBtn.disabled = false;
+        } else {
+          muteBtn.textContent = T("join.button.mute", "Mute my mic");
+          muteBtn.className = "join-btn";
+          muteBtn.disabled = false;
+        }
+      }
+
+      function renderShare() {
+        shareBtn.textContent =
+          live && live.screenStream
+            ? T("join.button.stopShare", "Stop sharing")
+            : T("join.button.share", "Share my screen");
+      }
+
+      function teardown() {
+        if (!live) return;
+        try {
+          if (live.camStream) live.camStream.getTracks().forEach((t) => t.stop());
+          if (live.screenStream) live.screenStream.getTracks().forEach((t) => t.stop());
+          if (live.hostAudio) live.hostAudio.srcObject = null;
+          if (live.conn) live.conn.close();
+          live.peer.destroy();
+        } catch {
+          // Best-effort teardown.
+        }
+        live = null;
+        $("videos").style.display = "none";
+        $("hostShareWrap").hidden = true;
+        muteBtn.hidden = true;
+        shareBtn.hidden = true;
+        // Reset the share label — teardown stopped any share via track.stop(),
+        // which does NOT fire the track's `ended` handler.
+        renderShare();
+        leaveBtn.hidden = true;
+        joinBtn.hidden = false;
+      }
+
+      function cancelRejoin() {
+        if (rejoin) {
+          window.clearTimeout(rejoin.timer);
+          rejoin = null;
+        }
+      }
+
+      function scheduleRejoin() {
+        const attempt = (rejoin ? rejoin.attempt : 0) + 1;
+        if (attempt > REJOIN_MAX_ATTEMPTS || !inviteNow().ok) {
+          rejoin = null;
+          teardown();
+          say(() =>
+            T(
+              "join.status.noReconnect",
+              "Couldn't reconnect — reload this page while your invite is still valid to rejoin.",
+            ),
+          );
+          describeInvite();
+          return;
+        }
+        const delaySec = Math.min(Math.pow(2, attempt), 30);
+        say(() =>
+          T(
+            "join.status.reconnecting",
+            "Connection lost — reconnecting in {{seconds}} s (attempt {{attempt}} of {{max}})…",
+            { seconds: delaySec, attempt, max: REJOIN_MAX_ATTEMPTS },
+          ),
+        );
+        rejoin = {
+          attempt,
+          timer: window.setTimeout(() => {
+            join(true);
+          }, delaySec * 1000),
+        };
+      }
+
+      // ---- The join flow ---------------------------------------------------
+      async function join(rejoining) {
+        const invite = inviteNow();
+        if (!invite.ok) {
+          describeInvite();
+          return;
+        }
+        const carried = rejoining ? rejoin : null;
+        // Preserve the guest's own mute choice across an auto-rejoin — a
+        // connection blip must NOT silently re-open a mic the guest muted.
+        const keepSelfMuted = rejoining ? selfGate : false;
+        teardown();
+        rejoin = carried;
+        joinBtn.disabled = true;
+        say(() => T("join.status.requesting", "Requesting your camera and microphone…"));
+        let camStream;
+        try {
+          camStream = await navigator.mediaDevices.getUserMedia({ video: true, audio: true });
+        } catch (err) {
+          if (rejoin) {
+            scheduleRejoin();
+            return;
+          }
+          joinBtn.disabled = false;
+          say(() =>
+            T(
+              "join.status.blocked",
+              "Camera or microphone blocked: {{error}} — allow access and tap Join again.",
+              { error: String(err) },
+            ),
+          );
+          return;
+        }
+
+        const hostId = invite.peerId;
+        const peer = new Peer();
+        const session = { peer, camStream, byeReason: null };
+        live = session;
+
+        joinBtn.hidden = true;
+        muteBtn.hidden = false;
+        leaveBtn.hidden = false;
+        if (navigator.mediaDevices.getDisplayMedia) shareBtn.hidden = false;
+        renderShare();
+        $("videos").style.display = "flex";
+        $("selfView").srcObject = camStream;
+        // Re-apply the carried-over self-mute to the new mic track at the
+        // source, so a rejoin honors it before a single sample goes out.
+        selfGate = keepSelfMuted;
+        hostGate = false;
+        const micTrack = camStream.getAudioTracks()[0];
+        if (micTrack) micTrack.enabled = !selfGate;
+        renderMute();
+        if (selfGate) {
+          say(() =>
+            T("join.status.reconnectedMuted", "Reconnected — your mic stays muted (you muted it)."),
+          );
+        }
+
+        // The host may share their view back — accept media only from them.
+        peer.on("call", (call) => {
+          if (call.peer !== hostId) {
+            call.close();
+            return;
+          }
+          call.answer();
+          call.on("stream", (hostStream) => {
+            $("hostShareWrap").hidden = false;
+            $("hostView").srcObject = hostStream;
+            say(() => T("join.hostSharing", "The host is sharing their view."));
+          });
+          call.on("close", () => {
+            $("hostShareWrap").hidden = true;
+            $("hostView").srcObject = null;
+          });
+        });
+
+        peer.on("open", () => {
+          say(() => T("join.status.calling", "Calling the host…"));
+          const conn = peer.connect(hostId);
+          session.conn = conn;
+          conn.on("open", () => {
+            cancelRejoin(); // connected — the backoff cycle is over
+            renderMute();
+          });
+          conn.on("data", (raw) => {
+            const msg = raw || {};
+            if (msg.t === "host") {
+              hostGate = !!msg.muted;
+              renderMute();
+              say(() =>
+                hostGate
+                  ? T("join.status.hostMuted", "The host muted you.")
+                  : T("join.status.hostUnmuted", "The host unmuted you."),
+              );
+            } else if (msg.t === "cue") {
+              showCue(msg.text, typeof msg.seconds === "number" ? msg.seconds : null);
+            } else if (msg.t === "greenRoom") {
+              showGreenRoom(!!msg.staged);
+            } else if (msg.t === "bye") {
+              session.byeReason = msg.reason;
+            }
+          });
+          conn.on("close", () => {
+            if (live !== session) return; // an intentional Leave already handled it
+            if (session.byeReason) {
+              const reason = session.byeReason;
+              teardown();
+              say(() =>
+                reason === "removed"
+                  ? T(
+                      "join.status.removed",
+                      "The host removed you — the link still works if you're invited back.",
+                    )
+                  : reason === "banned"
+                    ? T("join.status.banned", "The host removed you from this session.")
+                    : T("join.status.ended", "The host ended the session."),
+              );
+              describeInvite();
+              return;
+            }
+            teardown();
+            scheduleRejoin();
+          });
+
+          const call = peer.call(hostId, camStream);
+          session.call = call;
+          // The host answers with their mic — play the talkback.
+          call.on("stream", (hostStream) => {
+            if (hostStream.getAudioTracks().length === 0) return;
+            let el = session.hostAudio;
+            if (!el) {
+              el = document.createElement("audio");
+              el.autoplay = true;
+              session.hostAudio = el;
+            }
+            el.srcObject = hostStream;
+            el.play().catch(() => {});
+          });
+          call.on("error", (err) =>
+            say(() => T("join.status.callError", "Call error: {{error}}", { error: err.type })),
+          );
+          call.on("iceStateChanged", (ice) => {
+            if (ice === "failed") {
+              say(() =>
+                T(
+                  "join.status.iceFailed",
+                  "The direct connection failed — both sides are behind strict NATs. The host can set up a TURN relay in their Remote dialog.",
+                ),
+              );
+            } else if (ice === "disconnected") {
+              say(() => T("join.status.unstable", "Connection unstable — trying to recover…"));
+            }
+          });
+          say(() =>
+            T("join.status.connected", "Connected — sharing your camera and mic. Keep this page open."),
+          );
+        });
+        peer.on("disconnected", () => {
+          say(() =>
+            T(
+              "join.status.signallingLost",
+              "Signalling lost — reconnecting (your picture and sound keep flowing)…",
+            ),
+          );
+          peer.reconnect();
+        });
+        peer.on("error", (err) => {
+          if (rejoin && (err.type === "peer-unavailable" || err.type === "network")) {
+            if (live === session) teardown();
+            scheduleRejoin();
+            return;
+          }
+          say(() =>
+            err.type === "peer-unavailable"
+              ? T("join.status.hostUnreachable", "The host isn't reachable — are they still hosting?")
+              : T("join.status.connectionError", "Connection error: {{error}}", { error: err.type }),
+          );
+        });
+      }
+
+      // ---- Buttons ---------------------------------------------------------
+      joinBtn.addEventListener("click", () => {
+        cancelRejoin();
+        join(false);
+      });
+
+      muteBtn.addEventListener("click", () => {
+        if (!live || hostGate) return; // locked while the host gate is set
+        selfGate = !selfGate;
+        const track = live.camStream && live.camStream.getAudioTracks()[0];
+        if (track) track.enabled = !selfGate; // silenced at the source
+        if (live.conn) live.conn.send({ t: "self", muted: selfGate });
+        renderMute();
+      });
+
+      shareBtn.addEventListener("click", async () => {
+        if (!live) return;
+        if (live.screenStream) {
+          live.screenStream.getTracks().forEach((t) => t.stop());
+          live.screenStream = null;
+          if (live.screenCall) live.screenCall.close();
+          live.screenCall = null;
+          renderShare();
+          return;
+        }
+        let screen;
+        try {
+          screen = await navigator.mediaDevices.getDisplayMedia({ video: true });
+        } catch (err) {
+          say(() => T("join.status.shareBlocked", "Screen share blocked: {{error}}", { error: String(err) }));
+          return;
+        }
+        const invite = inviteNow();
+        if (!invite.ok || !live) return;
+        live.screenStream = screen;
+        const track = screen.getVideoTracks()[0];
+        if (track)
+          track.addEventListener("ended", () => {
+            if (live && live.screenCall) live.screenCall.close();
+            if (live) {
+              live.screenStream = null;
+              live.screenCall = null;
+            }
+            renderShare();
+          });
+        live.screenCall = live.peer.call(invite.peerId, screen, {
+          metadata: { kind: "screen" },
+        });
+        renderShare();
+        say(() => T("join.status.sharing", "Sharing your screen into the session."));
+      });
+
+      leaveBtn.addEventListener("click", () => {
+        cancelRejoin();
+        teardown();
+        say(() => T("join.status.left", "You left the session."));
+        describeInvite();
+      });
+
+      // A change of language repaints everything this script wrote.
+      document.addEventListener("capture:locale", () => {
+        statusEl.textContent = lastStatus();
+        renderMute();
+        renderShare();
+      });
+
+      describeInvite();
+    </script>
+  </body>
+</html>

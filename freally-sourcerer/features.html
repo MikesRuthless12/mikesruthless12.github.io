@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Features — Freally Sourcerer</title>
+    <meta
+      name="description"
+      content="Everything Freally Sourcerer 1.0 does: file names, the text inside files, audio by how it sounds, 72 file properties and similar names, from one live index on Windows, macOS and Linux — side by side with the commercial tools. Free today; future versions may be sold."
+    />
+    <link rel="icon" href="favicon.ico" sizes="any" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark" href="index.html">
+          <img src="sourcerer-icon.png" alt="" width="28" height="28" />
+          <span>Freally Sourcerer</span>
+        </a>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+          </select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <img class="mark" src="sourcerer-icon.png" alt="" width="96" height="96" />
+        <h1 data-i18n="featuresPage.title">Everything it does</h1>
+        <p class="tagline" data-i18n="featuresPage.lead">
+          One search bar for every file on Windows, macOS and Linux: names, the text inside
+          documents, audio by how it sounds, what a file's own header says, and names that are only
+          close — from one index that keeps itself current.
+        </p>
+        <p class="sub" data-i18n="featuresPage.version">
+          This page describes Freally Sourcerer version 1.0: everything on it is in 1.0, and nothing
+          planned for after 1.0 is on it.
+        </p>
+        <ul class="chips">
+          <li>Windows</li>
+          <li>macOS</li>
+          <li>Linux</li>
+          <li data-i18n="hero.chipApp">Desktop app</li>
+          <li data-i18n="hero.chipCli">Command line</li>
+          <li data-i18n="hero.chipLanguages">18 languages</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2 id="numbers" data-i18n="featuresPage.numbers.title">By the numbers</h2>
+        <p data-i18n="featuresPage.numbers.intro">
+          Each figure is counted from the app's own code and its record of changes. Nothing is
+          rounded up.
+        </p>
+        <ul class="stat-grid">
+          <li class="stat">
+            <span class="stat__n">5</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.lenses">ways to search one index: file name, content, audio, properties and similar names</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">72</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.properties">file properties read from headers</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">32</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.code">programming languages its content search reads</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">65</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.audioTypes">audio file types in the Audio filter</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">7</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.matchModes">match modes, from Match Case to Ignore Punctuation</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">3</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.systems">operating systems: Windows, macOS and Linux</span>
+          </li>
+          <li class="stat">
+            <span class="stat__n">18</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.languages">languages</span>
+          </li>
+          <li class="stat stat--free">
+            <span class="stat__n">$0</span>
+            <span class="stat__l" data-i18n="featuresPage.numbers.price">price today</span>
+          </li>
+        </ul>
+      </section>
+
+      <section class="free-banner">
+        <h2 id="free" data-i18n="featuresPage.free.title">Free today</h2>
+        <p data-i18n="featuresPage.free.body">
+          Everything Sourcerer does today is free, for everyone: no paid tier, no subscription and
+          no trial that runs out.
+        </p>
+        <p data-i18n="notice.price">
+          Freally Sourcerer is free today. Future versions may be sold.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="inside" data-i18n="featuresPage.cards.title">What version 1.0 does</h2>
+        <div class="grid">
+          <article class="card">
+            <h3 id="index" data-i18n="featuresPage.cards.index.title">A live index of every disk</h3>
+            <p data-i18n="featuresPage.cards.index.body">
+              One index across your drives, kept current by each system's own change feed — the NTFS
+              change journal on Windows, FSEvents on macOS, inotify and fanotify on Linux — so new,
+              renamed and deleted files show up without a rescan. A drive you unplug stays
+              searchable, and its results say which drive they are on.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="names" data-i18n="featuresPage.cards.names.title">File names, the way Everything finds them</h3>
+            <p data-i18n="featuresPage.cards.names.body">
+              Substrings, wildcards, regular expressions, AND, OR, NOT and grouping, with
+              Everything's modifiers and spellings for size, date, extension, attributes and path,
+              and seven match modes, from Match Case to Ignore Punctuation and matching Chinese,
+              Japanese and Korean names by their reading.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="content" data-i18n="featuresPage.cards.content.title">The text inside files</h3>
+            <p data-i18n="featuresPage.cards.content.body">
+              Full-text search in PDFs, Word, Excel and PowerPoint files, plain text and Markdown,
+              source code in 32 languages, JSON, CSV and YAML, mail, and inside zip, 7z and tar
+              archives without unpacking them. A viewer steps through every hit in context.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="audio" data-i18n="featuresPage.cards.audio.title">Audio by how it sounds</h3>
+            <p data-i18n="featuresPage.cards.audio.body">
+              Measured, not tagged: loudness in LUFS, true peak, silence, dynamic range, length,
+              codec, sample rate and channels. Sort by loudness or length, and play a file in the
+              preview without leaving the list.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="properties" data-i18n="featuresPage.cards.properties.title">What a file says about itself</h3>
+            <p data-i18n="featuresPage.cards.properties.body">
+              Seventy-two properties read from file headers and searched like any other modifier:
+              image size and camera data, video codec and duration, document author and page count,
+              a program's architecture and signature, installer versions, shortcut targets, archive
+              contents, fonts, mail headers and database tables. Any of them can be a column.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="similar" data-i18n="featuresPage.cards.similar.title">Names that are only close</h3>
+            <p data-i18n="featuresPage.cards.similar.body">
+              The similarity lens finds names near what you typed — a typo, a version number, a
+              different prefix — and a search that finds nothing offers the closest real name as a
+              one-click correction.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="results" data-i18n="featuresPage.cards.results.title">Everything you do with a result</h3>
+            <p data-i18n="featuresPage.cards.results.body">
+              Open, reveal, Open with, copy the path, the name, the contents or the file itself, open
+              a terminal there, and run commands you define. Space opens Quick Look, audio and video
+              play in the preview, and the result count opens statistics for the whole set.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="rename" data-i18n="featuresPage.cards.rename.title">Rename, undo, tidy up</h3>
+            <p data-i18n="featuresPage.cards.rename.body">
+              Rename a whole set of results with find and replace, regular expressions, counters and
+              case changes, previewed first and refused if two names would collide. Undo reverses a
+              rename, even after a restart. Find duplicates and empty folders straight from the index.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="everything" data-i18n="featuresPage.cards.everything.title">At home if you come from Everything</h3>
+            <p data-i18n="featuresPage.cards.everything.body">
+              Everything's search syntax, quick filters and file lists, in and out, plus CSV, plain
+              text, playlists and NDJSON. A strict mode checks that a query uses only what
+              Everything understands.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="cli" data-i18n="featuresPage.cards.cli.title">A command line for scripts</h3>
+            <p data-i18n="featuresPage.cards.cli.body">
+              The freally command speaks the same query language, prints JSON, NDJSON, CSV or
+              NUL-separated paths, returns exit codes that mean something, and completes in bash,
+              zsh, fish and PowerShell.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="portable" data-i18n="featuresPage.cards.portable.title">Portable, if you want it</h3>
+            <p data-i18n="featuresPage.cards.portable.body">
+              Run it from a USB stick: the index, settings, bookmarks and logs stay in a Data folder
+              beside the app, and nothing is registered with the computer it is plugged into.
+            </p>
+          </article>
+          <article class="card">
+            <h3 id="languages" data-i18n="featuresPage.cards.languages.title">Eighteen languages, light or dark</h3>
+            <p data-i18n="featuresPage.cards.languages.body">
+              Menus, settings and every dialog switch language live, and Arabic lays out right to
+              left. The app follows your system's light or dark theme, or keeps the one you choose.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- The comparison. Every cell for another product is from its maker's own pages, checked on 2026-10-02; a cell that could not be verified there reads "—" (not verified). -->
+      <section>
+        <h2 id="compare" data-i18n="featuresPage.compare.title">Side by side with the commercial tools</h2>
+        <p data-i18n="featuresPage.compare.intro">Freally Sourcerer 1.0 next to the commercial desktop search tools people use today. Every cell for another product comes from its maker's own pages, checked on 2 October 2026, and prices are US list prices as of October 2026 — except where a maker shows no US price, which the cell says.</p>
+        <ul class="cmp-legend">
+          <li><span class="cmp-mark yes" aria-hidden="true">✓</span> <span data-i18n="featuresPage.compare.legend.yes">has it</span></li>
+          <li><span class="cmp-mark part" aria-hidden="true">◐</span> <span data-i18n="featuresPage.compare.legend.partly">partly</span></li>
+          <li><span class="cmp-mark no" aria-hidden="true">✗</span> <span data-i18n="featuresPage.compare.legend.no">does not</span></li>
+          <li><span class="cmp-mark unknown" aria-hidden="true">—</span> <span data-i18n="featuresPage.compare.legend.unknown">not verified</span></li>
+        </ul>
+        <div class="cmp-wrap" role="region" tabindex="0" aria-labelledby="compare">
+          <table class="cmp">
+            <thead>
+              <tr>
+                <th scope="col"><span class="visually-hidden" data-i18n="featuresPage.compare.feature">Feature</span></th>
+                <th scope="col" class="us">Freally Sourcerer&nbsp;1.0</th>
+                <th scope="col">Everything&nbsp;1.5<span class="note" data-i18n="featuresPage.compare.note.beta">in beta</span></th>
+                <th scope="col">Listary&nbsp;Pro</th>
+                <th scope="col">FileLocator&nbsp;Pro&nbsp;2022</th>
+                <th scope="col">Copernic Desktop Search&nbsp;8</th>
+                <th scope="col">HoudahSpot&nbsp;6</th>
+                <th scope="col">DocFetcher&nbsp;Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.price">Price (USD, October 2026)</th>
+                <td class="us yes"><span data-i18n="featuresPage.compare.freeToday">Free today</span></td>
+                <td class="price">$0<span class="note" data-i18n="featuresPage.compare.note.freeware">freeware</span></td>
+                <td class="price">$19.95<span class="note" data-i18n="featuresPage.compare.note.oneTime">one-time</span></td>
+                <td class="price">$79<span class="note" data-i18n="featuresPage.compare.note.oneTime">one-time</span></td>
+                <td class="price">$28.99<span class="note" data-i18n="featuresPage.compare.note.perYear">per year, Basic</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="price">€40<span class="note" data-i18n="featuresPage.compare.note.euros">one-time, in euros only</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.systems">Windows, macOS and Linux</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">Windows · macOS · Linux</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">macOS</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">Windows · macOS · Linux</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.liveIndex">Finds files by name from an index kept current as files change</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">NTFS · FSEvents · inotify</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">NTFS</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">NTFS</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.scheduled">index updated on a schedule</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.spotlight">Spotlight's index</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.chosenFolders">folders you choose</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.content">Searches the text inside documents such as PDF and Office files</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.notIndexed">not indexed, slow</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.audio">Finds audio by measured loudness, codec, sample rate or length</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">LUFS</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.noLoudness">no loudness</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.tagsBitRate">tags and bit rate</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.mp3Tags">MP3 and FLAC tags</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.properties">Searches what a file's header says: image size, camera, author, page count</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.exifIptc">EXIF and IPTC</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">JPEG EXIF</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.similar">Finds a file from a name that is only close</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.similarWords">similar words in documents</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.cli">A command line for searching</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.portable">Runs without installing, from a USB stick</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+              </tr>
+              <tr>
+                <th scope="row" data-i18n="featuresPage.compare.row.duplicates">Finds duplicate files</th>
+                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p data-i18n="featuresPage.compare.summary">The short version: only Sourcerer has all of it — all three systems, a live index, the text inside documents, audio by its loudness, what a file's header says, and names that are only close.</p>
+        <p data-i18n="featuresPage.compare.theyWin">Where they win: Everything costs nothing, and its 1.5 beta also finds files by their hash; FileLocator Pro searches Outlook mail files; Copernic also searches Google Drive, Dropbox and OneDrive; and DocFetcher Pro finds words similar to the ones you typed inside documents.</p>
+        <p data-i18n="featuresPage.compare.asOf">Sourcerer's column is version 1.0, which is not out yet, and its price is today's: Sourcerer is free today, and future versions may be sold. The other products change too; this table is as of 2 October 2026.</p>
+      </section>
+
+      <section class="why">
+        <h2 id="why" data-i18n="featuresPage.why.title">Why it is built the way it is</h2>
+
+        <h3 data-i18n="featuresPage.why.journal.title">It listens instead of rescanning</h3>
+        <p data-i18n="featuresPage.why.journal.body">
+          Every system already records the changes to its files. Sourcerer reads that record rather
+          than walking your folders on a timer, so the index stays current without reading the disk
+          again.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.lazy.title">It reads only what a question needs</h3>
+        <p data-i18n="featuresPage.why.lazy.body">
+          A file's properties are read the first time a search asks about it, from its header alone,
+          and kept until the file changes. Nothing decodes a picture or opens a database's rows to
+          answer how wide an image is.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.honest.title">It says what it cannot see</h3>
+        <p data-i18n="featuresPage.why.honest.body">
+          A folder that could not be read looks just like an empty one, so Sourcerer names the
+          folders it skipped and why. A count that reached its limit is shown as a minimum, never
+          as an exact number.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.careful.title">It is careful with your files</h3>
+        <p data-i18n="featuresPage.why.careful.body">
+          A rename is previewed and happens all at once or not at all, a delete goes to the Trash
+          or Recycle Bin, and a command of your own runs as a program with arguments, never as a
+          shell line, after asking you once.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.local.title">It stays on your machine</h3>
+        <p data-i18n="featuresPage.why.local.body">
+          No telemetry. The index lives on your own disk, and nothing about your files or your
+          searches is sent anywhere. The update check only asks whether there is a newer version,
+          and you can switch it off.
+        </p>
+
+        <h3 data-i18n="featuresPage.why.everything.title">It respects what you already know</h3>
+        <p data-i18n="featuresPage.why.everything.body">
+          Everything's syntax, filters and file lists behave as they do there, checked by tests, so
+          the habits of years carry over — to two more operating systems.
+        </p>
+      </section>
+
+      <section>
+        <h2 id="coming" data-i18n="featuresPage.coming.title">What is still coming</h2>
+        <p data-i18n="featuresPage.coming.intro">
+          Stated plainly, because a feature list that hides its gaps is not worth reading. This page
+          is version 1.0, and Sourcerer is built one version at a time: the versions after 0.23 are
+          still to come. Each one on the road to 1.0 is marked with its state.
+        </p>
+        <p data-i18n="featuresPage.coming.lenses">
+          Two of the five lenses — the text inside files and names that are only close — are built
+          but not yet connected to search. They are on this page because they are in 1.0.
+        </p>
+        <ul class="states">
+          <li>
+            <span class="state state-done" data-i18n="ladder.state.done">Done</span>
+            <span data-i18n="featuresPage.coming.done">built and tagged, but not a download</span>
+          </li>
+          <li>
+            <span class="state state-planned" data-i18n="ladder.state.planned">Planned</span>
+            <span data-i18n="featuresPage.coming.planned">still to be built, on the way to 1.0</span>
+          </li>
+          <li>
+            <span class="state state-goal" data-i18n="ladder.state.goal">The goal</span>
+            <span data-i18n="featuresPage.coming.goal">version 1.0 itself, and the first downloads this site will offer</span>
+          </li>
+        </ul>
+        <p>
+          <a href="index.html#ladder" data-i18n="featuresPage.coming.ladder">See every rung on the road to 1.0</a>
+        </p>
+
+        <h3 data-i18n="featuresPage.limits.title">What 1.0 does not do</h3>
+        <ul>
+          <li data-i18n="featuresPage.limits.headers">
+            It reads properties from file headers only: it does not decode pictures, play video or
+            render documents to find them, so a property a header does not carry cannot be
+            searched.
+          </li>
+          <li data-i18n="featuresPage.limits.firstIndex">
+            On macOS and Linux the first index walks every folder, so on a large disk it takes
+            minutes rather than seconds.
+          </li>
+          <li data-i18n="featuresPage.limits.portable">
+            A portable copy does not update itself: replace its folder with a newer version.
+          </li>
+        </ul>
+        <p data-i18n="featuresPage.coming.downloads">
+          There are no downloads before version 1.0, and none on this page.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">
+          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
+        </p>
+        <p data-i18n="footer.everything">
+          Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is
+          not affiliated with voidtools.
+        </p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
+  </body>
+</html>

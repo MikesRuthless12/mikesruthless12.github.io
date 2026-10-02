@@ -1,56 +1,173 @@
 <!doctype html>
 <html lang="en" dir="ltr">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <title>Freally File Manager — copy, move, sync and verify files</title>
     <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
+      name="description"
+      content="A byte-exact file copier for Windows, macOS and Linux, with checksum verification, resume after a crash, two-way sync, undo and its own file server. Free today; future versions may be sold."
     />
-    <title>Freally File Manager</title>
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <style>
-      /* Dark only, like every Freally site (owner, 2026-10-01). */
-      :root { color-scheme: dark; --bg: #090c09; --surface: #1a211a; --border: #27302a; --text: #ecf1ec; --muted: #a3aea3; --primary: #9af524; }
-      * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; }
-      /* The header bar, like Freally Flipcopy's: the product left, the language right. */
-      .site-header { position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-block-end: 1px solid var(--border); }
-      .site-header-inner { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 16px; }
-      .wordmark { display: flex; align-items: center; gap: 8px; font-weight: 650; color: var(--text); text-decoration: none; letter-spacing: -0.01em; font-size: 1rem; }
-      .wordmark img { width: 28px; height: 28px; }
-      select.locale { margin-inline-start: auto; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font: inherit; font-size: 0.875rem; cursor: pointer; }
-      main { flex: 1; display: grid; place-items: center; text-align: center; padding: 48px 16px; }
-      .card { width: min(100%, 640px); }
-      .icon { display: block; width: 160px; height: 160px; margin: 0 auto 24px; }
-      h1 { font-size: 2.4rem; margin: 0 0 16px; }
-      p { color: var(--muted); margin: 0 0 28px; }
-      a { color: var(--primary); }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <!-- A holding page (owner, 2026-10-01): this product's documentation is being
-         rebuilt in the shared Freally design, and nothing is downloadable yet. -->
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
     <header class="site-header">
       <div class="site-header-inner">
         <a class="wordmark" href="index.html">
-          <img src="favicon-32.png" alt="" width="28" height="28" />
+          <img src="file-manager-icon.png" alt="" width="28" height="28" />
           <span>Freally File Manager</span>
         </a>
-        <!-- ⚠ Filled by holding.js: English first, the other seventeen alphabetically. -->
-        <select class="locale" aria-label="Language"></select>
+        <nav class="site-nav" aria-label="Site">
+          <a href="index.html" data-i18n="nav.home">Home</a>
+          <a href="features.html" data-i18n="nav.features">Features</a>
+          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
+            <!-- ⚠ Filled by site.js: English first, the other seventeen alphabetically. -->
+          </select>
+        </nav>
       </div>
     </header>
-    <main>
-      <div class="card">
-        <img class="icon" src="file-manager-icon.png" alt="" width="160" height="160" />
+
+    <main id="main">
+      <section class="hero">
+        <img class="mark" src="file-manager-icon.png" alt="" width="96" height="96" />
         <h1>Freally File Manager</h1>
-        <p id="line">Documentation is coming soon. There are no downloads yet.</p>
-        <a id="home" href="../index.html">freallyproducts.com</a>
-      </div>
+        <p class="tagline" data-i18n="hero.tagline">Copy, move, sync and verify your files, byte for byte.</p>
+        <p class="sub" data-i18n="hero.sub">A desktop file copier for Windows, macOS and Linux, with checksum verification, resume after a crash, two-way sync, undo and its own file server. No account, no telemetry and no AI.</p>
+        <p class="sub" data-i18n="notice.price">Freally File Manager is free today, but it might not be free forever: future versions may be sold.</p>
+        <ul class="chips">
+          <li>Windows</li>
+          <li>macOS</li>
+          <li>Linux</li>
+          <li data-i18n="hero.chipLanguages">18 languages</li>
+          <li data-i18n="hero.chipCli">Command line</li>
+        </ul>
+        <p class="sub">
+          <strong data-i18n="hero.noDownloads">There are no downloads on this site yet, and the source code is private.</strong>
+        </p>
+      </section>
+
+      <section id="what">
+        <h2 data-i18n="what.title">What it is</h2>
+        <p data-i18n="what.p1">Copying a big folder with your system's own copy dialog tells you very little: no checksum, no say in what happens to files that already exist, and no way back when the power goes out halfway through.</p>
+        <p data-i18n="what.p2">Freally File Manager is a copier built to be trusted with that job. Drop files on its window, pick a destination, and it copies them through your system's fastest copy path. Switch on verification and it reads every copy back and checks it against the original's checksum.</p>
+        <p data-i18n="what.p3">Around the copier is everything you reach for afterwards: a history of every job with re-runs and undo, checksum tools, two-way sync and live mirroring, snapshots, a built-in file server and a command line for scripts.</p>
+      </section>
+
+      <section id="features">
+        <h2 data-i18n="features.title">What is in it</h2>
+        <div class="grid">
+          <article class="card">
+            <h3 data-i18n="features.copy.title">Byte-exact copies</h3>
+            <p data-i18n="features.copy.body">Every file is copied byte for byte through your system's own fast paths, and cloned instantly on drives that support it. Pause, resume or cancel any job, and decide before it starts what happens when a file already exists.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.verify.title">Verified when you ask</h3>
+            <p data-i18n="features.verify.body">Switch on verification and each copy is read back and checked against the original with one of eight checksums, from CRC32 and xxHash3 to SHA-256 and BLAKE3. A mismatch is reported, never hidden.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.resume.title">It survives a power cut</h3>
+            <p data-i18n="features.resume.body">A journal records how far each copy got. After a crash or a reboot, the part already written is checked and the copy carries on from there instead of starting again.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.sync.title">Two-way sync</h3>
+            <p data-i18n="features.sync.body">Keep two folders in step in both directions, or mirror one onto the other. A file changed on both sides is a conflict: both versions are kept and you choose.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.history.title">History and undo</h3>
+            <p data-i18n="features.history.body">Every job is recorded. Run it again, retry only the files that failed, or undo the last copy or move: undone copies go to the Recycle Bin or Trash, never straight to deletion.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.checks.title">Check your files any time</h3>
+            <p data-i18n="features.checks.body">Hash any file with eight checksums, make and check .sha256 or .sfv files, compare a folder with its copy months later, and export a signed report of what was copied.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.server.title">Your own file server</h3>
+            <p data-i18n="features.server.body">Serve a folder to other computers over WebDAV, plain HTTP, an S3-compatible API or SFTP, read-only if you like, behind a password or a token.</p>
+          </article>
+          <article class="card">
+            <h3 data-i18n="features.free.title">Free, private, no AI</h3>
+            <p data-i18n="features.free.body">No account, no telemetry and no machine learning. Your files go only where you send them, and the daily update check can be switched off.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="ladder">
+        <h2 data-i18n="ladder.title">The road to 1.0</h2>
+        <p data-i18n="ladder.intro">One line per version, oldest first. Every one of them is done: built, tested and tagged.</p>
+        <table class="ladder">
+          <thead>
+            <tr>
+              <th data-i18n="ladder.version">Version</th>
+              <th data-i18n="ladder.state">State</th>
+              <th data-i18n="ladder.lands">What it lands</th>
+            </tr>
+          </thead>
+          <!-- LADDER:START — generated from docs/ladder.json by scripts/build-docs-site.mjs. Do not edit by hand. -->
+<tbody>
+            <tr>
+              <td><code>v0.19.84</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v0.19.84">The first release: byte-exact copies with optional verification, resume after a crash, history, two-way sync and live mirror, the file server and the command line, in 18 languages.</td>
+            </tr>
+            <tr>
+              <td><code>v0.19.85</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v0.19.85">The Library: deduplicated snapshots you can back up, compare and restore, and repositories you can bring in from or export to restic, Borg and Kopia.</td>
+            </tr>
+            <tr>
+              <td><code>v0.20.0</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v0.20.0">Safety nets: undo the last copy or move, delete to the Recycle Bin or Trash, retry only the files that failed, checksum files, and eject a drive when a job is done.</td>
+            </tr>
+            <tr>
+              <td><code>v0.22.0</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v0.22.0">Hashing, reports and scheduling: a hash inspector, signed copy reports, re-verify, damaged-media salvage, schedules, favourites, portable mode and accessibility.</td>
+            </tr>
+            <tr>
+              <td><code>v1.0.0</code></td>
+              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
+              <td data-i18n="ladder.rung.v1.0.0">The correctness release: a full review of the code, section by section, and every fix that came out of it.</td>
+            </tr>
+          </tbody>
+      <!-- LADDER:END -->
+        </table>
+        <p class="sub" data-i18n="ladder.note">A version that is done is built and tagged. None of them is a download on this site: there are no downloads here yet.</p>
+      </section>
+
+      <section id="honest">
+        <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+        <div class="honest">
+          <h3 data-i18n="honest.verify.title">Verification is off until you switch it on</h3>
+          <p data-i18n="honest.verify.body">Checking a copy means reading it a second time, so it is a setting rather than the default. Choose a checksum in Settings → Transfer, and every copy after that is checked.</p>
+
+          <h3 data-i18n="honest.notYet.title">Two things 1.0 cannot do yet</h3>
+          <p data-i18n="honest.notYet.body">It cannot securely shred files, and it cannot copy to cloud storage. Settings already has a place for both, but neither is wired up in version 1.0.0.</p>
+
+          <h3 data-i18n="honest.network.title">When it goes online</h3>
+          <p data-i18n="honest.network.body">Copying between your own drives, verifying and deleting make no network requests. It goes online for what you set up, such as the file server or testing a cloud account, and to check for updates when it starts, at most once a day, which you can switch off in Settings → Updates.</p>
+
+          <h3 data-i18n="honest.downloads.title">There are no downloads here yet</h3>
+          <p data-i18n="honest.downloads.body">No installer, no preview build and no download link on this site. When that changes, this page will say so.</p>
+        </div>
+      </section>
     </main>
-    <script src="/report-kit/holding.js"></script>
+
+    <footer class="site-footer">
+      <div class="site-footer-inner">
+        <p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p>
+        <p data-i18n="footer.yours">The files you copy, sync and serve stay yours. Freally File Manager's author claims no ownership of them.</p>
+      </div>
+    </footer>
+
+    <script src="site.js"></script>
   </body>
 </html>
