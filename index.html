@@ -1,206 +1,189 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'none'; object-src 'none'; base-uri 'none'; form-action 'none'"
+      content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
     />
-    <title>Freally Products</title>
-    <!-- The company's own mark (owner, 2026-10-01), from icons/make_icons.py. ⚠ `?v=` busts
-         the browser's favicon cache: it held on to the Flipcopy icon this page used before.
-         Bump it whenever the mark changes. -->
+    <title data-i18n="meta.title">Freally Products: desktop apps for producers and creators</title>
+    <meta
+      name="description"
+      data-i18n-attr="content:meta.description"
+      content="Eight desktop apps for Windows, macOS and Linux: four for making music and four for the work around it. Free today; future versions may be sold."
+    />
+    <!-- The company's own mark (owner, 2026-10-01). ⚠ `?v=` busts the browser's
+         favicon cache; bump it whenever the mark changes. -->
     <link rel="icon" href="favicon.ico?v=2" sizes="any" />
     <link rel="icon" href="favicon-192.png?v=2" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2" />
-    <style>
-      :root {
-        color-scheme: dark;
-        --bg: #090c09;
-        --surface: #121712;
-        --border: #263026;
-        --text: #ecf1ec;
-        --primary: #9af524;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      body {
-        margin: 0;
-        min-height: 100vh;
-        display: grid;
-        place-items: center;
-        background: var(--bg);
-        color: var(--text);
-        font: 16px/1.5 system-ui, -apple-system, 'Segoe UI', sans-serif;
-      }
-      main {
-        width: min(100% - 32px, 760px);
-        padding-block: 48px;
-      }
-      h1 {
-        margin: 0 0 32px;
-        text-align: center;
-        font-size: 2.4rem;
-        letter-spacing: 0.02em;
-      }
-      /* ⛔ The title turns on its Y axis like every Freally app's wordmark (owner,
-       * 2026-10-01: "the spinning on the Y-Axis that all my apps have, but ensure it
-       * says 'Freally Products' … keep it the same font size and green though like my
-       * icons"). Ported from the apps' SpinningWordmark, number for number: ten
-       * stacked layers make a solid extrusion rather than a flipping sheet, the
-       * perspective sits on the parent, it holds on each face (0–14%, 50–64%) and
-       * eases through the edges over 7 s, and backfaces stay visible. Two changes:
-       * the face is the icons' green instead of white, and it keeps this heading's
-       * size. ⚠ Pure CSS, because this page runs no script. */
-      .wordmark {
-        perspective: 760px;
-        display: grid;
-        place-items: center;
-        overflow: visible;
-      }
-      .wordmark__spin {
-        transform-style: preserve-3d;
-        display: grid;
-        place-items: center;
-        animation: wordmark-turn 7000ms cubic-bezier(0.62, 0, 0.38, 1) infinite;
-      }
-      .wordmark__layer {
-        grid-area: 1 / 1;
-        white-space: nowrap;
-        backface-visibility: visible;
-        user-select: none;
-      }
-      /* The glow, on the face and the shoulder only: on all ten it fogs the letters. */
-      .wordmark__layer[data-depth='0'] {
-        text-shadow:
-          0 0 8px color-mix(in srgb, var(--primary) 60%, transparent),
-          0 0 24px color-mix(in srgb, var(--primary) 34%, transparent);
-      }
-      .wordmark__layer[data-depth='1'] {
-        text-shadow: 0 0 14px color-mix(in srgb, var(--primary) 50%, transparent);
-      }
-      @keyframes wordmark-turn {
-        0%,
-        14% {
-          transform: rotateY(0deg);
-        }
-        50%,
-        64% {
-          transform: rotateY(180deg);
-        }
-        100% {
-          transform: rotateY(360deg);
-        }
-      }
-      /* Held at an angle for anyone who asks for less motion: the depth stays. */
-      @media (prefers-reduced-motion: reduce) {
-        .wordmark__spin {
-          animation: none;
-          transform: rotateY(-22deg);
-        }
-      }
-      .visually-hidden {
-        position: absolute;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        white-space: nowrap;
-      }
-      ul {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 16px;
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-      a {
-        display: grid;
-        justify-items: center;
-        gap: 12px;
-        padding: 24px 12px;
-        border: 1px solid var(--border);
-        border-radius: 16px;
-        background: var(--surface);
-        color: var(--text);
-        font-weight: 600;
-        text-align: center;
-        text-decoration: none;
-      }
-      a:hover,
-      a:focus-visible {
-        border-color: var(--primary);
-        color: var(--primary);
-      }
-      img {
-        width: 96px;
-        height: 96px;
-        border-radius: 20px;
-      }
-    </style>
+    <link rel="stylesheet" href="home/styles.css" />
   </head>
   <body>
-    <main>
-      <h1 class="wordmark" dir="ltr">
-        <span class="visually-hidden">Freally Products</span>
-        <span class="wordmark__spin">
-          <span class="wordmark__layer" data-depth="9" style="transform: translateZ(-27px); color: color-mix(in srgb, var(--primary) 34%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="8" style="transform: translateZ(-24px); color: color-mix(in srgb, var(--primary) 43%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="7" style="transform: translateZ(-21px); color: color-mix(in srgb, var(--primary) 51%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="6" style="transform: translateZ(-18px); color: color-mix(in srgb, var(--primary) 59%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="5" style="transform: translateZ(-15px); color: color-mix(in srgb, var(--primary) 67%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="4" style="transform: translateZ(-12px); color: color-mix(in srgb, var(--primary) 75%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="3" style="transform: translateZ(-9px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="2" style="transform: translateZ(-6px); color: color-mix(in srgb, var(--primary) 92%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="1" style="transform: translateZ(-3px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))" aria-hidden="true">Freally Products</span>
-          <span class="wordmark__layer" data-depth="0" style="transform: translateZ(0px); color: var(--primary)" aria-hidden="true">Freally Products</span>
-        </span>
-      </h1>
-      <ul>
-        <li>
-          <a href="freally-flipcopy/index.html"
-            ><img src="freally-flipcopy/favicon-192.png" alt="" />Freally Flipcopy</a
-          >
-        </li>
-        <li>
-          <a href="freally-midi-master/index.html"
-            ><img src="freally-midi-master/favicon-192.png" alt="" />Freally MIDI Master</a
-          >
-        </li>
-        <li>
-          <a href="freally-oscillate/index.html"
-            ><img src="freally-oscillate/favicon-192.png" alt="" />Freally Oscillate</a
-          >
-        </li>
-        <li>
-          <a href="freally-unloop/index.html"
-            ><img src="freally-unloop/favicon-192.png" alt="" />Freally Unloop</a
-          >
-        </li>
-        <li>
-          <a href="freally-sourcerer/index.html"
-            ><img src="freally-sourcerer/favicon-192.png" alt="" />Freally Sourcerer</a
-          >
-        </li>
-        <li>
-          <a href="freally-teleprompt/index.html"
-            ><img src="freally-teleprompt/favicon-192.png" alt="" />Freally Teleprompt</a
-          >
-        </li>
-        <li>
-          <a href="freally-file-manager/index.html"
-            ><img src="freally-file-manager/favicon-192.png" alt="" />Freally File Manager</a
-          >
-        </li>
-        <li>
-          <a href="freally-capture/index.html"
-            ><img src="freally-capture/favicon-192.png" alt="" />Freally Capture</a
-          >
-        </li>
-      </ul>
+    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
+
+    <header class="site-header">
+      <div class="site-header-inner">
+        <a class="wordmark-small" href="index.html">
+          <img src="favicon-192.png?v=2" alt="" width="28" height="28" />
+          <span>Freally Products</span>
+        </a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.label">
+          <a href="#products" data-i18n="nav.products">Products</a>
+          <a href="#about" data-i18n="nav.about">About</a>
+          <!-- ⚠ Filled by home/site.js with the languages this site has. -->
+          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language"></select>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <!-- ⛔ The title turns on its Y axis like every Freally app's wordmark (owner,
+             2026-10-01: "the spinning on the Y-Axis that all my apps have, but ensure
+             it says 'Freally Products' … keep it the same font size and green though
+             like my icons"). Pure CSS, ten layers: see home/styles.css. -->
+        <h1 class="wordmark" dir="ltr">
+          <span class="visually-hidden">Freally Products</span>
+          <span class="wordmark__spin" aria-hidden="true">
+            <span class="wordmark__layer" data-depth="9" style="transform: translateZ(-27px); color: color-mix(in srgb, var(--primary) 34%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="8" style="transform: translateZ(-24px); color: color-mix(in srgb, var(--primary) 43%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="7" style="transform: translateZ(-21px); color: color-mix(in srgb, var(--primary) 51%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="6" style="transform: translateZ(-18px); color: color-mix(in srgb, var(--primary) 59%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="5" style="transform: translateZ(-15px); color: color-mix(in srgb, var(--primary) 67%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="4" style="transform: translateZ(-12px); color: color-mix(in srgb, var(--primary) 75%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="3" style="transform: translateZ(-9px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="2" style="transform: translateZ(-6px); color: color-mix(in srgb, var(--primary) 92%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="1" style="transform: translateZ(-3px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))">Freally Products</span>
+            <span class="wordmark__layer" data-depth="0" style="transform: translateZ(0px); color: var(--primary)">Freally Products</span>
+          </span>
+        </h1>
+        <p class="tagline" data-i18n="hero.tagline">Desktop apps for producers and creators.</p>
+        <p class="lede" data-i18n="hero.lede">
+          Eight apps for Windows, macOS and Linux: four for making music, and four for the work
+          around it. They run on your own computer, look like one family and speak eighteen
+          languages.
+        </p>
+        <p class="notice" data-i18n-html="hero.notice">
+          <strong>Free today.</strong> Every Freally app is free today, but it might not be free
+          forever: future versions may be sold.
+        </p>
+      </section>
+
+      <section id="products" class="products">
+        <h2 data-i18n="products.title">The apps</h2>
+
+        <h3 data-i18n="products.music">For making music</h3>
+        <ul class="cards">
+          <li>
+            <a class="card" href="freally-midi-master/index.html">
+              <img src="freally-midi-master/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally MIDI Master</span>
+              <span class="card-line" data-i18n="products.midiMaster">Artist-accurate MIDI, generated in your DAW, in your project's own key and tempo.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="freally-flipcopy/index.html">
+              <img src="freally-flipcopy/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally Flipcopy</span>
+              <span class="card-line" data-i18n="products.flipcopy">A copy machine for your clips: audio in, MIDI out; MIDI in, audio out.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="freally-oscillate/index.html">
+              <img src="freally-oscillate/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally Oscillate</span>
+              <span class="card-line" data-i18n="products.oscillate">A DAW where four producers work in the same session at once.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="freally-unloop/index.html">
+              <img src="freally-unloop/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally Unloop</span>
+              <span class="card-line" data-i18n="products.unloop">Turns an 8-bar loop into a finished, arranged record.</span>
+            </a>
+          </li>
+        </ul>
+
+        <h3 data-i18n="products.work">For the work around it</h3>
+        <ul class="cards">
+          <li>
+            <a class="card" href="freally-sourcerer/index.html">
+              <img src="freally-sourcerer/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally Sourcerer</span>
+              <span class="card-line" data-i18n="products.sourcerer">One search for every file, on every OS.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="freally-file-manager/index.html">
+              <img src="freally-file-manager/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally File Manager</span>
+              <span class="card-line" data-i18n="products.fileManager">Copy, move, sync and verify files, byte for byte.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="freally-teleprompt/index.html">
+              <img src="freally-teleprompt/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally Teleprompt</span>
+              <span class="card-line" data-i18n="products.teleprompt">A teleprompter that reads at a real human pace.</span>
+            </a>
+          </li>
+          <li>
+            <a class="card" href="freally-capture/index.html">
+              <img src="freally-capture/favicon-192.png" alt="" width="64" height="64" />
+              <span class="card-name">Freally Capture</span>
+              <span class="card-line" data-i18n="products.capture">Record and stream like a studio, straight from your machine.</span>
+            </a>
+          </li>
+        </ul>
+      </section>
+
+      <section id="about" class="about">
+        <h2 data-i18n="about.title">About Freally</h2>
+        <p data-i18n="about.p1">
+          Freally Products makes desktop software for people who make things: producers,
+          musicians, streamers, presenters, and anyone with a lot of files. Every app is built to
+          do its one job well, on your own computer, without getting in your way.
+        </p>
+        <p data-i18n="about.p2">
+          The apps are made by Mike Weaver, and they share one design, one set of controls and
+          one way of being honest about what they do.
+        </p>
+
+        <ul class="principles">
+          <li>
+            <h3 data-i18n="principles.desktop.title">On your computer</h3>
+            <p data-i18n="principles.desktop.body">Real desktop apps for Windows, macOS and Linux, not a website you rent.</p>
+          </li>
+          <li>
+            <h3 data-i18n="principles.honest.title">Honest about what's done</h3>
+            <p data-i18n="principles.honest.body">Each app's site says what works today, what doesn't yet, and where other tools do better.</p>
+          </li>
+          <li>
+            <h3 data-i18n="principles.languages.title">Eighteen languages</h3>
+            <p data-i18n="principles.languages.body">Every app and every site, in the same eighteen languages.</p>
+          </li>
+          <li>
+            <h3 data-i18n="principles.free.title">Free today</h3>
+            <p data-i18n="principles.free.body">Free today, with no paid tiers. Future versions may be sold, and the sites will say so first.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="downloads">
+        <h2 data-i18n="downloads.title">Downloads</h2>
+        <p data-i18n="downloads.body">
+          There are no downloads yet. Each app's own site shows where it is on its road to 1.0,
+          and that's where its downloads will be.
+        </p>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <p data-i18n="footer.rights">© 2026 Mike Weaver. All Rights Reserved. Free today; future versions may be sold.</p>
+    </footer>
+
+    <script src="home/site.js"></script>
   </body>
 </html>

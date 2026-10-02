@@ -1,0 +1,328 @@
+/* freallyproducts.com — the main site. Flipcopy's design, dark only, like every
+ * Freally site (owner, 2026-10-01/02). */
+
+:root {
+  color-scheme: dark;
+  --bg: #090c09;
+  --surface: #131813;
+  --surface-2: #1a211a;
+  --border: #27302a;
+  --text: #e8eaf0;
+  --text-2: #9aa3b2;
+  /* the icons' green */
+  --primary: #9af524;
+  --radius: 10px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font: 16px/1.6 system-ui, -apple-system, 'Segoe UI', Roboto, 'Noto Sans', sans-serif;
+}
+
+a {
+  color: var(--primary);
+}
+
+.skip {
+  position: absolute;
+  inset-inline-start: -999px;
+}
+
+.skip:focus {
+  inset-inline-start: 16px;
+  top: 8px;
+  z-index: 20;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  white-space: nowrap;
+}
+
+/* ── The header bar: Flipcopy's ─────────────────────────────────────────── */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-block-end: 1px solid var(--border);
+}
+
+.site-header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.wordmark-small {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 650;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.wordmark-small img {
+  width: 28px;
+  height: 28px;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-inline-start: auto;
+}
+
+.site-nav a {
+  color: var(--text-2);
+  text-decoration: none;
+  font-size: 0.9375rem;
+}
+
+.site-nav a:hover,
+.site-nav a:focus-visible {
+  color: var(--text);
+}
+
+select.locale {
+  background: var(--surface-2);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font: inherit;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px 48px;
+}
+
+section {
+  margin-block: 56px;
+}
+
+h2 {
+  font-size: clamp(1.4rem, 3vw, 1.8rem);
+  margin: 0 0 16px;
+  padding-block-end: 8px;
+  border-block-end: 1px solid var(--border);
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin: 28px 0 12px;
+}
+
+/* ── The hero, with the turning title ───────────────────────────────────── */
+
+.hero {
+  text-align: center;
+  padding-block: 32px 8px;
+}
+
+.tagline {
+  margin: 4px 0 12px;
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  color: var(--text);
+}
+
+.lede {
+  max-width: 62ch;
+  margin: 0 auto 16px;
+  color: var(--text-2);
+}
+
+.notice {
+  display: inline-block;
+  margin: 8px auto 0;
+  padding: 8px 14px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+  color: var(--text-2);
+}
+
+.notice strong {
+  color: var(--primary);
+}
+
+/* ⛔ The title turns on its Y axis like every Freally app's wordmark, ported
+ * from the apps' SpinningWordmark number for number: ten stacked layers make a
+ * solid extrusion, the perspective is on the parent, it holds on each face
+ * (0–14%, 50–64%) and eases through the edges over 7 s, and backfaces stay
+ * visible. The face is the icons' green, at the heading's own size. */
+.wordmark {
+  perspective: 760px;
+  display: grid;
+  place-items: center;
+  overflow: visible;
+  margin: 0 0 8px;
+  font-size: 2.4rem;
+  letter-spacing: 0.02em;
+}
+
+.wordmark__spin {
+  transform-style: preserve-3d;
+  display: grid;
+  place-items: center;
+  animation: wordmark-turn 7000ms cubic-bezier(0.62, 0, 0.38, 1) infinite;
+}
+
+.wordmark__layer {
+  grid-area: 1 / 1;
+  white-space: nowrap;
+  backface-visibility: visible;
+  user-select: none;
+}
+
+.wordmark__layer[data-depth='0'] {
+  text-shadow:
+    0 0 8px color-mix(in srgb, var(--primary) 60%, transparent),
+    0 0 24px color-mix(in srgb, var(--primary) 34%, transparent);
+}
+
+.wordmark__layer[data-depth='1'] {
+  text-shadow: 0 0 14px color-mix(in srgb, var(--primary) 50%, transparent);
+}
+
+@keyframes wordmark-turn {
+  0%,
+  14% {
+    transform: rotateY(0deg);
+  }
+  50%,
+  64% {
+    transform: rotateY(180deg);
+  }
+  100% {
+    transform: rotateY(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wordmark__spin {
+    animation: none;
+    transform: rotateY(-22deg);
+  }
+}
+
+/* ── The apps ───────────────────────────────────────────────────────────── */
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.card {
+  display: grid;
+  justify-items: start;
+  gap: 8px;
+  height: 100%;
+  padding: 20px;
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+}
+
+.card:hover,
+.card:focus-visible {
+  border-color: var(--primary);
+}
+
+.card img {
+  width: 64px;
+  height: 64px;
+}
+
+.card-name {
+  font-weight: 650;
+}
+
+.card-line {
+  color: var(--text-2);
+  font-size: 0.9375rem;
+}
+
+/* ── About ──────────────────────────────────────────────────────────────── */
+
+.about > p {
+  max-width: 72ch;
+  color: var(--text-2);
+}
+
+.principles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 16px;
+  margin: 24px 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.principles li {
+  padding: 16px 18px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--surface);
+}
+
+.principles h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.principles p {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 0.9375rem;
+}
+
+.downloads p {
+  color: var(--text-2);
+  max-width: 72ch;
+}
+
+/* ── Footer ─────────────────────────────────────────────────────────────── */
+
+.site-footer {
+  border-block-start: 1px solid var(--border);
+  padding: 24px 16px 40px;
+  text-align: center;
+  color: var(--text-2);
+  font-size: 0.875rem;
+}

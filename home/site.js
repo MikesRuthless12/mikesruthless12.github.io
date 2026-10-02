@@ -1,0 +1,121 @@
+/* freallyproducts.com — the language picker, like every Freally site's.
+ *
+ * English lives in the HTML. Each other language is a catalogue script,
+ * home/i18n/<code>.js, setting window.FREALLY_HOME_I18N[<code>] to a map of
+ * key → text; the picker lists only the languages that have one, so it never
+ * offers a language the page can't show. (English first, owner 2026-10-02;
+ * the other seventeen are added as their catalogues land.) The choice is
+ * remembered, and the visitor's own language is used when there is one. */
+(function () {
+  'use strict';
+
+  /* ⛔ English first, the other seventeen alphabetically by English name. */
+  var LOCALES = [
+    { code: 'en', name: 'English' },
+    { code: 'ar', name: 'العربية' },
+    { code: 'zh-CN', name: '简体中文' },
+    { code: 'nl', name: 'Nederlands' },
+    { code: 'fr', name: 'Français' },
+    { code: 'de', name: 'Deutsch' },
+    { code: 'hi', name: 'हिन्दी' },
+    { code: 'id', name: 'Bahasa Indonesia' },
+    { code: 'it', name: 'Italiano' },
+    { code: 'ja', name: '日本語' },
+    { code: 'ko', name: '한국어' },
+    { code: 'pl', name: 'Polski' },
+    { code: 'pt-BR', name: 'Português (Brasil)' },
+    { code: 'ru', name: 'Русский' },
+    { code: 'es', name: 'Español' },
+    { code: 'tr', name: 'Türkçe' },
+    { code: 'uk', name: 'Українська' },
+    { code: 'vi', name: 'Tiếng Việt' },
+  ];
+
+  /* The languages with a catalogue. Add a code here when its home/i18n/<code>.js lands. */
+  var AVAILABLE = ['en'];
+
+  var STORE = 'freally.home.language';
+  var original = {};
+
+  function remembered() {
+    try { return window.localStorage.getItem(STORE); } catch (e) { return null; }
+  }
+
+  function remember(code) {
+    try { window.localStorage.setItem(STORE, code); } catch (e) { /* private window */ }
+  }
+
+  function pick() {
+    var wanted = [remembered()].concat(navigator.languages || [navigator.language]);
+    for (var i = 0; i < wanted.length; i += 1) {
+      var tag = wanted[i];
+      if (!tag) continue;
+      for (var j = 0; j < AVAILABLE.length; j += 1) {
+        var code = AVAILABLE[j];
+        if (code === tag || code.split('-')[0] === tag.split('-')[0]) return code;
+      }
+    }
+    return 'en';
+  }
+
+  function nodes(selector) {
+    return Array.prototype.slice.call(document.querySelectorAll(selector));
+  }
+
+  function apply(code, strings) {
+    nodes('[data-i18n]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n');
+      if (!(key in original)) original[key] = el.textContent;
+      el.textContent = (strings && strings[key]) || original[key];
+    });
+    nodes('[data-i18n-html]').forEach(function (el) {
+      var key = el.getAttribute('data-i18n-html');
+      if (!(key in original)) original[key] = el.innerHTML;
+      el.innerHTML = (strings && strings[key]) || original[key];
+    });
+    nodes('[data-i18n-attr]').forEach(function (el) {
+      var spec = el.getAttribute('data-i18n-attr').split(':');
+      var attr = spec[0];
+      var key = spec[1];
+      var slot = 'attr:' + key;
+      if (!(slot in original)) original[slot] = el.getAttribute(attr);
+      el.setAttribute(attr, (strings && strings[key]) || original[slot]);
+    });
+    document.documentElement.lang = code;
+    document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
+  }
+
+  function load(code) {
+    if (code === 'en') {
+      apply('en', null);
+      return;
+    }
+    window.FREALLY_HOME_I18N = window.FREALLY_HOME_I18N || {};
+    if (window.FREALLY_HOME_I18N[code]) {
+      apply(code, window.FREALLY_HOME_I18N[code]);
+      return;
+    }
+    var script = document.createElement('script');
+    script.src = 'home/i18n/' + code + '.js';
+    script.onload = function () { apply(code, window.FREALLY_HOME_I18N[code]); };
+    document.head.appendChild(script);
+  }
+
+  var picker = document.querySelector('select.locale');
+  LOCALES.forEach(function (locale) {
+    if (AVAILABLE.indexOf(locale.code) === -1) return;
+    var option = document.createElement('option');
+    option.value = locale.code;
+    option.textContent = locale.name;
+    option.lang = locale.code;
+    picker.appendChild(option);
+  });
+  picker.addEventListener('change', function () {
+    remember(picker.value);
+    load(picker.value);
+  });
+
+  var start = pick();
+  picker.value = start;
+  if (start !== 'en') load(start);
+})();
