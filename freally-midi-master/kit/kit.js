@@ -778,7 +778,7 @@
    * page: it keeps focus while open and gives it back to the screenshot after.
    */
   function wireZooms() {
-    var shots = document.querySelectorAll('.shot > img');
+    var shots = document.querySelectorAll('.shot > img, .demo > video');
     if (shots.length === 0) return;
     var dialog = document.createElement('dialog');
     if (typeof dialog.showModal !== 'function') return;
@@ -796,18 +796,38 @@
     figure.className = 'zoom__figure';
     var big = document.createElement('img');
     big.decoding = 'async';
+    // ⚠ A feature video opens large still playing and looping, as it plays on
+    // the page — the same slot, a video in place of the picture.
+    var bigVideo = document.createElement('video');
+    bigVideo.muted = true;
+    bigVideo.loop = true;
+    bigVideo.playsInline = true;
+    bigVideo.hidden = true;
     var caption = document.createElement('figcaption');
     figure.appendChild(big);
+    figure.appendChild(bigVideo);
     figure.appendChild(caption);
     dialog.appendChild(close);
     dialog.appendChild(figure);
     document.body.appendChild(dialog);
     var opener = null;
 
-    function show(img, button) {
+    function show(media, button) {
       opener = button;
-      big.src = img.getAttribute('src');
-      big.alt = img.alt;
+      var isVideo = media.tagName === 'VIDEO';
+      big.hidden = isVideo;
+      bigVideo.hidden = !isVideo;
+      if (isVideo) {
+        bigVideo.src = media.getAttribute('src');
+        bigVideo.poster = media.getAttribute('poster') || '';
+        if (!reduceMotion) {
+          var playing = bigVideo.play();
+          if (playing && playing.catch) playing.catch(function () {});
+        }
+      } else {
+        big.src = media.getAttribute('src');
+        big.alt = media.alt;
+      }
       var text = button.parentNode.querySelector('figcaption');
       caption.textContent = text ? text.textContent : '';
       caption.hidden = caption.textContent === '';
@@ -816,19 +836,26 @@
       close.focus();
     }
 
-    function wrap(img) {
+    function wrap(media, n) {
       var button = document.createElement('button');
       button.type = 'button';
       button.className = 'shot__zoom';
       button.setAttribute('aria-haspopup', 'dialog');
-      img.parentNode.insertBefore(button, img);
-      button.appendChild(img);
+      // ⚠ A picture names its button with its alt text; a video has none, so
+      // its button is named by its caption — translated with the page.
+      var text = media.tagName === 'VIDEO' && media.parentNode.querySelector('figcaption');
+      if (text) {
+        if (!text.id) text.id = 'demo-caption-' + n;
+        button.setAttribute('aria-labelledby', text.id);
+      }
+      media.parentNode.insertBefore(button, media);
+      button.appendChild(media);
       button.addEventListener('click', function () {
-        show(img, button);
+        show(media, button);
       });
     }
 
-    for (var i = 0; i < shots.length; i += 1) wrap(shots[i]);
+    for (var i = 0; i < shots.length; i += 1) wrap(shots[i], i);
     close.addEventListener('click', function () {
       dialog.close();
     });
@@ -838,8 +865,56 @@
     });
     dialog.addEventListener('close', function () {
       root.classList.remove('zoom-open');
+      bigVideo.pause();
       if (opener) opener.focus();
     });
+  }
+
+  // ── the feature videos: they play by themselves and loop, like a GIF ────
+
+  /**
+   * ⛔ A feature video plays by itself, muted, and loops, with nothing to press
+   * (owner, 2026-10-05: *"i want it to play no matter what and just keep
+   * looping, like a gif kind of, so that way they don't have to press a play
+   * button or stop or rewind it or anything"*) — unlike the copier stories,
+   * which wait for START. Filmed in the real app (`npm run showcase` in each
+   * app's repo), silent and in English.
+   *
+   * ⚠ Two quiet exceptions, told to the owner: a video off screen waits, so a
+   * page of them does not run them all at once, and a reader whose system asks
+   * for less motion sees its poster.
+   */
+  function wireDemos() {
+    var videos = document.querySelectorAll('.demo > video, .demo > .shot__zoom > video');
+    if (videos.length === 0) return;
+    var watch =
+      !reduceMotion && typeof window.IntersectionObserver === 'function'
+        ? new window.IntersectionObserver(function (entries) {
+            for (var i = 0; i < entries.length; i += 1) {
+              var video = entries[i].target;
+              if (entries[i].isIntersecting) {
+                var playing = video.play();
+                if (playing && playing.catch) playing.catch(function () {});
+              } else {
+                video.pause();
+              }
+            }
+          })
+        : null;
+    for (var i = 0; i < videos.length; i += 1) {
+      var video = videos[i];
+      video.muted = true;
+      video.loop = true;
+      video.playsInline = true;
+      video.controls = false;
+      if (reduceMotion) {
+        video.autoplay = false;
+        video.removeAttribute('autoplay');
+        video.pause();
+      } else if (watch) {
+        watch.observe(video);
+      }
+    }
   }
 
   /**
@@ -859,6 +934,7 @@
       wireSearch,
       wireStories,
       wireZooms,
+      wireDemos,
       function () {
         apply(initialLocale());
       },

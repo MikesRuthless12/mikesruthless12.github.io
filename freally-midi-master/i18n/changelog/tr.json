@@ -696,5 +696,6 @@
   "changelog.186e93b3edac": "**Her açılır menünün listesi her temada ve her kaplamada okunuyor.** Seçenekler uygulamanın açık renkli yazısıyla sistemin beyaz listesine çiziliyordu; yalnızca vurgulanan okunabiliyordu.",
   "changelog.5788a29cdee7": "**Ekran klavyesinin beyaz tuşları adlarını gösteriyor.** Koyu temada tuşun beyaz ucunda açık renkli yazıydılar.",
   "changelog.958aa1bbe8f9": "**Tarzı kaydet artık yanındaki düğmelerin boyutunda**, Tarz düzenleyicide.",
-  "changelog.2b3d3275d6af": "**Şarkı Modunda bir bölümün başlığı artık bir şeyi diğerinin üstüne çizmiyor.** Kısa bir bölüm drop-out sayısını ve decay anahtarını ölçü sayısının üstüne çiziyordu; üzerine gelince döngü, kilit ve yeniden zar at düğmeleri bu ikisinin ve birbirlerinin üstüne biniyordu; artık geri çekilen ad oluyor."
+  "changelog.2b3d3275d6af": "**Şarkı Modunda bir bölümün başlığı artık bir şeyi diğerinin üstüne çizmiyor.** Kısa bir bölüm drop-out sayısını ve decay anahtarını ölçü sayısının üstüne çiziyordu; üzerine gelince döngü, kilit ve yeniden zar at düğmeleri bu ikisinin ve birbirlerinin üstüne biniyordu; artık geri çekilen ad oluyor.",
+  "changelog.97d994def3d3": "**Kullanılan mod için ay ya da güneş yanar ve Sistemi izle artık açma/kapama anahtarı.** Sistemi izle açıkken monitör ve sistemin gösterdiği mod birlikte yanar; bir daha basın, o mod korunur ve oradan sonrasını ay ya da güneş üstlenir."
 }

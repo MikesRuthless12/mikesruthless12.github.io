@@ -529,5 +529,11 @@
   "see.title": "Como ele é",
   "site.tagline": "MIDI fiel ao artista, gerado na trilha em que você já está trabalhando.",
   "documentation.5b1002aa": "As teclas ocupam todo o centro da janela — 3, 5 ou 7 oitavas, sem nunca rolar — e cada tecla tem seu nome: cada C em negrito, e o nome escrito ao longo da tecla quando ela é estreita demais para escrevê-lo de través. As setas de oitava e o número de Oitavas ficam na barra acima das teclas, e o botão Teclado acende enquanto o teclado está aberto.",
-  "index.5ab1e750": "Modo Música: um arranjo de 72 compassos numa linha do tempo, com seções INTRO, VERSE, HOOK, BRIDGE e OUTRO e um clipe editável por parte — bateria, acordes, melodia e contramelodia —, cada um com seu próprio chip MIDI e Audio."
+  "index.5ab1e750": "Modo Música: um arranjo de 72 compassos numa linha do tempo, com seções INTRO, VERSE, HOOK, BRIDGE e OUTRO e um clipe editável por parte — bateria, acordes, melodia e contramelodia —, cada um com seu próprio chip MIDI e Audio.",
+  "documentation.a50d4359": "Escolha alguém do roster, abra um gerador, aperte Gerar, toque e passe pelas takes.",
+  "documentation.11d77453": "O modo Música coloca um arranjo inteiro numa linha do tempo; o cabeçalho de cada seção tem seu próprio loop, trava e sortear de novo.",
+  "documentation.c484a896": "3, 5 ou 7 oitavas por todo o centro, cada tecla com seu nome, e o botão Teclado aceso enquanto está aberto.",
+  "documentation.d356edf8": "Escuro e claro",
+  "documentation.36880dc6": "Os três botões no pé da janela escolhem a aparência. A lua acende enquanto o app está escuro e o sol enquanto está claro. O monitor segue a configuração do seu computador e fica aceso enquanto segue; aperte de novo e o app mantém o modo que está mostrando, e a lua ou o sol assumem dali.",
+  "documentation.12b25fd9": "O sol para claro, a lua para escuro e o monitor para seguir o seu computador."
 }

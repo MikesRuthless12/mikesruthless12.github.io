@@ -1,5 +1,5 @@
 {
-  "version": "2829aaf94578",
+  "version": "b487d8ea7206",
   "files": {
     "art/chat.svg": "105d594d41d93114b20632409344e2cbed624a86bd0d5e00936e304cf8a6f0c8",
     "art/circuit.svg": "fcb87dfbfa921ebe7d7caa6f0a1ef2640cee86683c2eaf58624a7987d55c1ac0",
@@ -66,8 +66,8 @@
     "i18n/vi.json": "57fc8679e5eceebf7e564251fff560c1eb9f211e30f911cea72329191268e9b9",
     "i18n/zh-CN.json": "db47a887dd16b5770d2d3e346469c9afea4162b27719cd13381fb46863f29b18",
     "icons.mjs": "c04d40e691524952f6c091f8b30db54d4d210484c793779749000872a11bbdcf",
-    "kit.css": "5d01f3861cce290f16f1a4e262e948c576edbada6bb82a766855ce59f3585559",
-    "kit.js": "c4f10c5e6687dc066fb06ef728807d72f92e347e7bc4a54b0736eca38064af4c",
+    "kit.css": "fb67bd340ec416cd99bd18a7ce43b233077ed656d219d9689e6d416ca25e12eb",
+    "kit.js": "0cfb04aea1831decdda4406926e8539305b5893fe86c15937ed60866aaf80dc2",
     "markdown.mjs": "9e8ccd6c50744e1fb1aa3685c20766212a5982bd3913a6bc4701050fd81925a9"
   }
 }

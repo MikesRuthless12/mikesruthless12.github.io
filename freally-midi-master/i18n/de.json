@@ -529,5 +529,11 @@
   "see.title": "So sieht es aus",
   "site.tagline": "Künstlergenaues MIDI, erzeugt auf der Spur, an der du schon arbeitest.",
   "documentation.5b1002aa": "Die Tasten erstrecken sich über die ganze Mitte des Fensters — 3, 5 oder 7 Oktaven, nie gescrollt — und jede Taste trägt ihren Namen: jedes C fett, und der Name läuft an der Taste hinauf, wenn sie zu schmal ist, um ihn quer zu schreiben. Die Oktavpfeile und die Anzahl der Oktaven sitzen in der Leiste über den Tasten, und die Schaltfläche Klaviatur leuchtet, solange die Klaviatur offen ist.",
-  "index.5ab1e750": "Song-Modus: ein Arrangement über 72 Takte auf einer Zeitleiste, mit den Abschnitten INTRO, VERSE, HOOK, BRIDGE und OUTRO und einem bearbeitbaren Clip je Part — Drums, Akkorde, Melodie und Gegenmelodie —, jeder mit eigenem MIDI- und Audio-Chip."
+  "index.5ab1e750": "Song-Modus: ein Arrangement über 72 Takte auf einer Zeitleiste, mit den Abschnitten INTRO, VERSE, HOOK, BRIDGE und OUTRO und einem bearbeitbaren Clip je Part — Drums, Akkorde, Melodie und Gegenmelodie —, jeder mit eigenem MIDI- und Audio-Chip.",
+  "documentation.a50d4359": "Jemanden aus dem Verzeichnis wählen, einen Generator öffnen, Generieren drücken, abspielen und durch die Takes gehen.",
+  "documentation.11d77453": "Der Song-Modus legt ein ganzes Arrangement auf eine Zeitleiste; der Kopf jedes Abschnitts trägt seinen eigenen Loop, seine Sperre und sein Neu-Würfeln.",
+  "documentation.c484a896": "3, 5 oder 7 Oktaven über die ganze Mitte, jede Taste benannt, und die Schaltfläche Klaviatur leuchtet, solange sie offen ist.",
+  "documentation.d356edf8": "Dunkel und hell",
+  "documentation.36880dc6": "Die drei Schaltflächen am Fuß des Fensters wählen das Aussehen. Der Mond leuchtet, solange die App dunkel ist, die Sonne, solange sie hell ist. Der Monitor folgt der Einstellung deines Computers und leuchtet, solange er das tut; drückst du ihn noch einmal, behält die App den Modus, den sie gerade zeigt, und Mond oder Sonne übernehmen von dort.",
+  "documentation.12b25fd9": "Die Sonne für hell, der Mond für dunkel und der Monitor, um deinem Computer zu folgen."
 }

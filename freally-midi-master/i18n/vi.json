@@ -529,5 +529,11 @@
   "see.title": "Trông nó thế nào",
   "site.tagline": "MIDI đúng phong cách, được tạo ngay trên track bạn đang làm.",
   "documentation.5b1002aa": "Các phím trải khắp phần giữa cửa sổ — 3, 5 hoặc 7 quãng tám, không bao giờ phải cuộn — và phím nào cũng có tên: mỗi nốt C in đậm, và tên được viết dọc theo phím khi phím quá hẹp để viết ngang. Các mũi tên quãng tám và số Quãng tám nằm ở thanh phía trên các phím, còn nút Bàn phím sáng lên khi bàn phím đang mở.",
-  "index.5ab1e750": "Chế độ Bài hát: một bản phối 72 ô nhịp trên dòng thời gian, với các đoạn INTRO, VERSE, HOOK, BRIDGE và OUTRO cùng một clip chỉnh sửa được cho mỗi phần — trống, hợp âm, giai điệu và giai điệu đối — mỗi clip có chip MIDI và Audio riêng."
+  "index.5ab1e750": "Chế độ Bài hát: một bản phối 72 ô nhịp trên dòng thời gian, với các đoạn INTRO, VERSE, HOOK, BRIDGE và OUTRO cùng một clip chỉnh sửa được cho mỗi phần — trống, hợp âm, giai điệu và giai điệu đối — mỗi clip có chip MIDI và Audio riêng.",
+  "documentation.a50d4359": "Chọn một người trong danh sách, mở một trình tạo, nhấn Tạo, phát thử rồi lần lượt xem các bản thu.",
+  "documentation.11d77453": "Chế độ Bài hát đặt cả bản phối lên dòng thời gian; đầu đề mỗi đoạn có nút lặp, khóa và gieo lại của riêng nó.",
+  "documentation.c484a896": "3, 5 hoặc 7 quãng tám trải khắp phần giữa, phím nào cũng có tên, và nút Bàn phím sáng khi đang mở.",
+  "documentation.d356edf8": "Tối và sáng",
+  "documentation.36880dc6": "Ba nút ở chân cửa sổ chọn giao diện. Mặt trăng sáng khi ứng dụng đang tối, mặt trời sáng khi đang sáng. Màn hình làm theo cài đặt của máy tính và sáng khi đang làm theo; nhấn lần nữa thì ứng dụng giữ chế độ đang hiển thị, rồi mặt trăng hoặc mặt trời đảm nhận từ đó.",
+  "documentation.12b25fd9": "Mặt trời cho sáng, mặt trăng cho tối, và màn hình để làm theo máy tính của bạn."
 }

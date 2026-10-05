@@ -529,5 +529,11 @@
   "see.title": "Seperti apa tampilannya",
   "site.tagline": "MIDI yang akurat secara gaya, dibuat langsung di track yang sedang Anda kerjakan.",
   "documentation.5b1002aa": "Tuts membentang di seluruh bagian tengah jendela — 3, 5, atau 7 oktaf, tanpa pernah bergulir — dan setiap tuts diberi nama: setiap C tebal, dan nama ditulis memanjang di tuts saat tutsnya terlalu sempit untuk menulisnya melintang. Panah oktaf dan jumlah Oktaf berada di bilah di atas tuts, dan tombol Papan tuts menyala selama papan tuts terbuka.",
-  "index.5ab1e750": "Mode Lagu: aransemen 72 birama di garis waktu, dengan bagian INTRO, VERSE, HOOK, BRIDGE, dan OUTRO serta satu klip yang bisa diedit untuk tiap bagian — drum, akor, melodi, dan kontramelodi — masing-masing dengan chip MIDI dan Audio sendiri."
+  "index.5ab1e750": "Mode Lagu: aransemen 72 birama di garis waktu, dengan bagian INTRO, VERSE, HOOK, BRIDGE, dan OUTRO serta satu klip yang bisa diedit untuk tiap bagian — drum, akor, melodi, dan kontramelodi — masing-masing dengan chip MIDI dan Audio sendiri.",
+  "documentation.a50d4359": "Pilih seseorang dari daftar, buka generator, tekan Hasilkan, putar, lalu telusuri setiap take.",
+  "documentation.11d77453": "Mode Lagu menata aransemen utuh di garis waktu; kepala setiap bagian memuat loop, kunci, dan acak ulangnya sendiri.",
+  "documentation.c484a896": "3, 5, atau 7 oktaf di seluruh bagian tengah, setiap tuts bernama, dan tombol Papan tuts menyala selama terbuka.",
+  "documentation.d356edf8": "Gelap dan terang",
+  "documentation.36880dc6": "Tiga tombol di kaki jendela memilih tampilan. Bulan menyala selama aplikasi gelap dan matahari selama terang. Monitor mengikuti setelan komputer Anda dan tetap menyala selama mengikutinya; tekan lagi dan aplikasi mempertahankan mode yang sedang tampil, lalu bulan atau matahari melanjutkannya.",
+  "documentation.12b25fd9": "Matahari untuk terang, bulan untuk gelap, dan monitor untuk mengikuti komputer Anda."
 }

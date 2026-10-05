@@ -529,5 +529,11 @@
   "see.title": "Come appare",
   "site.tagline": "MIDI fedele all’artista, generato sulla traccia su cui stai già lavorando.",
   "documentation.5b1002aa": "I tasti occupano tutto il centro della finestra — 3, 5 o 7 ottave, senza mai scorrere — e ogni tasto ha il suo nome: ogni C in grassetto, e il nome scritto lungo il tasto quando è troppo stretto per scriverlo di traverso. Le frecce d’ottava e il numero di Ottave stanno nella barra sopra i tasti, e il pulsante Tastiera si illumina finché la tastiera è aperta.",
-  "index.5ab1e750": "Modalità Brano: un arrangiamento di 72 battute su una timeline, con sezioni INTRO, VERSE, HOOK, BRIDGE e OUTRO e un clip modificabile per parte — batteria, accordi, melodia e controcanto —, ciascuno con il proprio chip MIDI e Audio."
+  "index.5ab1e750": "Modalità Brano: un arrangiamento di 72 battute su una timeline, con sezioni INTRO, VERSE, HOOK, BRIDGE e OUTRO e un clip modificabile per parte — batteria, accordi, melodia e controcanto —, ciascuno con il proprio chip MIDI e Audio.",
+  "documentation.a50d4359": "Scegli qualcuno dal roster, apri un generatore, premi Genera, ascoltalo e scorri le take.",
+  "documentation.11d77453": "La modalità Brano dispone un arrangiamento intero su una timeline; l’intestazione di ogni sezione ha il suo loop, il suo blocco e il suo nuovo tiro.",
+  "documentation.c484a896": "3, 5 o 7 ottave su tutto il centro, ogni tasto con il suo nome, e il pulsante Tastiera acceso finché è aperta.",
+  "documentation.d356edf8": "Scuro e chiaro",
+  "documentation.36880dc6": "I tre pulsanti in fondo alla finestra scelgono l’aspetto. La luna è accesa finché l’app è scura, il sole finché è chiara. Il monitor segue l’impostazione del tuo computer e resta acceso finché la segue; premilo di nuovo e l’app tiene la modalità che sta mostrando, poi ci pensano la luna o il sole.",
+  "documentation.12b25fd9": "Il sole per il chiaro, la luna per lo scuro e il monitor per seguire il tuo computer."
 }

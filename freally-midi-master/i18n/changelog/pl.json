@@ -696,5 +696,6 @@
   "changelog.186e93b3edac": "**Lista każdego menu rozwijanego jest czytelna w każdym motywie i skórce.** Opcje były rysowane jasnym tekstem aplikacji na białej liście systemu, więc dało się przeczytać tylko podświetloną.",
   "changelog.5788a29cdee7": "**Białe klawisze klawiatury ekranowej pokazują swoje nazwy.** W ciemnym motywie były jasnym tekstem na białej stopce klawisza.",
   "changelog.958aa1bbe8f9": "**Zapisz styl ma rozmiar sąsiednich przycisków** w Edytorze stylu.",
-  "changelog.2b3d3275d6af": "**Nagłówek sekcji w trybie Utwór nie rysuje już niczego na czymś innym.** Krótka sekcja rysowała liczbę drop-out i przełącznik decay na liczbie taktów, a po najechaniu przyciski pętli, blokady i ponownego losowania lądowały na nich i na sobie nawzajem; teraz ustępuje nazwa."
+  "changelog.2b3d3275d6af": "**Nagłówek sekcji w trybie Utwór nie rysuje już niczego na czymś innym.** Krótka sekcja rysowała liczbę drop-out i przełącznik decay na liczbie taktów, a po najechaniu przyciski pętli, blokady i ponownego losowania lądowały na nich i na sobie nawzajem; teraz ustępuje nazwa.",
+  "changelog.97d994def3d3": "**Księżyc lub słońce świeci dla używanego trybu, a Zgodnie z systemem to przełącznik.** Gdy Zgodnie z systemem jest włączone, świecą monitor i tryb pokazywany przez system; naciśnij ponownie, a ten tryb zostanie, dalej przejmie księżyc lub słońce."
 }

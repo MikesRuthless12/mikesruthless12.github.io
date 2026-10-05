@@ -529,5 +529,11 @@
   "see.title": "À quoi il ressemble",
   "site.tagline": "Du MIDI fidèle à l’artiste, généré sur la piste sur laquelle vous travaillez déjà.",
   "documentation.5b1002aa": "Les touches occupent tout le centre de la fenêtre — 3, 5 ou 7 octaves, sans jamais défiler — et chaque touche porte son nom : chaque C en gras, et le nom écrit le long de la touche quand elle est trop étroite pour l’écrire en travers. Les flèches d’octave et l’Étendue se trouvent dans la barre au-dessus des touches, et le bouton Clavier s’allume tant que le clavier est ouvert.",
-  "index.5ab1e750": "Mode Chanson : un arrangement de 72 mesures sur une timeline, avec des sections INTRO, VERSE, HOOK, BRIDGE et OUTRO et un clip modifiable par partie — batterie, accords, mélodie et contre-mélodie —, chacun avec sa propre puce MIDI et Audio."
+  "index.5ab1e750": "Mode Chanson : un arrangement de 72 mesures sur une timeline, avec des sections INTRO, VERSE, HOOK, BRIDGE et OUTRO et un clip modifiable par partie — batterie, accords, mélodie et contre-mélodie —, chacun avec sa propre puce MIDI et Audio.",
+  "documentation.a50d4359": "Choisissez quelqu’un dans le répertoire, ouvrez un générateur, appuyez sur Générer, écoutez, puis parcourez les prises.",
+  "documentation.11d77453": "Le mode Chanson pose un arrangement entier sur une timeline ; l’en-tête de chaque section porte sa propre boucle, son verrou et sa relance.",
+  "documentation.c484a896": "3, 5 ou 7 octaves sur tout le centre, chaque touche nommée, et le bouton Clavier allumé tant qu’il est ouvert.",
+  "documentation.d356edf8": "Sombre et clair",
+  "documentation.36880dc6": "Les trois boutons au pied de la fenêtre choisissent l’apparence. La lune s’allume tant que l’app est sombre, le soleil tant qu’elle est claire. L’écran suit le réglage de votre ordinateur et reste allumé tant qu’il le suit ; appuyez à nouveau et l’app garde le mode qu’elle affiche, la lune ou le soleil prenant le relais.",
+  "documentation.12b25fd9": "Le soleil pour clair, la lune pour sombre, et l’écran pour suivre votre ordinateur."
 }

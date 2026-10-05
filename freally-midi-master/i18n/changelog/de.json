@@ -696,5 +696,6 @@
   "changelog.186e93b3edac": "**Die Liste jedes Auswahlfelds ist in jedem Theme und jedem Skin lesbar.** Die Optionen wurden in der hellen Schrift der App auf die weiße Liste des Systems gezeichnet, sodass nur die hervorgehobene lesbar war.",
   "changelog.5788a29cdee7": "**Die weißen Tasten der Bildschirmklaviatur zeigen ihre Namen.** Sie standen im dunklen Theme als helle Schrift auf dem weißen Tastenende.",
   "changelog.958aa1bbe8f9": "**„Stil speichern“ hat die Größe der Schaltflächen daneben** im Stil-Editor.",
-  "changelog.2b3d3275d6af": "**Der Kopf eines Abschnitts im Song-Modus zeichnet nie mehr eines über das andere.** Ein kurzer Abschnitt zeichnete seine Drop-out-Zahl und den Decay-Schalter über die Taktzahl, und beim Darüberfahren landeten die Schaltflächen für Loop, Sperre und Neu würfeln auf diesen beiden und aufeinander; jetzt weicht stattdessen der Name."
+  "changelog.2b3d3275d6af": "**Der Kopf eines Abschnitts im Song-Modus zeichnet nie mehr eines über das andere.** Ein kurzer Abschnitt zeichnete seine Drop-out-Zahl und den Decay-Schalter über die Taktzahl, und beim Darüberfahren landeten die Schaltflächen für Loop, Sperre und Neu würfeln auf diesen beiden und aufeinander; jetzt weicht stattdessen der Name.",
+  "changelog.97d994def3d3": "**Mond oder Sonne leuchten für den Modus, der gerade gilt, und „System folgen“ ist ein Ein/Aus-Schalter.** Ist „System folgen“ an, leuchten der Monitor und der Modus, den das System zeigt; drückst du es noch einmal, bleibt dieser Modus, und Mond oder Sonne übernehmen von dort."
 }

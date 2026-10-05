@@ -529,5 +529,11 @@
   "see.title": "Jak to wygląda",
   "site.tagline": "MIDI wierne artyście, generowane na ścieżce, nad którą już pracujesz.",
   "documentation.5b1002aa": "Klawisze zajmują cały środek okna — 3, 5 lub 7 oktaw, bez przewijania — a każdy klawisz ma swoją nazwę: każde C pogrubione, a nazwa zapisana wzdłuż klawisza, gdy jest on zbyt wąski, by zapisać ją w poprzek. Strzałki oktaw i liczba Oktaw są na pasku nad klawiszami, a przycisk Klawiatura świeci, dopóki klawiatura jest otwarta.",
-  "index.5ab1e750": "Tryb Utwór: aranżacja na 72 takty na osi czasu, z sekcjami INTRO, VERSE, HOOK, BRIDGE i OUTRO oraz jednym edytowalnym klipem na partię — perkusja, akordy, melodia i kontrmelodia — każdy z własnym chipem MIDI i Audio."
+  "index.5ab1e750": "Tryb Utwór: aranżacja na 72 takty na osi czasu, z sekcjami INTRO, VERSE, HOOK, BRIDGE i OUTRO oraz jednym edytowalnym klipem na partię — perkusja, akordy, melodia i kontrmelodia — każdy z własnym chipem MIDI i Audio.",
+  "documentation.a50d4359": "Wybierz kogoś z listy, otwórz generator, naciśnij Generuj, odtwórz i przejdź przez kolejne podejścia.",
+  "documentation.11d77453": "Tryb Utwór układa całą aranżację na osi czasu; nagłówek każdej sekcji ma własną pętlę, blokadę i ponowne losowanie.",
+  "documentation.c484a896": "3, 5 lub 7 oktaw przez cały środek, każdy klawisz z nazwą, a przycisk Klawiatura świeci, dopóki jest otwarta.",
+  "documentation.d356edf8": "Ciemny i jasny",
+  "documentation.36880dc6": "Trzy przyciski u dołu okna wybierają wygląd. Księżyc świeci, gdy aplikacja jest ciemna, a słońce, gdy jasna. Monitor podąża za ustawieniem komputera i świeci, dopóki to robi; naciśnij go ponownie, a aplikacja zachowa wyświetlany tryb, a dalej przejmie księżyc lub słońce.",
+  "documentation.12b25fd9": "Słońce dla jasnego, księżyc dla ciemnego, a monitor, by podążać za komputerem."
 }

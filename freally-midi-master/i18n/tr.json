@@ -529,5 +529,11 @@
   "see.title": "Nasıl görünüyor",
   "site.tagline": "Sanatçıya sadık MIDI, üzerinde zaten çalıştığın kanalda üretilir.",
   "documentation.5b1002aa": "Tuşlar pencerenin tüm ortasını kaplar — 3, 5 ya da 7 oktav, hiç kaydırmadan — ve her tuşun adı yazar: her C kalın, tuş adı yatay yazılamayacak kadar darsa ad tuş boyunca dikey yazılır. Oktav okları ve Oktav sayısı tuşların üstündeki çubuktadır, Klavye düğmesi de klavye açık olduğu sürece yanar.",
-  "index.5ab1e750": "Şarkı Modu: zaman çizelgesinde 72 ölçülük bir aranjman; INTRO, VERSE, HOOK, BRIDGE ve OUTRO bölümleri ve her partisyon için düzenlenebilir bir klip — davul, akorlar, melodi ve karşı melodi —, her birinin kendi MIDI ve Audio çipi var."
+  "index.5ab1e750": "Şarkı Modu: zaman çizelgesinde 72 ölçülük bir aranjman; INTRO, VERSE, HOOK, BRIDGE ve OUTRO bölümleri ve her partisyon için düzenlenebilir bir klip — davul, akorlar, melodi ve karşı melodi —, her birinin kendi MIDI ve Audio çipi var.",
+  "documentation.a50d4359": "Listeden birini seçin, bir üreteci açın, Üret'e basın, çalın ve kayıtlar arasında gezinin.",
+  "documentation.11d77453": "Şarkı Modu bütün bir aranjmanı zaman çizelgesine yerleştirir; her bölümün başlığında kendi döngüsü, kilidi ve yeniden zar atma düğmesi bulunur.",
+  "documentation.c484a896": "Tüm orta alan boyunca 3, 5 ya da 7 oktav, her tuşun adı var ve klavye açıkken Klavye düğmesi yanar.",
+  "documentation.d356edf8": "Koyu ve açık",
+  "documentation.36880dc6": "Pencerenin altındaki üç düğme görünümü seçer. Uygulama koyuyken ay, açıkken güneş yanar. Monitör bilgisayarınızın kendi ayarını izler ve izlediği sürece yanık kalır; bir daha basın, uygulama gösterdiği modu korur ve oradan sonrasını ay ya da güneş üstlenir.",
+  "documentation.12b25fd9": "Açık için güneş, koyu için ay, bilgisayarınızı izlemek için monitör."
 }

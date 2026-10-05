@@ -85,6 +85,10 @@
       <li data-i18n-html="documentation.e1f3b866"><strong>Hear it.</strong> Press play in your DAW — the notes are already on the track.</li>
       <li data-i18n-html="documentation.d9b0f0a8"><strong>Reroll or keep.</strong> Every generation carries a seed you can copy back.</li>
     </ol>
+    <figure class="demo">
+      <video src="demos/core-loop.webm" poster="demos/core-loop.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption data-i18n="documentation.a50d4359">Pick someone from the roster, open a generator, press Generate, play it, and step through the takes.</figcaption>
+    </figure>
   </section>
 
   <section>
@@ -184,6 +188,10 @@
   <section>
     <h2 id="song-mode" data-i18n="documentation.c1e2865a">Song Mode</h2>
     <p data-i18n-html="documentation.eb60a3b0">Press Generate on the <strong>Song</strong> tab and you get a whole arrangement: one of the artist's own song forms, a clip per part per section, and the transitions that make it read as a record — the beat or two of silence before a hook lands, a back-half switch-up, an outro that fades.</p>
+    <figure class="demo">
+      <video src="demos/song-mode.webm" poster="demos/song-mode.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption data-i18n="documentation.11d77453">Song Mode lays a whole arrangement on a timeline; each section's header holds its own loop, lock and re-roll.</figcaption>
+    </figure>
     <p data-i18n-html="documentation.967c5bf5"><strong>A section plays a looping clip.</strong> A sixteen-bar verse is a four-bar loop played four times, which is what every DAW's arrangement view draws. Sections of the same kind share one clip, because verse 1 and verse 2 are the same beat — the switch-up exists precisely because that is the rule.</p>
     <div class="table-wrap"><table>
       <thead>
@@ -255,6 +263,10 @@
     <p data-i18n="documentation.2d0fa842">Toggle it from any tab. Click and drag across the keys — how high up the key you press sets the velocity — or use the typing bed. The typing bed stands down while a text field has focus, so searching for an artist does not play notes at you.</p>
     <p data-i18n="documentation.7a1b9f14">Moving the octave or the range sends an all-notes-off, so a held note cannot be stranded by the keys under it changing.</p>
     <p data-i18n="documentation.5b1002aa">The keys span the whole middle of the window — 3, 5 or 7 octaves, never scrolled — with every key named: each C in bold, and a name written up the key when the key is too narrow to write it across. The octave arrows and the Octaves count sit in the bar above the keys, and the Keyboard button lights while the keyboard is open.</p>
+    <figure class="demo">
+      <video src="demos/keyboard.webm" poster="demos/keyboard.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption data-i18n="documentation.c484a896">3, 5 or 7 octaves across the whole middle, every key named, and the Keyboard button lit while it is open.</figcaption>
+    </figure>
 
     <h3 data-i18n="documentation.30f9d8d3">Playing it in from hardware</h3>
     <p data-i18n-html="documentation.ee7a9278"><strong>Settings &rarr; MIDI input.</strong> A channel filter (or all channels, which is the default), transpose in semitones, an octave shift that stacks with it, the pitch-bend range, and a velocity curve — below the middle a light touch comes out louder, above it you have to press harder.</p>
@@ -410,6 +422,15 @@
     <h2 id="session" data-i18n="documentation.b7a3d0f4">Session state</h2>
     <p data-i18n-html="documentation.99bec605">The plugin saves your artist, seed, bars, pins and window size <strong>into the DAW's own project file</strong>. Reopen the song and the session comes back. There is no file to manage and no path to choose.</p>
     <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n="documentation.2c40e200">The pattern itself is not stored — the inputs are, and the engine is deterministic, so restoring is a regeneration. That is why a saved project costs bytes instead of hundreds of kilobytes of notes.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="themes" data-i18n="documentation.d356edf8">Dark and light</h2>
+    <p data-i18n="documentation.36880dc6">The three buttons at the foot of the window choose the look. The moon is lit while the app is dark and the sun while it is light. The monitor follows your computer's own setting, and stays lit while it does; press it again and the app keeps the mode it is showing, and the moon or the sun takes it from there.</p>
+    <figure class="demo">
+      <video src="demos/themes.webm" poster="demos/themes.jpg" width="1600" height="900" autoplay muted loop playsinline preload="metadata"></video>
+      <figcaption data-i18n="documentation.12b25fd9">The sun for light, the moon for dark, and the monitor to follow your computer.</figcaption>
+    </figure>
   </section>
 
   <section>

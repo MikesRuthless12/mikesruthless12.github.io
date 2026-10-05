@@ -14,7 +14,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#loop",
   "heading": "The core loop",
-  "text": "Pick someone. Type a name into the roster box — artists and genres alike. Generate. The pattern is built for your project's tempo and key. Hear it. Press play in your DAW — the notes are already on the track. Reroll or keep. Every generation carries a seed you can copy back."
+  "text": "Pick someone. Type a name into the roster box — artists and genres alike. Generate. The pattern is built for your project's tempo and key. Hear it. Press play in your DAW — the notes are already on the track. Reroll or keep. Every generation carries a seed you can copy back. Pick someone from the roster, open a generator, press Generate, play it, and step through the takes."
  },
  {
   "url": "documentation.html#roster",
@@ -54,7 +54,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#song-mode",
   "heading": "Song Mode",
-  "text": "Press Generate on the Song tab and you get a whole arrangement: one of the artist's own song forms, a clip per part per section, and the transitions that make it read as a record — the beat or two of silence before a hook lands, a back-half switch-up, an outro that fades. A section plays a looping clip. A sixteen-bar verse is a four-bar loop played four times, which is what every DAW's arrangement view draws. Sections of the same kind share one clip, because verse 1 and verse 2 are the same beat — the switch-up exists precisely because that is the rule. What you can do How Resize, clone, delete, copy/cut/paste clips Drag either edge, double-click a section header, and the ordinary shortcuts Re-roll one section R , or the dice on the section header. Locked clips are left alone Lock a clip, a row or a whole section The padlock on the cell, the part row, or the section header Hear one cell on its own The headphones on the clip. The view says so while it lasts Open a clip in its editor Double-click it. Your edits write back into the arrangement Loop a section, mute or solo a part The repeat icon on the header; the speaker and S on the row Choose which of the artist's forms to build The"
+  "text": "Press Generate on the Song tab and you get a whole arrangement: one of the artist's own song forms, a clip per part per section, and the transitions that make it read as a record — the beat or two of silence before a hook lands, a back-half switch-up, an outro that fades. Song Mode lays a whole arrangement on a timeline; each section's header holds its own loop, lock and re-roll. A section plays a looping clip. A sixteen-bar verse is a four-bar loop played four times, which is what every DAW's arrangement view draws. Sections of the same kind share one clip, because verse 1 and verse 2 are the same beat — the switch-up exists precisely because that is the rule. What you can do How Resize, clone, delete, copy/cut/paste clips Drag either edge, double-click a section header, and the ordinary shortcuts Re-roll one section R , or the dice on the section header. Locked clips are left alone Lock a clip, a row or a whole section The padlock on the cell, the part row, or the section header Hear one cell on its own The headphones on the clip. The view says so while it lasts Open a clip in its editor Double-click it. Your edits write back into the arrangement Loop a section, mute or solo a pa"
  },
  {
   "url": "documentation.html#instrument",
@@ -100,6 +100,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#session",
   "heading": "Session state",
   "text": "The plugin saves your artist, seed, bars, pins and window size into the DAW's own project file . Reopen the song and the session comes back. There is no file to manage and no path to choose. The pattern itself is not stored — the inputs are, and the engine is deterministic, so restoring is a regeneration. That is why a saved project costs bytes instead of hundreds of kilobytes of notes."
+ },
+ {
+  "url": "documentation.html#themes",
+  "heading": "Dark and light",
+  "text": "The three buttons at the foot of the window choose the look. The moon is lit while the app is dark and the sun while it is light. The monitor follows your computer's own setting, and stays lit while it does; press it again and the app keeps the mode it is showing, and the moon or the sun takes it from there. The sun for light, the moon for dark, and the monitor to follow your computer."
  },
  {
   "url": "documentation.html#shortcuts",

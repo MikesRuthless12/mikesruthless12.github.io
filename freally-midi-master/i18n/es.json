@@ -529,5 +529,11 @@
   "see.title": "Así se ve",
   "site.tagline": "MIDI fiel al artista, generado en la pista en la que ya estás trabajando.",
   "documentation.5b1002aa": "Las teclas ocupan todo el centro de la ventana — 3, 5 o 7 octavas, sin desplazarse nunca — y cada tecla lleva su nombre: cada C en negrita, y el nombre escrito a lo largo de la tecla cuando es demasiado estrecha para escribirlo de lado a lado. Las flechas de octava y el número de octavas están en la barra sobre las teclas, y el botón Teclado se ilumina mientras el teclado está abierto.",
-  "index.5ab1e750": "Modo Canción: un arreglo de 72 compases en una línea de tiempo, con secciones INTRO, VERSE, HOOK, BRIDGE y OUTRO y un clip editable por parte — batería, acordes, melodía y contramelodía —, cada uno con su propia pastilla MIDI y Audio."
+  "index.5ab1e750": "Modo Canción: un arreglo de 72 compases en una línea de tiempo, con secciones INTRO, VERSE, HOOK, BRIDGE y OUTRO y un clip editable por parte — batería, acordes, melodía y contramelodía —, cada uno con su propia pastilla MIDI y Audio.",
+  "documentation.a50d4359": "Elige a alguien del roster, abre un generador, pulsa Generar, reprodúcelo y recorre las tomas.",
+  "documentation.11d77453": "El modo Canción coloca un arreglo completo en una línea de tiempo; la cabecera de cada sección tiene su propio bucle, bloqueo y nueva tirada.",
+  "documentation.c484a896": "3, 5 o 7 octavas a lo largo de todo el centro, cada tecla con su nombre, y el botón Teclado iluminado mientras está abierto.",
+  "documentation.d356edf8": "Oscuro y claro",
+  "documentation.36880dc6": "Los tres botones al pie de la ventana eligen el aspecto. La luna se ilumina mientras la app está en oscuro y el sol mientras está en claro. El monitor sigue el ajuste de tu ordenador y se queda iluminado mientras lo hace; púlsalo otra vez y la app conserva el modo que muestra, y la luna o el sol siguen desde ahí.",
+  "documentation.12b25fd9": "El sol para claro, la luna para oscuro y el monitor para seguir a tu ordenador."
 }

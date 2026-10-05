@@ -1696,9 +1696,11 @@ main {
   margin-bottom: 0;
 }
 
-/* ── media: screenshots, the copier stories ────────────────────────────── */
+/* ── media: screenshots, feature videos, the copier stories ─────────────── */
 
-.shot {
+/* A feature video (`.demo`) wears a screenshot's frame: it is one, moving. */
+.shot,
+.demo {
   margin: 0;
   border-radius: var(--r-xl);
   overflow: hidden;
@@ -1707,13 +1709,18 @@ main {
 }
 
 .shot img,
-.shot video {
+.shot video,
+.demo video {
   display: block;
   width: 100%;
+  /* ⚠ The height attribute is only the aspect ratio: without this a video
+   * takes it as 900 px and letterboxes itself in a box that tall. */
+  height: auto;
   filter: brightness(0.92) contrast(1.08);
 }
 
 .shot figcaption,
+.demo figcaption,
 .story figcaption {
   padding: 14px 20px 16px;
   font-size: 14px;
@@ -1737,7 +1744,8 @@ main {
   }
 }
 
-.shots .shot {
+.shots .shot,
+.shots .demo {
   border-radius: var(--r-lg);
   box-shadow: var(--shadow-card);
 }
@@ -1793,7 +1801,8 @@ html.zoom-open {
   margin: 0;
 }
 
-.zoom__figure img {
+.zoom__figure img,
+.zoom__figure video {
   display: block;
   max-inline-size: 100%;
   max-block-size: calc(100dvh - 2 * clamp(16px, 4vw, 56px) - 3.5em);
@@ -1803,6 +1812,12 @@ html.zoom-open {
   box-shadow:
     0 0 0 1px var(--border-medium),
     0 40px 120px rgba(0, 0, 0, 0.7);
+}
+
+/* ⚠ The slot not in use (the picture or the video) is `hidden`, which the
+ * `display: block` above would otherwise overrule. */
+.zoom__figure [hidden] {
+  display: none;
 }
 
 .zoom__figure figcaption {

@@ -696,5 +696,6 @@
   "changelog.186e93b3edac": "**De lijst van elk keuzemenu is leesbaar in elk thema en elke skin.** De opties stonden in de lichte tekst van de app op de witte lijst van het systeem, zodat alleen de gemarkeerde te lezen was.",
   "changelog.5788a29cdee7": "**De witte toetsen van het schermklavier tonen hun namen.** Ze waren lichte tekst op de witte voet van de toets in het donkere thema.",
   "changelog.958aa1bbe8f9": "**Stijl opslaan is even groot als de knoppen ernaast** in de Stijl-editor.",
-  "changelog.2b3d3275d6af": "**De kop van een sectie in Songmodus tekent nooit meer het ene over het andere.** Een korte sectie tekende zijn drop-out-getal en decay-schakelaar over het aantal maten, en bij aanwijzen kwamen de knoppen voor loop, slot en opnieuw gooien op die twee en op elkaar; nu wijkt de naam."
+  "changelog.2b3d3275d6af": "**De kop van een sectie in Songmodus tekent nooit meer het ene over het andere.** Een korte sectie tekende zijn drop-out-getal en decay-schakelaar over het aantal maten, en bij aanwijzen kwamen de knoppen voor loop, slot en opnieuw gooien op die twee en op elkaar; nu wijkt de naam.",
+  "changelog.97d994def3d3": "**De maan of de zon brandt voor de modus die in gebruik is, en Systeem volgen is een aan/uit-schakelaar.** Staat Systeem volgen aan, dan branden de monitor en de modus die het systeem toont; druk er nog eens op en die modus blijft, waarna de maan of de zon het overneemt."
 }

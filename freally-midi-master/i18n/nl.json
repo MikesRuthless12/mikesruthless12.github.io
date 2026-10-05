@@ -529,5 +529,11 @@
   "see.title": "Zo ziet het eruit",
   "site.tagline": "Artiestgetrouwe MIDI, gegenereerd op de track waar je al aan werkt.",
   "documentation.5b1002aa": "De toetsen beslaan het hele midden van het venster — 3, 5 of 7 octaven, nooit gescrold — en elke toets draagt zijn naam: elke C vet, en de naam langs de toets omhoog geschreven als de toets te smal is om hem dwars te schrijven. De octaafpijlen en het aantal Octaven staan in de balk boven de toetsen, en de knop Klavier licht op zolang het klavier open is.",
-  "index.5ab1e750": "Songmodus: een arrangement van 72 maten op een tijdlijn, met INTRO-, VERSE-, HOOK-, BRIDGE- en OUTRO-secties en één bewerkbare clip per partij — drums, akkoorden, melodie en tegenmelodie —, elk met een eigen MIDI- en Audio-chip."
+  "index.5ab1e750": "Songmodus: een arrangement van 72 maten op een tijdlijn, met INTRO-, VERSE-, HOOK-, BRIDGE- en OUTRO-secties en één bewerkbare clip per partij — drums, akkoorden, melodie en tegenmelodie —, elk met een eigen MIDI- en Audio-chip.",
+  "documentation.a50d4359": "Kies iemand uit het rooster, open een generator, druk op Genereren, speel het af en loop de takes langs.",
+  "documentation.11d77453": "Songmodus legt een heel arrangement op een tijdlijn; de kop van elke sectie heeft een eigen loop, slot en opnieuw gooien.",
+  "documentation.c484a896": "3, 5 of 7 octaven over het hele midden, elke toets benoemd, en de knop Klavier verlicht zolang het open is.",
+  "documentation.d356edf8": "Donker en licht",
+  "documentation.36880dc6": "De drie knoppen onderaan het venster kiezen het uiterlijk. De maan brandt zolang de app donker is, de zon zolang hij licht is. De monitor volgt de instelling van je computer en blijft branden zolang hij dat doet; druk er nog eens op en de app houdt de modus die hij toont, en de maan of de zon neemt het vanaf daar over.",
+  "documentation.12b25fd9": "De zon voor licht, de maan voor donker en de monitor om je computer te volgen."
 }
