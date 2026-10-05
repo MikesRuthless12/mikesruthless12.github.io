@@ -416,7 +416,6 @@
   "features.d19d4e76": "2.413 stili di artisti e produttori. 1.648 strumenti. Oltre 96 milioni di riprese distinte per parte. Trasforma qualsiasi file audio in MIDI. Ri-sogna qualsiasi idea in quattro. Arrangia un brano intero. <strong>Ogni funzione, per tutti, gratis oggi.</strong>",
   "features.d452e239": "Perché è costruito come è",
   "features.d4dc7d3d": "È anche uno strumento",
-  "features.dacd8e46": "Modalità Brano: un arrangiamento di 56 battute su una linea del tempo, con sezioni INTRO, STROFA, RITORNELLO e OUTRO e una clip modificabile per parte — batteria, accordi, melodia e controcanto — ognuna con il proprio gettone MIDI e Audio.",
   "features.dc9d4584": "A pagamento",
   "features.dce5f5da": "nessun ML",
   "features.ddfa7bdc": "Blocca ciò che ti piace, rilancia il resto",
@@ -529,5 +528,6 @@
   "see.intro": "Il plugin in funzione: una melodia generata con la tastiera da cui la suoni, e un arrangiamento intero su una timeline.",
   "see.title": "Come appare",
   "site.tagline": "MIDI fedele all’artista, generato sulla traccia su cui stai già lavorando.",
-  "documentation.5b1002aa": "I tasti occupano tutto il centro della finestra — 3, 5 o 7 ottave, senza mai scorrere — e ogni tasto ha il suo nome: ogni C in grassetto, e il nome scritto lungo il tasto quando è troppo stretto per scriverlo di traverso. Le frecce d’ottava e il numero di Ottave stanno nella barra sopra i tasti, e il pulsante Tastiera si illumina finché la tastiera è aperta."
+  "documentation.5b1002aa": "I tasti occupano tutto il centro della finestra — 3, 5 o 7 ottave, senza mai scorrere — e ogni tasto ha il suo nome: ogni C in grassetto, e il nome scritto lungo il tasto quando è troppo stretto per scriverlo di traverso. Le frecce d’ottava e il numero di Ottave stanno nella barra sopra i tasti, e il pulsante Tastiera si illumina finché la tastiera è aperta.",
+  "index.5ab1e750": "Modalità Brano: un arrangiamento di 72 battute su una timeline, con sezioni INTRO, VERSE, HOOK, BRIDGE e OUTRO e un clip modificabile per parte — batteria, accordi, melodia e controcanto —, ciascuno con il proprio chip MIDI e Audio."
 }

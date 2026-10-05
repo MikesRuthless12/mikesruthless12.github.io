@@ -416,7 +416,6 @@
   "features.d19d4e76": "2.413 artiest- en producerstijlen. 1.648 instrumenten. Meer dan 96 miljoen verschillende takes per onderdeel. Maak van elk audiobestand MIDI. Droom elk idee uit naar vier. Arrangeer een hele song. <strong>Elke functie, voor iedereen, vandaag gratis.</strong>",
   "features.d452e239": "Waarom het gebouwd is zoals het is",
   "features.d4dc7d3d": "Het is ook een instrument",
-  "features.dacd8e46": "Songmodus: een arrangement van 56 maten op een tijdlijn, met INTRO-, COUPLET-, REFREIN- en OUTRO-secties en één bewerkbare clip per onderdeel — drums, akkoorden, melodie en tegenmelodie — elk met zijn eigen MIDI- en Audio-chip.",
   "features.dc9d4584": "Betaald",
   "features.dce5f5da": "geen ML",
   "features.ddfa7bdc": "Zet vast wat je bevalt, trek de rest opnieuw",
@@ -529,5 +528,6 @@
   "see.intro": "De plug-in aan het werk: een gegenereerde melodie met het toetsenbord waarop je hem speelt, en een heel arrangement op een tijdlijn.",
   "see.title": "Zo ziet het eruit",
   "site.tagline": "Artiestgetrouwe MIDI, gegenereerd op de track waar je al aan werkt.",
-  "documentation.5b1002aa": "De toetsen beslaan het hele midden van het venster — 3, 5 of 7 octaven, nooit gescrold — en elke toets draagt zijn naam: elke C vet, en de naam langs de toets omhoog geschreven als de toets te smal is om hem dwars te schrijven. De octaafpijlen en het aantal Octaven staan in de balk boven de toetsen, en de knop Klavier licht op zolang het klavier open is."
+  "documentation.5b1002aa": "De toetsen beslaan het hele midden van het venster — 3, 5 of 7 octaven, nooit gescrold — en elke toets draagt zijn naam: elke C vet, en de naam langs de toets omhoog geschreven als de toets te smal is om hem dwars te schrijven. De octaafpijlen en het aantal Octaven staan in de balk boven de toetsen, en de knop Klavier licht op zolang het klavier open is.",
+  "index.5ab1e750": "Songmodus: een arrangement van 72 maten op een tijdlijn, met INTRO-, VERSE-, HOOK-, BRIDGE- en OUTRO-secties en één bewerkbare clip per partij — drums, akkoorden, melodie en tegenmelodie —, elk met een eigen MIDI- en Audio-chip."
 }

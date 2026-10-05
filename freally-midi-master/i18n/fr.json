@@ -416,7 +416,6 @@
   "features.d19d4e76": "2 413 styles d’artistes et de producteurs. 1 648 instruments. Plus de 96 millions de prises distinctes par partie. Transformez n’importe quel fichier audio en MIDI. Re-rêvez n’importe quelle idée en quatre. Arrangez un morceau entier. <strong>Chaque fonction, pour tout le monde, gratuite aujourd’hui.</strong>",
   "features.d452e239": "Pourquoi c’est construit comme ça",
   "features.d4dc7d3d": "C’est aussi un instrument",
-  "features.dacd8e46": "Mode Morceau : un arrangement de 56 mesures sur une frise, avec des sections INTRO, COUPLET, REFRAIN et OUTRO et un clip modifiable par partie — batterie, accords, mélodie et contre-mélodie — chacun portant son propre jeton MIDI et Audio.",
   "features.dc9d4584": "Payant",
   "features.dce5f5da": "pas de ML",
   "features.ddfa7bdc": "Verrouillez ce qui vous plaît, relancez le reste",
@@ -529,5 +528,6 @@
   "see.intro": "Le plugin en marche : une mélodie générée avec le clavier d’où vous la jouez, et un arrangement complet sur une ligne de temps.",
   "see.title": "À quoi il ressemble",
   "site.tagline": "Du MIDI fidèle à l’artiste, généré sur la piste sur laquelle vous travaillez déjà.",
-  "documentation.5b1002aa": "Les touches occupent tout le centre de la fenêtre — 3, 5 ou 7 octaves, sans jamais défiler — et chaque touche porte son nom : chaque C en gras, et le nom écrit le long de la touche quand elle est trop étroite pour l’écrire en travers. Les flèches d’octave et l’Étendue se trouvent dans la barre au-dessus des touches, et le bouton Clavier s’allume tant que le clavier est ouvert."
+  "documentation.5b1002aa": "Les touches occupent tout le centre de la fenêtre — 3, 5 ou 7 octaves, sans jamais défiler — et chaque touche porte son nom : chaque C en gras, et le nom écrit le long de la touche quand elle est trop étroite pour l’écrire en travers. Les flèches d’octave et l’Étendue se trouvent dans la barre au-dessus des touches, et le bouton Clavier s’allume tant que le clavier est ouvert.",
+  "index.5ab1e750": "Mode Chanson : un arrangement de 72 mesures sur une timeline, avec des sections INTRO, VERSE, HOOK, BRIDGE et OUTRO et un clip modifiable par partie — batterie, accords, mélodie et contre-mélodie —, chacun avec sa propre puce MIDI et Audio."
 }

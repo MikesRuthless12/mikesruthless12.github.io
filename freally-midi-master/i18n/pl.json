@@ -416,7 +416,6 @@
   "features.d19d4e76": "2 413 stylów artystów i producentów. 1 648 instrumentów. Ponad 96 milionów różnych podejść na partię. Zamień dowolny plik dźwiękowy w MIDI. Wyśnij dowolny pomysł na cztery. Zaaranżuj cały utwór. <strong>Każda funkcja, dla każdego, dziś darmowa.</strong>",
   "features.d452e239": "Dlaczego jest zbudowany tak, jak jest",
   "features.d4dc7d3d": "To też instrument",
-  "features.dacd8e46": "Tryb Utwór: 56-taktowa aranżacja na osi czasu, z sekcjami INTRO, ZWROTKA, REFREN i OUTRO oraz jednym edytowalnym klipem na partię — perkusja, akordy, melodia i kontrmelodia — każdy z własnym żetonem MIDI i Audio.",
   "features.dc9d4584": "Płatny",
   "features.dce5f5da": "bez uczenia maszynowego",
   "features.ddfa7bdc": "Zablokuj to, co ci się podoba, przelosuj resztę",
@@ -529,5 +528,6 @@
   "see.intro": "Wtyczka w działaniu: wygenerowana melodia z klawiaturą, z której ją grasz, i cała aranżacja na osi czasu.",
   "see.title": "Jak to wygląda",
   "site.tagline": "MIDI wierne artyście, generowane na ścieżce, nad którą już pracujesz.",
-  "documentation.5b1002aa": "Klawisze zajmują cały środek okna — 3, 5 lub 7 oktaw, bez przewijania — a każdy klawisz ma swoją nazwę: każde C pogrubione, a nazwa zapisana wzdłuż klawisza, gdy jest on zbyt wąski, by zapisać ją w poprzek. Strzałki oktaw i liczba Oktaw są na pasku nad klawiszami, a przycisk Klawiatura świeci, dopóki klawiatura jest otwarta."
+  "documentation.5b1002aa": "Klawisze zajmują cały środek okna — 3, 5 lub 7 oktaw, bez przewijania — a każdy klawisz ma swoją nazwę: każde C pogrubione, a nazwa zapisana wzdłuż klawisza, gdy jest on zbyt wąski, by zapisać ją w poprzek. Strzałki oktaw i liczba Oktaw są na pasku nad klawiszami, a przycisk Klawiatura świeci, dopóki klawiatura jest otwarta.",
+  "index.5ab1e750": "Tryb Utwór: aranżacja na 72 takty na osi czasu, z sekcjami INTRO, VERSE, HOOK, BRIDGE i OUTRO oraz jednym edytowalnym klipem na partię — perkusja, akordy, melodia i kontrmelodia — każdy z własnym chipem MIDI i Audio."
 }

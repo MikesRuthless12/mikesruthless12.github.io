@@ -416,7 +416,6 @@
   "features.d19d4e76": "2.413 estilos de artistas y productores. 1.648 instrumentos. Más de 96 millones de tomas distintas por parte. Convierte cualquier archivo de audio en MIDI. Vuelve a soñar cualquier idea en cuatro. Arregla una canción entera. <strong>Cada función, para todos, gratis hoy.</strong>",
   "features.d452e239": "Por qué está construido como está",
   "features.d4dc7d3d": "También es un instrumento",
-  "features.dacd8e46": "Modo Canción: un arreglo de 56 compases en una línea de tiempo, con secciones INTRO, VERSO, ESTRIBILLO y OUTRO y un clip editable por parte — batería, acordes, melodía y contramelodía — cada uno con su propia ficha de MIDI y de Audio.",
   "features.dc9d4584": "De pago",
   "features.dce5f5da": "sin ML",
   "features.ddfa7bdc": "Fija lo que te guste, vuelve a tirar el resto",
@@ -529,5 +528,6 @@
   "see.intro": "El plugin en marcha: una melodía generada con el teclado desde el que la tocas, y un arreglo completo en una línea de tiempo.",
   "see.title": "Así se ve",
   "site.tagline": "MIDI fiel al artista, generado en la pista en la que ya estás trabajando.",
-  "documentation.5b1002aa": "Las teclas ocupan todo el centro de la ventana — 3, 5 o 7 octavas, sin desplazarse nunca — y cada tecla lleva su nombre: cada C en negrita, y el nombre escrito a lo largo de la tecla cuando es demasiado estrecha para escribirlo de lado a lado. Las flechas de octava y el número de octavas están en la barra sobre las teclas, y el botón Teclado se ilumina mientras el teclado está abierto."
+  "documentation.5b1002aa": "Las teclas ocupan todo el centro de la ventana — 3, 5 o 7 octavas, sin desplazarse nunca — y cada tecla lleva su nombre: cada C en negrita, y el nombre escrito a lo largo de la tecla cuando es demasiado estrecha para escribirlo de lado a lado. Las flechas de octava y el número de octavas están en la barra sobre las teclas, y el botón Teclado se ilumina mientras el teclado está abierto.",
+  "index.5ab1e750": "Modo Canción: un arreglo de 72 compases en una línea de tiempo, con secciones INTRO, VERSE, HOOK, BRIDGE y OUTRO y un clip editable por parte — batería, acordes, melodía y contramelodía —, cada uno con su propia pastilla MIDI y Audio."
 }

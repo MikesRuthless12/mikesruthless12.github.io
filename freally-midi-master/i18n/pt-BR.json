@@ -416,7 +416,6 @@
   "features.d19d4e76": "2.413 estilos de artistas e produtores. 1.648 instrumentos. Mais de 96 milhões de tomadas distintas por parte. Transforme qualquer arquivo de áudio em MIDI. Re-sonhe qualquer ideia em quatro. Arranje uma música inteira. <strong>Cada recurso, para todos, grátis hoje.</strong>",
   "features.d452e239": "Por que é construído do jeito que é",
   "features.d4dc7d3d": "Também é um instrumento",
-  "features.dacd8e46": "Modo Música: um arranjo de 56 compassos numa linha de tempo, com seções INTRO, VERSO, REFRÃO e OUTRO e um clipe editável por parte — bateria, acordes, melodia e contramelodia — cada um carregando sua própria ficha de MIDI e de Áudio.",
   "features.dc9d4584": "Pago",
   "features.dce5f5da": "sem ML",
   "features.ddfa7bdc": "Trave o que gostar, sorteie o resto de novo",
@@ -529,5 +528,6 @@
   "see.intro": "O plugin em funcionamento: uma melodia gerada com o teclado em que você a toca, e um arranjo inteiro numa linha do tempo.",
   "see.title": "Como ele é",
   "site.tagline": "MIDI fiel ao artista, gerado na trilha em que você já está trabalhando.",
-  "documentation.5b1002aa": "As teclas ocupam todo o centro da janela — 3, 5 ou 7 oitavas, sem nunca rolar — e cada tecla tem seu nome: cada C em negrito, e o nome escrito ao longo da tecla quando ela é estreita demais para escrevê-lo de través. As setas de oitava e o número de Oitavas ficam na barra acima das teclas, e o botão Teclado acende enquanto o teclado está aberto."
+  "documentation.5b1002aa": "As teclas ocupam todo o centro da janela — 3, 5 ou 7 oitavas, sem nunca rolar — e cada tecla tem seu nome: cada C em negrito, e o nome escrito ao longo da tecla quando ela é estreita demais para escrevê-lo de través. As setas de oitava e o número de Oitavas ficam na barra acima das teclas, e o botão Teclado acende enquanto o teclado está aberto.",
+  "index.5ab1e750": "Modo Música: um arranjo de 72 compassos numa linha do tempo, com seções INTRO, VERSE, HOOK, BRIDGE e OUTRO e um clipe editável por parte — bateria, acordes, melodia e contramelodia —, cada um com seu próprio chip MIDI e Audio."
 }

@@ -416,7 +416,6 @@
   "features.d19d4e76": "2.413 Künstler- und Produzentenstile. 1.648 Instrumente. Über 96 Millionen verschiedene Takes pro Part. Verwandle jede Audiodatei in MIDI. Träume jede Idee in vier. Arrangiere einen ganzen Song. <strong>Jede Funktion, für alle, heute kostenlos.</strong>",
   "features.d452e239": "Warum es so gebaut ist, wie es ist",
   "features.d4dc7d3d": "Es ist auch ein Instrument",
-  "features.dacd8e46": "Song-Modus: ein 56-taktiges Arrangement auf einer Zeitleiste, mit INTRO-, VERSE-, HOOK- und OUTRO-Abschnitten und einem bearbeitbaren Clip pro Part — Drums, Akkorde, Melodie und Gegenmelodie — jeder mit seinem eigenen MIDI- und Audio-Chip.",
   "features.dc9d4584": "Kostenpflichtig",
   "features.dce5f5da": "kein ML",
   "features.ddfa7bdc": "Halte fest, was dir gefällt, würfle den Rest neu",
@@ -529,5 +528,6 @@
   "see.intro": "Das Plugin im Einsatz: eine generierte Melodie mit der Tastatur, auf der du sie spielst, und ein ganzes Arrangement auf einer Zeitleiste.",
   "see.title": "So sieht es aus",
   "site.tagline": "Künstlergenaues MIDI, erzeugt auf der Spur, an der du schon arbeitest.",
-  "documentation.5b1002aa": "Die Tasten erstrecken sich über die ganze Mitte des Fensters — 3, 5 oder 7 Oktaven, nie gescrollt — und jede Taste trägt ihren Namen: jedes C fett, und der Name läuft an der Taste hinauf, wenn sie zu schmal ist, um ihn quer zu schreiben. Die Oktavpfeile und die Anzahl der Oktaven sitzen in der Leiste über den Tasten, und die Schaltfläche Klaviatur leuchtet, solange die Klaviatur offen ist."
+  "documentation.5b1002aa": "Die Tasten erstrecken sich über die ganze Mitte des Fensters — 3, 5 oder 7 Oktaven, nie gescrollt — und jede Taste trägt ihren Namen: jedes C fett, und der Name läuft an der Taste hinauf, wenn sie zu schmal ist, um ihn quer zu schreiben. Die Oktavpfeile und die Anzahl der Oktaven sitzen in der Leiste über den Tasten, und die Schaltfläche Klaviatur leuchtet, solange die Klaviatur offen ist.",
+  "index.5ab1e750": "Song-Modus: ein Arrangement über 72 Takte auf einer Zeitleiste, mit den Abschnitten INTRO, VERSE, HOOK, BRIDGE und OUTRO und einem bearbeitbaren Clip je Part — Drums, Akkorde, Melodie und Gegenmelodie —, jeder mit eigenem MIDI- und Audio-Chip."
 }

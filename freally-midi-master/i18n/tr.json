@@ -416,7 +416,6 @@
   "features.d19d4e76": "2.413 sanatçı ve yapımcı tarzı. 1.648 enstrüman. Parti başına 96 milyondan fazla ayrı çekim. Herhangi bir ses dosyasını MIDI’ye çevir. Herhangi bir fikri dörde düşle. Bütün bir şarkıyı düzenle. <strong>Her özellik, herkes için, bugün ücretsiz.</strong>",
   "features.d452e239": "Neden olduğu gibi kurulmuş",
   "features.d4dc7d3d": "Aynı zamanda bir enstrüman",
-  "features.dacd8e46": "Şarkı modu: bir zaman çizelgesinde 56 ölçülük düzenleme; GİRİŞ, BÖLÜM, NAKARAT ve ÇIKIŞ bölümleri ve parti başına bir düzenlenebilir klip — davul, akorlar, melodi ve karşı melodi — her biri kendi MIDI ve Ses fişini taşır.",
   "features.dc9d4584": "Ücretli",
   "features.dce5f5da": "makine öğrenmesi yok",
   "features.ddfa7bdc": "Beğendiğini kilitle, gerisini yeniden at",
@@ -529,5 +528,6 @@
   "see.intro": "Çalışırken eklenti: üretilmiş bir melodi ve onu çaldığınız klavye, ve bir zaman çizelgesinde bütün bir düzenleme.",
   "see.title": "Nasıl görünüyor",
   "site.tagline": "Sanatçıya sadık MIDI, üzerinde zaten çalıştığın kanalda üretilir.",
-  "documentation.5b1002aa": "Tuşlar pencerenin tüm ortasını kaplar — 3, 5 ya da 7 oktav, hiç kaydırmadan — ve her tuşun adı yazar: her C kalın, tuş adı yatay yazılamayacak kadar darsa ad tuş boyunca dikey yazılır. Oktav okları ve Oktav sayısı tuşların üstündeki çubuktadır, Klavye düğmesi de klavye açık olduğu sürece yanar."
+  "documentation.5b1002aa": "Tuşlar pencerenin tüm ortasını kaplar — 3, 5 ya da 7 oktav, hiç kaydırmadan — ve her tuşun adı yazar: her C kalın, tuş adı yatay yazılamayacak kadar darsa ad tuş boyunca dikey yazılır. Oktav okları ve Oktav sayısı tuşların üstündeki çubuktadır, Klavye düğmesi de klavye açık olduğu sürece yanar.",
+  "index.5ab1e750": "Şarkı Modu: zaman çizelgesinde 72 ölçülük bir aranjman; INTRO, VERSE, HOOK, BRIDGE ve OUTRO bölümleri ve her partisyon için düzenlenebilir bir klip — davul, akorlar, melodi ve karşı melodi —, her birinin kendi MIDI ve Audio çipi var."
 }
