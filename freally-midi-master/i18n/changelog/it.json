@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` installa dove guardano gli host**: nelle cartelle VST3 e CLAP di sistema su Windows oltre a quelle dell’utente, copiando invece di collegare, e nomina ogni copia più vecchia che un host caricherebbe al suo posto, fallendo.",
   "changelog.186e93b3edac": "**L’elenco di ogni menu a discesa si legge in ogni tema e skin.** Le opzioni erano disegnate con il testo chiaro dell’app sull’elenco bianco del sistema, così si leggeva solo quella evidenziata.",
   "changelog.5788a29cdee7": "**I tasti bianchi della tastiera a schermo mostrano i loro nomi.** Erano testo chiaro sul piede bianco del tasto nel tema scuro.",
-  "changelog.958aa1bbe8f9": "**Salva stile ha la misura dei pulsanti accanto** nell’Editor di stile."
+  "changelog.958aa1bbe8f9": "**Salva stile ha la misura dei pulsanti accanto** nell’Editor di stile.",
+  "changelog.2b3d3275d6af": "**L’intestazione di una sezione in modalità Brano non disegna più una cosa sopra l’altra.** Una sezione corta disegnava il numero di drop-out e l’interruttore di decay sopra il numero di battute, e al passaggio del mouse i pulsanti di loop, blocco e nuovo tiro finivano su quei due e l’uno sull’altro; ora è il nome a farsi da parte."
 }

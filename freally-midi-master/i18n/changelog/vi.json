@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` cài vào nơi các host tìm**: các thư mục VST3 và CLAP của hệ thống trên Windows cùng với thư mục của người dùng, bằng cách sao chép thay vì liên kết, và nó nêu tên rồi báo lỗi với bất kỳ bản cũ hơn nào mà host sẽ nạp thay vào đó.",
   "changelog.186e93b3edac": "**Danh sách của mọi menu thả xuống đều đọc được ở mọi chủ đề và giao diện.** Các tùy chọn được vẽ bằng chữ sáng của ứng dụng trên danh sách trắng của hệ thống, nên chỉ tùy chọn được tô sáng là đọc được.",
   "changelog.5788a29cdee7": "**Phím trắng của bàn phím trên màn hình hiện tên của chúng.** Trước đây tên là chữ sáng trên phần chân trắng của phím ở chủ đề tối.",
-  "changelog.958aa1bbe8f9": "**Lưu phong cách giờ có kích thước bằng các nút bên cạnh** trong Trình soạn phong cách."
+  "changelog.958aa1bbe8f9": "**Lưu phong cách giờ có kích thước bằng các nút bên cạnh** trong Trình soạn phong cách.",
+  "changelog.2b3d3275d6af": "**Đầu đề của một đoạn trong Chế độ Bài hát không còn vẽ thứ này đè lên thứ khác.** Một đoạn ngắn vẽ số drop-out và công tắc decay đè lên số ô nhịp, và khi rê chuột, các nút lặp, khóa và gieo lại nằm đè lên hai thứ đó và lên nhau; giờ thì tên sẽ nhường chỗ."
 }

@@ -768,6 +768,80 @@
     });
   }
 
+  // ── a screenshot opens large ────────────────────────────────────────────
+
+  /**
+   * ⛔ Every screenshot is a button that opens it whole, in the middle of the
+   * screen; the X, Escape or a click outside the picture closes it (owner,
+   * 2026-10-05: *"enlarge the images into the center of the screen and be able
+   * to exit out of them with an "X""*). One native modal `<dialog>` for the
+   * page: it keeps focus while open and gives it back to the screenshot after.
+   */
+  function wireZooms() {
+    var shots = document.querySelectorAll('.shot > img');
+    if (shots.length === 0) return;
+    var dialog = document.createElement('dialog');
+    if (typeof dialog.showModal !== 'function') return;
+    dialog.className = 'zoom';
+    var close = document.createElement('button');
+    close.type = 'button';
+    close.className = 'zoom__close';
+    close.setAttribute('aria-label', 'Close');
+    // ⚠ The key quoted on its own: that is how the builder finds the keys
+    // kit.js writes, and puts them in every language's catalogue.
+    close.setAttribute('data-i18n-attr', 'aria-label:' + 'kit.zoom.close');
+    close.innerHTML =
+      '<svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6 6 18"/></svg>';
+    var figure = document.createElement('figure');
+    figure.className = 'zoom__figure';
+    var big = document.createElement('img');
+    big.decoding = 'async';
+    var caption = document.createElement('figcaption');
+    figure.appendChild(big);
+    figure.appendChild(caption);
+    dialog.appendChild(close);
+    dialog.appendChild(figure);
+    document.body.appendChild(dialog);
+    var opener = null;
+
+    function show(img, button) {
+      opener = button;
+      big.src = img.getAttribute('src');
+      big.alt = img.alt;
+      var text = button.parentNode.querySelector('figcaption');
+      caption.textContent = text ? text.textContent : '';
+      caption.hidden = caption.textContent === '';
+      root.classList.add('zoom-open');
+      dialog.showModal();
+      close.focus();
+    }
+
+    function wrap(img) {
+      var button = document.createElement('button');
+      button.type = 'button';
+      button.className = 'shot__zoom';
+      button.setAttribute('aria-haspopup', 'dialog');
+      img.parentNode.insertBefore(button, img);
+      button.appendChild(img);
+      button.addEventListener('click', function () {
+        show(img, button);
+      });
+    }
+
+    for (var i = 0; i < shots.length; i += 1) wrap(shots[i]);
+    close.addEventListener('click', function () {
+      dialog.close();
+    });
+    // ⚠ The backdrop and the space around the picture are the dialog itself.
+    dialog.addEventListener('click', function (event) {
+      if (event.target === dialog) dialog.close();
+    });
+    dialog.addEventListener('close', function () {
+      root.classList.remove('zoom-open');
+      if (opener) opener.focus();
+    });
+  }
+
   /**
    * ⚠ Each part on its own: one failing never takes the others down — and if
    * the reveals themselves fail, everything is shown at once, so a script error
@@ -784,6 +858,7 @@
       wireScrollSpy,
       wireSearch,
       wireStories,
+      wireZooms,
       function () {
         apply(initialLocale());
       },

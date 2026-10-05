@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` host'ların baktığı yere kurar**: Windows'ta kullanıcı klasörlerinin yanında sistemin VST3 ve CLAP klasörlerine, bağlantı yerine kopyalayarak; bir host'un onun yerine yükleyeceği her eski kopyanın adını verir ve başarısız olur.",
   "changelog.186e93b3edac": "**Her açılır menünün listesi her temada ve her kaplamada okunuyor.** Seçenekler uygulamanın açık renkli yazısıyla sistemin beyaz listesine çiziliyordu; yalnızca vurgulanan okunabiliyordu.",
   "changelog.5788a29cdee7": "**Ekran klavyesinin beyaz tuşları adlarını gösteriyor.** Koyu temada tuşun beyaz ucunda açık renkli yazıydılar.",
-  "changelog.958aa1bbe8f9": "**Tarzı kaydet artık yanındaki düğmelerin boyutunda**, Tarz düzenleyicide."
+  "changelog.958aa1bbe8f9": "**Tarzı kaydet artık yanındaki düğmelerin boyutunda**, Tarz düzenleyicide.",
+  "changelog.2b3d3275d6af": "**Şarkı Modunda bir bölümün başlığı artık bir şeyi diğerinin üstüne çizmiyor.** Kısa bir bölüm drop-out sayısını ve decay anahtarını ölçü sayısının üstüne çiziyordu; üzerine gelince döngü, kilit ve yeniden zar at düğmeleri bu ikisinin ve birbirlerinin üstüne biniyordu; artık geri çekilen ad oluyor."
 }

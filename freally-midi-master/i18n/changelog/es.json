@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` instala donde buscan los hosts**: en las carpetas VST3 y CLAP del sistema en Windows además de las del usuario, copiando en lugar de enlazar, y nombra cualquier copia más antigua que un host cargaría en su lugar, y falla con ella.",
   "changelog.186e93b3edac": "**La lista de cada desplegable se lee en todos los temas y skins.** Las opciones se dibujaban con el texto claro de la app sobre la lista blanca del sistema, así que solo se leía la resaltada.",
   "changelog.5788a29cdee7": "**Las teclas blancas del teclado en pantalla muestran sus nombres.** Eran texto claro sobre el pie blanco de la tecla en el tema oscuro.",
-  "changelog.958aa1bbe8f9": "**Guardar estilo tiene el tamaño de los botones de al lado** en el Editor de estilos."
+  "changelog.958aa1bbe8f9": "**Guardar estilo tiene el tamaño de los botones de al lado** en el Editor de estilos.",
+  "changelog.2b3d3275d6af": "**La cabecera de una sección del modo Canción ya no dibuja nada encima de otra cosa.** Una sección corta dibujaba su número de drop-out y el interruptor de decay sobre su número de compases, y al pasar el ratón los botones de bucle, bloqueo y volver a tirar caían sobre esos dos y unos sobre otros; ahora es el nombre el que cede."
 }

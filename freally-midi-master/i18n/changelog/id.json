@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` memasang di tempat yang dicari host**: folder VST3 dan CLAP sistem di Windows selain folder milik pengguna, dengan menyalin alih-alih menautkan, dan menyebut serta gagal pada salinan lama mana pun yang akan dimuat host sebagai gantinya.",
   "changelog.186e93b3edac": "**Daftar setiap dropdown terbaca di setiap tema dan skin.** Opsi digambar dengan teks terang aplikasi di atas daftar putih sistem, sehingga hanya opsi yang disorot yang terbaca.",
   "changelog.5788a29cdee7": "**Tuts putih pada papan tuts di layar menampilkan namanya.** Sebelumnya teks terang di ujung putih tuts pada tema gelap.",
-  "changelog.958aa1bbe8f9": "**Simpan gaya kini seukuran tombol di sebelahnya** di Editor gaya."
+  "changelog.958aa1bbe8f9": "**Simpan gaya kini seukuran tombol di sebelahnya** di Editor gaya.",
+  "changelog.2b3d3275d6af": "**Kepala bagian di Mode Lagu tak lagi menggambar satu hal di atas yang lain.** Bagian pendek menggambar angka drop-out dan sakelar decay di atas jumlah birama, dan saat disorot tombol loop, kunci, dan acak ulang menimpa keduanya serta satu sama lain; kini namanya yang mengalah."
 }

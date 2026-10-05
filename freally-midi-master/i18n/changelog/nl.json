@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` installeert waar de hosts zoeken**: in de systeemmappen voor VST3 en CLAP op Windows en in die van de gebruiker, gekopieerd in plaats van gelinkt, en het noemt elke oudere kopie die een host in plaats daarvan zou laden, en faalt dan.",
   "changelog.186e93b3edac": "**De lijst van elk keuzemenu is leesbaar in elk thema en elke skin.** De opties stonden in de lichte tekst van de app op de witte lijst van het systeem, zodat alleen de gemarkeerde te lezen was.",
   "changelog.5788a29cdee7": "**De witte toetsen van het schermklavier tonen hun namen.** Ze waren lichte tekst op de witte voet van de toets in het donkere thema.",
-  "changelog.958aa1bbe8f9": "**Stijl opslaan is even groot als de knoppen ernaast** in de Stijl-editor."
+  "changelog.958aa1bbe8f9": "**Stijl opslaan is even groot als de knoppen ernaast** in de Stijl-editor.",
+  "changelog.2b3d3275d6af": "**De kop van een sectie in Songmodus tekent nooit meer het ene over het andere.** Een korte sectie tekende zijn drop-out-getal en decay-schakelaar over het aantal maten, en bij aanwijzen kwamen de knoppen voor loop, slot en opnieuw gooien op die twee en op elkaar; nu wijkt de naam."
 }

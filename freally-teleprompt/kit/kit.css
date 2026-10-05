@@ -1742,6 +1742,118 @@ main {
   box-shadow: var(--shadow-card);
 }
 
+/* A screenshot opens large: the button the kit wraps around it, and the one
+ * dialog it opens in — the picture as big as the screen allows, centred, with
+ * an X in the corner. */
+.shot__zoom {
+  display: block;
+  inline-size: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  cursor: zoom-in;
+}
+
+.shot__zoom:focus-visible {
+  outline-offset: -4px;
+}
+
+.zoom {
+  inline-size: 100vw;
+  block-size: 100dvh;
+  max-inline-size: none;
+  max-block-size: none;
+  margin: 0;
+  padding: clamp(16px, 4vw, 56px);
+  border: 0;
+  background: transparent;
+  color: var(--text-body);
+}
+
+.zoom[open] {
+  display: grid;
+  place-items: center;
+}
+
+.zoom::backdrop {
+  background: rgba(5, 7, 5, 0.9);
+  backdrop-filter: blur(8px);
+}
+
+html.zoom-open {
+  overflow: hidden;
+}
+
+.zoom__figure {
+  display: grid;
+  justify-items: center;
+  gap: 14px;
+  max-inline-size: 100%;
+  margin: 0;
+}
+
+.zoom__figure img {
+  display: block;
+  max-inline-size: 100%;
+  max-block-size: calc(100dvh - 2 * clamp(16px, 4vw, 56px) - 3.5em);
+  inline-size: auto;
+  block-size: auto;
+  border-radius: var(--r-lg);
+  box-shadow:
+    0 0 0 1px var(--border-medium),
+    0 40px 120px rgba(0, 0, 0, 0.7);
+}
+
+.zoom__figure figcaption {
+  max-inline-size: var(--measure);
+  font-size: 14px;
+  text-align: center;
+}
+
+.zoom__close {
+  position: fixed;
+  inset-block-start: 16px;
+  inset-inline-end: 16px;
+  display: grid;
+  place-items: center;
+  inline-size: 44px;
+  block-size: 44px;
+  padding: 0;
+  border: 1px solid var(--border-medium);
+  border-radius: 50%;
+  background: var(--bg-card);
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.zoom__close svg {
+  inline-size: 20px;
+  block-size: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+}
+
+.zoom__close:hover {
+  border-color: var(--border-accent);
+  color: var(--accent-bright);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .zoom[open] .zoom__figure {
+    animation: zoom-in var(--dur-base) var(--ease-out);
+  }
+
+  @keyframes zoom-in {
+    from {
+      opacity: 0;
+      transform: scale(0.96);
+    }
+  }
+}
+
 .story {
   margin: 0;
   border-radius: var(--r-lg);

@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` installe là où les hôtes regardent** : dans les dossiers VST3 et CLAP du système sous Windows en plus de ceux de l’utilisateur, par copie plutôt que par lien, et il nomme toute copie plus ancienne qu’un hôte chargerait à la place, puis échoue.",
   "changelog.186e93b3edac": "**La liste de chaque menu déroulant se lit dans chaque thème et chaque skin.** Les options étaient dessinées dans le texte clair de l’app sur la liste blanche du système, si bien que seule l’option surlignée se lisait.",
   "changelog.5788a29cdee7": "**Les touches blanches du clavier à l’écran affichent leurs noms.** C’était un texte clair sur le pied blanc de la touche dans le thème sombre.",
-  "changelog.958aa1bbe8f9": "**Enregistrer le style a la taille des boutons voisins** dans l’Éditeur de style."
+  "changelog.958aa1bbe8f9": "**Enregistrer le style a la taille des boutons voisins** dans l’Éditeur de style.",
+  "changelog.2b3d3275d6af": "**L’en-tête d’une section du mode Chanson ne dessine plus rien par-dessus autre chose.** Une section courte dessinait son nombre de drop-out et son interrupteur de decay sur son nombre de mesures, et un survol posait les boutons de boucle, de verrou et de relance sur ces deux-là et les uns sur les autres ; désormais c’est le nom qui s’efface."
 }

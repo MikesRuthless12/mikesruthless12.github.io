@@ -695,5 +695,6 @@
   "changelog.810e5edf6d32": "**`npm run plugin:install` instala onde os hosts procuram**: nas pastas VST3 e CLAP do sistema no Windows, além das do usuário, copiando em vez de vincular, e aponta qualquer cópia mais antiga que um host carregaria no lugar, falhando.",
   "changelog.186e93b3edac": "**A lista de cada menu suspenso é legível em todo tema e skin.** As opções eram desenhadas com o texto claro do app sobre a lista branca do sistema, então só a destacada podia ser lida.",
   "changelog.5788a29cdee7": "**As teclas brancas do teclado na tela mostram seus nomes.** Eram texto claro sobre o pé branco da tecla no tema escuro.",
-  "changelog.958aa1bbe8f9": "**Salvar estilo tem o tamanho dos botões ao lado** no Editor de estilo."
+  "changelog.958aa1bbe8f9": "**Salvar estilo tem o tamanho dos botões ao lado** no Editor de estilo.",
+  "changelog.2b3d3275d6af": "**O cabeçalho de uma seção do modo Música não desenha mais uma coisa por cima da outra.** Uma seção curta desenhava o número de drop-out e o interruptor de decay sobre o número de compassos, e ao passar o mouse os botões de loop, trava e sortear de novo caíam sobre esses dois e uns sobre os outros; agora é o nome que cede."
 }
