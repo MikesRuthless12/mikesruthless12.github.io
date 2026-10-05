@@ -1765,31 +1765,48 @@ main {
 /* ⛔ The copier's green START, labelled (Flipcopy's owner, 2026-09-26: "an
  * angled 'Start' … over the green button"). Centred on the key where the
  * renders draw it — (388, 266) of 640 × 360 — and turned to the touch panel's
- * 11° tilt; the frame is always left to right, as the render is. The key is ten
- * pixels across in the render, so the label is a readable lime tag over it, and
- * it is the button: pressing it plays the story. Hidden while the story plays. */
+ * 11° tilt; the frame is always left to right, as the render is. ⛔ The key's
+ * own size, the word printed on it, as the app prints it (owner, 2026-10-05:
+ * the site had a "HUGE" start button where the app has "a small START that is
+ * the size of the actual Start button"): the key is ten pixels across in the
+ * 640-pixel render, 1.5625 % of the frame, and the word is 0.55 of its radius
+ * (`CopyMachine`'s start-label). It is the button: pressing it plays the story;
+ * a glow says so, and the target reaches 24 px around the key however small the
+ * frame. Hidden while the story plays. */
 .story__start {
   position: absolute;
   inset-inline-start: 60.66%;
   inset-block-start: 73.94%;
   translate: -50% -50%;
   rotate: 11deg;
-  padding: 0.18em 0.55em;
+  display: grid;
+  place-items: center;
+  inline-size: 1.5625cqi;
+  aspect-ratio: 1;
+  padding: 0;
   border: 0;
-  border-radius: var(--r-pill);
-  background: var(--accent);
+  border-radius: 50%;
+  background: transparent;
   color: var(--bg-base);
-  font: 800 max(9px, 2.1cqi) / 1 var(--font-sans);
-  letter-spacing: 0.12em;
+  font: 800 calc(1.5625cqi * 0.275) / 1 var(--font-sans);
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  white-space: nowrap;
+  overflow: visible;
   cursor: pointer;
-  box-shadow:
-    0 0 0 2px rgba(9, 12, 9, 0.7),
-    0 0 12px rgba(var(--accent-rgb), 0.55);
+  box-shadow: 0 0 0.6cqi 0.15cqi rgba(var(--accent-rgb), 0.75);
+}
+
+/* the target, never smaller than 24 px across */
+.story__start::before {
+  content: '';
+  position: absolute;
+  inset: min(0px, calc((1.5625cqi - 24px) / 2));
+  border-radius: 50%;
 }
 
 .story__start:hover {
-  background: var(--accent-bright);
+  box-shadow: 0 0 0.9cqi 0.3cqi rgba(var(--accent-rgb), 0.95);
 }
 
 .story__start:focus-visible {
