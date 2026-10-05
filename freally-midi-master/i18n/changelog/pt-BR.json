@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Os geradores, a reprodução e a exportação de áudio ainda não estão implementados; os controles deles estão desativados em vez de inertes.",
   "changelog.82af19f3d55a": "O arrastar para fora nativo está construído, mas **não verificado em DAWs reais** — esse é o portão de decisão da Fase 0 e precisa de uma pessoa.",
   "changelog.58fced7db00c": "O menu da bandeja (Show / Quit) não está traduzido.",
-  "changelog.169051a58b53": "Os instaladores não são assinados: espere o SmartScreen no Windows e o Gatekeeper no macOS. Veja as notas da versão para os passos de cada plataforma."
+  "changelog.169051a58b53": "Os instaladores não são assinados: espere o SmartScreen no Windows e o Gatekeeper no macOS. Veja as notas da versão para os passos de cada plataforma.",
+  "changelog.99613a84e077": "**O teclado na tela ocupa todo o centro da janela, com cada tecla nomeada.** As setas de oitava e o número de Oitavas passaram para a barra acima das teclas, então nada fica ao lado delas; oferece 3, 5 ou 7 oitavas, sem nunca rolar (um 9 ou 10 salvo antes volta como 7); uma tecla estreita demais para levar o nome de través o leva escrito ao longo dela; e o botão Teclado acende enquanto o teclado está aberto.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` instala onde os hosts procuram**: nas pastas VST3 e CLAP do sistema no Windows, além das do usuário, copiando em vez de vincular, e aponta qualquer cópia mais antiga que um host carregaria no lugar, falhando.",
+  "changelog.186e93b3edac": "**A lista de cada menu suspenso é legível em todo tema e skin.** As opções eram desenhadas com o texto claro do app sobre a lista branca do sistema, então só a destacada podia ser lida.",
+  "changelog.5788a29cdee7": "**As teclas brancas do teclado na tela mostram seus nomes.** Eram texto claro sobre o pé branco da tecla no tema escuro.",
+  "changelog.958aa1bbe8f9": "**Salvar estilo tem o tamanho dos botões ao lado** no Editor de estilo."
 }

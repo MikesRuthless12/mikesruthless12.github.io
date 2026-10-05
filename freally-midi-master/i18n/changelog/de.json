@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Die Generatoren, die Wiedergabe und der Audio-Export sind noch nicht implementiert; ihre Bedienelemente sind deaktiviert statt wirkungslos.",
   "changelog.82af19f3d55a": "Natives Herausziehen ist gebaut, aber **nicht mit echten DAWs geprüft** — das ist die Entscheidungsschranke von Phase 0, und sie braucht einen Menschen.",
   "changelog.58fced7db00c": "Das Menü im Infobereich (Show / Quit) ist nicht übersetzt.",
-  "changelog.169051a58b53": "Installer sind unsigniert: Rechne mit SmartScreen unter Windows und Gatekeeper unter macOS. Die Schritte pro Plattform stehen in den Release Notes."
+  "changelog.169051a58b53": "Installer sind unsigniert: Rechne mit SmartScreen unter Windows und Gatekeeper unter macOS. Die Schritte pro Plattform stehen in den Release Notes.",
+  "changelog.99613a84e077": "**Die Bildschirmklaviatur erstreckt sich über die ganze Mitte des Fensters, jede Taste benannt.** Die Oktavpfeile und die Anzahl der Oktaven sind in die Leiste über den Tasten gewandert, sodass nichts neben ihnen steht; sie bietet 3, 5 oder 7 Oktaven, nie gescrollt (ein zuvor gespeichertes 9 oder 10 kommt als 7 zurück); eine Taste, die zu schmal ist, um ihren Namen quer zu tragen, trägt ihn an der Taste hinauf; und die Schaltfläche Klaviatur leuchtet, solange die Klaviatur offen ist.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` installiert dort, wo die Hosts suchen**: in die systemweiten VST3- und CLAP-Ordner unter Windows wie in die benutzereigenen, kopiert statt verlinkt — und es nennt jede ältere Kopie, die ein Host stattdessen laden würde, und schlägt dann fehl.",
+  "changelog.186e93b3edac": "**Die Liste jedes Auswahlfelds ist in jedem Theme und jedem Skin lesbar.** Die Optionen wurden in der hellen Schrift der App auf die weiße Liste des Systems gezeichnet, sodass nur die hervorgehobene lesbar war.",
+  "changelog.5788a29cdee7": "**Die weißen Tasten der Bildschirmklaviatur zeigen ihre Namen.** Sie standen im dunklen Theme als helle Schrift auf dem weißen Tastenende.",
+  "changelog.958aa1bbe8f9": "**„Stil speichern“ hat die Größe der Schaltflächen daneben** im Stil-Editor."
 }

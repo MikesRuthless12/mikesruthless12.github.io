@@ -528,5 +528,6 @@
   "roster.type.producer": "Productor",
   "see.intro": "El plugin en marcha: una melodía generada con el teclado desde el que la tocas, y un arreglo completo en una línea de tiempo.",
   "see.title": "Así se ve",
-  "site.tagline": "MIDI fiel al artista, generado en la pista en la que ya estás trabajando."
+  "site.tagline": "MIDI fiel al artista, generado en la pista en la que ya estás trabajando.",
+  "documentation.5b1002aa": "Las teclas ocupan todo el centro de la ventana — 3, 5 o 7 octavas, sin desplazarse nunca — y cada tecla lleva su nombre: cada C en negrita, y el nombre escrito a lo largo de la tecla cuando es demasiado estrecha para escribirlo de lado a lado. Las flechas de octava y el número de octavas están en la barra sobre las teclas, y el botón Teclado se ilumina mientras el teclado está abierto."
 }

@@ -528,5 +528,6 @@
   "roster.type.producer": "Producent",
   "see.intro": "Wtyczka w działaniu: wygenerowana melodia z klawiaturą, z której ją grasz, i cała aranżacja na osi czasu.",
   "see.title": "Jak to wygląda",
-  "site.tagline": "MIDI wierne artyście, generowane na ścieżce, nad którą już pracujesz."
+  "site.tagline": "MIDI wierne artyście, generowane na ścieżce, nad którą już pracujesz.",
+  "documentation.5b1002aa": "Klawisze zajmują cały środek okna — 3, 5 lub 7 oktaw, bez przewijania — a każdy klawisz ma swoją nazwę: każde C pogrubione, a nazwa zapisana wzdłuż klawisza, gdy jest on zbyt wąski, by zapisać ją w poprzek. Strzałki oktaw i liczba Oktaw są na pasku nad klawiszami, a przycisk Klawiatura świeci, dopóki klawiatura jest otwarta."
 }

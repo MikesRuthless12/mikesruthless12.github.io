@@ -528,5 +528,6 @@
   "roster.type.producer": "Producteur",
   "see.intro": "Le plugin en marche : une mélodie générée avec le clavier d’où vous la jouez, et un arrangement complet sur une ligne de temps.",
   "see.title": "À quoi il ressemble",
-  "site.tagline": "Du MIDI fidèle à l’artiste, généré sur la piste sur laquelle vous travaillez déjà."
+  "site.tagline": "Du MIDI fidèle à l’artiste, généré sur la piste sur laquelle vous travaillez déjà.",
+  "documentation.5b1002aa": "Les touches occupent tout le centre de la fenêtre — 3, 5 ou 7 octaves, sans jamais défiler — et chaque touche porte son nom : chaque C en gras, et le nom écrit le long de la touche quand elle est trop étroite pour l’écrire en travers. Les flèches d’octave et l’Étendue se trouvent dans la barre au-dessus des touches, et le bouton Clavier s’allume tant que le clavier est ouvert."
 }

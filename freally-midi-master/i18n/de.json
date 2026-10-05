@@ -528,5 +528,6 @@
   "roster.type.producer": "Produzent",
   "see.intro": "Das Plugin im Einsatz: eine generierte Melodie mit der Tastatur, auf der du sie spielst, und ein ganzes Arrangement auf einer Zeitleiste.",
   "see.title": "So sieht es aus",
-  "site.tagline": "Künstlergenaues MIDI, erzeugt auf der Spur, an der du schon arbeitest."
+  "site.tagline": "Künstlergenaues MIDI, erzeugt auf der Spur, an der du schon arbeitest.",
+  "documentation.5b1002aa": "Die Tasten erstrecken sich über die ganze Mitte des Fensters — 3, 5 oder 7 Oktaven, nie gescrollt — und jede Taste trägt ihren Namen: jedes C fett, und der Name läuft an der Taste hinauf, wenn sie zu schmal ist, um ihn quer zu schreiben. Die Oktavpfeile und die Anzahl der Oktaven sitzen in der Leiste über den Tasten, und die Schaltfläche Klaviatur leuchtet, solange die Klaviatur offen ist."
 }

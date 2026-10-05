@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Generator, pemutaran, dan ekspor audio belum diimplementasikan; kontrolnya dinonaktifkan alih-alih tampak aktif tanpa fungsi.",
   "changelog.82af19f3d55a": "Tarik keluar native sudah dibangun tetapi **belum diverifikasi terhadap DAW sungguhan** — itulah gerbang keputusan Fase 0 dan butuh manusia.",
   "changelog.58fced7db00c": "Menu baki (Show / Quit) belum diterjemahkan.",
-  "changelog.169051a58b53": "Installer tidak ditandatangani: bersiaplah menghadapi SmartScreen di Windows dan Gatekeeper di macOS. Lihat catatan rilis untuk langkah per platform."
+  "changelog.169051a58b53": "Installer tidak ditandatangani: bersiaplah menghadapi SmartScreen di Windows dan Gatekeeper di macOS. Lihat catatan rilis untuk langkah per platform.",
+  "changelog.99613a84e077": "**Papan tuts di layar membentang di seluruh bagian tengah jendela, setiap tuts diberi nama.** Panah oktaf dan jumlah Oktaf pindah ke bilah di atas tuts, jadi tidak ada yang berdiri di sampingnya; tersedia 3, 5, atau 7 oktaf, tanpa pernah bergulir (9 atau 10 yang tersimpan sebelumnya kembali sebagai 7); tuts yang terlalu sempit untuk memuat namanya melintang menuliskannya memanjang; dan tombol Papan tuts menyala selama papan tuts terbuka.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` memasang di tempat yang dicari host**: folder VST3 dan CLAP sistem di Windows selain folder milik pengguna, dengan menyalin alih-alih menautkan, dan menyebut serta gagal pada salinan lama mana pun yang akan dimuat host sebagai gantinya.",
+  "changelog.186e93b3edac": "**Daftar setiap dropdown terbaca di setiap tema dan skin.** Opsi digambar dengan teks terang aplikasi di atas daftar putih sistem, sehingga hanya opsi yang disorot yang terbaca.",
+  "changelog.5788a29cdee7": "**Tuts putih pada papan tuts di layar menampilkan namanya.** Sebelumnya teks terang di ujung putih tuts pada tema gelap.",
+  "changelog.958aa1bbe8f9": "**Simpan gaya kini seukuran tombol di sebelahnya** di Editor gaya."
 }

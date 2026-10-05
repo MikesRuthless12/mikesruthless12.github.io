@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Les générateurs, la lecture et l’export audio ne sont pas encore implémentés ; leurs commandes sont désactivées plutôt qu’inertes.",
   "changelog.82af19f3d55a": "Le glisser-déposer natif vers l’extérieur est construit mais **non vérifié avec de vraies DAW** — c’est le point de décision de la Phase 0, et il faut un humain.",
   "changelog.58fced7db00c": "Le menu de la zone de notification (Show / Quit) n’est pas traduit.",
-  "changelog.169051a58b53": "Les installateurs ne sont pas signés : attendez-vous à SmartScreen sous Windows et à Gatekeeper sous macOS. Consultez les notes de version pour les étapes propres à chaque plateforme."
+  "changelog.169051a58b53": "Les installateurs ne sont pas signés : attendez-vous à SmartScreen sous Windows et à Gatekeeper sous macOS. Consultez les notes de version pour les étapes propres à chaque plateforme.",
+  "changelog.99613a84e077": "**Le clavier à l’écran occupe tout le centre de la fenêtre, chaque touche nommée.** Les flèches d’octave et l’Étendue sont passées dans la barre au-dessus des touches, si bien que rien ne se tient à côté ; il propose 3, 5 ou 7 octaves, sans jamais défiler (un 9 ou un 10 enregistré auparavant revient en 7) ; une touche trop étroite pour porter son nom en travers le porte écrit le long de la touche ; et le bouton Clavier s’allume tant que le clavier est ouvert.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` installe là où les hôtes regardent** : dans les dossiers VST3 et CLAP du système sous Windows en plus de ceux de l’utilisateur, par copie plutôt que par lien, et il nomme toute copie plus ancienne qu’un hôte chargerait à la place, puis échoue.",
+  "changelog.186e93b3edac": "**La liste de chaque menu déroulant se lit dans chaque thème et chaque skin.** Les options étaient dessinées dans le texte clair de l’app sur la liste blanche du système, si bien que seule l’option surlignée se lisait.",
+  "changelog.5788a29cdee7": "**Les touches blanches du clavier à l’écran affichent leurs noms.** C’était un texte clair sur le pied blanc de la touche dans le thème sombre.",
+  "changelog.958aa1bbe8f9": "**Enregistrer le style a la taille des boutons voisins** dans l’Éditeur de style."
 }

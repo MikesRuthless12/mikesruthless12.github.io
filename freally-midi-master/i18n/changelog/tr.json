@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Üreticiler, çalma ve ses dışa verme henüz uygulanmadı; denetimleri etkisiz değil, devre dışı.",
   "changelog.82af19f3d55a": "Yerel dışarı sürükleme kuruldu ama **gerçek DAW’lara karşı doğrulanmadı** — bu, 0. aşamanın karar kapısı ve bir insan gerektiriyor.",
   "changelog.58fced7db00c": "Tepsi menüsü (Show / Quit) çevrilmedi.",
-  "changelog.169051a58b53": "Yükleyiciler imzasız: Windows’ta SmartScreen’i ve macOS’ta Gatekeeper’ı bekle. Platform başına adımlar için sürüm notlarına bak."
+  "changelog.169051a58b53": "Yükleyiciler imzasız: Windows’ta SmartScreen’i ve macOS’ta Gatekeeper’ı bekle. Platform başına adımlar için sürüm notlarına bak.",
+  "changelog.99613a84e077": "**Ekran klavyesi pencerenin tüm ortasını kaplıyor, her tuşun adı var.** Oktav okları ve Oktav sayısı tuşların üstündeki çubuğa taşındı, böylece yanlarında hiçbir şey durmuyor; 3, 5 ya da 7 oktav sunuyor, hiç kaydırmadan (daha önce kaydedilmiş 9 ya da 10, 7 olarak geri geliyor); adını yatay taşıyamayacak kadar dar bir tuşta ad tuş boyunca yazılıyor; ve Klavye düğmesi klavye açık olduğu sürece yanıyor.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` host'ların baktığı yere kurar**: Windows'ta kullanıcı klasörlerinin yanında sistemin VST3 ve CLAP klasörlerine, bağlantı yerine kopyalayarak; bir host'un onun yerine yükleyeceği her eski kopyanın adını verir ve başarısız olur.",
+  "changelog.186e93b3edac": "**Her açılır menünün listesi her temada ve her kaplamada okunuyor.** Seçenekler uygulamanın açık renkli yazısıyla sistemin beyaz listesine çiziliyordu; yalnızca vurgulanan okunabiliyordu.",
+  "changelog.5788a29cdee7": "**Ekran klavyesinin beyaz tuşları adlarını gösteriyor.** Koyu temada tuşun beyaz ucunda açık renkli yazıydılar.",
+  "changelog.958aa1bbe8f9": "**Tarzı kaydet artık yanındaki düğmelerin boyutunda**, Tarz düzenleyicide."
 }

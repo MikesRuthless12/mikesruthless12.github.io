@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Los generadores, la reproducción y la exportación de audio todavía no están implementados; sus controles están desactivados en lugar de inertes.",
   "changelog.82af19f3d55a": "El arrastre nativo está construido pero **sin verificar con DAW reales** — esa es la puerta de decisión de la Fase 0 y necesita a una persona.",
   "changelog.58fced7db00c": "El menú de la bandeja (Show / Quit) no está traducido.",
-  "changelog.169051a58b53": "Los instaladores no están firmados: espera SmartScreen en Windows y Gatekeeper en macOS. Consulta las notas de la versión para los pasos de cada plataforma."
+  "changelog.169051a58b53": "Los instaladores no están firmados: espera SmartScreen en Windows y Gatekeeper en macOS. Consulta las notas de la versión para los pasos de cada plataforma.",
+  "changelog.99613a84e077": "**El teclado en pantalla ocupa todo el centro de la ventana, con cada tecla nombrada.** Las flechas de octava y el número de octavas pasaron a la barra sobre las teclas, así que nada queda a su lado; ofrece 3, 5 o 7 octavas, sin desplazarse nunca (un 9 o un 10 guardado antes vuelve como 7); una tecla demasiado estrecha para llevar su nombre de lado a lado lo lleva escrito a lo largo; y el botón Teclado se ilumina mientras el teclado está abierto.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` instala donde buscan los hosts**: en las carpetas VST3 y CLAP del sistema en Windows además de las del usuario, copiando en lugar de enlazar, y nombra cualquier copia más antigua que un host cargaría en su lugar, y falla con ella.",
+  "changelog.186e93b3edac": "**La lista de cada desplegable se lee en todos los temas y skins.** Las opciones se dibujaban con el texto claro de la app sobre la lista blanca del sistema, así que solo se leía la resaltada.",
+  "changelog.5788a29cdee7": "**Las teclas blancas del teclado en pantalla muestran sus nombres.** Eran texto claro sobre el pie blanco de la tecla en el tema oscuro.",
+  "changelog.958aa1bbe8f9": "**Guardar estilo tiene el tamaño de los botones de al lado** en el Editor de estilos."
 }

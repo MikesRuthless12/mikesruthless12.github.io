@@ -78,11 +78,18 @@
 <li data-i18n-html="changelog.87e36c5e8277"><strong>nih-plug moves one commit</strong> (<code>shared-v3</code>): the fork's <code>ProcessContext::process_mode()</code>, so a plugin knows a block is an offline render even when a CLAP host switched modes without re-initializing it (Freally Flipcopy's machine sounds must never reach a bounce). The adapter and both plugin manifests move together: one <code>nih_plug</code> in the build.</li>
 <li data-i18n-html="changelog.807f6de9d0ba"><strong><code>nih-plug-webview</code> can take files dropped from the OS</strong> (<code>WebViewEditor::with_file_drop_handler</code>, <code>shared-v3</code>, for Freally Flipcopy's glass) — wry's file-drop events with their paths, on the editor's UI thread. Opt-in: without a handler the webview keeps its own behaviour, and MIDI Master's editor sets none.</li>
 </ul>
+<ul>
+<li data-i18n-html="changelog.99613a84e077"><strong>The on-screen keyboard spans the whole middle of the window, every key named.</strong> The octave arrows and the Octaves count moved into the bar above the keys, so nothing stands beside them; it offers 3, 5 or 7 octaves, never scrolled (a 9 or 10 saved before comes back as 7); a key too narrow to hold its name written across has it written up the key; and the Keyboard button lights while the keyboard is open.</li>
+<li data-i18n-html="changelog.810e5edf6d32"><strong><code>npm run plugin:install</code> installs where the hosts look</strong>: the system VST3 and CLAP folders on Windows as well as the per-user ones, copied rather than linked, and it names, and fails on, any older copy a host would load instead.</li>
+</ul>
 <h3 id="unreleased-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
 <ul>
 <li data-i18n-html="changelog.464aedef592b"><strong>A MIDI file of note-ons that never end is refused</strong>, not read: the note limit counts open notes as well as closed ones, and a note-off finds its note in logarithmic time — a file of a million stray note-offs no longer takes seconds.</li>
 <li data-i18n-html="changelog.22e2ad641345"><strong>The drag spool's week-old sweep never deletes audio in a subfolder</strong>, never follows a link, and a spool, spill or file drag refuses a name or path that is not a plain one.</li>
 <li data-i18n-html="changelog.59ff0563db02"><strong>Audio exported at a rate other than the render's is exactly as long as it should be and sits where it should.</strong> The resampler dropped the last frames of every conversion (48,000 frames at 48 kHz came out as 44,098 at 44.1 kHz, not 44,100) and placed everything up to three frames off — +1.17 frames late at 44.1→96 kHz, half a frame early at 96→48 kHz. The length is now <code>frames × to / from</code> to the nearest frame, and the placement is within a fiftieth of a frame at every export rate. This changes the bytes of any export or drag at a non-native rate, and a kit one-shot converted to a device rate other than its own now keeps its last frames; anything at its own rate is unchanged.</li>
+<li data-i18n-html="changelog.186e93b3edac"><strong>Every dropdown's list is readable in every theme and skin.</strong> The options were drawn in the app's light text on the system's white list, so only the highlighted one could be read.</li>
+<li data-i18n-html="changelog.5788a29cdee7"><strong>The on-screen keyboard's white keys show their names.</strong> They were light text on the key's white foot in the dark theme.</li>
+<li data-i18n-html="changelog.958aa1bbe8f9"><strong>Save style is the size of the buttons beside it</strong> in the Style editor.</li>
 </ul>
 </article>
 <article class="release" id="1-0-0rc-2026-09-17">

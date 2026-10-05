@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Generatory, odtwarzanie i eksport audio nie są jeszcze zaimplementowane; ich kontrolki są wyłączone, a nie bezczynne.",
   "changelog.82af19f3d55a": "Natywne przeciąganie na zewnątrz jest zbudowane, ale **niesprawdzone w prawdziwych DAW** — to bramka decyzyjna Fazy 0 i potrzebuje człowieka.",
   "changelog.58fced7db00c": "Menu zasobnika (Show / Quit) nie jest przetłumaczone.",
-  "changelog.169051a58b53": "Instalatory są niepodpisane: spodziewaj się SmartScreen w Windows i Gatekeepera w macOS. Kroki dla każdej platformy znajdziesz w informacjach o wydaniu."
+  "changelog.169051a58b53": "Instalatory są niepodpisane: spodziewaj się SmartScreen w Windows i Gatekeepera w macOS. Kroki dla każdej platformy znajdziesz w informacjach o wydaniu.",
+  "changelog.99613a84e077": "**Klawiatura ekranowa zajmuje cały środek okna, każdy klawisz ma nazwę.** Strzałki oktaw i liczba Oktaw przeszły na pasek nad klawiszami, więc nic nie stoi obok nich; do wyboru 3, 5 lub 7 oktaw, bez przewijania (zapisane wcześniej 9 lub 10 wraca jako 7); klawisz zbyt wąski, by zmieścić nazwę w poprzek, ma ją zapisaną wzdłuż; a przycisk Klawiatura świeci, dopóki klawiatura jest otwarta.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` instaluje tam, gdzie szukają hosty**: w systemowych folderach VST3 i CLAP w Windows oraz w folderach użytkownika, kopiując zamiast linkować, i wskazuje każdą starszą kopię, którą host wczytałby zamiast niej, zgłaszając błąd.",
+  "changelog.186e93b3edac": "**Lista każdego menu rozwijanego jest czytelna w każdym motywie i skórce.** Opcje były rysowane jasnym tekstem aplikacji na białej liście systemu, więc dało się przeczytać tylko podświetloną.",
+  "changelog.5788a29cdee7": "**Białe klawisze klawiatury ekranowej pokazują swoje nazwy.** W ciemnym motywie były jasnym tekstem na białej stopce klawisza.",
+  "changelog.958aa1bbe8f9": "**Zapisz styl ma rozmiar sąsiednich przycisków** w Edytorze stylu."
 }

@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "I generatori, la riproduzione e l’esportazione audio non sono ancora implementati; i loro controlli sono disattivati anziché inerti.",
   "changelog.82af19f3d55a": "Il trascinamento nativo è implementato ma **non verificato con DAW reali** — è il punto di decisione della Fase 0 e richiede una persona.",
   "changelog.58fced7db00c": "Il menu dell’area di notifica (Show / Quit) non è tradotto.",
-  "changelog.169051a58b53": "Gli installer non sono firmati: aspettati SmartScreen su Windows e Gatekeeper su macOS. Vedi le note di release per i passaggi per ciascuna piattaforma."
+  "changelog.169051a58b53": "Gli installer non sono firmati: aspettati SmartScreen su Windows e Gatekeeper su macOS. Vedi le note di release per i passaggi per ciascuna piattaforma.",
+  "changelog.99613a84e077": "**La tastiera a schermo occupa tutto il centro della finestra, con ogni tasto nominato.** Le frecce d’ottava e il numero di Ottave sono passati nella barra sopra i tasti, così accanto non c’è nulla; offre 3, 5 o 7 ottave, senza mai scorrere (un 9 o un 10 salvato prima torna come 7); un tasto troppo stretto per portare il nome di traverso lo porta scritto lungo il tasto; e il pulsante Tastiera si illumina finché la tastiera è aperta.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` installa dove guardano gli host**: nelle cartelle VST3 e CLAP di sistema su Windows oltre a quelle dell’utente, copiando invece di collegare, e nomina ogni copia più vecchia che un host caricherebbe al suo posto, fallendo.",
+  "changelog.186e93b3edac": "**L’elenco di ogni menu a discesa si legge in ogni tema e skin.** Le opzioni erano disegnate con il testo chiaro dell’app sull’elenco bianco del sistema, così si leggeva solo quella evidenziata.",
+  "changelog.5788a29cdee7": "**I tasti bianchi della tastiera a schermo mostrano i loro nomi.** Erano testo chiaro sul piede bianco del tasto nel tema scuro.",
+  "changelog.958aa1bbe8f9": "**Salva stile ha la misura dei pulsanti accanto** nell’Editor di stile."
 }

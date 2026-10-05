@@ -528,5 +528,6 @@
   "roster.type.producer": "Yapımcı",
   "see.intro": "Çalışırken eklenti: üretilmiş bir melodi ve onu çaldığınız klavye, ve bir zaman çizelgesinde bütün bir düzenleme.",
   "see.title": "Nasıl görünüyor",
-  "site.tagline": "Sanatçıya sadık MIDI, üzerinde zaten çalıştığın kanalda üretilir."
+  "site.tagline": "Sanatçıya sadık MIDI, üzerinde zaten çalıştığın kanalda üretilir.",
+  "documentation.5b1002aa": "Tuşlar pencerenin tüm ortasını kaplar — 3, 5 ya da 7 oktav, hiç kaydırmadan — ve her tuşun adı yazar: her C kalın, tuş adı yatay yazılamayacak kadar darsa ad tuş boyunca dikey yazılır. Oktav okları ve Oktav sayısı tuşların üstündeki çubuktadır, Klavye düğmesi de klavye açık olduğu sürece yanar."
 }

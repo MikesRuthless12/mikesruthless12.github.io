@@ -528,5 +528,6 @@
   "roster.type.producer": "Produttore",
   "see.intro": "Il plugin in funzione: una melodia generata con la tastiera da cui la suoni, e un arrangiamento intero su una timeline.",
   "see.title": "Come appare",
-  "site.tagline": "MIDI fedele all’artista, generato sulla traccia su cui stai già lavorando."
+  "site.tagline": "MIDI fedele all’artista, generato sulla traccia su cui stai già lavorando.",
+  "documentation.5b1002aa": "I tasti occupano tutto il centro della finestra — 3, 5 o 7 ottave, senza mai scorrere — e ogni tasto ha il suo nome: ogni C in grassetto, e il nome scritto lungo il tasto quando è troppo stretto per scriverlo di traverso. Le frecce d’ottava e il numero di Ottave stanno nella barra sopra i tasti, e il pulsante Tastiera si illumina finché la tastiera è aperta."
 }

@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "De generatoren, het afspelen en de audio-export zijn nog niet geïmplementeerd; hun bedieningselementen zijn uitgeschakeld in plaats van inert.",
   "changelog.82af19f3d55a": "Native naar buiten slepen is gebouwd maar **niet geverifieerd in echte DAW's** — dat is het beslispunt van Fase 0 en daar is een mens voor nodig.",
   "changelog.58fced7db00c": "Het menu van het systeemvak (Show / Quit) is niet vertaald.",
-  "changelog.169051a58b53": "Installers zijn niet ondertekend: reken op SmartScreen op Windows en Gatekeeper op macOS. Zie de release notes voor de stappen per platform."
+  "changelog.169051a58b53": "Installers zijn niet ondertekend: reken op SmartScreen op Windows en Gatekeeper op macOS. Zie de release notes voor de stappen per platform.",
+  "changelog.99613a84e077": "**Het schermklavier beslaat het hele midden van het venster, elke toets benoemd.** De octaafpijlen en het aantal Octaven zijn naar de balk boven de toetsen verhuisd, zodat er niets naast staat; het biedt 3, 5 of 7 octaven, nooit gescrold (een eerder bewaarde 9 of 10 komt terug als 7); een toets die te smal is om zijn naam dwars te dragen, draagt hem langs de toets omhoog; en de knop Klavier licht op zolang het klavier open is.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` installeert waar de hosts zoeken**: in de systeemmappen voor VST3 en CLAP op Windows en in die van de gebruiker, gekopieerd in plaats van gelinkt, en het noemt elke oudere kopie die een host in plaats daarvan zou laden, en faalt dan.",
+  "changelog.186e93b3edac": "**De lijst van elk keuzemenu is leesbaar in elk thema en elke skin.** De opties stonden in de lichte tekst van de app op de witte lijst van het systeem, zodat alleen de gemarkeerde te lezen was.",
+  "changelog.5788a29cdee7": "**De witte toetsen van het schermklavier tonen hun namen.** Ze waren lichte tekst op de witte voet van de toets in het donkere thema.",
+  "changelog.958aa1bbe8f9": "**Stijl opslaan is even groot als de knoppen ernaast** in de Stijl-editor."
 }

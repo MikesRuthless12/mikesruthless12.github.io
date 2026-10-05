@@ -528,5 +528,6 @@
   "roster.type.producer": "Nhà sản xuất",
   "see.intro": "Plugin khi đang chạy: một giai điệu được tạo cùng bàn phím bạn chơi nó, và cả một bản phối trên dòng thời gian.",
   "see.title": "Trông nó thế nào",
-  "site.tagline": "MIDI đúng phong cách, được tạo ngay trên track bạn đang làm."
+  "site.tagline": "MIDI đúng phong cách, được tạo ngay trên track bạn đang làm.",
+  "documentation.5b1002aa": "Các phím trải khắp phần giữa cửa sổ — 3, 5 hoặc 7 quãng tám, không bao giờ phải cuộn — và phím nào cũng có tên: mỗi nốt C in đậm, và tên được viết dọc theo phím khi phím quá hẹp để viết ngang. Các mũi tên quãng tám và số Quãng tám nằm ở thanh phía trên các phím, còn nút Bàn phím sáng lên khi bàn phím đang mở."
 }

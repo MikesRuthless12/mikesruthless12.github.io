@@ -690,5 +690,10 @@
   "changelog.c2fce6ca915a": "Các bộ tạo, phát lại và xuất âm thanh chưa được triển khai; các nút điều khiển của chúng bị vô hiệu hoá thay vì bấm mà không có tác dụng.",
   "changelog.82af19f3d55a": "Kéo ra gốc đã được dựng nhưng **chưa được kiểm chứng với DAW thật** — đó là cửa quyết định của Giai đoạn 0 và nó cần một con người.",
   "changelog.58fced7db00c": "Menu khay hệ thống (Show / Quit) chưa được dịch.",
-  "changelog.169051a58b53": "Các trình cài đặt chưa được ký: hãy chuẩn bị gặp SmartScreen trên Windows và Gatekeeper trên macOS. Xem ghi chú phát hành để biết các bước cho từng nền tảng."
+  "changelog.169051a58b53": "Các trình cài đặt chưa được ký: hãy chuẩn bị gặp SmartScreen trên Windows và Gatekeeper trên macOS. Xem ghi chú phát hành để biết các bước cho từng nền tảng.",
+  "changelog.99613a84e077": "**Bàn phím trên màn hình trải khắp phần giữa cửa sổ, phím nào cũng có tên.** Các mũi tên quãng tám và số Quãng tám đã chuyển lên thanh phía trên các phím, nên không có gì đứng cạnh chúng; có 3, 5 hoặc 7 quãng tám, không bao giờ phải cuộn (giá trị 9 hoặc 10 đã lưu trước đó trở lại thành 7); phím quá hẹp để ghi tên ngang thì tên được viết dọc theo phím; và nút Bàn phím sáng lên khi bàn phím đang mở.",
+  "changelog.810e5edf6d32": "**`npm run plugin:install` cài vào nơi các host tìm**: các thư mục VST3 và CLAP của hệ thống trên Windows cùng với thư mục của người dùng, bằng cách sao chép thay vì liên kết, và nó nêu tên rồi báo lỗi với bất kỳ bản cũ hơn nào mà host sẽ nạp thay vào đó.",
+  "changelog.186e93b3edac": "**Danh sách của mọi menu thả xuống đều đọc được ở mọi chủ đề và giao diện.** Các tùy chọn được vẽ bằng chữ sáng của ứng dụng trên danh sách trắng của hệ thống, nên chỉ tùy chọn được tô sáng là đọc được.",
+  "changelog.5788a29cdee7": "**Phím trắng của bàn phím trên màn hình hiện tên của chúng.** Trước đây tên là chữ sáng trên phần chân trắng của phím ở chủ đề tối.",
+  "changelog.958aa1bbe8f9": "**Lưu phong cách giờ có kích thước bằng các nút bên cạnh** trong Trình soạn phong cách."
 }

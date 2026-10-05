@@ -112,6 +112,7 @@
   "documentation.58c0f8e2": "No accounts. No telemetry. Nothing about you, your projects or your output is transmitted. Generation, playback, import and export are entirely local.",
   "documentation.58fc0ea4": "Where did the drum loops and the one-shots come from?",
   "documentation.5acc0069": "Pitches are chosen as <strong>scale degrees</strong> and only then turned into MIDI notes, so staying in key is structural rather than filtered for afterwards.",
+  "documentation.5b1002aa": "The keys span the whole middle of the window — 3, 5 or 7 octaves, never scrolled — with every key named: each C in bold, and a name written up the key when the key is too narrow to write it across. The octave arrows and the Octaves count sit in the bar above the keys, and the Keyboard button lights while the keyboard is open.",
   "documentation.5d19dc54": "A preset is a named session — artist, seed, bars and pins. Factory presets are compiled into the binary; your own are written to the platform's per-user data directory, so they outlive any one project.",
   "documentation.5d361274": "<strong>The music you make with it is yours</strong>, with no royalty and no attribution requirement.",
   "documentation.5d4723bf": "<kbd>↑</kbd> / <kbd>↓</kbd>",

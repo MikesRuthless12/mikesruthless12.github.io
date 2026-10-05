@@ -528,5 +528,6 @@
   "roster.type.producer": "Produser",
   "see.intro": "Plugin saat berjalan: melodi yang dihasilkan bersama keyboard tempat Anda memainkannya, dan aransemen utuh di linimasa.",
   "see.title": "Seperti apa tampilannya",
-  "site.tagline": "MIDI yang akurat secara gaya, dibuat langsung di track yang sedang Anda kerjakan."
+  "site.tagline": "MIDI yang akurat secara gaya, dibuat langsung di track yang sedang Anda kerjakan.",
+  "documentation.5b1002aa": "Tuts membentang di seluruh bagian tengah jendela — 3, 5, atau 7 oktaf, tanpa pernah bergulir — dan setiap tuts diberi nama: setiap C tebal, dan nama ditulis memanjang di tuts saat tutsnya terlalu sempit untuk menulisnya melintang. Panah oktaf dan jumlah Oktaf berada di bilah di atas tuts, dan tombol Papan tuts menyala selama papan tuts terbuka."
 }
