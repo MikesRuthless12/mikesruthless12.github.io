@@ -1,0 +1,681 @@
+<!-- Freally MIDI Master — the manual. The contents rail and the search box are
+     the kit's; each <section> is one chapter, its <h2> the rail's entry.
+     ⚠ The shortcut table between the markers is written by
+     scripts/docs-shortcuts.mjs from the app's own catalogue: never by hand. -->
+
+<kit-head>
+  <kit-lede data-i18n="documentation.ca365831">Everything the plugin does, and how it decides what to play.</kit-lede>
+</kit-head>
+
+<kit-manual>
+  <section>
+    <h2 id="formats" data-i18n="documentation.e4253178">Formats &amp; hosts</h2>
+    <p data-i18n-html="documentation.1f0efc8f">Freally MIDI Master is a <strong>CLAP</strong> plugin. VST3 and AU are projected from it rather than implemented separately, which is what makes it loadable in hosts that do not speak CLAP.</p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.3960ec4c">Host</th>
+          <th data-i18n="documentation.041a5dec">Format</th>
+          <th data-i18n="documentation.bae7d5be">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n="documentation.2a47e9fb">Ableton Live 12</td>
+          <td data-i18n="documentation.20a69fa8">VST3</td>
+          <td data-i18n="documentation.c21b9338">Loads and generates</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.3e592955">FL Studio</td>
+          <td data-i18n="documentation.51df4626">CLAP</td>
+          <td data-i18n="documentation.c21b9338">Loads and generates</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.54e5b246">Reaper · Bitwig · Logic</td>
+          <td data-i18n="documentation.7fa841a9">CLAP / VST3 / AU</td>
+          <td data-i18n="documentation.864e8b1c">Not yet tested</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.6141642e">No DAW</td>
+          <td data-i18n="documentation.1d10323c">Standalone</td>
+          <td data-i18n="documentation.fdd933a8">Runs in its own window</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.7d883e08">The plugin writes notes onto the track you inserted it on <strong>and makes the sound itself</strong> — the drums through its kit, and each melodic part through its own instrument. You do not have to route it anywhere to hear it.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="install" data-i18n="documentation.e3843261">Installing</h2>
+    <p data-i18n-html="documentation.a8d36300"><strong>Downloads open at 1.0.</strong> There is no installer, no beta and no preview build before then — a plugin that half-works inside somebody's session is worse than one that is not there, so it ships when the QA matrix is green on every host and every OS.</p>
+    <p data-i18n="documentation.c5ebdb97">Where the formats live, once 1.0 lands:</p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.de8aa862">OS</th>
+          <th data-i18n="documentation.51df4626">CLAP</th>
+          <th data-i18n="documentation.20a69fa8">VST3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n="documentation.26d9c28d">Windows</td>
+          <td data-i18n-html="documentation.e59a23ba"><code>%COMMONPROGRAMFILES%\CLAP</code></td>
+          <td data-i18n-html="documentation.72e6c218"><code>%COMMONPROGRAMFILES%\VST3</code></td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.cd6fdcbf">macOS</td>
+          <td data-i18n-html="documentation.75bb9363"><code>~/Library/Audio/Plug-Ins/CLAP</code></td>
+          <td data-i18n-html="documentation.9e8fc2e4"><code>~/Library/Audio/Plug-Ins/VST3</code></td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.83ad8510">Linux</td>
+          <td data-i18n-html="documentation.f81f810e"><code>~/.clap</code></td>
+          <td data-i18n-html="documentation.48df6728"><code>~/.vst3</code></td>
+        </tr>
+      </tbody>
+    </table></div>
+  </section>
+
+  <section>
+    <h2 id="loop" data-i18n="documentation.61c43d0a">The core loop</h2>
+    <ol>
+      <li data-i18n-html="documentation.fdbefea1"><strong>Pick someone.</strong> Type a name into the roster box — artists and genres alike.</li>
+      <li data-i18n-html="documentation.98f5460e"><strong>Generate.</strong> The pattern is built for your project's tempo and key.</li>
+      <li data-i18n-html="documentation.e1f3b866"><strong>Hear it.</strong> Press play in your DAW — the notes are already on the track.</li>
+      <li data-i18n-html="documentation.d9b0f0a8"><strong>Reroll or keep.</strong> Every generation carries a seed you can copy back.</li>
+    </ol>
+  </section>
+
+  <section>
+    <h2 id="roster" data-i18n="documentation.40f89a05">The roster</h2>
+    <p data-i18n-html="documentation.f8d5c8c2">Most MIDI generators think in <em>genres</em>. "Trap" is not "Metro Boomin," and no mainstream tool has heard of OsamaSon. Freally MIDI Master thinks in <strong>artists</strong> — each one a set of hand-authored style parameters describing hat-roll grammar, 808 slide behaviour, swing, register and section layout.</p>
+    <p data-i18n-html="documentation.4f2277e8">You find them with <strong>one type-to-autocomplete box</strong>. Start typing and it narrows as you go — across the mainstream roster, the underground roster, aliases, and typos. Stop halfway and click away and it takes the best match, so you can never be left with nothing chosen. Press the arrow instead and it shows you everything.</p>
+    <p data-i18n-html="documentation.a84eb15c">The same box lists <strong>artists and genres together</strong>, each row saying which it is, so you never have to know in advance whether "UK Drill" is a person or a style. Pick one and its details appear directly underneath — era, the genres it works in, the <strong>tempo range</strong> and key it tends toward, its moods by name, and <strong>which parts it writes and which it does not</strong> — <strong>before</strong> you press Generate. <strong>Genres are a browse filter, not the unit of generation</strong> — though a genre is itself a real style model and generates in its own right.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.2e81e526">That last line matters more than it looks. An artist who does not write countermelodies answers that tab with <em>silence</em>, correctly — they do not write them, so nothing is invented for them. Before the pane said so, the only way to find out was to press Generate and stare at an empty roll.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.c67e0e46">Artist names are <strong>descriptive style references only</strong>. Nothing in the dataset is copied MIDI, sampled audio, or a transcription of anyone's record.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="moods" data-i18n="documentation.ba8c0def">Moods</h2>
+    <p data-i18n-html="documentation.b0e455fd">An artist is not one sound. Beside the artist is a <strong>mood</strong> — trap's <em>dark</em>, <em>bounce</em>, <em>melodic</em> and <em>minimal</em>; boom bap's <em>dusty</em>, <em>jazzy</em> and <em>hard</em>; phonk's <em>cowbell</em>, <em>memphis</em> and <em>brazilian</em>. Leave it on <strong>Any</strong> and each press walks that artist's range; pin one and stay there.</p>
+    <p data-i18n-html="documentation.c4de4112">A mood is <strong>the same author writing a different kind of record</strong>, which is how producers describe their own catalogue. It is applied before any generator runs, so every part honours it — there is no way for the drums to be in one mood and the melody in another.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.4e322996"><strong>An artist only offers moods that artist actually does.</strong> Moods are inherited down the same lineage as everything else, so there is no path by which one artist's mood could be offered on another. Ask for one a style does not have and it says so by name rather than quietly generating something else.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="own-style" data-i18n="documentation.197723c7">Your own style, and training it</h2>
+    <p data-i18n-html="documentation.8b53323c"><strong>Original Workflow</strong> sits at the top of the left rail, above everything. Start from any artist or genre, adjust the tempo range, swing, hat density, melody density and scales, and save it under your own name. It appears in the roster marked <strong>Yours</strong> and generates, locks, re-rolls and exports exactly like a shipped artist — because it is the same kind of thing, in the same format.</p>
+    <p data-i18n-html="documentation.63fa26a1">It <strong>inherits everything you did not change</strong>, including improvements the artist you based it on gets in a later release. A new style opens seeded from the beat on screen rather than from a blank form.</p>
+    <p data-i18n-html="documentation.22b5f3cc">Star the takes you like as you go. At thirty kept, <strong>Train</strong> fits a style to them — how many onsets a bar, what register, what shape the line made — and writes those ranges back as an ordinary style model. Your own <code>.mid</code> files can be training material too.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.421a3d31"><strong>"Trained" means fitted, and there is no machine learning anywhere in it.</strong> Nothing is learned from anybody else's music, nothing leaves your machine, and a fit that would only repeat itself is refused with a reason rather than saved. The floor of thirty exists so a style encodes your taste rather than one seed's opinion.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.70a577ec"><strong>Your samples are only copied if you say so.</strong> A style can keep the one-shots you assigned, so they still play after you move or delete the originals. That means a second copy on your drive, so the editor tells you how many files and how many megabytes before anything happens — and the box is unticked. Saving a style copies nothing on its own.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="pads" data-i18n="documentation.bd31a893">The drum pads</h2>
+    <p data-i18n-html="documentation.5d689d19">Eight pads sit across the top of the stage, above the piano roll. Each one is a drum lane: its name, what is currently on it, and a dot saying whether you can hear it — <strong>green for audible, red for muted</strong>.</p>
+    <p data-i18n-html="documentation.86cb89b2">Press a pad to mute or unmute it. Press <strong>Play</strong> in its top centre to hear that one sound on its own. <strong>Drag a sample onto it</strong> from the browser to put your own one-shot there, or double-click to pick a file. The shuffle button re-rolls that pad from the folder you are browsing, and the ✕ puts the built-in sound back.</p>
+    <p data-i18n-html="documentation.aaa1fd33">Every pad's <strong>lane name is itself a picker</strong> — swap any of the eight for any of the thirty-seven lanes the plugin has. Two pads may share a lane, so you can layer a snare; a third is refused. Your layout is remembered <strong>per artist</strong>, so coming back to a style you built restores the pads exactly as you left them, with the samples you assigned.</p>
+  </section>
+
+  <section>
+    <h2 id="browser" data-i18n="documentation.f3aaedd4">The sample browser</h2>
+    <p data-i18n-html="documentation.d25c3d2f"><strong>It opens on Categories</strong> — one row per place, each saying how much is in it, and you go into them. Instruments and the four Factory Expansions are the shelves of the built-in library; Drum Packs holds the eleven shipped kits and their 407 one-shots; Factory Packs holds the 5,085 MIDI loops, by pack. Under those sit <strong>+ Add Folder</strong> and the folders you have added, by name.</p>
+    <p data-i18n-html="documentation.40db79d3"><strong>The number on a row is the whole shelf</strong>, not what survived the filters, so it does not move when you press a chip. The rows read in alphabetical order in whichever of the eighteen languages you are using. A folder whose drive is unplugged keeps its place and is marked <em>Unavailable</em> in words rather than only in a colour, and it stays removable — a producer who unplugged their sample disk has not left the library.</p>
+    <p data-i18n="documentation.21e024db">Inside a place, the arrows above the list walk the folders and the breadcrumb jumps straight to a level. Your library comes back next time you open the app, with or without a project.</p>
+    <p data-i18n-html="documentation.6324e27a"><strong>The arrow keys walk it.</strong> <kbd>↑</kbd> and <kbd>↓</kbd> move between rows. On a folder, <kbd>→</kbd> opens it and <kbd>←</kbd> shuts it — and on an already-shut folder <kbd>←</kbd> shuts the branch it sits in, so it is a way back out. On a <em>file</em>, those same two keys play it <strong>forwards and backwards</strong>. Auditioning never starts or stops the transport.</p>
+    <p data-i18n-html="documentation.33491a5d"><strong>Star anything</strong> — a sample, a one-shot or a MIDI file. The star sits to the left of the name: an outline until you press it, then solid yellow. Starred files gather in a list under the tree, and clicking one opens every folder between the root and that file to reveal it. If its folder is no longer one you have added, it opens the file's location in <strong>Windows Explorer or Finder</strong> instead — so a favourite is reachable whatever your library has moved on to. Unstarring forgets it.</p>
+    <p data-i18n-html="documentation.0a36b11f">The browser can take the <strong>whole rail</strong> when you need the depth, and hand it back. Audio and MIDI are kept apart on purpose: a <code>.mid</code> has no waveform to draw and cannot be dropped on a drum pad, and the pad refuses it before you let go rather than failing afterwards.</p>
+    <p data-i18n-html="documentation.5811086b"><strong>It holds a real library.</strong> A folder with two thousand files in it opens as fast as one with four, because only the rows you can actually see are drawn — scroll and the rest arrive as you reach them. <strong>Type in the filter box</strong> and the tree narrows to what matches, keeping the folders that lead to it; type a folder's name and you get everything under it. The line beneath the box says <em>which folders were searched</em>, and it means it: the plugin reads one folder at a time, so the filter reaches the ones you have opened and no further. A box that implied otherwise would be lying about what it looked at.</p>
+    <p data-i18n-html="documentation.0c96cd67"><strong>Unplug the drive a library folder lives on and its tab says so</strong>, with a <em>Check again</em> beside it. The folder is not dropped from your library — plug the drive back in, press it, and the tree is there. Before this, such a folder simply refused to open, which looks exactly like an empty one.</p>
+  </section>
+
+  <section>
+    <h2 id="midi-import" data-i18n="documentation.4a0779eb">Dropping a MIDI file in</h2>
+    <p data-i18n-html="documentation.3de3cadc"><strong>Hear it first.</strong> Select a <code>.mid</code> and the panel lists what is inside it; press <strong>Play</strong> and it sounds — through a plain built-in instrument rather than whichever artist you happen to have selected, so the same file sounds the same tomorrow. Drum lanes come through as hits rather than as pitches, because a drum lane's note number says which pad fires, not how low it is. It is built on the first press, not when you click the file, so walking a folder of loops with <kbd>↓</kbd> costs nothing. It never touches your project's transport.</p>
+    <p data-i18n-html="documentation.9acfff56">Drag a <code>.mid</code> from the browser onto a <strong>generator</strong> and its notes land there. Drop it on the <strong>Song</strong> tab instead and the whole file arrives as an arrangement — sections across the top, parts down the side — and clicking any cell opens that clip in its generator, exactly as drilling into a generated song does. Nothing you already have is overwritten until you choose a cell.</p>
+    <p data-i18n-html="documentation.7b266d93">A layered file is <strong>separated into bass, melody, countermelody, chords and drums</strong>, and every part says <strong>why</strong> it was routed where it was — "on the GM drum channel", "chords — notes overlap", "lowest voice", "from the file name". A wrong guess is one click to redirect rather than something you discover two bars in.</p>
+    <p data-i18n-html="documentation.d544549e"><strong>Name your files and it will listen.</strong> A file called <code>…-Bass.mid</code> or <code>…Drums.mid</code> is taken at its word, because that is you saying what it is rather than the plugin guessing. This matters more than it sounds: an 808's MIDI note says <em>which key fires the sample</em>, not how low it sounds, so a bassline routinely sits in melody register and no measurement can tell it from a slow lead. The one thing that can is the name you gave it.</p>
+    <p data-i18n-html="documentation.02646e58">Imported clips <strong>adopt your session's tempo</strong>. Most exported MIDI carries no tempo at all — the number in the filename is not in the data — and the plugin will not claim one it did not read.</p>
+  </section>
+
+  <section>
+    <h2 id="generators" data-i18n="documentation.ec0e4ac2">The generators</h2>
+    <p data-i18n-html="documentation.2528b54c"><strong>Five part generators, plus Song Mode.</strong> Song Mode is not a sixth generator — it lays out an arrangement and fills the other five in.</p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.fe06eb64">Tab</th>
+          <th data-i18n="documentation.f6222ac9">What it makes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n-html="documentation.764cb087"><strong>Drums</strong></td>
+          <td data-i18n="documentation.d18ca618">Kick, snare and off-snare, clap, closed and open hats with roll grammar, ride, crash, tom, rim, snap, perc, shaker, tambourine, cowbell and woodblock — plus the sliding sub. Which of them an artist uses is part of that artist.</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.f973941a"><strong>Melody</strong></td>
+          <td data-i18n="documentation.86e5726d">Phrase structures — riff loop, question/answer, call/response, long arc — with chord-tone bias on strong beats and per-genre devices</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.4e420883"><strong>Countermelody</strong></td>
+          <td data-i18n="documentation.c81554ab">Octave echo, bell echo, arpeggio, answer lick and sustained pad, placed in the melody's gaps</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.3562e4d3"><strong>Bassline</strong></td>
+          <td data-i18n="documentation.6763aa65">The low end, locked to the drums' sub behaviour</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.677c857e"><strong>Chords</strong></td>
+          <td data-i18n="documentation.d7eb09d9">Progressions in the session's key and scale</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.7c237ecf"><strong>Song</strong></td>
+          <td data-i18n="documentation.6d9aaa02">An arrangement that fills the five above in — a mode, not a generator</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <p data-i18n-html="documentation.ecfc86d6"><strong>All five generate, and all five are editable.</strong> Drums has a pad grid; melody, countermelody, bassline and chords have a piano roll. A style whose 808 <em>is</em> its bassline says so rather than doubling it with a second low end.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.5acc0069">Pitches are chosen as <strong>scale degrees</strong> and only then turned into MIDI notes, so staying in key is structural rather than filtered for afterwards.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="song-mode" data-i18n="documentation.c1e2865a">Song Mode</h2>
+    <p data-i18n-html="documentation.eb60a3b0">Press Generate on the <strong>Song</strong> tab and you get a whole arrangement: one of the artist's own song forms, a clip per part per section, and the transitions that make it read as a record — the beat or two of silence before a hook lands, a back-half switch-up, an outro that fades.</p>
+    <p data-i18n-html="documentation.967c5bf5"><strong>A section plays a looping clip.</strong> A sixteen-bar verse is a four-bar loop played four times, which is what every DAW's arrangement view draws. Sections of the same kind share one clip, because verse 1 and verse 2 are the same beat — the switch-up exists precisely because that is the rule.</p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.fb2dbad1">What you can do</th>
+          <th data-i18n="documentation.0c81abc8">How</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n="documentation.b78ea20d">Resize, clone, delete, copy/cut/paste clips</td>
+          <td data-i18n="documentation.f3887844">Drag either edge, double-click a section header, and the ordinary shortcuts</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.b4f2f858">Re-roll one section</td>
+          <td data-i18n-html="documentation.462f801c"><kbd>R</kbd>, or the dice on the section header. Locked clips are left alone</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.6ae2c0bb">Lock a clip, a row or a whole section</td>
+          <td data-i18n="documentation.d51e6c21">The padlock on the cell, the part row, or the section header</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.91c16f4e">Hear one cell on its own</td>
+          <td data-i18n="documentation.6bb5c318">The headphones on the clip. The view says so while it lasts</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.7f68250f">Open a clip in its editor</td>
+          <td data-i18n="documentation.9b3b8f91">Double-click it. Your edits write back into the arrangement</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.85574b57">Loop a section, mute or solo a part</td>
+          <td data-i18n-html="documentation.d174c5c9">The repeat icon on the header; the speaker and <kbd>S</kbd> on the row</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.22fee5c2">Choose which of the artist's forms to build</td>
+          <td data-i18n="documentation.9b4ae385">The picker in the structure row. Absent means they choose</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.f3e4fadb">Export</td>
+          <td data-i18n-html="documentation.4ec1e842">One multi-track <code>.mid</code>, or one file per part into a folder</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.0969199e"><strong>Mute and solo are preview controls.</strong> They change what you hear and never the song or the exported file — the same distinction the per-lane audio mute draws. Toggling one mid-playback keeps the marker where it is, so you can check a transition without losing your place in the record.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.24a78f85"><strong>The transport plays whichever tab you are looking at.</strong> There is one schedule: the Song tab puts the whole arrangement on it, and going back to a generator tab hands it back that tab's clip. So the marker you can see is always the one that is moving.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.dd323d51"><strong>A re-roll stays inside the record.</strong> It keeps the mode the song was generated in, the tempo and key it was generated at, and any swing you pinned — and it leaves every other section, including a clone of the one you re-rolled, exactly as it was.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.920e6fd6"><strong>Stems come out as MIDI or as audio, per part or per lane.</strong> The audio half used to be impossible and the reason was measured rather than assumed: the shipped kit had no voice for the four melodic parts, so rendering them would have written four silent <code>.wav</code>s and called them stems. The kit covers every generated lane now, and your own one-shots cover the rest. A whole <em>song</em> still writes one <code>.mid</code> per part — rendering minutes of audio needs progress you can watch and a cancel you can press, which is a different job from rendering a four-bar loop.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.edc824f0"><strong>You can drag a part straight onto a DAW track.</strong> Every generated part has a MIDI and an Audio handle in the right rail; turn on <strong>Per lane</strong> and the drum part becomes one handle per lane, so just the hats can go out on their own. The whole arrangement drags too, as MIDI. Files arrive named <code>trap - Snare - 140 BPM - C# Minor</code>, and the clip's own notes ride on the cursor so you can see what you picked up. <strong>Windows only so far</strong> — an HTML5 drag inside a plugin's webview is not an operating-system file drag, so each platform needs its own native drag source. macOS and Linux keep Export until theirs is written, and show no drag handle rather than one that drops nothing.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.f6b5ea7d"><strong>Where a dropped file lives.</strong> Dragging spools the file to your temp folder and hands your DAW the path. A dropped <code>.mid</code> is copied into your project by every DAW, so those are cleaned up after a week; a dropped <code>.wav</code> is <em>referenced</em> by path, so those are never deleted — use your DAW's Collect All and Save to keep one for good.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="instrument" data-i18n="documentation.04770da9">The instrument</h2>
+    <p data-i18n-html="documentation.ac9b6565"><strong>It makes the sound as well as the notes.</strong> A polyphonic synthesiser with a factory library of 225 instruments across 69 genres, and each of the four melodic generators plays its own — so assigning a different sound to Melody, Countermelody, Bassline and Chords gives you four voices at once, not one shared between them.</p>
+    <p data-i18n="documentation.e8595ab4">Nothing here is a sample library. Every sound is generated from a small address — an instrument, a genre, a variation, an articulation and a tone — so the whole library is a handful of integers in your project file rather than gigabytes on your disk. Thirteen synthesis engines sit behind it: a violin is a bowed-string model and a Rhodes is a physical piano model, which is why their controls behave differently from a pad's.</p>
+
+    <p data-i18n-html="documentation.d72a5e39"><strong>Every address is a different sound.</strong> The twenty-four variations of one instrument in one genre tour that instrument's own range &mdash; how long a bar rings, how hard a hammer strikes, where a string is plucked &mdash; rather than rolling dice twenty-four times, and the genre reaches the model itself rather than a filter after it: a trap 808 rings and slides where a house kick is tight, and a jazz piano is softer-hammered than a metal one. All 2,729,088 are checked, by rendering them.</p>
+
+    <h3 data-i18n="documentation.72640dda">The SYNTH tab</h3>
+    <p data-i18n="documentation.4a4148dd">The filter, both envelopes, the effects and the master controls for whichever generator you are shaping. The four buttons at the top choose which one — the SYNTH tab is the only tab that is not itself a part, so it has to ask.</p>
+
+    <h3 data-i18n="documentation.9e3449fc">Inside a shelf of instruments</h3>
+    <p data-i18n-html="documentation.dd09491c">Open <strong>Instruments</strong> or one of the four <strong>Factory Expansions</strong> and you browse that shelf by genre and family &mdash; the genres read alphabetically and the list opens on <strong>Trap</strong>. It is paged: one genre with no family filter is 5,400 rows. <strong>The shelf narrows the list</strong>, so opening Factory Expansion 2 and then Keys shows that pack&rsquo;s Keys instruments and not every Keys instrument in the product.</p>
+    <p data-i18n-html="documentation.6034b304"><strong>Clicking a row plays it and nothing more.</strong> The clip you hear is the instrument at the note it sounds most like itself on, drawn as a waveform in the preview player under the browser, with a playhead and a running time. <kbd>&uarr;</kbd> and <kbd>&darr;</kbd> walk the list and play whatever they land on, so you can hear your way through a family without touching the mouse.</p>
+    <p data-i18n-html="documentation.a1eb5eff"><strong>Putting one on a generator is a separate press</strong> &mdash; the <em>Use in&hellip;</em> button under the list, or <kbd>Ctrl</kbd>/<kbd>&#8984;</kbd> + <kbd>&#9654;</kbd>, both of which land on the tab you are looking at. Choosing an instrument clears the reverb, drive, gain and envelope the <em>previous</em> one was wearing, so what the generator plays is what the preview played. You should not have to reach for a knob to get the sound you just heard.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.7c97bb07"><strong>Drums go to drums and instruments go to generators.</strong> A stock instrument is a synth patch and a drum lane plays one-shots, so the shortcut refuses the pairing rather than doing something surprising with it. <kbd>Ctrl</kbd> + <kbd>&#9664;</kbd> plays a sample backwards in the preview and will not put it into a generator that way &mdash; reversing a note is the piano roll's job.</p></div></div>
+
+    <h3 data-i18n="documentation.7f76c6b2">The keyboard</h3>
+    <p data-i18n="documentation.2d0fa842">Toggle it from any tab. Click and drag across the keys — how high up the key you press sets the velocity — or use the typing bed. The typing bed stands down while a text field has focus, so searching for an artist does not play notes at you.</p>
+    <p data-i18n="documentation.7a1b9f14">Moving the octave or the range sends an all-notes-off, so a held note cannot be stranded by the keys under it changing.</p>
+
+    <h3 data-i18n="documentation.30f9d8d3">Playing it in from hardware</h3>
+    <p data-i18n-html="documentation.ee7a9278"><strong>Settings &rarr; MIDI input.</strong> A channel filter (or all channels, which is the default), transpose in semitones, an octave shift that stacks with it, the pitch-bend range, and a velocity curve — below the middle a light touch comes out louder, above it you have to press harder.</p>
+    <p data-i18n-html="documentation.4d68e35d">A note transposed past the ends of the keyboard is <strong>dropped, not wrapped</strong>. A wrapped note is a wrong note, and nothing on screen would tell you it happened.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.874b0424"><strong>Notes you play in are yours.</strong> They are never analysed, never become part of a style, and never train anything — the same rule a MIDI file you import lives under.</p></div></div>
+
+    <h3 data-i18n="documentation.004f6eb1">The knobs on the generator page</h3>
+    <p data-i18n="documentation.a9a17e79">Reverb, delay, drive, volume and pan for the part you are looking at, with the same numbers in the per-part editor in the right-hand rail. They are one set of controls shown twice, not two that have to be kept in step.</p>
+    <p data-i18n-html="documentation.aac58205">Volume, pan and the envelope belong to the <em>lane</em>, so they work whether that part is playing a factory instrument or a one-shot of your own. Reverb, delay and drive are applied to the instrument's own effects, so they appear only when a factory sound is loaded — over your own sample there would be nothing for them to reach, and a control that changes nothing is worse than one that is not there.</p>
+
+    <h3 data-i18n="documentation.7eff58e8">Saving a sound</h3>
+    <p data-i18n="documentation.bd3b5639">Shape an instrument, then save it under a category and a name you choose. They are listed under those categories on the SYNTH tab.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.857fd301"><strong>A sound is not a preset.</strong> A <em>preset</em> in the right-hand rail is a saved session — an artist, a seed and any pins. A <em>sound</em> is an instrument. They are kept in separate places and never appear in one list.</p></div></div>
+
+    <h3 data-i18n="documentation.a64f42d4">PACK — the sample rack</h3>
+    <p data-i18n="documentation.75928332">Pick a genre and an instrument, choose how many, and Generate. Up to 25 one-shots are rendered offline, each trimmed and fade-shaped so it does not click, with anything that came out near-silent thrown away before it reaches the rack.</p>
+    <p data-i18n-html="documentation.30f4f34e">Play any slot to hear it. <strong>Swap</strong> re-rolls one slot without touching the others, <strong>&times;</strong> removes one, and Export writes whatever is left — with an optional normalize. The render happens in the background with a progress bar and a Cancel, so your DAW's window never stops drawing.</p>
+  </section>
+
+  <section>
+    <h2 id="export-formats" data-i18n="documentation.c20403bd">Bounced audio</h2>
+    <p data-i18n-html="documentation.3fb1265f"><strong>Settings &rarr; MIDI input</strong>, below the input settings — both are about what crosses between this plugin and your own gear. WAV or AIFF, 16-bit, 24-bit or 32-bit float, at 44.1, 48, 88.2, 96, 176.4 or 192 kHz.</p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.0682be26">Choice</th>
+          <th data-i18n="documentation.769bb19e">When</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n="documentation.0a30f217">WAV 16-bit</td>
+          <td data-i18n="documentation.e77855ff">The default, and what this plugin has always written.</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.7d81c5bd">WAV 24-bit</td>
+          <td data-i18n="documentation.6ce283a3">What most producers expect from a bounce. Six more dB of usable range.</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.a40ce484">WAV 32-bit float</td>
+          <td data-i18n="documentation.34ccd0a3">Keeps anything that went past full scale, so a hot bounce can still be pulled back down.</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.7f9266a3">AIFF 16 or 24-bit</td>
+          <td data-i18n="documentation.2c807357">For a workflow that wants it. Integer only — AIFF has no float form here.</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.30e94467"><strong>A loop you drag into your DAW is always a 16-bit WAV, whatever this is set to.</strong> A dragged loop has to carry its own tempo so it lands warped to the right speed instead of your project's, and only a WAV can hold that. This setting is for files you <em>save</em>, where you chose the destination.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="into-your-daw" data-i18n="documentation.a70dab9e">Getting it into your DAW</h2>
+    <p data-i18n-html="documentation.e667e4fb"><strong>Three roads, and which one you want depends on what you are doing.</strong> The plugin plays on its own track, drags files out, or exports them to a folder.</p>
+
+    <h3 data-i18n="documentation.3ac408e8">1. Just play it</h3>
+    <p data-i18n="documentation.9eccb298">The plugin emits MIDI onto the track it is on, and it also makes the sound itself — the drums through its kit and each melodic part through its own instrument. Press play in your DAW and you hear the beat without routing anything.</p>
+    <p data-i18n="documentation.25c81dca">If you would rather your own instrument played the notes, route the plugin's MIDI output to it the way your host does that, and turn the part's own sound off by leaving no instrument assigned to it.</p>
+
+    <h3 data-i18n="documentation.a651299f">2. Drag a clip out</h3>
+    <p data-i18n-html="documentation.ba47208c">Grab a part chip and drag it onto a track. You get a <code>.mid</code> by default, or audio if you switch the chip. Dragging the whole arrangement gives one file per part.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.74b1c304"><strong>Dragging is Windows only for now.</strong> On macOS and Linux the chips do not offer it, because a control that cannot work is worse than one that is not there. Use Export instead — it produces the same files.</p></div></div>
+    <p data-i18n-html="documentation.3df20937">A dragged <em>audio</em> loop carries its own tempo, so it lands warped to the speed it was made at rather than to your project's. That is a WAV thing specifically, which is why a dragged loop is always a 16-bit WAV whatever the export format is set to.</p>
+
+    <h3 data-i18n="documentation.ff72e267">3. Export to a folder</h3>
+    <p data-i18n="documentation.5d91da4a">Choose a folder and get one file per part — MIDI, or audio in whichever format you set. This is the road that works on every platform, and the one to use for a whole arrangement.</p>
+
+    <h3 data-i18n="documentation.29940c77">Per host</h3>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.3960ec4c">Host</th>
+          <th data-i18n="documentation.9f733253">Format to install</th>
+          <th data-i18n="documentation.dc3decbb">Details</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n="documentation.2a47e9fb">Ableton Live 12</td>
+          <td data-i18n="documentation.20a69fa8">VST3</td>
+          <td data-i18n-html="documentation.e6225dc8">Live does not read CLAP. Drop a <code>.mid</code> onto a MIDI track; Live makes one clip per track from a multi-track file.</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.d976ad22">FL Studio 21.2+</td>
+          <td data-i18n="documentation.c0fb74c6">CLAP (or VST3)</td>
+          <td data-i18n-html="documentation.c7b038df">Reads CLAP natively. A multi-track <code>.mid</code> lands on the playlist as separate channels.</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.d1100b6d">Reaper</td>
+          <td data-i18n="documentation.fc15247e">CLAP or VST3</td>
+          <td data-i18n="documentation.ce4fa0e2">Takes both. Reaper asks how to import a multi-track file rather than guessing.</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.82653a52">Bitwig</td>
+          <td data-i18n="documentation.51df4626">CLAP</td>
+          <td data-i18n="documentation.600bbc6d">CLAP is its native format.</td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.fd6889aa">Logic Pro</td>
+          <td data-i18n="documentation.acdf4173">AU</td>
+          <td data-i18n="documentation.a74dbbef">macOS only. Logic reads neither CLAP nor VST3.</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.1f04dbe6"><strong>Two of these rows are verified and three are not.</strong> Ableton Live 12 and FL Studio have been loaded and generated in; Reaper, Bitwig and Logic have not been opened yet, so their rows describe what each host documents rather than what anyone has watched happen. When one of them is run, <code>docs/daw-matrix.md</code> is where the result goes.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="tempo" data-i18n="documentation.905e63d9">Tempo, key &amp; auto-sync</h2>
+    <p data-i18n-html="documentation.c076a592">The plugin reads the host's tempo and time signature every block. Trap authored at 140 comes out at <strong>92 in a 92&nbsp;BPM project</strong> — because a clip generated at the artist's tempo does not fit the song you asked for.</p>
+    <h3 data-i18n="documentation.ab86fb82">Precedence</h3>
+    <ol>
+      <li data-i18n-html="documentation.15955a81"><strong>Your pin wins.</strong> Pin a tempo in the session chips and it beats everything.</li>
+      <li data-i18n-html="documentation.32319078"><strong>Then the host.</strong> With auto-sync on, the DAW's tempo is used.</li>
+      <li data-i18n-html="documentation.5e24a1af"><strong>Then the artist.</strong> With auto-sync off, the model's own authored tempo stands.</li>
+    </ol>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.1125e7e4"><strong>A pin is held inside the range the artist works in.</strong> The BPM box stops at the range shown in the panel &mdash; drag or type past it and it settles at the edge &mdash; and switching to an artist who cannot reach your pin brings it to their nearest tempo rather than generating something they never play. Typing is only corrected when you leave the box, so <kbd>1</kbd> on the way to <kbd>140</kbd> is not rewritten under your cursor. <strong>The host is never held to it:</strong> a project's tempo is the project's.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.f2eb4b94"><strong>The scale chip offers the scales that artist writes in.</strong> A mode is what carries their character, so a scale picked on one artist is handed back to the model when you move to another who does not use it. The key chip is deliberately not restricted &mdash; a key is transposition, the same music at another pitch.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n="documentation.638c602e">Auto-sync is a session setting saved with your project — three states, not two. Turning it off is how you reach the artist's authored tempo from inside a running project.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="seeds" data-i18n="documentation.05bb0a4d">Seeds &amp; reproducibility</h2>
+    <p data-i18n-html="documentation.ac4e2b0c">Every generation has a <strong>seed</strong>. The same seed, artist and session always produce a byte-identical pattern — on any machine, on any day. Copy the seed from the chip, paste it back, and the beat returns.</p>
+    <p data-i18n="documentation.f8ac4ea5">Leave the seed box empty to get a fresh one each time; the chip then shows the seed that was actually used, so you can copy a generation you liked even though you never typed a number.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n="documentation.c902e125">Determinism is enforced by the test suite, not merely intended — it is also why a saved project can restore a beat without storing a single note.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="presets" data-i18n="documentation.e709e76f">Presets</h2>
+    <p data-i18n="documentation.5d19dc54">A preset is a named session — artist, seed, bars and pins. Factory presets are compiled into the binary; your own are written to the platform's per-user data directory, so they outlive any one project.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.6c29a0d2"><strong>No factory preset pins a tempo.</strong> A pin is an instruction from the user, and a shipped file is not the user — a factory preset that pinned one would override your DAW the moment you loaded it.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="patterns" data-i18n="documentation.9e2759d7">The pattern library</h2>
+    <p data-i18n="documentation.4df575be">Name a pattern you like and it is there next time — in any song, in any DAW. Each one is its own JSON file in the platform's per-user data directory, so a bad save costs one loop rather than the shelf, and you can back them up, sync them, or hand one to someone else by copying a file.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.6053a251"><strong>A saved pattern is notes, not sound.</strong> The kit is deliberately not stored, which is what makes &ldquo;use it with any sounds you want&rdquo; true rather than a claim: load the pattern, swap the kit, and the same performance plays through different samples. It is also how a pattern survives a crash — a plugin lives in someone else's process and dies with it.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.c6f3d453">This is not a preset and not the project. A <em>preset</em> is a starting point and stores no notes at all, because the engine regenerates them; the <em>project</em> remembers this song. A saved pattern is the take you kept.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="takes" data-i18n="documentation.874a5339">Your takes, and locking a drum</h2>
+    <p data-i18n-html="documentation.ca18c184">Every generation of the session is kept, from the first, counted separately per generator. <kbd>&#9664;</kbd> and <kbd>&#9654;</kbd> walk them, and stepping back brings the whole setup: the artist, the mood, the seed, the bars and the pins — not just the number.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.8dc74fe7">The readout shows the tempo and key that were <strong>actually used</strong>, which is not always what you pinned: a beat made while your DAW sat at 92 was made at 92, and tempo changes the notes.</p></div></div>
+    <p data-i18n-html="documentation.d7bad06c"><strong>And it outlives the session.</strong> Click the take counter — the &ldquo;3 / 40&rdquo; between the arrows — and every generation you have ever made is there, grouped by artist, each row saying how long it is, how fast, and when you made it. Pick one and it comes back. The arrows answer &ldquo;back one&rdquo;; this is for the beat from Tuesday night whose seed you never wrote down.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.1223e0b4">It is kept per user rather than in the project — where you have been generating is a fact about you, not something to ship inside a song sent to a label — and it survives an update. Each artist keeps its own run of takes, so an evening spent on one cannot push out the ones you saved from another. <strong>Clear it whenever you like</strong>: it is a record of what you have been making, and being able to empty it is not a convenience.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.13e89cca">Choosing a take <em>restores</em> it, the same as the arrows do — so anything you have drawn by hand on the current clip is replaced. It is not a preview.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.5415794a"><strong>Lock a lane and a re-roll cannot touch it.</strong> Click the padlock on any drum row, or press <kbd>L</kbd> with the row focused, and Generate rebuilds everything else around it note for note. A lock changes nothing about what is exported.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="session" data-i18n="documentation.b7a3d0f4">Session state</h2>
+    <p data-i18n-html="documentation.99bec605">The plugin saves your artist, seed, bars, pins and window size <strong>into the DAW's own project file</strong>. Reopen the song and the session comes back. There is no file to manage and no path to choose.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n="documentation.2c40e200">The pattern itself is not stored — the inputs are, and the engine is deterministic, so restoring is a regeneration. That is why a saved project costs bytes instead of hundreds of kilobytes of notes.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="shortcuts" data-i18n="documentation.26669547">Keyboard shortcuts</h2>
+    <p data-i18n-html="documentation.3e527f79">Every shortcut the plugin and the standalone have, grouped the way the in-app panel groups them. Press <kbd>Shift</kbd> + <kbd>?</kbd> in the app to see the same list with your own remappings, which this page cannot know about.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.876884a2">Where a row shows <kbd>Ctrl</kbd> / <kbd>⌘</kbd>, that means Ctrl (Windows/Linux) or ⌘ (macOS).</p></div></div>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.e5651c68">Keys</th>
+          <th data-i18n="documentation.97c89a4d">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      <!-- shortcuts:start — generated by scripts/docs-shortcuts.mjs -->
+        <tr><th colspan="2" scope="colgroup" data-i18n="documentation.c10d76c9">Transport</th></tr>
+        <tr>
+          <td data-i18n-html="documentation.86247409"><kbd>Space</kbd></td>
+          <td data-i18n="documentation.fe13ca09">Play or pause</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.a1e10fc7"><kbd>F9</kbd></td>
+          <td data-i18n="documentation.7fa3a667">Start or stop recording</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.4b2adf96"><kbd>F10</kbd></td>
+          <td data-i18n="documentation.b32e9662">Metronome on or off</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.dba91bb2"><kbd>K</kbd></td>
+          <td data-i18n="documentation.7dda588a">Show or hide the right rail</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.523bc70d"><kbd>E</kbd></td>
+          <td data-i18n="documentation.0b4b9af3">Swap between the file explorer and the roster</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.df9030e9"><kbd>Shift</kbd> + <kbd>?</kbd> or <kbd>F1</kbd></td>
+          <td data-i18n="documentation.1f06ac86">Show this panel</td>
+        </tr>
+        <tr><th colspan="2" scope="colgroup" data-i18n="documentation.e9789990">View and layout</th></tr>
+        <tr>
+          <td data-i18n-html="documentation.e14c9778"><kbd>V</kbd></td>
+          <td data-i18n="documentation.1d83fd23">Show or hide a panel</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.d4d84f89"><kbd>Shift</kbd> + <kbd>V</kbd></td>
+          <td data-i18n="documentation.09faca1e">Focus mode - rails and tabs away</td>
+        </tr>
+        <tr><th colspan="2" scope="colgroup" data-i18n="documentation.fc45f9b7">Generate</th></tr>
+        <tr>
+          <td data-i18n-html="documentation.285be7d3"><kbd>Enter</kbd></td>
+          <td data-i18n="documentation.0c77ce7a">Search the roster</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.04522798"><kbd>G</kbd></td>
+          <td data-i18n="documentation.ac1fc67e">Generate this part</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.627c2d8c"><kbd>Shift</kbd> + <kbd>G</kbd></td>
+          <td data-i18n="documentation.3767cc00">Generate every part</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.ed629d67"><kbd>1 – 6</kbd></td>
+          <td data-i18n="documentation.5ee84ca1">Pick a generator</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.51462405"><kbd>R</kbd></td>
+          <td data-i18n="documentation.9a7a1f12">Re-roll the selected clip</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.5eafac83"><kbd>L</kbd></td>
+          <td data-i18n="documentation.81eb04cd">Hold this drum across a re-roll</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.9018d7e2"><kbd>←</kbd> / <kbd>→</kbd></td>
+          <td data-i18n="documentation.cdf3fbba">Step through your takes</td>
+        </tr>
+        <tr><th colspan="2" scope="colgroup" data-i18n="documentation.3b9ba1a2">Editing</th></tr>
+        <tr>
+          <td data-i18n-html="documentation.fd138353"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>A</kbd></td>
+          <td data-i18n="documentation.913afff1">Select all</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.ebad6201"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>C</kbd></td>
+          <td data-i18n="documentation.af74f7c5">Copy</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.b737693a"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>X</kbd></td>
+          <td data-i18n="documentation.38d13bda">Cut</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.098d9ba7"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>V</kbd></td>
+          <td data-i18n="documentation.db248300">Paste</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.414f88f4"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Z</kbd></td>
+          <td data-i18n="documentation.39fc7212">Undo</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.fc1e31a5"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Shift</kbd> + <kbd>Z</kbd> or <kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>Y</kbd></td>
+          <td data-i18n="documentation.471b94d4">Redo</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.08b1c0d8"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>D</kbd></td>
+          <td data-i18n="documentation.972d5737">Duplicate</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.f66bceff"><kbd>Delete</kbd></td>
+          <td data-i18n="documentation.f6fdbe48">Delete</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.07fdb121"><kbd>Esc</kbd></td>
+          <td data-i18n="documentation.04d948a3">Deselect</td>
+        </tr>
+        <tr><th colspan="2" scope="colgroup" data-i18n="documentation.70440046">Notes</th></tr>
+        <tr>
+          <td data-i18n-html="documentation.5d4723bf"><kbd>↑</kbd> / <kbd>↓</kbd></td>
+          <td data-i18n="documentation.8c532548">Transpose a semitone</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.6cac4df7"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>↑</kbd> / <kbd>↓</kbd></td>
+          <td data-i18n="documentation.2b308ba3">Transpose an octave</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.9018d7e2"><kbd>←</kbd> / <kbd>→</kbd></td>
+          <td data-i18n="documentation.d47af99e">Nudge in time</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.ac264590"><kbd>*</kbd></td>
+          <td data-i18n="documentation.be758f68">Stretch to double length</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.a9253744"><kbd>/</kbd></td>
+          <td data-i18n="documentation.dd9f8fd9">Compress to half length</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.8382840e"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>R</kbd></td>
+          <td data-i18n="documentation.3ee05a25">Reverse the selected note</td>
+        </tr>
+        <tr><th colspan="2" scope="colgroup" data-i18n="documentation.7c37d8f8">Drum grid</th></tr>
+        <tr>
+          <td data-i18n-html="documentation.9e4e8841"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>3</kbd></td>
+          <td data-i18n="documentation.4157bd81">Triplet in this cell</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.43a310f9"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>5</kbd></td>
+          <td data-i18n="documentation.7e966ffc">Quintuplet in this cell</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.a5878dde"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>7</kbd></td>
+          <td data-i18n="documentation.1f5d282a">Septuplet in this cell</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.7ec8386d"><kbd>Alt</kbd> + <kbd>click</kbd></td>
+          <td data-i18n="documentation.ebfc4304">Copy bar 1 over this bar</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.2ff1c1cd"><kbd>Shift</kbd> + <kbd>drag</kbd></td>
+          <td data-i18n="documentation.fb11f8c2">Drag a box to select cells</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.4fe7447c"><kbd>Ctrl</kbd> / <kbd>⌘</kbd> + <kbd>click</kbd></td>
+          <td data-i18n="documentation.54e8dccd">Add a cell to the selection</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.1a36d4f6"><kbd>Right click</kbd></td>
+          <td data-i18n="documentation.0aeadb3b">Roll palette for this cell</td>
+        </tr>
+        <tr>
+          <td data-i18n-html="documentation.c9889415"><kbd>Right click</kbd> + <kbd>drag</kbd></td>
+          <td data-i18n="documentation.394a6a30">Wipe every cell dragged over</td>
+        </tr>
+        <tr><th colspan="2" scope="colgroup" data-i18n="documentation.dcd5f1f8">Sample browser</th></tr>
+        <tr>
+          <td data-i18n-html="documentation.9018d7e2"><kbd>←</kbd> / <kbd>→</kbd></td>
+          <td data-i18n="documentation.94d34d10">Play the sample backwards / forwards</td>
+        </tr>
+      <!-- shortcuts:end -->
+      </tbody>
+    </table></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.d604eafc">Undo is unlimited within a session and covers the artist, seed, bars, pins, each generation <strong>and the arrangement</strong> — one stack, whichever tab you are on. Inside a text field your system's own undo takes the shortcut, so the seed box can still un-type a character.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="standalone" data-i18n="documentation.148f83d6">The standalone</h2>
+    <p data-i18n="documentation.e90cfbee">The same plugin, in its own window, with no DAW involved — useful for trying things quickly and for machines where you are not producing.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.c1864be2"><strong>It cannot sync to your DAW, and it never will</strong> — there is no host, so there is nothing to sync to. A fixed tempo can be set on the command line, which exercises the same path, but real host tempo, meter and playhead need a real host.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.fb858c80"><strong>And it reports no project tempo unless you ask for one.</strong> Without <code>--tempo</code> there is no project, so nothing overrides the artist: pick a model and you hear it at the tempo it was authored at. Pass <code>--tempo</code> and that fixed value behaves exactly as a host's would.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="privacy" data-i18n="documentation.0d1db92c">Privacy &amp; the network</h2>
+    <p data-i18n="documentation.58c0f8e2">No accounts. No telemetry. Nothing about you, your projects or your output is transmitted. Generation, playback, import and export are entirely local.</p>
+    <p data-i18n-html="documentation.6dae90a7"><strong>The plugin makes no outbound connections at all.</strong> The two that used to exist — a launch-time update check and an opt-in crash report — belonged to the desktop app and were removed with it. A plugin is installed and updated by whoever installs plugins, and no HTTP client is compiled into it. Two build gates check this on every commit rather than trusting the claim: one reads the dependency graph and fails if an HTTP client is linked at all, the other drives the real interface through a generation and fails if the browser attempts a single request off the machine.</p>
+    <p data-i18n-html="documentation.bef6f4df"><strong>The web app is delivered over the network; what you make is not.</strong> A page has to be fetched — the app itself, and the style data it generates from. That is the whole of it. Generation runs on your own machine, in your own browser; your beats, your seeds and anything you import stay there and are never uploaded. After one visit the tab works with the network switched off.</p>
+    <p data-i18n-html="documentation.410bfc53"><strong>Collaboration is the one exception, and only if you use it.</strong> Rooms connect your machine directly to the people you invite. If you save someone as a buddy, a small service can tell you when they are online — and it is told nothing worth knowing: a key that changes every few minutes, and an address encrypted to a secret only the two of you hold. It cannot read it, cannot list who is there, and cannot work out who knows whom. Turn it off, or never save a buddy, and you paste a code instead. The collaboration service is reached by a separate program, never by the plugin your DAW loads, which is what keeps the sentence above true.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n="documentation.0b27ac6b">Crash reports are written to a folder on your own disk and are never sent anywhere. They exist so you have something to attach to a bug report if you choose to — nothing reads that folder but you.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="faq" data-i18n="documentation.9091f25a">Questions people actually ask</h2>
+    <p data-i18n-html="documentation.6d222977">Every answer here is a restatement of something already written down in the licence, the <a href="legal/disclaimer.md">name disclaimer</a> or the credits. Nothing on this page is a new promise.</p>
+
+    <h3 data-i18n="documentation.daf9a79b">Is this AI?</h3>
+    <p data-i18n="documentation.2458a52d">No, and not in the weak sense of "we do not call it that". There is no machine learning anywhere in the product — no model, no training data, no inference, no neural network of any kind. The engine reads a set of hand-written numbers and rules and builds a pattern from a seeded random generator. You can read those numbers: they are plain JSON, and every one of them is a tempo range, a swing percentage, a note density, a roll grammar or a chord tendency.</p>
+
+    <h3 data-i18n="documentation.3bf82a34">So how can it sound like a specific artist?</h3>
+    <p data-i18n="documentation.9412c301">Because a producer's habits are describable. How often the hats double up, where the snare lands, whether the 808 slides and how far, which chord families turn up and which never do — that is written out by hand, from published interviews, technique articles and listening. It is the same kind of document as a drum lesson that teaches you a shuffle, and it works for the same reason.</p>
+
+    <h3 data-i18n="documentation.fa02d276">Are the artists involved? Did they approve this?</h3>
+    <p data-i18n-html="documentation.ac411997">No. <strong>No artist, producer, label or publisher named in this software has endorsed, sponsored, approved, reviewed or is affiliated with it in any way.</strong> Their names appear as descriptive references to a recognisable style and nothing else — the same way a chord chart might be labelled "bossa nova". No name is used as a brand or as a badge of origin for this software or for anything it generates.</p>
+
+    <h3 data-i18n="documentation.af1c7364">Does it contain their music?</h3>
+    <p data-i18n="documentation.bb221e18">No. A style model holds no MIDI, no audio, no transcription of any recording and no melodic or lyrical content from any song. There is no feature that recreates a specific track, and there never will be — that is a permanent design decision rather than something not built yet.</p>
+
+    <h3 data-i18n="documentation.92ebf1ef">Can I release what I make? Can I sell it?</h3>
+    <p data-i18n="documentation.02c55f87">Yes. What the generator writes is original by construction: it was assembled from rules and a number, with no recording anywhere in the chain, so there is nothing in it that came from somebody else's work. You own your output and you do not owe anything to anyone for it — see the licence below for the exact wording.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n="documentation.1d3f4df2">The ordinary caveat applies and has nothing to do with this software: if you drop a sample you do not have the rights to onto a pad, that sample is still not yours. The notes are yours; a recording you imported is whatever it already was.</p></div></div>
+
+    <h3 data-i18n="documentation.114f1c77">What if it accidentally writes a melody that already exists?</h3>
+    <p data-i18n="documentation.e79791f6">It screens for that. Every melody and countermelody is fingerprinted by its shape — the run of intervals and the gaps between them — and checked against a table of well-known melodies before you hear it. A match is thrown away and drawn again.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.9e84e0da"><strong>Being straight about what that covers.</strong> The table holds public-domain melodies — traditional, hymn and classical — because building it from anything else would mean this software carrying somebody else's notes, which is the one thing it must never do. So the screen catches an accidental quotation of a famous tune, which is worth catching. It is <em>not</em> the reason your output is original. That is everything in the two answers above.</p></div></div>
+
+    <h3 data-i18n="documentation.13eef4e4">Does it phone home?</h3>
+    <p data-i18n-html="documentation.772074f7">No. See <a href="#privacy">Privacy &amp; the network</a> above for the full answer, including the two things that do touch a network and why: fetching the web app, and collaboration if you choose to use it.</p>
+
+    <h3 data-i18n="documentation.58fc0ea4">Where did the drum loops and the one-shots come from?</h3>
+    <p data-i18n="documentation.ccf41857">Both are ours. The 5,085 shipped MIDI loops were written by this product's own generators from its own style models — no loop was extracted from anybody's audio or MIDI. The preview one-shots are synthesized from oscillators and filtered noise, so there is no recorded material in them at all and no third-party licence attached to them.</p>
+
+    <h3 data-i18n="documentation.1f932b39">Can I use it offline?</h3>
+    <p data-i18n="documentation.a812ebd9">The plugin and the standalone never needed a network in the first place. The web app fetches itself once and then works with the network switched off.</p>
+  </section>
+
+  <section>
+    <h2 id="bugs" data-i18n="documentation.70252a52">Reporting a bug</h2>
+    <p data-i18n="documentation.a1904ba7">There is no reporter that phones home, and there never will be. What there is instead is a folder: when either half of the plugin falls over, it writes what happened to your own disk, and you decide whether to send it.</p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n="documentation.de8aa862">OS</th>
+          <th data-i18n="documentation.801c98db">Where the reports are</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td data-i18n="documentation.26d9c28d">Windows</td>
+          <td data-i18n-html="documentation.9cacc2d0"><code>%APPDATA%\Freally MIDI Master\crashes\</code></td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.cd6fdcbf">macOS</td>
+          <td data-i18n-html="documentation.3b993d8d"><code>~/Library/Application Support/Freally MIDI Master/crashes/</code></td>
+        </tr>
+        <tr>
+          <td data-i18n="documentation.83ad8510">Linux</td>
+          <td data-i18n-html="documentation.1a91a6c1"><code>$XDG_DATA_HOME/freally-midi-master/crashes/</code>, or <code>~/.local/share/freally-midi-master/crashes/</code></td>
+        </tr>
+      </tbody>
+    </table></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.90d83808">The filename says which half went: <code>-panic</code> is the audio engine with a backtrace, <code>-page</code> is the interface, and on Windows <code>-fault</code> is a hardware fault such as an access violation. The newest twenty are kept, so the folder never grows without limit and you can attach the lot to a bug report.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.4ec55525">If the <em>interface</em> is what broke, you will see a panel with a way back into your session rather than a dead rectangle — the arrangement lives outside the part that crashed, so pressing the button redraws your own work. Report it anyway; the log is already on disk.</p></div></div>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n="documentation.cd05c2a9">So: when you report it, say which host, which format (CLAP or VST3) and which OS version, and attach the newest file from the folder above. If the crash took the whole DAW down, attach the log your DAW wrote as well — when the host dies there may be no window of ours left to write from.</p></div></div>
+  </section>
+
+  <section>
+    <h2 id="licence" data-i18n="documentation.fef8e889">Licence</h2>
+    <p data-i18n-html="documentation.f7ca8294">Proprietary, <strong>All Rights Reserved</strong>; the source code is private. You may not redistribute it or ship derivatives. It is <strong>not</strong> open source.</p>
+    <div class="callout"><kit-icon name="info"></kit-icon><div><p data-i18n-html="documentation.5d361274"><strong>The music you make with it is yours</strong>, with no royalty and no attribution requirement.</p></div></div>
+  </section>
+</kit-manual>

@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "Semua perubahan penting pada **Freally Teleprompt** didokumentasikan di sini.",
-  "changelog.c7791448f357": "Formatnya mengikuti [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Rilis sebelum 1.0 memakai tangga berbasis fase (`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`); mulai 1.0.0 penomorannya memakai semver biasa. Halaman log perubahan di situs web dirender dari berkas ini oleh `scripts/build-docs-site.mjs` — satu riwayat, tidak pernah ada salinan kedua yang dikelola dengan tangan.",
   "changelog.69c6a54708de": "[Belum dirilis]",
   "changelog.c205924de0fe": "Dokumentasi",
   "changelog.3ba1bf71dedb": "**Situs web dibangun ulang** dengan desain keluarga Freally, dan situs ini berbicara dalam ke-18 bahasa aplikasi — termasuk log perubahan ini. Situs ini tidak menawarkan unduhan.",

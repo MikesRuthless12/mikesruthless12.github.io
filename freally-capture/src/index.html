@@ -1,0 +1,79 @@
+<!-- Freally Capture — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the version list, the family strip, the
+     closing call, the footer) is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">Record and stream like a studio.</span> <span class="cycle" data-cycle="hero.cycle" data-words="One clean app.|Every platform at once.|No account, no AI.">One clean app.</span></kit-headline>
+  <kit-lede data-i18n="hero.sub">A live-streaming and recording studio for Windows, macOS and Linux. No accounts, no telemetry and no cloud service of ours: your stream goes straight to the platforms you choose.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Going live usually takes one app to capture, another to mix the sound, a service to send the stream to several platforms, and an account with each of them.</p>
+      <p data-i18n="what.p2">Freally Capture is one studio on your own computer. Build a scene from your screen, windows, cameras, media and overlays; compose it on the graphics card; record it on up to six audio tracks; and stream it to several platforms at once, straight from your machine with no relay in between.</p>
+      <p data-i18n="what.p3">It needs no account and sends no telemetry. What leaves your computer is the stream you chose to send, plus the few connections you switch on yourself — each listed plainly in the documentation.</p>
+    </div>
+    <figure class="split__art"><kit-art name="circuit"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="features" label="kit.label.inside">
+  <h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards cards--4">
+    <article class="card"><div class="card__media"><kit-art name="layers"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.scenes.title">Scenes on the GPU</h3>
+      <p data-i18n="features.scenes.body">Build scenes from displays, windows, games, cameras, web pages, media, images and text, and compose them live on the graphics card with filters and transitions.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="signal"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.multistream.title">Multistream, direct</h3>
+      <p data-i18n="features.multistream.body">Go live on Twitch, YouTube, Kick, Facebook, Trovo or any server of your own — several at once — over RTMP, RTMPS, SRT or WHIP, straight from your machine.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="tracks"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.record.title">Multi-track recording</h3>
+      <p data-i18n="features.record.body">Record with your graphics card's hardware encoder or losslessly in Capture's own format, on up to six audio tracks, with splitting, chapter markers and crash-safe files.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="faders"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.audio.title">A broadcast mixer</h3>
+      <p data-i18n="features.audio.body">Every source on its own strip, with noise suppression, a gate, a compressor, EQ and loudness metering — all classic signal processing, with no AI anywhere.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="rings"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.safety.title">Studio Mode and safety</h3>
+      <p data-i18n="features.safety.body">Stage changes in the preview before they go live, check everything with a pre-flight, and keep alarms, encoder failover and a panic button ready.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="chat"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.guests.title">Remote guests</h3>
+      <p data-i18n="features.guests.body">Invite up to eight guests with a link. They join from a web browser, and their camera and microphone come straight to you, peer to peer.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="lens"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.deep.title">Virtual camera, browser source, game capture</h3>
+      <p data-i18n="features.deep.body">Your program as a webcam for video calls, any web page as a source, and exclusive-fullscreen games — Windows first, with every gap stated.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="shield"></kit-art></div><div class="card__body">
+      <h3 data-i18n="features.free.title">Free today, local, no AI</h3>
+      <p data-i18n="features.free.body">No paid tier, no account, no telemetry and no model. Your scenes, recordings and stream keys stay on your computer.</p>
+    </div></article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">Version by version</h2>
+  <p class="lead" data-i18n="ladder.intro">Every version of Freally Capture so far, from the foundation to the current release. The changelog has the details of each one.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">Every version listed is done. What comes after 1.2.1 is planned privately and appears here when it ships. None of them is a download on this site.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note"><h3><kit-icon name="info"></kit-icon><span data-i18n="honest.windows.title">Some of the newest features are Windows-only</span></h3>
+      <p data-i18n="honest.windows.body">In 1.2.1 the virtual camera, game capture and cursor effects work on Windows only, and the browser source has been verified on Windows first. The rest of the studio runs on Windows, macOS and Linux.</p></article>
+    <article class="note"><h3><kit-icon name="lock"></kit-icon><span data-i18n="honest.signed.title">Two components are not code-signed yet</span></h3>
+      <p data-i18n="honest.signed.body">The virtual camera's system component and the browser source's runtime are not code-signed yet, and two live tests are still to be done: the camera inside a real video call, and game capture in a protected game. The changelog says so in the release that added them.</p></article>
+    <article class="note"><h3><kit-icon name="globe"></kit-icon><span data-i18n="honest.network.title">What does go online</span></h3>
+      <p data-i18n="honest.network.body">Your streams go to the platforms you set up. A remote-guest session's handshake crosses a public signalling service; a chat overlay reads a channel's public chat; ffmpeg and the browser runtime are downloaded the first time you need them; the app checks for updates; and a problem report goes only when you press Send on its page. Apart from the update check, each happens only because you set it up.</p></article>
+    <article class="note"><h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads here</span></h3>
+      <p data-i18n="honest.downloads.body">This site describes Freally Capture; it does not distribute it. There is no download page, link or button, and the source code is private.</p></article>
+  </div>
+</kit-section>

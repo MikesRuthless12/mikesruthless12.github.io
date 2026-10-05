@@ -1,0 +1,15 @@
+{
+  "product": "file-manager",
+  "name": "Freally File Manager",
+  "icon": "file-manager-icon.png",
+  "pages": ["index", "features", "documentation", "changelog"],
+  "changelog": "../scripts/site/changelog.md",
+  "ladder": "ladder.json",
+  "chips": ["Windows", "macOS", "Linux", "@hero.chipLanguages|18 languages", "@hero.chipCli|Command line"],
+  "strings": {
+    "site.tagline": "Copy, move, sync and verify your files, byte for byte.",
+    "site.description": "A byte-exact file copier for Windows, macOS and Linux, with checksum verification, resume after a crash, two-way sync, undo and its own file server. Free today; future versions may be sold.",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
+    "footer.yours": "The files you copy, sync and serve stay yours. Freally File Manager's author claims no ownership of them."
+  }
+}

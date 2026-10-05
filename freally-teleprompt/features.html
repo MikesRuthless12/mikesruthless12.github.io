@@ -1,459 +1,374 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="features" data-product="teleprompt" data-name="Freally Teleprompt" data-title-key="kit.nav.features">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <title data-i18n="meta.title.features">Features — Freally Teleprompt</title>
-    <meta
-      name="description"
-      content="Everything Freally Teleprompt 1.5.0 does — pacing by characters per second or BPM, pause chips, a projector and a network mirror, document import, rehearsal, pedals and hotkeys — side by side with commercial teleprompter apps. Free today; future versions may be sold."
-    />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Features — Freally Teleprompt</title>
+    <meta name="description" content="Freally Teleprompt is a teleprompter for Windows, macOS and Linux that reads at a real human pace — characters per second or BPM — and marks every pause you write. No account, no telemetry. Free today; future versions may be sold." />
+    <meta property="og:title" content="Features — Freally Teleprompt" />
+    <meta property="og:description" content="Freally Teleprompt is a teleprompter for Windows, macOS and Linux that reads at a real human pace — characters per second or BPM — and marks every pause you write. No account, no telemetry. Free today; future versions may be sold." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="teleprompt-icon.png" alt="" width="28" height="28" />
-          <span>Freally Teleprompt</span>
-        </a>
-        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="teleprompt-icon.png" alt="" width="28" height="28" /><span>Freally Teleprompt</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
     <main id="main">
-      <section class="hero">
-        <img class="mark" src="teleprompt-icon.png" alt="" width="96" height="96" />
-        <h1 data-i18n="featuresPage.title">Everything it does</h1>
-        <p class="tagline" data-i18n="featuresPage.lead">
-          A teleprompter for Windows, macOS and Linux that reads at a real human pace, keeps every
-          screen on the same word, and opens the script you were sent.
-        </p>
-        <p class="sub" data-i18n="featuresPage.version">
-          This page describes Freally Teleprompt 1.5.0, the released version: everything on it is
-          in 1.5.0, and nothing still planned is on it.
-        </p>
-        <ul class="chips">
-          <li>Windows</li>
-          <li>macOS</li>
-          <li>Linux</li>
-          <li data-i18n="hero.chipDesktop">Desktop app</li>
-          <li data-i18n="hero.chipLanguages">18 languages</li>
-          <li data-i18n="hero.chipNoAccount">No account</li>
-        </ul>
-      </section>
-
-      <section>
-        <h2 id="numbers" data-i18n="featuresPage.numbers.title">By the numbers</h2>
-        <p data-i18n="featuresPage.numbers.intro">
-          Each figure is what version 1.5.0 does, counted from its code. Nothing is rounded up.
-        </p>
-        <ul class="stat-grid">
-          <li class="stat">
-            <span class="stat__n">2</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.paces">ways to set the pace: characters per second or BPM</span>
-          </li>
-          <li class="stat">
-            <span class="stat__n">20–250</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.bpm">BPM: the range it reads to a beat</span>
-          </li>
-          <li class="stat">
-            <span class="stat__n">5</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.formats">kinds of file it imports: Word, RTF, PDF, plain text and Markdown</span>
-          </li>
-          <li class="stat">
-            <span class="stat__n">3</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.systems">operating systems: Windows, macOS and Linux</span>
-          </li>
-          <li class="stat">
-            <span class="stat__n">18</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.languages">languages, in the app and in its autocomplete</span>
-          </li>
-          <li class="stat">
-            <span class="stat__n">463,985</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.words">words in its autocomplete lists, with 344,891 phrases</span>
-          </li>
-          <li class="stat">
-            <span class="stat__n">0</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.accounts">accounts to make</span>
-          </li>
-          <li class="stat">
-            <span class="stat__n">1</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.model">speech model, for dictation: on your computer, and off until you switch it on</span>
-          </li>
-          <li class="stat stat--free">
-            <span class="stat__n">$0</span>
-            <span class="stat__l" data-i18n="featuresPage.numbers.price">price today</span>
-          </li>
-        </ul>
-      </section>
-
-      <section class="free-banner">
-        <h2 id="free" data-i18n="featuresPage.free.title">Free today</h2>
-        <p data-i18n="featuresPage.free.body">
-          Everything Freally Teleprompt 1.5.0 does is free today, for everyone: no paid tier, no
-          subscription, no account and no trial that runs out.
-        </p>
-        <p data-i18n="notice.price">
-          Freally Teleprompt is free today, but it might not be free forever: future versions may be sold.
-        </p>
-      </section>
-
-      <section>
-        <h2 id="inside" data-i18n="featuresPage.cards.title">What version 1.5.0 does</h2>
-        <div class="grid">
-          <article class="card">
-            <h3 id="pace" data-i18n="featuresPage.cards.pace.title">A real reading pace</h3>
-            <p data-i18n="featuresPage.cards.pace.body">
-              Characters per second, or BPM from 20 to 250 for lyrics and verses read to a track.
-              Change either while the script runs and the scroll re-paces at once.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="pauses" data-i18n="featuresPage.cards.pauses.title">Pause chips</h3>
-            <p data-i18n="featuresPage.cards.pauses.body">
-              Type -- for a short pause or --N for an N-second hold. Each is one chip the cursor
-              cannot split, it lights up as the read reaches it, and read-aloud turns it into a real
-              silence.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="engine" data-i18n="featuresPage.cards.engine.title">Every screen on the same word</h3>
-            <p data-i18n="featuresPage.cards.engine.body">
-              The preview, the projector and the devices on your network follow one engine, counted
-              in characters, so they agree on the word being read even at different text sizes.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="projector" data-i18n="featuresPage.cards.projector.title">A projector for the talent</h3>
-            <p data-i18n="featuresPage.cards.projector.body">
-              Full screen on any display, mirrored for beam-splitter glass, with its own transport
-              and keys for the person reading.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="mirror" data-i18n="featuresPage.cards.mirror.title">A mirror to phones and tablets</h3>
-            <p data-i18n="featuresPage.cards.mirror.body">
-              Off until you switch it on. A link and a QR code open the script in any browser on
-              your own network: read-only, with a key that changes every time the app starts.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="import" data-i18n="featuresPage.cards.import.title">Import Word, RTF, PDF, text and Markdown</h3>
-            <p data-i18n="featuresPage.cards.import.body">
-              Clean prompter text with its paragraphs kept, and a report that counts what could not
-              come across — pictures, footnotes, comments. Nothing is saved until you say so.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="markers" data-i18n="featuresPage.cards.markers.title">Section markers, find and replace</h3>
-            <p data-i18n="featuresPage.cards.markers.body">
-              A line that starts with # is a marker on the seek bar and in a jump list. Find and
-              replace matches case or whole words, and is undone in one press.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="timing" data-i18n="featuresPage.cards.timing.title">Tempo, click and bars</h3>
-            <p data-i18n="featuresPage.cards.timing.body">
-              Tap your tempo to fit BPM to your own delivery, hear a click with a count-in, and see
-              the bar and beat on screen and as lines on the seek bar.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="rehearsal" data-i18n="featuresPage.cards.rehearsal.title">Rehearsal and a timing report</h3>
-            <p data-i18n="featuresPage.cards.rehearsal.body">
-              Read it through and see each section's planned time against the real one, and the
-              pace you actually read at. It records timings only — no microphone, no audio.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="skip" data-i18n="featuresPage.cards.skip.title">Labels that take no time</h3>
-            <p data-i18n="featuresPage.cards.skip.body">
-              Mark Chorus, [Verse 1] or ## Bridge as words you do not perform: they stay on screen,
-              dimmed, and take no read time, so your lyrics stay on the bar.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="control" data-i18n="featuresPage.cards.control.title">Shortcuts, pedals and hotkeys</h3>
-            <p data-i18n="featuresPage.cards.control.body">
-              A searchable map of every command, with clashes flagged. Pedals and remotes bind like
-              any key, and a key can work while another app is in front.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="writing" data-i18n="featuresPage.cards.writing.title">Autocomplete, dictation and read-aloud</h3>
-            <p data-i18n="featuresPage.cards.writing.body">
-              Word and phrase suggestions in 18 languages from lists inside the app, dictation in
-              English that runs on your computer, and read-aloud in your system's own voices.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="look" data-i18n="featuresPage.cards.look.title">Your look, your language</h3>
-            <p data-i18n="featuresPage.cards.look.body">
-              Typeface, size, weight, colour, margins, line spacing and the reading line, on every
-              screen at once. The app speaks 18 languages, in a dark or a light theme.
-            </p>
-          </article>
-          <article class="card">
-            <h3 id="private" data-i18n="featuresPage.cards.private.title">No account, no cloud</h3>
-            <p data-i18n="featuresPage.cards.private.body">
-              Scripts are plain files on your computer, and there is no telemetry. The app's only
-              request to the internet is a check for a newer version, and nothing installs without
-              your yes.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <!-- The comparison. Every cell for another product is from its maker's own pages or app-store listing, checked on 2026-10-02; a cell that could not be verified reads "—". -->
-      <section>
-        <h2 id="compare" data-i18n="featuresPage.compare.title">Side by side with the commercial teleprompters</h2>
-        <p data-i18n="featuresPage.compare.intro">Freally Teleprompt 1.5.0 — the released version, the one you can use today — next to six commercial teleprompter apps. Every cell for another product comes from its maker's own pages or app-store listing, checked on 2 October 2026, and prices are in US dollars as of October 2026.</p>
-        <ul class="cmp-legend">
-          <li><span class="cmp-mark yes" aria-hidden="true">✓</span> <span data-i18n="featuresPage.compare.legend.yes">has it</span></li>
-          <li><span class="cmp-mark part" aria-hidden="true">◐</span> <span data-i18n="featuresPage.compare.legend.partly">partly</span></li>
-          <li><span class="cmp-mark no" aria-hidden="true">✗</span> <span data-i18n="featuresPage.compare.legend.no">does not</span></li>
-          <li><span class="cmp-mark unknown" aria-hidden="true">—</span> <span data-i18n="featuresPage.compare.legend.unknown">not verified</span></li>
-        </ul>
-        <div class="cmp-wrap" role="region" tabindex="0" aria-labelledby="compare">
-          <table class="cmp">
-            <thead>
-              <tr>
-                <th scope="col"><span class="visually-hidden" data-i18n="featuresPage.compare.feature">Feature</span></th>
-                <th scope="col" class="us">Freally Teleprompt&nbsp;1.5.0</th>
-                <th scope="col">PromptSmart</th>
-                <th scope="col">Speakflow</th>
-                <th scope="col">Teleprompter.com</th>
-                <th scope="col">Teleprompter&nbsp;Pro</th>
-                <th scope="col">PromptDog</th>
-                <th scope="col">TeleScroll</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.price">Price (USD, October 2026)</th>
-                <td class="us yes"><span data-i18n="featuresPage.compare.freeToday">Free today</span></td>
-                <td class="price">$9.99<span class="note" data-i18n="featuresPage.compare.unit.perMonth">a month</span></td>
-                <td class="price">$19<span class="note" data-i18n="featuresPage.compare.unit.perMonth">a month</span></td>
-                <td class="price">$19.99<span class="note" data-i18n="featuresPage.compare.unit.perMonth">a month</span></td>
-                <td class="price">$59.99<span class="note" data-i18n="featuresPage.compare.unit.perYear">a year</span></td>
-                <td class="price">$69<span class="note" data-i18n="featuresPage.compare.unit.once">one-time</span><span class="note" data-i18n="featuresPage.compare.unit.onSale">on sale; usually $99</span></td>
-                <td class="price">$249.99</td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.systems">Desktop app for Windows, macOS and Linux</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">Windows · macOS · Linux</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">+ iOS · Android</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows · Mac</span><span class="note" data-i18n="featuresPage.compare.note.browser">and in a web browser</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">iOS · Android · Mac</span><span class="note" data-i18n="featuresPage.compare.note.browser">and in a web browser</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">iPhone · iPad · Mac</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows · Mac</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note">Windows · Mac</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.noAccount">Use it without making an account</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></td>
-                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></td>
-                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.offline">Works with no internet connection</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.updateCheck">only the update check goes online</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.afterRegistration">after registering online</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.import">Opens Word and PDF files</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.ourFormats">also RTF, plain text and Markdown</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.wordIos">Word on iPhone and iPad only</span></td>
-                <td class="no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.textRtf">plain text and RTF only</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.bpm">Paces the scroll to a music tempo (BPM)</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">20–250</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.pauses">Timed pauses written into the script</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.mirror">Mirrored text for prompter glass</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.devices">Shows the script on other devices</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.ownNetwork">on your own network, in a browser</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.portal">through the maker's portal, online</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.internet">over the internet</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.btWifi">over Bluetooth, Wi-Fi or the internet</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note" data-i18n="featuresPage.compare.note.displayOrLan">a second display, or another device on the network</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.secondMonitor">a second monitor; tablets need other apps</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.remotes">Foot pedals and presenter remotes</th>
-                <td class="us yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.keyboardOnly">keyboard shortcuts only</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></td>
-              </tr>
-              <tr>
-                <th scope="row" data-i18n="featuresPage.compare.row.voiceScroll">Scroll follows your voice</th>
-                <td class="us no"><span aria-hidden="true">✗</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span><span class="note" data-i18n="featuresPage.compare.note.removed">removed in 1.1.0</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">VoiceTrack</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">Flow</span></td>
-                <td class="yes"><span aria-hidden="true">✓</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span><span class="note">VoiceGlide</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="unknown"><span aria-hidden="true">—</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></td>
-                <td class="part"><span aria-hidden="true">◐</span><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span><span class="note" data-i18n="featuresPage.compare.note.paidAddon">a paid add-on</span></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p data-i18n="featuresPage.compare.summary">The short version: of these seven, only Freally Teleprompt says it paces the scroll by BPM and holds timed pauses written into the script, and it is the only one that runs on Windows, macOS and Linux with no account and no payment.</p>
-        <p data-i18n="featuresPage.compare.theyWin">Where they win: PromptSmart, Speakflow and Teleprompter.com scroll by following your voice, and TeleScroll does with a paid add-on; Freally Teleprompt 1.5.0 does not. PromptSmart, Teleprompter.com and Teleprompter Pro have phone and tablet apps that record video while you read and keep your scripts in their cloud, and Speakflow adds AI writing tools and real-time collaboration.</p>
-        <p data-i18n="featuresPage.compare.asOf">Freally Teleprompt's column is version 1.5.0, which is released, so the table compares what you can use today. Its price is today's: Freally Teleprompt is free today, and future versions may be sold. The other products change too; this table is as of 2 October 2026.</p>
-      </section>
-
-      <section class="why">
-        <h2 id="why" data-i18n="featuresPage.why.title">Why it is built the way it is</h2>
-
-        <h3 data-i18n="featuresPage.why.engine.title">One engine, counted in characters</h3>
-        <p data-i18n="featuresPage.why.engine.body">
-          Speed is characters per second, so the preview, the projector and every phone move
-          through the same text at the same rate whatever their font size. The engine is written
-          twice, for the app's core and for its interface, and the two are kept identical.
-        </p>
-
-        <h3 data-i18n="featuresPage.why.import.title">A converter that says what it dropped</h3>
-        <p data-i18n="featuresPage.why.import.body">
-          An import counts what it could not bring across instead of losing it quietly, and never
-          turns a typeset dash into a pause nobody wrote.
-        </p>
-
-        <h3 data-i18n="featuresPage.why.isolate.title">A bad file cannot stop the read</h3>
-        <p data-i18n="featuresPage.why.isolate.body">
-          Documents are read in a separate process with a time limit, so a damaged PDF ends that
-          one import, not the prompter.
-        </p>
-
-        <h3 data-i18n="featuresPage.why.local.title">It stays on your machine</h3>
-        <p data-i18n="featuresPage.why.local.body">
-          No account, no telemetry and no cloud. Your scripts are plain text files you can open in
-          any editor, and the network mirror stays on your own network.
-        </p>
-
-        <h3 data-i18n="featuresPage.why.consent.title">Nothing happens behind your back</h3>
-        <p data-i18n="featuresPage.why.consent.body">
-          Settings change only when you press Apply, a key is claimed system-wide only when you ask,
-          and an update installs only after you say yes.
-        </p>
-
-        <h3 data-i18n="featuresPage.why.keyboard.title">Within reach of the keyboard</h3>
-        <p data-i18n="featuresPage.why.keyboard.body">
-          Every control has a focus ring, dialogs keep focus inside them, the seek bar is a real
-          slider, and reduced motion and reduced transparency are respected.
-        </p>
-      </section>
-
-      <section>
-        <h2 id="coming" data-i18n="featuresPage.coming.title">What is still coming</h2>
-        <p data-i18n="featuresPage.coming.intro">
-          Stated plainly, because a feature list that hides its gaps is not worth reading.
-          Everything on this page is in 1.5.0; the steps after it are on the road to 2.0, each
-          marked with its state.
-        </p>
-        <p>
-          <a href="index.html#ladder" data-i18n="featuresPage.coming.ladder">See every step on the road to 2.0</a>
-        </p>
-
-        <h3 data-i18n="featuresPage.limits.title">What 1.5.0 does not do</h3>
-        <ul>
-          <li data-i18n="featuresPage.limits.voice">
-            It does not scroll by following your voice: you set the pace, and a key or a pedal
-            takes over when the read changes.
-          </li>
-          <li data-i18n="featuresPage.limits.dictation">
-            Dictation understands English only; autocomplete and the interface cover all 18
-            languages.
-          </li>
-          <li data-i18n="featuresPage.limits.phone">
-            There is no phone or tablet app: a phone can show the script through the network
-            mirror, read-only, but cannot drive it.
-          </li>
-          <li data-i18n="featuresPage.limits.recording">
-            It does not record video or audio while you prompt.
-          </li>
-          <li data-i18n="featuresPage.limits.wayland">
-            Under Wayland on Linux, a key set to work while another app is in front may not work,
-            because Wayland does not let apps claim keys system-wide; keys inside the app are not
-            affected.
-          </li>
-        </ul>
-        <p data-i18n="featuresPage.coming.downloads">
-          There are no downloads on this site, and none on this page.
-        </p>
-      </section>
+<section class="page-head">
+<div class="page-head__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<img class="app-icon" src="teleprompt-icon.png" alt="" width="72" height="72" />
+<span class="label" data-i18n="kit.nav.features">Features</span>
+<h1 data-i18n-html="kit.head.features"><span class="hl-muted">Everything it does,</span> <span class="hl-bright">side by side.</span></h1>
+<p class="lead" data-i18n="featuresPage.lead">A teleprompter for Windows, macOS and Linux that reads at a real human pace, keeps every screen on the same word, and opens the script you were sent.</p>
+<p class="fineprint" data-i18n="featuresPage.version">This page describes Freally Teleprompt 1.5.0, the released version: everything on it is in 1.5.0, and nothing still planned is on it.</p>
+</div>
+</section>
+<section class="section section--tight stats-band" id="numbers">
+<div class="stats-band__code" aria-hidden="true">FA F9 35 C1 F8 C8 58 A8 53 87 46 FE 56 69 E4 44 24 84 FF C3 37 9B 2F 33 E7 8B
+5F A3 32 B0 20 6B F5 53 87 AB FF C3 37 9B 2F 33 E7 8B 5F A3 97 16 8E A6 DE B6
+AE 46 99 55 61 18 68 13 47 6B BF 83 92 5A 82 8A F2 3A E2 6A 52 1A 42 4A B2 FA
+A2 2A 12 DA 02 A5 71 4D F9 35 C1 5D 64 C4 A4 9F E3 D7 BB CF 53 22 AA 92 5A 82
+25 27 9D 09 05 51 48 0E 5C 92 5A 82 8A F2 3A 7D 69 80 B0 48 D8 28 38 A3 CD 4B
+1F 63 57 D6 4E 01 9D 09 05 51 48 D8 28 38 08 98 83 F7 83 F7 5B EF 8E DC 12 DA
+02 A5 A8 B8 23 4E 66 39 75 9C 9C 9C 9C 37 9B 2F 33 E7 26 5E 36 2E C6 7E D6 4E
+01 9D 09 2D 27 CB 9F 7E D6 4E 01 9D 09 05 51 AD D9 95 A1 BD A9 25 F1 CD 79 50
+40 70 E0 90 1B AF B3 67 0B DF 23 B2 FA A2 2A 12 DA 02 0A 9A C2 66 9E 76 6E 06
+BE 16 8E 41 DD E4 44 24 84 64 C4 A4 04 E4 44 24 1F 99 8C CC 0C 4C 27 01 D4 74
+94 34 54 F4 14 4F D3 07 2B 1A 42 4A B2 22 AA 92 F5 81 1D 89 85 D1 C8 58 A8 B8
+88 18 68 78 48 D8 C3 37 9C 9C 9C 9C 9C 9C 12 DA 02 A5 A7 1D 89 20 D0 C0 F0 60
+10 00 30 3B 4F D3 07 C6 7E D6 4E 01 9D 09 A0 50 40 70 E0 90 80 B0 20 D0 5B EF
+F3 42 4A B2 FA A2 2A 12 DA 02 0A 72 BA 62 EA D2 35 C1 5D 64 C4 A4 04 E4 44 24
+84 64 C4 A4 04 7F 43 52 1A 42 E5 B1 8D 39 75 01 9D 31 0D 54 F4 14 B4 D4 0F 93
+C7 EB 3F 03 12 DA 2A 12 DA 9D 09 05 51 AD D9 95 A1 58 A8 B8 88 18 68 78 48 D8
+C3 37 9B 2F 33 E7 26 94 6A 52 1A DD 49 45 91 88 18 68 13 47 6B BF 84 64 C4 A4
+9F E3 72 BA 62 EA D2 35 F7 92 5A 82 25 27 9D 09 05 51 48 D8 28 38 08 33 1D C0</div>
+<div class="wrap">
+<div class="section-head"><span class="label" data-i18n="kit.label.numbers">By the numbers</span><p class="lead" data-i18n="featuresPage.numbers.intro">Each figure is what version 1.5.0 does, counted from its code. Nothing is rounded up.</p></div>
+<div class="stats"><div class="stat"><span class="stat__num" data-countup="2">2</span><span class="stat__label" data-i18n="featuresPage.numbers.paces">ways to set the pace: characters per second or BPM</span></div>
+  <div class="stat"><span class="stat__num">20–250</span><span class="stat__label" data-i18n="featuresPage.numbers.bpm">BPM: the range it reads to a beat</span></div>
+  <div class="stat"><span class="stat__num" data-countup="5">5</span><span class="stat__label" data-i18n="featuresPage.numbers.formats">kinds of file it imports: Word, RTF, PDF, plain text and Markdown</span></div>
+  <div class="stat"><span class="stat__num" data-countup="3">3</span><span class="stat__label" data-i18n="featuresPage.numbers.systems">operating systems: Windows, macOS and Linux</span></div>
+  <div class="stat"><span class="stat__num" data-countup="18">18</span><span class="stat__label" data-i18n="featuresPage.numbers.languages">languages, in the app and in its autocomplete</span></div>
+  <div class="stat"><span class="stat__num" data-countup="463985">463,985</span><span class="stat__label" data-i18n="featuresPage.numbers.words">words in its autocomplete lists, with 344,891 phrases</span></div>
+  <div class="stat"><span class="stat__num" data-countup="0">0</span><span class="stat__label" data-i18n="featuresPage.numbers.accounts">accounts to make</span></div>
+  <div class="stat"><span class="stat__num" data-countup="1">1</span><span class="stat__label" data-i18n="featuresPage.numbers.model">speech model, for dictation: on your computer, and off until you switch it on</span></div>
+  <div class="stat"><span class="stat__num">$0</span><span class="stat__label" data-i18n="featuresPage.numbers.price">price today</span></div></div>
+</div>
+</section>
+<section class="section section--surface" id="free">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.free">Free today</span>
+<div class="callout-band">
+    <h2 data-i18n="featuresPage.free.title">Free today</h2>
+    <p class="lead" data-i18n="featuresPage.free.body">Everything Freally Teleprompt 1.5.0 does is free today, for everyone: no paid tier, no subscription, no account and no trial that runs out.</p>
+  </div>
+</div>
+</section>
+<section class="section" id="inside">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.inside">Inside</span>
+<h2 data-i18n="featuresPage.cards.title">What version 1.5.0 does</h2>
+  <div class="cards">
+    <article class="card"><div class="card__media"><img src="kit/art/signal.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="pace" data-i18n="featuresPage.cards.pace.title">A real reading pace</h3>
+      <p data-i18n="featuresPage.cards.pace.body">Characters per second, or BPM from 20 to 250 for lyrics and verses read to a track. Change either while the script runs and the scroll re-paces at once.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/lines.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="pauses" data-i18n="featuresPage.cards.pauses.title">Pause chips</h3>
+      <p data-i18n="featuresPage.cards.pauses.body">Type -- for a short pause or --N for an N-second hold. Each is one chip the cursor cannot split, it lights up as the read reaches it, and read-aloud turns it into a real silence.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/circuit.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="engine" data-i18n="featuresPage.cards.engine.title">Every screen on the same word</h3>
+      <p data-i18n="featuresPage.cards.engine.body">The preview, the projector and the devices on your network follow one engine, counted in characters, so they agree on the word being read even at different text sizes.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/lens.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="projector" data-i18n="featuresPage.cards.projector.title">A projector for the talent</h3>
+      <p data-i18n="featuresPage.cards.projector.body">Full screen on any display, mirrored for beam-splitter glass, with its own transport and keys for the person reading.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/nodes.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="mirror" data-i18n="featuresPage.cards.mirror.title">A mirror to phones and tablets</h3>
+      <p data-i18n="featuresPage.cards.mirror.body">Off until you switch it on. A link and a QR code open the script in any browser on your own network: read-only, with a key that changes every time the app starts.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/index.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="import" data-i18n="featuresPage.cards.import.title">Import Word, RTF, PDF, text and Markdown</h3>
+      <p data-i18n="featuresPage.cards.import.body">Clean prompter text with its paragraphs kept, and a report that counts what could not come across — pictures, footnotes, comments. Nothing is saved until you say so.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/tree.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="markers" data-i18n="featuresPage.cards.markers.title">Section markers, find and replace</h3>
+      <p data-i18n="featuresPage.cards.markers.body">A line that starts with # is a marker on the seek bar and in a jump list. Find and replace matches case or whole words, and is undone in one press.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/rings.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="timing" data-i18n="featuresPage.cards.timing.title">Tempo, click and bars</h3>
+      <p data-i18n="featuresPage.cards.timing.body">Tap your tempo to fit BPM to your own delivery, hear a click with a count-in, and see the bar and beat on screen and as lines on the seek bar.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/tracks.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="rehearsal" data-i18n="featuresPage.cards.rehearsal.title">Rehearsal and a timing report</h3>
+      <p data-i18n="featuresPage.cards.rehearsal.body">Read it through and see each section's planned time against the real one, and the pace you actually read at. It records timings only — no microphone, no audio.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/spectrum.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="skip" data-i18n="featuresPage.cards.skip.title">Labels that take no time</h3>
+      <p data-i18n="featuresPage.cards.skip.body">Mark Chorus, [Verse 1] or ## Bridge as words you do not perform: they stay on screen, dimmed, and take no read time, so your lyrics stay on the bar.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/faders.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="control" data-i18n="featuresPage.cards.control.title">Shortcuts, pedals and hotkeys</h3>
+      <p data-i18n="featuresPage.cards.control.body">A searchable map of every command, with clashes flagged. Pedals and remotes bind like any key, and a key can work while another app is in front.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/chat.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="writing" data-i18n="featuresPage.cards.writing.title">Autocomplete, dictation and read-aloud</h3>
+      <p data-i18n="featuresPage.cards.writing.body">Word and phrase suggestions in 18 languages from lists inside the app, dictation in English that runs on your computer, and read-aloud in your system's own voices.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/globe.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="look" data-i18n="featuresPage.cards.look.title">Your look, your language</h3>
+      <p data-i18n="featuresPage.cards.look.body">Typeface, size, weight, colour, margins, line spacing and the reading line, on every screen at once. The app speaks 18 languages, in a dark or a light theme.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/shield.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 id="private" data-i18n="featuresPage.cards.private.title">No account, no cloud</h3>
+      <p data-i18n="featuresPage.cards.private.body">Scripts are plain files on your computer, and there is no telemetry. The app's only request to the internet is a check for a newer version, and nothing installs without your yes.</p>
+    </div></article>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="compare">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.compare">Compare</span>
+<h2 data-i18n="featuresPage.compare.title">Side by side with the commercial teleprompters</h2>
+  <p class="lead" data-i18n="featuresPage.compare.intro">Freally Teleprompt 1.5.0 — the released version, the one you can use today — next to six commercial teleprompter apps. Every cell for another product comes from its maker's own pages or app-store listing, checked on 2 October 2026, and prices are in US dollars as of October 2026.</p>
+  <div class="table-wrap" role="region" tabindex="0" aria-labelledby="compare-table">
+    <table class="compare" id="compare-table">
+      <thead>
+        <tr>
+          <th scope="col"><span class="visually-hidden" data-i18n="featuresPage.compare.feature">Feature</span></th>
+          <th scope="col" class="ours">Freally Teleprompt&nbsp;1.5.0</th>
+          <th scope="col">PromptSmart</th>
+          <th scope="col">Speakflow</th>
+          <th scope="col">Teleprompter.com</th>
+          <th scope="col">Teleprompter&nbsp;Pro</th>
+          <th scope="col">PromptDog</th>
+          <th scope="col">TeleScroll</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.price">Price (USD, October 2026)</th>
+          <td class="ours yes"><span class="mark"><span data-i18n="featuresPage.compare.freeToday">Free today</span></span></td>
+          <td class="price">$9.99<span class="cell-note" data-i18n="featuresPage.compare.unit.perMonth">a month</span></td>
+          <td class="price">$19<span class="cell-note" data-i18n="featuresPage.compare.unit.perMonth">a month</span></td>
+          <td class="price">$19.99<span class="cell-note" data-i18n="featuresPage.compare.unit.perMonth">a month</span></td>
+          <td class="price">$59.99<span class="cell-note" data-i18n="featuresPage.compare.unit.perYear">a year</span></td>
+          <td class="price">$69<span class="cell-note" data-i18n="featuresPage.compare.unit.once">one-time</span><span class="cell-note" data-i18n="featuresPage.compare.unit.onSale">on sale; usually $99</span></td>
+          <td class="price">$249.99</td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.systems">Desktop app for Windows, macOS and Linux</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">Windows · macOS · Linux</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">+ iOS · Android</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows · Mac</span><span class="cell-note" data-i18n="featuresPage.compare.note.browser">and in a web browser</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">iOS · Android · Mac</span><span class="cell-note" data-i18n="featuresPage.compare.note.browser">and in a web browser</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">iPhone · iPad · Mac</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows · Mac</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows · Mac</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.noAccount">Use it without making an account</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.offline">Works with no internet connection</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.updateCheck">only the update check goes online</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.afterRegistration">after registering online</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.import">Opens Word and PDF files</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ourFormats">also RTF, plain text and Markdown</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.wordIos">Word on iPhone and iPad only</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.textRtf">plain text and RTF only</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.bpm">Paces the scroll to a music tempo (BPM)</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">20–250</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.pauses">Timed pauses written into the script</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.mirror">Mirrored text for prompter glass</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.devices">Shows the script on other devices</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ownNetwork">on your own network, in a browser</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.portal">through the maker's portal, online</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.internet">over the internet</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.btWifi">over Bluetooth, Wi-Fi or the internet</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.displayOrLan">a second display, or another device on the network</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.secondMonitor">a second monitor; tablets need other apps</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.remotes">Foot pedals and presenter remotes</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.keyboardOnly">keyboard shortcuts only</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.voiceScroll">Scroll follows your voice</th>
+          <td class="ours no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.removed">removed in 1.1.0</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">VoiceTrack</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">Flow</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">VoiceGlide</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.paidAddon">a paid add-on</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="legend">
+    <li><span class="mark mark--yes"></span><span data-i18n="featuresPage.compare.legend.yes">has it</span></li>
+    <li><span class="mark mark--part"></span><span data-i18n="featuresPage.compare.legend.partly">partly</span></li>
+    <li><span class="mark mark--no"></span><span data-i18n="featuresPage.compare.legend.no">does not</span></li>
+    <li><span class="mark mark--unknown"></span><span data-i18n="featuresPage.compare.legend.unknown">not verified</span></li>
+  </ul>
+  <div class="notes compare-notes">
+    <article class="note note--featured">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="featuresPage.compare.summaryTitle">The short version</span></h3>
+      <p data-i18n="featuresPage.compare.summary">The short version: of these seven, only Freally Teleprompt says it paces the scroll by BPM and holds timed pauses written into the script, and it is the only one that runs on Windows, macOS and Linux with no account and no payment.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span data-i18n="featuresPage.compare.theyWinTitle">Where they win</span></h3>
+      <p data-i18n="featuresPage.compare.theyWin">Where they win: PromptSmart, Speakflow and Teleprompter.com scroll by following your voice, and TeleScroll does with a paid add-on; Freally Teleprompt 1.5.0 does not. PromptSmart, Teleprompter.com and Teleprompter Pro have phone and tablet apps that record video while you read and keep your scripts in their cloud, and Speakflow adds AI writing tools and real-time collaboration.</p>
+    </article>
+  </div>
+  <p class="fineprint" data-i18n="featuresPage.compare.asOf">Freally Teleprompt's column is version 1.5.0, which is released, so the table compares what you can use today. Its price is today's: Freally Teleprompt is free today, and future versions may be sold. The other products change too; this table is as of 2 October 2026.</p>
+</div>
+</section>
+<section class="section" id="why">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.principles">Principles</span>
+<h2 data-i18n="featuresPage.why.title">Why it is built the way it is</h2>
+  <div class="notes">
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg><span data-i18n="featuresPage.why.engine.title">One engine, counted in characters</span></h3>
+      <p data-i18n="featuresPage.why.engine.body">Speed is characters per second, so the preview, the projector and every phone move through the same text at the same rate whatever their font size. The engine is written twice, for the app's core and for its interface, and the two are kept identical.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8M16 13H8M16 17H8"/></svg><span data-i18n="featuresPage.why.import.title">A converter that says what it dropped</span></h3>
+      <p data-i18n="featuresPage.why.import.body">An import counts what it could not bring across instead of losing it quietly, and never turns a typeset dash into a pause nobody wrote.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg><span data-i18n="featuresPage.why.isolate.title">A bad file cannot stop the read</span></h3>
+      <p data-i18n="featuresPage.why.isolate.body">Documents are read in a separate process with a time limit, so a damaged PDF ends that one import, not the prompter.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span data-i18n="featuresPage.why.local.title">It stays on your machine</span></h3>
+      <p data-i18n="featuresPage.why.local.body">No account, no telemetry and no cloud. Your scripts are plain text files you can open in any editor, and the network mirror stays on your own network.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="featuresPage.why.consent.title">Nothing happens behind your back</span></h3>
+      <p data-i18n="featuresPage.why.consent.body">Settings change only when you press Apply, a key is claimed system-wide only when you ask, and an update installs only after you say yes.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M10 8h.01M12 12h.01M14 8h.01M16 12h.01M18 8h.01M6 8h.01M7 16h10M8 12h.01"/><rect width="20" height="16" x="2" y="4" rx="2"/></svg><span data-i18n="featuresPage.why.keyboard.title">Within reach of the keyboard</span></h3>
+      <p data-i18n="featuresPage.why.keyboard.body">Every control has a focus ring, dialogs keep focus inside them, the seek bar is a real slider, and reduced motion and reduced transparency are respected.</p></article>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="coming">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.limits">Limits</span>
+<h2 data-i18n="featuresPage.coming.title">What is still coming</h2>
+  <p class="lead" data-i18n="featuresPage.coming.intro">Stated plainly, because a feature list that hides its gaps is not worth reading. Everything on this page is in 1.5.0; the steps after it are on the road to 2.0, each marked with its state.</p>
+  <div class="cards cards--2">
+    <article class="card"><div class="card__body">
+<h3 data-i18n="kit.states.title">What the states mean</h3>
+<ul class="legend legend--states"><li><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span data-i18n="kit.states.done">built and tagged, but not a download on this site</span></li><li><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span data-i18n="kit.states.planned">still to be built</span></li><li><span class="state state-goal" data-i18n="kit.ladder.goal">The goal</span><span data-i18n="kit.states.goal">the version the road leads to</span></li></ul>
+<p><a href="index.html#ladder" data-i18n="kit.states.ladder">See every rung of the road</a></p>
+</div></article>
+    <article class="card"><div class="card__body">
+      <h3 data-i18n="featuresPage.limits.title">What 1.5.0 does not do</h3>
+      <ul>
+        <li data-i18n="featuresPage.limits.voice">It does not scroll by following your voice: you set the pace, and a key or a pedal takes over when the read changes.</li>
+        <li data-i18n="featuresPage.limits.dictation">Dictation understands English only; autocomplete and the interface cover all 18 languages.</li>
+        <li data-i18n="featuresPage.limits.phone">There is no phone or tablet app: a phone can show the script through the network mirror, read-only, but cannot drive it.</li>
+        <li data-i18n="featuresPage.limits.recording">It does not record video or audio while you prompt.</li>
+        <li data-i18n="featuresPage.limits.wayland">Under Wayland on Linux, a key set to work while another app is in front may not work, because Wayland does not let apps claim keys system-wide; keys inside the app are not affected.</li>
+      </ul>
+    </div></article>
+  </div>
+  <p class="fineprint" data-i18n="featuresPage.coming.downloads">There are no downloads on this site, and none on this page.</p>
+</div>
+</section>
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.yours">
-          Your scripts are yours. They stay on your computer, and the app's author never receives,
-          stores or relays them.
-        </p>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="teleprompt-icon.png" alt="" width="28" height="28" /><span>Freally Teleprompt</span></a><p data-i18n="site.tagline">Look confident. Stay on script.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Teleprompt is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/" aria-current="true">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">Your scripts are yours. They stay on your computer, and the app's author never receives, stores or relays them.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v1.5.0</span>
+        </div>
       </div>
     </footer>
-
-    <script src="site.js"></script>
   </body>
 </html>

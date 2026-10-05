@@ -1,785 +1,766 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="documentation" data-product="oscillate" data-name="Freally Oscillate" data-title-key="kit.nav.documentation">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
     <title>Documentation — Freally Oscillate</title>
-    <meta
-      name="description"
-      content="The manual: every panel, every editor, the room, the plugins and the limits."
-    />
+    <meta name="description" content="A DAW where four producers work in the same session at once, peer to peer. Free today, with no subscription, no account, no server and no AI. Windows, macOS and Linux." />
+    <meta property="og:title" content="Documentation — Freally Oscillate" />
+    <meta property="og:description" content="A DAW where four producers work in the same session at once, peer to peer. Free today, with no subscription, no account, no server and no AI. Windows, macOS and Linux." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="oscillate-icon.png" alt="" width="28" height="28" />
-          <span>Freally Oscillate</span>
-        </a>
-        <nav class="site-nav" aria-label="Site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="oscillate-icon.png" alt="" width="28" height="28" /><span>Freally Oscillate</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
-      </div>
-    </header>
-
-    <main id="main">
-      <h1 data-i18n="docs.title">Documentation</h1>
-
-      <!-- ⛔⛔ THE MANUAL IS IN ENGLISH AND THIS SAYS SO, IN EVERY LANGUAGE.
-           § F-33 and the site plan ask for eighteen locales. The *site* is in
-           eighteen; the manual's prose is not, and a machine-translated manual
-           would be worse than an honest English one — the application's own
-           locale gate exists because half-translated is worse than untranslated.
-           This notice is translated, so a reader who switches language is told
-           in their own language what they are about to read. -->
-      <div class="search">
-        <label class="search-label" for="q" data-i18n="search.label">Search the manual</label>
-        <input
-          id="q"
-          type="search"
-          autocomplete="off"
-          placeholder="room code, quantize, exclusive…"
-          data-i18n-attr="placeholder:search.placeholder"
-        />
-        <ul class="search-results"></ul>
-      </div>
-
-      <div class="manual">
-        <nav class="manual-toc" aria-label="Contents" data-i18n-attr="aria-label:docs.contents">
-          <ol>
-            <li><a href="#start" data-i18n="docs.toc.start">Getting started</a></li>
-            <li><a href="#window" data-i18n="docs.toc.window">The window and its panels</a></li>
-            <li><a href="#arrangement" data-i18n="docs.toc.arrangement">The arrangement</a></li>
-            <li><a href="#piano-roll" data-i18n="docs.toc.pianoRoll">The piano roll</a></li>
-            <li><a href="#drum-grid" data-i18n="docs.toc.drumGrid">The drum grid</a></li>
-            <li><a href="#automation" data-i18n="docs.toc.automation">Automation</a></li>
-            <li><a href="#recording" data-i18n="docs.toc.recording">Recording and comping</a></li>
-            <li><a href="#mixer" data-i18n="docs.toc.mixer">The mixer</a></li>
-            <li><a href="#plugins" data-i18n="docs.toc.plugins">Plugins</a></li>
-            <li><a href="#devices" data-i18n="docs.toc.devices">The stock devices</a></li>
-            <li><a href="#explorer" data-i18n="docs.toc.explorer">The File Explorer</a></li>
-            <li><a href="#room" data-i18n="docs.toc.room">The room</a></li>
-            <li><a href="#kumite" data-i18n="docs.toc.kumite">Kumite and the Split Sheet</a></li>
-            <li><a href="#lyrics" data-i18n="docs.toc.lyrics">The Lyric Lane</a></li>
-            <li><a href="#export" data-i18n="docs.toc.export">Export</a></li>
-            <li><a href="#settings" data-i18n="docs.toc.settings">Settings</a></li>
-            <li><a href="#updates" data-i18n="docs.toc.updates">Updates</a></li>
-            <li><a href="#shortcuts" data-i18n="docs.toc.shortcuts">Shortcuts</a></li>
-            <li><a href="#privacy" data-i18n="docs.toc.privacy">Privacy and the network</a></li>
-            <li><a href="#limits" data-i18n="docs.toc.limits">The limits, stated plainly</a></li>
-            <li>
-              <a href="#troubleshooting" data-i18n="docs.toc.troubleshooting">Troubleshooting</a>
-            </li>
-          </ol>
-        </nav>
-
-        <div class="manual-body">
-          <section id="start">
-            <h2 data-i18n-html="manual.831d0f72d242">Getting started</h2>
-            <p data-i18n-html="manual.05df7711cd6c">
-              Oscillate installs like any other desktop application and runs offline. The first time
-              you open it you are shown the agreement; you have to accept it before the application
-              opens, and you can reopen it at any time from
-              <strong>Settings ▸ About ▸ View the agreement</strong>.
-            </p>
-            <p data-i18n-html="manual.fb63caf27515">
-              After that you are in a session called <em>New Project</em>. Nothing is saved anywhere
-              until you save it, except the crash journal — which records every change as you make
-              it so that a crash costs you nothing rather than costing you the afternoon.
-            </p>
-            <figure class="shot">
-              <img
-                src="img/start-01-first-window.png"
-                alt="The Oscillate window on a first run, with the File Explorer down the left, the arrangement in the middle, and the transport controls along the bottom boxed in red."
-                loading="lazy"
-              />
-              <figcaption data-i18n-html="manual.9edf9ef77c9f">
-                The window on a first run. The boxed strip is the transport: play, stop, record,
-                the tempo and the metronome.
-              </figcaption>
-            </figure>
-            <p data-i18n-html="manual.a8522c985343">
-              Press <kbd>Space</kbd> to start and stop. Drag a sound from the File Explorer onto a
-              track, or double-click an empty part of a MIDI track to make a clip and start writing.
-            </p>
-          </section>
-
-          <section id="window">
-            <h2 data-i18n-html="manual.365101815fb2">The window and its panels</h2>
-            <p data-i18n-html="manual.d5e9c2dcb12a">
-              The window is borderless and Oscillate draws its own minimise, maximise and close. The
-              four panels are toggled from the titlebar or with a key:
-            </p>
-            <table class="ladder">
-              <thead>
-                <tr>
-                  <th data-i18n-html="manual.99a52df3ff3d">Key</th>
-                  <th data-i18n-html="manual.d0d91173008b">Panel</th>
-                  <th data-i18n-html="manual.1f36becc3aa7">What it is</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>1</kbd></td>
-                  <td data-i18n-html="manual.d6f6a04891cc">File Explorer</td>
-                  <td data-i18n-html="manual.495763c88db7">Your sounds, your plugins and Oscillate's own devices, with a preview.</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>2</kbd></td>
-                  <td data-i18n-html="manual.936a161c3931">Editor</td>
-                  <td data-i18n-html="manual.05db484cdeb8">The piano roll, the drum grid, automation and the waveform editor.</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>3</kbd></td>
-                  <td data-i18n-html="manual.8ae012d51747">Mixer</td>
-                  <td data-i18n-html="manual.f1972360c8eb">Faders, meters, the Masking Radar and the loudness panel.</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>4</kbd></td>
-                  <td data-i18n-html="manual.911ea89c43d9">Room</td>
-                  <td data-i18n-html="manual.42546267e696">Room codes, the roster, chat, voice, cameras and screen share.</td>
-                </tr>
-              </tbody>
-            </table>
-            <p data-i18n-html="manual.78b8c8386cc9">
-              On macOS every <kbd>Ctrl</kbd> below is <kbd>Cmd</kbd>. Any panel can be dragged out
-              into a window of its own, which keeps working on a second monitor.
-            </p>
-            <p data-i18n-html="manual.2ae2bf6b8884">
-              Drag the divider between two panels to resize them. Below 1280 pixels wide the side
-              panels collapse on their own, because the arrangement stops being usable before they
-              do.
-            </p>
-          </section>
-
-          <section id="arrangement">
-            <h2 data-i18n-html="manual.2e5511855cbc">The arrangement</h2>
-            <p data-i18n-html="manual.226516acde25">
-              A timeline with a bar-and-beat ruler, a grid that follows the zoom, track headers down
-              the side, and clips drawn from what they actually are — a real waveform for audio,
-              real notes for a pattern.
-            </p>
-            <h3 data-i18n-html="manual.78d11d4d5db9">Editing clips</h3>
-            <ul>
-              <li data-i18n-html="manual.0bfc00f5a7ca">Drag a clip to move it; hold <kbd>Alt</kbd> while dragging to copy it.</li>
-              <li data-i18n-html="manual.bb5fc5708305">Drag either end to trim; drag the top corner to fade.</li>
-              <li data-i18n-html="manual.c379e75c7075">Drag the loop handle on the right edge to repeat it.</li>
-              <li data-i18n-html="manual.196e45387bc2">
-                <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes back the whole gesture — however many clips it
-                touched, one press.
-              </li>
-            </ul>
-            <h3 data-i18n-html="manual.65ca08c3ec91">The Cut</h3>
-            <p data-i18n-html="manual.6cbcada86f4d">
-              Press <kbd>B</kbd> for the blade and drag a stroke across the arrangement. Every clip
-              the stroke crosses is split where it crossed, and the angle of the stroke sets how
-              long the crossfade is: a vertical stroke is a hard cut, a shallow one is a long
-              blend. Press <kbd>V</kbd> to go back to the pointer.
-            </p>
-            <h3 data-i18n-html="manual.102bcc2b6fcb">Turning a clip into the other kind</h3>
-            <p data-i18n-html="manual.e6513c30872c">
-              Right-click a MIDI clip and choose <strong>Render to audio</strong>; right-click an
-              audio clip and choose <strong>Convert to MIDI</strong>. Either way the result lands
-              <em>beside</em> the original rather than over it, and one press of undo puts things
-              back.
-            </p>
-            <p data-i18n-html="manual.04d699e071c9">
-              A pattern is rendered through whatever is on that track: the instrument in its slot
-              and then every audio effect after it. A device you switched off is not in the render.
-              The track's own fader and pan deliberately are not either — the new clip plays through
-              them, so printing them would apply them twice.
-            </p>
-            <p data-i18n-html="manual.8d98a4cb90a8">
-              Converting audio to MIDI is imperfect and says so: it tells you how many hits it could
-              not read a pitch from. A drum loop converts to nothing at all, which is the honest
-              answer.
-            </p>
-          </section>
-
-          <section id="piano-roll">
-            <h2 data-i18n-html="manual.dac11b27d868">The piano roll</h2>
-            <p data-i18n-html="manual.33738bb248c5">
-              Double-click a MIDI clip to open it. Draw notes with the pencil (<kbd>P</kbd>), or
-              double-click in the grid. The keyboard down the left side plays the instrument on the
-              track, and one key can be set to play a whole chord.
-            </p>
-            <h3 data-i18n-html="manual.42a0052bf1b6">Scales</h3>
-            <p data-i18n-html="manual.ddbef0217d41">
-              Around ninety scales. Choosing one highlights its notes, and
-              <kbd>Ctrl</kbd>+<kbd>K</kbd> moves whatever is selected onto it. Folding hides every
-              row that is not in the scale, which turns a chromatic grid into one you can read.
-            </p>
-            <h3 data-i18n-html="manual.2cafc9e7c3b3">The note operations</h3>
-            <table class="ladder">
-              <thead>
-                <tr>
-                  <th data-i18n-html="manual.99a52df3ff3d">Key</th>
-                  <th data-i18n-html="manual.c74ea9dc9cd2">What it does</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>U</kbd></td>
-                  <td data-i18n-html="manual.0baf2bf51650">Quantize — snap the selected notes to the grid</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></td>
-                  <td data-i18n-html="manual.ea07e2f557fe">Humanize — push them back off it, by a little</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>L</kbd></td>
-                  <td data-i18n-html="manual.0ab966bf90ea">Legato — stretch each note to meet the next</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>R</kbd></td>
-                  <td data-i18n-html="manual.6a31f294ca42">Reverse the order of the selected notes</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>K</kbd></td>
-                  <td data-i18n-html="manual.4cde53316a6e">Move them onto the clip's scale</td>
-                </tr>
-                <tr>
-                  <td><kbd>Ctrl</kbd>+<kbd>D</kbd></td>
-                  <td data-i18n-html="manual.16aac93d1c5b">Duplicate in place</td>
-                </tr>
-                <tr>
-                  <td><kbd>Shift</kbd>+<kbd>D</kbd></td>
-                  <td data-i18n-html="manual.6e14c1f152dd">Duplicate after — the usual way to build a part</td>
-                </tr>
-                <tr>
-                  <td><kbd>←</kbd> <kbd>→</kbd></td>
-                  <td data-i18n-html="manual.3acb04d66cdb">Nudge by one grid division</td>
-                </tr>
-                <tr>
-                  <td><kbd>↑</kbd> <kbd>↓</kbd></td>
-                  <td data-i18n-html="manual.22667e7b7cca">Move a semitone; with <kbd>Shift</kbd>, an octave</td>
-                </tr>
-              </tbody>
-            </table>
-            <p data-i18n-html="manual.af2e3ba89e9f">
-              The velocity lane under the grid has a handle per note. Ghost notes from any other
-              clip can be drawn behind the one you are editing, which is how you write a bassline
-              against a chord part without switching back and forth.
-            </p>
-          </section>
-
-          <section id="drum-grid">
-            <h2 data-i18n-html="manual.a232ac37bd92">The drum grid</h2>
-            <p data-i18n-html="manual.27e0332d2463">
-              The same clip seen as one row per drum instead of one row per pitch. Click a cell to
-              place a hit, drag across cells to fill them, and drag a hit up or down within its row
-              to change its velocity. Everything in the piano roll's table above works here too — it
-              is the same notes underneath.
-            </p>
-          </section>
-
-          <section id="automation">
-            <h2 data-i18n-html="manual.d909750b1bbb">Automation</h2>
-            <p data-i18n-html="manual.2195edf6dd56">
-              Every fader, pan and device control can be automated. Open a track's automation lane,
-              choose the target, and draw. Points snap to the grid; hold <kbd>Alt</kbd> to place one
-              freely. A curve between two points can be bent by dragging its middle.
-            </p>
-            <p data-i18n-html="manual.f82da0230788">
-              <strong>Kata</strong> are automation shapes you draw once and stamp anywhere — a
-              swell, a filter sweep, a sidechain-shaped duck — so a gesture you liked is reusable
-              rather than redrawn.
-            </p>
-          </section>
-
-          <section id="recording">
-            <h2 data-i18n-html="manual.a4592301df0c">Recording and comping</h2>
-            <p data-i18n-html="manual.1a01d11683c6">
-              Arm a track, press record, play. Audio is written to disk as it arrives rather than
-              held in memory, so a crash costs you the last block and not the take.
-            </p>
-            <p data-i18n-html="manual.91afc456637e">
-              Record over the same bars again and you get a second take stacked under the first.
-              Choose the parts you want from each and Oscillate assembles the comp.
-              <strong>The takes you did not choose are never deleted</strong> — that is what Shadow
-              Takes means, and it is why changing your mind a week later costs nothing.
-            </p>
-            <p data-i18n-html="manual.cebcc1706c05">
-              A count-in is set in <strong>Settings ▸ Recording</strong>. It is off by default.
-            </p>
-          </section>
-
-          <section id="mixer">
-            <h2 data-i18n-html="manual.bdb597b1232d">The mixer</h2>
-            <p data-i18n-html="manual.6904fda84081">
-              <kbd>Ctrl</kbd>+<kbd>3</kbd>. A strip per track with a fader, a pan, mute, solo, the
-              device rack and a meter that is drawn from the audio the engine actually produced —
-              never from a prediction.
-            </p>
-            <h3 data-i18n-html="manual.8eaced166021">The Masking Radar</h3>
-            <p data-i18n-html="manual.bea60461bd8b">
-              Press <strong>Radar</strong> and Oscillate watches for pairs of tracks fighting for
-              the same band — the bass and the kick, the vocal and the pad — and names the pair and
-              the frequency. It costs CPU while it is on and the tooltip says so.
-            </p>
-            <p data-i18n-html="manual.6f550e9b860d">
-              A pair that has not been heard yet reads <strong>Not heard yet</strong>, not "clean".
-              If the session has more tracks than the radar watches, it tells you that too rather
-              than silently showing a subset.
-            </p>
-            <h3 data-i18n-html="manual.e0b651a4ea3c">Loudness and true peak</h3>
-            <p data-i18n-html="manual.5a27169c5088">
-              Press <strong>Loudness</strong> for integrated LUFS, short-term, the range and true
-              peak, plus a table of what each streaming service targets and what it would do to your
-              master. Each target carries the date it was last checked.
-            </p>
-            <p data-i18n-html="manual.bfc4dfe30bdc">
-              If the meter ever fell behind under load it says so — <em>"the meter fell behind, so
-              some audio was never measured"</em>. A number with no warning beside it means a
-              complete measurement.
-            </p>
-          </section>
-
-          <section id="plugins">
-            <h2 data-i18n-html="manual.9514b7ff4860">Plugins</h2>
-            <p data-i18n-html="manual.24653cacd405">
-              Oscillate hosts <strong>VST3 and CLAP</strong>, and each plugin runs in a process of
-              its own. A plugin that crashes greys out that device and leaves your session running.
-            </p>
-            <p data-i18n-html="manual.4c2bf768921f">
-              Your plugins appear in the File Explorer under <em>Plugins</em>. Drag one onto a
-              track, or select the track and click it. Open its own editor from the device rack —
-              the real interface you bought, not a list of sliders — and closing and reopening it
-              brings it back at the size it was.
-            </p>
-            <p data-i18n-html="manual.657f210c6f73">
-              Delay compensation is graph-wide and is proved by a null test: the same signal through
-              a latency-reporting device and around it, cancelling to silence. A plugin this machine
-              does not have becomes a named placeholder that still costs its samples, so a project
-              opened somewhere else stays in time.
-            </p>
-          </section>
-
-          <section id="devices">
-            <h2 data-i18n-html="manual.c80fbc216c04">The stock devices</h2>
-            <p data-i18n-html="manual.fe9d907d6c9f">
-              Sixty-nine instruments and effects ship inside Oscillate, including
-              <strong>Freally Secretarium</strong>. Every panel is drawn from the device's own
-              description, so the readout on a knob is the number the DSP is using rather than a
-              second one that agrees most of the time.
-            </p>
-            <h3 data-i18n-html="manual.57ba00ce7687">Faces</h3>
-            <p data-i18n-html="manual.4ce795582ea6">
-              A device shows what it is doing rather than only what it is set to: a compressor draws
-              its gain reduction, an equaliser draws its response, a stereo device draws its field.
-            </p>
-            <p data-i18n-html="manual.5396457a7321">
-              <strong>Some faces are deliberately blank.</strong> A transfer curve, a spectrum and a
-              scope need a measurement that does not exist yet, and drawing a plausible shape from
-              the controls would be a picture of nothing. They stay blank until the measurement is
-              real.
-            </p>
-            <h3 data-i18n-html="manual.6a4181898f49">Recipe strings</h3>
-            <p data-i18n-html="manual.3c86c1f5f519">
-              A device's settings copy as one line you can paste into a chat. A whole rack — stock
-              devices and hosted plugins together — saves as a file and recalls onto any track in
-              one undo step, including on a machine that is missing one of its plugins.
-            </p>
-            <h3 data-i18n-html="manual.afc35db2da83">Devices that read the arrangement</h3>
-            <p data-i18n-html="manual.6a537022e329">
-              Six of them do something no plugin can, because a plugin cannot see the arrangement it
-              is inside. A compressor already holding the chorus when it arrives; a gate that opens
-              for a hit two bars before it happens; a delay that empties <em>into</em> the bar line
-              so the tail runs out instead of being cut. Reading two bars of audio ahead is latency
-              and everybody pays for it; reading the structure costs nothing, and all of them
-              declare zero.
-            </p>
-          </section>
-
-          <section id="explorer">
-            <h2 data-i18n-html="manual.4854ad4c206c">The File Explorer</h2>
-            <p data-i18n-html="manual.0d2dfd82f8ee">
-              <kbd>Ctrl</kbd>+<kbd>1</kbd>. A home screen of places —
-              <em>Instruments</em>, <em>Audio Effects</em>, <em>MIDI Effects</em>,
-              <em>Plugins</em> — that you click into, a <strong>Choose folder</strong> button, and
-              the folders you have added listed by name.
-            </p>
-            <p data-i18n-html="manual.efab24503279">
-              The filter searches what a device <em>is</em> as well as what it is called, so typing
-              <code>compressor</code> finds <code>Vise</code>.
-            </p>
-            <h3 data-i18n-html="manual.00254cbab0ed">The preview</h3>
-            <p data-i18n-html="manual.3475ee704644">
-              Click a device and you hear its own demonstration — a note chosen and a length
-              measured per instrument — with a waveform, a playhead, a loop, and
-              <kbd>←</kbd>/<kbd>→</kbd> to run it backwards or forwards. Point it at a folder of
-              your own and it previews your samples the same way. Five of the instruments are
-              samplers and say so rather than playing silence: they cannot sound until you load a
-              file.
-            </p>
-            <h3 data-i18n-html="manual.5a8b10fcbead">Dragging a file in</h3>
-            <p data-i18n-html="manual.b40583c5f830">
-              Drag a <code>.wav</code> or a <code>.mid</code> straight from Windows Explorer or
-              Finder onto a bar in the arrangement and it lands
-              <strong>where you dropped it</strong>. MIDI goes onto MIDI tracks, audio onto audio
-              tracks, and the wrong kind is refused with a reason rather than being given a lane of
-              its own.
-            </p>
-            <p data-i18n-html="manual.5d740606fafb">
-              A dropped file is <strong>taken into the project</strong>, not referenced. Drop
-              something out of a temporary folder and delete the original, and the clip still plays.
-            </p>
-          </section>
-
-          <section id="room">
-            <h2 data-i18n-html="manual.542aa51c9ff9">The room</h2>
-            <p data-i18n-html="manual.f735a1d5bc49">
-              <kbd>Ctrl</kbd>+<kbd>4</kbd>. Press <strong>Create a room code</strong>, wait for the
-              code, and send it to whoever you are working with. They paste it, send you theirs
-              back, you paste that into <strong>Let them in</strong>, and you are in the same
-              session.
-            </p>
-            <figure class="shot">
-              <img
-                src="img/room-01-create.png"
-                alt="The Room panel with the Create a room code button boxed in red and numbered 1, and the Let them in button — where you paste the code somebody sent you — boxed and numbered 2."
-                loading="lazy"
-              />
-              <figcaption data-i18n-html="manual.0548c5c7cd35">
-                1 makes your code. 2 is where their code goes. ⚠ Once a code exists, the sentence
-                beside it is the one that matters: treat it like a password, because it contains
-                your computer's public address.
-              </figcaption>
-            </figure>
-            <h3 data-i18n-html="manual.41a1acbef296">What you get</h3>
-            <ul>
-              <li data-i18n-html="manual.4e795a73e99f">A roster, with a colour each, and their cursors moving on your arrangement.</li>
-              <li data-i18n-html="manual.e2168f0fe102">Chat. It lasts as long as the room and nothing is written to disk.</li>
-              <li data-i18n-html="manual.83623938eb6f">Voice, camera tiles and screen share — all off until you press something.</li>
-              <li data-i18n-html="manual.5161add1f5a4">
-                <strong>Your undo is yours.</strong> <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes back your
-                last change and never somebody else's, even while their edits are arriving.
-              </li>
-              <li data-i18n-html="manual.ab67452f2acf">
-                <strong>Takeover</strong> — hand one track to somebody and take it back with one
-                key. While they hold it they are the only writer for it, including you.
-              </li>
-            </ul>
-            <h3 data-i18n-html="manual.6a62a97df77a">What never travels</h3>
-            <p data-i18n-html="manual.c61d0ae17869">
-              <strong>A take you recorded travels. A sample you bought never does.</strong> When
-              somebody joins a session that uses a sample pack they do not have, they get a list
-              called <em>Samples you need</em> and the reason: Oscillate never sends samples between
-              computers. Byte-identical is what piracy produces, and this product will not be a
-              route to it.
-            </p>
-            <h3 data-i18n-html="manual.0cce48095d62">When it does not connect</h3>
-            <p data-i18n-html="manual.7a85d27236d6">
-              Roughly one connection in ten will not form, and Oscillate names which of nine causes
-              it was — from <em>no network was found</em> to
-              <em>your network gives every server a different address</em>. That last one needs a
-              relay in the middle; there is a field for your own in
-              <strong>Settings ▸ Collaboration</strong>.
-            </p>
-          </section>
-
-          <section id="kumite">
-            <h2 data-i18n-html="manual.ba5e0c669f84">Kumite and the Split Sheet</h2>
-            <p data-i18n-html="manual.3dddae9cbb86">
-              <strong>Kumite</strong> is a beat battle mode where each turn owns its own bars. The
-              countdown is a countdown, but the bars are the rule — so two computers can never
-              disagree about whose edit was legal.
-            </p>
-            <p data-i18n-html="manual.aa8f79385db8">
-              <strong>The Split Sheet</strong> is who wrote what, derived from the edit log, with
-              work anybody undid netted out. It is a starting point for a conversation about credit,
-              not a legal document, and it says so.
-            </p>
-          </section>
-
-          <section id="lyrics">
-            <h2 data-i18n-html="manual.787726eabc9d">The Lyric Lane</h2>
-            <p data-i18n-html="manual.9129cdbc7eff">
-              Select a vocal track and press <strong>Lyrics</strong>. A lane of words appears,
-              locked to the playhead. Add lines, move a line a bar earlier or later, split a line
-              into syllables, and point a recorded take at the words it belongs to.
-            </p>
-            <p data-i18n-html="manual.64413b5bc744">
-              Import a <code>.txt</code> or <code>.lrc</code> file and the words are
-              <strong>copied into the project</strong> — move the file afterwards and the words are
-              still there.
-            </p>
-            <p data-i18n-html="manual.f935e3c9c7fe">
-              The type is meant to be sung from across a room, not read leaning in. Every lyric edit
-              is an operation, so <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes it back like everything else.
-            </p>
-          </section>
-
-          <section id="export">
-            <h2 data-i18n-html="manual.3664895579f0">Export</h2>
-            <p data-i18n-html="manual.b3307da67465">
-              <strong>File ▸ Export companion folder…</strong> writes stems and MIDI that any other
-              DAW can open. Stems line up at bar 1, so importing them somewhere else does not mean
-              nudging thirty files into place.
-            </p>
-            <p data-i18n-html="manual.271287d739a7">
-              Format, sample rate, bit depth, dither and where it goes are in
-              <strong>Settings ▸ Export</strong>.
-            </p>
-            <p data-i18n-html="manual.1419f63cf3ba">
-              <strong>Session cards.</strong> <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>, or
-              <strong>File ▸ Session card…</strong>, renders a 1200×630 picture of the session —
-              tempo, key, track and clip counts, length and the shape of the arrangement — to post.
-              A room code cannot go on one: it is kilobytes long and contains your public address,
-              so the option is present, disabled, and says why.
-            </p>
-          </section>
-
-          <section id="settings">
-            <h2 data-i18n-html="manual.74a883a037bc">Settings</h2>
-            <p data-i18n-html="manual.5371ad5444f6">
-              <kbd>Ctrl</kbd>+<kbd>,</kbd>. Every change applies immediately and persists per
-              machine. There is no <em>Apply</em> button, because a settings dialog with one is a
-              settings dialog that can be wrong about what is in effect.
-            </p>
-            <h3 data-i18n-html="manual.bc1b88907d3b">Audio</h3>
-            <p data-i18n-html="manual.40710b1c4ea7">
-              Choose your output and how much of the device to take. On Windows you can ask for
-              <strong>Exclusive</strong>, which gives you the lowest latency the hardware can do and
-              silences every other application. Oscillate tells you
-              <strong>which mode you actually got and why</strong> — either
-              <em>the stream opened exclusively</em> or
-              <em>this machine would not open an exclusive stream, so the device is still
-              shared</em>. Never a silent downgrade.
-            </p>
-            <h3 data-i18n-html="manual.dfe87d5e5bba">Appearance and language</h3>
-            <p data-i18n-html="manual.74a5371eede6">
-              Both themes, eighteen languages, and the choice you make wins over the machine's on
-              the next launch. Right-to-left is real, not a text alignment.
-            </p>
-          </section>
-
-          <section id="updates">
-            <h2 data-i18n-html="manual.22e2bada8f1c">Updates</h2>
-            <p data-i18n-html="manual.56205fc54fb3">
-              <strong>Settings ▸ Updates.</strong> Oscillate looks for an update
-              <strong>only</strong> when you press <em>Check for updates</em>, or at launch if you
-              switch that on — and it is <strong>off by default</strong>.
-            </p>
-            <figure class="shot">
-              <img
-                src="img/updates-01-panel.png"
-                alt="Settings with the Updates section selected, the Check for updates button boxed in red and numbered 1, and the Check when Oscillate starts toggle boxed and numbered 2 in its off position."
-                loading="lazy"
-              />
-              <figcaption data-i18n-html="manual.983c1169fe58">
-                1 checks once, now. 2 is the launch check, and it is off until you turn it on. The
-                panel prints the exact address that would be contacted and the last time one
-                actually was.
-              </figcaption>
-            </figure>
-            <p data-i18n-html="manual.3ce9192c8c94">
-              The check requests one static file and sends nothing about you, this machine or your
-              projects. When an update is found you are shown the version, the date, the changelog
-              and the size, and you choose. Every artifact is signed; one whose signature does not
-              verify is refused with an error rather than installed.
-            </p>
-            <p data-i18n-html="manual.eb0eedb56328">
-              With checking at launch switched off, nothing is contacted and the panel shows no
-              result at all — <em>Last checked</em> stays <em>Never</em>. It never draws "you are up
-              to date" over a check that did not happen, because those are different facts and only
-              one of them would be true.
-            </p>
-          </section>
-
-          <section id="shortcuts">
-            <h2 data-i18n-html="manual.46e978d0c193">Shortcuts</h2>
-            <p data-i18n-html="manual.855dbb09047b">
-              Every one of these can be changed in <strong>Settings ▸ Shortcuts</strong>, and a
-              chord that is already taken says which action has it. On macOS read
-              <kbd>Ctrl</kbd> as <kbd>Cmd</kbd>.
-            </p>
-            <table class="ladder">
-              <thead>
-                <tr>
-                  <th data-i18n-html="manual.456bb0100878">Chord</th>
-                  <th data-i18n-html="manual.64cff1319d2f">Action</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr><td><kbd>Space</kbd></td><td data-i18n-html="manual.a78afaff2fda">Play or pause</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td data-i18n-html="manual.a41eb2bf7245">New project</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td data-i18n-html="manual.c4c61e4f9081">Open a project</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td data-i18n-html="manual.1509f561f241">Save</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td data-i18n-html="manual.60af8a30e5e6">Save as</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td><td data-i18n-html="manual.c0d170d865e7">Undo — yours, always</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td><td data-i18n-html="manual.74273989b096">Redo</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></td><td data-i18n-html="manual.26c31b40dc4c">Session card</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>,</kbd></td><td data-i18n-html="manual.74a883a037bc">Settings</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd></td><td data-i18n-html="manual.e91f3b2dc496">Show or hide the File Explorer</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>2</kbd></td><td data-i18n-html="manual.3f21190f1ed3">Switch the centre between the Arrangement and the Pattern Rack</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>3</kbd>…<kbd>5</kbd></td><td data-i18n-html="manual.56f9e52baa67">Show or hide a panel — Editor, Mixer, Room</td></tr>
-                <tr><td><kbd>B</kbd> / <kbd>V</kbd></td><td data-i18n-html="manual.0bb673ee3069">The blade / the pointer</td></tr>
-                <tr><td><kbd>P</kbd></td><td data-i18n-html="manual.998aaff2fcf7">Draw mode (the pencil)</td></tr>
-                <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td data-i18n-html="manual.63195e7ab017">Bar 1 / the end of the arrangement</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td data-i18n-html="manual.308ea67cd57c">Select everything</td></tr>
-                <tr><td><kbd>Esc</kbd></td><td data-i18n-html="manual.ef8b2814c03b">Clear the selection</td></tr>
-                <tr><td><kbd>Delete</kbd></td><td data-i18n-html="manual.3eea5fab03b2">Delete what is selected</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>U</kbd></td><td data-i18n-html="manual.324d77bb489d">Quantize</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></td><td data-i18n-html="manual.caa2871b6c07">Humanize</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>L</kbd></td><td data-i18n-html="manual.c9b32288f886">Legato</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td><td data-i18n-html="manual.2e5b4c5eaf16">Reverse the notes</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>K</kbd></td><td data-i18n-html="manual.349dbacd897e">Move the notes to the scale</td></tr>
-                <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td data-i18n-html="manual.16aac93d1c5b">Duplicate in place</td></tr>
-                <tr><td><kbd>Shift</kbd>+<kbd>D</kbd></td><td data-i18n-html="manual.dee3dab5b567">Duplicate after</td></tr>
-                <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td data-i18n-html="manual.a5239b85e5fb">Nudge</td></tr>
-                <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td data-i18n-html="manual.f87e04909851">A semitone; with <kbd>Shift</kbd>, an octave</td></tr>
-                <tr><td><kbd>F</kbd></td><td data-i18n-html="manual.715210114589">Fold the roll to the scale</td></tr>
-                <tr><td><kbd>G</kbd></td><td data-i18n-html="manual.71d26d2e1ebf">Ghost notes — the rest of the pattern, behind these</td></tr>
-                <tr><td><kbd>Shift</kbd>+<kbd>V</kbd></td><td data-i18n-html="manual.c4b80c8b8af1">The velocity lane</td></tr>
-                <tr><td><kbd>Shift</kbd>+<kbd>C</kbd></td><td data-i18n-html="manual.6bea7121b291">The chance lane — how often each note plays</td></tr>
-                <tr><td><kbd>Shift</kbd>+<kbd>R</kbd></td><td data-i18n-html="manual.12beabce3af4">The velocity-range lane — how far each note wanders</td></tr>
-              </tbody>
-            </table>
-          </section>
-
-          <section id="privacy">
-            <h2 data-i18n-html="manual.69bd78234ffb">Privacy and the network</h2>
-            <p data-i18n-html="manual.72f1e2b86c3c">
-              Oscillate needs no account, collects no telemetry, and never sends your projects, your
-              audio or anything about you or your machine anywhere. Recording, editing, generation,
-              playback, mixing and export are entirely local.
-            </p>
-            <p data-i18n-html="manual.ac2de81c2bb6">There are exactly three occasions on which it uses the network:</p>
-            <ol>
-              <li data-i18n-html="manual.7b291aa666a0">
-                <strong>A collaboration session you opened or joined.</strong> Directly to the other
-                people in it, peer to peer, with no server in the middle.
-              </li>
-              <li data-i18n-html="manual.19e4e946fae3">
-                <strong>A STUN lookup</strong>, only while a room is being established, to discover
-                your public address. The server contacted is shown in Settings and can be replaced
-                with your own — or switched off entirely, which means the room contacts nobody at
-                all.
-              </li>
-              <li data-i18n-html="manual.e19cbd5438b8">
-                <strong>An update check</strong>, only when you press the button or switch on
-                checking at launch. Off by default. See <a href="#updates">Updates</a>.
-              </li>
-            </ol>
-            <p data-i18n-html="manual.0d97a43de208">
-              This is enforced by a build gate rather than promised: no HTTP client is reachable
-              from any part of Oscillate except the collaboration and update components named above,
-              and the gate proves it by walking the dependency graph rather than by searching for
-              names. Crash reports are written to your disk, shown to you in full, and leave the
-              machine only if you choose to send one.
-            </p>
-          </section>
-
-          <section id="limits">
-            <h2 data-i18n-html="manual.8e388ee7590d">The limits, stated plainly</h2>
-            <ul>
-              <li data-i18n-html="manual.c474edeb7ac4">
-                <strong>Four producers in a room</strong>, because every peer sends to every other
-                peer and the fifth connection is where an ordinary home upload gives out.
-              </li>
-              <li data-i18n-html="manual.d92b90c2dcd3">
-                <strong>Roughly one connection in ten will not form</strong> without a relay, and
-                Oscillate does not ship one — a relay costs bandwidth forever, and that is a running
-                bill a free application cannot carry.
-              </li>
-              <li data-i18n-html="manual.97cfbf95503a">
-                <strong>A joiner does not receive your project.</strong> Both machines open the same
-                file before the edits mean the same thing.
-              </li>
-              <li data-i18n-html="manual.12e311704eeb">
-                <strong>Samples never cross the wire.</strong> A take you recorded does; a sample
-                you bought does not.
-              </li>
-              <li data-i18n-html="manual.c281636fd984">
-                <strong>Six devices are named and greyed with no controls</strong>, each for a
-                written reason rather than a shrug. The analyser and the gain-reduction trace are
-                not live.
-              </li>
-              <li data-i18n-html="manual.1c94409d901d">
-                <strong>A sampler cannot be rendered to audio yet.</strong> Converting a pattern on
-                a sampler track is refused by name rather than handed back as silence.
-              </li>
-              <li data-i18n-html="manual.9596113825be">
-                <strong>Screen share is Windows and Linux.</strong> macOS has no display-capture
-                route out of an embedded webview that does not need private API in a notarised
-                binary, so the button is absent there and says why.
-              </li>
-              <li data-i18n-html="manual.00cc76804476">
-                <strong>A dropped peer is not detected yet.</strong> If somebody's network goes, the
-                roster keeps showing them.
-              </li>
-            </ul>
-          </section>
-
-          <section id="troubleshooting">
-            <h2 data-i18n-html="manual.c3af076f92c5">Troubleshooting</h2>
-            <h3 data-i18n-html="manual.c8fe28a31074">There is no sound</h3>
-            <p data-i18n-html="manual.90409e8554a3">
-              Check <strong>Settings ▸ Audio</strong> first: the device, and which mode you actually
-              got. If another application has the interface in exclusive mode, Oscillate cannot open
-              it and says so. A track that is silent when others are not is usually soloed
-              elsewhere, muted, or has its instrument slot empty.
-            </p>
-            <h3 data-i18n-html="manual.15d94cccd4a0">A plugin does not appear</h3>
-            <p data-i18n-html="manual.b2298073a265">
-              <strong>Settings ▸ Plugins</strong> lists the folders being scanned and what was
-              found. A plugin that failed to load is listed as blocked with the reason, and can be
-              unblocked to try again. Oscillate hosts VST3 and CLAP; it does not host VST2 or AU.
-            </p>
-            <h3 data-i18n-html="manual.2ac89ed8e9e1">The room will not connect</h3>
-            <p data-i18n-html="manual.dde8792e71cd">
-              Read the reason it gives — there are nine of them and they are different problems.
-              <em>Your network gives every server a different address</em> means you need a relay,
-              which goes in <strong>Settings ▸ Collaboration</strong>. Check that the code you
-              pasted is the whole code: they are long, and a chat client that wrapped one will have
-              broken it.
-            </p>
-            <h3 data-i18n-html="manual.79993d75b6ac">Something crashed</h3>
-            <p data-i18n-html="manual.f6ceafb1fe98">
-              A report is written to your machine automatically. <strong>Settings ▸ General</strong>
-              names the most recent one and opens the folder. The report contains the version, the
-              operating system, the audio device and the plugin list by name — never your project,
-              never a path from your disk, never a room code. It leaves your computer only if you
-              choose to send it.
-            </p>
-            <h3 data-i18n-html="manual.9031c748abd6">A panel went blank but the music kept playing</h3>
-            <p data-i18n-html="manual.0f28d0790cf5">
-              That is a different failure from a crash and it is the one most people do not report.
-              The audio thread runs none of the interface's code, so playback continues and your
-              project is intact. A report was still written; Settings will name it.
-            </p>
-          </section>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
         </div>
       </div>
+    </header>
+    <main id="main">
+<section class="page-head">
+<div class="page-head__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<img class="app-icon" src="oscillate-icon.png" alt="" width="72" height="72" />
+<span class="label" data-i18n="kit.nav.documentation">Documentation</span>
+<h1 data-i18n-html="kit.head.documentation"><span class="hl-muted">How it works,</span> <span class="hl-bright">step by step.</span></h1>
+<p class="lead" data-i18n="docs.lede">The manual: every panel, every editor, the room, the plugins and the limits.</p>
+<div class="search">
+<div class="search__field">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+<input type="search" placeholder="Search the documentation" aria-label="Search the documentation" data-i18n-attr="placeholder:kit.search.placeholder,aria-label:kit.search.placeholder" />
+</div>
+<ul class="search-results" aria-live="polite"></ul>
+</div>
+</div>
+</section>
+<section class="section section--tight">
+<div class="wrap manual">
+<nav class="manual-toc" data-spy aria-label="Contents" data-i18n-attr="aria-label:kit.docs.contents">
+<span class="label" data-i18n="kit.docs.contents">Contents</span>
+<ol><li><a href="#start" data-i18n="docs.831d0f72d242">Getting started</a></li><li><a href="#window" data-i18n="docs.365101815fb2">The window and its panels</a></li><li><a href="#arrangement" data-i18n="docs.2e5511855cbc">The arrangement</a></li><li><a href="#piano-roll" data-i18n="docs.dac11b27d868">The piano roll</a></li><li><a href="#drum-grid" data-i18n="docs.a232ac37bd92">The drum grid</a></li><li><a href="#automation" data-i18n="docs.d909750b1bbb">Automation</a></li><li><a href="#recording" data-i18n="docs.a4592301df0c">Recording and comping</a></li><li><a href="#mixer" data-i18n="docs.bdb597b1232d">The mixer</a></li><li><a href="#plugins" data-i18n="docs.9514b7ff4860">Plugins</a></li><li><a href="#devices" data-i18n="docs.c80fbc216c04">The stock devices</a></li><li><a href="#explorer" data-i18n="docs.4854ad4c206c">The File Explorer</a></li><li><a href="#room" data-i18n="docs.542aa51c9ff9">The room</a></li><li><a href="#kumite" data-i18n="docs.ba5e0c669f84">Kumite and the Split Sheet</a></li><li><a href="#lyrics" data-i18n="docs.787726eabc9d">The Lyric Lane</a></li><li><a href="#export" data-i18n="docs.3664895579f0">Export</a></li><li><a href="#settings" data-i18n="docs.74a883a037bc">Settings</a></li><li><a href="#updates" data-i18n="docs.22e2bada8f1c">Updates</a></li><li><a href="#shortcuts" data-i18n="docs.46e978d0c193">Shortcuts</a></li><li><a href="#privacy" data-i18n="docs.69bd78234ffb">Privacy and the network</a></li><li><a href="#limits" data-i18n="docs.8e388ee7590d">The limits, stated plainly</a></li><li><a href="#troubleshooting" data-i18n="docs.c3af076f92c5">Troubleshooting</a></li></ol>
+</nav>
+<div class="manual-body"><section>
+    <h2 id="start" data-i18n-html="docs.831d0f72d242">Getting started</h2>
+    <p data-i18n-html="docs.05df7711cd6c">
+      Oscillate installs like any other desktop application and runs offline. The first time
+      you open it you are shown the agreement; you have to accept it before the application
+      opens, and you can reopen it at any time from
+      <strong>Settings ▸ About ▸ View the agreement</strong>.
+    </p>
+    <p data-i18n-html="docs.fb63caf27515">
+      After that you are in a session called <em>New Project</em>. Nothing is saved anywhere
+      until you save it, except the crash journal — which records every change as you make
+      it so that a crash costs you nothing rather than costing you the afternoon.
+    </p>
+    <figure class="shot">
+      <img
+        src="img/start-01-first-window.png"
+        data-i18n-attr="alt:docs.shot.start"
+        alt="The Oscillate window on a first run, with the File Explorer down the left, the arrangement in the middle, and the transport controls along the bottom boxed in red."
+        loading="lazy"
+      />
+      <figcaption data-i18n-html="docs.9edf9ef77c9f">
+        The window on a first run. The boxed strip is the transport: play, stop, record,
+        the tempo and the metronome.
+      </figcaption>
+    </figure>
+    <p data-i18n-html="docs.a8522c985343">
+      Press <kbd>Space</kbd> to start and stop. Drag a sound from the File Explorer onto a
+      track, or double-click an empty part of a MIDI track to make a clip and start writing.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="window" data-i18n-html="docs.365101815fb2">The window and its panels</h2>
+    <p data-i18n-html="docs.d5e9c2dcb12a">
+      The window is borderless and Oscillate draws its own minimise, maximise and close. The
+      four panels are toggled from the titlebar or with a key:
+    </p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n-html="docs.99a52df3ff3d">Key</th>
+          <th data-i18n-html="docs.d0d91173008b">Panel</th>
+          <th data-i18n-html="docs.1f36becc3aa7">What it is</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>1</kbd></td>
+          <td data-i18n-html="docs.d6f6a04891cc">File Explorer</td>
+          <td data-i18n-html="docs.495763c88db7">Your sounds, your plugins and Oscillate's own devices, with a preview.</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>2</kbd></td>
+          <td data-i18n-html="docs.936a161c3931">Editor</td>
+          <td data-i18n-html="docs.05db484cdeb8">The piano roll, the drum grid, automation and the waveform editor.</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>3</kbd></td>
+          <td data-i18n-html="docs.8ae012d51747">Mixer</td>
+          <td data-i18n-html="docs.f1972360c8eb">Faders, meters, the Masking Radar and the loudness panel.</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>4</kbd></td>
+          <td data-i18n-html="docs.911ea89c43d9">Room</td>
+          <td data-i18n-html="docs.42546267e696">Room codes, the roster, chat, voice, cameras and screen share.</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <p data-i18n-html="docs.78b8c8386cc9">
+      On macOS every <kbd>Ctrl</kbd> below is <kbd>Cmd</kbd>. Any panel can be dragged out
+      into a window of its own, which keeps working on a second monitor.
+    </p>
+    <p data-i18n-html="docs.2ae2bf6b8884">
+      Drag the divider between two panels to resize them. Below 1280 pixels wide the side
+      panels collapse on their own, because the arrangement stops being usable before they
+      do.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="arrangement" data-i18n-html="docs.2e5511855cbc">The arrangement</h2>
+    <p data-i18n-html="docs.226516acde25">
+      A timeline with a bar-and-beat ruler, a grid that follows the zoom, track headers down
+      the side, and clips drawn from what they actually are — a real waveform for audio,
+      real notes for a pattern.
+    </p>
+    <h3 data-i18n-html="docs.78d11d4d5db9">Editing clips</h3>
+    <ul>
+      <li data-i18n-html="docs.0bfc00f5a7ca">Drag a clip to move it; hold <kbd>Alt</kbd> while dragging to copy it.</li>
+      <li data-i18n-html="docs.bb5fc5708305">Drag either end to trim; drag the top corner to fade.</li>
+      <li data-i18n-html="docs.c379e75c7075">Drag the loop handle on the right edge to repeat it.</li>
+      <li data-i18n-html="docs.196e45387bc2">
+        <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes back the whole gesture — however many clips it
+        touched, one press.
+      </li>
+    </ul>
+    <h3 data-i18n-html="docs.65ca08c3ec91">The Cut</h3>
+    <p data-i18n-html="docs.6cbcada86f4d">
+      Press <kbd>B</kbd> for the blade and drag a stroke across the arrangement. Every clip
+      the stroke crosses is split where it crossed, and the angle of the stroke sets how
+      long the crossfade is: a vertical stroke is a hard cut, a shallow one is a long
+      blend. Press <kbd>V</kbd> to go back to the pointer.
+    </p>
+    <h3 data-i18n-html="docs.102bcc2b6fcb">Turning a clip into the other kind</h3>
+    <p data-i18n-html="docs.e6513c30872c">
+      Right-click a MIDI clip and choose <strong>Render to audio</strong>; right-click an
+      audio clip and choose <strong>Convert to MIDI</strong>. Either way the result lands
+      <em>beside</em> the original rather than over it, and one press of undo puts things
+      back.
+    </p>
+    <p data-i18n-html="docs.04d699e071c9">
+      A pattern is rendered through whatever is on that track: the instrument in its slot
+      and then every audio effect after it. A device you switched off is not in the render.
+      The track's own fader and pan deliberately are not either — the new clip plays through
+      them, so printing them would apply them twice.
+    </p>
+    <p data-i18n-html="docs.8d98a4cb90a8">
+      Converting audio to MIDI is imperfect and says so: it tells you how many hits it could
+      not read a pitch from. A drum loop converts to nothing at all, which is the honest
+      answer.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="piano-roll" data-i18n-html="docs.dac11b27d868">The piano roll</h2>
+    <p data-i18n-html="docs.33738bb248c5">
+      Double-click a MIDI clip to open it. Draw notes with the pencil (<kbd>P</kbd>), or
+      double-click in the grid. The keyboard down the left side plays the instrument on the
+      track, and one key can be set to play a whole chord.
+    </p>
+    <h3 data-i18n-html="docs.42a0052bf1b6">Scales</h3>
+    <p data-i18n-html="docs.ddbef0217d41">
+      Around ninety scales. Choosing one highlights its notes, and
+      <kbd>Ctrl</kbd>+<kbd>K</kbd> moves whatever is selected onto it. Folding hides every
+      row that is not in the scale, which turns a chromatic grid into one you can read.
+    </p>
+    <h3 data-i18n-html="docs.2cafc9e7c3b3">The note operations</h3>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n-html="docs.99a52df3ff3d">Key</th>
+          <th data-i18n-html="docs.c74ea9dc9cd2">What it does</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>U</kbd></td>
+          <td data-i18n-html="docs.0baf2bf51650">Quantize — snap the selected notes to the grid</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></td>
+          <td data-i18n-html="docs.ea07e2f557fe">Humanize — push them back off it, by a little</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>L</kbd></td>
+          <td data-i18n-html="docs.0ab966bf90ea">Legato — stretch each note to meet the next</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>R</kbd></td>
+          <td data-i18n-html="docs.6a31f294ca42">Reverse the order of the selected notes</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>K</kbd></td>
+          <td data-i18n-html="docs.4cde53316a6e">Move them onto the clip's scale</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>D</kbd></td>
+          <td data-i18n-html="docs.16aac93d1c5b">Duplicate in place</td>
+        </tr>
+        <tr>
+          <td><kbd>Shift</kbd>+<kbd>D</kbd></td>
+          <td data-i18n-html="docs.6e14c1f152dd">Duplicate after — the usual way to build a part</td>
+        </tr>
+        <tr>
+          <td><kbd>←</kbd> <kbd>→</kbd></td>
+          <td data-i18n-html="docs.3acb04d66cdb">Nudge by one grid division</td>
+        </tr>
+        <tr>
+          <td><kbd>↑</kbd> <kbd>↓</kbd></td>
+          <td data-i18n-html="docs.22667e7b7cca">Move a semitone; with <kbd>Shift</kbd>, an octave</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <p data-i18n-html="docs.af2e3ba89e9f">
+      The velocity lane under the grid has a handle per note. Ghost notes from any other
+      clip can be drawn behind the one you are editing, which is how you write a bassline
+      against a chord part without switching back and forth.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="drum-grid" data-i18n-html="docs.a232ac37bd92">The drum grid</h2>
+    <p data-i18n-html="docs.27e0332d2463">
+      The same clip seen as one row per drum instead of one row per pitch. Click a cell to
+      place a hit, drag across cells to fill them, and drag a hit up or down within its row
+      to change its velocity. Everything in the piano roll's table above works here too — it
+      is the same notes underneath.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="automation" data-i18n-html="docs.d909750b1bbb">Automation</h2>
+    <p data-i18n-html="docs.2195edf6dd56">
+      Every fader, pan and device control can be automated. Open a track's automation lane,
+      choose the target, and draw. Points snap to the grid; hold <kbd>Alt</kbd> to place one
+      freely. A curve between two points can be bent by dragging its middle.
+    </p>
+    <p data-i18n-html="docs.f82da0230788">
+      <strong>Kata</strong> are automation shapes you draw once and stamp anywhere — a
+      swell, a filter sweep, a sidechain-shaped duck — so a gesture you liked is reusable
+      rather than redrawn.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="recording" data-i18n-html="docs.a4592301df0c">Recording and comping</h2>
+    <p data-i18n-html="docs.1a01d11683c6">
+      Arm a track, press record, play. Audio is written to disk as it arrives rather than
+      held in memory, so a crash costs you the last block and not the take.
+    </p>
+    <p data-i18n-html="docs.91afc456637e">
+      Record over the same bars again and you get a second take stacked under the first.
+      Choose the parts you want from each and Oscillate assembles the comp.
+      <strong>The takes you did not choose are never deleted</strong> — that is what Shadow
+      Takes means, and it is why changing your mind a week later costs nothing.
+    </p>
+    <p data-i18n-html="docs.cebcc1706c05">
+      A count-in is set in <strong>Settings ▸ Recording</strong>. It is off by default.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="mixer" data-i18n-html="docs.bdb597b1232d">The mixer</h2>
+    <p data-i18n-html="docs.6904fda84081">
+      <kbd>Ctrl</kbd>+<kbd>3</kbd>. A strip per track with a fader, a pan, mute, solo, the
+      device rack and a meter that is drawn from the audio the engine actually produced —
+      never from a prediction.
+    </p>
+    <h3 data-i18n-html="docs.8eaced166021">The Masking Radar</h3>
+    <p data-i18n-html="docs.bea60461bd8b">
+      Press <strong>Radar</strong> and Oscillate watches for pairs of tracks fighting for
+      the same band — the bass and the kick, the vocal and the pad — and names the pair and
+      the frequency. It costs CPU while it is on and the tooltip says so.
+    </p>
+    <p data-i18n-html="docs.6f550e9b860d">
+      A pair that has not been heard yet reads <strong>Not heard yet</strong>, not "clean".
+      If the session has more tracks than the radar watches, it tells you that too rather
+      than silently showing a subset.
+    </p>
+    <h3 data-i18n-html="docs.e0b651a4ea3c">Loudness and true peak</h3>
+    <p data-i18n-html="docs.5a27169c5088">
+      Press <strong>Loudness</strong> for integrated LUFS, short-term, the range and true
+      peak, plus a table of what each streaming service targets and what it would do to your
+      master. Each target carries the date it was last checked.
+    </p>
+    <p data-i18n-html="docs.bfc4dfe30bdc">
+      If the meter ever fell behind under load it says so — <em>"the meter fell behind, so
+      some audio was never measured"</em>. A number with no warning beside it means a
+      complete measurement.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="plugins" data-i18n-html="docs.9514b7ff4860">Plugins</h2>
+    <p data-i18n-html="docs.24653cacd405">
+      Oscillate hosts <strong>VST3 and CLAP</strong>, and each plugin runs in a process of
+      its own. A plugin that crashes greys out that device and leaves your session running.
+    </p>
+    <p data-i18n-html="docs.4c2bf768921f">
+      Your plugins appear in the File Explorer under <em>Plugins</em>. Drag one onto a
+      track, or select the track and click it. Open its own editor from the device rack —
+      the real interface you bought, not a list of sliders — and closing and reopening it
+      brings it back at the size it was.
+    </p>
+    <p data-i18n-html="docs.657f210c6f73">
+      Delay compensation is graph-wide and is proved by a null test: the same signal through
+      a latency-reporting device and around it, cancelling to silence. A plugin this machine
+      does not have becomes a named placeholder that still costs its samples, so a project
+      opened somewhere else stays in time.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="devices" data-i18n-html="docs.c80fbc216c04">The stock devices</h2>
+    <p data-i18n-html="docs.fe9d907d6c9f">
+      Sixty-nine instruments and effects ship inside Oscillate, including
+      <strong>Freally Secretarium</strong>. Every panel is drawn from the device's own
+      description, so the readout on a knob is the number the DSP is using rather than a
+      second one that agrees most of the time.
+    </p>
+    <h3 data-i18n-html="docs.57ba00ce7687">Faces</h3>
+    <p data-i18n-html="docs.4ce795582ea6">
+      A device shows what it is doing rather than only what it is set to: a compressor draws
+      its gain reduction, an equaliser draws its response, a stereo device draws its field.
+    </p>
+    <p data-i18n-html="docs.5396457a7321">
+      <strong>Some faces are deliberately blank.</strong> A transfer curve, a spectrum and a
+      scope need a measurement that does not exist yet, and drawing a plausible shape from
+      the controls would be a picture of nothing. They stay blank until the measurement is
+      real.
+    </p>
+    <h3 data-i18n-html="docs.6a4181898f49">Recipe strings</h3>
+    <p data-i18n-html="docs.3c86c1f5f519">
+      A device's settings copy as one line you can paste into a chat. A whole rack — stock
+      devices and hosted plugins together — saves as a file and recalls onto any track in
+      one undo step, including on a machine that is missing one of its plugins.
+    </p>
+    <h3 data-i18n-html="docs.afc35db2da83">Devices that read the arrangement</h3>
+    <p data-i18n-html="docs.6a537022e329">
+      Six of them do something no plugin can, because a plugin cannot see the arrangement it
+      is inside. A compressor already holding the chorus when it arrives; a gate that opens
+      for a hit two bars before it happens; a delay that empties <em>into</em> the bar line
+      so the tail runs out instead of being cut. Reading two bars of audio ahead is latency
+      and everybody pays for it; reading the structure costs nothing, and all of them
+      declare zero.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="explorer" data-i18n-html="docs.4854ad4c206c">The File Explorer</h2>
+    <p data-i18n-html="docs.0d2dfd82f8ee">
+      <kbd>Ctrl</kbd>+<kbd>1</kbd>. A home screen of places —
+      <em>Instruments</em>, <em>Audio Effects</em>, <em>MIDI Effects</em>,
+      <em>Plugins</em> — that you click into, a <strong>Choose folder</strong> button, and
+      the folders you have added listed by name.
+    </p>
+    <p data-i18n-html="docs.efab24503279">
+      The filter searches what a device <em>is</em> as well as what it is called, so typing
+      <code>compressor</code> finds <code>Vise</code>.
+    </p>
+    <h3 data-i18n-html="docs.00254cbab0ed">The preview</h3>
+    <p data-i18n-html="docs.3475ee704644">
+      Click a device and you hear its own demonstration — a note chosen and a length
+      measured per instrument — with a waveform, a playhead, a loop, and
+      <kbd>←</kbd>/<kbd>→</kbd> to run it backwards or forwards. Point it at a folder of
+      your own and it previews your samples the same way. Five of the instruments are
+      samplers and say so rather than playing silence: they cannot sound until you load a
+      file.
+    </p>
+    <h3 data-i18n-html="docs.5a8b10fcbead">Dragging a file in</h3>
+    <p data-i18n-html="docs.b40583c5f830">
+      Drag a <code>.wav</code> or a <code>.mid</code> straight from Windows Explorer or
+      Finder onto a bar in the arrangement and it lands
+      <strong>where you dropped it</strong>. MIDI goes onto MIDI tracks, audio onto audio
+      tracks, and the wrong kind is refused with a reason rather than being given a lane of
+      its own.
+    </p>
+    <p data-i18n-html="docs.5d740606fafb">
+      A dropped file is <strong>taken into the project</strong>, not referenced. Drop
+      something out of a temporary folder and delete the original, and the clip still plays.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="room" data-i18n-html="docs.542aa51c9ff9">The room</h2>
+    <p data-i18n-html="docs.f735a1d5bc49">
+      <kbd>Ctrl</kbd>+<kbd>4</kbd>. Press <strong>Create a room code</strong>, wait for the
+      code, and send it to whoever you are working with. They paste it, send you theirs
+      back, you paste that into <strong>Let them in</strong>, and you are in the same
+      session.
+    </p>
+    <figure class="shot">
+      <img
+        src="img/room-01-create.png"
+        data-i18n-attr="alt:docs.shot.room"
+        alt="The Room panel with the Create a room code button boxed in red and numbered 1, and the Let them in button — where you paste the code somebody sent you — boxed and numbered 2."
+        loading="lazy"
+      />
+      <figcaption data-i18n-html="docs.0548c5c7cd35">
+        1 makes your code. 2 is where their code goes. ⚠ Once a code exists, the sentence
+        beside it is the one that matters: treat it like a password, because it contains
+        your computer's public address.
+      </figcaption>
+    </figure>
+    <h3 data-i18n-html="docs.41a1acbef296">What you get</h3>
+    <ul>
+      <li data-i18n-html="docs.4e795a73e99f">A roster, with a colour each, and their cursors moving on your arrangement.</li>
+      <li data-i18n-html="docs.e2168f0fe102">Chat. It lasts as long as the room and nothing is written to disk.</li>
+      <li data-i18n-html="docs.83623938eb6f">Voice, camera tiles and screen share — all off until you press something.</li>
+      <li data-i18n-html="docs.5161add1f5a4">
+        <strong>Your undo is yours.</strong> <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes back your
+        last change and never somebody else's, even while their edits are arriving.
+      </li>
+      <li data-i18n-html="docs.ab67452f2acf">
+        <strong>Takeover</strong> — hand one track to somebody and take it back with one
+        key. While they hold it they are the only writer for it, including you.
+      </li>
+    </ul>
+    <h3 data-i18n-html="docs.6a62a97df77a">What never travels</h3>
+    <p data-i18n-html="docs.c61d0ae17869">
+      <strong>A take you recorded travels. A sample you bought never does.</strong> When
+      somebody joins a session that uses a sample pack they do not have, they get a list
+      called <em>Samples you need</em> and the reason: Oscillate never sends samples between
+      computers. Byte-identical is what piracy produces, and this product will not be a
+      route to it.
+    </p>
+    <h3 data-i18n-html="docs.0cce48095d62">When it does not connect</h3>
+    <p data-i18n-html="docs.7a85d27236d6">
+      Roughly one connection in ten will not form, and Oscillate names which of nine causes
+      it was — from <em>no network was found</em> to
+      <em>your network gives every server a different address</em>. That last one needs a
+      relay in the middle; there is a field for your own in
+      <strong>Settings ▸ Collaboration</strong>.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="kumite" data-i18n-html="docs.ba5e0c669f84">Kumite and the Split Sheet</h2>
+    <p data-i18n-html="docs.3dddae9cbb86">
+      <strong>Kumite</strong> is a beat battle mode where each turn owns its own bars. The
+      countdown is a countdown, but the bars are the rule — so two computers can never
+      disagree about whose edit was legal.
+    </p>
+    <p data-i18n-html="docs.aa8f79385db8">
+      <strong>The Split Sheet</strong> is who wrote what, derived from the edit log, with
+      work anybody undid netted out. It is a starting point for a conversation about credit,
+      not a legal document, and it says so.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="lyrics" data-i18n-html="docs.787726eabc9d">The Lyric Lane</h2>
+    <p data-i18n-html="docs.9129cdbc7eff">
+      Select a vocal track and press <strong>Lyrics</strong>. A lane of words appears,
+      locked to the playhead. Add lines, move a line a bar earlier or later, split a line
+      into syllables, and point a recorded take at the words it belongs to.
+    </p>
+    <p data-i18n-html="docs.64413b5bc744">
+      Import a <code>.txt</code> or <code>.lrc</code> file and the words are
+      <strong>copied into the project</strong> — move the file afterwards and the words are
+      still there.
+    </p>
+    <p data-i18n-html="docs.f935e3c9c7fe">
+      The type is meant to be sung from across a room, not read leaning in. Every lyric edit
+      is an operation, so <kbd>Ctrl</kbd>+<kbd>Z</kbd> takes it back like everything else.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="export" data-i18n-html="docs.3664895579f0">Export</h2>
+    <p data-i18n-html="docs.b3307da67465">
+      <strong>File ▸ Export companion folder…</strong> writes stems and MIDI that any other
+      DAW can open. Stems line up at bar 1, so importing them somewhere else does not mean
+      nudging thirty files into place.
+    </p>
+    <p data-i18n-html="docs.271287d739a7">
+      Format, sample rate, bit depth, dither and where it goes are in
+      <strong>Settings ▸ Export</strong>.
+    </p>
+    <p data-i18n-html="docs.1419f63cf3ba">
+      <strong>Session cards.</strong> <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>, or
+      <strong>File ▸ Session card…</strong>, renders a 1200×630 picture of the session —
+      tempo, key, track and clip counts, length and the shape of the arrangement — to post.
+      A room code cannot go on one: it is kilobytes long and contains your public address,
+      so the option is present, disabled, and says why.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="settings" data-i18n-html="docs.74a883a037bc">Settings</h2>
+    <p data-i18n-html="docs.5371ad5444f6">
+      <kbd>Ctrl</kbd>+<kbd>,</kbd>. Every change applies immediately and persists per
+      machine. There is no <em>Apply</em> button, because a settings dialog with one is a
+      settings dialog that can be wrong about what is in effect.
+    </p>
+    <h3 data-i18n-html="docs.bc1b88907d3b">Audio</h3>
+    <p data-i18n-html="docs.40710b1c4ea7">
+      Choose your output and how much of the device to take. On Windows you can ask for
+      <strong>Exclusive</strong>, which gives you the lowest latency the hardware can do and
+      silences every other application. Oscillate tells you
+      <strong>which mode you actually got and why</strong> — either
+      <em>the stream opened exclusively</em> or
+      <em>this machine would not open an exclusive stream, so the device is still
+      shared</em>. Never a silent downgrade.
+    </p>
+    <h3 data-i18n-html="docs.dfe87d5e5bba">Appearance and language</h3>
+    <p data-i18n-html="docs.74a5371eede6">
+      Both themes, eighteen languages, and the choice you make wins over the machine's on
+      the next launch. Right-to-left is real, not a text alignment.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="updates" data-i18n-html="docs.22e2bada8f1c">Updates</h2>
+    <p data-i18n-html="docs.56205fc54fb3">
+      <strong>Settings ▸ Updates.</strong> Oscillate looks for an update
+      <strong>only</strong> when you press <em>Check for updates</em>, or at launch if you
+      switch that on — and it is <strong>off by default</strong>.
+    </p>
+    <figure class="shot">
+      <img
+        src="img/updates-01-panel.png"
+        data-i18n-attr="alt:docs.shot.updates"
+        alt="Settings with the Updates section selected, the Check for updates button boxed in red and numbered 1, and the Check when Oscillate starts toggle boxed and numbered 2 in its off position."
+        loading="lazy"
+      />
+      <figcaption data-i18n-html="docs.983c1169fe58">
+        1 checks once, now. 2 is the launch check, and it is off until you turn it on. The
+        panel prints the exact address that would be contacted and the last time one
+        actually was.
+      </figcaption>
+    </figure>
+    <p data-i18n-html="docs.3ce9192c8c94">
+      The check requests one static file and sends nothing about you, this machine or your
+      projects. When an update is found you are shown the version, the date, the changelog
+      and the size, and you choose. Every artifact is signed; one whose signature does not
+      verify is refused with an error rather than installed.
+    </p>
+    <p data-i18n-html="docs.eb0eedb56328">
+      With checking at launch switched off, nothing is contacted and the panel shows no
+      result at all — <em>Last checked</em> stays <em>Never</em>. It never draws "you are up
+      to date" over a check that did not happen, because those are different facts and only
+      one of them would be true.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="shortcuts" data-i18n-html="docs.46e978d0c193">Shortcuts</h2>
+    <p data-i18n-html="docs.855dbb09047b">
+      Every one of these can be changed in <strong>Settings ▸ Shortcuts</strong>, and a
+      chord that is already taken says which action has it. On macOS read
+      <kbd>Ctrl</kbd> as <kbd>Cmd</kbd>.
+    </p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n-html="docs.456bb0100878">Chord</th>
+          <th data-i18n-html="docs.64cff1319d2f">Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td><kbd>Space</kbd></td><td data-i18n-html="docs.a78afaff2fda">Play or pause</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td data-i18n-html="docs.a41eb2bf7245">New project</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td data-i18n-html="docs.c4c61e4f9081">Open a project</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td data-i18n-html="docs.1509f561f241">Save</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>S</kbd></td><td data-i18n-html="docs.60af8a30e5e6">Save as</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Z</kbd></td><td data-i18n-html="docs.c0d170d865e7">Undo — yours, always</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd></td><td data-i18n-html="docs.74273989b096">Redo</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd></td><td data-i18n-html="docs.26c31b40dc4c">Session card</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>,</kbd></td><td data-i18n-html="docs.74a883a037bc">Settings</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>1</kbd></td><td data-i18n-html="docs.e91f3b2dc496">Show or hide the File Explorer</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>2</kbd></td><td data-i18n-html="docs.3f21190f1ed3">Switch the centre between the Arrangement and the Pattern Rack</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>3</kbd>…<kbd>5</kbd></td><td data-i18n-html="docs.56f9e52baa67">Show or hide a panel — Editor, Mixer, Room</td></tr>
+        <tr><td><kbd>B</kbd> / <kbd>V</kbd></td><td data-i18n-html="docs.0bb673ee3069">The blade / the pointer</td></tr>
+        <tr><td><kbd>P</kbd></td><td data-i18n-html="docs.998aaff2fcf7">Draw mode (the pencil)</td></tr>
+        <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td data-i18n-html="docs.63195e7ab017">Bar 1 / the end of the arrangement</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td data-i18n-html="docs.308ea67cd57c">Select everything</td></tr>
+        <tr><td><kbd>Esc</kbd></td><td data-i18n-html="docs.ef8b2814c03b">Clear the selection</td></tr>
+        <tr><td><kbd>Delete</kbd></td><td data-i18n-html="docs.3eea5fab03b2">Delete what is selected</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>U</kbd></td><td data-i18n-html="docs.324d77bb489d">Quantize</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>U</kbd></td><td data-i18n-html="docs.caa2871b6c07">Humanize</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>L</kbd></td><td data-i18n-html="docs.c9b32288f886">Legato</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>R</kbd></td><td data-i18n-html="docs.2e5b4c5eaf16">Reverse the notes</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>K</kbd></td><td data-i18n-html="docs.349dbacd897e">Move the notes to the scale</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>D</kbd></td><td data-i18n-html="docs.16aac93d1c5b">Duplicate in place</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>D</kbd></td><td data-i18n-html="docs.dee3dab5b567">Duplicate after</td></tr>
+        <tr><td><kbd>←</kbd> <kbd>→</kbd></td><td data-i18n-html="docs.a5239b85e5fb">Nudge</td></tr>
+        <tr><td><kbd>↑</kbd> <kbd>↓</kbd></td><td data-i18n-html="docs.f87e04909851">A semitone; with <kbd>Shift</kbd>, an octave</td></tr>
+        <tr><td><kbd>F</kbd></td><td data-i18n-html="docs.715210114589">Fold the roll to the scale</td></tr>
+        <tr><td><kbd>G</kbd></td><td data-i18n-html="docs.71d26d2e1ebf">Ghost notes — the rest of the pattern, behind these</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>V</kbd></td><td data-i18n-html="docs.c4b80c8b8af1">The velocity lane</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>C</kbd></td><td data-i18n-html="docs.6bea7121b291">The chance lane — how often each note plays</td></tr>
+        <tr><td><kbd>Shift</kbd>+<kbd>R</kbd></td><td data-i18n-html="docs.12beabce3af4">The velocity-range lane — how far each note wanders</td></tr>
+      </tbody>
+    </table></div>
+  </section>
+  
+  <section>
+    <h2 id="privacy" data-i18n-html="docs.69bd78234ffb">Privacy and the network</h2>
+    <p data-i18n-html="docs.72f1e2b86c3c">
+      Oscillate needs no account, collects no telemetry, and never sends your projects, your
+      audio or anything about you or your machine anywhere. Recording, editing, generation,
+      playback, mixing and export are entirely local.
+    </p>
+    <p data-i18n-html="docs.ac2de81c2bb6">There are exactly three occasions on which it uses the network:</p>
+    <ol>
+      <li data-i18n-html="docs.7b291aa666a0">
+        <strong>A collaboration session you opened or joined.</strong> Directly to the other
+        people in it, peer to peer, with no server in the middle.
+      </li>
+      <li data-i18n-html="docs.19e4e946fae3">
+        <strong>A STUN lookup</strong>, only while a room is being established, to discover
+        your public address. The server contacted is shown in Settings and can be replaced
+        with your own — or switched off entirely, which means the room contacts nobody at
+        all.
+      </li>
+      <li data-i18n-html="docs.e19cbd5438b8">
+        <strong>An update check</strong>, only when you press the button or switch on
+        checking at launch. Off by default. See <a href="#updates">Updates</a>.
+      </li>
+    </ol>
+    <p data-i18n-html="docs.0d97a43de208">
+      This is enforced by a build gate rather than promised: no HTTP client is reachable
+      from any part of Oscillate except the collaboration and update components named above,
+      and the gate proves it by walking the dependency graph rather than by searching for
+      names. Crash reports are written to your disk, shown to you in full, and leave the
+      machine only if you choose to send one.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="limits" data-i18n-html="docs.8e388ee7590d">The limits, stated plainly</h2>
+    <ul>
+      <li data-i18n-html="docs.c474edeb7ac4">
+        <strong>Four producers in a room</strong>, because every peer sends to every other
+        peer and the fifth connection is where an ordinary home upload gives out.
+      </li>
+      <li data-i18n-html="docs.d92b90c2dcd3">
+        <strong>Roughly one connection in ten will not form</strong> without a relay, and
+        Oscillate does not ship one — a relay costs bandwidth forever, and that is a running
+        bill a free application cannot carry.
+      </li>
+      <li data-i18n-html="docs.97cfbf95503a">
+        <strong>A joiner does not receive your project.</strong> Both machines open the same
+        file before the edits mean the same thing.
+      </li>
+      <li data-i18n-html="docs.12e311704eeb">
+        <strong>Samples never cross the wire.</strong> A take you recorded does; a sample
+        you bought does not.
+      </li>
+      <li data-i18n-html="docs.c281636fd984">
+        <strong>Six devices are named and greyed with no controls</strong>, each for a
+        written reason rather than a shrug. The analyser and the gain-reduction trace are
+        not live.
+      </li>
+      <li data-i18n-html="docs.1c94409d901d">
+        <strong>A sampler cannot be rendered to audio yet.</strong> Converting a pattern on
+        a sampler track is refused by name rather than handed back as silence.
+      </li>
+      <li data-i18n-html="docs.9596113825be">
+        <strong>Screen share is Windows and Linux.</strong> macOS has no display-capture
+        route out of an embedded webview that does not need private API in a notarised
+        binary, so the button is absent there and says why.
+      </li>
+      <li data-i18n-html="docs.00cc76804476">
+        <strong>A dropped peer is not detected yet.</strong> If somebody's network goes, the
+        roster keeps showing them.
+      </li>
+    </ul>
+  </section>
+  
+  <section>
+    <h2 id="troubleshooting" data-i18n-html="docs.c3af076f92c5">Troubleshooting</h2>
+    <h3 data-i18n-html="docs.c8fe28a31074">There is no sound</h3>
+    <p data-i18n-html="docs.90409e8554a3">
+      Check <strong>Settings ▸ Audio</strong> first: the device, and which mode you actually
+      got. If another application has the interface in exclusive mode, Oscillate cannot open
+      it and says so. A track that is silent when others are not is usually soloed
+      elsewhere, muted, or has its instrument slot empty.
+    </p>
+    <h3 data-i18n-html="docs.15d94cccd4a0">A plugin does not appear</h3>
+    <p data-i18n-html="docs.b2298073a265">
+      <strong>Settings ▸ Plugins</strong> lists the folders being scanned and what was
+      found. A plugin that failed to load is listed as blocked with the reason, and can be
+      unblocked to try again. Oscillate hosts VST3 and CLAP; it does not host VST2 or AU.
+    </p>
+    <h3 data-i18n-html="docs.2ac89ed8e9e1">The room will not connect</h3>
+    <p data-i18n-html="docs.dde8792e71cd">
+      Read the reason it gives — there are nine of them and they are different problems.
+      <em>Your network gives every server a different address</em> means you need a relay,
+      which goes in <strong>Settings ▸ Collaboration</strong>. Check that the code you
+      pasted is the whole code: they are long, and a chat client that wrapped one will have
+      broken it.
+    </p>
+    <h3 data-i18n-html="docs.79993d75b6ac">Something crashed</h3>
+    <p data-i18n-html="docs.f6ceafb1fe98">
+      A report is written to your machine automatically. <strong>Settings ▸ General</strong>
+      names the most recent one and opens the folder. The report contains the version, the
+      operating system, the audio device and the plugin list by name — never your project,
+      never a path from your disk, never a room code. It leaves your computer only if you
+      choose to send it.
+    </p>
+    <h3 data-i18n-html="docs.9031c748abd6">A panel went blank but the music kept playing</h3>
+    <p data-i18n-html="docs.0f28d0790cf5">
+      That is a different failure from a crash and it is the one most people do not report.
+      The audio thread runs none of the interface's code, so playback continues and your
+      project is intact. A report was still written; Settings will name it.
+    </p>
+  </section></div>
+</div>
+</section>
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.yours">
-          What you make with it is yours. Oscillate's author claims no ownership of the projects,
-          MIDI, audio or renders you create with it.
-        </p>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="oscillate-icon.png" alt="" width="28" height="28" /><span>Freally Oscillate</span></a><p data-i18n="site.tagline">A DAW where four producers work in the same session at once.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Oscillate is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/" aria-current="true">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">What you make with it is yours. Oscillate's author claims no ownership of the projects, MIDI, audio or renders you create with it.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.5</span>
+        </div>
       </div>
     </footer>
-
-    <script src="i18n.js"></script>
-    <script src="site.js"></script>
     <script src="search-index.js"></script>
-    <script src="search.js"></script>
   </body>
 </html>

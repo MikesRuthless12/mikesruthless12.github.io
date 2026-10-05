@@ -1,7 +1,7 @@
 /*
- * Freally Capture — the docs site, in Freally Flipcopy's design exactly (the
- * family look, owner 2026-10-01), dark only: no light palette, no theme button,
- * no `prefers-color-scheme: light`.
+ * Freally Capture — the guest join page's stylesheet (`join.html` only; every
+ * other page is the Freally site kit's, `kit/kit.css`), dark only: no light
+ * palette, no theme button, no `prefers-color-scheme: light`.
  *
  * ⛔⛔ NO CDN, NO ANALYTICS, NO TRACKER, NO EMBEDDED FONT, NO THIRD-PARTY
  * SCRIPT. `scripts/site.test.mjs` fails on any absolute URL in a `src`,

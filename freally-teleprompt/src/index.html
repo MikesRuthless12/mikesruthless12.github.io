@@ -1,0 +1,120 @@
+<!-- Freally Teleprompt — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the family strip, the closing call, the footer)
+     is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">Look confident.</span> <span class="hl-bright">Stay on script.</span></kit-headline>
+  <kit-lede data-i18n="hero.sub">A teleprompter for your computer that reads at a real human pace — characters per second, or the BPM of your track — and marks every pause you write into the script.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.is.title">What it is</h2>
+      <p class="lead" data-i18n="what.is.lead">Reading a script on camera usually means a scroll that is too fast or too slow, a pause you forgot, and a second screen a line behind.</p>
+      <p data-i18n="what.is.body">Freally Teleprompt is a teleprompter for your computer. Open the script you were sent, set the pace in characters per second or to the BPM of your track, and it reads at a real human speed — every pause you wrote marked in the script, and every screen on the same word.</p>
+    </div>
+    <figure class="split__art"><kit-art name="lines"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="does" label="kit.label.inside">
+  <h2 data-i18n="what.title">What it does</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><kit-art name="signal"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.pace.title">A real reading pace</h3>
+        <p data-i18n="features.pace.body">Set the speed in characters per second, or in BPM from 20 to 250 to read in time with a track — not an arbitrary dial from 1 to 10.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="lines"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.pauses.title">Pauses you can see</h3>
+        <p data-i18n="features.pauses.body">Type -- for a short pause or --3 for a three-second hold. Each becomes a chip in the editor, and lights up as the read reaches it.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="layers"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.screens.title">Every screen on the same word</h3>
+        <p data-i18n="features.screens.body">One engine, counted in characters, drives your preview, the talent's projector — flipped for prompter glass if you need it — and phones on your own network, so they never drift apart.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="index"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.import.title">Open the file you were sent</h3>
+        <p data-i18n="features.import.body">Import Word, RTF, PDF, plain text and Markdown files as clean prompter text, with a report of anything it could not bring across.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="tree"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.markers.title">Find your way around</h3>
+        <p data-i18n="features.markers.body">A line that starts with # becomes a section marker in a jump list, beside find and replace and live word counts.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="rings"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.timing.title">Read to time</h3>
+        <p data-i18n="features.timing.body">Tap your own tempo, hear a click with a count-in, see the bars and beats, and rehearse for a section-by-section timing report.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="faders"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.control.title">Pedals, remotes and hotkeys</h3>
+        <p data-i18n="features.control.body">Every command has a key you can change. Foot pedals and presenter remotes bind like any key, and a key can work even when the app is not in front.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="chat"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.writing.title">Help while you write</h3>
+        <p data-i18n="features.writing.body">Autocomplete in 18 languages from word lists inside the app, and dictation in English: say it, and it is written into the script.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="shield"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.private.title">Yours, on your computer</h3>
+        <p data-i18n="features.private.body">No account, no telemetry, no cloud. Scripts are plain files on your computer, and the app asks the internet one thing: whether a newer version exists.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<!-- The road to 2.0, from ladder.json. ⚠ A planned step has no version number
+     until it ships: its "version" in ladder.json is the step's name, never a
+     number nobody decided on (scripts/site.test.mjs holds it to that). -->
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">The road to 2.0</h2>
+  <p class="lead" data-i18n="ladder.intro">Every release so far, then the steps planned on the way to 2.0. A step gets its version number when it ships, and a plan can change.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">Done means released and tagged. Even so, this site offers no downloads.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="mic"></kit-icon><span data-i18n="honest.model.title">Dictation uses a speech model</span></h3>
+      <p data-i18n="honest.model.body">Dictation is the one part of the app that uses machine learning: Vosk, an open-source speech recogniser, with a small English model of about 40 MB inside the app. It runs on your computer, uploads and downloads nothing, understands English only, and stays off until you switch it on. Everything else is ordinary code and word lists.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="globe"></kit-icon><span data-i18n="honest.update.title">It asks the internet one question</span></h3>
+      <p data-i18n="honest.update.body">Each time it starts, the app asks GitHub whether a newer version exists. The request carries no script, no settings and no identifier, and nothing installs unless you say yes. Everything else works with no connection at all.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="audio-lines"></kit-icon><span data-i18n="honest.voice.title">It does not follow your voice</span></h3>
+      <p data-i18n="honest.voice.body">Some teleprompters scroll by listening to you read. Freally Teleprompt 1.5.0 scrolls at the pace you set, and you, a key or a pedal take over when the read changes. A voice-following mode was tried in 1.0.0 and removed in 1.1.0.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads on this site</span></h3>
+      <p data-i18n="honest.downloads.body">No download link, no button and no beta. The source code is private as well.</p>
+    </article>
+  </div>
+</kit-section>

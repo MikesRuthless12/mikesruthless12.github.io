@@ -1,0 +1,143 @@
+{
+  "note": "The public version ladder, rendered into index.html by the site kit (docs/kit/build.mjs). `phase` must equal the private roadmap's ladder (its build name), row for row (scripts/check-ladder.mjs); every `done` rung is a release with its own section in CHANGELOG.md (scripts/site.test.mjs). `summary` is written for the site and translated in docs/i18n (key ladder.rung.<version>). States: done, planned, goal, later.",
+  "rungs": [
+    {
+      "version": "v0.1.0",
+      "phase": "F — Foundation",
+      "state": "done",
+      "summary": "The plugin (CLAP, VST3, AU) and the standalone load and pass audio; the editor shell, design tokens, 18 languages, every quality gate, local CI on Windows and Linux, plugin validators, browser tests."
+    },
+    {
+      "version": "v0.2.0",
+      "phase": "P — The Planner",
+      "state": "done",
+      "summary": "Any of 2,413 artists, producers and genres becomes a deterministic arrangement plan, with several modes per genre."
+    },
+    {
+      "version": "v0.3.0",
+      "phase": "M — The magic moment",
+      "state": "done",
+      "summary": "One instance on a looping beat performs the whole record live — clicks-free, zero latency, in sync with your DAW."
+    },
+    {
+      "version": "v0.4.0",
+      "phase": "R — Roles & the Conductor",
+      "state": "done",
+      "summary": "An instance per part, conducted as one record, with the full console."
+    },
+    {
+      "version": "v0.5.0",
+      "phase": "C — Capture, preview & print",
+      "state": "done",
+      "summary": "Capture, preview inside Unloop, print to WAV/AIFF/FLAC/MP3, drag out, loop projects, and the Loop Library — browse, audition and cut your loops, reopen recent projects — the first complete product: the MVP."
+    },
+    {
+      "version": "v0.6.0",
+      "phase": "T — The timeline",
+      "state": "done",
+      "summary": "Move, copy, split and resize clips; fades, faders and automation; lock and reroll; unlimited undo and redo; the arrangement shelf and .unarr files; every edit from the keyboard."
+    },
+    {
+      "version": "v0.6.5",
+      "phase": "L — The look",
+      "state": "planned",
+      "summary": "Knobs, faders and buttons rendered in Blender, five skins in light and dark, interface sounds and a dark title bar — the same in every Freally app."
+    },
+    {
+      "version": "v0.7.0",
+      "phase": "X — MIDI",
+      "state": "planned",
+      "summary": "Audio-to-MIDI, MIDI loops in, the MIDI song template, the Velocity Doctor, MIDI drag-out."
+    },
+    {
+      "version": "v0.8.0",
+      "phase": "S — Standalone & web",
+      "state": "planned",
+      "summary": "Stems mode in the standalone and the web app, tempo adhere, the Loop Doctor."
+    },
+    {
+      "version": "v0.9.0",
+      "phase": "E — Expression & the Doctor",
+      "state": "planned",
+      "summary": "Re-Dream, synthesized transition FX, beat switches, the Arrangement Doctor, templates, MIDI learn."
+    },
+    {
+      "version": "v0.10.0",
+      "phase": "D — The dataset at scale",
+      "state": "planned",
+      "summary": "Every genre in several modes, hundreds of flagship artists and producers, every name resolving honestly."
+    },
+    {
+      "version": "v1.0.0b",
+      "phase": "H — Beta: hardened",
+      "state": "planned",
+      "summary": "Feature-complete: edge cases, accessibility, 18 languages, performance budgets, installers for three systems."
+    },
+    {
+      "version": "v1.0.0-rc",
+      "phase": "Release candidate",
+      "state": "planned",
+      "summary": "Reviewed top to bottom with every bug fixed, then tested by hand in real DAWs on every system available — with the complete web app and this site finished."
+    },
+    {
+      "version": "v1.0.0",
+      "phase": "The release",
+      "state": "goal",
+      "summary": "Downloads open, and the web app goes live."
+    },
+    {
+      "version": "v1.1.0",
+      "phase": "Post-1.0 Build 1",
+      "state": "later",
+      "summary": "Variation depth."
+    },
+    {
+      "version": "v1.2.0",
+      "phase": "Post-1.0 Build 2",
+      "state": "later",
+      "summary": "Moves depth."
+    },
+    {
+      "version": "v1.3.0",
+      "phase": "Post-1.0 Build 3",
+      "state": "later",
+      "summary": "Vocal-aware arranging."
+    },
+    {
+      "version": "v1.4.0",
+      "phase": "Post-1.0 Build 4",
+      "state": "later",
+      "summary": "Performance & DJ."
+    },
+    {
+      "version": "v1.5.0",
+      "phase": "Post-1.0 Build 5",
+      "state": "later",
+      "summary": "The Freally MIDI Master bridge."
+    },
+    {
+      "version": "v1.6.0",
+      "phase": "Post-1.0 Build 6",
+      "state": "later",
+      "summary": "Roster & dataset depth."
+    },
+    {
+      "version": "v1.7.0",
+      "phase": "Post-1.0 Build 7",
+      "state": "later",
+      "summary": "Export & interop."
+    },
+    {
+      "version": "v1.8.0",
+      "phase": "Post-1.0 Build 8",
+      "state": "later",
+      "summary": "Workflow & accessibility depth."
+    },
+    {
+      "version": "v1.9.0",
+      "phase": "Post-1.0 Build 9",
+      "state": "later",
+      "summary": "Freally integration."
+    }
+  ]
+}

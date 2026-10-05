@@ -1,141 +1,989 @@
-/* Freally MIDI Master — documentation search index.
-   © 2026 Mike Weaver — All Rights Reserved.
-
-   Hand-maintained alongside documentation.html. Each entry is one section:
-   its anchor, its title, and the words worth matching on. Keep it in step when
-   a section is added or renamed — a stale anchor searches to a dead link. */
-
-window.SEARCH_INDEX = [
-  {
-    id: 'formats',
-    title: 'Formats & hosts',
-    body: 'CLAP VST3 AU AudioUnit standalone Ableton Live 12 FL Studio Reaper Bitwig Logic host DAW MIDI generator plugin format',
-  },
-  {
-    id: 'install',
-    title: 'Installing',
-    body: 'install download release plugin folder CommonProgramFiles Library Audio Plug-Ins clap vst3 Windows macOS Linux path',
-  },
-  {
-    id: 'loop',
-    title: 'The core loop',
-    body: 'pick generate hear reroll keep seed workflow getting started first run',
-  },
-  {
-    id: 'roster',
-    title: 'The roster',
-    body: 'combobox autocomplete type to filter arrow dropdown artist genre search fuzzy autosuggest mainstream underground style parameters Metro Boomin OsamaSon trap drill disclaimer descriptive reference era tempo range moods writes does not write parts covered coverage silence empty tab',
-  },
-  {
-    id: 'moods',
-    title: 'Moods',
-    body: 'mood moods any pinned dark bounce melodic minimal dusty jazzy hard cowbell memphis brazilian shuffle ballad barnburner range variety kind of record inherited lineage',
-  },
-  {
-    id: 'own-style',
-    title: 'Your own style, and training it',
-    body: 'original workflow own artist own style build save train training fit fitted kept takes star thirty roster yours inherit extends export import copy samples consent disk space no machine learning offline midi file',
-  },
-  {
-    id: 'pads',
-    title: 'The drum pads',
-    body: 'pad pads drum lane lanes kick snare clap closed hat open hat perc rim crash mute unmute green red dot play audition drag drop sample one-shot shuffle re-roll randomize clear built in swap lane picker layer two per lane remembered per artist',
-  },
-  {
-    id: 'browser',
-    title: 'The sample browser',
-    body: 'browser file explorer categories places place counts count instruments factory expansion expansions drum packs kits one-shots factory packs loops tree folder folders subfolder subfolders library add folder remove star starred favourite favorites yellow reveal windows explorer finder arrow keys up down left right expand collapse retract audition preview reverse backwards waveform wav aiff flac mp3 m4a ogg mid midi rail width persist filter type-to-filter search narrow large library two thousand files fast scroll virtualized missing drive unplugged reconnect check again recent history',
-  },
-  {
-    id: 'midi-import',
-    title: 'Dropping a MIDI file in',
-    body: 'midi mid import drag drop generator song tab arrangement sections split separate parts bass melody countermelody counter chords drums reason routed why filename file name 808 trigger pitch register tempo bpm adopt session gm drum channel overlap onsets voices layered play audition hear preview listen neutral instrument sound',
-  },
-  {
-    id: 'generators',
-    title: 'The six generators',
-    body: 'drums melody countermelody bassline chords song arrangement hats rolls 808 kick snare clap percussion phrase scale degrees key',
-  },
-  {
-    id: 'instrument',
-    title: 'The instrument',
-    body: 'synth synthesiser synthesizer instrument sound preset factory library 225 instruments 69 genres engine wavetable bowed piano reed wind string vocal modal percussion impact signature drum machine keyboard octave velocity typing bed play in hardware controller MIDI input channel transpose pitch bend curve knobs reverb delay drive volume pan envelope save sound category PACK sample rack one-shot swap export normalize polyphony voices',
-  },
-  {
-    id: 'into-your-daw',
-    title: 'Getting it into your DAW',
-    body: 'DAW host drag drop export MIDI mid audio wav track clip Ableton Live FL Studio Reaper Bitwig Logic Pro VST3 CLAP AU multi-track playlist channel route instrument tempo warp acid Windows macOS Linux',
-  },
-  {
-    id: 'export-formats',
-    title: 'Bounced audio',
-    body: 'export bounce audio format WAV AIFF 16-bit 24-bit 32-bit float sample rate 44100 48000 88200 96000 176400 192000 192k stem render acid chunk tempo drag loop warp',
-  },
-  {
-    id: 'song-mode',
-    title: 'Song Mode',
-    body: 'song mode arrangement timeline section intro verse hook chorus bridge outro pre-chorus structure form clip loop tile re-roll reroll lock unlock audition solo mute drill in export stems multi-track marker playhead seek switch-up drop-out fade',
-  },
-  {
-    id: 'tempo',
-    title: 'Tempo, key & auto-sync',
-    body: 'tempo bpm key scale time signature auto-sync host DAW pin precedence follow project 140 92 session chips',
-  },
-  {
-    id: 'seeds',
-    title: 'Seeds & reproducibility',
-    body: 'seed reproducible deterministic copy paste same beat regenerate random fresh identical',
-  },
-  {
-    id: 'presets',
-    title: 'Presets',
-    body: 'preset factory user save load delete named session data directory tempo pin',
-  },
-  {
-    id: 'patterns',
-    title: 'The pattern library',
-    words:
-      'pattern library save saved load notes kit sounds swap file json data directory backup share crash outlives project take keep named',
-  },
-  {
-    id: 'takes',
-    title: 'Your takes, and locking a drum',
-    words:
-      'takes history variation generations back forward step recall seed artist mood bars pins tempo key used lock locked padlock lane re-roll reroll hold L browse browsable persist persists survives restart counter grouped by artist clear empty find what you like',
-  },
-  {
-    id: 'session',
-    title: 'Session state',
-    body: 'session state save project file restore reopen window size persist inputs regeneration arrangement song edited stored',
-  },
-  {
-    id: 'shortcuts',
-    title: 'Keyboard shortcuts',
-    body: 'keyboard shortcut hotkey undo redo ctrl cmd z y right rail K toggle',
-  },
-  {
-    id: 'standalone',
-    title: 'The standalone',
-    body: 'standalone no DAW own window tempo flag command line testing iteration',
-  },
-  {
-    id: 'privacy',
-    title: 'Privacy & the network',
-    body: 'privacy telemetry account cloud offline no outbound connection local network denylist gate crash report never sent web app delivered fetched collaboration room buddy presence STUN exception upload',
-  },
-  {
-    id: 'faq',
-    title: 'Questions people actually ask',
-    body: 'FAQ questions is this AI machine learning training data neural network legal legality copyright infringement sue lawsuit lawyer artist endorsed approved affiliated permission sample clearance sell release commercial monetise monetize distribute royalty own my output original novelty guard plagiarism quote melody stolen phone home offline drum loops one shots where did they come from licence rights',
-  },
-  {
-    id: 'bugs',
-    title: 'Reporting a bug',
-    body: 'bug report crash panic fault email author contact issue host DAW log CLAP VST3 version crashes folder APPDATA Application Support crash log where are the logs recover panel',
-  },
-  {
-    id: 'licence',
-    title: 'Licence',
-    body: 'licence license proprietary source code private all rights reserved not open source redistribute derivatives music is yours royalty attribution',
-  },
+/* ⛔ GENERATED by kit/build.mjs from the rendered pages. Do not edit.
+ * ⚠ There is no search service behind the box: the index is this file. */
+window.FREALLY_SEARCH_INDEX = [
+ {
+  "url": "documentation.html#formats",
+  "heading": "Formats & hosts",
+  "text": "Freally MIDI Master is a CLAP plugin. VST3 and AU are projected from it rather than implemented separately, which is what makes it loadable in hosts that do not speak CLAP. Host Format Status Ableton Live 12 VST3 Loads and generates FL Studio CLAP Loads and generates Reaper · Bitwig · Logic CLAP / VST3 / AU Not yet tested No DAW Standalone Runs in its own window The plugin writes notes onto the track you inserted it on and makes the sound itself — the drums through its kit, and each melodic part through its own instrument. You do not have to route it anywhere to hear it."
+ },
+ {
+  "url": "documentation.html#install",
+  "heading": "Installing",
+  "text": "Downloads open at 1.0. There is no installer, no beta and no preview build before then — a plugin that half-works inside somebody's session is worse than one that is not there, so it ships when the QA matrix is green on every host and every OS. Where the formats live, once 1.0 lands: OS CLAP VST3 Windows %COMMONPROGRAMFILES%\\CLAP %COMMONPROGRAMFILES%\\VST3 macOS ~/Library/Audio/Plug-Ins/CLAP ~/Library/Audio/Plug-Ins/VST3 Linux ~/.clap ~/.vst3"
+ },
+ {
+  "url": "documentation.html#loop",
+  "heading": "The core loop",
+  "text": "Pick someone. Type a name into the roster box — artists and genres alike. Generate. The pattern is built for your project's tempo and key. Hear it. Press play in your DAW — the notes are already on the track. Reroll or keep. Every generation carries a seed you can copy back."
+ },
+ {
+  "url": "documentation.html#roster",
+  "heading": "The roster",
+  "text": "Most MIDI generators think in genres . \"Trap\" is not \"Metro Boomin,\" and no mainstream tool has heard of OsamaSon. Freally MIDI Master thinks in artists — each one a set of hand-authored style parameters describing hat-roll grammar, 808 slide behaviour, swing, register and section layout. You find them with one type-to-autocomplete box . Start typing and it narrows as you go — across the mainstream roster, the underground roster, aliases, and typos. Stop halfway and click away and it takes the best match, so you can never be left with nothing chosen. Press the arrow instead and it shows you everything. The same box lists artists and genres together , each row saying which it is, so you never have to know in advance whether \"UK Drill\" is a person or a style. Pick one and its details appear directly underneath — era, the genres it works in, the tempo range and key it tends toward, its moods by name, and which parts it writes and which it does not — before you press Generate. Genres are a browse filter, not the unit of generation — though a genre is itself a real style model and generates in its own right. That last line matters more than it looks. An artist who does not write counter"
+ },
+ {
+  "url": "documentation.html#moods",
+  "heading": "Moods",
+  "text": "An artist is not one sound. Beside the artist is a mood — trap's dark , bounce , melodic and minimal ; boom bap's dusty , jazzy and hard ; phonk's cowbell , memphis and brazilian . Leave it on Any and each press walks that artist's range; pin one and stay there. A mood is the same author writing a different kind of record , which is how producers describe their own catalogue. It is applied before any generator runs, so every part honours it — there is no way for the drums to be in one mood and the melody in another. An artist only offers moods that artist actually does. Moods are inherited down the same lineage as everything else, so there is no path by which one artist's mood could be offered on another. Ask for one a style does not have and it says so by name rather than quietly generating something else."
+ },
+ {
+  "url": "documentation.html#own-style",
+  "heading": "Your own style, and training it",
+  "text": "Original Workflow sits at the top of the left rail, above everything. Start from any artist or genre, adjust the tempo range, swing, hat density, melody density and scales, and save it under your own name. It appears in the roster marked Yours and generates, locks, re-rolls and exports exactly like a shipped artist — because it is the same kind of thing, in the same format. It inherits everything you did not change , including improvements the artist you based it on gets in a later release. A new style opens seeded from the beat on screen rather than from a blank form. Star the takes you like as you go. At thirty kept, Train fits a style to them — how many onsets a bar, what register, what shape the line made — and writes those ranges back as an ordinary style model. Your own .mid files can be training material too. \"Trained\" means fitted, and there is no machine learning anywhere in it. Nothing is learned from anybody else's music, nothing leaves your machine, and a fit that would only repeat itself is refused with a reason rather than saved. The floor of thirty exists so a style encodes your taste rather than one seed's opinion. Your samples are only copied if you say so. A style"
+ },
+ {
+  "url": "documentation.html#pads",
+  "heading": "The drum pads",
+  "text": "Eight pads sit across the top of the stage, above the piano roll. Each one is a drum lane: its name, what is currently on it, and a dot saying whether you can hear it — green for audible, red for muted . Press a pad to mute or unmute it. Press Play in its top centre to hear that one sound on its own. Drag a sample onto it from the browser to put your own one-shot there, or double-click to pick a file. The shuffle button re-rolls that pad from the folder you are browsing, and the ✕ puts the built-in sound back. Every pad's lane name is itself a picker — swap any of the eight for any of the thirty-seven lanes the plugin has. Two pads may share a lane, so you can layer a snare; a third is refused. Your layout is remembered per artist , so coming back to a style you built restores the pads exactly as you left them, with the samples you assigned."
+ },
+ {
+  "url": "documentation.html#browser",
+  "heading": "The sample browser",
+  "text": "It opens on Categories — one row per place, each saying how much is in it, and you go into them. Instruments and the four Factory Expansions are the shelves of the built-in library; Drum Packs holds the eleven shipped kits and their 407 one-shots; Factory Packs holds the 5,085 MIDI loops, by pack. Under those sit + Add Folder and the folders you have added, by name. The number on a row is the whole shelf , not what survived the filters, so it does not move when you press a chip. The rows read in alphabetical order in whichever of the eighteen languages you are using. A folder whose drive is unplugged keeps its place and is marked Unavailable in words rather than only in a colour, and it stays removable — a producer who unplugged their sample disk has not left the library. Inside a place, the arrows above the list walk the folders and the breadcrumb jumps straight to a level. Your library comes back next time you open the app, with or without a project. The arrow keys walk it. ↑ and ↓ move between rows. On a folder, → opens it and ← shuts it — and on an already-shut folder ← shuts the branch it sits in, so it is a way back out. On a file , those same two keys play it forwards and ba"
+ },
+ {
+  "url": "documentation.html#midi-import",
+  "heading": "Dropping a MIDI file in",
+  "text": "Hear it first. Select a .mid and the panel lists what is inside it; press Play and it sounds — through a plain built-in instrument rather than whichever artist you happen to have selected, so the same file sounds the same tomorrow. Drum lanes come through as hits rather than as pitches, because a drum lane's note number says which pad fires, not how low it is. It is built on the first press, not when you click the file, so walking a folder of loops with ↓ costs nothing. It never touches your project's transport. Drag a .mid from the browser onto a generator and its notes land there. Drop it on the Song tab instead and the whole file arrives as an arrangement — sections across the top, parts down the side — and clicking any cell opens that clip in its generator, exactly as drilling into a generated song does. Nothing you already have is overwritten until you choose a cell. A layered file is separated into bass, melody, countermelody, chords and drums , and every part says why it was routed where it was — \"on the GM drum channel\", \"chords — notes overlap\", \"lowest voice\", \"from the file name\". A wrong guess is one click to redirect rather than something you discover two bars in. Name"
+ },
+ {
+  "url": "documentation.html#generators",
+  "heading": "The generators",
+  "text": "Five part generators, plus Song Mode. Song Mode is not a sixth generator — it lays out an arrangement and fills the other five in. Tab What it makes Drums Kick, snare and off-snare, clap, closed and open hats with roll grammar, ride, crash, tom, rim, snap, perc, shaker, tambourine, cowbell and woodblock — plus the sliding sub. Which of them an artist uses is part of that artist. Melody Phrase structures — riff loop, question/answer, call/response, long arc — with chord-tone bias on strong beats and per-genre devices Countermelody Octave echo, bell echo, arpeggio, answer lick and sustained pad, placed in the melody's gaps Bassline The low end, locked to the drums' sub behaviour Chords Progressions in the session's key and scale Song An arrangement that fills the five above in — a mode, not a generator All five generate, and all five are editable. Drums has a pad grid; melody, countermelody, bassline and chords have a piano roll. A style whose 808 is its bassline says so rather than doubling it with a second low end. Pitches are chosen as scale degrees and only then turned into MIDI notes, so staying in key is structural rather than filtered for afterwards."
+ },
+ {
+  "url": "documentation.html#song-mode",
+  "heading": "Song Mode",
+  "text": "Press Generate on the Song tab and you get a whole arrangement: one of the artist's own song forms, a clip per part per section, and the transitions that make it read as a record — the beat or two of silence before a hook lands, a back-half switch-up, an outro that fades. A section plays a looping clip. A sixteen-bar verse is a four-bar loop played four times, which is what every DAW's arrangement view draws. Sections of the same kind share one clip, because verse 1 and verse 2 are the same beat — the switch-up exists precisely because that is the rule. What you can do How Resize, clone, delete, copy/cut/paste clips Drag either edge, double-click a section header, and the ordinary shortcuts Re-roll one section R , or the dice on the section header. Locked clips are left alone Lock a clip, a row or a whole section The padlock on the cell, the part row, or the section header Hear one cell on its own The headphones on the clip. The view says so while it lasts Open a clip in its editor Double-click it. Your edits write back into the arrangement Loop a section, mute or solo a part The repeat icon on the header; the speaker and S on the row Choose which of the artist's forms to build The"
+ },
+ {
+  "url": "documentation.html#instrument",
+  "heading": "The instrument",
+  "text": "It makes the sound as well as the notes. A polyphonic synthesiser with a factory library of 225 instruments across 69 genres, and each of the four melodic generators plays its own — so assigning a different sound to Melody, Countermelody, Bassline and Chords gives you four voices at once, not one shared between them. Nothing here is a sample library. Every sound is generated from a small address — an instrument, a genre, a variation, an articulation and a tone — so the whole library is a handful of integers in your project file rather than gigabytes on your disk. Thirteen synthesis engines sit behind it: a violin is a bowed-string model and a Rhodes is a physical piano model, which is why their controls behave differently from a pad's. Every address is a different sound. The twenty-four variations of one instrument in one genre tour that instrument's own range &mdash; how long a bar rings, how hard a hammer strikes, where a string is plucked &mdash; rather than rolling dice twenty-four times, and the genre reaches the model itself rather than a filter after it: a trap 808 rings and slides where a house kick is tight, and a jazz piano is softer-hammered than a metal one. All 2,729,0"
+ },
+ {
+  "url": "documentation.html#export-formats",
+  "heading": "Bounced audio",
+  "text": "Settings &rarr; MIDI input , below the input settings — both are about what crosses between this plugin and your own gear. WAV or AIFF, 16-bit, 24-bit or 32-bit float, at 44.1, 48, 88.2, 96, 176.4 or 192 kHz. Choice When WAV 16-bit The default, and what this plugin has always written. WAV 24-bit What most producers expect from a bounce. Six more dB of usable range. WAV 32-bit float Keeps anything that went past full scale, so a hot bounce can still be pulled back down. AIFF 16 or 24-bit For a workflow that wants it. Integer only — AIFF has no float form here. A loop you drag into your DAW is always a 16-bit WAV, whatever this is set to. A dragged loop has to carry its own tempo so it lands warped to the right speed instead of your project's, and only a WAV can hold that. This setting is for files you save , where you chose the destination."
+ },
+ {
+  "url": "documentation.html#into-your-daw",
+  "heading": "Getting it into your DAW",
+  "text": "Three roads, and which one you want depends on what you are doing. The plugin plays on its own track, drags files out, or exports them to a folder. 1. Just play it The plugin emits MIDI onto the track it is on, and it also makes the sound itself — the drums through its kit and each melodic part through its own instrument. Press play in your DAW and you hear the beat without routing anything. If you would rather your own instrument played the notes, route the plugin's MIDI output to it the way your host does that, and turn the part's own sound off by leaving no instrument assigned to it. 2. Drag a clip out Grab a part chip and drag it onto a track. You get a .mid by default, or audio if you switch the chip. Dragging the whole arrangement gives one file per part. Dragging is Windows only for now. On macOS and Linux the chips do not offer it, because a control that cannot work is worse than one that is not there. Use Export instead — it produces the same files. A dragged audio loop carries its own tempo, so it lands warped to the speed it was made at rather than to your project's. That is a WAV thing specifically, which is why a dragged loop is always a 16-bit WAV whatever the export "
+ },
+ {
+  "url": "documentation.html#tempo",
+  "heading": "Tempo, key & auto-sync",
+  "text": "The plugin reads the host's tempo and time signature every block. Trap authored at 140 comes out at 92 in a 92 BPM project — because a clip generated at the artist's tempo does not fit the song you asked for. Precedence Your pin wins. Pin a tempo in the session chips and it beats everything. Then the host. With auto-sync on, the DAW's tempo is used. Then the artist. With auto-sync off, the model's own authored tempo stands. A pin is held inside the range the artist works in. The BPM box stops at the range shown in the panel &mdash; drag or type past it and it settles at the edge &mdash; and switching to an artist who cannot reach your pin brings it to their nearest tempo rather than generating something they never play. Typing is only corrected when you leave the box, so 1 on the way to 140 is not rewritten under your cursor. The host is never held to it: a project's tempo is the project's. The scale chip offers the scales that artist writes in. A mode is what carries their character, so a scale picked on one artist is handed back to the model when you move to another who does not use it. The key chip is deliberately not restricted &mdash; a key is transposition, the same music at "
+ },
+ {
+  "url": "documentation.html#seeds",
+  "heading": "Seeds & reproducibility",
+  "text": "Every generation has a seed . The same seed, artist and session always produce a byte-identical pattern — on any machine, on any day. Copy the seed from the chip, paste it back, and the beat returns. Leave the seed box empty to get a fresh one each time; the chip then shows the seed that was actually used, so you can copy a generation you liked even though you never typed a number. Determinism is enforced by the test suite, not merely intended — it is also why a saved project can restore a beat without storing a single note."
+ },
+ {
+  "url": "documentation.html#presets",
+  "heading": "Presets",
+  "text": "A preset is a named session — artist, seed, bars and pins. Factory presets are compiled into the binary; your own are written to the platform's per-user data directory, so they outlive any one project. No factory preset pins a tempo. A pin is an instruction from the user, and a shipped file is not the user — a factory preset that pinned one would override your DAW the moment you loaded it."
+ },
+ {
+  "url": "documentation.html#patterns",
+  "heading": "The pattern library",
+  "text": "Name a pattern you like and it is there next time — in any song, in any DAW. Each one is its own JSON file in the platform's per-user data directory, so a bad save costs one loop rather than the shelf, and you can back them up, sync them, or hand one to someone else by copying a file. A saved pattern is notes, not sound. The kit is deliberately not stored, which is what makes &ldquo;use it with any sounds you want&rdquo; true rather than a claim: load the pattern, swap the kit, and the same performance plays through different samples. It is also how a pattern survives a crash — a plugin lives in someone else's process and dies with it. This is not a preset and not the project. A preset is a starting point and stores no notes at all, because the engine regenerates them; the project remembers this song. A saved pattern is the take you kept."
+ },
+ {
+  "url": "documentation.html#takes",
+  "heading": "Your takes, and locking a drum",
+  "text": "Every generation of the session is kept, from the first, counted separately per generator. &#9664; and &#9654; walk them, and stepping back brings the whole setup: the artist, the mood, the seed, the bars and the pins — not just the number. The readout shows the tempo and key that were actually used , which is not always what you pinned: a beat made while your DAW sat at 92 was made at 92, and tempo changes the notes. And it outlives the session. Click the take counter — the &ldquo;3 / 40&rdquo; between the arrows — and every generation you have ever made is there, grouped by artist, each row saying how long it is, how fast, and when you made it. Pick one and it comes back. The arrows answer &ldquo;back one&rdquo;; this is for the beat from Tuesday night whose seed you never wrote down. It is kept per user rather than in the project — where you have been generating is a fact about you, not something to ship inside a song sent to a label — and it survives an update. Each artist keeps its own run of takes, so an evening spent on one cannot push out the ones you saved from another. Clear it whenever you like : it is a record of what you have been making, and being able to empty it is "
+ },
+ {
+  "url": "documentation.html#session",
+  "heading": "Session state",
+  "text": "The plugin saves your artist, seed, bars, pins and window size into the DAW's own project file . Reopen the song and the session comes back. There is no file to manage and no path to choose. The pattern itself is not stored — the inputs are, and the engine is deterministic, so restoring is a regeneration. That is why a saved project costs bytes instead of hundreds of kilobytes of notes."
+ },
+ {
+  "url": "documentation.html#shortcuts",
+  "heading": "Keyboard shortcuts",
+  "text": "Every shortcut the plugin and the standalone have, grouped the way the in-app panel groups them. Press Shift + ? in the app to see the same list with your own remappings, which this page cannot know about. Where a row shows Ctrl / ⌘ , that means Ctrl (Windows/Linux) or ⌘ (macOS). Keys Action Transport Space Play or pause F9 Start or stop recording F10 Metronome on or off K Show or hide the right rail E Swap between the file explorer and the roster Shift + ? or F1 Show this panel View and layout V Show or hide a panel Shift + V Focus mode - rails and tabs away Generate Enter Search the roster G Generate this part Shift + G Generate every part 1 – 6 Pick a generator R Re-roll the selected clip L Hold this drum across a re-roll ← / → Step through your takes Editing Ctrl / ⌘ + A Select all Ctrl / ⌘ + C Copy Ctrl / ⌘ + X Cut Ctrl / ⌘ + V Paste Ctrl / ⌘ + Z Undo Ctrl / ⌘ + Shift + Z or Ctrl / ⌘ + Y Redo Ctrl / ⌘ + D Duplicate Delete Delete Esc Deselect Notes ↑ / ↓ Transpose a semitone Ctrl / ⌘ + ↑ / ↓ Transpose an octave ← / → Nudge in time * Stretch to double length / Compress to half length Ctrl / ⌘ + R Reverse the selected note Drum grid Ctrl / ⌘ + 3 Triplet in this cell Ctrl / ⌘ + 5 "
+ },
+ {
+  "url": "documentation.html#standalone",
+  "heading": "The standalone",
+  "text": "The same plugin, in its own window, with no DAW involved — useful for trying things quickly and for machines where you are not producing. It cannot sync to your DAW, and it never will — there is no host, so there is nothing to sync to. A fixed tempo can be set on the command line, which exercises the same path, but real host tempo, meter and playhead need a real host. And it reports no project tempo unless you ask for one. Without --tempo there is no project, so nothing overrides the artist: pick a model and you hear it at the tempo it was authored at. Pass --tempo and that fixed value behaves exactly as a host's would."
+ },
+ {
+  "url": "documentation.html#privacy",
+  "heading": "Privacy & the network",
+  "text": "No accounts. No telemetry. Nothing about you, your projects or your output is transmitted. Generation, playback, import and export are entirely local. The plugin makes no outbound connections at all. The two that used to exist — a launch-time update check and an opt-in crash report — belonged to the desktop app and were removed with it. A plugin is installed and updated by whoever installs plugins, and no HTTP client is compiled into it. Two build gates check this on every commit rather than trusting the claim: one reads the dependency graph and fails if an HTTP client is linked at all, the other drives the real interface through a generation and fails if the browser attempts a single request off the machine. The web app is delivered over the network; what you make is not. A page has to be fetched — the app itself, and the style data it generates from. That is the whole of it. Generation runs on your own machine, in your own browser; your beats, your seeds and anything you import stay there and are never uploaded. After one visit the tab works with the network switched off. Collaboration is the one exception, and only if you use it. Rooms connect your machine directly to the people"
+ },
+ {
+  "url": "documentation.html#faq",
+  "heading": "Questions people actually ask",
+  "text": "Every answer here is a restatement of something already written down in the licence, the name disclaimer or the credits. Nothing on this page is a new promise. Is this AI? No, and not in the weak sense of \"we do not call it that\". There is no machine learning anywhere in the product — no model, no training data, no inference, no neural network of any kind. The engine reads a set of hand-written numbers and rules and builds a pattern from a seeded random generator. You can read those numbers: they are plain JSON, and every one of them is a tempo range, a swing percentage, a note density, a roll grammar or a chord tendency. So how can it sound like a specific artist? Because a producer's habits are describable. How often the hats double up, where the snare lands, whether the 808 slides and how far, which chord families turn up and which never do — that is written out by hand, from published interviews, technique articles and listening. It is the same kind of document as a drum lesson that teaches you a shuffle, and it works for the same reason. Are the artists involved? Did they approve this? No. No artist, producer, label or publisher named in this software has endorsed, sponsored, "
+ },
+ {
+  "url": "documentation.html#bugs",
+  "heading": "Reporting a bug",
+  "text": "There is no reporter that phones home, and there never will be. What there is instead is a folder: when either half of the plugin falls over, it writes what happened to your own disk, and you decide whether to send it. OS Where the reports are Windows %APPDATA%\\Freally MIDI Master\\crashes\\ macOS ~/Library/Application Support/Freally MIDI Master/crashes/ Linux $XDG_DATA_HOME/freally-midi-master/crashes/ , or ~/.local/share/freally-midi-master/crashes/ The filename says which half went: -panic is the audio engine with a backtrace, -page is the interface, and on Windows -fault is a hardware fault such as an access violation. The newest twenty are kept, so the folder never grows without limit and you can attach the lot to a bug report. If the interface is what broke, you will see a panel with a way back into your session rather than a dead rectangle — the arrangement lives outside the part that crashed, so pressing the button redraws your own work. Report it anyway; the log is already on disk. So: when you report it, say which host, which format (CLAP or VST3) and which OS version, and attach the newest file from the folder above. If the crash took the whole DAW down, attach the log yo"
+ },
+ {
+  "url": "documentation.html#licence",
+  "heading": "Licence",
+  "text": "Proprietary, All Rights Reserved ; the source code is private. You may not redistribute it or ship derivatives. It is not open source. The music you make with it is yours , with no royalty and no attribution requirement."
+ },
+ {
+  "url": "roster.html#roster-title",
+  "heading": "The roster",
+  "text": "All Artists Producers Genres Flagship Standard Style of Type Era Genres Tier Loading the roster… Artist Producer Genre Flagship Standard {shown} of {total} match Nothing matches that. The roster could not be loaded. Try refreshing the page. This page is open as a local file, and browsers refuse to load the roster from a file:// page. Open it over HTTP instead."
+ },
+ {
+  "url": "changelog.html#unreleased-changed",
+  "heading": "Changed",
+  "text": "freally-encode and freally-drag are crates of their own (shared tag shared-v2 , Freally Unloop's carve-out A). The WAV/AIFF writer with its acid tempo chunk, the WAV probe and the one rubato resampling door moved from freally_library::encoder and plugin/src/audio/resample.rs into encode/ ( freally-encode ); the OLE / Cocoa / GTK drag source moved from plugin/src/drag/ into drag/ ( freally-drag ), generic over the product. MIDI Master consumes both and its bytes are unchanged: the same WAV and AIFF files, the same acid chunk at every depth, the same drag spool folder. The library's session chunk stays in freally_library::encoder , which re-exports the rest. FLAC and MP3, behind features. freally-encode adds FLAC ( flacenc , feature flac , a BPM= Vorbis comment) and MP3 ( rusty_mp3 , feature mp3 , ID3v2.3 TBPM / TIT2 ) for Unloop's Print. MIDI Master enables neither yet. The low-level writers never relabel audio: a rate they cannot carry is refused, and the resampling doors convert first. ci:local , CI and cargo deny now build, test and licence-check the crate with every feature on. The webview adapter names its own data folder ( WebViewEditor::with_data_dir_name , default unchanged:"
+ },
+ {
+  "url": "changelog.html#unreleased-fixed",
+  "heading": "Fixed",
+  "text": "A MIDI file of note-ons that never end is refused , not read: the note limit counts open notes as well as closed ones, and a note-off finds its note in logarithmic time — a file of a million stray note-offs no longer takes seconds. The drag spool's week-old sweep never deletes audio in a subfolder , never follows a link, and a spool, spill or file drag refuses a name or path that is not a plain one. Audio exported at a rate other than the render's is exactly as long as it should be and sits where it should. The resampler dropped the last frames of every conversion (48,000 frames at 48 kHz came out as 44,098 at 44.1 kHz, not 44,100) and placed everything up to three frames off — +1.17 frames late at 44.1→96 kHz, half a frame early at 96→48 kHz. The length is now frames × to / from to the nearest frame, and the placement is within a fiftieth of a frame at every export rate. This changes the bytes of any export or drag at a non-native rate, and a kit one-shot converted to a device rate other than its own now keeps its last frames; anything at its own rate is unchanged. v1.0.0RC 2026-09-17 The first release candidate , 153 entries since 0.4.0. Not a download: these binaries are for the"
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-e2e-gate-was-timing-out-on-a-cold-dev-server-2026-09-17",
+  "heading": "Fixed - the e2e gate was timing out on a cold dev server, 2026-09-17",
+  "text": "Four accessibility specs failed on page.goto with nothing wrong with the page: a cold vite compiles the module graph on the first browser request (19.5 s measured), and at four workers four specs paid it at once. e2e/warm.setup.ts now compiles the app once before the suite — a11y went 4-failed/3-flaky to 9/9 , and the whole run got faster, 4.7 min against 7.1. ⚠ The first attempt put the exclusion on the wrong config layer and silently reduced the gallery to 0 tests collected , which a gate reports as a pass."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-product-is-green-now-and-it-is-the-icon-s-green-2026-09-16",
+  "heading": "Changed - the product is green now, and it is the icon's green, 2026-09-16",
+  "text": "Every purple in the app, the plugin and the docs site is gone. #79D920 is sampled from images/freally-icon.png — the weighted centre of its bright-green pixels — so the UI and the taskbar icon are the same green rather than nearly the same. ⛔ The light theme takes the icon's shadow green, #1A6B02 , because #79D920 is 1.79:1 on white. The same arithmetic caught a real bug: a brand button with a hard-coded white label, illegible on the new green, now uses --color-on-primary . ⚠ The neutrals moved by hue and not luminance, so none of the 112 contrast assertions shifted. The cyan playhead colour is untouched by design."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-name-turns-at-the-top-of-the-window-2026-09-16",
+  "heading": "Added - the name turns at the top of the window, 2026-09-16",
+  "text": "\"FREALLY MIDI MASTER v1.0.0RC\", carved and rotating on its Y axis at the top centre of the app. It is an extrusion rather than a flip — ten copies stacked along Z, because a single rotateY vanishes to a hairline at 90° and reads as the name blinking out. It stops dead under prefers-reduced-motion , held at an angle so the depth survives."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-clips-fade-in-and-out-with-a-curve-you-can-bend-2026-09-16",
+  "heading": "Added - clips fade in and out, with a curve you can bend, 2026-09-16",
+  "text": "Every clip in the Song Arrangement has a fade in and a fade out, each with a handle for its length and a dot for its shape — so an artist's arrangement can be bent into your own. ⛔ The two paths can never cross: a crossed pair describes no envelope at all, so when they would overlap they scale down in proportion rather than one silently deleting the other. The page's fadeGain mirrors the engine's Fade::gain_at exactly, so the drawing and the audio are one formula."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-audio-view-of-a-clip-is-now-the-actual-audio-2026-09-16",
+  "heading": "Added - the audio view of a clip is now the actual audio, 2026-09-16",
+  "text": "Switch the arrangement to audio clips and you see each clip rendered through its own instrument, so you know what it sounds like before dragging it into your DAW. ⛔ The editor thread never renders — 320 clips at half a second each would freeze the host. The plugin answers from a cache or queues the work, and the timeline keeps its note sketch until the picture arrives. \"Real time\" falls out of the cache key being the clip and its sound , so a turned knob is a fresh render and nothing polls. ⚠ A browser tab keeps the note sketch for ever: no audio is staged there."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-per-note-chance-and-velocity-range-2026-09-16",
+  "heading": "Added - per-note chance and velocity range, 2026-09-16",
+  "text": "Any note in the piano roll can be given a chance of playing and a velocity that wanders. Mike: \"B5-2 — Per-note chance/probability\" , \"B5-3 — Per-note velocity deviation/range\" . A chance is drawn as how much of the note is filled; a range is a band around its cap on the velocity lane."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-the-export-bakes-and-it-bakes-the-same-way-every-time",
+  "heading": "⛔⛔ THE EXPORT BAKES, AND IT BAKES THE SAME WAY EVERY TIME",
+  "text": "Either the .mid bakes one roll and two exports differ — breaking the golden snapshots and the byte-identical web_parity gate — or the feature is preview-only and lies about what you will get. ▶ Both horns assume the bake is random. It is not. The roll is a hash of the clip's seed, the pass and the note's index, and every export pins the pass, so the file bakes and two exports are identical. Ableton bakes non-deterministically; this is strictly better and costs nothing. An untouched note skips the roll entirely rather than always winning, which keeps every snapshot byte-identical."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-standalone-s-icon-came-from-a-file-that-never-existed-2026-09-16",
+  "heading": "Fixed - the standalone's icon came from a file that never existed, 2026-09-16",
+  "text": "plugin/build.rs told every reader to regenerate icon.ico from images/freally_app_icon.png , which has never been in this repo. It names images/freally-icon.png now — the real product icon. ⚠ The .ico entries are DIB and verified one by one: PNG-compressed entries make the resource compiler fall back to the stock Rust icon silently ."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-your-session-travels-inside-the-file-2026-09-16",
+  "heading": "Added - your session travels inside the file, 2026-09-16",
+  "text": "An exported .mid or .wav now carries the whole session that made it. In a DAW it is an ordinary file; opened here, the artist, seeds, pins, mood, locks, mutes and pad assignments all come back — so a file reopens as yours rather than as somebody's notes. MIDI uses FF 7F , which readers must skip; audio uses a RIFF chunk beside the acid chunk that already carries the tempo. Drop back a .wav this product bounced and the session returns instantly instead of a minute of analysis approximating it. ⛔ A file somebody sent you is untrusted: the blob is versioned and length-capped, and a document with one wrong field is refused whole , because a half-applied session is your artist name over somebody else's pins. midly parses a truncated file without complaining — 200 bytes still yields a plausible document — so the blob declares its own length."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-browser-s-export-button-could-not-write-a-file-2026-09-16",
+  "heading": "Fixed - the browser's Export button could not write a file, 2026-09-16",
+  "text": "Pressing Export on the Song tab in a browser said \"there is nothing generated to write\" , every time: one store serves the plugin and the tab and sends { song } , while the tab's file layer read a files list nothing sends. It renders through the command the drag already used, so the file you download and the file you drag are the same bytes."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-dropping-a-mid-on-the-browser-s-song-tab-stored-the-wrong-thing-2026-09-16",
+  "heading": "Fixed - dropping a .mid on the browser's Song tab stored the wrong thing, 2026-09-16",
+  "text": "explorer_song , explorer_midi_split and explorer_midi_audition were all answered with the split , so the Song tab got a list of parts where an arrangement goes. ⚠ Both shipped because the specs covering those buttons run against the mock, which answers correctly. The tab's file layer had no test at all; it now asserts the shape rather than the name, since the name gate was green for both bugs."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-owner-s-force-mute-worked-on-nobody-2026-09-15",
+  "heading": "Fixed - the owner's force-mute worked on nobody, 2026-09-15",
+  "text": "Force-mute, force-camera-off and remove-from-room were three buttons that did nothing and reported nothing: the page had asked for collab_force and collab_remove since they were written, and the plugin answered neither. The page reads any rejection as \"there is no sidecar\" , which is why nobody ever saw an error — including an owner trying to close a stuck open mic. Both are answered now, and a malformed argument is refused rather than defaulted, because every default here is a decision about somebody else's camera."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-legal-notice-nobody-could-read-in-the-dark-theme-2026-09-15",
+  "heading": "Fixed - a legal notice nobody could read in the dark theme, 2026-09-15",
+  "text": "The name-framing notice under the roster combobox is ~10.9px and was painted in the muted tier, which the palette reserves for large text. It measured 4.33:1 , under the 4.5:1 small text needs. It uses the body tier now. ⚠ The accessibility suite drives the light theme, where the same declaration measured 5.78:1 and passed, so a unit assertion now checks all three themes."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-gate-that-watches-for-dead-controls-could-not-see-collaboration-2026-0",
+  "heading": "Fixed - the gate that watches for dead controls could not see collaboration, 2026-09-15",
+  "text": "bridge_names.rs scraped every invoke('name') in the frontend — but every collaboration module passes a constant through a helper, precisely so one spelling cannot drift from three call sites. The convention that made those names safe is the one that hid them, and seven commands were invoked by shipped controls and answered by nothing. The gate resolves constants now; two are fixed above and the other five are listed in the test with the reason each is unbuilt, so the gap is named in executable form rather than forgotten."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-an-exported-pattern-s-track-name-says-the-style-2026-09-12",
+  "heading": "Changed - an exported pattern's track name says \"the style\", 2026-09-12",
+  "text": "The track name written inside a .mid read trap — Drums ; it now reads trap style — Drums , the distinction the interface and filenames already make. A performer's name describes a style, never a badge of origin on a file that leaves this app. ⚠ Not one note moved: the four golden snapshots differ by six bytes of text each."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-file-explorer-opens-on-categories-with-the-numbers-2026-09-11",
+  "heading": "Added - the File Explorer opens on Categories, with the numbers, 2026-09-11",
+  "text": "It used to open on instrument families in whatever order the engine held them, with no counts — and the library shelves, loop packs and drum kits were a folder tree drawn inside the instrument browser, so Factory Packs could not be reached from the top at all. It now opens on Categories , one row per place, each saying how much is in it: Instruments and four Factory Expansions (248 and 350 each), Drum Packs (eleven kits, 407 one-shots, auditionable for the first time), and Factory Packs (5,085 MIDI loops). Rows sort alphabetically in whichever of the eighteen languages you use, and an unplugged drive keeps its place and is marked Unavailable in words rather than only in colour. The count comes from the engine unfiltered — what is on the shelf, not what survived the chips — so it does not move when you press Bassline . ⛔ Fixed by the same change: the shelves leaked into each other. Factory Expansion 2 → Keys listed every Keys instrument on all five shelves, because the shelf was a folder on screen and nothing at all in the query."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-interface-says-the-style-not-the-artist-2026-09-11",
+  "heading": "Changed - the interface says \"the style\", not \"the artist\", 2026-09-11",
+  "text": "Nine remaining labels said artist where they meant the style — \"Using the artist's tempo\" , \"Whatever the artist writes\" . Eight made a claim about a real person. All nine now name the style, in all eighteen languages, using each language's own word."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-documentation-site-in-eighteen-languages-2026-09-11",
+  "heading": "Added - the documentation site in eighteen languages, 2026-09-11",
+  "text": "A language picker on every page, offering the same eighteen languages the plugin does, each by its own name."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-naming-your-exports-no-longer-breaks-settings-in-a-browser-tab-2026-09-11",
+  "heading": "Fixed - naming your exports no longer breaks Settings in a browser tab, 2026-09-11",
+  "text": "The export-naming panel asked the tab for a naming template and got back a different shape than it reads, taking the whole Settings panel down with it. A tab has no naming template — its downloads are named in the engine — so it says so and leaves the section out."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-bells-ring-like-bells-instead-of-being-cut-short-2026-09-10",
+  "heading": "Fixed - bells ring like bells instead of being cut short, 2026-09-10",
+  "text": "A church bell rang 3.2 seconds when its own partials are tuned to ring for nine: letting go of the key engaged a damper, and a tower bell has none. Same for a gong, orchestra bells, a steel pan and a handpan. A church bell now rings 6.6 seconds, and genuinely damped instruments are untouched, because shortening the sound is the point of those. Two faults that fix uncovered: stopping everything stopped working on those instruments, so a panic left a gong ringing at full level — a panic and a key release are now different things — and bending a struck instrument was changing its loudness by up to 7 dB, because retuning a ringing resonator moves its level too. ⚠ Known and not fixed: 107 of the 118 library instruments named Bell or Chime are built from harmonic oscillators rather than a bell's inharmonic partials. The generators only reach for the modelled ones."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-pitch-bend-knob-now-bends-and-stays-where-you-put-it-2026-09-10",
+  "heading": "Fixed - the pitch bend knob now bends, and stays where you put it, 2026-09-10",
+  "text": "Twelve of the thirteen instrument engines ignored the pitch wheel entirely — every bell, guitar, bowed string, horn, piano, organ, voice, drum machine and character instrument, from the drawn knob and from a hardware controller. A modelled instrument is told its pitch once, and nothing carried the wheel to it afterwards. Now a bell's partials, a guitar's string length and a singer's voice all move, while the parts that do not follow the note stay put — a violin's body, a vocal's formants, a kalimba's box. And the knob no longer undoes you. It sprang back to centre on release, which is what a hidden sprung wheel does and not what a drawn knob with a readout does. It holds its position now; double-click re-centres it, as every other knob does. ⚠ That made a second fault reachable, fixed here too: on the resonant-chord-bank instruments, the second note of a phrase played with the wheel held came out a fifth sharp. Nothing could have found it before, because a wheel could not still be held when the next key went down."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-virtual-keyboard-fills-the-space-it-is-given-2026-09-10",
+  "heading": "Fixed - the virtual keyboard fills the space it is given, 2026-09-10",
+  "text": "The piano stopped part way across and hugged the right edge: its row sizes children to their own content, so the keyboard was as wide as the small octave controls above it rather than as wide as the app. It fills its container at every size now."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-drag-a-factory-pack-loop-straight-into-your-patterns-2026-09-10",
+  "heading": "Added - drag a Factory Pack loop straight into your patterns, 2026-09-10",
+  "text": "The pack browser ships 5,085 MIDI loops and could play every one and drag one out to your DAW — but there was no way to bring one in , so you heard the beat you wanted and rebuilt it by hand. Every loop row is a drag source now: drop it on a generator and it lands split onto the right parts, exactly as a .mid from the File Explorer does. ⚠ The Song tab refuses a loop and says so with the cursor: Song builds an arrangement out of a file's sections, and four bars have none."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-peer-s-shared-folders-can-be-opened-and-the-badge-tells-the-truth-2026-0",
+  "heading": "Fixed - a peer's shared folders can be opened, and the badge tells the truth, 2026-09-09",
+  "text": "The shared explorer got its client last release and could not have worked. Three faults, all invisible because the mock browser was hand-fed rows in the page's shape and nothing compared it to what the plugin sent. No folder could be opened. The plugin answered kind: \"folder\" | \"sound\" with no isDir , which is what the pane reads to draw a twisty — so every share root rendered as a file, and \"do you have this?\" was being asked about directories. Every file claimed to be a fraction of a second long. The row's duration field is not a duration: it is length folded logarithmically onto 0-to-1 so a one-shot and a four-bar loop compare. It was drawn as \"0.35s\". It is named for what it is now and shown without a unit. \"You have something close\" could never appear. That needs the four numbers describing a sound and only the fingerprint was sent, so a producer with a FLAC of a pack they own in WAV was told they did not own it. ⚠ The owner's rule is unchanged: no sample byte crosses between two peers — sixteen bytes of fingerprint and four numbers."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-wi-fi-blip-no-longer-ends-your-collaboration-session-2026-09-09",
+  "heading": "Fixed - a Wi-Fi blip no longer ends your collaboration session, 2026-09-09",
+  "text": "A dropped packet or a laptop waking from sleep was treated as the other person leaving. The connection reports \"disconnected\" while it is still trying — an explicitly transient state that usually resolves itself — and the sidecar tore the link down on the first one. It now re-checks the address it has for eight seconds, which makes a brief outage invisible. Anything longer is still a real departure: the seat, handle and colour are held for two minutes as before."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-loading-an-instrument-brings-up-the-keyboard-and-its-knobs-2026-09-09",
+  "heading": "Fixed - loading an instrument brings up the keyboard and its knobs, 2026-09-09",
+  "text": "Dropping a sample onto a generator, or routing one in with Ctrl + Arrow , gave the part a voice — and the knob row that shapes it did not appear until you switched tabs and came back, because the reverb, delay, drive and pitch controls were reading a stale answer to \"does this part make a sound yet?\". Loading an instrument now also opens the on-screen keyboard, so there is something to play it with."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-two-drum-behaviours-reach-the-artists-they-were-built-for-2026-09-09",
+  "heading": "Changed - two drum behaviours reach the artists they were built for, 2026-09-09",
+  "text": "A comping snare and a backbeat played on a clap were both built and neither was reachable — no artist asked for either. Art Blakey now comps, which his research entry describes; Trina and Trick Daddy put the backbeat on the clap, which is what their entries say Miami bass does."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-same-preset-now-sounds-the-same-twice-2026-09-06",
+  "heading": "Fixed - the same preset now sounds the same twice, 2026-09-06",
+  "text": "Auditioning a preset gave a slightly different sound every click — for wide detuned texture pads, up to four times the level . Starting a fresh sound reset the delay and reverb and left every voice's randomness running, and that randomness is both where an oscillator starts in its cycle and the noise a drum is made of, so a pad's voices cancelled by a different amount each play. They are seeded from the preset now: the same sound twice is the same sound, and notes still vary between themselves. ⚠ Two presets were genuinely too quiet to preview once the measurement could be trusted — Pluck Coin and Frozen Cloud — and both are nudged up."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-no-instrument-sits-off-centre-any-more-2026-09-05",
+  "heading": "Fixed - no instrument sits off centre any more, 2026-09-05",
+  "text": "Some sounds baked with a DC offset — the waveform shifted off the centre line rather than swinging around it. It reads as loudness on a meter and as nothing to an ear, eats headroom, and makes a mix behave oddly for reasons nothing on screen explains. Current Pad was worst at −0.26 of full scale, with forty rows across the Expansions sharing the shape. Every synth removes this at the output; Freally now does too. ⚠ A handful of pads are quieter, and that is the fix working — part of their level was the offset pushing the saturator harder. None was re-voiced: they tripped a level check that measured them a fifth of the way up a swell it gave 1.25 seconds to finish. It listens for four seconds now, as the preview player does."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-knobs-keys-and-every-other-drag-control-2026-09-05",
+  "heading": "Fixed - knobs, keys and every other drag control, 2026-09-05",
+  "text": "Turning a knob on the Synth page could do nothing at all: it lit up, took focus, showed a number, and the sound never changed. Every drag control asks the OS to hold the pointer for the length of the gesture, so a drag survives the cursor wandering off the knob — and that request was made before the control armed itself. On any machine where it was refused, the control never started listening and the gesture was thrown away. Twelve controls shared the fault: the knobs, keyboard keys, drum grid, piano roll, velocity lane, ruler, envelope editor, pad editor, kit rows, preview strip, rail resizer and song timeline. They arm first and ask second now."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-pianos-sound-like-pianos-2026-09-05",
+  "heading": "Fixed - the pianos sound like pianos, 2026-09-05",
+  "text": "Every piano had a buzz at the start instead of a key strike. Two faults, both measured rather than guessed: The note arrived at full volume and stayed there. A struck string falls away from its own first instant; this one did not — the second five milliseconds were louder than the first, because the string's prompt decay was set to three seconds and cannot put a knee near an attack. There were almost no harmonics. A grand at middle C carried half a percent of its energy above 2 kHz and was very nearly a sine wave; the tenth harmonic was gone in sixty milliseconds and the thirtieth in fourteen. The hammer is louder and brighter now, brighter on the grand than the upright, which is the difference between the two actions. The unison strings are tuned closer together — the old spread wandered enough between notes to be heard as a wobble."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-play-button-under-the-file-browser-2026-09-05",
+  "heading": "Fixed - the Play button under the file browser, 2026-09-05",
+  "text": "The Play button below the browser and the one inside it did different things, and the outer one was wrong: on a MIDI file it played whatever .wav you auditioned last, under the MIDI file's name. Both go through the same door now."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-reverse-shows-you-the-clip-backwards-2026-09-05",
+  "heading": "Fixed - Reverse shows you the clip backwards, 2026-09-05",
+  "text": "Switching Reverse on changed the sound and left the picture alone, so the one control whose job is to be obvious showed nothing. The waveform is drawn end-first while reverse is on, the playhead still travels left to right, and clicking a peak plays the peak you clicked."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-voice-chat-can-find-your-microphone-and-speakers-2026-09-05",
+  "heading": "Added - voice chat can find your microphone and speakers, 2026-09-05",
+  "text": "Collaboration's voice half had everything except the hardware: echo canceller, noise gate, codec and jitter buffer were all built and driven by nothing. The session helper now lists the microphones and outputs your machine reports, opens the pair you chose, and closes them the moment you switch Voice off — so the light on your interface goes out when you say it should. Your output is a separate choice from your microphone, because monitors and headphones are different things. ⚠ Voice chat needs the device at 48 000 Hz. If yours is not, Freally names the device and the rate rather than failing quietly."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-playhead-marker-no-longer-freezes-when-the-window-is-busy-2026-09-05",
+  "heading": "Fixed - the playhead marker no longer freezes when the window is busy, 2026-09-05",
+  "text": "Dragging the standalone's title bar froze the playhead until you let go, then it jumped forward — which looked exactly like playback stopping and restarting. It had not; the sound played the whole time. The marker was asking the plugin where it was thirty times a second and waiting , and moving a window on Windows blocks the app's window loop, so answers stopped arriving while the audio thread never missed a beat. It now keeps moving from the tempo between answers and corrects itself when one lands. ⚠ The same freeze could happen any time a DAW's window was busy, so this is not only about dragging."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-your-own-samples-on-your-own-shelf-2026-09-05",
+  "heading": "Added - your own samples, on your own shelf, 2026-09-05",
+  "text": "Point Freally MIDI Master at the folders you keep one-shots in and it works out which can be played as instruments. Press Find instruments in my folders in Categories; it reports progress and you can stop it at any time. A second pass over unchanged folders is instant. What it finds goes on a shelf of your own, below the four Factory Expansions, named after you. ⚠ A quiet sample is kept — quiet is your choice, and only a file with no sound at all is refused. Anything over ten seconds is left off: playing a sample lower stretches it, so an eight-second pad an octave down is sixteen seconds held per note. ⚠ Scanning needs the plugin or the standalone. A browser tab can open one folder at a time and forgets it on reload, so there is no library for it to walk."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-app-asks-what-to-call-your-shelf-2026-09-05",
+  "heading": "Added - the app asks what to call your shelf, 2026-09-05",
+  "text": "The first time you open Freally MIDI Master, right after the licence, it asks what your shelf should be called and will not generate until you answer. Everything you save lives under that name, and changing it renames the shelf — nothing moves and nothing is lost. ⚠ If your machine will not let the app save the name, it keeps it for the session, says so, and lets you carry on. Nothing is ever blocked by a file it could not write."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-kit-panel-tells-you-when-a-sample-slides-2026-09-05",
+  "heading": "Added - the KIT panel tells you when a sample slides, 2026-09-05",
+  "text": "Drop a riser or a sliding 808 onto a melodic pad and the app used to find a note in it, confidently, then play that slide at every key — each a different interval. It now measures whether the sample holds its pitch and says so under the pad: \"This sample does not hold one pitch, so every key will play its slide.\" It tells you rather than refusing the file: a slide is still worth playing, it is just not an instrument."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-numbers-behind-a-human-drummer-2026-09-05",
+  "heading": "Added - the numbers behind a human drummer, 2026-09-05",
+  "text": "data/humanize/groove.json holds what 1,150 real drum performances actually do — per style a swing ratio, and per drum how far it sits from the rest of the kit, how much it wanders, and what a ghost, a main hit and an accent measure. Nothing you have made changes : no shipped artist uses the new numbers, so every seed rebuilds the beat it rebuilt before. ⚠ One finding is audible: a drummer's hi-hat pedal lands 7–20 ms ahead of the rest of the kit in every style measured. And one thing is deliberately absent — how much a drummer wanders is ~15 ms whether jazz or punk, so there is no per-genre looseness table, because there is no per-genre looseness."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-hear-a-style-as-you-build-it-2026-09-05",
+  "heading": "Added - hear a style as you build it, 2026-09-05",
+  "text": "With the transport running, the style editor plays what you are building as you build it — move the swing slider or change the snare placement and the next loop is the style you just described. Nothing is saved while you do it, and your own take comes back the moment you close the editor, whether you saved the style or not. Auditioning is a sound, not a change."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-phone-can-ask-the-desk-for-an-mp3-2026-09-04",
+  "heading": "Added - the phone can ask the desk for an MP3, 2026-09-04",
+  "text": "MixSir could always record its own playback into a WebM, which works anywhere and has one flaw nothing could fix: it records in real time , so a three-minute song took three minutes. On the same network as your desk you can now just download an MP3 , encoded offline on the machine that has the audio. Every stem has its own button, so sending somebody a bassline is one tap instead of a 40 MB WAV. ⛔ Three files, three meanings, named under the buttons: Save your mix renders the balance you just set, on the phone; Save small is that balance as a WebM in real time; Desk mix — MP3 is the take as generated , every fader at unity. Confusing them would quietly throw away the mix you spent ten minutes on. A stem is the exception, and that is why it is the best of them: a stem at unity is the stem. ⚠ Nothing was added to the plugin — the encoder lives in the companion program behind its own feature flag, and a check fails if that stops being true."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-novelty-guard-screens-against-47-melodies-instead-of-7-2026-09-04",
+  "heading": "Changed - the novelty guard screens against 47 melodies instead of 7, 2026-09-04",
+  "text": "Every melody the generator writes is fingerprinted by its shape — the run of intervals and gaps between onsets — and checked against a bundled table before you hear it; a match is thrown away and drawn again. That shipped with seven public-domain melodies and 104 fingerprints, which is a working switch with almost nothing behind it. It now holds 47 melodies and 834 fingerprints , still under the five milliseconds it promises. ⛔ What this is not. Every melody in the table is public domain, permanently: screening against a commercial hook would mean deriving that hook's contour, and a contour listing is note data — the one thing this product must never carry. The guard catches an accidental quotation of a well-known melody. It is not why the output is original; that is the engine being rule-based with no recording anywhere in the chain."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-four-factory-expansion-packs-1-400-new-pitchable-instruments-2026-09-04",
+  "heading": "Added - four Factory Expansion packs, 1,400 new pitchable instruments, 2026-09-04",
+  "text": "The library goes from 248 to 1,648 instruments, and from 410,688 presets to 2,729,088 — still not one file on disk, because every preset is computed from its address. They arrive as four new shelves rather than being poured into the folders you know: subtractive analog; FM and early digital; texture, tape and dust; and voice and world bodies plus the two registers nothing else uses. They sound like machines, not presets , and the first draft had none of the four things that do it: the oscillators run free , so no two notes begin identically; the filter tracks the keyboard ; velocity opens the filter rather than only raising level, which is the commonest tell of a synthesised instrument; and a second LFO puts a cent or two of drift on the pitch — not vibrato, just the patch being alive. Nothing sounds like anything else, and it is measured: the existing gate renders every instrument at every variation in all 69 genres and fails if any two land on the same fingerprint."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-freally-midi-master-runs-in-a-browser-2026-09-03",
+  "heading": "Added — Freally MIDI Master runs in a browser, 2026-09-03",
+  "text": "The whole app, in a tab, with nothing to install — not a demo and not cut down. The browser runs the same crate the plugin does , compiled to WebAssembly, so a beat generated in a tab and one generated in your DAW are the same bytes. That is a gate rather than a promise: web_parity generates on both sides and compares the .mid byte for byte, refusals included. ⛔ Two things a browser cannot do , said before you find out the hard way: there is no Follow DAW , because a tab has no host transport, and a clip cannot be dropped straight onto a DAW track. Both limits appear in the app and in Settings → About. The library reaches the tab whole — 410,688 presets — and costs nothing to deliver, because every one is computed rather than stored. After one visit it generates with the network off, and it installs to its own window. The offline charter is amended in the same change : the page is delivered over the network, generation happens on your machine, and nothing you make is ever uploaded."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed",
+  "heading": "Changed",
+  "text": "The generation doors moved into engine . generate , generate_song and reroll_section were the front half of plugin/src/bridge.rs ; they are engine::compose now, called by both surfaces, so the tab and the DAW cannot drift. The instrument library is its own crate. freally-library holds the presets, taxonomy, per-part voices, WAV encoder and drum kit. The plugin re-exports it where it used to live. Two new gates in both local CI runners : the wasm target builds, and the tab is driven end to end in a real browser at desktop and phone sizes."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-instruments-now-sound-like-records-2026-09-02",
+  "heading": "Added — the instruments now sound like records, 2026-09-02",
+  "text": "The factory instruments were retuned against what a professional sample measures — how long a hat rings, where a kick's weight sits, how a mallet decays. Producers had been reaching past several of them, and the numbers say why: the drum-machine hi-hats were three to five times shorter than a real one , so they read as clicks instead of hats. A bug underneath four engines was the bigger story. decay on the modal, percussion and world-percussion engines, and length on impact, are each documented as a multiplier whose neutral is 1.0 — and every one was clamped to a ceiling of 1.0. No sound in the library could ring longer than the real instrument. The marimba measured 250 ms against a 510 ms reference and would not move however hard the model pushed. All four are fixed, with a gate that fails if the ceiling returns. 248 instruments now, up from 225, for 410,688 presets . Pitch modulation is findable: 91 respond to it and 157 do not, the library filters by it, and every row that has it carries a mark."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-5-085-midi-loops-in-the-factory-packs-2026-09-02",
+  "heading": "Added — 5,085 MIDI loops in the Factory Packs, 2026-09-02",
+  "text": "Browse and hear drum, percussion, bass, chord, melody and countermelody loops instead of generating, listening and generating again. Every one was written by this app's own generators from its own style models — nine megabytes of notes, not a gigabyte of somebody else's recordings. Picking a loop plays it and the list stays on screen, so a folder can be walked straight through. Two things had to be fixed first. The browser drew the folders and clicking a row did nothing — the renderer and the file reader were both finished and neither was connected. And once connected, every loop was read as a drum loop regardless of folder, which is worse than it sounds: a bassline sits exactly where the kick, snare, clap and hats live on the standard map, so it played back as a completely convincing beat that was not the file."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-189-more-artists-and-producers-2026-09-02",
+  "heading": "Added — 189 more artists and producers, 2026-09-02",
+  "text": "Dancehall riddim builders, amapiano, Jersey club, drum & bass, house, reggaeton and the Detroit and Michigan lanes. 2,413 style models ship now."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-held-key-never-stopped-2026-09-02",
+  "heading": "Fixed — a held key never stopped, 2026-09-02",
+  "text": "Pressing a key beside a generator's piano roll sounded a note that never ended. Releasing the mouse now stops it, as does dragging away, the window losing focus or the panel closing. The keys are also labelled properly: black keys take white text, white keys black, on both keyboards."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-loop-browser-could-have-shipped-empty-2026-09-02",
+  "heading": "Fixed — the loop browser could have shipped empty, 2026-09-02",
+  "text": "A change that stopped the loop pack being compiled into the app twice — nine megabytes, in every build — also stopped it being found at all. The browser would have drawn an empty tree. Caught by the test that counts the files rather than trusting the code."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-test-suite-runs-in-a-fraction-of-the-time-2026-09-02",
+  "heading": "Changed — the test suite runs in a fraction of the time, 2026-09-02",
+  "text": "Nothing a producer sees, but it is the difference between catching a mistake in minutes and in an hour. One gate regenerated every model's bar once for every other model it was compared against — 435 seconds down to 1 . The variety suites now use every core: melody 576s → 60s , countermelody 800s → 66s . The local CI runner also puts its cheap checks first, so a formatting slip is reported in seconds rather than after the whole Rust suite."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-variety-gate-covered-one-genre-of-sixty-nine-2026-08-31",
+  "heading": "Fixed — the variety gate covered one genre of sixty-nine, 2026-08-31",
+  "text": "The gate ran House alone; Trap had sub basses that sounded identical and it found nothing because it looked nowhere near them. There is now one #[test] per genre — 69 of them, sweeping 372,600 presets . Getting them green took four rounds: Eight instrument pairs shared a model variant with identical parameters — Bell / ChurchBell , GrandPiano / AcousticPiano among them. They were not similar, they were the same patch under two names, and each is now separated by what actually separates it. Widening the jitter was the wrong instinct, three times. It took 56 failing genres to 13, and the last 13 were two draws landing close by luck — which more jitter makes less likely and never impossible. Each variation now takes its own slice of the instrument's salient range. ⚠ The gate resolves finely enough to catch what was reported — Sub808 's twenty-four correlated at 1.0000 — and does not adjudicate whether two audibly different marimbas differ enough ."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-an-instrument-sounded-the-same-in-all-69-genres-2026-08-31",
+  "heading": "Fixed — an instrument sounded the same in all 69 genres, 2026-08-31",
+  "text": "Measured, and stark: Sub808 's signature preset correlated 0.9938 between Trap and House, and an acoustic piano ran 0.974–0.997 across the entire roster. apply_genre 's modelled branch could only reach filter.cutoff , filter.drive and the FX chain — a filter a physical model barely uses and a chain that sits after it — so nothing it did changed how an instrument was struck, bowed or blown. colour_modelled maps the genre onto each engine's own parameters. The 808 is decay and glide: a trap 808 rings a bar or more and slides into the note, a house kick is tight and does not, and the profiles already carried it as weight — Trap 0.88 against House 0.60 . Hammer hardness is the piano, which is what voicing literature talks about: Jazz sits at drive 0.10 against Metal's 0.70. A brighter genre pulls a Hammond's upper drawbars up; a harder one picks a string nearer the bridge. ⚠ Each push is built from more than one profile dimension: a single dimension at ±0.30 is below what a listener or a fingerprint can tell apart."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-a-gate-on-the-genre-axis-and-why-it-counts-rather-than-bans",
+  "heading": "Added — a gate on the genre axis, and why it counts rather than bans",
+  "text": "an_instrument_sounds_different_in_every_genre renders every instrument's signature preset in all 69 genres — 15,525 renders — and requires each to sound distinct in at least 62 of them. ⛔ A count, not a pairwise ban. Requiring all 2,346 genre pairs to differ failed on Jungle == Breakbeat and Cinematic == Downtempo , genres that really do share a character — and authoring a difference between them to make a test green is exactly the mistake behind 396 reverted artist models. What was asked for is that an instrument is not one sound wearing 69 labels, and a floor on the distinct count says that without inventing anything."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-an-audition-rendered-from-scratch-every-time-2026-08-31",
+  "heading": "Fixed — an audition rendered from scratch every time, 2026-08-31",
+  "text": "⛔ This library cannot be pre-baked, and the number is why. 225 instruments × 69 genres × 24 variations is 372,600 presets; at four seconds of 22 kHz mono that is 61 GB , and at the 48 kHz float the player reads, 266 GB. So a clip is rendered once and then behaves like a baked one: 23.79 ms mean, 42.5 ms worst to render against ~0.1 ms to hand back a held copy. Thirty-two clips, about 24 MB — arrowing up and down a list revisits the same handful of rows, so a small cache catches nearly every repeat."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-walk-the-library-and-play-what-they-land-on-2026-08-31",
+  "heading": "Added — ↑/↓ walk the library and play what they land on, 2026-08-31",
+  "text": "The same gesture the file tree has had since August, and the library was the one list in the panel where every row had to be clicked. ⚠ Bound to the listbox rather than the window, so it never fires while the piano roll is using the same keys to nudge notes."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-half-the-preset-library-was-one-sound-repeated-2026-08-31",
+  "heading": "Fixed — half the preset library was one sound repeated, 2026-08-31",
+  "text": "⛔⛔ ** modelled_defaults promised \"a touch of per-preset humanisation\" over let _ = rng; ** — a comment describing behaviour nobody had written. The re-roll it called only knows how to vary a wavetable , none of which a physical model reads. Measured, Sub808 variations 0–5 were byte-identical, correlation 1.0000 , while the patch's wavetable dutifully changed. Roughly half the library is modelled, so half of the 24 variations per combo were one sound twenty-four times. randomize_modelled moves each engine's own parameters, jittered around the kind's defaults rather than re-rolled, because a variation is a different take on an instrument, not a different instrument. ⛔ A sub is a sine, and swapping it is not a variation. The pack re-roll replaced it with a saw and stacked nine detuned voices; at 32 Hz that is edges, beating and aliasing — exactly the static reported. ⛔ Slap Bass and Pluck Bass shared an arm and were the same patch under two names. Both are an electric bass string now, separated where a player separates them."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-a-gate-that-listens-to-all-5-400-presets-in-a-genre-2026-08-31",
+  "heading": "Added — a gate that listens to all 5,400 presets in a genre, 2026-08-31",
+  "text": "no_two_presets_in_a_genre_render_the_same_sound renders every instrument × variation in House — 225 × 24 — fingerprints each by length, level, attack slew and eight harmonic ratios, and asserts no two collide. 24 seconds. ⛔ It has to listen, not read the patch : the 808 Sub's variations differed on paper, so a fingerprint taken from Patch would have passed all twenty-four. It was checked against the bug — with randomize_modelled disabled it fails immediately and names the colliding pairs."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-preview-did-not-promise-what-the-generator-played-2026-08-31",
+  "heading": "Fixed — the preview did not promise what the generator played, 2026-08-31",
+  "text": "The patch was never the problem: the audition and the generator build the same preset. What diverged was everything stacked on top — PartSound carries reverb, delay, drive, pitch modulation, gain, pan and an ADSR, the generator applied all seven and the audition none, so a part still wearing the last instrument's reverb played the new one through it. Choosing an instrument now resets the shaping, through a single door both the Use in … button and Ctrl +→ go through. ⚠ Deliberately not the rule above it in the browser, which reads a part's stored sound first so merely touching a part cannot wipe your edits. Choosing a new instrument is a different act."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-library-opens-on-trap-and-its-genres-read-alphabetically-2026-08-31",
+  "heading": "Changed — the library opens on Trap, and its genres read alphabetically, 2026-08-31",
+  "text": "⚠ genre is an index into a list that does not exist yet when the store's default is written, so 0 never meant a genre — it meant whichever the taxonomy listed first. It moves to Trap when the taxonomy arrives, and only from an untouched 0 . The sort is on what is drawn, never on what is stored: the library slices on the taxonomy index, so sorting the list itself would silently repoint every address. ⚠ The mock answered Genre 1 … Genre 69 — already alphabetical and containing no Trap, so it could not have tested either rule. It answers real names now."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-every-instrument-auditioned-as-the-same-sub-second-blip-2026-08-31",
+  "heading": "Fixed — every instrument auditioned as the same sub-second blip, 2026-08-31",
+  "text": "The symptom was real and it was not the synthesis: measured through the real render path an acoustic piano's spectral centroid sits at 1.32 against a clavinet's 2.87, and the routing is right. ⛔⛔ What they shared was the shape. The audition borrowed a renderer that sizes a one-shot for a sampler — a 0.6 s gate and a 1.4 s tail. Half a second is long enough to hear a marimba and nowhere near long enough to hear an organ, a violin or a pad, the families whose character is what happens after the attack — so all 225 came back as sub-second blips at the same pitch and roughly the same peak. The audition holds its own note now, 1.5 s + 2.5 s: durations that were all 0.6–1.0 s are 0.64 s for a clavinet and 1.84–1.91 s for an organ. ⚠ A struck instrument pays nothing, being cut at the silence floor."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-preview-player-never-showed-an-instrument-playing-2026-08-31",
+  "heading": "Fixed — the preview player never showed an instrument playing, 2026-08-31",
+  "text": "The playhead poll asked selected === null — but selected names a file , and auditioning an instrument clears it on purpose so the MIDI panel stops describing a .mid you can no longer hear. So an auditioned instrument read as \"nothing playing\": no playhead, no elapsed time, no seek, for the whole clip. It asks whether a waveform is loaded now, which is true of both paths."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-every-generation-in-the-standalone-came-out-at-120-bpm-2026-08-31",
+  "heading": "Fixed — every generation in the standalone came out at 120 BPM, 2026-08-31",
+  "text": "⛔ nih-plug's standalone reports a tempo, and it is its --tempo default of 120. The file's own header says there is nothing to sync to , and the transport said 120 every block anyway — so auto-sync with no pin became a 120 override that beat every artist in the roster: suicideboys authors 125–160 and generated at 120, Drake 130–150 and generated at 120. One line fixes it: the host tempo is authoritative by default, because a DAW's tempo must never be second-guessed, and cleared by the standalone unless the user named a tempo themselves with --tempo , in which case it is exactly what they asked for."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-style-inspector-left-the-left-rail-2026-08-31",
+  "heading": "Changed — the style inspector left the left rail, 2026-08-31",
+  "text": "The bottom-left panel now shows the style's name, genre, scales and tempos and nothing else — which is what ArtistPane already drew. The parameter dump under it is gone; prettifying its labels twice did not answer the complaint, because the parameters themselves were not wanted. ⚠ StyleInspector is kept, unmounted, so it is one line to restore — and with it go the per-parameter overrides and its own \"Save as my style\". The Style Editor dialog still saves a style of your own."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-clicking-an-instrument-to-hear-it-also-built-its-patch-2026-08-31",
+  "heading": "Fixed — clicking an instrument to hear it also built its patch, 2026-08-31",
+  "text": "A library row called select , which builds the patch in Rust and reloads the synth page — two round trips per row, paid by someone who was only listening through a list. The audition never needed either. A row now auditions and highlights, nothing more, so an instrument reaches a generator by exactly one gesture: the Use in … button or Ctrl +→. ⛔ And that button now lands where the rows say it will. It read activeTab while the rows read targetPart , which differ on the SYNTH page — so the button named one generator and the list beside it another. It also loads the patch now; without that you heard the old instrument until you generated again."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-generation-could-use-a-scale-the-artist-never-writes-in-2026-08-30",
+  "heading": "Fixed — a generation could use a scale the artist never writes in, 2026-08-30",
+  "text": "The engine already samples an unpinned scale from the model's own list, so the hole was the pin : it survives an artist switch by design and nothing asked whether the new artist writes in it. Picking minor pentatonic on trap and moving to UK Drill generated drill in a mode drill does not use — and the chip made it easy, offering all 41 modes the engine knows, of which trap authors four. The chip now offers the artist's own scales, and an artist switch drops a pin the new artist does not write. ⚠ Dropped rather than substituted, where the tempo beside it is clamped: a range has a nearest legal value, a set does not. There is no \"nearest\" mode to phrygian, and inventing one would be the app choosing an artist's sound. The key chip is untouched — a key is transposition, where a mode is the character itself."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-does-not-write-is-back-in-the-artist-pane-2026-08-30",
+  "heading": "Changed — \"Does not write\" is back in the artist pane, 2026-08-30",
+  "text": "It is the half that prevents silence: the bass, chord, melody and counter generators each return an empty track when the model authored no block, so an artist who writes no bassline answers Generate on that tab with nothing at all. ⚠ Only the negative half. \"Writes …\" is a list you can infer from the tabs; \"does not write …\" is the one that changes what you do next, and it renders only when something is missing."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-seed-sat-on-top-of-the-style-panel-2026-08-30",
+  "heading": "Fixed — the seed sat on top of the STYLE panel, 2026-08-30",
+  "text": ".stage__controls is 740px intrinsic and was nowrap with flex-shrink: 0 on every child — an immovable object in a 1fr track between two rails you can drag to 560px each. An oversized item in a column flex container overflows towards the start , so it painted leftwards across the rail. ⛔ SeedChip.css had already solved half of this and was being overruled: the seed input is flex: 1 1 20ch with min-width: 0 precisely so it can hand a character back, and the blanket flex-shrink: 0 one level up meant it was never asked. The seed asks for 10ch and grows now, because flexbox picks line breaks from the basis before any shrinking happens. The row wraps as a last resort, which it never did before."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-artist-pane-says-three-things-2026-08-30",
+  "heading": "Changed — the artist pane says three things, 2026-08-30",
+  "text": "Genres, scales and tempo range — and every scale, where it showed the first. An artist who only writes natural minor and one who moves between minor, dorian and minor pentatonic are different to write with, and one entry cannot tell them apart. ⛔ What came out, named so it is not restored by accident: the era, the first key, the half-time note, the moods, and Writes / Does not write. It also retires a contradiction this pane carried — it claimed Bass for the 360 models whose 808 is the bassline, while the Bass tab refused them."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-drake-generated-at-73-bpm-2026-08-30",
+  "heading": "Fixed — Drake generated at 73 BPM, 2026-08-30",
+  "text": "Drake authors 130–150. A tempo pin survives an artist switch by design and was held only to Ableton's 20–999, so a 73 carried in from another artist stayed 73. The bound now lives in the control you are looking at, and an artist switch pulls a carried pin into the new artist's range — clamped, not cleared, because someone who asked for the fast end of one artist means the fast end of the next. ⛔ It was tried two layers deeper first and tests rejected both. In the store setter, the tempo box sets a pin on every keystroke and clamps only on blur — or typing \"5\" on the way to \"50\" would be corrected under the cursor. In the engine, reroll_section passes the record's tempo through the same function, so the clamp pulled a song at 155 down to 145 one section at a time."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-instruments-for-every-model-rather-than-a-few-2026-08-30",
+  "heading": "Fixed — the instruments, for every model rather than a few, 2026-08-30",
+  "text": "2,224 models, and only the melody had ever been asked what it was. The other three parts came from a genre shortlist that had read nothing about the model. Each part answers from its own block now: Countermelody. styles is authored on 1,876 models and said nothing about the sound until today. ⛔ An octave echo is answered with the melody's own instrument, because that is what an octave echo is . Chords. 696 models are seventh-dominant, which is keys and not a saw pad; a vamp is somebody comping and cannot be a pad. Bass. ⛔ No bass instrument at all for the 360 models whose 808 is the bassline, because the engine refuses that part for exactly those. Found as a Pluck Bass on $uicideboy$. ⚠ The counter got its own shelf because it shared the melody's, and not one lead list held a pad, a string section or a choir — so 655 models saying \"my counter is sustained\" were answered with a Saw Lead."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-120-bpm-and-73-bpm-sounded-exactly-the-same-2026-08-30",
+  "heading": "Fixed — 120 BPM and 73 BPM sounded exactly the same, 2026-08-30",
+  "text": "Schedule::arm places every note from the tempo the take was generated at, and nothing re-armed when the number changed: the chip moved, the next Generate used it, and whatever was already loaded went on playing at the old tempo. ⛔ A tempo is a clock, not a generation setting. The notes do not move; the clock does, which is what a DAW does when you drag its tempo. The same re-arm answers the other direction — with auto-sync on, dragging the project tempo used to leave the plugin playing at whatever it was made at."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-three-readouts-and-a-title-bar-2026-08-30",
+  "heading": "Fixed — three readouts and a title bar, 2026-08-30",
+  "text": "The style inspector was the JSON file with a stylesheet on it. Dropping $schema left thirty rows each beginning arrangement. , the useful half of every path at its end, scrolling sideways out of a narrow rail. The block is a heading now and the row reads as words — Section bars › Hook . ⚠ The value is untouched: prettifying [4,8] into \"4 or 8\" would make an editable field lie about what it accepts. The status line says whose the sound is — \"Stock Instrument: Tambourine\" , \"Your One Shot: 808long.wav\" — which is what someone deciding what they can ship needs. The preview player is pinned to the foot of the explorer: the rail scrolls, so a library with favourites pushed the transport out of view, leaving no Stop button on screen while the plugin played on. The title bar had the stock Windows icon , because a title bar takes its icon from the window class and baseview registers one without. ⛔ Standalone only — in a DAW that window belongs to the host."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-instruments-an-artist-actually-loads-2026-08-30",
+  "heading": "Fixed — the instruments an artist actually loads, 2026-08-30",
+  "text": "⛔⛔ Drake's melody was a Hand Bell and his counter-melody was a Recorder. Three defects, measured: melody.timbreHint had no reader. It is authored 1,966 times across 252 distinct values and grep found it only in tests, so every model's sound was drawn from all 77 instruments that serve a pitched part. It is read now: the noun becomes the instrument and the modifier becomes a tone. The fallback draw had no idea what genre it was for. ⚠ The first cut filtered by family and was still wrong — the Keys family holds the bandoneon, so Drake's chords came out a Bandoneon . The variation was drawn 0..23 , though the code had always said variation 0 is the signature preset, so an artist's default was an outlier of whatever instrument they got. ▶ Measured after: Drake's melody is a soft Electric Piano, Future's a bright Bell, Adele's a warm Grand Piano. The engines were never the problem — 179 of the 225 instruments already route to a physical model."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-night-s-instructions-2026-08-30",
+  "heading": "Added — the night's instructions, 2026-08-30",
+  "text": "A one-shot audition for the stock instruments. The browser could preview every .wav on the disk and not one of the 225 instruments. ▶ Three pieces were already in the tree and had never been joined. A per-instrument audition note. The table answered C4 for everything except a bass, so a tuba and a piccolo were auditioned on the same note. A status bar in the footer. The 1.1.00 in that corner was the transport position and read as a version number. ▶ The live region that fills the bar was already writing these sentences and had been shown to nobody. The metronome lands on the beat now : the click was triggered at the start of whichever block contained the beat, which is 43 ms at the standalone's 2048-frame period. A kit lane can be picked as a routing target , and Ctrl +→ sends the selected instrument to it. Nothing goes into a generator backwards."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-three-readouts-that-were-lying-2026-08-30",
+  "heading": "Fixed — three readouts that were lying, 2026-08-30",
+  "text": "The style inspector listed $schema and the research block. It skips the file's bookkeeping and the research provenance now; era and genres stay, because the instrument chooser reads them. The envelope editor drew its end handles in half. A handle sits at its value, so sustain at 0 dB is on the top edge and release at maximum is on the right, with five units of circle outside the viewBox. The box has a margin now. The kit panel said \"Built in\" whatever an artist had loaded , throwing away the name the preset loader already answered with."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-v1-0-0-must-haves-2026-08-29",
+  "heading": "Added — the v1.0.0 Must-Haves, 2026-08-29",
+  "text": "Per-parameter locks. Lock the rhythm and reroll the pitches, or the reverse. ⛔ Composed inside withLocks rather than at each door, so Generate and Generate All get it by construction — a rule installed at one door and not the other is a failure this repo has written down seven times. Content-based one-shot roles. When a filename says nothing, a sample is classified from six readable DSP features and the pane prints the reason: \"808 · 1.9 s · 62 Hz · 4% noise\" . ⛔ Thresholds, not a classifier, and the name always wins. The style inspector , with every value attributed to the model that supplied it. ⛔ An override applies after the mode and before the lint, so a mode cannot silently outrank a value you just pinned. Provenance receipt. Off by default, written locally, never sent anywhere. Missing-file doctor. ⛔ Verified and matched-by-name are different claims and are drawn differently, because only a hash recorded before a file went can prove a candidate. Play notes in. ⛔ Onsets are snapped and lengths are not — stretching a played note to the grid is what makes quantised input sound like a machine. Co-author a style. ⛔ A diff over the model it came from, never a copy: a copy freezes "
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-verified-as-already-built",
+  "heading": "Verified as already built",
+  "text": "FMM-S01 (in-plugin sampler), FMM-S02 (MIDI-only bypass and per-lane audio mute with the MIDI still flowing) and FMM-S03 (native drag-out of MIDI and rendered audio) were all shipped under earlier task numbers."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-a-record-button-a-metronome-and-one-key-playing-a-chord-2026-08-26",
+  "heading": "Added — a record button, a metronome, and one key playing a chord, 2026-08-26",
+  "text": "Record what you play, into the part's clip , from the on-screen keyboard, a MIDI keyboard or the computer keys. ⛔ A note held across the loop is one note, not truncated at the bar line, and the second pass overdubs . Both fall out of one decision: time is counted from the moment recording starts and only turned into a position when the note is written down. ⛔ Only Discard empties a take. A one-pass recorder that eats its own take is the failure every producer has met in some other tool and will test for in the first thirty seconds. A metronome beside it. ⛔ It is a monitoring aid and can never reach a rendered mix, a drag-out or a pack export. One key plays the chord. ⛔ There is one chord builder, on the audio thread; the page sends a root and never a chord, because a copy of the scale's semitones in TypeScript would be the second builder this exists to prevent. Chord labels on the roll and the keys. ⛔ The key comes from the session, never from the notes: C–E♭–G is i in C minor and vi in E♭ major, and a label that flickers between them is worse than none."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-security-three-ways-into-a-room-that-should-not-have-existed-2026-08-27",
+  "heading": "Security — three ways into a room that should not have existed, 2026-08-27",
+  "text": "⚠ None is reachable in a shipped build yet, but each was a real hole in otherwise finished code, and each is fixed with a test that reproduces it. ⛔⛔ A pasted invite reply could claim the owner's identity. The reply's peer id is written by whoever built it, and it was trivially guessable because a room and its owner were minted from one clock read — room-<t> gave away me-<t> . ⛔⛔ A guest could sign for another member. A signalling frame names the peer it is about and that name was taken on trust, so a guest could take the owner's place in a victim's connection table. ⚠ A test was asserting the old behaviour was correct; it was pinning the hole open. ⛔⛔ A late joiner could be taught the wrong successor , because the roster it received was ordered by seat rather than arrival. The sidecar's port file is 0600 on Linux , created that way rather than narrowed afterwards."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-recorder-on-the-second-look-2026-08-27",
+  "heading": "Fixed — the recorder, on the second look, 2026-08-27",
+  "text": "Every one was in code that had just shipped, and every fix has a test that fails against the old behaviour. ⛔⛔ A take landed where you pressed record, not where you played. The clock started at the button rather than the transport, so a chord played on the downbeat of bar 4 after arming at bar 3 arrived a bar into the clip. ⛔ Everything past 1,024 notes in a pass was dropped : the hand-over advanced its cursor before checking whether the note had landed. ⛔ A take played across two generators collapsed onto one , the engine that sounded each note being thrown away in favour of whichever tab was open. ⛔ A note cut by the panic button ran to the end of the take , so a 200 ms chord was written as a note lasting the whole recording. The loop wrapped at the wrong point in any meter that is not x/4 ."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-browser-build-and-a-fixture-that-lied-2026-08-27",
+  "heading": "Fixed — the browser build, and a fixture that lied, 2026-08-27",
+  "text": "⛔⛔ Seven bridge commands had no fixture, so the recorder and chord mode were dead outside the plugin — in vite dev , the web build and every end-to-end run — and nothing went red, because each call site swallows the error. The roll asks for chord labels from inside its own draw, so it was one rejected call per frame for the life of the page. ⛔ The fixture then refused thirty-five of the forty-one scales , so chord mode was still dead for anyone pinned to Dorian, and it named chords in sharps where the engine names them in flats. A fixture that can answer differently from the real thing is the one thing it must not do. Editing one pad of a derived rack reset the other seven , permanently, because the edited layout then wins for ever. A fresh project spelled every chord in C , because \"no key set\" was being sent as \"the key of C\"."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-privacy-page-says-what-actually-leaves-the-machine-2026-08-27",
+  "heading": "Changed — the privacy page says what actually leaves the machine, 2026-08-27",
+  "text": "⛔⛔ It said \"no STUN server is configured and there is no default compiled in\". That was not true. The build ships two — Cloudflare and Google — and contacts one when you open or join a room, so it can learn that some address is using a WebRTC application. Not who you are talking to, and not what you send. Both are named on the page now in all eighteen languages, with when they are contacted and what they learn. ⚠ A test had been asserting the untrue sentence, which is how it survived. What is still owed, and now says so, is a setting to change them or switch them off."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-instrument-grew-a-keyboard-a-library-you-can-save-into-and-a-sample-ra",
+  "heading": "Added — the instrument grew a keyboard, a library you can save into, and a sample rack, 2026-08-23",
+  "text": "Four instruments at once. Melody, Counter, Bassline and Chords each own a SynthEngine . ⚠ Measured at 26% of a 128-frame block for four parts at 16 voices. Save a sound under a category and name you pick. ⛔ A sound is an instrument; a preset in the right rail is a saved session. Different directories, never one list. PACK — a 25-slot sample rack , rendered off the editor thread with progress and a Cancel, and near-silent renders rejected before they reach the rack. Play it in from hardware. ⛔ A note transposed past the ends is dropped, not wrapped: a wrapped note is a wrong note and nothing on screen would say so. AIFF, 24-bit, 32-bit float and rates to 192 kHz. ⛔ A dragged loop is still always a 16-bit WAV, because only a WAV carries the acid chunk that makes it land at its own tempo."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-four-defects-nobody-was-looking-for-2026-08-23",
+  "heading": "Fixed — four defects nobody was looking for, 2026-08-23",
+  "text": "⛔⛔ A reopened project named a sound it was not playing. part_sounds is restored with the session, so the panel came back showing the assigned instrument — and nothing re-sent the patch, so every engine was still on the init sound. Pan never reached the audio thread either. ⛔⛔ Shift+ArrowUp doing nothing on macOS was a read-back race, not the modifier. Every knob commit round-trips and reads back, and the reply of one commit could land after a newer edit and overwrite it. The check now happens when the reply lands. Shift only made it visible: a reverted coarse step lands somewhere obviously wrong, a reverted fine step within tolerance. 32-bit float WAVs were refused as \"compressed\" , which is untrue and is what most DAWs bounce. Per-part gain, pan and envelope reached no sound at all."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-2",
+  "heading": "Changed",
+  "text": "MAX_EXTRACT_SECONDS 60 → 300 , on a measurement rather than a nudge. Peak analysis memory was justified as \"several times the decoded length\"; measured with a peak-tracking allocator it is 1.2×, flat — 13.9 MB at a minute, 69.5 MB at five. ⛔ It still refuses rather than truncating: the first five minutes of a seven-minute file would be a guess presented as a transcription. Reverb, delay and drive are drawn only over a factory instrument , because the sampler has no effects chain and over your own sample they would change nothing. The plugin's shared library moved to its own crate. ⛔ cargo test --workspace --release had been unable to link for months — 413 unresolved externals — because panic = \"abort\" and a [\"cdylib\", \"lib\"] target made Cargo build one library twice into one filename. The downloaded zips carry INSTALL.txt ."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-an-inherited-secondaryanchor-ate-a-child-s-whole-kick-budget-2026-08-22",
+  "heading": "Fixed — an inherited secondaryAnchor ate a child's whole kick budget, 2026-08-22",
+  "text": "⛔⛔ 129 shipped models now generate a different kick. drums.kick.anchors is an array, so a child authoring its own replaces the parent's — but secondaryAnchor is a separate scalar beside it, so it survived that replacement and was unioned back in. A model saying \"my anchors are 1 and 3\" was given 1, 2& and 3, and where that filled the density budget every kick hit became guaranteed and the lane stopped varying. Measured on darius-rucker : 92 distinct kick shapes in 200 seeds over his own base, 4 over one whose secondary is \"2&\" . A child that authors anchors and not secondaryAnchor no longer inherits one. 34 genres author the field and 282 models author their own anchors with a budget an added secondary would fill, so this was never one model's problem."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-about-screen-credited-a-dataset-the-product-does-not-use-2026-08-22",
+  "heading": "Fixed — the About screen credited a dataset the product does not use, 2026-08-22",
+  "text": "In all eighteen languages it said \"Timing and velocity statistics derived from the Magenta Groove MIDI Dataset\" . That is not true : the humanizer is hand-authored from published technique research, and the tool that would have read GMD has never been written. Removed from the About pane and from docs/credits.md . Attribution is owed when you use a work; attributing one you do not use is a false statement about where the product's numbers came from."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-tags-in-the-file-explorer-and-the-crash-folder-is-finally-offered",
+  "heading": "Added — tags in the File Explorer, and the crash folder is finally offered",
+  "text": "Tags. Add and remove them on the selected file with completion, and filter the tree by tag or star. ⛔ A folder never satisfies a tag filter on its own name: a tag filter is a statement about files , so a folder called 808s must not re-admit the untagged files inside it. The crash folder is offered rather than hidden. The panic hook and the error boundary had both been writing reports nothing ever read. A generation is announced to screen readers , which previously produced nothing perceivable — the grid is a canvas and everything else was visual. New clips open at your own length. The moods are declared before training, not inferred after it. Reading them back off the kept takes answers \"what did you generate\" rather than \"what is this workflow\" , so a style trained on twenty dark takes and one bounce recorded itself as both. Fourteen more underground artists — rage, opium and jerk — taking the roster to 1,317 models ."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-three-gates-that-close-holes-nothing-was-watching",
+  "heading": "Added — three gates that close holes nothing was watching",
+  "text": "No alias may be another model's own name. At 1,317 models this needed enforcing by something other than care. ⚠ It fails on one kind of collision only: a crew tag naming several models is a legitimate way to reach a group of people. No std::net in our own Rust , as a clippy.toml . Every dependency check is blind to a socket opened through std , because it links nothing and resolves nothing new in Cargo.lock . ⚠ A source-text scan was written first and thrown away: it resolved nothing, so use std::net as n passed clean. The five words the voice guide forbids. ⛔ The first run caught correct copy — \"Re-roll every unlocked pad\" — so the rule is the startup verb and its gerund, never the past participle: this product has locks."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-thirteen-more-parameters-the-dataset-authored-and-no-code-read-2026-08-18",
+  "heading": "Added — thirteen more parameters the dataset authored and no code read, 2026-08-18",
+  "text": "Thirteen keys came off the debt register, across roughly 1,600 authored settings doing nothing. The rimshot under the snare (231 models), doubling the backbeat on the beat rather than beside it — a rimshot under a snare is one drum struck two ways. The 808's glide time (105 models). Drill snaps in 20–35 ms and afroswing swoops over 130–220, and all of it came out of the speakers as \"the rest of the note\" because the travel was hardcoded in three places. ⚠ Drawn once for the take, not per note: a per-note draw would have moved 105 models' rng position on every slide — a key about tone rewriting their pitches . The locked backbeat (5 models), so 2 and 4 stay put while the ghosts around them breathe. Four-on-the-floor in the hook (29) and the cross-stick verse (74), both naming a section the drums had never seen. ⛔ The cross-stick moves the backbeat to the rim rather than doubling it, which is what makes the verse quieter than the chorus. The snare's tuning (7 models). ⛔ The register filed this under the 808, where writing it would have detuned a bassline — a wrong note rather than a timbre."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-what-the-review-pass-found-2026-08-18",
+  "heading": "Fixed — what the review pass found, 2026-08-18",
+  "text": "⛔⛔ A drum played flat in the plugin and moved in the exported stem. One note number served two readers: the host, which needs a drum's GM voice or a walked kick fires four different drums in your rack, and the preview sampler, which reads the same number to decide how far to repitch the pad. Pinned to GM, every drum played flat in the live preview only while the render repitched correctly. ⛔⛔ A cross-stick verse silenced the 808's own stopping rule. The backbeat was written straight onto the rim lane, and the 808 reads the snare hits it must not ring through — so in a verse that list came back empty and the 808 sustained across the hit drill is defined by stopping for. ⛔ The hook's four-on-the-floor rewrote the kick's own grammar from bar 2 , the added pulses drawing velocities from the same stream every later bar reads. ⛔ A re-roll resampled the record's loop lengths , so a re-rolled section came back at a different clip length and the tail of every repeat fell silent."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-debt-register-says-what-is-actually-owed-2026-08-18",
+  "heading": "Changed — the debt register says what is actually owed, 2026-08-18",
+  "text": "Four entries were stale or wrong: timbreHint claimed 21 models and is 1,234 authorings , the largest authored-but-unread key in the dataset; monoCutSelf 's true half already works and what is unread is the four models authoring false ; minimalism and chordFrequency were filed at the wrong level, and the latter is inherited by all 590. Three are now marked a question for Mike rather than a to-do, because each either overrules a key the same model authors or is inert."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-sixteen-parameters-the-dataset-authored-and-no-code-read-2026-08-18",
+  "heading": "Added — sixteen parameters the dataset authored and no code read, 2026-08-18",
+  "text": "A cluster note is now its own articulation. Three gates needed to tell an ornament apart from the beat it surrounds and none could: marked as a roll it counted as a fill , marked as a ghost it counted as the snare answering the backbeat, and left unmarked it was the backbeat — so one test had quietly begun measuring a 32nd-wide ornament as a nudge and would have gone on passing for the wrong reason. Snare clusters (19 models), jerk's headline marker. ⛔ Centred on the beat, not started on it, so the backbeat is surrounded rather than dragged late. A lane's own velocity band , the kick's sub layer , a skipped beat (43 models) and an 808 that ignores the kick (15). ⛔ The 808 filters the kick's own onsets, so the lock could only ever make the sub sparser — never move it. ⛔ Every one draws from its own seeded stream. Breaking that rule was caught two lanes away: the sub layer's velocity advanced the kick's stream, the kick moved, the bassline follows the kick, and a model fell to 946/1000 distinct basslines against a floor of 950 — a bassline gate failing because of a drum velocity."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-two-panics-reachable-from-a-hand-edited-model-2026-08-18",
+  "heading": "Fixed — two panics reachable from a hand-edited model, 2026-08-18",
+  "text": "A non-ASCII key in a user model aborted the host DAW. The lint walks every key of every model, including one imported or hand-edited, and sliced the last three bytes — which panics when that index lands inside a multi-byte character. Release is built panic = \"abort\" , so that is the DAW gone, on every launch , until the file is found and deleted. Compared as bytes now. ⚠ No shipped model has a non-ASCII key, so CI would never have seen it. A displacement wider than f64 can subtract panicked inside rand . A range of [-1e308, 1e308] reached the sampler, which computes high - low , gets inf , and unwraps an error. One bound now covers all three offset keys."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-style-with-nothing-in-it-no-longer-saves-2026-08-18",
+  "heading": "Fixed — a style with nothing in it no longer saves, 2026-08-18",
+  "text": "A draft that says nothing its base does not already say, opened with no beat on screen, is refused with a reason rather than written. ⛔ Ticking a scale is deliberately not content: the scale list the editor offers is narrowed to the base's own, so every scale you can tick is one your base already uses. ⛔ Measured against the draft the dialog opened with, not against a blank form — the first cut got that wrong in a way that made the rule almost never fire, because the draft seeds its swing from the selected model's defaults and six models out of 1,303 happened to match."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-two-dataset-load-costs-measured-and-removed-2026-08-18",
+  "heading": "Changed — two dataset-load costs measured and removed, 2026-08-18",
+  "text": "The lint no longer allocates a JSON pointer per key per model — it built a full pointer whether or not a finding fired, plus a lowercased copy of every key. And resolve_all merges each ancestor chain once: 534 of the 590 models are artists over a few dozen genre archetypes, and every one redid the same merge."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-sustained-countermelody-stopped-entering-in-the-same-place-every-time-20",
+  "heading": "Fixed — a sustained countermelody stopped entering in the same place every time, 2026-08-17",
+  "text": "A sustain_pad countermelody now chooses where in the phrase it comes in. The entry was the first tick the lead left free — the same answer for every seed that drew the same phrase length — so over a vamp, where all four bars are one chord, a third of seeds got one held note in one place. Twenty-seven models sat just under the counter-variety floor on that alone; twenty-three clear it now with no change to their data. ⚠ The entry is chosen from the phrase's first half : a pad that comes in during the last bar of its phrase is not a pad, and length is the whole claim sustain_pad makes. The old answer stays as the fallback for a lead so legato that the first half offers nothing, so no model's pad goes silent."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-parts-a-generator-answers-and-four-archetypes-the-research-was-owed-20",
+  "heading": "Added — the parts a generator answers, and four archetypes the research was owed, 2026-08-15",
+  "text": "Generating a countermelody fills the melody it answers, and the harmony both are written against. The engine has always rendered those parts whether or not you pressed Generate, so a counter on a fresh session answered something nobody could hear. ⛔ The fills come from the RECORD, not a fresh take, or the tab would show a different melody from the one it answers. Eleven genre archetypes the research had to work around , taking the dataset to 61 genres and 602 models . The most consequential omission was Techno : Jeff Mills, Robert Hood, Underground Resistance, Carl Craig, Derrick May, Juan Atkins and Kevin Saunderson had been dropped for want of anywhere legitimate to put them. ⛔ The engine could not spell Lowend either — snares on 1 and 3 matched neither placement it knew. ⚠ Techno and Dominican Dembow ship at confidence: low and say why. A Simple / Complex switch over all four melodic generators. ⛔ It scales within what each model authored and never overrides it — \"a rage vamp made busy is no longer rage\" — and the middle of its three states is the model as written, so every saved seed still rebuilds its own beat. The style editor reaches roll vocabulary, snare placement, 808 beh"
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-the-roster-sounds-like-its-research-again-2026-08-15",
+  "heading": "Changed — the roster sounds like its research again, 2026-08-15",
+  "text": "396 artist and producer models restored to the values their research entries state , on the owner's instruction: \"i don't care that they overlap, just ensure that it doesn't use copyrighted material.\" Two batch passes had moved them, both to beat pairwise distinctness gates. ⚠ Six keep their later state because that change fixed something musical and said what. The two pairwise gates no longer fail on overlap. Two artists in one lane, on one kit, at one tempo should land on the same bar sometimes — that is what makes each sound like themselves rather than a deliberately-detuned neighbour. Both still print their ceilings, and both still fail on a pair identical at every seed. The novelty guard now screens the bassline , which is what makes that safe. ⛔ It had excluded every bassline on an argument true of one rhythm in five — \"a bassline is locked to the kick\" — while 194 shipped models author independent_riff . ⚠ The table still ships hashes only: a fingerprint is a contour, and there is no way back from one to a note."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-what-the-review-pass-found-in-the-four-days-above-2026-08-16",
+  "heading": "Fixed — what the review pass found in the four days above, 2026-08-16",
+  "text": "Six reviewers over one branch. Three found the same defect independently. The Simple / Complex switch was carried by exactly one of the four doors that read it. All three engine reads were correct; the page sent it on one. ⛔ Song Mode arranged at the model's authored reading while every loop beside it answered Busy, and re-rolling one section brought it back plainer than its neighbours — reproducibly, so it reads as deliberate. Ticking a scale in the style editor made the style unsavable, and had since the control shipped. session.scales was written with no weights , and 599 of the 620 model files author that pair . None of the six reviewers found it — the test written for the roll defect caught it on its first run. Ticking any roll subdivision made the style unsavable for the same reason, one block over. Had it got past the lint the style would have written no hat rolls at all . ⚠ The e2e passed throughout and would still pass, because the mock has no linter. An imported style could hang the DAW : two keys driving loops were read unclamped, and generation is synchronous on the thread the host draws its window from."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2026-08-15",
+  "heading": "Fixed — 2026-08-15",
+  "text": "\"Generate all\" rendered as a second full-weight primary next to Generate. Its class had been applied since August and was defined nowhere in src/ . It is styled with colour and an inset outline only: that row sits under the editor, so anything taller takes the height out of the velocity lane. A failed upstream fill discarded the generation that succeeded , so one refusal threw away a countermelody that had already come back correctly. Salaam Remi's live band and one drop moods generated the same melody for every seed, so that pair was decoration. The difference authored is the one a one drop actually makes: the weight moves to beat 3 and the line sits back. Typing \"uk\" found Bassline instead of UK Drill. A bare two-letter tag scores an exact hit against UK Drill's name prefix . Three more were removed before they could do the same."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-browse-by-era-and-a-switch-off-that-survives-the-project-2026-08-15",
+  "heading": "Added — browse by era, and a switch-off that survives the project, 2026-08-15",
+  "text": "Four era pills over the roster: 90s · 2000s · 2010s · 2020s. Typing works when you can already name the thing; browsing is what you do when you cannot. ⛔ A filter, not a sort : boom-bap is 1990s–present , so it belongs under all four decades at once and a sort would force it into one and lie about three. They narrow what you BROWSE and never what you can FIND. A generator switched off stays switched off when the project reopens. That lived in UI state, so reopening handed the bassline switch back on with the clip still saved beside it — and the session played a bass the imported record does not contain. A .mid dropped on a generator is split across the generators its voices belong to , where the drop gesture used to read the whole file into the one tab you aimed at."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2026-08-15-2",
+  "heading": "Fixed — 2026-08-15",
+  "text": "The one-shot dialog and the kit dice raced for one answer. Both poll a mailbox that clears on read, so whichever loop polled first consumed the result and the other reported success over a failure it never saw. Clearing a generator from the Song tab silenced the whole arrangement , with the timeline still on screen and Play still lit. chroma allocated 11.5 MB per read to throw it away — on the editor thread of somebody's DAW. Same answer, bit for bit. explorer_midi was a bridge command nothing called , which this project classes as a defect. Removed with the one-part read it served."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-a-sample-becomes-notes-2026-08-14",
+  "heading": "Added — a sample becomes notes, 2026-08-14",
+  "text": "Drag an audio file onto a generator and it is split into the generators its parts belong to. The drums are classified in two passes. The spectrum proposes — kick under 150 Hz, snare broadband, hats up top — and the bar disambiguates what it cannot: anything on two and four is the backbeat whatever it sounded like, and high-band hits at triplet spacing are one roll. ⛔ Pass two may only reassign what pass one detected, which is the line between a detector and a generator. The bass does not need transcription. Low-pass at 250 Hz and what survives is the bassline; the kick removes itself, having no stable period. The chords come back as a progression, not a voicing , and the panel says so. ⛔ Polyphonic transcription of a full mix is an ML problem, ML is banned here, and a feature that claims perfect extraction and delivers approximate notes is worse than one that says what it does. A sung line is left alone. Separating vocal audio needs ML; deciding whether an extracted note line was sung is arithmetic. ⚠ Hard Auto-Tune defeats three of the four measures at once; vibrato survives."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-project-file-could-take-the-daw-down-with-it-2026-08-14",
+  "heading": "Fixed — a project file could take the DAW down with it, 2026-08-14",
+  "text": "⛔ A time signature carried in a shared project could abort the host. The meter arrives from the page and from persisted pins and neither was range-checked: 25/1 made one ninety-sixth of a bar longer than a quarter note, and the clamp bounding a drum note's length panics when its floor exceeds its ceiling. panic = \"abort\" is release-only, so in a shipped build that is the whole DAW and every unsaved project in it. The meter is narrowed where it enters and bounded where it is used, because either alone leaves the other door open. ⚠ Found by reading, not by a failing test — the suite was green. The browser preview would decode a file that is not audio : it checked that a path was local, inside the library and a file, and never checked the extension."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-tempo-chip-catches-up-with-the-mood-2026-08-14",
+  "heading": "Fixed — the tempo chip catches up with the mood, 2026-08-14",
+  "text": "Pinning a mood updates the chips at once rather than on the next artist change — trap is 140 and its dark mode 136, so the readout named a tempo the engine was never going to use. ⛔ The base pin had the same gap in a way that looked fixed: it did re-read the chips, but before the pin had reached the plugin, so it filled them in with the value you had just moved away from."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-an-artist-generates-in-every-genre-they-work-in-2026-08-14",
+  "heading": "Added — an artist generates in every genre they work in, 2026-08-14",
+  "text": "\"Drake, but in R&B\". The roster has always listed an artist under every genre they work in — 529 of the 534 artist and producer models name a genre they do not inherit — and Generate has always answered the one they do. A Generate in chip picks which: the artist's own blocks over a different genre's foundation, so 2Pac under boom-bap is 2Pac over boom-bap rather than either alone. ⚠ Saved with the project, like the mood — reopening on the artist's own genre would silently produce a different record from the same seed. ⛔ Not a blend of two genres: merging two bases gives mud rather than two modes."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-sound-gets-its-own-editor-2026-08-14",
+  "heading": "Added — the sound gets its own editor, 2026-08-14",
+  "text": "Every pad has an editor now, not just every note. The notes had an editor and the sound did not. A pad now carries a graphical ADSR (sustain in dB, read off the reference), volume , pan , transpose , fine tune , a normalize toggle, start/end trim over the waveform and fade in/out — all per pad, persisted, re-auditioning as they are turned. ⛔ It reaches the shipped voices too, not only samples you have replaced. ⚠ A pad nobody has edited is bit-for-bit what it was: an identity envelope is not stored at all, so the audio thread skips the arithmetic. Two controls the reference shows are deliberately absent , and the panel says nothing rather than drawing something that cannot work. The browser can play a file at its own level, or exactly as it is. The audition sits below full scale so a one-shot over a running pattern does not clip — sensible, and a lie the moment what you are doing is judging how loud a sample is. Putting a sample on a pad opens that pad's editor , from all three routes."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-3",
+  "heading": "Changed",
+  "text": "The longest test binary in the project runs in 1.70 seconds instead of 1,300.91. It re-read 609 JSON files and re-resolved all 590 models on every call , once per generation across seven tests. The same helper existed in fifteen engine binaries."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed",
+  "heading": "Fixed",
+  "text": "A pad edit can no longer cost you the whole project. Five of the new per-pad fields were floored at zero and never capped, so a non-finite value reached the saved session — where it wrote as null , saved cleanly, then failed to load, taking the seed, the edited clips, the arrangement, the sample folders and the one-shots back to defaults with it. A reopened project now plays the pad edits it shows. Shaping a built-in voice restored the knobs correctly and never told the audio engine, so the exported stem carried the envelope and the preview did not. A song generated with a genre pinned now uses it : the pin reached a re-rolled section and not the song itself. Trimming a sample no longer clicks , and Release now shapes the tail of a drum lane rather than doing nothing there. A partial envelope no longer loses the whole block , which had refused a project written by an older build with missing field attackMs ."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-browser-at-library-scale-and-a-history-that-outlives-the-session-2026-",
+  "heading": "Added — the browser at library scale, and a history that outlives the session, 2026-08-13",
+  "text": "The sample tree draws a window, not the folder. 2,000 rows per folder, several open at once, six elements each, inside nested lists a component made by calling itself. It is one flat sequence now and only the rows on screen exist — a 2,000-file folder opens in under 300 ms. Type to filter the tree. ⚠ It says what it searched: the plugin reads one folder per call, so the filter reaches the folders you have opened and no further. A library folder that is not there says so , where an unplugged drive's root drew as an ordinary folder that refused to open. Every generation you have made, browsable and persisted. ◀/▶ answer \"back one\" and are useless for \"find the one out of eighty\". Capped per style , because a global cap would let an evening on one artist evict the takes you came back for. Hear a .mid from the browser , through a neutral instrument so it sounds the same whatever artist is selected."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-4",
+  "heading": "Changed",
+  "text": "Roster search costs less than half what it did. The box scores 590 entries on every keystroke and was re-normalizing the query once per entry, re-normalizing all nine searchable fields, and splitting each into words twice. 5.5 ms a keystroke before, 2.9 ms after, ranking unchanged. The standalone writes its log to a file in release. The crash reporter caught hardware faults ; a panic went to a stderr that a windows_subsystem = \"windows\" build does not have — so the failure most likely to be behind the open unreproduced crash was the one leaving no evidence."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2",
+  "heading": "Fixed",
+  "text": "Opening a .mid records it in the browser's history. It was recorded from a sample preview and from the drop into a part, but not from the click that opens it — so someone who clicked twenty loops and imported one saw a history of the one. The IPC mock draws a new seed per unpinned Generate , as the engine does. It answered the literal 424242 every time, which no test noticed until a history keyed on (part, seed) turned three presses into one take."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-every-drum-lane-expands-into-a-pitch-lane-2026-08-13",
+  "heading": "Added — every drum lane expands into a pitch lane, 2026-08-13",
+  "text": "Any lane can open into pitch rows — the lane's root, three semitones up and three down — so a hit's pitch is something you can see and drag rather than a value the grid threw away. The 808 asked for it; the mechanism is the same for all 33, so none is exempt. Travel is unbounded while the row stays seven tall. Dragging past the top pans that lane's window instead of stopping, and every lane keeps its own offset. sub and subLow label their rows as notes; every other lane in semitones , because there the offset is a sample transposition and calling a shaker \"D#2\" would be a readout that lies. Hits outside the window are marked, not hidden , so a sliding 808 can never be audible and invisible. A pitch drag is one undo step : the window follows the finger but the note lands on release, or a drag would have cost a Ctrl+Z per semitone. Drag the preview waveform to scrub , which is how you hunt for a transient without clicking twenty times."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-3",
+  "heading": "Fixed",
+  "text": "A held part no longer collapses over a vamp. Both sustained styles wrote one note per chord, so a model whose harmony sits on one chord got one note for the whole clip — two models reached 959 and 963 distinct counters per 1,000 against a 0.98 floor, and mobb-deep measured 8 distinct basslines in 1,000 seeds . A held span longer than two bars now re-articulates on a phrase drawn per span. KRS-One's bassline is its own again. It and Wu-Tang Clan had been moved to the same rhythm and were writing the same bassline on 42 of 200 seeds: mirror_kick takes its onsets from the kick and 62 boom-bap models share it, so a model with no opinion of its own writes whichever neighbour shares its kick. KRS-One's now says what the research always did — reggae: the dub slide, the flat seven, and a bass that plays before the one. country-train writes 73 distinct beats over 200 seeds, up from 24 , and rapsody goes from 136 to 199."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-drum-grid-becomes-an-editor-2026-08-11",
+  "heading": "Added — the drum grid becomes an editor, 2026-08-11",
+  "text": "Drag a box to select. Shift-drag selects every cell inside the rectangle, not just the ones the pointer crossed. Copy, paste, clone and delete a selection. A copied triplet pastes back as a triplet: the clipboard keeps the real note timing rather than snapping to the grid. Right-click and drag to wipe , cleared by one Ctrl+Z . A right-click that does not travel still opens the roll palette. The lane names are readable again — they had been rendering as a single letter. A locked padlock stays visible whatever the pointer is doing, because a lock you cannot see is a lock you forget you set."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-keyboard-shortcuts-panel-2026-08-11",
+  "heading": "Added — the keyboard shortcuts panel, 2026-08-11",
+  "text": "It has a button now , next to Settings and About. It was reachable only by pressing ? or F1 — a panel whose entire job is telling you what the keys do, findable only if you already knew a key. It also fits on one screen, and the drum grid's own gestures are documented for the first time, in all eighteen languages."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2026-08-11",
+  "heading": "Fixed — 2026-08-11",
+  "text": "Every note is visible when a clip is generated, vertically as well as horizontally. The roll now sizes its rows to the clip's own register and centres it, rather than pinning it to the top with the leftover space below. The loop brace can be resized by its edges. The grip took the first handle in range rather than the nearest, so a short loop's right edge could not be grabbed at all — and the whole ruler showed a resize cursor, which made the one band that resizes invisible. The last ten native dropdowns are gone , drawn by the OS against the window rather than the field. Ten defects found by review of the above , each fixed with a test watched failing first. Four were in the grid's paste, all from measuring it in ticks when the grid thinks in columns: a humanized-early hit vanished when pasted at the first cell, a sparse figure pasted over a dense region kept the dense one's extra hits, and a paste could bring back a lane you had reassigned away."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-32-new-genres-2026-08-10",
+  "heading": "Added — 32 new genres, 2026-08-10",
+  "text": "The genre list goes from 20 to 52 — dark plugg, Detroit bounce, Jersey club, ATL swag rap, UK underground, EDM rage, digicore, jump-up DnB, neurofunk, jungle, pop DnB, UK garage, house, dance pop, pop 2020s, country pop, country shuffle, neo-soul, funk, future bass, afrobeats, amapiano, dancehall, reggaeton, baile funk, afroswing, Memphis rap, G-funk, lo-fi hip hop, sexy drill, hyphy and crunk. Each writes its own drums, chords, melody, countermelody and bassline — none inherits a part wholesale — and each arrives with three moods, so picking a genre gives three different records rather than one. Every one is measured against the rest of the roster."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-a-note-could-sustain-past-the-end-of-the-pattern-2026-08-10",
+  "heading": "Fixed — a note could sustain past the end of the pattern, 2026-08-10",
+  "text": "A ghost snare nudged late, or a tambourine on the final subdivision, could carry its length beyond the pattern — so the clip you dragged out held a note the bar had no room for. The other four generators had always trimmed; the kit never did."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-basslines-could-wander-out-of-key-2026-08-10",
+  "heading": "Fixed — basslines could wander out of key, 2026-08-10",
+  "text": "A chromatic bass note now lands somewhere. Passing tones are written as an interval off the chord , and over an ordinary chord that interval can leave the key — so the bass played a note reached from nowhere that led nowhere. It now approaches the note it precedes, the way a bass player walks into a change. Walked flat sevenths and blue notes are kept: those are the idiom, not the bug. A bass no longer plays above the chords it is holding up , and four models whose bass doubled their own 808 note-for-note now play a real second part."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-plugin-could-ship-a-stale-genre-list-2026-08-10",
+  "heading": "Fixed — the plugin could ship a stale genre list, 2026-08-10",
+  "text": "The dataset is compiled into the binary and nothing told the build system to watch it, so a plugin built after a model changed could keep serving the roster it was compiled with, with nothing anywhere saying so."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-file-explorer-could-not-open-a-subfolder-and-it-was-breaking-four-othe",
+  "heading": "Fixed — the File Explorer could not open a subfolder, and it was breaking four other things too, 2026-08-10",
+  "text": "You can browse into subfolders again, at any depth. Opening a library folder worked; opening anything inside it was refused, because Windows' canonicalize returns paths beginning \\\\?\\ and the check that refuses network paths treated that leading \\\\ as one. The same refusal was silently breaking the preview player, the waveform, .mid reading and dropping a sample onto a drum pad — all of which go through the same guard. Genuine UNC paths are still refused. The browser can use the whole rail , where it was capped at roughly half the height however deep your folders ran."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-security-a-page-supplied-path-could-make-the-plugin-authenticate-to-a-stranger-2",
+  "heading": "Security — a page-supplied path could make the plugin authenticate to a stranger, 2026-08-10",
+  "text": "**Starring a file checked the library before checking for a network path**, and the library check is what touches the disk. On Windows that is not a read — it is an outbound SMB session that hands over your Windows credentials. One message from the plugin's own web view was enough. The guard now lives inside the containment check itself, so no future command can reintroduce it. A shared project file could point the sample library at your whole drive. Library folders travel inside project files and only network paths were refused, so a project could carry C:\\Users and quietly grant everything that reads files inside your library. A malformed MIDI file could kill your DAW. A file declaring an extreme time signature at one tick per beat pushed the arrangement reader past the end of its own tick space; in a release build that takes the host down with your unsaved session."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-three-ways-your-work-could-go-missing-2026-08-10",
+  "heading": "Fixed — three ways your work could go missing, 2026-08-10",
+  "text": "A project with more than eight sample folders lost the extra ones. The cap on what you can add was also applied when loading , and the trimmed list was written straight back over your project. A bound on what you may add is not a licence to delete what you already had. An imported song was never saved. Dragging a MIDI file onto the Song tab filled the timeline and nothing asked the project to store it. Undo deleted an imported song. An import belongs to no artist, and the guard that stops one artist's arrangement leaking into another's read that as a mismatch: one keystroke after importing, Ctrl+Z wiped it and Ctrl+Y could not bring it back."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-a-real-file-tree-folder-tabs-starred-favourites-and-midi-that-knows-what-i",
+  "heading": "Added — a real file tree, folder tabs, starred favourites, and MIDI that knows what it is, 2026-08-10",
+  "text": "The browser is a proper tree , remembering what you left open when you switch between folders, with up to eight library folders as tabs. Your library survives closing the app. It used to be saved only inside the project , so it came back with a .als and never with the standalone. Starred favourites. Click one and the tree opens every folder between the root and that file — or, if its folder is no longer one of your eight tabs, opens the file's location in Explorer or Finder instead. The keyboard walks the tree. ↑ / ↓ move between rows, → opens a folder and ← shuts it — and on a file those same keys play it forwards and backwards. A folder has nothing to audition and a sample nothing to expand, so which one you meant is never ambiguous. .mid files are shown and kept honestly apart from audio: the pad refuses one before you let go rather than erroring afterwards."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-drop-a-midi-file-in-and-it-works-out-what-is-in-it-2026-08-10",
+  "heading": "Added — drop a MIDI file in and it works out what is in it, 2026-08-10",
+  "text": "Drag a .mid onto a generator and its notes land there, or drop it on the Song tab and take the parts you want — the whole file arrives as an arrangement and nothing overwrites what you have until you choose it. A layered file is separated into Bass, Melody, Counter, Chords and Drums, and every part says why it was routed where it was — \"on the GM drum channel\", \"lowest voice\", \"from the file name\" — so a wrong guess is one click to redirect. It was taught by real files, not by assumptions. Four sample-pack exports broke the first version three times out of three: packs put drums on channel 0 , not the GM drum channel, so drums are recognised by their shape — a handful of pitches, struck many times, short. Held melodic notes overlap constantly, so chords are notes struck together rather than merely overlapping. And an 808's MIDI note says which key fires the sample, not how low it sounds , so a bassline routinely sits in melody register — which is why the file's own name is trusted above any measurement."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-drum-pads-on-the-stage-one-box-to-find-any-artist-and-a-window-that-finall",
+  "heading": "Added — drum pads on the stage, one box to find any artist, and a window that finally behaves, 2026-08-09",
+  "text": "Eight drum pads across the top of the stage , each carrying everything on its face: the lane's name, what is on it, a green or red dot for whether you can hear it, Play to audition it alone, a shuffle to re-roll it, and a ✕ to put the built-in sound back. Two pads may share a lane so a snare can be layered, and the layout is remembered per artist . One combobox instead of a search box, a chip row and a five-hundred-row list. Type to filter across artists, genres, aliases and typos. Stop halfway and click away and it takes the best match, so you cannot end up with nothing chosen. \"Original Workflow\" is pinned to the top whatever is selected. The generator mute switches moved onto the tabs , because they were a second row carrying the same six words — so working out which one silenced Drums meant reading \"Drums\" twice. The whole clip is visible when it is generated , whatever its length."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2026-08-09",
+  "heading": "Fixed — 2026-08-09",
+  "text": "⛔ The plugin ran DPI-unaware while WebView2 did not. On a 150% display Windows stretched the window by half again while the page rendered at true pixels, so the UI covered two thirds of its window and the content did not follow when it was dragged. One mismatch, both symptoms. The window can be dragged, resized and maximised , and will not shrink below the size the app was designed for. A style's copied samples are loaded back. The consent gate and the copy both worked; nothing ever read them, so the checkbox's promise was false while the build shipped it. \"Single hit\" no longer deletes the note it names — it collapses a roll back to a single hit. Double-clicking the standalone works. It supplies its own audio period size rather than depending on a command-line flag."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-every-artist-gets-moods-you-can-build-and-train-a-style-of-your-own-and-no",
+  "heading": "Added — every artist gets moods, you can build and train a style of your own, and nothing copies your samples without asking, 2026-08-09",
+  "text": "Every artist and genre now has moods. Twelve genres had none, and each now offers three — boom bap's dusty / jazzy / hard , country's shuffle / ballad / barnburner . Pressing Generate walks an artist's range instead of returning one sound with a different seed on it: 96 (artist, mood) pairs , up from 33. Original Workflow — build a style of your own. Name it, base it on any artist or genre, set the tempo range, swing, densities and scales, and save. It generates, locks, re-rolls and exports exactly like a shipped one, because it is one — inheriting everything you did not change, including improvements the base gets later. Train a workflow from the takes you keep. At thirty, Train fits a style to what you kept and will not save one that repeats itself. There is no machine learning in it : it measures your takes and writes the numbers back, and the app stays entirely offline."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2026-08-09-2",
+  "heading": "Fixed — 2026-08-09",
+  "text": "The genre chips said they could not be clicked. The Genres row showed a \"no entry\" cursor over controls that worked perfectly, and had since the layout was first drawn. Training could have frozen your DAW. The check that a trained style does not repeat itself ran thousands of generations on the thread your host draws its window from."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-melody-stops-quoting-other-people-every-genre-gets-its-own-voice-and-t",
+  "heading": "Added — the melody stops quoting other people, every genre gets its own voice, and the hats talk, 2026-08-08",
+  "text": "⛔ A novelty guard , so a generated melody is not a hook somebody already owns. Every melody and countermelody is screened against a bundled table of well-known contours before you hear it. Nothing in the table is a melody : it holds one-way fingerprints of contours , and there is no way back from one to a note. Transposing a hook does not hide it. Every genre now has its own melody, countermelody and chords , instead of five falling back on a shared default. Six genres with no 808 got a real bassline. ⛔ Hi-hat fills. The hat is where trap, drill and plugg do their talking: a phrase-end figure that breaks the stream — a roll, a stutter, a triplet burst, a ramp, or a gap , the hat stopping dead. ⛔ Lock a drum so a re-roll cannot touch it , and solo on every drum lane . A lane you muted stays muted through a solo. ⛔ A pattern library that outlives the project — saved as notes, with no kit. Each is its own file, so a bad save costs one loop rather than the shelf. ⛔ Every take you have made this session , bringing back the whole setup: artist, mood, seed, bars and pins."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-5",
+  "heading": "Changed",
+  "text": "Four golden snapshots moved, each diff read before regenerating: trap and UK drill now author a hi-hat fill; ny-drill , liquid-dnb , country-train and boom-bap play their own basslines instead of inheriting one; and one closed hat that sat on top of an open hat is gone, which changes every later hat's velocity because humanize walks a lane in note order."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-what-the-review-found-2026-08-09",
+  "heading": "Fixed — what the review found, 2026-08-09",
+  "text": "Fifteen findings survived independent verification. Worst first: ⛔⛔ Opening the pattern library could take the whole DAW down , dividing by a clip length computed from the saved file's own numbers — an unlucky pair divided by zero, and the plugin aborts rather than unwinds. ⛔⛔ Saving a pattern could silently delete a different one : \"Take 1\" and \"Take-1\" became the same filename. ⛔⛔ A locked lane could vanish from the saved project , the clip being rebuilt from the seed on reopen — and could carry notes past the end of a shorter clip, so the grid drew four clean bars while the export played hits in bars five to eight. ⛔ Song Mode never ran the novelty guard , being installed on the path the Melody tab uses while Song Mode calls the generators directly. A test asserts the wiring rather than the output, because with the shipped roster screened and unscreened output are identical and the obvious test could not fail. ⛔ A hand-added hi-hat fill landed 40 ticks early , reaching for the window the grid uses to decide which cell a humanized note belongs to — right for reading, wrong for writing. ⚠ Two gates were reporting success over less than they claimed: the lane list had drifted to 21"
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-the-sample-browser-you-can-actually-use-and-clips-that-look-like-clips-202",
+  "heading": "Added — the sample browser you can actually use, and clips that look like clips, 2026-08-07",
+  "text": "⛔ The sample browser is on screen. Add your folders once and they come back with the project; click a sample to see its waveform and drag it straight onto a drum lane . Everything behind this shipped last session with no way to reach it. An audition player under the browser — click anywhere in the waveform to play from there. ⛔ A clip in the arrangement looks like a clip , drawing its own notes instead of a name over a shaded box, so two clips of the same part no longer look identical, and each can be dragged into your DAW on its own. ⛔ Clips resize : drag the right-hand edge and that row loops on fewer bars inside its section, without moving the section or any other part. ⛔ The arrangement view is laid out like a DAW. The track names used to float on top of the clips, so at bar 1 the word \"DRUMS\" sat over the first clip of every row."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-what-three-reviews-found-2026-08-07",
+  "heading": "Fixed — what three reviews found, 2026-08-07",
+  "text": "⛔ A resized clip's longer notes rang into its own next repeat , so a DAW cut them dead against the note that had already re-struck. ⛔ Hi-hats lost every ghost note outside 4/4 — in 6/8, 12/8 and any x/16 meter the whole stream came out at one flat velocity. ⛔ Percussion set to \"offbeat\" went completely silent in x/16 and x/32 meters. A resized clip drew notes it does not play , showing the whole pattern squeezed into every repeat. Re-rolling a section, or copying, pasting or dragging a clip, threw away the loop length you had set on it. The bassline could still mirror the wrong kick if you changed the bars, pinned a tempo or switched mood between generating the drums and the bass."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-audition-player-2026-08-07",
+  "heading": "Fixed — the audition player, 2026-08-07",
+  "text": "⛔ Auditioning a sample was silent whenever the Audio switch was off. Play lit up, the player said it was playing, and the playhead sat frozen at 0:00. Turning off audio means \"send MIDI to my own sampler, don't double it\" — it was never meant to stop the browser playing the file you just clicked. Clicking a paused waveform moved the playhead and then undid itself half a second later, and pressing Play left the playhead still for up to half a second while the sample was already sounding."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2026-08-07",
+  "heading": "Fixed — 2026-08-07",
+  "text": "⛔ The entire arrangement view was drawing unstyled , and had been since it was written: every colour it asked for was a name this app does not define, so the clips had no fill, the grid lines were invisible and the playhead was a transparent strip. The bassline landed on kicks the drums were not playing. A bass that mirrors the kick — most of the trap and drill roster — was copying a kick pattern rebuilt from the wrong seed: on boom-bap 13 of 13 bass notes used to sit on a real kick, and with the ordinary workflow that had fallen to 9; on UK drill, to 1 of 14. Percussion set to \"offbeat\" played straight on the beat in every x/8 meter — the layer meant to sit between the pulse doubled it. Six drum voices shipped with no way to hear them. Ride, crash, tom, shaker and cowbell were in the kit and no artist had ever been written to play one."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-a-real-drum-kit-a-sample-browser-and-a-kit-per-genre-2026-08-07",
+  "heading": "Added — a real drum kit, a sample browser, and a kit per genre, 2026-08-07",
+  "text": "⛔ Your drums have more than five lanes now — sixteen percussion voices, and which an artist uses is part of that artist. Fifteen shipped models had already been written with a percussion block and nothing had ever read it, so UK drill had been asking for a woodblock since the day it was authored and getting silence. ⛔ Every genre gets its own kit. Eleven families, each with its own tuning, top end and drive. Boom-bap's ceiling is 8 kHz because that is what an SP-1200 could sample, and that missing top is the sound. Eight artists had been naming the kit they wanted for months and all were playing trap samples. The 808 lane is called Sub now , because it is the pitched bass that slides, not the bass drum. Saved projects open exactly as before. ⛔ Generate varies the take without changing the record. Press Generate on the drums, switch to the melody, press it again: you get a different melody written against the same key and progression. Before, the second press drew an unrelated harmony and the two parts had never been written against each other."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-2026-08-07-2",
+  "heading": "Fixed — 2026-08-07",
+  "text": "A loop brace you dragged was ignored whenever a second generator was switched on — which is the default. It worked with one part playing and silently did nothing with two. Play and Stop were lit or dark at the wrong times. Generate drums, click Melody, and Play went dark while the drums were armed and would have sounded. The position readout counted the wrong clip : four bars of drums beside eight of melody read 1.1 to 5.1 across eight bars of real time. Loop came back on after reopening the plugin window , whatever you had set it to."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-play-the-generators-together-and-the-808s-slide-2026-08-06",
+  "heading": "Added — play the generators together, and the 808s slide, 2026-08-06",
+  "text": "Play several generators at once, or any one alone. A schedule holds a single clip, so the parts are merged into one before it — which is why this could not be done by pressing Play on each tab in turn. ⛔ The plugin plays without the DAW rolling. Auditioning a beat no longer means arming a track and starting the whole project. Starting the DAW's transport takes it straight back, so the two can never both play at once. ⛔ The Loop button works. It was permanently pressed and disabled, with a tooltip claiming playback always looped — which was not even true unless a brace had been dragged. ⛔ 808 slides are audible. The generators have written slides for a long time and the MIDI has always carried them, but every rendered WAV played them as flat notes. The pitch now travels, holding the starting note for the first half and gliding across the second — and the same code serves the preview, the export and the drag, so a stem sounds like the .mid beside it."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-drum-lanes-the-kit-panel-and-a-short-right-rail-2026-08-06",
+  "heading": "Fixed — the drum lanes, the KIT panel, and a short right rail, 2026-08-06",
+  "text": "⛔ \"All Tracks\" for drum audio was labelled the opposite of how it reads. It gave one file per lane while a second entry called \"As one clip\" gave the mix. There is one entry per lane now, and \"All Tracks\" is every lane mixed into a single file . ⛔ The KIT panel stopped drawing on top of the STEMS panel. In a short window the KIT section collapsed to nothing while its contents kept their full height, so its text was painted over the panel below as an unreadable smear."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-the-editor-window-sizes-itself-correctly-2026-08-06",
+  "heading": "Fixed — the editor window sizes itself correctly, 2026-08-06",
+  "text": "⛔ The black band around the UI is gone. The editor's window was sized from a display scale read at a different moment from the rest of the geometry, so the app ended up two-thirds of the window that framed it. ⛔ The size button offers two sizes, not four. The display scale was read fresh on every press and changes underneath the editor — it reads 100% until the window system has been told the process is DPI-aware, which happens after the editor has been sized — so each of the two presets quietly meant two different windows. ⛔ The Stems panel no longer disappears at the default window size. The rail opens at 1440px and the page lays out at exactly 1440px, so the rail had no margin at all: the whole rail was gone at every size except the one that happened to zoom by exactly 1. ⛔ The per-lane drag-out menu is no longer cut in half , so the lower drum lanes can be dragged out at all."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-six-defects-found-running-the-plugin-in-ableton-2026-08-06",
+  "heading": "Fixed — six defects found running the plugin in Ableton, 2026-08-06",
+  "text": "⛔ Generate really does generate now. Pressing Generate repeatedly returned the same beat forever, which made the product look like it held one loop per artist: the engine's chosen seed was echoed into the seed box and re-sent on the next press. The box now distinguishes a seed you chose from a seed the engine picked. ⛔ Dropped audio no longer plays at the wrong tempo. A dragged .wav carried no tempo at all, so Ableton warped it by guess — a 140 BPM loop played at 96 in a 120 project. The Stems panel opens itself the first time a session generates: it remembered being collapsed across reloads, and it holds the only way to get a pattern out. ⛔ The controls stopped sitting on top of the velocity lane. Live for months: the Generate/seed/bars row floated over the editor, so a velocity cap underneath it could not be dragged at all."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added",
+  "heading": "Added",
+  "text": "Drag a part straight out of the plugin and onto a DAW track. Every part has a MIDI and an Audio handle; with Per lane on, the drum part becomes one handle per lane. Files carry the name a producer would give them — trap - Snare - 140 BPM - C# Minor . ⚠ MIDI and Audio offer different lists deliberately: a lane the kit cannot play drags as MIDI, because the notes are real, but not as audio, which would render silence. The whole arrangement drags out as audio , reporting progress and stopping the moment the gesture is abandoned — that was the missing piece, not the rendering. Clips can be dragged around the arrangement , where rearranging used to mean copy, paste, then go back and delete the original. The drum grid is an editor , where it was read-only and its own header said so. ⚠ Edits work on ticks, never on cells : a cell has already thrown away where inside the 16th a hit sat, which is exactly what a tuplet is made of. Export the parts on their own , sharing the drag's naming and bytes — a loop you drag and the same loop you export must be the same file. Your own one-shot on any part , stored as a path ; a file that has moved is reported rather than silently reverting. Drum hits "
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-6",
+  "heading": "Changed",
+  "text": "Generation offers 4 or 8 bars. Two is gone — there is not enough room in two bars for the fills and turnarounds the models author, so it made every artist sound the same. ⚠ A project saved at two bars still opens at two bars. The piano roll wears a plain pointer , not a + : a crosshair is what a drawing tool wears, and clicking empty grid selects rather than draws."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-an-xhigh-code-review-of-the-above-2026-08-06",
+  "heading": "Fixed — an xhigh code review of the above, 2026-08-06",
+  "text": "Fifteen verified defects, four of which would have shipped something broken. ⛔ Dragging a clip in the arrangement could delete another one. A section holds one clip per part, so dragging two clips of the same part meant the second overwrote the first after both had been lifted — gone, with nothing on screen saying so. ⛔ The Audio drag chips disappeared if you had ever collapsed the KIT panel , which was the only thing that loaded the kit — so Stems decided nothing could be played and hid every Audio handle, permanently, while Export went on offering audio. ⛔ A drum part could no longer be dragged out as one file , because the buttons had become menu openers and a menu opener cannot be dragged. ⛔ Dropped audio played at the wrong tempo in 6/8, 9/8, 12/8 and 7/8 : the tempo chunk counted a bar's beats with the numerator, but audio is measured in quarter notes. That is the same defect the chunk was added to fix, arriving through the meter picker. A trimmed clip dragged as \"All Tracks\" wrote silent files — eight dropped into the DAW, seven containing nothing."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-verified",
+  "heading": "Verified",
+  "text": "⛔ The macOS drag source is now checked by a compiler, from Windows. It is the one file no local build compiles, and it had four errors and two lint failures — every one of which CI's macOS runner would have found one push at a time. cargo check --target aarch64-apple-darwin type-checks for macOS without an Apple toolchain, because only linking needs one. ⚠ It still proves nothing about behaviour. The macOS and Linux drags no longer freeze the host. Both started a drag and then blocked the very event loop that had to run it — ten minutes of frozen DAW and no file dropped. Windows was never affected; its drag is genuinely modal, which is what made the mistake easy to make twice. The plugin passes both automated validators for the first time — pluginval at maximum strictness against the VST3 and clap-validator against the CLAP: 33 passed, 10 skipped, 1 failed, the failure being the validator's own divide-by-zero. Linux is verified locally , in Docker."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-4",
+  "heading": "Fixed",
+  "text": "Every artist wrote the same snare roll , built from a hardcoded ramp that read neither the model nor the seed: six of the ten flagship trap artists produced a byte-identical roll , and every model reached only one to four distinct rolls in forty seeds. UK drill, NY drill and Pop Smoke wrote exactly one kick pattern, ever , an explicit four-bar grammar never touching the seed. ⚠ Every new variant stays inside the tresillo the research describes. An 808 could ring straight through a fill : the mute list held only the backbeat, so a kick on the beat a fill starts on let the 808 sustain across the whole roll — the thing drill is defined against. Two sibling models were too close to tell apart : pop-smoke differed from ny-drill by 0.05 on four numbers and produced an identical beat on 16 seeds of 200. Beat collisions across the roster are now zero . An exported song no longer arrives as one instrument playing everything at once. Every pitched part was on MIDI channel 0, and many hosts split an imported SMF by channel rather than by track. Harmony no longer saturates. Voicings were chosen by strict minimum cost, making a voicing a pure function of the chord: rage produced 8 distinct prog"
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-added-2",
+  "heading": "Added",
+  "text": "Song Mode: pick an artist, press Generate, and get a whole arrangement. The engine samples one of the artist's own song forms and builds a clip per part per section. Sections of the same kind share a clip, because verse 1 and verse 2 are the same beat. Transitions — drop-out beats before a hook, the back-half switch-up, the outro's fade. Each is a property of where a section sits rather than of its notes, and each is written into the exported file rather than merely drawn. A song plays , and the tiling now lives in one place both the player and the exporter read — so what you hear and what you export come out of the same arithmetic . Re-roll one section without touching the rest. A locked Chords or Drums part is handed back as the harmony and kit to write against. An edited arrangement is saved with the project , where before, arranging a whole song and reopening lost all of it. ⚠ Stems are MIDI, not audio : writing four silent .wav s and calling them stems would be worse than not offering them. Each generator keeps its own clip. The five shared one slot, so generating a bassline destroyed the melody that was there. Generate all fills every part from one seed , which is what makes "
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-5",
+  "heading": "Fixed",
+  "text": "Song Mode went through four reviews before it shipped, every finding with a test watched failing first: undo now reaches the project file ; undo across an artist change no longer resurrects the previous artist's record ; locks and the loop follow their section when you clone , where a padlock used to draw on the wrong section and a re-roll regenerated the very clips it said were pinned; and re-rolling honours the record it belongs to . A piano roll, and the four melodic parts are visible at last. They generated through the bridge and landed on the host's track without ever appearing on screen. Canvas rather than DOM, because a roll is 128 rows deep and the drum grid's approach would be ~15,000 elements before a single note — with the notes published as a visually-hidden list, so the editor is reachable by a screen reader and assertable by a test. Selection, resize, transforms and a velocity lane to the standard Ableton and FL set, and the scale set goes from 12 to 41 . ⚠ An edited clip is saved with the project: the plugin stores the request , because the engine is deterministic, and the moment you move a note that stops being true. The plugin makes a sound , rendered in segments s"
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-changed-7",
+  "heading": "Changed",
+  "text": "The desktop application's crate is gone. src-tauri/ — the shell, tray, updater, crash reporter and audio path — is removed. The product was retired on 2026-07-29; the crate outlived it because it generated ipc-audio-types.ts and held the only sampler this project had, and the sampler was ported into the plugin first, which is what makes this safe rather than lossy. Two things it fixed on the way past, both broken in the shipping plugin rather than merely dead: Settings and About were unreachable , the title bar having been their only entry point, and the About pane showed an em dash for the version . The plugin makes no outbound connections at all. Not a wording change: the supply-chain allowlist held reqwest , hyper , hyper_rustls and hyper_util , every one justified by the updater, and it is now empty — 187 linked crates with no HTTP client among them. Six RUSTSEC exemptions stopped matching anything and were deleted too; an ignore that matches nothing is a standing permission for an advisory to come back unnoticed."
+ },
+ {
+  "url": "changelog.html#1-0-0rc-2026-09-17-fixed-6",
+  "heading": "Fixed",
+  "text": "A machine without WebView2 no longer takes the DAW down with it. Opening the editor with no WebView2 runtime — or a read-only temp directory, or the plugin's browser profile already held by another WebView2 environment, which is what the standalone opened alongside a DAW does — panicked inside the host's own editor-open callback. Release builds abort on panic, so the host could not catch it and the session went with it. The editor now opens blank and says why. Two related panics went the same way: the custom-protocol handler, which ran from a frame a panic cannot even unwind out of, now answers 500. v0.4.0 2026-07-29"
+ },
+ {
+  "url": "changelog.html#0-4-0-2026-07-29-added-unlimited-undo-redo-and-the-licence-gate",
+  "heading": "Added — unlimited undo/redo, and the licence gate",
+  "text": "Unlimited undo/redo (FMM-U01). Every session change — artist, seed, bars, pins, auto-sync and each generation — steps back with Ctrl / Cmd + Z and forward with Ctrl / Cmd + Shift + Z or Ctrl + Y . No depth limit: an entry is a handful of scalars plus a shared Pattern reference, because a pattern is derived from its seed rather than stored, so a hundred steps across one generation cost one pattern. A run of edits to one control inside 600 ms collapses into a single step; two generations never merge, however fast the reroll. Recorded by a store subscription rather than per-action calls, so a future action cannot forget to register — the same argument the session save already made. Armed after the project restore, so Ctrl + Z cannot step behind the session the host handed back onto an empty plugin. First-run licence gate. The agreement is compiled in from EULA.md and shown before anything else; nothing generates, plays, exports or saves until it is accepted. Agree stays disabled until the text has been scrolled to the end , because \"you cannot use it until you read it\" is the requirement and a live button asks nobody to read anything. ⛔ Enforced at the plugin's RPC boundary, not in th"
+ },
+ {
+  "url": "changelog.html#0-4-0-2026-07-29-fixed",
+  "heading": "Fixed",
+  "text": "The Windows standalone opened a blank window (TASK-P16). baseview 's open_blocking pumps with GetMessageW(&mut msg, hwnd, …) — a non-NULL hwnd , which retrieves messages only for that window and its children and never retrieves thread messages at all . WebView2 is COM/STA and delivers its completions as exactly those, through a COM-owned message-only window, so the custom-protocol handler was never dispatched, navigation never completed and the page stayed on about:blank . The vendored adapter now drains the queue from on_frame , off unless the process opts in — plugin/src/bin/standalone.rs is the only caller and a DAW never runs it, so a host's queue is never touched. ⛔ It skips messages belonging to the editor window and its children: dispatching those re-enters baseview's window procedure while it already holds a RefCell borrow, which panics inside an extern \"system\" frame and aborts the process. Verified by photographing the window, not by a green build."
+ },
+ {
+  "url": "changelog.html#0-4-0-2026-07-29-changed",
+  "heading": "Changed",
+  "text": "No downloads before v1.0.0 . The v0.1.0 and v0.2.0 desktop releases were withdrawn from GitHub (converted to drafts; assets intact), and the documentation site offers no download link. v0.3.0 2026-07-29"
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-07-29-added-melodic-generation-and-moods-that-multiply-it",
+  "heading": "Added — melodic generation, and moods that multiply it",
+  "text": "Melody generator (TASK-035, FR-005). Phrase structures (riff loop, question/answer, call/response, long arc), chord-tone bias on strong beats, colour tones, interval and contour distributions, octave jumps, end variation, and the per-genre devices: rage's two-to-three-note staccato motif, drill's snare-mirrored onsets and doubled voicing, straight-eighth bars and deliberate silence. Pitches are chosen as scale degrees and only then made into MIDI notes, so staying in the key is structural rather than filtered for. Countermelody generator (TASK-036, FR-006). Octave echo, bell echo, arpeggio, answer lick and sustained pad, placed in the melody's gaps by construction rather than by filtering afterwards. Moods (TASK-040V, engine half). A model may author named modes — trap ships dark, bounce, melodic and minimal — each a partial override merged into the model before generation, so every generator honours a mood without knowing moods exist. Moods inherit through extends , so an artist offers only the moods its own lineage does. Presets the plugin owns (TASK-P13, session half). Six factory presets compiled into the binary, user presets in the platform's per-user data directory, and a pan"
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-07-29-fixed",
+  "heading": "Fixed",
+  "text": "A repeated melody no longer clashes with the chords it repeats over. A riff now follows the progression, keeping its own contour and rhythm. The countermelody is no longer silent about half the time. An octave echo is delayed, because an octave copy at zero delay is a doubling. Sustained pads voice more than the chord root , and pick their octave. echoOffset: \"1/8\" is read. The note-value parser knew \"8th\" and \"16T\" and silently ignored the third spelling the dataset uses. The seed box shows a whole seed. It was 12 characters wide against a 20-digit u64 , so a long seed was cut off — and a seed you cannot read is one you cannot type back in."
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-07-29-changed-freally-midi-master-is-becoming-a-plugin",
+  "heading": "Changed — Freally MIDI Master is becoming a plugin",
+  "text": "Decided 2026-07-28. Not for the format's sake: a plugin is handed the host's tempo, time signature and playhead, so a generated pattern lands in the song you are actually writing rather than at whatever tempo the artist is authored at. docs/product-roadmap.md carries the decision, what survived and what did not. New plugin/ crate on nih-plug , exporting CLAP . VST3 and AU are projected from it by clap-wrapper at packaging time. The engine crate is unchanged , which was the point of keeping it free of shell types. No FFI and no C++. Host tempo sync , with precedence user pin > host > model . Trap authored at 140 generates at 92 inside a 92 BPM project; a pinned tempo beats the host; a host that has not reported yet leaves the model its own value. Notes are emitted onto the host's track , replacing drag-out. The session is saved with the project. Artist, seed, pins, bars and the window size go through the host's own state calls — there is no settings file and no path to find, and a session belongs to a song rather than to a machine. The notes are not saved; the inputs that make them are, because the engine is deterministic and a project file should not carry regenerable notes. The wi"
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-07-29-removed-the-desktop-app-is-retired",
+  "heading": "Removed — the desktop app is retired",
+  "text": "Freally MIDI Master ships as a plugin now. Releases from here on carry the CLAP and the VST3 and nothing else; the Windows, macOS and Linux installers are no longer built. If you are on v0.2.0: nothing you have installed stops working, and nothing is uninstalled. Your copy will simply stop finding updates, because there will not be any — the update channel goes quiet rather than breaking. To carry on, install the plugin from this release and load it in your DAW, which is where the tempo sync, the host key and the notes-on-the-track live. That is the whole reason for the move: the desktop app could not know what song you were writing."
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-07-29-known-issue",
+  "heading": "Known issue",
+  "text": "A corrupt project file can abort the host. nih-plug 's CLAP state loader reads a length prefix straight into an allocation with no sanity check, so malformed state aborts the process rather than failing to load. It is upstream's bug, the maintained fork carries it identically, and it needs a patched fork to fix. clap-validator 's state-invalid-random is excluded by name until then. The UI carried across. src/lib/ipc.ts was always the one seam and gained a third branch; the React app, the 18 locale catalogs and the design tokens are the same ones the desktop app shipped."
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-07-29-added",
+  "heading": "Added",
+  "text": "Session chips — BPM, key, scale and swing, editable in the right rail. Empty means the artist decides; a value means you do. When running in a host the tempo chip follows the DAW and says so. The chords generator (FR-004): progression families, diatonic third-stacking so every pitch is in the key by construction, borrowed chords, sus and the drill middle-note drop, close and open voicings, and syncopated 3–5 beat cells. scripts/assert-plugin-bundled.mjs — refuses a plugin binary whose UI or dataset failed to embed, because that failure otherwise presents as a blank window with no error. npm run plugin:standalone — the plugin in its own window, no DAW needed. npm run plugin:install symlinks it into the CLAP folder so a rebuild is live without copying."
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-07-29-fixed-2",
+  "heading": "Fixed",
+  "text": "vst3-sys is GPLv3 and nih-plug's VST3 export links it — which would have put this proprietary product in breach. Caught by cargo deny . VST3 now comes from clap-wrapper (MIT) instead. Steinberg's own VST3 SDK went MIT in November 2025; nih-plug does not use it. The generation error message has never been visible. .stage__error had no CSS rule and sat behind the FX layer, which is position: absolute; inset: 0 over the whole stage. A pinned tempo is clamped to Ableton Live's 20–999 at the IPC edge, and the BPM box accepts digits only — <input type=\"number\"> accepts e , E , + and - , so \"1e5\" was a legal tempo. .github/workflows/{ci,release}.yml were failing format:check on main . v0.2.0 2026-07-25 Phase 1: the app makes beats. Search an artist, press Generate, hear it, and drag it into a DAW."
+ },
+ {
+  "url": "changelog.html#0-2-0-2026-07-25-added",
+  "heading": "Added",
+  "text": "The style dataset is bundled with the app and loaded at startup: every model is parsed, inheritance-resolved and validated before the first frame, and the roster is served to the UI by the new roster_summary and resolve_model commands. An invalid model is skipped and reported rather than taken as a reason to refuse to start. The humanizer: MPC swing (50% straight to 66% triplet), velocity tiers for accents, main hits and ghost notes, per-lane timing jitter in milliseconds, and a quantize strength that decides how much of that jitter survives. Swing warps the whole timeline, so rolls written at finer resolutions travel with the beat they belong to. The drum generator core: the kick grammar (anchors, density, syncopation, tresillo lean, the gap before the snare, explicit multi-bar forms) and snare placement — half-time on 3, the 2-and-4 backbeat, drill's two-bar 3-then-4, and the country train beat — with ghost snares and a layered clap. Trap comes out with its snare on beat 3; UK drill's authored two-bar kick form reproduces exactly on every seed. The hat engine: base subdivision (8ths, 16ths or a tresillo grouping), fill density, open hats that close the hat underneath them, a pitc"
+ },
+ {
+  "url": "changelog.html#0-2-0-2026-07-25-changed",
+  "heading": "Changed",
+  "text": "Exported MIDI now carries a key signature. It was the one session field the file did not describe, so a clip landed in a project without saying what key its 808 was in. A mode is written as its parallel major or minor, which is as much as the format can say. The golden .mid snapshots were regenerated for this : six bytes per file, the new meta event and nothing else — the pattern JSON is untouched. An 808 slide may now reach an octave above the note it starts from rather than being folded back inside the model's register. An octave glide — the phonk signature — previously landed on its own root and was discarded. Inheritance resolution no longer copies the whole accumulated model at each step of a chain, which brought a 1,000-model load from 330 ms to 219 ms — inside the 300 ms startup budget. v0.1.0 2026-07-22 First tagged build: the Phase 0 foundation. The Studio shell, the pure generation engine, the style-model dataset and the full CI spine are in place; the generators themselves arrive in Phase 1, so the transport and Generate are deliberately disabled rather than pretending to work."
+ },
+ {
+  "url": "changelog.html#0-1-0-2026-07-22-added",
+  "heading": "Added",
+  "text": "Tauri v2 + React + TypeScript shell on a Cargo workspace, with the pure engine crate (no Tauri types, no network, no unsafe ). Studio layout: left rail, six generator tabs, grid stage, right rail and transport, with every panel independently collapsible and the state persisted. Dark and light themes, contrast-verified against WCAG 2.1 AA in both. Engine core: Pattern / Note / Lane / Song , SessionContext , and seeded ChaCha8 RNG with per-domain stream derivation so rerolling one part leaves every other part byte-identical. Style dataset: JSON Schema, inheritance deep-merge with cycle detection, semantic lints, and the first three genre archetypes — trap, uk-drill, rage. datasetc CLI — validate, lint, stats, coverage. Crash reporter per the Havoc standard: opt-in, scrubbed, never transmitted without a click. Three-OS CI, supply-chain gates, and the AI/network dependency denylist. Playwright E2E against vite dev with IPC mocked at a single seam. Borderless window with its own minimise / maximise / close controls, a centred title, and drag-to-resize on all eight edges. Settings and About, reachable from the title bar, with a system-tray option (minimise-to-tray and close-to-tray, both"
+ },
+ {
+  "url": "changelog.html#0-1-0-2026-07-22-known-limitations",
+  "heading": "Known limitations",
+  "text": "The generators, playback and audio export are not implemented yet; their controls are disabled rather than inert. Native drag-out is built but unverified against real DAWs — that is the Phase 0 decision gate and it needs a human. The tray menu (Show / Quit) is not translated. Installers are unsigned: expect SmartScreen on Windows and Gatekeeper on macOS. See the release notes for the per-platform steps."
+ }
 ];

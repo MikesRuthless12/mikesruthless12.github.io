@@ -1,0 +1,111 @@
+<!-- Freally File Manager — the home page's own words. The shell around them
+     (head, navigation, hero furniture, the family strip, the closing call, the
+     footer) is the Freally site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">Your files, byte for byte.</span> <span class="cycle" data-cycle="hero.cycle" data-words="Copied.|Moved.|Synced.|Verified.">Copied.</span></kit-headline>
+  <kit-lede data-i18n="hero.sub">A desktop file copier for Windows, macOS and Linux, with checksum verification, resume after a crash, two-way sync, undo and its own file server. No account, no telemetry and no AI.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Copying a big folder with your system's own copy dialog tells you very little: no checksum, no say in what happens to files that already exist, and no way back when the power goes out halfway through.</p>
+      <p data-i18n="what.p2">Freally File Manager is a copier built to be trusted with that job. Drop files on its window, pick a destination, and it copies them through your system's fastest copy path. Switch on verification and it reads every copy back and checks it against the original's checksum.</p>
+      <p data-i18n="what.p3">Around the copier is everything you reach for afterwards: a history of every job with re-runs and undo, checksum tools, two-way sync and live mirroring, snapshots, a built-in file server and a command line for scripts.</p>
+    </div>
+    <figure class="split__art"><kit-art name="stack"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="features" label="kit.label.inside">
+  <h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards cards--4">
+    <article class="card">
+      <div class="card__media"><kit-art name="circuit"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.copy.title">Byte-exact copies</h3>
+        <p data-i18n="features.copy.body">Every file is copied byte for byte through your system's own fast paths, and cloned instantly on drives that support it. Pause, resume or cancel any job, and decide before it starts what happens when a file already exists.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="lens"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.verify.title">Verified when you ask</h3>
+        <p data-i18n="features.verify.body">Switch on verification and each copy is read back and checked against the original with one of eight checksums, from CRC32 and xxHash3 to SHA-256 and BLAKE3. A mismatch is reported, never hidden.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="signal"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.resume.title">It survives a power cut</h3>
+        <p data-i18n="features.resume.body">A journal records how far each copy got. After a crash or a reboot, the part already written is checked and the copy carries on from there instead of starting again.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="tree"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.sync.title">Two-way sync</h3>
+        <p data-i18n="features.sync.body">Keep two folders in step in both directions, or mirror one onto the other. A file changed on both sides is a conflict: both versions are kept and you choose.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="index"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.history.title">History and undo</h3>
+        <p data-i18n="features.history.body">Every job is recorded. Run it again, retry only the files that failed, or undo the last copy or move: undone copies go to the Recycle Bin or Trash, never straight to deletion.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="lines"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.checks.title">Check your files any time</h3>
+        <p data-i18n="features.checks.body">Hash any file with eight checksums, make and check .sha256 or .sfv files, compare a folder with its copy months later, and export a signed report of what was copied.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="nodes"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.server.title">Your own file server</h3>
+        <p data-i18n="features.server.body">Serve a folder to other computers over WebDAV, plain HTTP, an S3-compatible API or SFTP, read-only if you like, behind a password or a token.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="shield"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.free.title">Free, private, no AI</h3>
+        <p data-i18n="features.free.body">No account, no telemetry and no machine learning. Your files go only where you send them, and the daily update check can be switched off.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per version, oldest first. Every one of them is done: built, tested and tagged.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">A version that is done is built and tagged. None of them is a download on this site: there are no downloads here yet.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="scan"></kit-icon><span data-i18n="honest.verify.title">Verification is off until you switch it on</span></h3>
+      <p data-i18n="honest.verify.body">Checking a copy means reading it a second time, so it is a setting rather than the default. Choose a checksum in Settings → Transfer, and every copy after that is checked.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="info"></kit-icon><span data-i18n="honest.notYet.title">Two things 1.0 cannot do yet</span></h3>
+      <p data-i18n="honest.notYet.body">It cannot securely shred files, and it cannot copy to cloud storage. Settings already has a place for both, but neither is wired up in version 1.0.0.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="globe"></kit-icon><span data-i18n="honest.network.title">When it goes online</span></h3>
+      <p data-i18n="honest.network.body">Copying between your own drives, verifying and deleting make no network requests. It goes online for what you set up, such as the file server or testing a cloud account, and to check for updates when it starts, at most once a day, which you can switch off in Settings → Updates.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads here yet</span></h3>
+      <p data-i18n="honest.downloads.body">No installer, no preview build and no download link on this site. When that changes, this page will say so.</p>
+    </article>
+  </div>
+</kit-section>

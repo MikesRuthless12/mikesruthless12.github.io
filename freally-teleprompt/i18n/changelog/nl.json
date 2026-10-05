@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "Alle noemenswaardige wijzigingen in **Freally Teleprompt** staan hier beschreven.",
-  "changelog.c7791448f357": "De opmaak volgt [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). De versies vóór 1.0 gebruikten een ladder in fasen (`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`); vanaf 1.0.0 is het gewone semantische versienummering. De wijzigingslogpagina van de website wordt uit dit bestand opgebouwd door `scripts/build-docs-site.mjs` — één geschiedenis, nooit een tweede kopie die met de hand wordt bijgehouden.",
   "changelog.69c6a54708de": "[Nog niet uitgebracht]",
   "changelog.c205924de0fe": "Documentatie",
   "changelog.3ba1bf71dedb": "**De website is opnieuw gebouwd** in het ontwerp van de Freally-familie, en spreekt alle 18 talen van de app — dit wijzigingslog inbegrepen. Hij biedt geen downloads.",

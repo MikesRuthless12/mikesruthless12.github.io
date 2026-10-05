@@ -1,0 +1,15 @@
+{
+  "product": "oscillate",
+  "name": "Freally Oscillate",
+  "icon": "oscillate-icon.png",
+  "pages": ["index", "features", "documentation", "changelog"],
+  "changelog": "../CHANGELOG.md",
+  "ladder": "ladder.json",
+  "chips": ["Windows", "macOS", "Linux", "VST3", "CLAP"],
+  "strings": {
+    "site.tagline": "A DAW where four producers work in the same session at once.",
+    "site.description": "A DAW where four producers work in the same session at once, peer to peer. Free today, with no subscription, no account, no server and no AI. Windows, macOS and Linux.",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
+    "footer.yours": "What you make with it is yours. Oscillate's author claims no ownership of the projects, MIDI, audio or renders you create with it."
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "product": "home",
+  "name": "Freally Products",
+  "icon": "freally-icon.png",
+  "iconVersion": "2",
+  "pages": ["index"],
+  "nav": [
+    { "href": "#products", "key": "kit.nav.products" },
+    { "href": "#about", "key": "kit.nav.about" }
+  ],
+  "badge": "hero.badge",
+  "price": "site.price",
+  "legal": ["footer.rights"],
+  "heroActions": [
+    { "href": "#products", "key": "hero.cta.apps", "primary": true },
+    { "href": "#about", "key": "about.title" }
+  ],
+  "chips": ["Windows", "macOS", "Linux", "@hero.chipLanguages|18 languages"],
+  "strings": {
+    "site.tagline": "Desktop apps for producers and creators.",
+    "site.description": "Eight desktop apps for Windows, macOS and Linux: four for making music and four for the work around it. Free today; future versions may be sold.",
+    "site.price": "Every Freally app is free today, but it might not be free forever: future versions may be sold.",
+    "hero.badge": "Eight apps · one family",
+    "hero.cta.apps": "See the eight apps",
+    "about.title": "About Freally",
+    "footer.rights": "© 2026 Mike Weaver. All Rights Reserved. Free today; future versions may be sold."
+  }
+}

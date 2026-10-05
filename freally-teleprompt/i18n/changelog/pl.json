@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "Tutaj opisane są wszystkie istotne zmiany w **Freally Teleprompt**.",
-  "changelog.c7791448f357": "Format jest zgodny z [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Wydania sprzed 1.0 korzystały z drabiny etapów (`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`); od 1.0.0 to zwykłe wersjonowanie semantyczne. Strona dziennika zmian na witrynie jest generowana z tego pliku przez `scripts/build-docs-site.mjs` — jedna historia, nigdy druga kopia prowadzona ręcznie.",
   "changelog.69c6a54708de": "[Niewydane]",
   "changelog.c205924de0fe": "Dokumentacja",
   "changelog.3ba1bf71dedb": "**Witryna została zbudowana od nowa** w stylu rodziny Freally i mówi we wszystkich 18 językach aplikacji — łącznie z tym dziennikiem zmian. Nie oferuje plików do pobrania.",

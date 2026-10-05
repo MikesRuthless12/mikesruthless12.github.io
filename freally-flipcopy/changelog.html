@@ -1,142 +1,186 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="changelog" data-product="flipcopy" data-name="Freally Flipcopy" data-title-key="kit.nav.changelog">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
     <title>Changelog — Freally Flipcopy</title>
-    <meta
-      name="description"
-      content="Every notable change to Freally Flipcopy, version by version."
-    />
+    <meta name="description" content="Put it on the glass. Press START. Drag the copy. Audio in, MIDI out; MIDI in, audio out. A CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux — free today, offline and 100% AI-free." />
+    <meta property="og:title" content="Changelog — Freally Flipcopy" />
+    <meta property="og:description" content="Put it on the glass. Press START. Drag the copy. Audio in, MIDI out; MIDI in, audio out. A CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux — free today, offline and 100% AI-free." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="flipcopy-icon.png" alt="" width="28" height="28" />
-          <span>Freally Flipcopy</span>
-        </a>
-        <nav class="site-nav" aria-label="Site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="flipcopy-icon.png" alt="" width="28" height="28" /><span>Freally Flipcopy</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
     <main id="main">
-      <!--
-        ⛔ GENERATED BODY. Between the markers below is CHANGELOG.md, rendered by
-        scripts/build-docs-site.mjs — one changelog, rendered twice, never kept by
-        hand. `npm run site:build` rewrites it and `npm run site:check` fails the
-        build when it is out of date.
-      -->
-      <!-- CHANGELOG:START -->
-      <h1 data-i18n="nav.changelog">Changelog</h1>
-      <p data-i18n-html="changelog.7d0a0c44680b">All notable changes to Freally Flipcopy. The version ladder is on the docs site (&quot;The road to 1.0&quot;); every rung is a tag. Release builds for each rung are published as <strong>draft</strong> releases in this repository; the docs site offers no downloads until <code>v1.0.0</code>.</p>
-      <h2 id="0-3-0-2026-10-01-audio-midi-the-magic-moment" data-i18n-html="changelog.2096d3c4bbd8">[0.3.0] — 2026-10-01 — Audio → MIDI: the magic moment</h2>
-      <p data-i18n-html="changelog.df6f06284fdc">Put an audio loop on the glass, press START, and its MIDI comes out — one page for every layer the copier hears, back to back from one scan, each its own file, framed in lime and dragged into your DAW on its own or all together. A MIDI file with several parts comes out the same way: one audio page per part, and the whole file as one mix.</p>
-      <h3 id="0-3-0-2026-10-01-audio-midi-the-magic-moment-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
-      <ul>
-      <li data-i18n-html="changelog.24a7fe5481b4"><strong>Audio → MIDI.</strong> An audio loop is read into its layers — drums, bass, melody, a <strong>countermelody</strong> where the loop has a second, independent line, and chords — with MIDI Master's classic-DSP extractor (no AI). Each layer found is its own page and its own <code>.mid</code>, named as a DAW shows it (<em>Loop - Bassline - 120 BPM - C# Minor</em>); a layer that isn't there gets no page, and a loop with no notes at all is refused rather than copied blank. The key is printed only when it was read clearly.</li>
-      <li data-i18n-html="changelog.0c3d252fc872"><strong>A stack of pages.</strong> The pages eject one after another from the single scan, fanned on the tray, each titled by its form and its part (<em>MIDI MELODY</em>, <em>AUDIO BASSLINE</em>) with <em>PAGE n/N</em>. Click a page to bring it to the top. <strong>Nothing drags until the last page has landed.</strong></li>
-      <li data-i18n-html="changelog.55fa665ebb50"><strong>Two drags from the finished stack.</strong> The top page carries two lime tabs: <strong>All parts</strong> drags every page as separate files, so the DAW lays them out as one track per layer; <strong>Complete mix</strong> drags one file of everything — a multi-track <code>.mid</code> of every part, or the whole render as a <code>.wav</code> — written beside the pages and never printed. Hover the tab for the mix's facts; without a pointer, <em>Save the complete mix as…</em> saves it.</li>
-      <li data-i18n-html="changelog.7ab067eeb165"><strong>MIDI → audio, part by part.</strong> A MIDI file with several parts prints one audio page per part (<em>AUDIO MELODY</em>, <em>AUDIO BASSLINE</em>), each rendered on its own and drawn from its own WAV, plus the Complete mix — the parts sum to the mix, under one headroom gain.</li>
-      <li data-i18n-html="changelog.71cfe75f90c6"><strong>Loops of up to 16 bars.</strong> The glass refuses a longer clip with its length in bars, never cutting it short; a one-, two- or four-bar loop is still copied. An audio loop's bars are counted at the tempo the copier reads it at.</li>
-      <li data-i18n-html="changelog.6aed786b024a"><strong>Honest pages.</strong> A Chords page says it is a progression, not the played voicing; when a sung line was heard and left alone, the first page says so, and a loop that is only a sung line is refused saying that, not &quot;nothing to copy&quot;. Every tempo printed names where it came from — read from the loop, or, when the loop's hits fit no grid, the host's, the file name's or the default.</li>
-      <li data-i18n-html="changelog.cb05cd0fc0f0"><strong><code>flipc</code></strong>, the command line, running the plugin's own glass and copier: <code>flipc copy &lt;file&gt; --out &lt;dir&gt;</code>, <code>flipc facts &lt;file&gt;</code> (the data block exactly as the paper prints it), <code>flipc score</code> (the corpus scorer) and <code>flipc bench</code> (timings).</li>
-      <li data-i18n-html="changelog.d2365b73e8bc"><strong>The corpus gate.</strong> The audioTest corpus is scored on every local CI run where it is present — and says SKIPPED where it isn't — against floors that only rise.</li>
-      </ul>
-      <h3 id="0-3-0-2026-10-01-audio-midi-the-magic-moment-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
-      <ul>
-      <li data-i18n-html="changelog.d2a673b21c8f"><strong>The host's tempo is followed block by block</strong>, and a MIDI file with no tempo of its own is copied at the host's tempo at the moment you press START.</li>
-      <li data-i18n-html="changelog.ee270218636c"><strong>The session tempo only breaks the octave tie.</strong> A 120 BPM loop dropped in a 90 BPM session is read at 120 (four bars), not at 90 (three) — fixed in MIDI Master's shared extractor, for every Freally product that reads loops.</li>
-      <li data-i18n-html="changelog.ab8ac52d964e"><strong>Free today, not promised forever.</strong> Freally Flipcopy is free today, but it might not be free forever: future versions may be sold. Every page of the docs site now says so.</li>
-      <li data-i18n-html="changelog.7fb464e21cf8"><strong>The repository moved</strong> to the maintainer's own GitHub account, private and All Rights Reserved, with the shared Freally crates coming from Freally MIDI Master and Freally Oscillate beside it; the plugin's web address is the docs site's new one.</li>
-      <li data-i18n-html="changelog.c584da8d5dfd"><strong>Continuous integration runs on the maintainer's machine</strong> before every push — every gate on Windows, and the Linux gates in Docker Desktop — and none on GitHub Actions. Every commit carries <code>[skip ci]</code>. (For a few hours on 2026-09-30, the repository was public and CI ran on GitHub for every push.)</li>
-      </ul>
-      <h3 id="0-3-0-2026-10-01-audio-midi-the-magic-moment-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
-      <ul>
-      <li data-i18n-html="changelog.79a07e8925af"><strong>The editor keeps its own browser profile.</strong> Flipcopy's WebView2 data (<code>%APPDATA%\Freally Flipcopy\webview</code>) had been filed under Freally MIDI Master's folder, and two products sharing one WebView2 profile can leave each other's editor blank when both run in the same DAW. It is Flipcopy's own now.</li>
-      <li data-i18n-html="changelog.72de476110e3"><strong>A copy's Complete mix can only ever be its own file</strong>: a <code>record.json</code> edited behind the copier can't point a drag, a Save As or a Reveal anywhere else.</li>
-      <li data-i18n-html="changelog.427549a6dab4"><strong>A copy is written whole or not at all.</strong> Every page and the mix are on disk before any of them takes its name, so a failure part-way never leaves pages in a numbered folder that no copy owns.</li>
-      <li data-i18n-html="changelog.2604a6288e96"><strong>No page clips.</strong> The one headroom gain is set by every file a copy writes — a part can peak above the mix where the others cancel it.</li>
-      <li data-i18n-html="changelog.c6cb2c38dd63"><strong>A 16-bar loop exported a tick long is 16 bars</strong>, not 17 — a last note released a thirty-second past the bar line is not a bar of its own.</li>
-      <li data-i18n-html="changelog.2ba628500475"><strong>Controllers reach a page</strong> even on a channel that plays no notes.</li>
-      </ul>
-      <h2 id="0-2-0-2026-09-30-the-copier-and-the-first-copy" data-i18n-html="changelog.833039ba4e85">[0.2.0] — 2026-09-30 — The copier and the first copy</h2>
-      <p data-i18n-html="changelog.35409a92a233">The copier stands on the stage, playing the Blender copier story videos' beats in their order: drop a MIDI file on the glass, press the green START, and a real audio copy comes out onto the tray — printed from its own file, framed in lime, and dragged straight into your DAW.</p>
-      <h3 id="0-2-0-2026-09-30-the-copier-and-the-first-copy-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
-      <ul>
-      <li data-i18n-html="changelog.c12f4045ef96"><strong>The copier on the stage.</strong> The machine rendered by the same Blender scene as the two story videos — its base, its lid as sprite frames, the pressed keys, the glass and tray mattes — rendered over the window's own ground (<code>#090c09</code>) on transparent film, so it stands in the room with no seam. The phases are the videos' beats in the videos' order (the sheet flips and lands face-down, the lid swings shut with its bounce, the START beep, the lamp sweeps side to side leaking cyan out of the front seam while the whole room dims, the copy slides out onto the tray), at the in-app cut's shorter durations; a test fails if the app ever plays a beat the story doesn't have, skips one, or plays them out of order. It fills whatever room the window gives it and never mirrors in a right-to-left language.</li>
-      <li data-i18n-html="changelog.81d392181aa1"><strong>The green START is the only trigger.</strong> Dropping a clip only puts it on the glass. START (or <code>Ctrl/Cmd+Enter</code>, which presses the same key) starts the copy; STOP (or <code>Esc</code>) cancels it mid-scan with nothing left behind; HOME clears the glass. The key carries an angled <em>START</em>, turned to the touch panel, and its LED is lit whenever a copy can start. A plugin test sends every command and fails if any but <code>copier_start</code> starts a job, and a build gate fails if the page ever sends it from anywhere but the START key.</li>
-      <li data-i18n-html="changelog.3c73db8b1385"><strong>The glass.</strong> Drop an audio or MIDI file from Explorer or Finder anywhere on the window (the glass lights up as it arrives), or press <code>Enter</code> on the empty glass to pick one. It is read on a thread of its own and printed face-up before it lands — the real notes or the real waveform, with the file's own facts. Network paths, oversized, over-long, silent, damaged, SMPTE-timed and format-2 MIDI files are each refused with their own sentence. Two files at once: the first goes on, and the machine says one clip at a time. A new clip dropped on a finished copy is laid on the glass the same way, and the tray clears (the copy stays in the Copies folder). A file the glass refuses leaves the clip that was on it where it is.</li>
-      <li data-i18n-html="changelog.4267b3fd96ac"><strong>MIDI → audio.</strong> The copy renders the file's notes through a default toner — MIDI Master's own preset voices for the pitched parts and a drum machine, one voice per GM lane, for the drums — honouring pitch bend and the sustain pedal (each channel's on that channel's notes only), with a 2.5 s tail, at the file's tempo (else the host's — the standalone has none — else the one in the file name, else 120 — and the page names which), kept under −0.3 dBFS, and written as a 24-bit WAV at the host's sample rate (44.1 kHz in the standalone) that a DAW places on the beat grid. A copy is as long as a page can be printed from — five minutes, or 2:30 above 48 kHz — and a longer one is refused before it is rendered, never cut short. Audio → MIDI arrives at <code>v0.3.0</code>; until then START on an audio clip says so, honestly.</li>
-      <li data-i18n-html="changelog.d9714ba71fa5"><strong>The Copies folder</strong> (<code>Documents/Freally Flipcopy/Copies</code>): one numbered folder per copy, taken atomically so two DAWs never share a number; pages named the way a DAW shows them (<code>Title - Part - 120 BPM, Key.wav</code>); every page written atomically, read back and verified — and <strong>never moved, overwritten or deleted</strong>, because your DAW refers to it by its path.</li>
-      <li data-i18n-html="changelog.48b3f94d470b"><strong>Prints, from the files themselves.</strong> Every page — the original on the glass and the copy in the tray — is laser-printed like the story videos' prints: title, source line, bar ruler, the piano roll with its velocity lane or the waveform with its new <strong>spectrum strip</strong>, and the data block, all computed by the plugin from the bytes on disk. A bar of an odd meter keeps its half beat (7/8 prints three and a half beats a bar). A copy's page says what its render left out — controllers it did not play, drum notes the kit has no voice for — never dropping them quietly. A test reads the structure of the app's pages and of the videos' own prints and holds them to each other.</li>
-      <li data-i18n-html="changelog.fa6958b17901"><strong>Drag the copy into your DAW.</strong> The ejected page wears a lime frame round its clip with <em>Drag to DAW</em> beneath it — the frame is the handle. Press inside it and move 4 px, and the copy's own file is dragged (with a mini print on the cursor) into FL Studio, Ableton, Reaper or any DAW that takes files. Nothing drags until the page is fully out; where no drag can be made here, the frame turns grey and dashed and offers Save As instead. <code>Enter</code> on the page opens Save As or shows the file in its folder.</li>
-      <li data-i18n-html="changelog.4da7005c5000"><strong>The machine's sounds</strong>, synthesised from scratch for this copier (place, lid, beep, scan start, one whir per lamp sweep, eject) and mixed by the plugin into its own output — never an HTML <code>&lt;audio&gt;</code> — at −18 dB through the Monitor level, quiet while your DAW plays (the standalone has no DAW transport to be quiet for), silent in an offline bounce, and never in place of your track's audio. Settings has them on/off, their level, and the &quot;quiet while playing&quot; choice.</li>
-      <li data-i18n-html="changelog.f8fc9e0d2e58"><strong>The touch screen</strong> shows what the machine is doing, the clip it holds, and every refusal in the producer's language.</li>
-      <li data-i18n-html="changelog.1a5ee7d7aabc"><strong>Gates</strong> for all of it, each watched failing before it was trusted: the ground-match trio (the render's colours equal the tokens; ΔE2000 around the machine's own alpha silhouette in every phase at DPR 1 and 2; nothing between the machine and the ground paints), the START gate (static, plugin and Playwright), print parity, the drag frame's pixels, and the new app-leg specs in the real standalone.</li>
-      </ul>
-      <h3 id="0-2-0-2026-09-30-the-copier-and-the-first-copy-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
-      <ul>
-      <li data-i18n-html="changelog.66b1e687636a"><strong>Shared code</strong>: <code>freally-extract</code> (the decode door and the audio analysis), <code>freally-encode</code> (WAV, resampling, the DAW-grid chunks) and <code>freally-drag</code> (the native drag source) are consumed from MIDI Master at <code>shared-v5</code>, with <code>freally_library::audition::NoteRenderer</code>, <code>read_facts</code>' controller events, and the web view adapter's file-drop hook, its re-placing of the web view when the window moves and its blank caption added upstream there.</li>
-      <li data-i18n-html="changelog.e7908191194e"><strong>The icon is the owner's own</strong> — the lime <em>F</em> over a waveform and a piano roll — on the executable, the plugin bundles, the Linux and macOS icons and the docs site, in place of the placeholder.</li>
-      <li data-i18n-html="changelog.719f74499130"><strong>The window.</strong> The standalone's title bar wears the icon, is dark and the colour of the room, and says nothing: no title in the title bar of the standalone or of a plugin window in a DAW whose caption names Flipcopy, since the turning name across the top of the window already says it. That turning name is twice the size, to be read at a glance, and centred over the copier's side of the window; the file browser runs from the top of the window to the preview dock beside it.</li>
-      <li data-i18n-html="changelog.120afa46c010">The bridge takes requests up to 2 MiB (a drag image); <code>host_info</code> says whether a page can be dragged here.</li>
-      <li data-i18n-html="changelog.df29ffbf7480">Before the licence agreement is accepted, the page can read the interface language and nothing else, through a command of its own (<code>locale_get</code>); <code>prefs_get</code> answers only once it is accepted.</li>
-      </ul>
-      <h3 id="0-2-0-2026-09-30-the-copier-and-the-first-copy-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
-      <ul>
-      <li data-i18n-html="changelog.bf4a28a43b62"><strong>Moving the window on a scaled display.</strong> With Windows set to 150 %, dragging the standalone window by its title bar drew its contents a third of the way behind the window, towards the screen's top-left corner, hiding the right and bottom edges until the window was moved back to that corner. The contents now stay exactly under the window wherever it is moved.</li>
-      <li data-i18n-html="changelog.f246f03536b6"><strong>The standalone at your display's own scale.</strong> On a scaled display (150 %) the standalone ran as an old-style, unscaled program: Windows stretched its window while the page inside it drew at true pixels — the root of the drag and drop-down misplacements listed here. It now declares itself per-monitor DPI aware before it opens a window, as Freally MIDI Master's and Freally Unloop's standalones do, so the page draws crisply at the display's scale and the window opens at its intended size.</li>
-      <li data-i18n-html="changelog.4d43aa80977a"><strong>The language list opens under its field.</strong> On a scaled display the system's own drop-down list opened down and to the right of the Settings field, further off the further the field sat from the window's corner; the list is now drawn by Flipcopy itself, straight under the field, in the window's own dark style, with each language written in its own script.</li>
-      </ul>
-      <h2 id="0-1-0-2026-09-26-foundation-ci-spine" data-i18n-html="changelog.a348e37f07eb">[0.1.0] — 2026-09-26 — Foundation &amp; CI spine</h2>
-      <p data-i18n-html="changelog.8847996db9e9">The empty product every later rung builds on: it loads, passes audio through untouched, asks for the licence agreement, opens its dark window, and every quality gate runs.</p>
-      <h3 id="0-1-0-2026-09-26-foundation-ci-spine-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
-      <ul>
-      <li data-i18n-html="changelog.cc29ebe17a90"><strong>The plugin, in every format from one binary.</strong> A nih-plug CLAP plugin with VST3 and AUv2 entry points projected by <code>clap-wrapper</code> (licence-clean: no GPL VST3 bindings), plus the <strong>standalone application</strong> — a native desktop app with its own window and audio device, never a web app. Stereo in and out, a note input for the later &quot;Scan from track&quot;, zero latency, and the track's audio passed through <strong>bit for bit</strong> (a null test proves it). A host <strong>Bypass</strong> switch and a <strong>Monitor</strong> level for the sound Flipcopy itself will add (the machine's sounds and the preview, from <code>v0.2.0</code>) — it never touches the track. A versioned saved state that is bounded, migrated and refused as a whole rather than half-loaded, so a damaged project never crashes the host.</li>
-      <li data-i18n-html="changelog.59616adfaedb"><strong>The licence agreement</strong> (<code>EULA.md</code>, structured like Freally Oscillate's) and its gate: Flipcopy asks you to accept it on first open and stays inert until you do — it reads nothing, copies nothing and adds nothing to your track. The agreement is compiled into the plugin and served from it, Agree waits until the text has been read to the end, and your answer is shared by every open instance and the standalone. A decline that could not be saved says so.</li>
-      <li data-i18n-html="changelog.ed5631790156"><strong>The window</strong>, opening at 1400 × 875 (Freally Unloop's size) and scaling as one to any size — everything keeps its proportions, with no band around it — under a title bar where <em>Freally Flipcopy</em> and its version turn on the Y axis in 3D, the same way Freally Oscillate's and Freally MIDI Master's do (and stand still for reduced motion): the dark shell with the browser rail and the preview dock on the inline-start side, a draggable splitter (260–420 px, arrow keys too), and the stage — which has no background of its own, so the copier will stand in the room with no seam around it. One theme, dark, and nothing that could make a second one.</li>
-      <li data-i18n-html="changelog.ccf91016802f"><strong>Eighteen languages</strong> for everything in the window, with the choice saved per computer and shared by every instance; right-to-left layouts for Arabic.</li>
-      <li data-i18n-html="changelog.92d766745704"><strong>Google's Noto fonts</strong>, vendored into the bundle under the SIL Open Font License 1.1, with the licence shipped beside them.</li>
-      <li data-i18n-html="changelog.b502e66ba7a3"><strong>The docs site</strong>, built like Freally Oscillate's and dark-only, in the same eighteen languages (each loaded only when a reader picks it): the home page with the version ladder (generated from <code>docs/ladder.json</code> and held to the private plan by a gate), the two Blender copier stories in &quot;See it copy&quot;, the documentation, this changelog, and a download page that says plainly there is nothing to download before <code>v1.0.0</code>. The stories play with their sound, only when you press the angled START on the copier's green key (or play), and come to rest on their first frame when they end or are stopped; the audio → MIDI story prints a page per layer — MIDI Melody, MIDI Chords, MIDI Bassline and MIDI Countermelody — one after another onto a stack in the tray, each framed in lime with <em>Drag to DAW</em> beneath it.</li>
-      <li data-i18n-html="changelog.96a59e69b7f8"><strong>Text stays inside its containers</strong> in all 18 languages, at the default window and the smallest one (a Playwright check over every label).</li>
-      <li data-i18n-html="changelog.495bcdf8956e"><strong>The gates</strong>, each watched failing before it was trusted: formatting, clippy, every test, type checks, lint, the locale gate (18 catalogs, identical keys and placeholders, actually translated), the logical-CSS lint, design tokens and contrast, dark-only, the denylist (no AI, no network, no telemetry), the licence audit, the shared-crate gate (consume, never fork), product names (never a copier maker's trademark), bindings drift, the ladder, no downloads before 1.0, the asset budget, <code>clap-validator</code> and <code>pluginval</code> at strictness 10, local CI on Windows and in Docker for Linux, and Playwright on two legs — the browser and the real standalone window.</li>
-      </ul>
-      <h3 id="0-1-0-2026-09-26-foundation-ci-spine-security" data-i18n-html="changelog.8f6fb4eb7f42">Security</h3>
-      <ul>
-      <li data-i18n-html="changelog.09dd8d0ea4e1">The editor loads only the page compiled into the binary, under a strict Content Security Policy; its bridge answers only the page's own JSON <code>POST</code>, refuses anything over 64 KiB and any path with <code>..</code>, and before the agreement is accepted answers only an allowlist of commands. Release builds open no DevTools and no remote-debugging port.</li>
-      <li data-i18n-html="changelog.e06fbd4d3359">No network code in the plugin or the standalone, checked by the compiler (<code>clippy.toml</code>) and the dependency graph (<code>scripts/check-denylist.mjs</code>).</li>
-      <li data-i18n-html="changelog.70e17daefb45">The files Flipcopy keeps in your app-data folder (the agreement answer and the preferences) are read with a size bound and written atomically, so a damaged or hand-edited file loads as the defaults and a crash never leaves half a file.</li>
-      </ul>
-      <!-- CHANGELOG:END -->
+<section class="page-head">
+<div class="page-head__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<img class="app-icon" src="flipcopy-icon.png" alt="" width="72" height="72" />
+<span class="label" data-i18n="kit.nav.changelog">Changelog</span>
+<h1 data-i18n-html="kit.head.changelog"><span class="hl-muted">Every change,</span> <span class="hl-bright">version by version.</span></h1>
+<p class="lead" data-i18n="kit.changelog.lede">Newest first: everything that changed in Freally Flipcopy, in every language this site speaks.</p>
+</div>
+</section>
+<section class="section section--tight">
+<div class="wrap changelog">
+<nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
+<span class="label" data-i18n="kit.changelog.versions">Versions</span>
+<ol><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
+</nav>
+<div class="releases"><article class="release release--latest" id="0-4-0-2026-10-05-the-file-browser-and-the-preview-player">
+<h2 class="release__head" data-i18n-html="changelog.b0befc5e6040"><span class="release__meta"><span class="release__ver">v0.4.0</span><time class="release__date" datetime="2026-10-05">2026-10-05</time></span><span class="release__title">The file browser and the preview player</span></h2>
+<p data-i18n-html="changelog.e884ffe2f90e">Find a sample or a MIDI clip, hear it, see it, and put it on the glass — the browser and the preview player from Freally Oscillate, beside the copier. Everything essential is here: the MVP is complete.</p>
+<h3 id="0-4-0-2026-10-05-the-file-browser-and-the-preview-player-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.130b73a201db"><strong>The browser.</strong> It opens on its Categories — <strong>Copies</strong>, every page and mix you have made, and <strong>Recent</strong>, the originals you last put on the glass, each counted — then the folders you add with <strong>+ Add Folder</strong> (up to 128). A folder on a drive that is unplugged keeps its place and says so; right-click a folder, or select it and press <code>Delete</code>, to stop browsing it, and nothing on disk is touched. <strong>Back</strong> and <strong>Forward</strong> move through where you have been, exactly as in Freally Oscillate.</li>
+<li data-i18n-html="changelog.3c76294f691c"><strong>A folder as a tree.</strong> Expand and collapse it, type to filter it, narrow it to a tag or to your stars, and choose <strong>Show all files</strong> to see the sidecar files it hides (<code>.asd</code>, <code>.reapeaks</code> and the like). <code>↑</code>/<code>↓</code> walk the rows and each one you land on plays once; <code>→</code> opens a folder, <code>←</code> closes it, and <code>Enter</code> puts the file on the glass.</li>
+<li data-i18n-html="changelog.9e19fd75f5c5"><strong>Indexing you can watch.</strong> A new folder is counted on a thread of its own with a bar that shows how far it has got — at most 12 folders deep and 50,000 files, never following a shortcut out of the folder.</li>
+<li data-i18n-html="changelog.7e5083732503"><strong>The preview player</strong>, docked under the browser. Audio shows its real waveform; a MIDI file shows its notes and plays through <strong>Preview Piano</strong>, the very sound and render a copy uses, so the preview is the copy. <code>Space</code> plays and pauses; click or drag the strip to move the playhead, which counts to the music's last note, never the bar line; loop, play-when-selected and a level. A WAV of any length streams; another format plays if it is five minutes or shorter. It plays through the plugin's own output and never into a bounce.</li>
+<li data-i18n-html="changelog.ca065d9e7b42"><strong>Hear the copy before it goes.</strong> Click the original on the glass or any page on the tray to preview it; when a copy is done, <strong>Copy</strong> plays every page together and <strong>Original</strong> plays the glass, from the same place in the music. Optional: the pages drag the moment the last one lands, played or not.</li>
+<li data-i18n-html="changelog.d17537ff40ec"><strong>Drag to the glass.</strong> A row, or the preview strip — framed in the same lime as a page — dragged onto the copier puts that file on the glass, with a mini-print of it following the pointer. Nothing starts until START.</li>
+<li data-i18n-html="changelog.cda58c5f73eb"><strong>Hide the browser</strong> with <code>Ctrl+B</code> (<code>Cmd+B</code> on a Mac) or the button at its edge: the stage takes the whole window and the turning title re-centres. Flipcopy remembers it.</li>
+<li data-i18n-html="changelog.5d236e4be21d"><strong>Report a problem, from the app.</strong> When Flipcopy itself fails, the screen offers <strong>Report</strong>, which opens the report page in your web browser showing exactly what it holds; nothing is sent unless you press Send there.</li>
+</ul>
+<h3 id="0-4-0-2026-10-05-the-file-browser-and-the-preview-player-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.49de87a64bae"><strong>The docs site</strong> is built from the shared Freally site kit, the same on every Freally site, with its manual updated for this version.</li>
+</ul>
+<h3 id="0-4-0-2026-10-05-the-file-browser-and-the-preview-player-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.b0f81c543dda"><strong>A page under the pointer is found at any window size.</strong> A click or a drag on a page landed in the wrong place once the window was scaled.</li>
+</ul>
+</article>
+<article class="release" id="0-3-0-2026-10-01-audio-midi-the-magic-moment">
+<h2 class="release__head" data-i18n-html="changelog.2096d3c4bbd8"><span class="release__meta"><span class="release__ver">v0.3.0</span><time class="release__date" datetime="2026-10-01">2026-10-01</time></span><span class="release__title">Audio → MIDI: the magic moment</span></h2>
+<p data-i18n-html="changelog.df6f06284fdc">Put an audio loop on the glass, press START, and its MIDI comes out — one page for every layer the copier hears, back to back from one scan, each its own file, framed in lime and dragged into your DAW on its own or all together. A MIDI file with several parts comes out the same way: one audio page per part, and the whole file as one mix.</p>
+<h3 id="0-3-0-2026-10-01-audio-midi-the-magic-moment-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.24a7fe5481b4"><strong>Audio → MIDI.</strong> An audio loop is read into its layers — drums, bass, melody, a <strong>countermelody</strong> where the loop has a second, independent line, and chords — with MIDI Master's classic-DSP extractor (no AI). Each layer found is its own page and its own <code>.mid</code>, named as a DAW shows it (<em>Loop - Bassline - 120 BPM - C# Minor</em>); a layer that isn't there gets no page, and a loop with no notes at all is refused rather than copied blank. The key is printed only when it was read clearly.</li>
+<li data-i18n-html="changelog.0c3d252fc872"><strong>A stack of pages.</strong> The pages eject one after another from the single scan, fanned on the tray, each titled by its form and its part (<em>MIDI MELODY</em>, <em>AUDIO BASSLINE</em>) with <em>PAGE n/N</em>. Click a page to bring it to the top. <strong>Nothing drags until the last page has landed.</strong></li>
+<li data-i18n-html="changelog.55fa665ebb50"><strong>Two drags from the finished stack.</strong> The top page carries two lime tabs: <strong>All parts</strong> drags every page as separate files, so the DAW lays them out as one track per layer; <strong>Complete mix</strong> drags one file of everything — a multi-track <code>.mid</code> of every part, or the whole render as a <code>.wav</code> — written beside the pages and never printed. Hover the tab for the mix's facts; without a pointer, <em>Save the complete mix as…</em> saves it.</li>
+<li data-i18n-html="changelog.7ab067eeb165"><strong>MIDI → audio, part by part.</strong> A MIDI file with several parts prints one audio page per part (<em>AUDIO MELODY</em>, <em>AUDIO BASSLINE</em>), each rendered on its own and drawn from its own WAV, plus the Complete mix — the parts sum to the mix, under one headroom gain.</li>
+<li data-i18n-html="changelog.71cfe75f90c6"><strong>Loops of up to 16 bars.</strong> The glass refuses a longer clip with its length in bars, never cutting it short; a one-, two- or four-bar loop is still copied. An audio loop's bars are counted at the tempo the copier reads it at.</li>
+<li data-i18n-html="changelog.6aed786b024a"><strong>Honest pages.</strong> A Chords page says it is a progression, not the played voicing; when a sung line was heard and left alone, the first page says so, and a loop that is only a sung line is refused saying that, not &quot;nothing to copy&quot;. Every tempo printed names where it came from — read from the loop, or, when the loop's hits fit no grid, the host's, the file name's or the default.</li>
+<li data-i18n-html="changelog.cb05cd0fc0f0"><strong><code>flipc</code></strong>, the command line, running the plugin's own glass and copier: <code>flipc copy &lt;file&gt; --out &lt;dir&gt;</code>, <code>flipc facts &lt;file&gt;</code> (the data block exactly as the paper prints it), <code>flipc score</code> (the corpus scorer) and <code>flipc bench</code> (timings).</li>
+<li data-i18n-html="changelog.d2365b73e8bc"><strong>The corpus gate.</strong> The audioTest corpus is scored on every local CI run where it is present — and says SKIPPED where it isn't — against floors that only rise.</li>
+</ul>
+<h3 id="0-3-0-2026-10-01-audio-midi-the-magic-moment-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.d2a673b21c8f"><strong>The host's tempo is followed block by block</strong>, and a MIDI file with no tempo of its own is copied at the host's tempo at the moment you press START.</li>
+<li data-i18n-html="changelog.ee270218636c"><strong>The session tempo only breaks the octave tie.</strong> A 120 BPM loop dropped in a 90 BPM session is read at 120 (four bars), not at 90 (three) — fixed in MIDI Master's shared extractor, for every Freally product that reads loops.</li>
+<li data-i18n-html="changelog.ab8ac52d964e"><strong>Free today, not promised forever.</strong> Freally Flipcopy is free today, but it might not be free forever: future versions may be sold. Every page of the docs site now says so.</li>
+<li data-i18n-html="changelog.7fb464e21cf8"><strong>The repository moved</strong> to the maintainer's own GitHub account, private and All Rights Reserved, with the shared Freally crates coming from Freally MIDI Master and Freally Oscillate beside it; the plugin's web address is the docs site's new one.</li>
+<li data-i18n-html="changelog.c584da8d5dfd"><strong>Continuous integration runs on the maintainer's machine</strong> before every push — every gate on Windows, and the Linux gates in Docker Desktop — and none on GitHub Actions. Every commit carries <code>[skip ci]</code>. (For a few hours on 2026-09-30, the repository was public and CI ran on GitHub for every push.)</li>
+</ul>
+<h3 id="0-3-0-2026-10-01-audio-midi-the-magic-moment-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.79a07e8925af"><strong>The editor keeps its own browser profile.</strong> Flipcopy's WebView2 data (<code>%APPDATA%\Freally Flipcopy\webview</code>) had been filed under Freally MIDI Master's folder, and two products sharing one WebView2 profile can leave each other's editor blank when both run in the same DAW. It is Flipcopy's own now.</li>
+<li data-i18n-html="changelog.72de476110e3"><strong>A copy's Complete mix can only ever be its own file</strong>: a <code>record.json</code> edited behind the copier can't point a drag, a Save As or a Reveal anywhere else.</li>
+<li data-i18n-html="changelog.427549a6dab4"><strong>A copy is written whole or not at all.</strong> Every page and the mix are on disk before any of them takes its name, so a failure part-way never leaves pages in a numbered folder that no copy owns.</li>
+<li data-i18n-html="changelog.2604a6288e96"><strong>No page clips.</strong> The one headroom gain is set by every file a copy writes — a part can peak above the mix where the others cancel it.</li>
+<li data-i18n-html="changelog.c6cb2c38dd63"><strong>A 16-bar loop exported a tick long is 16 bars</strong>, not 17 — a last note released a thirty-second past the bar line is not a bar of its own.</li>
+<li data-i18n-html="changelog.2ba628500475"><strong>Controllers reach a page</strong> even on a channel that plays no notes.</li>
+</ul>
+</article>
+<article class="release" id="0-2-0-2026-09-30-the-copier-and-the-first-copy">
+<h2 class="release__head" data-i18n-html="changelog.833039ba4e85"><span class="release__meta"><span class="release__ver">v0.2.0</span><time class="release__date" datetime="2026-09-30">2026-09-30</time></span><span class="release__title">The copier and the first copy</span></h2>
+<p data-i18n-html="changelog.35409a92a233">The copier stands on the stage, playing the Blender copier story videos' beats in their order: drop a MIDI file on the glass, press the green START, and a real audio copy comes out onto the tray — printed from its own file, framed in lime, and dragged straight into your DAW.</p>
+<h3 id="0-2-0-2026-09-30-the-copier-and-the-first-copy-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.c12f4045ef96"><strong>The copier on the stage.</strong> The machine rendered by the same Blender scene as the two story videos — its base, its lid as sprite frames, the pressed keys, the glass and tray mattes — rendered over the window's own ground (<code>#090c09</code>) on transparent film, so it stands in the room with no seam. The phases are the videos' beats in the videos' order (the sheet flips and lands face-down, the lid swings shut with its bounce, the START beep, the lamp sweeps side to side leaking cyan out of the front seam while the whole room dims, the copy slides out onto the tray), at the in-app cut's shorter durations; a test fails if the app ever plays a beat the story doesn't have, skips one, or plays them out of order. It fills whatever room the window gives it and never mirrors in a right-to-left language.</li>
+<li data-i18n-html="changelog.81d392181aa1"><strong>The green START is the only trigger.</strong> Dropping a clip only puts it on the glass. START (or <code>Ctrl/Cmd+Enter</code>, which presses the same key) starts the copy; STOP (or <code>Esc</code>) cancels it mid-scan with nothing left behind; HOME clears the glass. The key carries an angled <em>START</em>, turned to the touch panel, and its LED is lit whenever a copy can start. A plugin test sends every command and fails if any but <code>copier_start</code> starts a job, and a build gate fails if the page ever sends it from anywhere but the START key.</li>
+<li data-i18n-html="changelog.3c73db8b1385"><strong>The glass.</strong> Drop an audio or MIDI file from Explorer or Finder anywhere on the window (the glass lights up as it arrives), or press <code>Enter</code> on the empty glass to pick one. It is read on a thread of its own and printed face-up before it lands — the real notes or the real waveform, with the file's own facts. Network paths, oversized, over-long, silent, damaged, SMPTE-timed and format-2 MIDI files are each refused with their own sentence. Two files at once: the first goes on, and the machine says one clip at a time. A new clip dropped on a finished copy is laid on the glass the same way, and the tray clears (the copy stays in the Copies folder). A file the glass refuses leaves the clip that was on it where it is.</li>
+<li data-i18n-html="changelog.4267b3fd96ac"><strong>MIDI → audio.</strong> The copy renders the file's notes through a default toner — MIDI Master's own preset voices for the pitched parts and a drum machine, one voice per GM lane, for the drums — honouring pitch bend and the sustain pedal (each channel's on that channel's notes only), with a 2.5 s tail, at the file's tempo (else the host's — the standalone has none — else the one in the file name, else 120 — and the page names which), kept under −0.3 dBFS, and written as a 24-bit WAV at the host's sample rate (44.1 kHz in the standalone) that a DAW places on the beat grid. A copy is as long as a page can be printed from — five minutes, or 2:30 above 48 kHz — and a longer one is refused before it is rendered, never cut short. Audio → MIDI arrives at <code>v0.3.0</code>; until then START on an audio clip says so, honestly.</li>
+<li data-i18n-html="changelog.d9714ba71fa5"><strong>The Copies folder</strong> (<code>Documents/Freally Flipcopy/Copies</code>): one numbered folder per copy, taken atomically so two DAWs never share a number; pages named the way a DAW shows them (<code>Title - Part - 120 BPM, Key.wav</code>); every page written atomically, read back and verified — and <strong>never moved, overwritten or deleted</strong>, because your DAW refers to it by its path.</li>
+<li data-i18n-html="changelog.48b3f94d470b"><strong>Prints, from the files themselves.</strong> Every page — the original on the glass and the copy in the tray — is laser-printed like the story videos' prints: title, source line, bar ruler, the piano roll with its velocity lane or the waveform with its new <strong>spectrum strip</strong>, and the data block, all computed by the plugin from the bytes on disk. A bar of an odd meter keeps its half beat (7/8 prints three and a half beats a bar). A copy's page says what its render left out — controllers it did not play, drum notes the kit has no voice for — never dropping them quietly. A test reads the structure of the app's pages and of the videos' own prints and holds them to each other.</li>
+<li data-i18n-html="changelog.fa6958b17901"><strong>Drag the copy into your DAW.</strong> The ejected page wears a lime frame round its clip with <em>Drag to DAW</em> beneath it — the frame is the handle. Press inside it and move 4 px, and the copy's own file is dragged (with a mini print on the cursor) into FL Studio, Ableton, Reaper or any DAW that takes files. Nothing drags until the page is fully out; where no drag can be made here, the frame turns grey and dashed and offers Save As instead. <code>Enter</code> on the page opens Save As or shows the file in its folder.</li>
+<li data-i18n-html="changelog.4da7005c5000"><strong>The machine's sounds</strong>, synthesised from scratch for this copier (place, lid, beep, scan start, one whir per lamp sweep, eject) and mixed by the plugin into its own output — never an HTML <code>&lt;audio&gt;</code> — at −18 dB through the Monitor level, quiet while your DAW plays (the standalone has no DAW transport to be quiet for), silent in an offline bounce, and never in place of your track's audio. Settings has them on/off, their level, and the &quot;quiet while playing&quot; choice.</li>
+<li data-i18n-html="changelog.f8fc9e0d2e58"><strong>The touch screen</strong> shows what the machine is doing, the clip it holds, and every refusal in the producer's language.</li>
+<li data-i18n-html="changelog.1a5ee7d7aabc"><strong>Gates</strong> for all of it, each watched failing before it was trusted: the ground-match trio (the render's colours equal the tokens; ΔE2000 around the machine's own alpha silhouette in every phase at DPR 1 and 2; nothing between the machine and the ground paints), the START gate (static, plugin and Playwright), print parity, the drag frame's pixels, and the new app-leg specs in the real standalone.</li>
+</ul>
+<h3 id="0-2-0-2026-09-30-the-copier-and-the-first-copy-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.66b1e687636a"><strong>Shared code</strong>: <code>freally-extract</code> (the decode door and the audio analysis), <code>freally-encode</code> (WAV, resampling, the DAW-grid chunks) and <code>freally-drag</code> (the native drag source) are consumed from MIDI Master at <code>shared-v5</code>, with <code>freally_library::audition::NoteRenderer</code>, <code>read_facts</code>' controller events, and the web view adapter's file-drop hook, its re-placing of the web view when the window moves and its blank caption added upstream there.</li>
+<li data-i18n-html="changelog.e7908191194e"><strong>The icon is the owner's own</strong> — the lime <em>F</em> over a waveform and a piano roll — on the executable, the plugin bundles, the Linux and macOS icons and the docs site, in place of the placeholder.</li>
+<li data-i18n-html="changelog.719f74499130"><strong>The window.</strong> The standalone's title bar wears the icon, is dark and the colour of the room, and says nothing: no title in the title bar of the standalone or of a plugin window in a DAW whose caption names Flipcopy, since the turning name across the top of the window already says it. That turning name is twice the size, to be read at a glance, and centred over the copier's side of the window; the file browser runs from the top of the window to the preview dock beside it.</li>
+<li data-i18n-html="changelog.120afa46c010">The bridge takes requests up to 2 MiB (a drag image); <code>host_info</code> says whether a page can be dragged here.</li>
+<li data-i18n-html="changelog.df29ffbf7480">Before the licence agreement is accepted, the page can read the interface language and nothing else, through a command of its own (<code>locale_get</code>); <code>prefs_get</code> answers only once it is accepted.</li>
+</ul>
+<h3 id="0-2-0-2026-09-30-the-copier-and-the-first-copy-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.bf4a28a43b62"><strong>Moving the window on a scaled display.</strong> With Windows set to 150 %, dragging the standalone window by its title bar drew its contents a third of the way behind the window, towards the screen's top-left corner, hiding the right and bottom edges until the window was moved back to that corner. The contents now stay exactly under the window wherever it is moved.</li>
+<li data-i18n-html="changelog.f246f03536b6"><strong>The standalone at your display's own scale.</strong> On a scaled display (150 %) the standalone ran as an old-style, unscaled program: Windows stretched its window while the page inside it drew at true pixels — the root of the drag and drop-down misplacements listed here. It now declares itself per-monitor DPI aware before it opens a window, as Freally MIDI Master's and Freally Unloop's standalones do, so the page draws crisply at the display's scale and the window opens at its intended size.</li>
+<li data-i18n-html="changelog.4d43aa80977a"><strong>The language list opens under its field.</strong> On a scaled display the system's own drop-down list opened down and to the right of the Settings field, further off the further the field sat from the window's corner; the list is now drawn by Flipcopy itself, straight under the field, in the window's own dark style, with each language written in its own script.</li>
+</ul>
+</article>
+<article class="release" id="0-1-0-2026-09-26-foundation-ci-spine">
+<h2 class="release__head" data-i18n-html="changelog.a348e37f07eb"><span class="release__meta"><span class="release__ver">v0.1.0</span><time class="release__date" datetime="2026-09-26">2026-09-26</time></span><span class="release__title">Foundation &amp; CI spine</span></h2>
+<p data-i18n-html="changelog.8847996db9e9">The empty product every later rung builds on: it loads, passes audio through untouched, asks for the licence agreement, opens its dark window, and every quality gate runs.</p>
+<h3 id="0-1-0-2026-09-26-foundation-ci-spine-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.cc29ebe17a90"><strong>The plugin, in every format from one binary.</strong> A nih-plug CLAP plugin with VST3 and AUv2 entry points projected by <code>clap-wrapper</code> (licence-clean: no GPL VST3 bindings), plus the <strong>standalone application</strong> — a native desktop app with its own window and audio device, never a web app. Stereo in and out, a note input for the later &quot;Scan from track&quot;, zero latency, and the track's audio passed through <strong>bit for bit</strong> (a null test proves it). A host <strong>Bypass</strong> switch and a <strong>Monitor</strong> level for the sound Flipcopy itself will add (the machine's sounds and the preview, from <code>v0.2.0</code>) — it never touches the track. A versioned saved state that is bounded, migrated and refused as a whole rather than half-loaded, so a damaged project never crashes the host.</li>
+<li data-i18n-html="changelog.59616adfaedb"><strong>The licence agreement</strong> (<code>EULA.md</code>, structured like Freally Oscillate's) and its gate: Flipcopy asks you to accept it on first open and stays inert until you do — it reads nothing, copies nothing and adds nothing to your track. The agreement is compiled into the plugin and served from it, Agree waits until the text has been read to the end, and your answer is shared by every open instance and the standalone. A decline that could not be saved says so.</li>
+<li data-i18n-html="changelog.ed5631790156"><strong>The window</strong>, opening at 1400 × 875 (Freally Unloop's size) and scaling as one to any size — everything keeps its proportions, with no band around it — under a title bar where <em>Freally Flipcopy</em> and its version turn on the Y axis in 3D, the same way Freally Oscillate's and Freally MIDI Master's do (and stand still for reduced motion): the dark shell with the browser rail and the preview dock on the inline-start side, a draggable splitter (260–420 px, arrow keys too), and the stage — which has no background of its own, so the copier will stand in the room with no seam around it. One theme, dark, and nothing that could make a second one.</li>
+<li data-i18n-html="changelog.ccf91016802f"><strong>Eighteen languages</strong> for everything in the window, with the choice saved per computer and shared by every instance; right-to-left layouts for Arabic.</li>
+<li data-i18n-html="changelog.92d766745704"><strong>Google's Noto fonts</strong>, vendored into the bundle under the SIL Open Font License 1.1, with the licence shipped beside them.</li>
+<li data-i18n-html="changelog.b502e66ba7a3"><strong>The docs site</strong>, built like Freally Oscillate's and dark-only, in the same eighteen languages (each loaded only when a reader picks it): the home page with the version ladder (generated from <code>docs/ladder.json</code> and held to the private plan by a gate), the two Blender copier stories in &quot;See it copy&quot;, the documentation, this changelog, and a download page that says plainly there is nothing to download before <code>v1.0.0</code>. The stories play with their sound, only when you press the angled START on the copier's green key (or play), and come to rest on their first frame when they end or are stopped; the audio → MIDI story prints a page per layer — MIDI Melody, MIDI Chords, MIDI Bassline and MIDI Countermelody — one after another onto a stack in the tray, each framed in lime with <em>Drag to DAW</em> beneath it.</li>
+<li data-i18n-html="changelog.96a59e69b7f8"><strong>Text stays inside its containers</strong> in all 18 languages, at the default window and the smallest one (a Playwright check over every label).</li>
+<li data-i18n-html="changelog.495bcdf8956e"><strong>The gates</strong>, each watched failing before it was trusted: formatting, clippy, every test, type checks, lint, the locale gate (18 catalogs, identical keys and placeholders, actually translated), the logical-CSS lint, design tokens and contrast, dark-only, the denylist (no AI, no network, no telemetry), the licence audit, the shared-crate gate (consume, never fork), product names (never a copier maker's trademark), bindings drift, the ladder, no downloads before 1.0, the asset budget, <code>clap-validator</code> and <code>pluginval</code> at strictness 10, local CI on Windows and in Docker for Linux, and Playwright on two legs — the browser and the real standalone window.</li>
+</ul>
+<h3 id="0-1-0-2026-09-26-foundation-ci-spine-security" data-i18n-html="changelog.8f6fb4eb7f42">Security</h3>
+<ul>
+<li data-i18n-html="changelog.09dd8d0ea4e1">The editor loads only the page compiled into the binary, under a strict Content Security Policy; its bridge answers only the page's own JSON <code>POST</code>, refuses anything over 64 KiB and any path with <code>..</code>, and before the agreement is accepted answers only an allowlist of commands. Release builds open no DevTools and no remote-debugging port.</li>
+<li data-i18n-html="changelog.e06fbd4d3359">No network code in the plugin or the standalone, checked by the compiler (<code>clippy.toml</code>) and the dependency graph (<code>scripts/check-denylist.mjs</code>).</li>
+<li data-i18n-html="changelog.70e17daefb45">The files Flipcopy keeps in your app-data folder (the agreement answer and the preferences) are read with a size bound and written atomically, so a damaged or hand-edited file loads as the defaults and a crash never leaves half a file.</li>
+</ul>
+</article></div>
+</div>
+</section>
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.yours">
-          The copies you make are yours, as far as the files you copied were yours to use.
-          Flipcopy's author claims no ownership of them.
-        </p>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="flipcopy-icon.png" alt="" width="28" height="28" /><span>Freally Flipcopy</span></a><p data-i18n="site.tagline">Put it on the glass. Press START. Drag the copy.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Flipcopy is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/" aria-current="true">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.4.0</span>
+        </div>
       </div>
     </footer>
-
-    <script src="site.js"></script>
   </body>
 </html>

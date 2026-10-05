@@ -1,5 +1,5 @@
 {
-  "note": "The public version ladder, rendered onto index.html by scripts/build-docs-site.mjs. The rungs after v0.23.0 follow the order the old site published (\"one phase per build\", v0.24.0 to v0.33.0, then v1.0.0); there is no private roadmap in this repository to hold them to. `summary` is written for the site. States: done, planned, goal, later.",
+  "note": "The public version ladder, rendered onto index.html by the site kit (docs/kit/build.mjs). The rungs after v0.23.0 follow the order the old site published (\"one phase per build\", v0.24.0 to v0.33.0, then v1.0.0); there is no private roadmap in this repository to hold them to. `summary` is written for the site. States: done, planned, goal, later.",
   "rungs": [
     {
       "version": "v0.19.84",

@@ -1,650 +1,441 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" dir="ltr" class="no-js" data-page="features" data-product="midi-master" data-name="Freally MIDI Master" data-title-key="kit.nav.features">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title data-i18n="features.b241ccca">Freally MIDI Master — Everything it does, free</title>
-    <meta data-i18n-attrs="content:features.7e47c4b4"
-      name="description"
-      content="2,413 artist and producer styles. 1,648 instruments. Over 96 million distinct takes per part. Audio-to-MIDI, Re-Dream, full song arrangement — and every feature is free today. See the side-by-side against every leading MIDI generator."
-    />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Features — Freally MIDI Master</title>
+    <meta name="description" content="Freally MIDI Master — a CLAP/VST3/AU plugin that generates original artist-style MIDI onto the track you are already working on, in your project's own key and tempo. Free today, offline, and 100% AI-free." />
+    <meta property="og:title" content="Features — Freally MIDI Master" />
+    <meta property="og:description" content="Freally MIDI Master — a CLAP/VST3/AU plugin that generates original artist-style MIDI onto the track you are already working on, in your project's own key and tempo. Free today, offline, and 100% AI-free." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* Page-local only. No CDN, no font, no third-party anything — the site is
-         as offline-honest as the app. */
-      .stat-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-        gap: 14px;
-        margin: 26px 0 8px;
-      }
-      .stat {
-        background: var(--panel);
-        border: 1px solid var(--border);
-        border-radius: 12px;
-        padding: 18px 16px;
-        text-align: center;
-      }
-      .stat .n {
-        display: block;
-        font-size: 2rem;
-        font-weight: 800;
-        line-height: 1.1;
-        color: var(--accent-2);
-        font-variant-numeric: tabular-nums;
-      }
-      .stat .l {
-        display: block;
-        margin-top: 6px;
-        font-size: 0.82rem;
-        color: var(--muted);
-        text-transform: uppercase;
-        letter-spacing: 0.05em;
-      }
-      .stat.free .n {
-        color: var(--success);
-      }
-      .free-banner {
-        background: linear-gradient(135deg, var(--panel-2), var(--panel));
-        border: 1px solid var(--success);
-        border-radius: 14px;
-        padding: 22px 24px;
-        margin: 30px 0;
-      }
-      .free-banner h2 {
-        margin: 0 0 8px;
-        color: var(--success);
-      }
-      .free-banner p {
-        margin: 0;
-        color: #d4dcea;
-      }
-      .cmp-wrap {
-        overflow-x: auto;
-        margin: 18px 0;
-      }
-      table.cmp {
-        min-width: 880px;
-      }
-      table.cmp th {
-        text-align: center;
-        vertical-align: bottom;
-      }
-      table.cmp th:first-child,
-      table.cmp td:first-child {
-        text-align: left;
-        min-width: 260px;
-      }
-      table.cmp td {
-        text-align: center;
-      }
-      table.cmp .us {
-        background: rgba(121, 217, 32, 0.09);
-        color: var(--text);
-        font-weight: 600;
-      }
-      table.cmp th.us {
-        color: var(--accent-2);
-        background: rgba(121, 217, 32, 0.14);
-      }
-      .yes {
-        color: var(--success);
-        font-weight: 700;
-      }
-      .part {
-        color: var(--warning);
-      }
-      .no {
-        color: #6b7a91;
-      }
-      .kicker {
-        color: var(--accent-2);
-        text-transform: uppercase;
-        letter-spacing: 0.08em;
-        font-size: 0.8rem;
-        font-weight: 700;
-        margin: 0 0 6px;
-      }
-    </style>
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="favicon-32.png" alt="" width="28" height="28" />
-          <span>Freally MIDI Master</span>
-        </a>
-        <nav data-i18n-attrs="aria-label:features.5b6825d3" class="nav" aria-label="Site">
-          <a data-i18n="features.70f8bb9a" href="index.html">Home</a>
-          <a data-i18n="features.fc338f87" href="features.html" aria-current="page">Features</a>
-          <a data-i18n="features.9e9cf322" href="documentation.html">Documentation</a>
-          <a data-i18n="features.e55198ac" href="roster.html">Roster</a>
-          <a data-i18n="features.164b3d48" href="changelog.html">Changelog</a>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="midi-master-icon.png" alt="" width="28" height="28" /><span>Freally MIDI Master</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="roster.html" data-i18n="kit.nav.roster">Roster</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
-    <header class="hero">
-      <img data-i18n-attrs="alt:features.6e8486dd"
-        class="logo"
-        src="freally-icon.png"
-        alt="Freally MIDI Master icon"
-        width="96"
-        height="96"
-      />
-      <h1 data-i18n="features.084349cb">Everything it does</h1>
-      <p data-i18n="features.512c7b09" class="tagline">
-        The most complete MIDI generator ever built — and it costs nothing.
-      </p>
-      <p data-i18n="features.d19d4e76" class="sub">
-        2,413 artist and producer styles. 1,648 instruments. Over 96 million distinct takes per
-        part. Turn any audio file into MIDI. Re-Dream any idea into four. Arrange a whole song.
-        <strong>Every feature, for everyone, free today.</strong>
-      </p>
-      <div data-i18n-attrs="aria-label:features.2e5c940a" class="formats" role="list" aria-label="Plugin formats">
-        <span class="format" role="listitem">CLAP</span>
-        <span class="format" role="listitem">VST3</span>
-        <span class="format" role="listitem">AU</span>
-        <span class="format" role="listitem">Standalone</span>
-      </div>
-    </header>
-
-    <main>
-      <figure class="shot">
-        <img data-i18n-attrs="alt:features.0cdb36f4"
-          src="screen-overview.png"
-          alt="Freally MIDI Master with a trap melody generated: the drum pads across the top, the
-            piano roll and its velocity lane, the four Re-Dream clips under it, and the on-screen
-            keyboard along the bottom."
-          width="1600"
-          height="900"
-          loading="lazy"
-        />
-        <figcaption data-i18n="features.1ef3563d">
-          A generated trap melody, its velocity lane, the four Re-Dreams of it, and the keyboard
-          you can play it in from.
-        </figcaption>
-      </figure>
-
-      <section data-i18n-attrs="aria-label:features.58c76110" aria-label="By the numbers">
-        <h2 data-i18n="features.58c76110">By the numbers</h2>
-        <p data-i18n="features.5e30071b" class="summary">
-          Every figure here is counted from the shipping product and its test suite. Nothing is
-          estimated, and nothing is rounded up.
-        </p>
-        <div class="stat-grid">
-          <div class="stat"><span class="n">2,413</span><span class="l">Style models</span></div>
-          <div class="stat"><span class="n">1,507</span><span class="l">Artists</span></div>
-          <div class="stat"><span class="n">833</span><span class="l">Producers</span></div>
-          <div class="stat"><span class="n">1,648</span><span class="l">Instruments</span></div>
-          <div class="stat"><span class="n">96M+</span><span class="l">Takes per part</span></div>
-          <div class="stat"><span class="n">18</span><span class="l">Languages</span></div>
-          <div class="stat"><span class="n">0</span><span class="l">AI models</span></div>
-          <div class="stat free"><span class="n">$0</span><span class="l">Price today</span></div>
-        </div>
-        <p data-i18n="features.7142b88f" class="note">
-          <strong>About that 96 million.</strong> It is measured, not marketing. The test suite
-          renders 200 seeds per model and measures <strong>199 distinct Re-Dreams out of 200
-          draws</strong> from a single take. Neither number runs out at 200 samples, so both are
-          <em>floors</em>: ≥200 generations × ≥199 Re-Dreams ≈ 40,000 takes per model per part, and
-          40,000 × 2,413 models is over 96 million — <em>per part</em>, before the four melodic
-          parts combine. We report a floor and never a total, deliberately: a total would be a
-          ceiling the code cannot prove, and it would turn inspiration that does not run out into a
-          catalogue you can imagine finishing.
-        </p>
-      </section>
-
-      <div class="free-banner">
-        <h2 data-i18n="features.2fb7a96e">It is free today. All of it.</h2>
-        <p data-i18n="features.6b604c8e">
-          Every feature, for everyone. No paid tier, no licence key, no in-app purchase, no
-          subscription, no trial that expires, no "Pro" version holding the good parts hostage.
-          That is written into this version's licence agreement:
-          <em>"The Software is provided free of charge, in full."</em>
-          <strong>And the music you make with it is yours</strong>, with no royalty and no
-          attribution requirement.
-        </p>
-        <p data-i18n="features.c76fd28d" style="margin-top: 12px; font-weight: 700">
-          Freally MIDI Master is free today, but it might not be free forever: future versions may be
-          sold.
-        </p>
-      </div>
-
-      <section data-i18n-attrs="aria-label:features.a5a8c798" class="features-grid" aria-label="Flagship features">
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🎤</span>
-          <h3 data-i18n="features.65a59ac5">Search a name, not a genre</h3>
-          <p data-i18n="features.177ce0e6">
-            2,413 artists, producers and genres in one box — through aliases and past typos. Before
-            you press a thing it tells you what that selection <em>does</em>: its era, its tempo
-            range, the key it leans toward, its moods by name, and which parts it writes and which
-            it does not. An artist who does not write countermelodies says so, instead of answering
-            that tab with silence.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">✨</span>
-          <h3 data-i18n="features.c7e63f3a">Re-Dream — the same idea, differently</h3>
-          <p data-i18n="features.b9301e2e">
-            A reroll gives you a different idea. A <strong>Re-Dream</strong> gives you the same one,
-            differently. Every generation arrives as four — the take you have, plus three dreamed
-            after it — and you hear each one <em>in your track</em>, against your drums and your
-            808. A Re-Dream shares <strong>79%</strong> of its original's onsets where three fresh
-            seeds share 35%. That is a gate in the test suite, not a claim. It works on a file
-            too: pick a <code>.mid</code> in the browser and the rack fills from that instead of
-            from a generation.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🎚️</span>
-          <h3 data-i18n="features.a4d9cbed">Any audio file becomes MIDI</h3>
-          <p data-i18n="features.5a6369dd">
-            Drag <em>any</em> sample — WAV, AIFF, FLAC, MP3, M4A, OGG — onto a generator and it
-            comes back as notes. Onsets, tempo, the loop's own length, pitch and drum content, all
-            measured. And every part tells you <em>why</em> it was routed where it was, so a wrong
-            guess is one click to redirect rather than something you find out later.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🎹</span>
-          <h3 data-i18n="features.fdfc6809">Five generators and a whole song</h3>
-          <p data-i18n="features.fbe4c84f">
-            Drums · Melody · Countermelody · Bassline · Chords — plus Song Mode, which samples one
-            of the artist's <em>own</em> forms and draws it on a timeline you can edit. Resize,
-            clone, lock what you like, reroll a section without touching the rest.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🎛️</span>
-          <h3 data-i18n="features.d4dc7d3d">It is an instrument too</h3>
-          <p data-i18n="features.5c924fb6">
-            A polyphonic synthesiser with <strong>1,648 instruments across 69 genres</strong>, and
-            each melodic generator plays its own — four voices at once, not one shared between
-            them. Nothing is a sample library: every sound is a five-integer address, so the whole
-            thing is a few numbers in your project file.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🎹</span>
-          <h3 data-i18n="features.3f42ac73">And you can play it in</h3>
-          <p data-i18n="features.b9fcfc0e">
-            An on-screen keyboard, your computer keys as a second one, and your own MIDI
-            controller with a channel filter, transpose, octave, bend range and a velocity curve.
-            Press record and what you play lands in the part's clip — a note held across the end
-            of the loop stays <em>one</em> note, and recording again overdubs rather than
-            replacing. The pitch wheel bends <strong>every</strong> instrument, the physically
-            modelled ones included: a bell's partials and a guitar's string move with it, while
-            the parts that do not follow a note — a violin's body, a voice's formants — stay where
-            they belong.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🧱</span>
-          <h3 data-i18n="features.f3789702">5,085 MIDI loops, written by the same engine</h3>
-          <p data-i18n="features.68dac5bc">
-            Factory Packs: melodies, basslines, chords, countermelodies, drum loops and percussion
-            loops, by genre. Walk them with ↑/↓ and each one plays as you land on it. Drag one
-            onto a generator and it lands there, split onto the right parts; drag it out and it
-            goes to your DAW as a clip. Nine megabytes of <em>notes</em> — not a gigabyte of
-            somebody else's recordings, because our own generators and our own models wrote every
-            one of them.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🛡️</span>
-          <h3 data-i18n="features.99073b05">It will not hand you somebody else's hook</h3>
-          <p data-i18n="features.77e297a3">
-            Every melody is screened against a table of well-known contours <em>before you hear
-            it</em>, and a take that matches is thrown away and drawn again. The table holds
-            one-way fingerprints and no note data at all — transposing a hook does not hide it, and
-            nothing anybody else wrote is in the product.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🔁</span>
-          <h3 data-i18n="features.05de2492">Lock it, reroll it, get it back</h3>
-          <p data-i18n="features.8347a3e6">
-            Lock what you like and reroll the rest — a locked lane comes back note for note however
-            many times you press Generate. Every generation has a seed: copy it, paste it, get it
-            back. And unlimited undo across everything, because an undo entry is the inputs rather
-            than the notes.
-          </p>
-        </div>
-        <div class="feature-card">
-          <span class="ic" aria-hidden="true">🔒</span>
-          <h3 data-i18n="features.5ec34078">No AI. Not one model.</h3>
-          <p data-i18n="features.f28580e7">
-            Not a limitation — the design. Rules, measurements and seeded randomness all the way
-            down, with a build gate that refuses any dependency that would smuggle a model in. It
-            buys you reproducibility, explainability, and provenance you can defend: nothing was
-            trained on anybody's recordings, because nothing was trained at all.
-          </p>
-        </div>
-      </section>
-
-      <section data-i18n-attrs="aria-label:features.f446a9a4" aria-label="Compared with other MIDI generators">
-        <h2 data-i18n="features.79dacbd4">Side by side with the leading MIDI generators</h2>
-        <p data-i18n="features.c9427ee1" class="summary">
-          Compiled from each product's own published feature set.
-          <span class="yes">●</span> full · <span class="part">◐</span> partial ·
-          <span class="no">—</span> not offered.
-        </p>
-        <div class="cmp-wrap">
-          <table class="cmp">
-            <thead>
-              <tr>
-                <th data-i18n="features.47c1f11e" scope="col">&nbsp;</th>
-                <th data-i18n="features.fb0a1bbe" scope="col" class="us">Freally MIDI&nbsp;Master</th>
-                <th data-i18n="features.2ddadbc5" scope="col">Unison MIDI&nbsp;Wizard</th>
-                <th data-i18n="features.70aac855" scope="col">Scaler&nbsp;3</th>
-                <th data-i18n="features.8791fdd6" scope="col">Captain Plugins</th>
-                <th data-i18n="features.90f2f960" scope="col">Orb Producer&nbsp;3</th>
-                <th data-i18n="features.640b8d29" scope="col">Rapid&shy;Composer</th>
-                <th data-i18n="features.90ab6a4e" scope="col">Lemonaide</th>
-                <th data-i18n="features.fc3835b0" scope="col">EZdrummer&nbsp;3</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <th data-i18n="features.3e8248e3" scope="row">Price</th>
-                <td data-i18n="features.97ef455a" class="us yes">Free today</td>
-                <td data-i18n="features.dc9d4584" class="no">Paid</td>
-                <td data-i18n="features.dc9d4584" class="no">Paid</td>
-                <td data-i18n="features.dc9d4584" class="no">Paid</td>
-                <td data-i18n="features.dc9d4584" class="no">Paid</td>
-                <td data-i18n="features.dc9d4584" class="no">Paid</td>
-                <td data-i18n="features.8fde48f3" class="no">Subscription</td>
-                <td data-i18n="features.dc9d4584" class="no">Paid</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.a036b01a" scope="row">Named artist / producer styles</th>
-                <td class="us yes">● 2,340</td>
-                <td data-i18n="features.a52b7c6e" class="no">— genres only</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td data-i18n="features.37d67e95" class="part">◐ licensed roster</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.88048f2f" scope="row">Drums <em>and</em> melody, bass, chords, countermelody</th>
-                <td data-i18n="features.a69f56a4" class="us yes">● all five</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="yes">●</td>
-                <td class="part">◐</td>
-                <td data-i18n="features.0f8398e4" class="no">— drums only</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.5916033f" scope="row">Full song arrangement on an editable timeline</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="yes">●</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.73ab2ff8" scope="row"><strong>Audio file → MIDI</strong>, any sample</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td data-i18n="features.400bace7" class="part">◐ detection</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.11963ece" scope="row">MIDI file → split into five parts, each explaining why</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.cc1b6bf2" scope="row"><strong>Re-Dream</strong> — the same idea, differently</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td data-i18n="features.b21d091f" class="part">◐ morph</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.75f1827c" scope="row">Reproducible seeds — paste it, get it back</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.215a67ab" scope="row">Built-in synth you can also just play</th>
-                <td class="us yes">● 1,648</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.891ee051" scope="row">Your own samples on any lane</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.1cc2b417" scope="row">Hook screening — refuses somebody else's melody</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.ddfa7bdc" scope="row">Lock what you like, reroll the rest</th>
-                <td class="us yes">●</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.2cb5ea83" scope="row">Train a style on takes <em>you</em> starred</th>
-                <td data-i18n="features.dce5f5da" class="us yes">● no ML</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.5a67578e" scope="row">Works fully offline, no account, no telemetry</th>
-                <td class="us yes">●</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="yes">●</td>
-                <td data-i18n="features.b3f15e02" class="no">— cloud</td>
-                <td class="part">◐</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.ceec1655" scope="row"><strong>No AI/ML anywhere</strong> — auditable rules</th>
-                <td data-i18n="features.b72eae1f" class="us yes">● gated on every push</td>
-                <td class="yes">●</td>
-                <td class="yes">●</td>
-                <td class="yes">●</td>
-                <td class="no">—</td>
-                <td class="yes">●</td>
-                <td class="no">—</td>
-                <td class="yes">●</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.716f8c55" scope="row">Live collaboration rooms</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.f75444a3" scope="row">18 languages</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-              </tr>
-              <tr>
-                <th data-i18n="features.a2295f23" scope="row">Unlimited undo across everything</th>
-                <td class="us yes">●</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-                <td class="no">—</td>
-                <td class="part">◐</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-        <p data-i18n="features.036b5f21" class="note">
-          <strong>The one-line version:</strong> every other product on that table is asking you for
-          money to do part of what this does. This one asks for nothing and does all of it.
-        </p>
-        <p data-i18n="features.3f4902cc" class="note" style="margin-top: 14px">
-          Comparison compiled from each product's publicly documented feature set; products change,
-          and corrections are welcome.
-        </p>
-      </section>
-
-      <section data-i18n-attrs="aria-label:features.78d7e884" aria-label="Why it is built this way">
-        <h2 data-i18n="features.d452e239">Why it is built the way it is</h2>
-
-        <p data-i18n="features.87e13091" class="kicker">Reproducible</p>
-        <p data-i18n="features.75b8dd39" class="summary">
-          The same seed gives the same notes, today and in five years. Nothing trained can promise
-          that.
-        </p>
-
-        <p data-i18n="features.20690c04" class="kicker">Explainable</p>
-        <p data-i18n="features.8d02c9f7" class="summary">
-          Every generation can tell you which parameter produced it, because there is a parameter
-          rather than a weight.
-        </p>
-
-        <p data-i18n="features.4fd9fc99" class="kicker">Provenance you can defend</p>
-        <p data-i18n="features.489d6eaf" class="summary">
-          Nothing was trained on anybody's recordings, because nothing was trained at all. The
-          research corpus only ever contributed distributions — never note data, never audio.
-        </p>
-
-        <p data-i18n="features.0f211ed0" class="kicker">It stays on your machine</p>
-        <p data-i18n="features.94aff5cf" class="summary">
-          No account, no login, no telemetry, no cloud round-trip. It works on a plane. Your
-          samples, your MIDI, your playing and your projects never leave your disk —
-          <strong>not one sample byte crosses the wire</strong>, even in a collaboration room.
-        </p>
-
-        <p data-i18n="features.e6a1356b" class="kicker">It follows your DAW</p>
-        <p data-i18n="features.e3a8277a" class="summary">
-          The plugin reads the host's tempo and time signature every block, so a pattern is
-          generated <em>for your song</em> — trap authored at 140 comes out at 92 in a 92 BPM
-          project. Pin a tempo yourself and yours wins.
-        </p>
-      </section>
-
-      <figure class="shot">
-        <img data-i18n-attrs="alt:features.dacd8e46"
-          src="screen-song-mode.png"
-          alt="Song Mode: a 56-bar arrangement on a timeline, with INTRO, VERSE, HOOK and OUTRO
-            sections and one editable clip per part — drums, chords, melody and countermelody —
-            each carrying its own MIDI and Audio chip."
-          width="1600"
-          height="900"
-          loading="lazy"
-        />
-        <figcaption data-i18n="features.6fe61d69">
-          Song Mode: a whole arrangement on a timeline you can edit, one clip per part, each with
-          its own MIDI and audio to drag out.
-        </figcaption>
-      </figure>
-
-      <section data-i18n-attrs="aria-label:features.21cc118f" aria-label="What is still coming">
-        <h2 data-i18n="features.21cc118f">What is still coming</h2>
-        <p data-i18n="features.0b765e69" class="summary">
-          Stated plainly, because a feature list that hides its gaps is not worth reading.
-        </p>
-        <ul>
-          <li data-i18n="features.3311e0fb">
-            <strong>macOS and Linux drag-out</strong> are written and switched on but have not been
-            dropped into a real DAW yet. Windows has. Export works everywhere regardless.
-          </li>
-          <li data-i18n="features.7a359bb4">
-            <strong>Global hotkeys, screen share and camera</strong> in collaboration rooms.
-          </li>
-        </ul>
-        <p data-i18n="features.fa2456cd" class="note">
-          <strong>v1.0.0RC is coming soon, and downloads with it.</strong> Until then the honest
-          answer to "where do I get it" is <em>not yet</em>.
-        </p>
-      </section>
+    <main id="main">
+<section class="page-head">
+<div class="page-head__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<img class="app-icon" src="midi-master-icon.png" alt="" width="72" height="72" />
+<span class="label" data-i18n="kit.nav.features">Features</span>
+<h1 data-i18n-html="kit.head.features"><span class="hl-muted">Everything it does,</span> <span class="hl-bright">side by side.</span></h1>
+<p class="lead" data-i18n="features.512c7b09">The most complete MIDI generator ever built — and it costs nothing.</p>
+<p class="fineprint" data-i18n-html="features.d19d4e76">2,413 artist and producer styles. 1,648 instruments. Over 96 million distinct takes per part. Turn any audio file into MIDI. Re-Dream any idea into four. Arrange a whole song. <strong>Every feature, for everyone, free today.</strong></p>
+</div>
+</section>
+<section class="section section--tight stats-band" id="numbers">
+<div class="stats-band__code" aria-hidden="true">AC 5F A3 97 16 8E 41 13 19 D5 E1 98 E8 F8 C8 58 A8 53 87 AB FF C3 37 9B 2F 33
+E7 26 94 34 54 F4 14 B4 6F 73 27 CB 3A E2 6A 52 1A 42 4A 4D BC 3C BC D8 28 D3
+07 2B 7F 43 B8 88 18 68 78 48 D8 28 38 08 33 E7 8B 5F A3 97 A3 97 7B 8F AE 7C
+CE E6 1E F6 EE AE 46 FE 56 69 E5 B1 28 38 A3 97 7B 2A 48 0E 26 5E 36 2E C6 7E
+D6 4E 66 9E 76 6E A1 F4 14 B4 6F 73 C2 CA 32 7A 22 AA 2D 59 15 21 3D 29 A5 0C
+82 8A 8D 39 75 01 9D 09 05 51 AD D9 94 34 54 F4 14 B4 6F 73 27 F3 A7 4B 1F 63
+57 3B 4F 6E 06 BE 3E 96 A9 5B 26 5E 36 2E C6 7E D6 76 3B 21 3D 29 A5 71 4D 94
+6A 52 1A 42 4A B2 FA A2 C5 11 6D 34 8A C4 A4 04 7F 43 B7 1B 4A E8 CA 32 7A 22
+AA 2D 59 15 21 D8 5E 6C 2C EC AC 6C C7 EB 3F 03 77 DB 0A 72 BA 62 EA 6E 06 BE
+16 29 DC DC DC DC DC DC DC DC DC DC DC DC DC DC DC 77 12 DA 02 0A 9A 90 80 B0
+20 D0 C0 F0 60 10 00 30 3B 4F D3 07 2B 7F 43 52 1A DD 80 B0 20 D0 5B EF F3 A8
+B8 88 18 68 13 47 06 81 1D 89 85 D1 2D F4 4A B2 FA A2 C5 11 6D 34 8A C4 A4 04
+7F 43 B7 B6 AE 46 FE 7E D6 E9 65 31 0D 54 F4 AF B3 8F 13 47 6B BF 83 92 90 80
+4B 1F 63 57 D6 84 36 2E C6 7E D6 4E 01 9D 09 05 51 AD D9 95 3C BC 3C BC 3C BC
+3C 57 3B 4F D3 07 2B 7F 43 B7 1B AF B3 67 0B DF 23 17 96 0E 26 5E 36 C9 C5 11
+08 CE E6 B9 B8 88 18 68 13 47 6B 5A 82 25 F1 CD 79 B5 41 DD 49 45 91 ED B4 D4
+74 94 CF 53 87 AB FF C3 37 9B CA 32 15 E4 44 24 1F 63 57 3B 4F D3 2F 33 0F 93
+EF F3 A7 E6 54 2A 12 DA 02 0A 72 55 61 7D 69 E5 B1 8D 39 75 9C 9C 9C 9C C4 A4</div>
+<div class="wrap">
+<div class="section-head"><span class="label" data-i18n="kit.label.numbers">By the numbers</span><p class="lead" data-i18n="features.5e30071b">Every figure here is counted from the shipping product and its test suite. Nothing is estimated, and nothing is rounded up.</p></div>
+<div class="stats"><div class="stat"><span class="stat__num" data-countup="2413">2,413</span><span class="stat__label" data-i18n="featuresPage.numbers.models">style models</span></div>
+  <div class="stat"><span class="stat__num" data-countup="1507">1,507</span><span class="stat__label" data-i18n="featuresPage.numbers.artists">artists</span></div>
+  <div class="stat"><span class="stat__num" data-countup="833">833</span><span class="stat__label" data-i18n="featuresPage.numbers.producers">producers</span></div>
+  <div class="stat"><span class="stat__num" data-countup="1648">1,648</span><span class="stat__label" data-i18n="featuresPage.numbers.instruments">instruments</span></div>
+  <div class="stat"><span class="stat__num">96M+</span><span class="stat__label" data-i18n="featuresPage.numbers.takes">takes per part</span></div>
+  <div class="stat"><span class="stat__num" data-countup="18">18</span><span class="stat__label" data-i18n="featuresPage.numbers.languages">languages</span></div>
+  <div class="stat"><span class="stat__num" data-countup="0">0</span><span class="stat__label" data-i18n="featuresPage.numbers.ai">AI models</span></div>
+  <div class="stat"><span class="stat__num">$0</span><span class="stat__label" data-i18n="featuresPage.numbers.price">price today</span></div></div>
+</div>
+</section>
+<section class="section section--surface" id="free">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.free">Free today</span>
+<div class="callout-band">
+    <h2 data-i18n="features.2fb7a96e">It is free today. All of it.</h2>
+    <p class="lead" data-i18n-html="features.6b604c8e">Every feature, for everyone. No paid tier, no licence key, no in-app purchase, no subscription, no trial that expires, no "Pro" version holding the good parts hostage. That is written into this version's licence agreement: <em>"The Software is provided free of charge, in full."</em> <strong>And the music you make with it is yours</strong>, with no royalty and no attribution requirement.</p>
+  </div>
+</div>
+</section>
+<section class="section" id="inside">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.inside">Inside</span>
+<h2 data-i18n="features.a5a8c798">Flagship features</h2>
+  <div class="cards">
+    <article class="card"><div class="card__media"><img src="kit/art/lens.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.65a59ac5">Search a name, not a genre</h3>
+      <p data-i18n-html="features.177ce0e6">2,413 artists, producers and genres in one box — through aliases and past typos. Before you press a thing it tells you what that selection <em>does</em>: its era, its tempo range, the key it leans toward, its moods by name, and which parts it writes and which it does not. An artist who does not write countermelodies says so, instead of answering that tab with silence.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/particles.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.c7e63f3a">Re-Dream — the same idea, differently</h3>
+      <p data-i18n-html="features.b9301e2e">A reroll gives you a different idea. A <strong>Re-Dream</strong> gives you the same one, differently. Every generation arrives as four — the take you have, plus three dreamed after it — and you hear each one <em>in your track</em>, against your drums and your 808. A Re-Dream shares <strong>79%</strong> of its original's onsets where three fresh seeds share 35%. That is a gate in the test suite, not a claim. It works on a file too: pick a <code>.mid</code> in the browser and the rack fills from that instead of from a generation.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/wave.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.a4d9cbed">Any audio file becomes MIDI</h3>
+      <p data-i18n-html="features.5a6369dd">Drag <em>any</em> sample — WAV, AIFF, FLAC, MP3, M4A, OGG — onto a generator and it comes back as notes. Onsets, tempo, the loop's own length, pitch and drum content, all measured. And every part tells you <em>why</em> it was routed where it was, so a wrong guess is one click to redirect rather than something you find out later.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/layers.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.fdfc6809">Five generators and a whole song</h3>
+      <p data-i18n-html="features.fbe4c84f">Drums · Melody · Countermelody · Bassline · Chords — plus Song Mode, which samples one of the artist's <em>own</em> forms and draws it on a timeline you can edit. Resize, clone, lock what you like, reroll a section without touching the rest.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/knob.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.d4dc7d3d">It is an instrument too</h3>
+      <p data-i18n-html="features.5c924fb6">A polyphonic synthesiser with <strong>1,648 instruments across 69 genres</strong>, and each melodic generator plays its own — four voices at once, not one shared between them. Nothing is a sample library: every sound is a five-integer address, so the whole thing is a few numbers in your project file.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/faders.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.3f42ac73">And you can play it in</h3>
+      <p data-i18n-html="features.b9fcfc0e">An on-screen keyboard, your computer keys as a second one, and your own MIDI controller with a channel filter, transpose, octave, bend range and a velocity curve. Press record and what you play lands in the part's clip — a note held across the end of the loop stays <em>one</em> note, and recording again overdubs rather than replacing. The pitch wheel bends <strong>every</strong> instrument, the physically modelled ones included: a bell's partials and a guitar's string move with it, while the parts that do not follow a note — a violin's body, a voice's formants — stay where they belong.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/stack.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.f3789702">5,085 MIDI loops, written by the same engine</h3>
+      <p data-i18n-html="features.68dac5bc">Factory Packs: melodies, basslines, chords, countermelodies, drum loops and percussion loops, by genre. Walk them with ↑/↓ and each one plays as you land on it. Drag one onto a generator and it lands there, split onto the right parts; drag it out and it goes to your DAW as a clip. Nine megabytes of <em>notes</em> — not a gigabyte of somebody else's recordings, because our own generators and our own models wrote every one of them.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/index.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.99073b05">It will not hand you somebody else's hook</h3>
+      <p data-i18n-html="features.77e297a3">Every melody is screened against a table of well-known contours <em>before you hear it</em>, and a take that matches is thrown away and drawn again. The table holds one-way fingerprints and no note data at all — transposing a hook does not hide it, and nothing anybody else wrote is in the product.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/rings.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.05de2492">Lock it, reroll it, get it back</h3>
+      <p data-i18n="features.8347a3e6">Lock what you like and reroll the rest — a locked lane comes back note for note however many times you press Generate. Every generation has a seed: copy it, paste it, get it back. And unlimited undo across everything, because an undo entry is the inputs rather than the notes.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/shield.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.5ec34078">No AI. Not one model.</h3>
+      <p data-i18n="features.f28580e7">Not a limitation — the design. Rules, measurements and seeded randomness all the way down, with a build gate that refuses any dependency that would smuggle a model in. It buys you reproducibility, explainability, and provenance you can defend: nothing was trained on anybody's recordings, because nothing was trained at all.</p>
+    </div></article>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="compare">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.compare">Compare</span>
+<h2 data-i18n="features.79dacbd4">Side by side with the leading MIDI generators</h2>
+  <p class="lead" data-i18n="features.c9427ee1">Compiled from each product's own published feature set.</p>
+  <div class="table-wrap" role="region" tabindex="0" aria-labelledby="compare-table">
+    <table class="compare" id="compare-table">
+      <thead>
+        <tr>
+          <th scope="col"><span class="visually-hidden" data-i18n="featuresPage.compare.feature">Feature</span></th>
+          <th scope="col" class="ours">Freally MIDI&nbsp;Master</th>
+          <th scope="col">Unison MIDI&nbsp;Wizard</th>
+          <th scope="col">Scaler&nbsp;3</th>
+          <th scope="col">Captain Plugins</th>
+          <th scope="col">Orb Producer&nbsp;3</th>
+          <th scope="col">Rapid&shy;Composer</th>
+          <th scope="col">Lemonaide</th>
+          <th scope="col">EZdrummer&nbsp;3</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-i18n="features.3e8248e3">Price</th>
+          <td class="ours yes"><span class="mark"><span data-i18n="features.97ef455a">Free today</span></span></td>
+          <td class="price" data-i18n="features.dc9d4584">Paid</td>
+          <td class="price" data-i18n="features.dc9d4584">Paid</td>
+          <td class="price" data-i18n="features.dc9d4584">Paid</td>
+          <td class="price" data-i18n="features.dc9d4584">Paid</td>
+          <td class="price" data-i18n="features.dc9d4584">Paid</td>
+          <td class="price" data-i18n="features.8fde48f3">Subscription</td>
+          <td class="price" data-i18n="features.dc9d4584">Paid</td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.a036b01a">Named artist / producer styles</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span><span class="cell-note">2,340</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span><span class="cell-note" data-i18n="features.a52b7c6e">genres only</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span><span class="cell-note" data-i18n="features.37d67e95">licensed roster</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n-html="features.88048f2f">Drums <em>and</em> melody, bass, chords, countermelody</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span><span class="cell-note" data-i18n="features.a69f56a4">all five</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span><span class="cell-note" data-i18n="features.0f8398e4">drums only</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.5916033f">Full song arrangement on an editable timeline</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n-html="features.73ab2ff8"><strong>Audio file → MIDI</strong>, any sample</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span><span class="cell-note" data-i18n="features.400bace7">detection</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.11963ece">MIDI file → split into five parts, each explaining why</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n-html="features.cc1b6bf2"><strong>Re-Dream</strong> — the same idea, differently</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span><span class="cell-note" data-i18n="features.b21d091f">morph</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.75f1827c">Reproducible seeds — paste it, get it back</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.215a67ab">Built-in synth you can also just play</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span><span class="cell-note">1,648</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.891ee051">Your own samples on any lane</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.1cc2b417">Hook screening — refuses somebody else's melody</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.ddfa7bdc">Lock what you like, reroll the rest</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n-html="features.2cb5ea83">Train a style on takes <em>you</em> starred</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span><span class="cell-note" data-i18n="features.dce5f5da">no ML</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.5a67578e">Works fully offline, no account, no telemetry</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span><span class="cell-note" data-i18n="features.b3f15e02">cloud</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n-html="features.ceec1655"><strong>No AI/ML anywhere</strong> — auditable rules</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span><span class="cell-note" data-i18n="features.b72eae1f">gated on every push</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.716f8c55">Live collaboration rooms</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.f75444a3">18 languages</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="features.a2295f23">Unlimited undo across everything</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">full</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">not offered</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partial</span></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="legend">
+    <li><span class="mark mark--yes"></span><span data-i18n="featuresPage.compare.legend.yes">full</span></li>
+    <li><span class="mark mark--part"></span><span data-i18n="featuresPage.compare.legend.partly">partial</span></li>
+    <li><span class="mark mark--no"></span><span data-i18n="featuresPage.compare.legend.no">not offered</span></li>
+  </ul>
+  <div class="notes">
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="features.036b5f21.t">The one-line version</span></h3>
+      <p data-i18n-html="features.036b5f21.b">Every other product on that table is asking you for money to do part of what this does. This one asks for nothing and does all of it.</p>
+    </article>
+  </div>
+  <p class="fineprint" data-i18n="features.3f4902cc">Comparison compiled from each product's publicly documented feature set; products change, and corrections are welcome.</p>
+</div>
+</section>
+<section class="section" id="why">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.principles">Principles</span>
+<h2 data-i18n="features.d452e239">Why it is built the way it is</h2>
+  <div class="notes">
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg><span data-i18n="features.87e13091">Reproducible</span></h3>
+      <p data-i18n="features.75b8dd39">The same seed gives the same notes, today and in five years. Nothing trained can promise that.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span data-i18n="features.20690c04">Explainable</span></h3>
+      <p data-i18n="features.8d02c9f7">Every generation can tell you which parameter produced it, because there is a parameter rather than a weight.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg><span data-i18n="features.4fd9fc99">Provenance you can defend</span></h3>
+      <p data-i18n="features.489d6eaf">Nothing was trained on anybody's recordings, because nothing was trained at all. The research corpus only ever contributed distributions — never note data, never audio.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span data-i18n="features.0f211ed0">It stays on your machine</span></h3>
+      <p data-i18n-html="features.94aff5cf">No account, no login, no telemetry, no cloud round-trip. It works on a plane. Your samples, your MIDI, your playing and your projects never leave your disk — <strong>not one sample byte crosses the wire</strong>, even in a collaboration room.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg><span data-i18n="features.e6a1356b">It follows your DAW</span></h3>
+      <p data-i18n-html="features.e3a8277a">The plugin reads the host's tempo and time signature every block, so a pattern is generated <em>for your song</em> — trap authored at 140 comes out at 92 in a 92 BPM project. Pin a tempo yourself and yours wins.</p></article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg><span data-i18n="features.7142b88f.t">About that 96 million</span></h3>
+      <p data-i18n-html="features.7142b88f.b">It is measured, not marketing. The test suite renders 200 seeds per model and measures <strong>199 distinct Re-Dreams out of 200 draws</strong> from a single take. Neither number runs out at 200 samples, so both are <em>floors</em>: ≥200 generations × ≥199 Re-Dreams ≈ 40,000 takes per model per part, and 40,000 × 2,413 models is over 96 million — <em>per part</em>, before the four melodic parts combine. We report a floor and never a total, deliberately: a total would be a ceiling the code cannot prove, and it would turn inspiration that does not run out into a catalogue you can imagine finishing.</p>
+    </article>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="coming">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.limits">Limits</span>
+<h2 data-i18n="features.21cc118f">What is still coming</h2>
+  <p class="lead" data-i18n="features.0b765e69">Stated plainly, because a feature list that hides its gaps is not worth reading.</p>
+  <div class="cards cards--2">
+    <article class="card"><div class="card__body">
+<h3 data-i18n="kit.states.title">What the states mean</h3>
+<ul class="legend legend--states"><li><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span data-i18n="kit.states.done">built and tagged, but not a download on this site</span></li><li><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span data-i18n="kit.states.planned">still to be built</span></li><li><span class="state state-goal" data-i18n="kit.ladder.goal">The goal</span><span data-i18n="kit.states.goal">the version the road leads to</span></li></ul>
+<p><a href="index.html#ladder" data-i18n="kit.states.ladder">See every rung of the road</a></p>
+</div></article>
+    <article class="card"><div class="card__body">
+      <h3 data-i18n="featuresPage.limits.title">Not finished yet</h3>
+      <ul>
+        <li data-i18n-html="features.3311e0fb"><strong>macOS and Linux drag-out</strong> are written and switched on but have not been dropped into a real DAW yet. Windows has. Export works everywhere regardless.</li>
+        <li data-i18n-html="features.7a359bb4"><strong>Global hotkeys, screen share and camera</strong> in collaboration rooms.</li>
+      </ul>
+    </div></article>
+  </div>
+  <p class="fineprint" data-i18n-html="features.fa2456cd"><strong>v1.0.0RC is coming soon, and downloads with it.</strong> Until then the honest answer to "where do I get it" is <em>not yet</em>.</p>
+</div>
+</section>
     </main>
-
-    <footer>
-      <p data-i18n="features.0be97192">
-        Freally MIDI Master · free · offline · no account · 100% AI-free · your music never leaves
-        your machine
-      </p>
-      <p data-i18n="features.498f55f8">
-        By <a href="https://github.com/MikesRuthless12">Mike Weaver</a>
-      </p>
-      <p data-i18n="features.a1a0c41c">© 2026 Mike Weaver — All Rights Reserved.</p>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="midi-master-icon.png" alt="" width="28" height="28" /><span>Freally MIDI Master</span></a><p data-i18n="site.tagline">Artist-accurate MIDI, generated onto the track you are already working on.</p>
+<p class="fineprint" data-i18n="kit.price">Freally MIDI Master is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="roster.html" data-page data-i18n="kit.nav.roster">Roster</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/" aria-current="true">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The music you make with it is yours, with no royalty and no attribution requirement.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v1.0.0-beta</span>
+        </div>
+      </div>
     </footer>
-    <script src="i18n.js"></script>
   </body>
 </html>

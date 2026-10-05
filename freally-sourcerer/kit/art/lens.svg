@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" fill="none">
+<style>
+@keyframes p{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes d{to{stroke-dashoffset:-200}}
+@keyframes s{from{transform:translateX(-120px)}to{transform:translateX(920px)}}
+@keyframes r{to{transform:rotate(360deg)}}
+@keyframes b{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+.p{animation:p 3.2s ease-in-out infinite}
+.d{stroke-dasharray:6 10;animation:d 9s linear infinite}
+.s{animation:s 7s linear infinite}
+.b{transform-box:fill-box;transform-origin:50% 100%;animation:b 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+<filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+<linearGradient id="lime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8cf523"/><stop offset="1" stop-color="#79d920" stop-opacity=".35"/></linearGradient>
+<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#79d920" stop-opacity=".28"/><stop offset="1" stop-color="#79d920" stop-opacity="0"/></radialGradient>
+<radialGradient id="fade" cx=".5" cy=".5" r=".62"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+<mask id="m"><rect width="800" height="440" fill="url(#fade)"/></mask>
+
+</defs>
+<path d="M40 0V440M80 0V440M120 0V440M160 0V440M200 0V440M240 0V440M280 0V440M320 0V440M360 0V440M400 0V440M440 0V440M480 0V440M520 0V440M560 0V440M600 0V440M640 0V440M680 0V440M720 0V440M760 0V440M0 40H800M0 80H800M0 120H800M0 160H800M0 200H800M0 240H800M0 280H800M0 320H800M0 360H800M0 400H800" stroke="#e8f5e1" stroke-opacity="0.035" stroke-width="1"/><circle cx="400" cy="220" r="190" fill="url(#halo)"/>
+<circle cx="400" cy="220" r="170" stroke="#e8f5e1" stroke-opacity=".14" stroke-width="10"/>
+<circle cx="400" cy="220" r="150" stroke="#79d920" stroke-width="2"/><path d="M540 220L432.3 260.7" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/><path d="M499 319L394.1 271.7" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/><path d="M400 360L359.3 252.3" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/><path d="M301 319L348.3 214.1" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/><path d="M260 220L367.7 179.3" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/><path d="M301 121L405.9 168.3" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/><path d="M400 80L440.7 187.7" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/><path d="M499 121L451.7 225.9" stroke="#79d920" stroke-opacity=".6" stroke-width="2"/>
+<circle cx="400" cy="220" r="52" fill="#0b0f0b" stroke="#8cf523" stroke-width="2.5" filter="url(#g)"/>
+<circle cx="382" cy="202" r="12" fill="#e8f5e1" fill-opacity=".35"/>
+<circle cx="600" cy="80" r="8" fill="#f87171" class="p"/>
+</svg>

@@ -22,7 +22,7 @@
     {
       "version": "v0.4.0",
       "phase": "Phase 3 — The File Browser & Preview Player",
-      "state": "planned",
+      "state": "done",
       "summary": "The file browser and preview player: find a sample or a MIDI clip, hear it, see it, and drag it onto the glass. Everything essential is here."
     },
     {

@@ -1,0 +1,252 @@
+<!-- Freally File Manager — the Features page's own words: what version 1.0.0
+     does, side by side with the commercial tools (owner, 2026-10-01: compare
+     what each app has at v1.0.0). -->
+
+<kit-head>
+  <kit-lede data-i18n="featuresPage.lead">A byte-exact file copier with verification, resume after a crash, sync, undo and its own file server, and a record of every job it has ever run.</kit-lede>
+  <kit-fineprint data-i18n="featuresPage.version">This page describes Freally File Manager version 1.0.0, the current version: everything on it is in 1.0.0.</kit-fineprint>
+</kit-head>
+
+<kit-stats id="numbers">
+  <p class="lead" data-i18n="featuresPage.numbers.intro">Each figure is counted from version 1.0.0's own code. Nothing is rounded up.</p>
+  <div class="stat"><span class="stat__num" data-countup="8">8</span><span class="stat__label" data-i18n="featuresPage.numbers.hashes">checksums to verify a copy with</span></div>
+  <div class="stat"><span class="stat__num" data-countup="7">7</span><span class="stat__label" data-i18n="featuresPage.numbers.collisions">choices for a file that already exists</span></div>
+  <div class="stat"><span class="stat__num" data-countup="6">6</span><span class="stat__label" data-i18n="featuresPage.numbers.sidecars">checksum-file formats it writes and checks</span></div>
+  <div class="stat"><span class="stat__num" data-countup="4">4</span><span class="stat__label" data-i18n="featuresPage.numbers.server">ways to serve a folder: WebDAV, HTTP, S3 and SFTP</span></div>
+  <div class="stat"><span class="stat__num" data-countup="3">3</span><span class="stat__label" data-i18n="featuresPage.numbers.systems">operating systems: Windows, macOS and Linux</span></div>
+  <div class="stat"><span class="stat__num" data-countup="18">18</span><span class="stat__label" data-i18n="featuresPage.numbers.languages">languages</span></div>
+  <div class="stat"><span class="stat__num" data-countup="0">0</span><span class="stat__label" data-i18n="featuresPage.numbers.ai">AI models</span></div>
+  <div class="stat"><span class="stat__num">$0</span><span class="stat__label" data-i18n="featuresPage.numbers.price">price today</span></div>
+</kit-stats>
+
+<kit-section id="free" label="kit.label.free">
+  <div class="callout-band">
+    <h2 data-i18n="featuresPage.free.title">Free today</h2>
+    <p class="lead" data-i18n="featuresPage.free.body">Everything Freally File Manager does today is free, for everyone: no paid tier, no subscription, no licence key and no account.</p>
+  </div>
+</kit-section>
+
+<kit-section id="inside" label="kit.label.inside">
+  <h2 data-i18n="featuresPage.cards.title">What version 1.0 does</h2>
+  <div class="cards">
+    <article class="card"><div class="card__media"><kit-art name="circuit"></kit-art></div><div class="card__body">
+      <h3 id="copy" data-i18n="featuresPage.cards.copy.title">The copy engine</h3>
+      <p data-i18n="featuresPage.cards.copy.body">Byte-exact copies through each system's fastest path, with instant clones on file systems that support them. Huge folders stream through without filling memory, and you choose before a copy starts what happens to files that already exist: keep both, skip, overwrite, overwrite if newer, overwrite only if different, or ask.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="lens"></kit-art></div><div class="card__body">
+      <h3 id="verify" data-i18n="featuresPage.cards.verify.title">Verify after copy</h3>
+      <p data-i18n="featuresPage.cards.verify.body">Eight checksums: CRC32, MD5, SHA-1, SHA-256, SHA-512, xxHash3-64, xxHash3-128 and BLAKE3. Each copy is read back and compared with the original, and a mismatch fails the file instead of passing unnoticed.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="lines"></kit-art></div><div class="card__body">
+      <h3 id="checks" data-i18n="featuresPage.cards.checks.title">Hash, re-verify and checksum files</h3>
+      <p data-i18n="featuresPage.cards.checks.body">The Hash panel checks files against a checksum you paste. Re-verify compares a folder with its copy months later without writing a byte. Make .md5, .sha1, .sha256, .sha512, .b3 or .sfv files for a whole folder, and drop one on the window to check it.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="signal"></kit-art></div><div class="card__body">
+      <h3 id="resume" data-i18n="featuresPage.cards.resume.title">Crash and reboot resume</h3>
+      <p data-i18n="featuresPage.cards.resume.body">A journal records each copy's progress. On the next launch the part already written is checked against its hash, and the copy continues from there.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="index"></kit-art></div><div class="card__body">
+      <h3 id="history" data-i18n="featuresPage.cards.history.title">History, re-runs and undo</h3>
+      <p data-i18n="featuresPage.cards.history.body">Every job is recorded. Run any of them again, retry only the files that failed, export a signed report, or undo the last copy or move: undone copies go to the Recycle Bin or Trash, never straight to deletion.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="tree"></kit-art></div><div class="card__body">
+      <h3 id="sync" data-i18n="featuresPage.cards.sync.title">Sync and live mirror</h3>
+      <p data-i18n="featuresPage.cards.sync.body">Two-way sync, a mirror in either direction, or contribute-only, with conflicts kept as two files for you to choose between. A live mirror watches a folder and syncs every change you save.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="nodes"></kit-art></div><div class="card__body">
+      <h3 id="server" data-i18n="featuresPage.cards.server.title">A built-in file server</h3>
+      <p data-i18n="featuresPage.cards.server.body">Serve any folder over WebDAV, HTTP, an S3-compatible API or SFTP, from Settings or the freally serve command, read-only if you like, behind a token or a password, with a Prometheus metrics endpoint.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="layers"></kit-art></div><div class="card__body">
+      <h3 id="library" data-i18n="featuresPage.cards.library.title">Snapshots and backups</h3>
+      <p data-i18n="featuresPage.cards.library.body">A deduplicating repository stores each version of a file once. Browse the timeline, restore any snapshot, back up chosen folders on demand, and bring in repositories from restic, Borg or Kopia.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="spectrum"></kit-art></div><div class="card__body">
+      <h3 id="salvage" data-i18n="featuresPage.cards.salvage.title">Rescue a failing disk</h3>
+      <p data-i18n="featuresPage.cards.salvage.body">Salvage copies whatever can still be read of a file on a failing drive, fills the unreadable spots with zeros so the rest keeps its place, keeps a map of the gaps, and retries only those gaps on a later run.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="stack"></kit-art></div><div class="card__body">
+      <h3 id="metadata" data-i18n="featuresPage.cards.metadata.title">Nothing quietly lost</h3>
+      <p data-i18n="featuresPage.cards.metadata.body">Sparse files stay sparse, and alternate data streams, extended attributes and the downloaded-from-the-internet mark travel with each file. A file locked by another program on Windows can be copied from a snapshot.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="horizon"></kit-art></div><div class="card__body">
+      <h3 id="desktop" data-i18n="featuresPage.cards.desktop.title">Part of your desktop</h3>
+      <p data-i18n="featuresPage.cards.desktop.body">Copy and move from the right-click menu in Explorer, Finder, Nautilus, Dolphin and Thunar, paste through it from anywhere with Ctrl+Shift+V, and schedule saved jobs in your system's own scheduler.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><kit-art name="tracks"></kit-art></div><div class="card__body">
+      <h3 id="cli" data-i18n="featuresPage.cards.cli.title">A command line for scripts</h3>
+      <p data-i18n="featuresPage.cards.cli.body">The freally command copies, moves and verifies, plans a job before running it, serves folders and imports backups, and reports in JSON lines with documented exit codes.</p>
+    </div></article>
+  </div>
+</kit-section>
+
+<!-- The benchmark: one machine, one drive, a build from before 1.0.0. Every
+     figure is the median of several runs; nothing here is estimated. -->
+
+<!-- The comparison. Every cell for another product is from its maker's own
+     pages, checked on 2026-10-02 (sources: features-sources-file-manager.md,
+     kept outside the repository); a cell that could not be verified says so. -->
+<kit-section id="compare" label="kit.label.compare">
+  <h2 data-i18n="featuresPage.compare.title">Side by side with the commercial tools</h2>
+  <p class="lead" data-i18n="featuresPage.compare.intro">Freally File Manager 1.0.0 next to six commercial tools people buy to copy, check, sync and manage their files. Every cell for another product comes from its maker's own pages, checked on 2 October 2026, and prices are US list prices as of October 2026.</p>
+  <div class="table-wrap" role="region" tabindex="0" aria-labelledby="compare-table">
+    <table class="compare" id="compare-table">
+      <thead>
+        <tr>
+          <th scope="col"><span class="visually-hidden" data-i18n="featuresPage.compare.feature">Feature</span></th>
+          <th scope="col" class="ours">Freally File Manager&nbsp;1.0.0</th>
+          <th scope="col">TeraCopy Pro&nbsp;4</th>
+          <th scope="col">Directory Opus&nbsp;13</th>
+          <th scope="col">Total Commander&nbsp;11</th>
+          <th scope="col">ForkLift&nbsp;4</th>
+          <th scope="col">Beyond Compare&nbsp;5 Pro</th>
+          <th scope="col">GoodSync Personal</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.price">Price (USD, October 2026)</th>
+          <td class="ours yes"><span class="mark"><span data-i18n="featuresPage.compare.freeToday">Free today</span></span></td>
+          <td class="price">$49.95</td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.aud">sold in Australian dollars</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.eur">sold in euros</span></td>
+          <td class="price">$19.95<span class="cell-note" data-i18n="featuresPage.compare.note.updatesYear">one year of updates</span></td>
+          <td class="price">$70</td>
+          <td class="price">$29.95<span class="cell-note" data-i18n="featuresPage.compare.note.perYear">a year, up to five devices</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.verify">Checks each copy against a checksum</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.optional">optional, eight checksums</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.checksumTool">a checksum tool, not after each copy</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.systems">Windows, macOS and Linux</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">Windows · macOS · Linux</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows · macOS</span><span class="cell-note" data-i18n="featuresPage.compare.note.oldMac">the Mac app is older</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">macOS</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">Windows · macOS · Linux</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows · macOS</span><span class="cell-note" data-i18n="featuresPage.compare.note.webLinux">Linux: web interface only</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.resume">Resumes a copy after a crash or a reboot</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.afterStop">after a stop, by reopening the list</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ftpOnly">FTP only</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ftpDownloads">FTP downloads only</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.connectOnly">GoodSync Connect transfers only</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.sync">Two-way sync that keeps both sides of a conflict</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.byDate">two-way, by date</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.byDate">two-way, by date</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.noConflicts">two-way; conflicts not documented</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.newerWins">the newer file wins</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.server">Serves a folder over WebDAV, S3 or SFTP</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">WebDAV · HTTP · S3 · SFTP</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ownProtocol">to other GoodSync apps only</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.undo">Undoes a finished copy or move</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.keepsVersions">keeps replaced files</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.salvage">Rescues what can still be read from a failing drive</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.report">Exports a report of each file's checksum</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.signable">can be signed</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.logNoSums">a log without checksums</span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.logView">a log view</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.compareReport">a separate comparison report</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.changeReport">logs and a change report</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="legend">
+    <li><span class="mark mark--yes"></span><span data-i18n="featuresPage.compare.legend.yes">has it</span></li>
+    <li><span class="mark mark--part"></span><span data-i18n="featuresPage.compare.legend.partly">partly</span></li>
+    <li><span class="mark mark--no"></span><span data-i18n="featuresPage.compare.legend.no">does not</span></li>
+    <li><span class="mark mark--unknown"></span><span data-i18n="featuresPage.compare.legend.unknown">not verified</span></li>
+  </ul>
+  <div class="notes compare-notes">
+    <article class="note note--featured">
+      <h3><kit-icon name="check"></kit-icon><span data-i18n="featuresPage.compare.summaryTitle">The short version</span></h3>
+      <p data-i18n="featuresPage.compare.summary">The short version: only Freally File Manager has all of it. None of the six lists a server for WebDAV, S3 or SFTP, or a way to rescue files from a failing drive, on its maker's own pages, and of the six only GoodSync documents detecting a sync conflict.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="info"></kit-icon><span data-i18n="featuresPage.compare.theyWinTitle">Where they win</span></h3>
+      <p data-i18n="featuresPage.compare.theyWin">Where they win: Directory Opus, Total Commander and ForkLift let you browse and organise all your folders in their own windows, while Freally File Manager 1.0.0 works on the files you hand it. TeraCopy and Directory Opus can securely delete files, and ForkLift, Beyond Compare and GoodSync copy to cloud storage; Freally File Manager 1.0.0 does neither. TeraCopy also offers more checksums: 17 against eight.</p>
+    </article>
+  </div>
+  <p class="fineprint" data-i18n="featuresPage.compare.asOf">Freally File Manager's column is version 1.0.0, and its price is today's: it is free today, and future versions may be sold. The other products change too; this table is as of 2 October 2026.</p>
+</kit-section>
+
+<kit-section id="why" label="kit.label.principles">
+  <h2 data-i18n="featuresPage.why.title">Why it is built the way it is</h2>
+  <div class="notes">
+    <article class="note"><h3><kit-icon name="copy"></kit-icon><span data-i18n="featuresPage.why.exact.title">Byte for byte, or a failure</span></h3>
+      <p data-i18n="featuresPage.why.exact.body">A copy is the same bytes as the original, or it is reported as a failure. And a file that changes while it is being read is flagged, copied again or failed, as you choose, rather than passed off as a clean copy.</p></article>
+    <article class="note"><h3><kit-icon name="zap"></kit-icon><span data-i18n="featuresPage.why.native.title">The system's own fast paths</span></h3>
+      <p data-i18n="featuresPage.why.native.body">It asks Windows, macOS and Linux to copy each file the fastest way they know, and clones files instantly where the file system allows, instead of pushing every byte through a loop of its own.</p></article>
+    <article class="note"><h3><kit-icon name="shield"></kit-icon><span data-i18n="featuresPage.why.safe.title">Nothing destructive by accident</span></h3>
+      <p data-i18n="featuresPage.why.safe.body">A move deletes the original only after the copy has succeeded, undo sends files to the Recycle Bin or Trash rather than deleting them, and undo never touches a file that has changed since it was copied.</p></article>
+    <article class="note"><h3><kit-icon name="lock"></kit-icon><span data-i18n="featuresPage.why.local.title">It stays on your machine</span></h3>
+      <p data-i18n="featuresPage.why.local.body">No telemetry and no account. Your files go only where you send them, and telemetry cannot even be switched on by editing the settings file.</p></article>
+    <article class="note"><h3><kit-icon name="cpu"></kit-icon><span data-i18n="featuresPage.why.noAi.title">No AI</span></h3>
+      <p data-i18n="featuresPage.why.noAi.body">Everything it decides comes from ordinary, predictable code: checksums, sizes and timestamps. There is no machine-learning library in it.</p></article>
+  </div>
+</kit-section>
+
+<kit-section id="limits" label="kit.label.limits">
+  <h2 data-i18n="featuresPage.limits.heading">The limits, stated plainly</h2>
+  <p class="lead" data-i18n="featuresPage.limits.intro">A feature list that hides its gaps is not worth reading. Everything above is in version 1.0.0, and this is what it does not do.</p>
+  <div class="cards cards--2">
+    <kit-states></kit-states>
+    <article class="card"><div class="card__body">
+      <h3 data-i18n="featuresPage.limits.title">What 1.0 does not do</h3>
+      <ul>
+        <li data-i18n="featuresPage.limits.verify">It does not verify a copy until you switch verification on in Settings → Transfer.</li>
+        <li data-i18n="featuresPage.limits.queue">Jobs cannot be reordered in the queue: each one starts as soon as it is added.</li>
+        <li data-i18n="featuresPage.limits.portable">Portable mode keeps settings and profiles beside the app, but history, the resume journal and saved cloud passwords stay on the computer it runs on.</li>
+        <li data-i18n="featuresPage.limits.shred">It cannot securely shred files: Settings → Secure delete is there, but nothing in 1.0.0 deletes through it.</li>
+        <li data-i18n="featuresPage.limits.cloud">It cannot copy to cloud storage: you can add and test cloud accounts in Settings → Remotes, but no copy goes to them yet.</li>
+      </ul>
+    </div></article>
+  </div>
+  <p class="fineprint" data-i18n="featuresPage.limits.downloads">There are no downloads on this site yet, and none on this page.</p>
+</kit-section>

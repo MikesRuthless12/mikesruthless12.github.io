@@ -1,0 +1,115 @@
+<!-- Freally Sourcerer — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the family strip, the closing call, the footer)
+     is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">One search.</span> <span class="hl-bright">Every source. Every OS.</span></kit-headline>
+  <kit-lede data-i18n="hero.sub">Find any file as you type: by its name, the words inside it, how it sounds, what its header says, or a name that is only close to the one you remember.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Every operating system has a search box, and each falls short in its own way. voidtools' Everything made file-name search instant on Windows years ago, and it has stayed on Windows.</p>
+      <p data-i18n="what.p2">Freally Sourcerer is that kind of search for Windows, macOS and Linux. It keeps one index of your disks, kept current by each system's own record of file changes — the NTFS change journal on Windows, FSEvents on macOS, inotify and fanotify on Linux — so new and renamed files are found without a rescan.</p>
+      <p data-i18n="what.p3">Then it reads further than the name. One query can ask about the name, the text inside a document, an audio file's measured loudness, what an image or a program says about itself in its header, and names that are only close to what you typed.</p>
+    </div>
+    <figure class="split__art"><kit-art name="lens"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="features" label="kit.label.inside">
+  <h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><kit-art name="index"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.filename.title">File names, instantly</h3>
+        <p data-i18n="features.filename.body">Substrings, wildcards, regular expressions, AND, OR and NOT, and Everything's own modifiers for size, date, extension and path, answered from the index as you type.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="lines"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.content.title">The text inside files</h3>
+        <p data-i18n="features.content.body">Full-text search in PDFs, Word, Excel and PowerPoint files, Markdown, source code in 32 languages, JSON, CSV and YAML, mail, and inside archives without unpacking them.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="wave"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.audio.title">Audio by how it sounds</h3>
+        <p data-i18n="features.audio.body">Find audio by its measured loudness in LUFS, true peak, silence, dynamic range, length, codec and sample rate — not by tags somebody typed.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="layers"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.properties.title">What a file says about itself</h3>
+        <p data-i18n="features.properties.body">Seventy-two properties read from file headers: image size and camera, video codec and length, document author and pages, a program's architecture and signature, and more.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="nodes"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.similar.title">Names that are only close</h3>
+        <p data-i18n="features.similar.body">The similarity lens finds names near what you typed — a typo, a version number, a different prefix — and a search that finds nothing offers the closest real name.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="stack"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.everything.title">At home if you come from Everything</h3>
+        <p data-i18n="features.everything.body">Everything's search syntax works here too, and its file lists open and export, so a catalogue of a drive moves between the two.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="tree"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.results.title">Act on what you find</h3>
+        <p data-i18n="features.results.body">Open, reveal, copy, rename a whole set of results with a preview and undo it, find duplicates and empty folders, and run commands of your own.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="horizon"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.platforms.title">One app, three systems</h3>
+        <p data-i18n="features.platforms.body">The same app, query language and index on Windows, macOS and Linux, a command line for scripts, and eighteen languages.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per version. The versions after 0.23 are the plan, in the order they will be built.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">A version that is done is built and tagged. It is not a download: there are none, and there will not be until 1.0.0.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="gauge"></kit-icon><span data-i18n="honest.firstIndex.title">The first index takes longer on macOS and Linux</span></h3>
+      <p data-i18n="honest.firstIndex.body">On Windows, the NTFS change journal lets a whole volume be indexed quickly. macOS and Linux have nothing like it, so the first index there walks every folder: minutes, not seconds, on a large disk. After that, the system's own change events keep it current.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="wifi-off"></kit-icon><span data-i18n="honest.network.title">What goes online, and what never does</span></h3>
+      <p data-i18n="honest.network.body">There is no telemetry, and nothing about your files or your searches is sent anywhere. On its own the app goes online for one thing: to ask whether there is a newer version, once a day unless you change it, and you can switch that off. A bug report is sent only when you choose to send one, after you have seen what it holds.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="folder"></kit-icon><span data-i18n="honest.unreadable.title">It tells you what it cannot see</span></h3>
+      <p data-i18n="honest.unreadable.body">A folder that could not be read looks just like an empty one. Sourcerer lists the folders it had to skip, with the reason and the fix for your system, instead of quietly returning fewer results.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="layers"></kit-icon><span data-i18n="honest.lenses.title">Two of the five lenses are not connected yet</span></h3>
+      <p data-i18n="honest.lenses.body">The content lens, which reads the text inside files, and the similarity lens, which finds names that are only close, are built but do not answer searches yet. Today the file-name, audio and property lenses do. Connecting the other two is part of the road to 1.0.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads before 1.0.0</span></h3>
+      <p data-i18n="honest.downloads.body">No beta on this page, no preview build, no early access. Version 1.0.0 is the first one this site will offer.</p>
+    </article>
+  </div>
+</kit-section>

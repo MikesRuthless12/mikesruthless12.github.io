@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "Toutes les modifications notables de **Freally Teleprompt** sont consignées ici.",
-  "changelog.c7791448f357": "Le format suit [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Les versions antérieures à la 1.0 suivaient une échelle par phases (`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`) ; à partir de la 1.0.0, c'est du versionnage sémantique ordinaire. La page du journal des modifications du site web est générée à partir de ce fichier par `scripts/build-docs-site.mjs` — une seule histoire, jamais une seconde copie tenue à la main.",
   "changelog.69c6a54708de": "[Non publié]",
   "changelog.c205924de0fe": "Documentation",
   "changelog.3ba1bf71dedb": "**Le site web est refait** selon le design de la famille Freally, et il parle les 18 langues de l'application — ce journal des modifications compris. Il ne propose aucun téléchargement.",

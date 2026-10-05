@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Lớp phủ chat đọc phần chat công khai** từ kênh mà bạn trỏ tới, giống như một người xem chưa đăng nhập — không cần tài khoản, khóa hay đăng nhập.",
   "manual.efe87d55bed1": "**Hai thành phần chỉ được tải về khi bạn cần đến chúng lần đầu:** ffmpeg, cho các codec mà các nền tảng yêu cầu, và môi trường chạy trình duyệt, cho nguồn trình duyệt. Mỗi thành phần đến từ chính nhà phát hành của nó và được kiểm tra trước khi dùng.",
   "manual.3601a272b3b0": "**Việc kiểm tra cập nhật** tải một tệp nhỏ mỗi lần khởi chạy, và khi bạn chọn **Kiểm tra cập nhật…**. Không có thông tin nào về bạn hay máy tính của bạn được gửi kèm, và không có gì được cài đặt trừ khi bạn đồng ý.",
-  "manual.11abc96d8e21": "**Báo cáo sự cố chỉ được gửi khi bạn nhấn Gửi** trên trang báo cáo, sau khi bạn đã đọc nội dung của nó (xem [Báo cáo sự cố](#report)).",
+  "manual.aa2fa62ecaaf": "**Báo cáo sự cố chỉ được gửi khi bạn nhấn Gửi** trên trang báo cáo, sau khi bạn đã đọc nội dung của nó (xem [Báo cáo sự cố](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Không AI.** Mọi bộ lọc — khử nhiễu, khóa chroma, ánh xạ tông màu — đều là xử lý tín hiệu cổ điển. Ứng dụng không chứa mô hình học máy nào và không tải về mô hình nào."
 }

@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "**Freally Teleprompt** 的所有重要变更都记录在这里。",
-  "changelog.c7791448f357": "格式遵循 [Keep a Changelog](https://keepachangelog.com/en/1.1.0/)。1.0 之前的版本采用分阶段的版本阶梯（`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`）；从 1.0.0 起采用普通的语义化版本号。网站上的更新日志页面由 `scripts/build-docs-site.mjs` 从本文件生成——只有一份历史，绝不手工维护第二份副本。",
   "changelog.69c6a54708de": "[未发布]",
   "changelog.c205924de0fe": "文档",
   "changelog.3ba1bf71dedb": "**网站已重建**，采用 Freally 家族的设计，并支持应用的全部 18 种语言——包括这份更新日志。它不提供下载。",

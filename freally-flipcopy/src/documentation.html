@@ -1,0 +1,66 @@
+<!-- Freally Flipcopy — the manual. The contents rail and the search box are the
+     kit's; each <section> is one chapter, its <h2> the rail's entry. -->
+
+<kit-head>
+  <kit-lede data-i18n="docs.intro">This manual grows with every version. Right now it covers what version 0.4.0 does; the full illustrated manual, with a screenshot for every step, arrives with the beta.</kit-lede>
+</kit-head>
+
+<kit-manual>
+  <section>
+    <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
+    <p data-i18n="docs.start.p1">Flipcopy runs inside your DAW as a CLAP, VST3 or AU plugin, or on its own as a standalone app. Put it on any audio track: it passes the track's audio through exactly as it arrives, so it is safe to leave in place.</p>
+    <p data-i18n="docs.start.p2">There are no downloads before version 1.0.0, and the source code is private.</p>
+  </section>
+
+  <section>
+    <h2 id="agreement" data-i18n="docs.agreement.title">The licence agreement</h2>
+    <p data-i18n="docs.agreement.p1">The first time Flipcopy opens it shows its licence agreement. Read it to the end and Agree becomes available. Until you agree, Flipcopy reads nothing, copies nothing and adds nothing to your track's audio.</p>
+    <p data-i18n="docs.agreement.p2">Your answer is kept on your computer and shared by every open copy of Flipcopy, in every DAW and in the standalone app. If you decline, choose Read it again whenever you are ready.</p>
+  </section>
+
+  <section>
+    <h2 id="window" data-i18n="docs.window.title">The window</h2>
+    <p data-i18n="docs.window.p1">On one side is the browser, with the preview player docked under it. The rest of the window is the stage, where the copier stands. Drag the line between them to make the browser wider or narrower, or focus it and use the arrow keys.</p>
+    <p data-i18n="docs.window.p2">Press Ctrl+B (Cmd+B on a Mac), or the button at the browser’s edge, to fold the browser and its preview away: the stage takes the whole window. Press it again and they come back at the width you left them. Flipcopy remembers which you chose.</p>
+  </section>
+
+  <section>
+    <h2 id="copier" data-i18n="docs.copier.title">Making a copy</h2>
+    <p data-i18n="docs.copier.p1">Put an audio or MIDI file on the glass: drop it from Explorer or Finder anywhere on the window, drag it from the browser or the preview strip onto the copier, press Enter on a row in the browser, or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Putting a file on the glass never starts a copy.</p>
+    <p data-i18n="docs.copier.p2">Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass.</p>
+    <p data-i18n="docs.copier.p3">Every page is a real file in Documents/Freally Flipcopy/Copies, numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once.</p>
+    <p data-i18n="docs.copier.p4">The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings.</p>
+  </section>
+
+  <section>
+    <h2 id="browser" data-i18n="docs.browser.title">The browser</h2>
+    <p data-i18n="docs.browser.p1">The browser opens on its Categories: Copies, every page and mix you have made, and Recent, the originals you last put on the glass. Under them are the folders you have added; choose + Add Folder to add one, up to 128. A folder on a drive that is not plugged in keeps its place and says it isn’t connected right now. To stop browsing a folder, right-click it, or select it and press Delete; nothing on disk is touched.</p>
+    <p data-i18n="docs.browser.p2">Open a folder to walk it as a tree. Type to filter it by name, pick a tag or Starred to narrow it, and choose Show all files to see the sidecar files Flipcopy hides, such as .asd and .reapeaks. Back and Forward take you through the places you have been.</p>
+    <p data-i18n="docs.browser.p3">Walk the rows with ↑ and ↓: each row you land on plays once in the preview. → opens a folder and ← closes it. Enter puts the selected file on the glass, and so does dragging its row onto the copier.</p>
+    <p data-i18n="docs.browser.p4">The first time you add a folder, Flipcopy counts its files, with a bar that shows how far it has got. It reads at most 12 folders deep and 50,000 files, and never follows a shortcut out of the folder.</p>
+  </section>
+
+  <section>
+    <h2 id="preview" data-i18n="docs.preview.title">The preview player</h2>
+    <p data-i18n="docs.preview.p1">The preview player sits under the browser. An audio file shows its real waveform. A MIDI file shows its notes and plays through Preview Piano, the same sound a copy uses unless you choose another, so you hear what the copy will sound like.</p>
+    <p data-i18n="docs.preview.p2">Space plays and pauses, Stop goes back to the start, and a click or a drag on the strip moves the playhead. Loop repeats the file, Play when selected (the headphones) plays each file you select, and the slider sets the level. The preview plays through Flipcopy’s own output and never into a bounce. A WAV file of any length plays; a file in another format plays if it is five minutes or shorter.</p>
+    <p data-i18n="docs.preview.p3">Click the original on the glass, or a page on the tray, to hear it. When a copy is finished, Copy plays all its pages together and Original plays the file on the glass, from the same place in the music, so you can hear the difference before you drag. Playing it is never required: the pages can be dragged as soon as the last one lands.</p>
+    <p data-i18n="docs.preview.p4">The strip wears the same lime frame as a page. Drag it onto the glass to put that file there.</p>
+  </section>
+
+  <section>
+    <h2 id="problems" data-i18n="docs.report.title">When something goes wrong</h2>
+    <p data-i18n="docs.report.p1">If Flipcopy itself fails, such as a copy it could not write, the screen offers Report. It opens a page in your web browser that shows exactly what the report holds; nothing is sent unless you press Send there. A file the copier refuses, because it is too long, silent or not audio, is not a failure, and the screen says why instead.</p>
+  </section>
+
+  <section>
+    <h2 id="language" data-i18n="docs.language.title">Languages</h2>
+    <p data-i18n="docs.language.p1">Flipcopy speaks eighteen languages. It starts in your system's language; to choose another, open Settings with the gear at the top of the browser and pick one. The choice applies to every copy of Flipcopy on the computer.</p>
+  </section>
+
+  <section>
+    <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
+    <p data-i18n="docs.privacy.p1">Flipcopy has no account and no telemetry, and the plugin and standalone app contain no networking code at all. Your files and your copies never leave your computer.</p>
+    <p data-i18n="docs.privacy.p2">It contains no AI of any kind: every copy is made by classic, deterministic signal processing, and a build gate fails if a machine-learning library is ever added.</p>
+  </section>
+</kit-manual>

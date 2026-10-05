@@ -1,324 +1,202 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="index" data-product="capture" data-name="Freally Capture" data-title-key="site.tagline">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <title>Freally Capture — record and stream like a studio</title>
-    <meta
-      name="description"
-      content="A live-streaming and recording studio for Windows, macOS and Linux: scenes on the GPU, multi-track recording, multistream straight from your machine. No accounts, no telemetry, no AI. Free today; future versions may be sold."
-    />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Freally Capture — Record and stream like a studio — scenes, sources, multistream, one clean app.</title>
+    <meta name="description" content="A live-streaming and recording studio for Windows, macOS and Linux: scenes on the GPU, multi-track recording, multistream straight from your machine. No accounts, no telemetry, no AI. Free today; future versions may be sold." />
+    <meta property="og:title" content="Freally Capture — Record and stream like a studio — scenes, sources, multistream, one clean app." />
+    <meta property="og:description" content="A live-streaming and recording studio for Windows, macOS and Linux: scenes on the GPU, multi-track recording, multistream straight from your machine. No accounts, no telemetry, no AI. Free today; future versions may be sold." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="capture-icon.png" alt="" width="28" height="28" />
-          <span>Freally Capture</span>
-        </a>
-        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-            <!-- ⚠ Filled by site.js: English first, the other seventeen alphabetically. -->
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="capture-icon.png" alt="" width="28" height="28" /><span>Freally Capture</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
     <main id="main">
-      <section class="hero">
-        <img class="mark" src="capture-icon.png" alt="" width="96" height="96" />
-        <h1>Freally Capture</h1>
-        <p class="tagline" data-i18n="hero.tagline">
-          Record and stream like a studio — scenes, sources, multistream, one clean app.
-        </p>
-        <p class="sub" data-i18n="hero.sub">
-          A live-streaming and recording studio for Windows, macOS and Linux. No accounts, no telemetry and no cloud service of ours: your stream goes straight to the platforms you choose.
-        </p>
-        <p class="sub" data-i18n="notice.price">
-          Freally Capture is free today, but it might not be free forever: future versions may be sold.
-        </p>
-        <ul class="chips">
-          <li data-i18n="hero.chipDesktop">Desktop app</li>
-          <li>Windows</li>
-          <li>macOS</li>
-          <li>Linux</li>
-          <li>RTMP</li>
-          <li>SRT</li>
-          <li>WHIP</li>
-        </ul>
-        <p class="sub">
-          <strong data-i18n="hero.noDownloads">Version 1.2.1 is the current release. There are no downloads on this site, and the source code is private.</strong>
-        </p>
-      </section>
-
-      <section id="what">
-        <h2 data-i18n="what.title">What it is</h2>
-        <p data-i18n="what.p1">
-          Going live usually takes one app to capture, another to mix the sound, a service to send the stream to several platforms, and an account with each of them.
-        </p>
-        <p data-i18n="what.p2">
-          Freally Capture is one studio on your own computer. Build a scene from your screen, windows, cameras, media and overlays; compose it on the graphics card; record it on up to six audio tracks; and stream it to several platforms at once, straight from your machine with no relay in between.
-        </p>
-        <p data-i18n="what.p3">
-          It needs no account and sends no telemetry. What leaves your computer is the stream you chose to send, plus the few connections you switch on yourself — each listed plainly in the documentation.
-        </p>
-      </section>
-
-      <section id="features">
-        <h2 data-i18n="features.title">What is in it</h2>
-        <div class="grid">
-          <article class="card">
-            <h3 data-i18n="features.scenes.title">Scenes on the GPU</h3>
-            <p data-i18n="features.scenes.body">
-              Build scenes from displays, windows, games, cameras, web pages, media, images and text, and compose them live on the graphics card with filters and transitions.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.multistream.title">Multistream, direct</h3>
-            <p data-i18n="features.multistream.body">
-              Go live on Twitch, YouTube, Kick, Facebook, Trovo or any server of your own — several at once — over RTMP, RTMPS, SRT or WHIP, straight from your machine.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.record.title">Multi-track recording</h3>
-            <p data-i18n="features.record.body">
-              Record with your graphics card's hardware encoder or losslessly in Capture's own format, on up to six audio tracks, with splitting, chapter markers and crash-safe files.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.audio.title">A broadcast mixer</h3>
-            <p data-i18n="features.audio.body">
-              Every source on its own strip, with noise suppression, a gate, a compressor, EQ and loudness metering — all classic signal processing, with no AI anywhere.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.safety.title">Studio Mode and safety</h3>
-            <p data-i18n="features.safety.body">
-              Stage changes in the preview before they go live, check everything with a pre-flight, and keep alarms, encoder failover and a panic button ready.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.guests.title">Remote guests</h3>
-            <p data-i18n="features.guests.body">
-              Invite up to eight guests with a link. They join from a web browser, and their camera and microphone come straight to you, peer to peer.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.deep.title">Virtual camera, browser source, game capture</h3>
-            <p data-i18n="features.deep.body">
-              Your program as a webcam for video calls, any web page as a source, and exclusive-fullscreen games — Windows first, with every gap stated.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.free.title">Free today, local, no AI</h3>
-            <p data-i18n="features.free.body">
-              No paid tier, no account, no telemetry and no model. Your scenes, recordings and stream keys stay on your computer.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="ladder">
-        <h2 data-i18n="ladder.title">Version by version</h2>
-        <p data-i18n="ladder.intro">
-          Every version of Freally Capture so far, from the foundation to the current release. The changelog has the details of each one.
-        </p>
-        <table class="ladder">
-          <thead>
-            <tr>
-              <th data-i18n="ladder.version">Version</th>
-              <th data-i18n="ladder.state">State</th>
-              <th data-i18n="ladder.lands">What it brought</th>
-            </tr>
-          </thead>
-          <!-- LADDER:START — generated from docs/ladder.json by scripts/build-docs-site.mjs. Do not edit by hand. -->
-          <tbody>
-            <tr>
-              <td><code>v0.10.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.10.0">The foundation: the desktop app's shell over its own engine, the build checks on Windows, macOS and Linux, and this site.</td>
-            </tr>
-            <tr>
-              <td><code>v0.25.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.25.0">Capture: screens, windows and webcams on Windows, macOS and Linux, live in the preview.</td>
-            </tr>
-            <tr>
-              <td><code>v0.40.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.40.0">The GPU compositor: scenes built from sources and composed on the graphics card, with filters such as chroma key, color correction, LUTs and blur.</td>
-            </tr>
-            <tr>
-              <td><code>v0.55.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.55.0">Audio and recording: a mixer with up to six tracks and classic-DSP filters, and multi-track recording with hardware encoders and Capture's own lossless format.</td>
-            </tr>
-            <tr>
-              <td><code>v0.56.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.56.0">A native GPU preview: the program painted straight from the compositor, with no lag.</td>
-            </tr>
-            <tr>
-              <td><code>v0.70.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.70.0">The studio: streaming to Twitch, YouTube, Kick, Facebook and Trovo with automatic reconnects, Studio Mode with transitions, hotkeys, profiles and a stats dock.</td>
-            </tr>
-            <tr>
-              <td><code>v0.85.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.85.0">Streaming depth: multistream to several platforms at once, SRT and WHIP, a vertical canvas, nested scenes, a replay buffer and a chat overlay that needs no sign-in.</td>
-            </tr>
-            <tr>
-              <td><code>v0.90.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.90.0">Remote control and extensions: a password-protected WebSocket API, browser docks, sandboxed Lua scripting and a plugin SDK, all local and off by default.</td>
-            </tr>
-            <tr>
-              <td><code>v0.95.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.95.0">Distribution: a signed auto-updater, audio captured per application, and the licence agreement on first run.</td>
-            </tr>
-            <tr>
-              <td><code>v0.96.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.96.0">A studio for everyone: 18 languages, full keyboard and screen-reader support, a first-run setup wizard, a command palette and themes.</td>
-            </tr>
-            <tr>
-              <td><code>v0.97.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.97.0">Scene authoring and monitoring: undo and redo, an OBS scene-collection importer, alignment guides, a keying workbench, a multiview and projectors.</td>
-            </tr>
-            <tr>
-              <td><code>v0.98.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.98.0">Broadcast safety: a go-live pre-flight, alarms, a source-health dashboard, encoder failover, crash-safe recording, a panic button and a quit guard.</td>
-            </tr>
-            <tr>
-              <td><code>v0.99.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.99.0">Sources, devices and calibration: test signals, A/V sync calibration, timers and clocks, text from a file, a hotkey map, deinterlacing and camera controls.</td>
-            </tr>
-            <tr>
-              <td><code>v0.200.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.200.0">Automation and capture depth: rules, macros, MIDI and OSC control, a LAN touch panel, tally lights, PTZ cameras and a show rundown, plus punch-in zoom and HDR-to-SDR tone-mapping.</td>
-            </tr>
-            <tr>
-              <td><code>v0.300.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.300.0">New sources and overlays: instant replay, a gapless playlist, a title and scoreboard designer, an audio visualizer, a stats overlay, a split timer, an input overlay, LAN ingest and Freally Link.</td>
-            </tr>
-            <tr>
-              <td><code>v0.400.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.400.0">Compositor depth: 3D corner-pin, downstream keyers, freeze-frame, more blurs, the move transition, a WGSL shader studio, bezier masks and track-matte stingers.</td>
-            </tr>
-            <tr>
-              <td><code>v0.500.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.500.0">Audio production: output routing, a ducking matrix, an auto-mixer, loudness normalization, a parametric EQ, a soundboard, podcast recording and CLAP and VST3 plugin discovery.</td>
-            </tr>
-            <tr>
-              <td><code>v0.600.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.600.0">Recording and replay depth: per-source ISO recording, a clip trimmer, recording with transparency, automatic markers, a post-record pipeline, an integrity check and SMPTE timecode.</td>
-            </tr>
-            <tr>
-              <td><code>v0.700.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.700.0">Streaming insight: a network simulator, a rehearsal mode, a dropped-frame timeline, a session report, an encoder benchmark, and sources shown only on the stream or only in the recording.</td>
-            </tr>
-            <tr>
-              <td><code>v0.800.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.800.0">Remote guests and show production: up to eight guests, a green room, cues, a connection-quality dashboard, a telestrator, a teleprompter and automatic guest grids.</td>
-            </tr>
-            <tr>
-              <td><code>v0.900.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.900.0">Studio management: scene packs, compare and merge, named snapshots, portable mode, one-file backups, a theme editor and dock layouts.</td>
-            </tr>
-            <tr>
-              <td><code>v0.910.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.910.0">The teleprompter, reworked: pause chips, a start countdown, BPM pacing, read-aloud, and autocomplete in all 18 languages.</td>
-            </tr>
-            <tr>
-              <td><code>v1.0.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.0.0">The first stable release: every planned feature, plus a Starting Soon countdown, background music, a social bar and a featured chat banner.</td>
-            </tr>
-            <tr>
-              <td><code>v1.1.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.1.0">A shareable MP4, written beside each lossless recording when it stops.</td>
-            </tr>
-            <tr>
-              <td><code>v1.2.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.2.0">Deep capture and the web: a virtual camera, a true browser source and game capture, Windows first.</td>
-            </tr>
-            <tr>
-              <td><code>v1.2.1</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.2.1">The audit: no new features, a full security and correctness pass, and the three 1.2.0 additions made to work.</td>
-            </tr>
-          </tbody>
-          <!-- LADDER:END -->
-        </table>
-        <p class="sub" data-i18n="ladder.note">
-          Every version listed is done. What comes after 1.2.1 is planned privately and appears here when it ships. None of them is a download on this site.
-        </p>
-      </section>
-
-      <section id="honest">
-        <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
-        <div class="honest">
-          <h3 data-i18n="honest.windows.title">Some of the newest features are Windows-only</h3>
-          <p data-i18n="honest.windows.body">
-            In 1.2.1 the virtual camera, game capture and cursor effects work on Windows only, and the browser source has been verified on Windows first. The rest of the studio runs on Windows, macOS and Linux.
-          </p>
-
-          <h3 data-i18n="honest.signed.title">Two components are not code-signed yet</h3>
-          <p data-i18n="honest.signed.body">
-            The virtual camera's system component and the browser source's runtime are not code-signed yet, and two live tests are still to be done: the camera inside a real video call, and game capture in a protected game. The changelog says so in the release that added them.
-          </p>
-
-          <h3 data-i18n="honest.network.title">What does go online</h3>
-          <p data-i18n="honest.network.body">
-            Your streams go to the platforms you set up. A remote-guest session's handshake crosses a public signalling service; a chat overlay reads a channel's public chat; ffmpeg and the browser runtime are downloaded the first time you need them; the app checks for updates; and a problem report goes only when you press Send on its page. Apart from the update check, each happens only because you set it up.
-          </p>
-
-          <h3 data-i18n="honest.downloads.title">There are no downloads here</h3>
-          <p data-i18n="honest.downloads.body">
-            This site describes Freally Capture; it does not distribute it. There is no download page, link or button, and the source code is private.
-          </p>
-        </div>
-      </section>
+<section class="hero">
+<div class="hero__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap hero__inner">
+<div class="hero__copy">
+<div class="hero__brand"><img class="app-icon" src="capture-icon.png" alt="" width="56" height="56" /><span class="hero__name">Freally Capture</span><p class="badge"><span class="badge__dot"></span><span data-i18n="kit.badge.done">v1.2.1 is done</span></p></div>
+<h1 class="display" data-i18n-html="hero.headline"><span class="hl-muted">Record and stream like a studio.</span> <span class="cycle" data-cycle="hero.cycle" data-words="One clean app.|Every platform at once.|No account, no AI.">One clean app.</span></h1>
+<p class="lead" data-i18n="hero.sub">A live-streaming and recording studio for Windows, macOS and Linux. No accounts, no telemetry and no cloud service of ours: your stream goes straight to the platforms you choose.</p>
+<div class="actions"><a class="btn btn-primary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="documentation.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg><span data-i18n="kit.cta.docs">Read the documentation</span></a></div>
+<p class="fineprint" data-i18n="kit.price">Freally Capture is free today, but it might not be free forever: future versions may be sold.</p>
+<p class="fineprint"><strong data-i18n="kit.noDownloads">There are no downloads yet, and the source code is private.</strong></p>
+<ul class="chips"><li data-i18n="hero.chipDesktop">Desktop app</li><li>Windows</li><li>macOS</li><li>Linux</li><li>RTMP</li><li>SRT</li><li>WHIP</li></ul>
+</div>
+<div class="hero__visual" aria-hidden="true"><img class="hero__orbit" src="kit/art/orbit.svg" alt="" width="640" height="640" /><div class="hero__core"><img src="capture-icon.png" alt="" width="200" height="200" /></div></div>
+</div>
+</section>
+<section class="section" id="what">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.overview">Overview</span>
+<div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Going live usually takes one app to capture, another to mix the sound, a service to send the stream to several platforms, and an account with each of them.</p>
+      <p data-i18n="what.p2">Freally Capture is one studio on your own computer. Build a scene from your screen, windows, cameras, media and overlays; compose it on the graphics card; record it on up to six audio tracks; and stream it to several platforms at once, straight from your machine with no relay in between.</p>
+      <p data-i18n="what.p3">It needs no account and sends no telemetry. What leaves your computer is the stream you chose to send, plus the few connections you switch on yourself — each listed plainly in the documentation.</p>
+    </div>
+    <figure class="split__art"><img src="kit/art/circuit.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></figure>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="features">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.inside">Inside</span>
+<h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards cards--4">
+    <article class="card"><div class="card__media"><img src="kit/art/layers.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.scenes.title">Scenes on the GPU</h3>
+      <p data-i18n="features.scenes.body">Build scenes from displays, windows, games, cameras, web pages, media, images and text, and compose them live on the graphics card with filters and transitions.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/signal.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.multistream.title">Multistream, direct</h3>
+      <p data-i18n="features.multistream.body">Go live on Twitch, YouTube, Kick, Facebook, Trovo or any server of your own — several at once — over RTMP, RTMPS, SRT or WHIP, straight from your machine.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/tracks.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.record.title">Multi-track recording</h3>
+      <p data-i18n="features.record.body">Record with your graphics card's hardware encoder or losslessly in Capture's own format, on up to six audio tracks, with splitting, chapter markers and crash-safe files.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/faders.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.audio.title">A broadcast mixer</h3>
+      <p data-i18n="features.audio.body">Every source on its own strip, with noise suppression, a gate, a compressor, EQ and loudness metering — all classic signal processing, with no AI anywhere.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/rings.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.safety.title">Studio Mode and safety</h3>
+      <p data-i18n="features.safety.body">Stage changes in the preview before they go live, check everything with a pre-flight, and keep alarms, encoder failover and a panic button ready.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/chat.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.guests.title">Remote guests</h3>
+      <p data-i18n="features.guests.body">Invite up to eight guests with a link. They join from a web browser, and their camera and microphone come straight to you, peer to peer.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/lens.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.deep.title">Virtual camera, browser source, game capture</h3>
+      <p data-i18n="features.deep.body">Your program as a webcam for video calls, any web page as a source, and exclusive-fullscreen games — Windows first, with every gap stated.</p>
+    </div></article>
+    <article class="card"><div class="card__media"><img src="kit/art/shield.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div><div class="card__body">
+      <h3 data-i18n="features.free.title">Free today, local, no AI</h3>
+      <p data-i18n="features.free.body">No paid tier, no account, no telemetry and no model. Your scenes, recordings and stream keys stay on your computer.</p>
+    </div></article>
+  </div>
+</div>
+</section>
+<section class="section" id="ladder">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.roadmap">Roadmap</span>
+<h2 data-i18n="ladder.title">Version by version</h2>
+  <p class="lead" data-i18n="ladder.intro">Every version of Freally Capture so far, from the foundation to the current release. The changelog has the details of each one.</p>
+  <ol class="ladder">
+<li class="rung rung--done"><code class="rung__ver">v0.10.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.10.0">The foundation: the desktop app's shell over its own engine, the build checks on Windows, macOS and Linux, and this site.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.25.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.25.0">Capture: screens, windows and webcams on Windows, macOS and Linux, live in the preview.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.40.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.40.0">The GPU compositor: scenes built from sources and composed on the graphics card, with filters such as chroma key, color correction, LUTs and blur.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.55.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.55.0">Audio and recording: a mixer with up to six tracks and classic-DSP filters, and multi-track recording with hardware encoders and Capture's own lossless format.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.56.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.56.0">A native GPU preview: the program painted straight from the compositor, with no lag.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.70.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.70.0">The studio: streaming to Twitch, YouTube, Kick, Facebook and Trovo with automatic reconnects, Studio Mode with transitions, hotkeys, profiles and a stats dock.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.85.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.85.0">Streaming depth: multistream to several platforms at once, SRT and WHIP, a vertical canvas, nested scenes, a replay buffer and a chat overlay that needs no sign-in.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.90.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.90.0">Remote control and extensions: a password-protected WebSocket API, browser docks, sandboxed Lua scripting and a plugin SDK, all local and off by default.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.95.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.95.0">Distribution: a signed auto-updater, audio captured per application, and the licence agreement on first run.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.96.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.96.0">A studio for everyone: 18 languages, full keyboard and screen-reader support, a first-run setup wizard, a command palette and themes.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.97.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.97.0">Scene authoring and monitoring: undo and redo, an OBS scene-collection importer, alignment guides, a keying workbench, a multiview and projectors.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.98.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.98.0">Broadcast safety: a go-live pre-flight, alarms, a source-health dashboard, encoder failover, crash-safe recording, a panic button and a quit guard.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.99.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.99.0">Sources, devices and calibration: test signals, A/V sync calibration, timers and clocks, text from a file, a hotkey map, deinterlacing and camera controls.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.200.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.200.0">Automation and capture depth: rules, macros, MIDI and OSC control, a LAN touch panel, tally lights, PTZ cameras and a show rundown, plus punch-in zoom and HDR-to-SDR tone-mapping.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.300.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.300.0">New sources and overlays: instant replay, a gapless playlist, a title and scoreboard designer, an audio visualizer, a stats overlay, a split timer, an input overlay, LAN ingest and Freally Link.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.400.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.400.0">Compositor depth: 3D corner-pin, downstream keyers, freeze-frame, more blurs, the move transition, a WGSL shader studio, bezier masks and track-matte stingers.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.500.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.500.0">Audio production: output routing, a ducking matrix, an auto-mixer, loudness normalization, a parametric EQ, a soundboard, podcast recording and CLAP and VST3 plugin discovery.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.600.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.600.0">Recording and replay depth: per-source ISO recording, a clip trimmer, recording with transparency, automatic markers, a post-record pipeline, an integrity check and SMPTE timecode.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.700.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.700.0">Streaming insight: a network simulator, a rehearsal mode, a dropped-frame timeline, a session report, an encoder benchmark, and sources shown only on the stream or only in the recording.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.800.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.800.0">Remote guests and show production: up to eight guests, a green room, cues, a connection-quality dashboard, a telestrator, a teleprompter and automatic guest grids.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.900.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.900.0">Studio management: scene packs, compare and merge, named snapshots, portable mode, one-file backups, a theme editor and dock layouts.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.910.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.910.0">The teleprompter, reworked: pause chips, a start countdown, BPM pacing, read-aloud, and autocomplete in all 18 languages.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.0.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.0.0">The first stable release: every planned feature, plus a Starting Soon countdown, background music, a social bar and a featured chat banner.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.1.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.1.0">A shareable MP4, written beside each lossless recording when it stops.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.2.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.2.0">Deep capture and the web: a virtual camera, a true browser source and game capture, Windows first.</span></li>
+<li class="rung rung--done rung--last-done"><code class="rung__ver">v1.2.1</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.2.1">The audit: no new features, a full security and correctness pass, and the three 1.2.0 additions made to work.</span></li>
+</ol>
+  <p class="fineprint" data-i18n="ladder.note">Every version listed is done. What comes after 1.2.1 is planned privately and appears here when it ships. None of them is a download on this site.</p>
+</div>
+</section>
+<section class="section section--surface" id="honest">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.honesty">Honesty</span>
+<h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4M12 8h.01"/></svg><span data-i18n="honest.windows.title">Some of the newest features are Windows-only</span></h3>
+      <p data-i18n="honest.windows.body">In 1.2.1 the virtual camera, game capture and cursor effects work on Windows only, and the browser source has been verified on Windows first. The rest of the studio runs on Windows, macOS and Linux.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="18" height="11" x="3" y="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><span data-i18n="honest.signed.title">Two components are not code-signed yet</span></h3>
+      <p data-i18n="honest.signed.body">The virtual camera's system component and the browser source's runtime are not code-signed yet, and two live tests are still to be done: the camera inside a real video call, and game capture in a protected game. The changelog says so in the release that added them.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span data-i18n="honest.network.title">What does go online</span></h3>
+      <p data-i18n="honest.network.body">Your streams go to the platforms you set up. A remote-guest session's handshake crosses a public signalling service; a chat overlay reads a channel's public chat; ffmpeg and the browser runtime are downloaded the first time you need them; the app checks for updates; and a problem report goes only when you press Send on its page. Apart from the update check, each happens only because you set it up.</p></article>
+    <article class="note"><h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span data-i18n="honest.downloads.title">There are no downloads here</span></h3>
+      <p data-i18n="honest.downloads.body">This site describes Freally Capture; it does not distribute it. There is no download page, link or button, and the source code is private.</p></article>
+  </div>
+</div>
+</section>
+<section class="section section--tight family">
+<div class="wrap section-head section-head--center">
+<span class="label" data-i18n="kit.family.label">The Freally family</span>
+<h2 class="h2" data-i18n-html="kit.family.title"><span class="hl-muted">One family.</span> <span class="hl-bright">Eight apps.</span></h2>
+</div>
+<div class="marquee"><div class="marquee__track">
+<div class="marquee__group"><a class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a class="marquee__item" href="https://freallyproducts.com/freally-capture/" aria-current="true"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+<div class="marquee__group" aria-hidden="true"><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-capture/" aria-current="true"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+</div></div>
+</section>
+<section class="cta">
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<span class="label" data-i18n="kit.cta.label">What changed</span>
+<h2 class="h2" data-i18n-html="kit.cta.title"><span class="hl-muted">Every version,</span> <span class="hl-bright">written down.</span></h2>
+<p class="lead" data-i18n="kit.cta.lede">The changelog lists everything that changed in Freally Capture, version by version, in all eighteen languages.</p>
+<div class="actions"><a class="btn btn-primary" href="changelog.html"><span data-i18n="kit.cta.changelog">Read the changelog</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span></a></div>
+</div>
+</section>
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.yours">
-          What you record and stream is yours, and so is the responsibility for it. Freally Capture's author never receives, stores or relays any of it.
-        </p>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="capture-icon.png" alt="" width="28" height="28" /><span>Freally Capture</span></a><p data-i18n="site.tagline">Record and stream like a studio — scenes, sources, multistream, one clean app.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Capture is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/" aria-current="true">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">What you record and stream is yours, and so is the responsibility for it. Freally Capture's author never receives, stores or relays any of it.</p></div>
+          <span class="status" data-i18n="kit.status.version">Version 1.2.1</span>
+        </div>
       </div>
     </footer>
-
-    <script src="site.js"></script>
   </body>
 </html>

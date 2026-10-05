@@ -1,331 +1,298 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="documentation" data-product="sourcerer" data-name="Freally Sourcerer" data-title-key="kit.nav.documentation">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
     <title>Documentation — Freally Sourcerer</title>
-    <meta
-      name="description"
-      content="How to use Freally Sourcerer: searching, the five lenses, the query syntax, filters, bookmarks, working with results, renaming in bulk, the preview, portable mode, settings, the command line and privacy."
-    />
+    <meta name="description" content="One search bar for every file on Windows, macOS and Linux: names, the text inside documents, audio by how it sounds, what a file's header says, and names that are only close. Free today; future versions may be sold." />
+    <meta property="og:title" content="Documentation — Freally Sourcerer" />
+    <meta property="og:description" content="One search bar for every file on Windows, macOS and Linux: names, the text inside documents, audio by how it sounds, what a file's header says, and names that are only close. Free today; future versions may be sold." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="sourcerer-icon.png" alt="" width="28" height="28" />
-          <span>Freally Sourcerer</span>
-        </a>
-        <nav class="site-nav" aria-label="Site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="sourcerer-icon.png" alt="" width="28" height="28" /><span>Freally Sourcerer</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
     <main id="main">
-      <h1 data-i18n="docs.title">Documentation</h1>
-      <p data-i18n="docs.intro">
-        How to use Freally Sourcerer as it is built today, on the road to 1.0; the guide grows with
-        every version. On macOS, read Ctrl as Cmd: the menus show your system's own keys.
-      </p>
+<section class="page-head">
+<div class="page-head__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<img class="app-icon" src="sourcerer-icon.png" alt="" width="72" height="72" />
+<span class="label" data-i18n="kit.nav.documentation">Documentation</span>
+<h1 data-i18n-html="kit.head.documentation"><span class="hl-muted">How it works,</span> <span class="hl-bright">step by step.</span></h1>
+<p class="lead" data-i18n="docs.intro">How to use Freally Sourcerer as it is built today, on the road to 1.0; the guide grows with every version. On macOS, read Ctrl as Cmd: the menus show your system's own keys.</p>
+<div class="search">
+<div class="search__field">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+<input type="search" placeholder="Search the documentation" aria-label="Search the documentation" data-i18n-attr="placeholder:kit.search.placeholder,aria-label:kit.search.placeholder" />
+</div>
+<ul class="search-results" aria-live="polite"></ul>
+</div>
+</div>
+</section>
+<section class="section section--tight">
+<div class="wrap manual">
+<nav class="manual-toc" data-spy aria-label="Contents" data-i18n-attr="aria-label:kit.docs.contents">
+<span class="label" data-i18n="kit.docs.contents">Contents</span>
+<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#search" data-i18n="docs.search.title">Searching</a></li><li><a href="#lenses" data-i18n="docs.lenses.title">The five lenses</a></li><li><a href="#syntax" data-i18n="docs.syntax.title">The query syntax</a></li><li><a href="#filters" data-i18n="docs.filters.title">Quick filters</a></li><li><a href="#bookmarks" data-i18n="docs.bookmarks.title">Bookmarks and the sidebar</a></li><li><a href="#results" data-i18n="docs.results.title">Working with results</a></li><li><a href="#rename" data-i18n="docs.rename.title">Renaming in bulk</a></li><li><a href="#preview" data-i18n="docs.preview.title">Preview and Quick Look</a></li><li><a href="#drives" data-i18n="docs.drives.title">Unplugged drives and file lists</a></li><li><a href="#health" data-i18n="docs.health.title">Index Health and skipped folders</a></li><li><a href="#portable" data-i18n="docs.portable.title">Portable mode</a></li><li><a href="#settings" data-i18n="docs.settings.title">Settings and the hotkey</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#cli" data-i18n="docs.cli.title">The command line</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li><li><a href="#faq" data-i18n="docs.faq.title">Questions</a></li></ol>
+</nav>
+<div class="manual-body"><section>
+    <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
+    <p data-i18n-html="docs.start.p1">Sourcerer runs as two parts: a background indexer, <code>freally-indexd</code>, that keeps the index current, and the app you search from. The installer sets up both, and the indexer starts when you sign in.</p>
+    <p data-i18n-html="docs.start.id">The app's id is <code>com.freallyproducts.sourcerer</code>, and your settings, bookmarks and index are kept in your system's app-data folder under that name. Versions up to 0.23.2 used <code>io.mikeweaver.freally</code>; a newer version moves that folder to the new name the first time it starts, so nothing is indexed again.</p>
+    <p data-i18n="docs.start.p2">The first time the app opens, a short setup asks which folders to index, the hotkey that brings the app forward, and your language and theme. You can change all of them later in Settings.</p>
+    <p data-i18n="docs.start.p3">Then it builds the index. On Windows it reads the NTFS change journal, which is quick; on macOS and Linux it walks your folders, which takes minutes on a large disk. You can search while it works: results fill in as it goes.</p>
+    <p data-i18n="docs.start.p4">There are no downloads before version 1.0.0, and the source code is private.</p>
+  </section>
 
-      <div class="search">
-        <input
-          type="search"
-          placeholder="Search the documentation"
-          aria-label="Search the documentation"
-          data-i18n-attr="placeholder:search.placeholder,aria-label:search.placeholder"
-        />
-        <ul class="search-results" aria-live="polite"></ul>
-      </div>
+  <section>
+    <h2 id="search" data-i18n="docs.search.title">Searching</h2>
+    <ul>
+      <li data-i18n="docs.search.type">Type in the search bar. Results appear as you type, grouped by lens, each group with how long it took. Every character narrows them; there is nothing to submit.</li>
+      <li data-i18n="docs.search.move">Move through the results with the arrow keys, and press Enter or double-click a row to open the file with its usual app.</li>
+      <li data-i18n-html="docs.search.within"><kbd>Ctrl+Shift+F</kbd> searches within the results you already have. Each term becomes a chip you can remove on its own, so you can step back without retyping.</li>
+      <li data-i18n-html="docs.search.bold">What you typed is shown in <strong>bold</strong> in the names and paths. A modifier such as <code>ext:json</code> narrows the list rather than being something you look for, so it is not marked.</li>
+      <li data-i18n-html="docs.search.clear"><kbd>Esc</kbd> clears the search bar.</li>
+    </ul>
+  </section>
 
-      <div class="manual">
-        <nav class="manual-toc" aria-label="Contents" data-i18n-attr="aria-label:docs.contents">
-          <ol>
-            <li><a href="#start" data-i18n="docs.start.title">Getting started</a></li>
-            <li><a href="#search" data-i18n="docs.search.title">Searching</a></li>
-            <li><a href="#lenses" data-i18n="docs.lenses.title">The five lenses</a></li>
-            <li><a href="#syntax" data-i18n="docs.syntax.title">The query syntax</a></li>
-            <li><a href="#filters" data-i18n="docs.filters.title">Quick filters</a></li>
-            <li><a href="#bookmarks" data-i18n="docs.bookmarks.title">Bookmarks and the sidebar</a></li>
-            <li><a href="#results" data-i18n="docs.results.title">Working with results</a></li>
-            <li><a href="#rename" data-i18n="docs.rename.title">Renaming in bulk</a></li>
-            <li><a href="#preview" data-i18n="docs.preview.title">Preview and Quick Look</a></li>
-            <li><a href="#drives" data-i18n="docs.drives.title">Unplugged drives and file lists</a></li>
-            <li><a href="#health" data-i18n="docs.health.title">Index Health and skipped folders</a></li>
-            <li><a href="#portable" data-i18n="docs.portable.title">Portable mode</a></li>
-            <li><a href="#settings" data-i18n="docs.settings.title">Settings and the hotkey</a></li>
-            <li><a href="#language" data-i18n="docs.language.title">Languages</a></li>
-            <li><a href="#cli" data-i18n="docs.cli.title">The command line</a></li>
-            <li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li>
-            <li><a href="#faq" data-i18n="docs.faq.title">Questions</a></li>
-          </ol>
-        </nav>
+  <section>
+    <h2 id="lenses" data-i18n="docs.lenses.title">The five lenses</h2>
+    <p data-i18n="docs.lenses.intro">Sourcerer has five lenses, all reading the same index. Today the file-name, audio and property lenses answer your searches; the content and similarity lenses are built but not yet connected to the search bar — that comes on the road to 1.0.</p>
+    <ul>
+      <li data-i18n="docs.lenses.filename">File name: names and paths, with wildcards, regular expressions and Everything's modifiers. The fastest of the five.</li>
+      <li data-i18n="docs.lenses.content">Content: the text inside PDFs, Word, Excel and PowerPoint files, plain text and Markdown, source code in 32 languages, JSON, CSV and YAML, mail, and zip, 7z and tar archives, without unpacking them. Not yet connected to the search bar.</li>
+      <li data-i18n="docs.lenses.audio">Audio: what an audio file measures — loudness in LUFS, silence, dynamic range, length, codec and sample rate — worked out the first time a search asks, and kept until the file changes.</li>
+      <li data-i18n="docs.lenses.properties">Properties: what a file's own header says — seventy-two properties across images, camera data, video, documents, programs, installers, shortcuts, archives, fonts, mail and SQLite databases.</li>
+      <li data-i18n="docs.lenses.similar">Similarity: names close to what you typed, for when you remember a file only roughly. Not yet connected to the search bar; until it is, a search that finds nothing offers the closest real name instead.</li>
+    </ul>
+    <p data-i18n-html="docs.lenses.prefix">Lenses can be switched on and off in <strong>View → Lenses</strong>.</p>
+  </section>
 
-        <div class="manual-body">
-          <section>
-            <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
-            <p data-i18n-html="docs.start.p1">Sourcerer runs as two parts: a background indexer, <code>freally-indexd</code>, that keeps the index current, and the app you search from. The installer sets up both, and the indexer starts when you sign in.</p>
-            <p data-i18n-html="docs.start.id">The app's id is <code>com.freallyproducts.sourcerer</code>, and your settings, bookmarks and index are kept in your system's app-data folder under that name. Versions up to 0.23.2 used <code>io.mikeweaver.freally</code>; a newer version moves that folder to the new name the first time it starts, so nothing is indexed again.</p>
-            <p data-i18n="docs.start.p2">
-              The first time the app opens, a short setup asks which folders to index, the hotkey
-              that brings the app forward, and your language and theme. You can change all of them
-              later in Settings.
-            </p>
-            <p data-i18n="docs.start.p3">
-              Then it builds the index. On Windows it reads the NTFS change journal, which is quick;
-              on macOS and Linux it walks your folders, which takes minutes on a large disk. You can
-              search while it works: results fill in as it goes.
-            </p>
-            <p data-i18n="docs.start.p4">
-              There are no downloads before version 1.0.0, and the source code is private.
-            </p>
-          </section>
+  <section>
+    <h2 id="syntax" data-i18n="docs.syntax.title">The query syntax</h2>
+    <p data-i18n="docs.syntax.intro">Sourcerer understands voidtools' Everything syntax, and adds modifiers for its other lenses.</p>
+    <h3 id="syntax-basics" data-i18n="docs.syntax.basics">The basics</h3>
+    <ul>
+      <li data-i18n-html="docs.syntax.terms">Plain words match anywhere in the name, and every word must match: <code>report 2024</code>.</li>
+      <li data-i18n-html="docs.syntax.wildcards"><code>*</code> matches any run of characters and <code>?</code> one character, against the whole name: <code>invoice_202?.pdf</code>.</li>
+      <li data-i18n-html="docs.syntax.boolean">A space or <code>AND</code> means both, <code>|</code> or <code>OR</code> either, <code>!</code> or <code>NOT</code> neither, and parentheses group: <code>(budget | forecast) !draft</code>.</li>
+      <li data-i18n-html="docs.syntax.regex"><code>regex:</code> starts a regular expression: <code>regex:^report-\d+</code>. The syntax is Rust's, so there are no backreferences and no lookaround.</li>
+    </ul>
+    <h3 id="syntax-modifiers" data-i18n="docs.syntax.modifiers">Modifiers</h3>
+    <p data-i18n="docs.syntax.modifiersIntro">Modifiers narrow results by what is known about a file. Combine as many as you like.</p>
+    <div class="table-wrap" role="region" tabindex="0" aria-labelledby="syntax-modifiers">
+      <table>
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="docs.syntax.col.modifier">Modifier</th>
+            <th scope="col" data-i18n="docs.syntax.col.matches">What it matches</th>
+            <th scope="col" data-i18n="docs.syntax.col.example">Example</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td><code>size:</code></td><td data-i18n="docs.syntax.mod.size">Size, with kb, mb and gb, comparisons and ranges</td><td><code>size:&gt;50mb</code></td></tr>
+          <tr><td><code>date:</code></td><td data-i18n-html="docs.syntax.mod.date">Date modified; <code>dc:</code> created, <code>da:</code> accessed</td><td><code>date:today</code></td></tr>
+          <tr><td><code>ext:</code></td><td data-i18n="docs.syntax.mod.ext">Extension, one or several separated by semicolons</td><td><code>ext:jpg;png</code></td></tr>
+          <tr><td><code>attrib:</code></td><td data-i18n="docs.syntax.mod.attrib">File attributes, such as hidden</td><td><code>attrib:h</code></td></tr>
+          <tr><td><code>path:</code></td><td data-i18n="docs.syntax.mod.path">The full path contains the text</td><td><code>path:projects</code></td></tr>
+          <tr><td><code>parent:</code></td><td data-i18n="docs.syntax.mod.parent">The file is directly inside that folder</td><td><code>parent:src</code></td></tr>
+          <tr><td><code>name^:</code> <code>name$:</code></td><td data-i18n="docs.syntax.mod.anchors">The name starts with, or ends with, the text</td><td><code>name^:invoice</code></td></tr>
+          <tr><td><code>lufs:</code> <code>dr:</code></td><td data-i18n="docs.syntax.mod.loudness">Measured loudness in LUFS, and dynamic range in dB</td><td><code>lufs:&lt;-14</code></td></tr>
+          <tr><td><code>length:</code></td><td data-i18n="docs.syntax.mod.length">An audio file's length</td><td><code>length:&gt;3:00</code></td></tr>
+          <tr><td><code>codec:</code> <code>rate:</code></td><td data-i18n="docs.syntax.mod.codec">Audio codec, and sample rate in Hz</td><td><code>codec:flac rate:48000</code></td></tr>
+          <tr><td><code>silence:</code></td><td data-i18n="docs.syntax.mod.silence">How much of an audio file is silent, from 0 to 1</td><td><code>silence:&lt;0.05</code></td></tr>
+          <tr><td><code>width:</code> <code>camera-model:</code> …</td><td data-i18n-html="docs.syntax.mod.property">Any of the seventy-two properties; <code>property:</code> is the long form</td><td><code>width:&gt;1920</code></td></tr>
+          <tr><td><code>dupe:</code></td><td data-i18n-html="docs.syntax.mod.dupe">Files that share a name and a size; <code>name-dupe:</code> and <code>size-dupe:</code> match on one of the two</td><td><code>dupe: ext:pdf</code></td></tr>
+          <tr><td><code>empty:</code></td><td data-i18n-html="docs.syntax.mod.empty">Empty files and folders; <code>empty:roots</code> finds the top of each chain of folders that holds no files</td><td><code>empty:folder</code></td></tr>
+          <tr><td><code>child-count:</code></td><td data-i18n-html="docs.syntax.mod.children">Folders by how many items they hold directly; <code>descendant-count:</code> at any depth</td><td><code>child-count:&gt;500</code></td></tr>
+          <tr><td><code>volume:</code></td><td data-i18n="docs.syntax.mod.volume">Files on one drive, by its name, even when it is unplugged</td><td><code>volume:orange</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <h3 id="syntax-modes" data-i18n="docs.syntax.modes">Match modes</h3>
+    <ul>
+      <li data-i18n-html="docs.syntax.modesMenu">The <strong>Search</strong> menu toggles Match Case (<kbd>Ctrl+I</kbd>), Match Whole Word (<kbd>Ctrl+B</kbd>), Match Path (<kbd>Ctrl+U</kbd>) and Match Diacritics (<kbd>Ctrl+M</kbd>).</li>
+      <li data-i18n-html="docs.syntax.ignore"><strong>Ignore Punctuation</strong> lets <code>foobar</code> find <code>foo-bar</code>, and <strong>Ignore Whitespace</strong> lets <code>myreport</code> find <code>my report</code>. Both are off by default.</li>
+      <li data-i18n-html="docs.syntax.cjk"><strong>Match CJK Phonetics</strong> finds Chinese, Japanese and Korean names by their reading: <code>wenjian</code> finds 文件.</li>
+      <li data-i18n-html="docs.syntax.regexBuilder"><strong>Enable Regex</strong> (<kbd>Ctrl+R</kbd>) treats the whole query as a regular expression. The regular expression builder beside the search bar tests a pattern against the names on screen as you type it, with the engine's own error if it is invalid.</li>
+    </ul>
+  </section>
 
-          <section>
-            <h2 id="search" data-i18n="docs.search.title">Searching</h2>
-            <ul>
-              <li data-i18n="docs.search.type">Type in the search bar. Results appear as you type, grouped by lens, each group with how long it took. Every character narrows them; there is nothing to submit.</li>
-              <li data-i18n="docs.search.move">Move through the results with the arrow keys, and press Enter or double-click a row to open the file with its usual app.</li>
-              <li data-i18n-html="docs.search.within"><kbd>Ctrl+Shift+F</kbd> searches within the results you already have. Each term becomes a chip you can remove on its own, so you can step back without retyping.</li>
-              <li data-i18n-html="docs.search.bold">What you typed is shown in <strong>bold</strong> in the names and paths. A modifier such as <code>ext:json</code> narrows the list rather than being something you look for, so it is not marked.</li>
-              <li data-i18n-html="docs.search.clear"><kbd>Esc</kbd> clears the search bar.</li>
-            </ul>
-          </section>
+  <section>
+    <h2 id="filters" data-i18n="docs.filters.title">Quick filters</h2>
+    <p data-i18n="docs.filters.p1">Quick filters limit results to a kind of file in one click: Audio, Compressed, Document, Executable, Folder, Image and Video. Each one carries every extension Everything's own filter does, and more — 65 audio types, 79 video, 77 image, 86 document and 70 archive.</p>
+    <p data-i18n-html="docs.filters.p2">You can also type them, with the aliases you would guess: <code>audio:</code>, <code>video:</code>, <code>image:</code>, <code>document:</code>, <code>executable:</code> and <code>archive:</code>, or <code>music:</code>, <code>photos:</code>, <code>docs:</code> and <code>zip:</code>.</p>
+    <p data-i18n-html="docs.filters.p3">Source code is not filed under Document, unlike in Everything; <code>ext:c;cpp;h</code> brings that set back. To keep a search of your own as a filter, choose <strong>Search → Add to Filters…</strong>, and edit them with <strong>Organize Filters…</strong> (<kbd>Ctrl+Shift+O</kbd>).</p>
+  </section>
 
-          <section>
-            <h2 id="lenses" data-i18n="docs.lenses.title">The five lenses</h2>
-            <p data-i18n="docs.lenses.intro">
-              Sourcerer has five lenses, all reading the same index. Today the file-name, audio and
-              property lenses answer your searches; the content and similarity lenses are built but
-              not yet connected to the search bar — that comes on the road to 1.0.
-            </p>
-            <ul>
-              <li data-i18n="docs.lenses.filename">File name: names and paths, with wildcards, regular expressions and Everything's modifiers. The fastest of the five.</li>
-              <li data-i18n="docs.lenses.content">Content: the text inside PDFs, Word, Excel and PowerPoint files, plain text and Markdown, source code in 32 languages, JSON, CSV and YAML, mail, and zip, 7z and tar archives, without unpacking them. Not yet connected to the search bar.</li>
-              <li data-i18n="docs.lenses.audio">Audio: what an audio file measures — loudness in LUFS, silence, dynamic range, length, codec and sample rate — worked out the first time a search asks, and kept until the file changes.</li>
-              <li data-i18n="docs.lenses.properties">Properties: what a file's own header says — seventy-two properties across images, camera data, video, documents, programs, installers, shortcuts, archives, fonts, mail and SQLite databases.</li>
-              <li data-i18n="docs.lenses.similar">Similarity: names close to what you typed, for when you remember a file only roughly. Not yet connected to the search bar; until it is, a search that finds nothing offers the closest real name instead.</li>
-            </ul>
-            <p data-i18n-html="docs.lenses.prefix">Lenses can be switched on and off in <strong>View → Lenses</strong>.</p>
-          </section>
+  <section>
+    <h2 id="bookmarks" data-i18n="docs.bookmarks.title">Bookmarks and the sidebar</h2>
+    <ul>
+      <li data-i18n-html="docs.bookmarks.add"><kbd>Ctrl+D</kbd> saves the current search as a bookmark, and <kbd>Ctrl+Shift+B</kbd> organizes them.</li>
+      <li data-i18n-html="docs.bookmarks.recall">Type <code>:</code> followed by a bookmark's name to run it.</li>
+      <li data-i18n-html="docs.bookmarks.sidebar"><strong>View → Sidebar</strong> shows a column with your bookmarks, the quick filters, your drives and your recent searches. Drag bookmarks to reorder them; click a drive to search only that drive.</li>
+      <li data-i18n="docs.bookmarks.history">Recent searches are not recorded while Privacy Mode is on or search history is switched off.</li>
+    </ul>
+  </section>
 
-          <section>
-            <h2 id="syntax" data-i18n="docs.syntax.title">The query syntax</h2>
-            <p data-i18n="docs.syntax.intro">
-              Sourcerer understands voidtools' Everything syntax, and adds modifiers for its other
-              lenses.
-            </p>
-            <h3 id="syntax-basics" data-i18n="docs.syntax.basics">The basics</h3>
-            <ul>
-              <li data-i18n-html="docs.syntax.terms">Plain words match anywhere in the name, and every word must match: <code>report 2024</code>.</li>
-              <li data-i18n-html="docs.syntax.wildcards"><code>*</code> matches any run of characters and <code>?</code> one character, against the whole name: <code>invoice_202?.pdf</code>.</li>
-              <li data-i18n-html="docs.syntax.boolean">A space or <code>AND</code> means both, <code>|</code> or <code>OR</code> either, <code>!</code> or <code>NOT</code> neither, and parentheses group: <code>(budget | forecast) !draft</code>.</li>
-              <li data-i18n-html="docs.syntax.regex"><code>regex:</code> starts a regular expression: <code>regex:^report-\d+</code>. The syntax is Rust's, so there are no backreferences and no lookaround.</li>
-            </ul>
-            <h3 id="syntax-modifiers" data-i18n="docs.syntax.modifiers">Modifiers</h3>
-            <p data-i18n="docs.syntax.modifiersIntro">Modifiers narrow results by what is known about a file. Combine as many as you like.</p>
-            <div class="table-wrap">
-              <table class="ladder">
-                <thead>
-                  <tr>
-                    <th data-i18n="docs.syntax.col.modifier">Modifier</th>
-                    <th data-i18n="docs.syntax.col.matches">What it matches</th>
-                    <th data-i18n="docs.syntax.col.example">Example</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr><td><code>size:</code></td><td data-i18n="docs.syntax.mod.size">Size, with kb, mb and gb, comparisons and ranges</td><td><code>size:&gt;50mb</code></td></tr>
-                  <tr><td><code>date:</code></td><td data-i18n-html="docs.syntax.mod.date">Date modified; <code>dc:</code> created, <code>da:</code> accessed</td><td><code>date:today</code></td></tr>
-                  <tr><td><code>ext:</code></td><td data-i18n="docs.syntax.mod.ext">Extension, one or several separated by semicolons</td><td><code>ext:jpg;png</code></td></tr>
-                  <tr><td><code>attrib:</code></td><td data-i18n="docs.syntax.mod.attrib">File attributes, such as hidden</td><td><code>attrib:h</code></td></tr>
-                  <tr><td><code>path:</code></td><td data-i18n="docs.syntax.mod.path">The full path contains the text</td><td><code>path:projects</code></td></tr>
-                  <tr><td><code>parent:</code></td><td data-i18n="docs.syntax.mod.parent">The file is directly inside that folder</td><td><code>parent:src</code></td></tr>
-                  <tr><td><code>name^:</code> <code>name$:</code></td><td data-i18n="docs.syntax.mod.anchors">The name starts with, or ends with, the text</td><td><code>name^:invoice</code></td></tr>
-                  <tr><td><code>lufs:</code> <code>dr:</code></td><td data-i18n="docs.syntax.mod.loudness">Measured loudness in LUFS, and dynamic range in dB</td><td><code>lufs:&lt;-14</code></td></tr>
-                  <tr><td><code>length:</code></td><td data-i18n="docs.syntax.mod.length">An audio file's length</td><td><code>length:&gt;3:00</code></td></tr>
-                  <tr><td><code>codec:</code> <code>rate:</code></td><td data-i18n="docs.syntax.mod.codec">Audio codec, and sample rate in Hz</td><td><code>codec:flac rate:48000</code></td></tr>
-                  <tr><td><code>silence:</code></td><td data-i18n="docs.syntax.mod.silence">How much of an audio file is silent, from 0 to 1</td><td><code>silence:&lt;0.05</code></td></tr>
-                  <tr><td><code>width:</code> <code>camera-model:</code> …</td><td data-i18n-html="docs.syntax.mod.property">Any of the seventy-two properties; <code>property:</code> is the long form</td><td><code>width:&gt;1920</code></td></tr>
-                  <tr><td><code>dupe:</code></td><td data-i18n-html="docs.syntax.mod.dupe">Files that share a name and a size; <code>name-dupe:</code> and <code>size-dupe:</code> match on one of the two</td><td><code>dupe: ext:pdf</code></td></tr>
-                  <tr><td><code>empty:</code></td><td data-i18n-html="docs.syntax.mod.empty">Empty files and folders; <code>empty:roots</code> finds the top of each chain of folders that holds no files</td><td><code>empty:folder</code></td></tr>
-                  <tr><td><code>child-count:</code></td><td data-i18n-html="docs.syntax.mod.children">Folders by how many items they hold directly; <code>descendant-count:</code> at any depth</td><td><code>child-count:&gt;500</code></td></tr>
-                  <tr><td><code>volume:</code></td><td data-i18n="docs.syntax.mod.volume">Files on one drive, by its name, even when it is unplugged</td><td><code>volume:orange</code></td></tr>
-                </tbody>
-              </table>
-            </div>
-            <h3 id="syntax-modes" data-i18n="docs.syntax.modes">Match modes</h3>
-            <ul>
-              <li data-i18n-html="docs.syntax.modesMenu">The <strong>Search</strong> menu toggles Match Case (<kbd>Ctrl+I</kbd>), Match Whole Word (<kbd>Ctrl+B</kbd>), Match Path (<kbd>Ctrl+U</kbd>) and Match Diacritics (<kbd>Ctrl+M</kbd>).</li>
-              <li data-i18n-html="docs.syntax.ignore"><strong>Ignore Punctuation</strong> lets <code>foobar</code> find <code>foo-bar</code>, and <strong>Ignore Whitespace</strong> lets <code>myreport</code> find <code>my report</code>. Both are off by default.</li>
-              <li data-i18n-html="docs.syntax.cjk"><strong>Match CJK Phonetics</strong> finds Chinese, Japanese and Korean names by their reading: <code>wenjian</code> finds 文件.</li>
-              <li data-i18n-html="docs.syntax.regexBuilder"><strong>Enable Regex</strong> (<kbd>Ctrl+R</kbd>) treats the whole query as a regular expression. The regular expression builder beside the search bar tests a pattern against the names on screen as you type it, with the engine's own error if it is invalid.</li>
-            </ul>
-          </section>
+  <section>
+    <h2 id="results" data-i18n="docs.results.title">Working with results</h2>
+    <p data-i18n="docs.results.intro">Every row is a real file on your disk. Right-click a row for what you can do with it:</p>
+    <ul>
+      <li data-i18n="docs.results.open">Open, Reveal in file manager, and Open with, which lists the apps your system has registered for that kind of file.</li>
+      <li data-i18n="docs.results.copy">Copy contents for a text file's body, Copy as file to paste the file itself into a folder, and Copy path list — one per line, quoted, space-separated or shell-escaped.</li>
+      <li data-i18n-html="docs.results.hits">View hits in context shows every match in a document; <kbd>F3</kbd> and <kbd>Shift+F3</kbd> step through them.</li>
+      <li data-i18n="docs.results.terminal">Open terminal here opens a terminal in the file's folder.</li>
+      <li data-i18n-html="docs.results.commands">Commands of your own, from <strong>Settings → General → Custom Commands</strong>, with <code>{path}</code>, <code>{dir}</code>, <code>{name}</code>, <code>{stem}</code> and <code>{ext}</code> in their arguments. Each runs as a program with arguments, never as a shell line, and the app asks once before a program runs for the first time.</li>
+      <li data-i18n="docs.results.delete">Delete sends a file to the Trash or the Recycle Bin.</li>
+    </ul>
+    <p data-i18n-html="docs.results.view">Drag a row into another app as if from your file manager. Click a column header to sort, or use <kbd>Ctrl+1</kbd> to <kbd>Ctrl+9</kbd>; the <strong>+</strong> at the end of the header row adds a property as a column. The <strong>View</strong> menu switches between details and thumbnails. Click the result count in the status bar for statistics on the whole result set: sizes and counts by type, the largest, oldest and newest files.</p>
+  </section>
 
-          <section>
-            <h2 id="filters" data-i18n="docs.filters.title">Quick filters</h2>
-            <p data-i18n="docs.filters.p1">
-              Quick filters limit results to a kind of file in one click: Audio, Compressed,
-              Document, Executable, Folder, Image and Video. Each one carries every extension
-              Everything's own filter does, and more — 65 audio types, 79 video, 77 image, 86
-              document and 70 archive.
-            </p>
-            <p data-i18n-html="docs.filters.p2">You can also type them, with the aliases you would guess: <code>audio:</code>, <code>video:</code>, <code>image:</code>, <code>document:</code>, <code>executable:</code> and <code>archive:</code>, or <code>music:</code>, <code>photos:</code>, <code>docs:</code> and <code>zip:</code>.</p>
-            <p data-i18n-html="docs.filters.p3">Source code is not filed under Document, unlike in Everything; <code>ext:c;cpp;h</code> brings that set back. To keep a search of your own as a filter, choose <strong>Search → Add to Filters…</strong>, and edit them with <strong>Organize Filters…</strong> (<kbd>Ctrl+Shift+O</kbd>).</p>
-          </section>
+  <section>
+    <h2 id="rename" data-i18n="docs.rename.title">Renaming in bulk</h2>
+    <p data-i18n-html="docs.rename.intro">Select the results to rename and press <kbd>F2</kbd>. You describe the change once, and every old and new name is shown before anything touches the disk.</p>
+    <ul>
+      <li data-i18n-html="docs.rename.find">Find and replace, as plain text or as a regular expression, with <code>$1</code>, <code>$2</code> for what it captured.</li>
+      <li data-i18n-html="docs.rename.number"><code>{n}</code> in the replacement numbers the files in the order of the preview; <code>{n:03}</code> pads the number to three digits.</li>
+      <li data-i18n="docs.rename.case">Change the case, and choose whether the rule applies to the name alone or to the extension too. By default extensions are left alone.</li>
+      <li data-i18n="docs.rename.check">Rows that would collide, overwrite a file or make a name the system refuses are marked, and nothing is renamed while any row is marked: the batch happens whole or not at all.</li>
+    </ul>
+    <div class="callout"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/><path d="M12 7v5l4 2"/></svg><div><p data-i18n-html="docs.rename.undo"><kbd>Ctrl+Z</kbd> undoes a rename, even after you restart the app, and <kbd>Ctrl+Shift+Z</kbd> redoes it. On Windows and Linux, Undo also brings a deleted file back from the Recycle Bin or the Trash. On macOS it cannot: restore the file from the Trash yourself.</p></div></div>
+  </section>
 
-          <section>
-            <h2 id="bookmarks" data-i18n="docs.bookmarks.title">Bookmarks and the sidebar</h2>
-            <ul>
-              <li data-i18n-html="docs.bookmarks.add"><kbd>Ctrl+D</kbd> saves the current search as a bookmark, and <kbd>Ctrl+Shift+B</kbd> organizes them.</li>
-              <li data-i18n-html="docs.bookmarks.recall">Type <code>:</code> followed by a bookmark's name to run it.</li>
-              <li data-i18n-html="docs.bookmarks.sidebar"><strong>View → Sidebar</strong> shows a column with your bookmarks, the quick filters, your drives and your recent searches. Drag bookmarks to reorder them; click a drive to search only that drive.</li>
-              <li data-i18n="docs.bookmarks.history">Recent searches are not recorded while Privacy Mode is on or search history is switched off.</li>
-            </ul>
-          </section>
+  <section>
+    <h2 id="preview" data-i18n="docs.preview.title">Preview and Quick Look</h2>
+    <ul>
+      <li data-i18n-html="docs.preview.pane"><strong>View → Preview</strong> (<kbd>Alt+P</kbd>) shows the selected file beside the results: pictures, text and code, and documents.</li>
+      <li data-i18n="docs.preview.play">Audio and video play in the pane, with play and pause, seeking, looping and volume. Audio draws a waveform you can click, with its codec, sample rate, channels and loudness beneath it.</li>
+      <li data-i18n-html="docs.preview.quickLook"><kbd>Space</kbd> opens Quick Look, a large preview over the window. The arrow keys keep moving through the results while it is open, and <kbd>Space</kbd> or <kbd>Esc</kbd> closes it.</li>
+      <li data-i18n="docs.preview.mac">On macOS, Quick Look also offers to open a file in the system's own Quick Look, for formats the system can show and Sourcerer cannot.</li>
+    </ul>
+  </section>
 
-          <section>
-            <h2 id="results" data-i18n="docs.results.title">Working with results</h2>
-            <p data-i18n="docs.results.intro">Every row is a real file on your disk. Right-click a row for what you can do with it:</p>
-            <ul>
-              <li data-i18n="docs.results.open">Open, Reveal in file manager, and Open with, which lists the apps your system has registered for that kind of file.</li>
-              <li data-i18n="docs.results.copy">Copy contents for a text file's body, Copy as file to paste the file itself into a folder, and Copy path list — one per line, quoted, space-separated or shell-escaped.</li>
-              <li data-i18n-html="docs.results.hits">View hits in context shows every match in a document; <kbd>F3</kbd> and <kbd>Shift+F3</kbd> step through them.</li>
-              <li data-i18n="docs.results.terminal">Open terminal here opens a terminal in the file's folder.</li>
-              <li data-i18n-html="docs.results.commands">Commands of your own, from <strong>Settings → General → Custom Commands</strong>, with <code>{path}</code>, <code>{dir}</code>, <code>{name}</code>, <code>{stem}</code> and <code>{ext}</code> in their arguments. Each runs as a program with arguments, never as a shell line, and the app asks once before a program runs for the first time.</li>
-              <li data-i18n="docs.results.delete">Delete sends a file to the Trash or the Recycle Bin.</li>
-            </ul>
-            <p data-i18n-html="docs.results.view">Drag a row into another app as if from your file manager. Click a column header to sort, or use <kbd>Ctrl+1</kbd> to <kbd>Ctrl+9</kbd>; the <strong>+</strong> at the end of the header row adds a property as a column. The <strong>View</strong> menu switches between details and thumbnails. Click the result count in the status bar for statistics on the whole result set: sizes and counts by type, the largest, oldest and newest files.</p>
-          </section>
+  <section>
+    <h2 id="drives" data-i18n="docs.drives.title">Unplugged drives and file lists</h2>
+    <p data-i18n-html="docs.drives.unplugged">When you unplug a drive, everything indexed on it stays searchable. Its results carry a badge with the drive's name, so they also answer which drive a file is on, and <code>volume:</code> searches one drive by its name. A drive that comes back on another letter or mount point is still recognised.</p>
+    <p data-i18n-html="docs.drives.lists"><strong>File → Export Results…</strong> (<kbd>Ctrl+S</kbd>) saves the results as Everything's <code>.efu</code> file list, CSV, plain text, an M3U playlist of the audio files, or NDJSON for a script. <strong>File → Open File List…</strong> (<kbd>Ctrl+O</kbd>) searches inside a list, Everything's included, instead of the index, until you choose <strong>Close File List</strong>.</p>
+  </section>
 
-          <section>
-            <h2 id="rename" data-i18n="docs.rename.title">Renaming in bulk</h2>
-            <p data-i18n-html="docs.rename.intro">Select the results to rename and press <kbd>F2</kbd>. You describe the change once, and every old and new name is shown before anything touches the disk.</p>
-            <ul>
-              <li data-i18n-html="docs.rename.find">Find and replace, as plain text or as a regular expression, with <code>$1</code>, <code>$2</code> for what it captured.</li>
-              <li data-i18n-html="docs.rename.number"><code>{n}</code> in the replacement numbers the files in the order of the preview; <code>{n:03}</code> pads the number to three digits.</li>
-              <li data-i18n="docs.rename.case">Change the case, and choose whether the rule applies to the name alone or to the extension too. By default extensions are left alone.</li>
-              <li data-i18n="docs.rename.check">Rows that would collide, overwrite a file or make a name the system refuses are marked, and nothing is renamed while any row is marked: the batch happens whole or not at all.</li>
-            </ul>
-            <p class="notice" data-i18n-html="docs.rename.undo"><kbd>Ctrl+Z</kbd> undoes a rename, even after you restart the app, and <kbd>Ctrl+Shift+Z</kbd> redoes it. On Windows and Linux, Undo also brings a deleted file back from the Recycle Bin or the Trash. On macOS it cannot: restore the file from the Trash yourself.</p>
-          </section>
+  <section>
+    <h2 id="health" data-i18n="docs.health.title">Index Health and skipped folders</h2>
+    <p data-i18n-html="docs.health.index"><strong>Tools → Index maintenance → Index Health…</strong> shows, for each place being watched, whether changes arrive live or only when it is rescanned, how far behind the index is, and how many changes were dropped. When something is wrong it says what, with a one-click rebuild where that is the fix.</p>
+    <p data-i18n-html="docs.health.permissions">A folder the app cannot read looks exactly like an empty one. <strong>Permission Health…</strong>, in the same menu or from the "folders skipped" badge in the status bar, lists the folders that were skipped, the system's reason, and the fix. On macOS it checks whether Full Disk Access is granted and opens the right settings page if not.</p>
+  </section>
 
-          <section>
-            <h2 id="preview" data-i18n="docs.preview.title">Preview and Quick Look</h2>
-            <ul>
-              <li data-i18n-html="docs.preview.pane"><strong>View → Preview</strong> (<kbd>Alt+P</kbd>) shows the selected file beside the results: pictures, text and code, and documents.</li>
-              <li data-i18n="docs.preview.play">Audio and video play in the pane, with play and pause, seeking, looping and volume. Audio draws a waveform you can click, with its codec, sample rate, channels and loudness beneath it.</li>
-              <li data-i18n-html="docs.preview.quickLook"><kbd>Space</kbd> opens Quick Look, a large preview over the window. The arrow keys keep moving through the results while it is open, and <kbd>Space</kbd> or <kbd>Esc</kbd> closes it.</li>
-              <li data-i18n="docs.preview.mac">On macOS, Quick Look also offers to open a file in the system's own Quick Look, for formats the system can show and Sourcerer cannot.</li>
-            </ul>
-          </section>
+  <section>
+    <h2 id="portable" data-i18n="docs.portable.title">Portable mode</h2>
+    <p data-i18n-html="docs.portable.p1">To run Sourcerer from a USB stick, put an empty file named <code>portable.flag</code> beside the app, or start it with <code>--portable</code>. The index, settings, bookmarks and logs then live in a <code>Data</code> folder beside the app, and nothing is registered with the computer: no background service, no link handler and no updater. Update a portable copy by replacing its folder.</p>
+    <p data-i18n-html="docs.portable.mac">On macOS, the <code>Data</code> folder is made beside the app, not inside it, because writing inside an app breaks its signature.</p>
+  </section>
 
-          <section>
-            <h2 id="drives" data-i18n="docs.drives.title">Unplugged drives and file lists</h2>
-            <p data-i18n-html="docs.drives.unplugged">When you unplug a drive, everything indexed on it stays searchable. Its results carry a badge with the drive's name, so they also answer which drive a file is on, and <code>volume:</code> searches one drive by its name. A drive that comes back on another letter or mount point is still recognised.</p>
-            <p data-i18n-html="docs.drives.lists"><strong>File → Export Results…</strong> (<kbd>Ctrl+S</kbd>) saves the results as Everything's <code>.efu</code> file list, CSV, plain text, an M3U playlist of the audio files, or NDJSON for a script. <strong>File → Open File List…</strong> (<kbd>Ctrl+O</kbd>) searches inside a list, Everything's included, instead of the index, until you choose <strong>Close File List</strong>.</p>
-          </section>
+  <section>
+    <h2 id="settings" data-i18n="docs.settings.title">Settings and the hotkey</h2>
+    <p data-i18n-html="docs.settings.open"><strong>Tools → Options…</strong> (<kbd>Ctrl+,</kbd>) opens Settings, laid out like Everything's Options: a tree of panels on the left, a box above it that filters panels and options as you type, and <strong>OK</strong>, <strong>Cancel</strong> and <strong>Apply</strong>.</p>
+    <p data-i18n="docs.settings.panels">The panels cover the look of the app, search behaviour, results, keyboard shortcuts, the folders, drives and exclusions that make up the index, each lens, privacy and updates, logs, backup and reset, and the language.</p>
+    <p data-i18n-html="docs.settings.hotkey">A global hotkey brings the app forward from anywhere, with the search bar ready. Set it in <strong>Settings → General → Keyboard</strong>. A link of the form <code>freally://search?q=…</code> opens the app with that search.</p>
+  </section>
 
-          <section>
-            <h2 id="health" data-i18n="docs.health.title">Index Health and skipped folders</h2>
-            <p data-i18n-html="docs.health.index"><strong>Tools → Index maintenance → Index Health…</strong> shows, for each place being watched, whether changes arrive live or only when it is rescanned, how far behind the index is, and how many changes were dropped. When something is wrong it says what, with a one-click rebuild where that is the fix.</p>
-            <p data-i18n-html="docs.health.permissions">A folder the app cannot read looks exactly like an empty one. <strong>Permission Health…</strong>, in the same menu or from the "folders skipped" badge in the status bar, lists the folders that were skipped, the system's reason, and the fix. On macOS it checks whether Full Disk Access is granted and opens the right settings page if not.</p>
-          </section>
+  <section>
+    <h2 id="language" data-i18n="docs.language.title">Languages</h2>
+    <p data-i18n-html="docs.language.p1">Sourcerer speaks eighteen languages. Choose one in <strong>Settings → Locale</strong> and the whole app — menus, settings, dialogs and the status bar — switches at once, without a restart. Arabic lays the window out right to left.</p>
+  </section>
 
-          <section>
-            <h2 id="portable" data-i18n="docs.portable.title">Portable mode</h2>
-            <p data-i18n-html="docs.portable.p1">To run Sourcerer from a USB stick, put an empty file named <code>portable.flag</code> beside the app, or start it with <code>--portable</code>. The index, settings, bookmarks and logs then live in a <code>Data</code> folder beside the app, and nothing is registered with the computer: no background service, no link handler and no updater. Update a portable copy by replacing its folder.</p>
-            <p data-i18n-html="docs.portable.mac">On macOS, the <code>Data</code> folder is made beside the app, not inside it, because writing inside an app breaks its signature.</p>
-          </section>
-
-          <section>
-            <h2 id="settings" data-i18n="docs.settings.title">Settings and the hotkey</h2>
-            <p data-i18n-html="docs.settings.open"><strong>Tools → Options…</strong> (<kbd>Ctrl+,</kbd>) opens Settings, laid out like Everything's Options: a tree of panels on the left, a box above it that filters panels and options as you type, and <strong>OK</strong>, <strong>Cancel</strong> and <strong>Apply</strong>.</p>
-            <p data-i18n="docs.settings.panels">The panels cover the look of the app, search behaviour, results, keyboard shortcuts, the folders, drives and exclusions that make up the index, each lens, privacy and updates, logs, backup and reset, and the language.</p>
-            <p data-i18n-html="docs.settings.hotkey">A global hotkey brings the app forward from anywhere, with the search bar ready. Set it in <strong>Settings → General → Keyboard</strong>. A link of the form <code>freally://search?q=…</code> opens the app with that search.</p>
-          </section>
-
-          <section>
-            <h2 id="language" data-i18n="docs.language.title">Languages</h2>
-            <p data-i18n-html="docs.language.p1">Sourcerer speaks eighteen languages. Choose one in <strong>Settings → Locale</strong> and the whole app — menus, settings, dialogs and the status bar — switches at once, without a restart. Arabic lays the window out right to left.</p>
-          </section>
-
-          <section>
-            <h2 id="cli" data-i18n="docs.cli.title">The command line</h2>
-            <p data-i18n-html="docs.cli.intro">The <code>freally</code> command searches the same index as the app, through the same indexer, in the same query language.</p>
+  <section>
+    <h2 id="cli" data-i18n="docs.cli.title">The command line</h2>
+    <p data-i18n-html="docs.cli.intro">The <code>freally</code> command searches the same index as the app, through the same indexer, in the same query language.</p>
 <pre><code>freally search "report ext:pdf size:&gt;1mb"
 freally search --json --fields path,size "*.rs"
 freally search -0 "ext:log" | xargs -0 grep ERROR
 freally search --strict-everything "report ext:pdf"
 freally index status
 freally completions bash</code></pre>
-            <ul>
-              <li data-i18n-html="docs.cli.formats"><code>--json</code>, <code>--ndjson</code> and <code>--csv</code> print results for scripts, <code>-0</code> prints NUL-separated paths for <code>xargs -0</code>, and <code>--fields</code> chooses the columns. The exit code says whether anything matched.</li>
-              <li data-i18n-html="docs.cli.strict"><code>--strict-everything</code> refuses any query that uses something Everything does not have, and names it — the way to check that a query works in both.</li>
-              <li data-i18n-html="docs.cli.manage"><code>freally index</code> shows the indexer's status and can pause, resume, verify, compact or rebuild it; <code>freally bookmark</code> saves, lists and deletes bookmarks.</li>
-              <li data-i18n-html="docs.cli.completions"><code>freally completions</code> prints completions for bash, zsh, fish and PowerShell, including modifier names and your bookmarks.</li>
-            </ul>
-          </section>
+    <ul>
+      <li data-i18n-html="docs.cli.formats"><code>--json</code>, <code>--ndjson</code> and <code>--csv</code> print results for scripts, <code>-0</code> prints NUL-separated paths for <code>xargs -0</code>, and <code>--fields</code> chooses the columns. The exit code says whether anything matched.</li>
+      <li data-i18n-html="docs.cli.strict"><code>--strict-everything</code> refuses any query that uses something Everything does not have, and names it — the way to check that a query works in both.</li>
+      <li data-i18n-html="docs.cli.manage"><code>freally index</code> shows the indexer's status and can pause, resume, verify, compact or rebuild it; <code>freally bookmark</code> saves, lists and deletes bookmarks.</li>
+      <li data-i18n-html="docs.cli.completions"><code>freally completions</code> prints completions for bash, zsh, fish and PowerShell, including modifier names and your bookmarks.</li>
+    </ul>
+  </section>
 
-          <section>
-            <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
-            <ul>
-              <li data-i18n="docs.privacy.telemetry">There is no telemetry. The index is built and kept on your own computer, and nothing about your files or your searches is sent anywhere.</li>
-              <li data-i18n-html="docs.privacy.updates">The app asks whether a newer version exists once a day; in <strong>Settings → Privacy &amp; Updates</strong> you can make that weekly, monthly or never, or check now. It asks before installing anything, naming both versions, and a portable copy never checks.</li>
-              <li data-i18n="docs.privacy.mode">Privacy Mode stops recording recent searches and switches off the property lens, which reads inside files.</li>
-            </ul>
-            <h3 id="privacy-reports" data-i18n="docs.privacy.reports.title">Reporting a problem</h3>
-            <ul>
-              <li data-i18n-html="docs.privacy.reports.where">When the app runs into an error, its message has a <strong>Report</strong> button beside it. After a crash, the next launch offers <strong>Report</strong> or <strong>Dismiss</strong>.</li>
-              <li data-i18n-html="docs.privacy.reports.page"><strong>Report</strong> opens the report page, <code>freallyproducts.com/freally-sourcerer/report/</code>, in your browser, with the technical facts already filled in: you can read them but not change them. You add what you were doing and, if you like, an email address.</li>
-              <li data-i18n-html="docs.privacy.reports.send">Nothing is sent unless you press <strong>Send</strong> on that page, and nothing is ever sent in the background.</li>
-            </ul>
-          </section>
+  <section>
+    <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
+    <ul>
+      <li data-i18n="docs.privacy.telemetry">There is no telemetry. The index is built and kept on your own computer, and nothing about your files or your searches is sent anywhere.</li>
+      <li data-i18n-html="docs.privacy.updates">The app asks whether a newer version exists once a day; in <strong>Settings → Privacy &amp; Updates</strong> you can make that weekly, monthly or never, or check now. It asks before installing anything, naming both versions, and a portable copy never checks.</li>
+      <li data-i18n="docs.privacy.mode">Privacy Mode stops recording recent searches and switches off the property lens, which reads inside files.</li>
+    </ul>
+    <h3 id="privacy-reports" data-i18n="docs.privacy.reports.title">Reporting a problem</h3>
+    <ul>
+      <li data-i18n-html="docs.privacy.reports.where">When the app runs into an error, its message has a <strong>Report</strong> button beside it. After a crash, the next launch offers <strong>Report</strong> or <strong>Dismiss</strong>.</li>
+      <li data-i18n-html="docs.privacy.reports.page"><strong>Report</strong> opens the report page, <code>freallyproducts.com/freally-sourcerer/report/</code>, in your browser, with the technical facts already filled in: you can read them but not change them. You add what you were doing and, if you like, an email address.</li>
+      <li data-i18n-html="docs.privacy.reports.send">Nothing is sent unless you press <strong>Send</strong> on that page, and nothing is ever sent in the background.</li>
+    </ul>
+  </section>
 
-          <section>
-            <h2 id="faq" data-i18n="docs.faq.title">Questions</h2>
-            <h3 id="faq-missing" data-i18n="docs.faq.missing.title">Why is a file missing from the results?</h3>
-            <ul>
-              <li data-i18n="docs.faq.missing.indexing">The first index may still be running: the status bar says so.</li>
-              <li data-i18n-html="docs.faq.missing.roots">Its folder may not be indexed: check the folders, drives and exclusions under <strong>Settings → Indexes</strong>.</li>
-              <li data-i18n-html="docs.faq.missing.permissions">Its folder may be unreadable: open <strong>Permission Health…</strong>.</li>
-            </ul>
-            <h3 id="faq-smaller" data-i18n="docs.faq.smaller.title">How do I make the index smaller?</h3>
-            <p data-i18n-html="docs.faq.smaller.body">Exclude folders full of files you never look for, such as <code>node_modules</code> and <code>.git</code>, under <strong>Settings → Indexes → Exclude</strong>.</p>
-            <h3 id="faq-rebuild" data-i18n="docs.faq.rebuild.title">How do I start the index again?</h3>
-            <p data-i18n-html="docs.faq.rebuild.body"><strong>Tools → Index maintenance → Force Rebuild Index…</strong> clears the index and builds it again from the start. <strong>Verify Index…</strong> and <strong>Compact Index…</strong> in the same menu check it and make it smaller.</p>
-          </section>
+  <section>
+    <h2 id="faq" data-i18n="docs.faq.title">Questions</h2>
+    <h3 id="faq-missing" data-i18n="docs.faq.missing.title">Why is a file missing from the results?</h3>
+    <ul>
+      <li data-i18n="docs.faq.missing.indexing">The first index may still be running: the status bar says so.</li>
+      <li data-i18n-html="docs.faq.missing.roots">Its folder may not be indexed: check the folders, drives and exclusions under <strong>Settings → Indexes</strong>.</li>
+      <li data-i18n-html="docs.faq.missing.permissions">Its folder may be unreadable: open <strong>Permission Health…</strong>.</li>
+    </ul>
+    <h3 id="faq-smaller" data-i18n="docs.faq.smaller.title">How do I make the index smaller?</h3>
+    <p data-i18n-html="docs.faq.smaller.body">Exclude folders full of files you never look for, such as <code>node_modules</code> and <code>.git</code>, under <strong>Settings → Indexes → Exclude</strong>.</p>
+    <h3 id="faq-rebuild" data-i18n="docs.faq.rebuild.title">How do I start the index again?</h3>
+    <p data-i18n-html="docs.faq.rebuild.body"><strong>Tools → Index maintenance → Force Rebuild Index…</strong> clears the index and builds it again from the start. <strong>Verify Index…</strong> and <strong>Compact Index…</strong> in the same menu check it and make it smaller.</p>
+  </section></div>
+</div>
+</section>
+    </main>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="sourcerer-icon.png" alt="" width="28" height="28" /><span>Freally Sourcerer</span></a><p data-i18n="site.tagline">One search. Every source. Every OS.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Sourcerer is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/" aria-current="true">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.23.2</span>
         </div>
       </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.everything">
-          Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is
-          not affiliated with voidtools.
-        </p>
-      </div>
     </footer>
-
-    <script src="site.js"></script>
     <script src="search-index.js"></script>
-    <script src="search.js"></script>
   </body>
 </html>

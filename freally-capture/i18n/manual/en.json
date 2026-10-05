@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**A chat overlay reads public chat** from the channel you point it at, the way a signed-out viewer would — no account, key or sign-in.",
   "manual.efe87d55bed1": "**Two components are downloaded only when you first need them:** ffmpeg, for the codecs the platforms require, and the browser runtime, for the browser source. Each comes from its own publisher and is checked before use.",
   "manual.3601a272b3b0": "**An update check** fetches one small file once per launch, and when you choose **Check for updates…**. Nothing about you or your computer is sent with it, and nothing is installed unless you say yes.",
-  "manual.11abc96d8e21": "**A problem report is sent only when you press Send** on the report page, after you have read what it holds (see [Reporting a problem](#report)).",
+  "manual.aa2fa62ecaaf": "**A problem report is sent only when you press Send** on the report page, after you have read what it holds (see [Reporting a problem](#reporting-a-problem)).",
   "manual.804fa6536d40": "**No AI.** Every filter — noise suppression, chroma key, tone-mapping — is classic signal processing. The app contains no machine-learning model and downloads none."
 }

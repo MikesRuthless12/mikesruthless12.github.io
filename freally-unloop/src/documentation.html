@@ -1,0 +1,227 @@
+<!-- Freally Unloop — the manual, for the version built today. The contents rail
+     and the search box are the kit's; each <section> is one chapter, its <h2>
+     the rail's entry. -->
+
+<kit-head>
+  <kit-lede data-i18n="docs.intro">This manual describes version 0.6.0, the version built today. Where something on the Features page arrives in a later version, the manual says which.</kit-lede>
+</kit-head>
+
+<kit-manual>
+  <section>
+    <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
+    <p data-i18n="docs.start.p1">Freally Unloop runs inside your DAW as a CLAP or VST3 plugin, or as an AU on macOS, and on its own as a standalone app. Put it on the track that plays your loop: until you press Generate it passes the track's audio through exactly as it arrives, so it is safe to leave in place.</p>
+    <p data-i18n="docs.start.p2">Version 0.6.0 is built to be used in a DAW, with audio. MIDI arrives in version 0.7.0; arranging stems dropped into the standalone app, and the web app, arrive in version 0.8.0.</p>
+    <p data-i18n="docs.start.p3">There are no downloads before version 1.0.0, and the source code is private.</p>
+  </section>
+
+  <section>
+    <h2 id="agreement" data-i18n="docs.agreement.title">The licence agreement</h2>
+    <p data-i18n="docs.agreement.p1">The first time Unloop opens it shows its End User License Agreement, which is written in English. Read it to the end and Agree becomes available.</p>
+    <p data-i18n="docs.agreement.p2">If you decline, Unloop is paused: nothing is arranged, and your audio still passes through unchanged. Choose Read it again whenever you are ready. Your answer is kept on your computer, for every copy of Unloop on it.</p>
+  </section>
+
+  <section>
+    <h2 id="window" data-i18n="docs.window.title">The window</h2>
+    <p data-i18n="docs.window.p1">Along the top are the loop project menu (the folder button), the Arrangement menu, the search, the mode, and Undo and Redo; on the right, the tempo, the clock and Settings (the gear). In the middle is the arrangement map: the record's sections, a lane for each part, and its moves. Along the bottom is the console: Generate, a strip for each part, the master section and the seed.</p>
+    <p data-i18n="docs.window.p2">Settings holds the language, the theme — System, Dark or Light — and the list of keyboard shortcuts.</p>
+  </section>
+
+  <section>
+    <h2 id="name" data-i18n="docs.name.title">Picking a name</h2>
+    <p data-i18n="docs.name.p1">Type in the search to find any of 2,413 artists, producers and genres. Aliases and near misses find them too, and letters such as Ø, ß and Ł fold, so "mo" finds MØ. With the search empty it offers your recent names and the flagship models. Use the arrow keys and Enter, or click.</p>
+    <p data-i18n="docs.name.p2">Each name has a model card: the modes it arranges in and how often each is drawn, its typical song forms, its signature moves, the parts it drives, where its data comes from and how confident it is. A name with little data of its own inherits from its genre, and the card shows the chain.</p>
+  </section>
+
+  <section>
+    <h2 id="generate" data-i18n="docs.generate.title">Generate, modes and seeds</h2>
+    <p data-i18n="docs.generate.p1">Press Generate and Unloop plans the whole record for the name you picked: every section, which parts play in it, and every move. Choose a mode first — Radio cut, Mixtape cut, Club / DJ cut, Switch-up, Minimal and more, depending on the name — or leave it on Any mode and Unloop draws one.</p>
+    <p data-i18n="docs.generate.p2">Every plan has a seed, 16 hexadecimal digits in the console, and each press of Generate draws a new one. The same loop, name, mode and seed always give the same arrangement: copy a seed to keep an arrangement or to send it to a collaborator, and paste one to get it back.</p>
+  </section>
+
+  <section>
+    <h2 id="tempo" data-i18n="docs.tempo.title">Tempo and the clock</h2>
+    <p data-i18n="docs.tempo.p1">In a DAW, Unloop always plays at your project's tempo and never changes it. The tempo chip says whether your tempo is in the range the name usually works at — counting half and double time as a match — and, if it is not, which tempo to set your DAW to, with a button to copy it.</p>
+    <p data-i18n="docs.tempo.p2">Unloop needs to know how long your loop is: it asks, and assumes 8 bars until you say. The clock follows your DAW's song position, or counts the loops itself when the position does not move — FL Studio's pattern mode, or Ableton Live's session view — so the whole record still plays over a loop going round. Auto decides for you; choose Song or Loop to decide yourself.</p>
+  </section>
+
+  <section>
+    <h2 id="parts" data-i18n="docs.parts.title">One loop, or every part</h2>
+    <p data-i18n="docs.parts.p1">On one track with a finished stereo loop, Unloop arranges it in three bands — low, mid and high — and the map says so.</p>
+    <p data-i18n="docs.parts.p2">For the full set of moves, put an instance on each part's track and give each one a role: drums, bass, melody, chords and so on. Unloop suggests one from the track's name. Instances on the same channel perform one record together: the first conducts, and every other follows its plan to the sample and plays only its own part's moves. The console shows a strip for each, with its fader and lamps.</p>
+    <p data-i18n="docs.parts.p3">When your DAW runs plugins in separate processes, instances meet through a shared file on your computer, never the network. If another project's plan is already on a channel, Unloop says so and offers another channel.</p>
+  </section>
+
+  <section>
+    <h2 id="capture" data-i18n="docs.capture.title">Capture and preview</h2>
+    <p data-i18n="docs.capture.p1">After Generate, each instance captures one cycle of its loop — the music arriving on its track, never its own output — and from then on plays the record from memory. The LIVE / CAPTURED chip says where it stands, with Recapture and Forget capture. A loop longer than 64 seconds cannot be captured, and a stop, a jump or a tempo change during a capture starts it again at the next play.</p>
+    <p data-i18n="docs.capture.p2">If the loop coming in is no longer the one captured, the chip asks: Loop changed — recapture? Nothing is replaced while it plays; recapturing is your press.</p>
+    <p data-i18n="docs.capture.p3">With your DAW stopped, the play, pause, stop and loop keys in the master section — or the space bar — preview the whole record inside Unloop, every instance on the channel together. Click the map's ruler to jump, or loop a section. Press play in your DAW and it takes over at once.</p>
+  </section>
+
+  <section>
+    <h2 id="print" data-i18n="docs.print.title">Print, drag and receipts</h2>
+    <p data-i18n="docs.print.p1">PRINT in the master section opens Print &amp; export. Choose what to print — the mix, the stems, any of the parts, a section or the whole record — and the format: WAV (16-bit, 24-bit or 32-bit float), AIFF, FLAC or MP3, at the captured sample rate or one you pick. It renders through the very code that plays live, so the file is what you heard. Cancel leaves nothing behind.</p>
+    <p data-i18n="docs.print.p2">You can dither when the bit depth drops, put a safety limiter at −1 dBTP on the mix, and write receipts. File names come from a template you can edit, and by default no file name carries an artist's or producer's name. When the export is done, the print meter shows the mix's peak, true peak and loudness.</p>
+    <p data-i18n="docs.print.p3">To skip the dialog, use the drag rack: drag the mix, the stems, one part or one section straight onto your tracks. The files are rendered before the drag begins, as 24-bit WAV by default.</p>
+    <p data-i18n="docs.print.p4">A receipt, a small .unloop-receipt.json file, goes beside every export and every drag. It holds the versions, the name, mode and seed, and the fingerprints needed to make the same record again. Receipts are on by default; you can turn them off in the dialog.</p>
+  </section>
+
+  <section>
+    <h2 id="projects" data-i18n="docs.projects.title">Loop projects and the Loop Library</h2>
+    <p data-i18n="docs.projects.p1">Save loop project… in the loop project menu (the folder button) saves the loop — its parts as 24-bit FLAC — with every arrangement over it, as one .unloop file. Open loop project… brings it back exactly. Saving never overwrites a file: a name that is taken gets (2).</p>
+    <p data-i18n="docs.projects.p2">The Loop Library, in the same menu, lists every .unloop project and every WAV, AIFF, FLAC, MP3 and MIDI file in the folders you add, with its bars, tempo, tags and how often it has been arranged. Search and filter it; click a loop to hear it inside Unloop (the arrow keys walk the list, Esc stops), and Arrange it when it is exactly one loop. It only ever reads your folders. MIDI loops are listed now and become arrangeable in version 0.7.0.</p>
+    <p data-i18n="docs.projects.p3">Make a loop from a longer file… cuts a loop out of a longer recording: pick a start bar, a length of 1, 2, 4, 8 or 16 bars and the tempo, hear the cut on repeat, then Arrange it as a new loop project. The file itself is never changed.</p>
+    <p data-i18n="docs.projects.p4">Recent Projects lists what you opened or saved, newest first. One that has moved shows as missing, and Remove from list takes the row away — never the file.</p>
+  </section>
+
+  <section>
+    <h2 id="timeline" data-i18n="docs.timeline.title">Editing the timeline</h2>
+    <p data-i18n="docs.timeline.p1">Every clip on the map is yours to edit. Click to select it, Shift-click or drag a marquee for more, or press Ctrl/Cmd+A for all. Drag a clip to move it on the snap (hold Alt to move it freely), drag an edge to resize it — the loop repeats past its length — and Alt-drag inside it to slip it. S splits at the edit cursor.</p>
+    <p data-i18n="docs.timeline.p2">The clip's menu — right-click, Shift+F10 or the menu key — holds Cut, Copy, Paste, Clone after, Duplicate in place, Delete, Split at the cursor, Reverse, Lock, Reset to plan, Colour and Rename. A clip pasted onto a lane its part cannot go on is offered the lanes it can.</p>
+    <p data-i18n="docs.timeline.p3">Snap to the bar, the beat, an eighth or a sixteenth note, their triplets, or nothing; zoom in and out, or fit the whole record. Where clips meet, Unloop crossfades them over 3 ms, and with snapping off an edge lands on the loop's nearest zero crossing, so no edit makes a click.</p>
+  </section>
+
+  <section>
+    <h2 id="fades" data-i18n="docs.fades.title">Fades and faders</h2>
+    <p data-i18n="docs.fades.p1">Each end of a clip has three fade handles, as in Freally MIDI Master's Song Arrangement: the length on the clip's top edge and the curve on the fade itself. They never cross, at any clip length.</p>
+    <p data-i18n="docs.fades.p2">Drag a clip's gain handle from −∞ to +6 dB — hold Shift for fine steps, double-click for 0 dB. The console has a fader for each part and a master fader. Every move is heard while you drag, and is one undo step when you let go.</p>
+  </section>
+
+  <section>
+    <h2 id="automation" data-i18n="docs.automation.title">Automation</h2>
+    <p data-i18n="docs.automation.p1">Open Automation, pick a part and what to move, add a lane and draw on it. Each part has lanes for volume, pan, width, low-pass and high-pass cutoff, resonance, reverb and delay sends, drive, crush, gate depth and pitch; the master has volume and a low-pass.</p>
+    <p data-i18n="docs.automation.p2">Draw points, or select and move them; bend the line between two; stamp a shape over a range — a ramp, an S-curve, a sine, triangle, square or saw, or random steps — and copy and paste a range. A move's own sweep or dive can be edited on the lane it plays. Automation is read sample by sample, live and in a print alike.</p>
+  </section>
+
+  <section>
+    <h2 id="sections" data-i18n="docs.sections.title">Sections</h2>
+    <p data-i18n="docs.sections.p1">Open a section's menu from its header, or press M, to rename it, change its kind or its length, move it earlier or later, insert a new section before or after it, remove it or lock it. You can also drag a section to reorder it: everything in it goes with it.</p>
+  </section>
+
+  <section>
+    <h2 id="reroll" data-i18n="docs.reroll.title">Lock, reroll and moves by hand</h2>
+    <p data-i18n="docs.reroll.p1">Lock a section or a clip you like, and Reroll draws the rest again. It never touches a locked section or a clip you edited, and never moves a neighbour. What changed then lists every part and move it changed, section by section.</p>
+    <p data-i18n="docs.reroll.p2">Add move opens a palette of every move, this arrangement's own first: place one on the moves strip, then drag, stretch or delete it. Select a move to open its inspector — its start, its length, its parts and its own settings, such as a filter's range or a stutter's steps — and Audition it while the preview plays.</p>
+  </section>
+
+  <section>
+    <h2 id="history" data-i18n="docs.history.title">Undo, redo and autosave</h2>
+    <p data-i18n="docs.history.p1">Every change in the Song Arrangement view is one step of unlimited undo and redo. The Undo and Redo buttons at the top name the step, or press Ctrl/Cmd+Z and Ctrl/Cmd+Shift+Z (or Ctrl+Y). The history is saved with your DAW project.</p>
+    <p data-i18n="docs.history.p2">Every change is also written to your computer at once, so if your DAW closes before you save, the project reopens on your last change and says so. If that change was really another copy's — an older project reopened after Save As — choose Keep the saved version.</p>
+  </section>
+
+  <section>
+    <h2 id="shelf" data-i18n="docs.shelf.title">Many arrangements on one loop</h2>
+    <p data-i18n="docs.shelf.p1">The Arrangement menu holds every arrangement of the loop you have open: New, Duplicate, Rename, Delete, Switch — on the next bar while playing, at once when stopped — and Compare, an A/B between any two. Each arrangement keeps four snapshots, A to D: click one to recall it, or Shift-click to keep the arrangement there.</p>
+    <p data-i18n="docs.shelf.p2">Export arrangement… writes one arrangement as an .unarr file, without its loop. Import arrangement… lays one over the loop you have open, finding each section, clip, move and lane by what it is, and lists anything that had no place.</p>
+  </section>
+
+  <section>
+    <h2 id="keys" data-i18n="docs.keys.title">Keyboard shortcuts</h2>
+    <p data-i18n-html="docs.keys.intro">Every edit in the Song Arrangement view works without a mouse. In Unloop, press <kbd>?</kbd> for this sheet; on a Mac, <kbd>Ctrl/⌘</kbd> is <kbd>⌘</kbd>.</p>
+    <!-- shortcuts:begin — written by scripts/docs-shortcuts.mjs from src/shortcuts.ts; edit that -->
+    <h3 data-i18n="shortcutScope.everywhere">Everywhere</h3>
+    <div class="table-wrap"><table class="keys">
+      <tr><td data-i18n="shortcut.undo">Undo</td><td><kbd>Ctrl/⌘</kbd>+<kbd>Z</kbd></td></tr>
+      <tr><td data-i18n="shortcut.redo">Redo</td><td><kbd>Ctrl/⌘</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>Ctrl</kbd>+<kbd>Y</kbd></td></tr>
+      <tr><td data-i18n="shortcut.sheet">Show this sheet</td><td><kbd>?</kbd></td></tr>
+      <tr><td data-i18n="shortcut.preview">Play or pause the preview while your DAW is stopped</td><td><kbd>Space</kbd></td></tr>
+      <tr><td data-i18n="shortcut.closeDialog">Close a dialog, a card or a panel</td><td><kbd>Escape</kbd></td></tr>
+    </table></div>
+    <h3 data-i18n="shortcutScope.timeline">Song Arrangement view</h3>
+    <div class="table-wrap"><table class="keys">
+      <tr><td data-i18n="shortcut.nextClip">Select the next clip</td><td><kbd>]</kbd></td></tr>
+      <tr><td data-i18n="shortcut.previousClip">Select the previous clip</td><td><kbd>[</kbd></td></tr>
+      <tr><td data-i18n="shortcut.clipAbove">Select the clip on the lane above</td><td><kbd>Alt</kbd>+<kbd>↑</kbd></td></tr>
+      <tr><td data-i18n="shortcut.clipBelow">Select the clip on the lane below</td><td><kbd>Alt</kbd>+<kbd>↓</kbd></td></tr>
+      <tr><td data-i18n="shortcut.selectAll">Select every clip</td><td><kbd>Ctrl/⌘</kbd>+<kbd>A</kbd></td></tr>
+      <tr><td data-i18n="shortcut.deselect">Select nothing, or let go of a drag</td><td><kbd>Escape</kbd></td></tr>
+      <tr><td data-i18n="shortcut.moveEarlier">Move the selected clips earlier by the snap</td><td><kbd>←</kbd></td></tr>
+      <tr><td data-i18n="shortcut.moveLater">Move the selected clips later by the snap</td><td><kbd>→</kbd></td></tr>
+      <tr><td data-i18n="shortcut.moveUp">Move the selected clips to the lane above</td><td><kbd>↑</kbd></td></tr>
+      <tr><td data-i18n="shortcut.moveDown">Move the selected clips to the lane below</td><td><kbd>↓</kbd></td></tr>
+      <tr><td data-i18n="shortcut.endEarlier">Shorten the clip from its end</td><td><kbd>Shift</kbd>+<kbd>←</kbd></td></tr>
+      <tr><td data-i18n="shortcut.endLater">Lengthen the clip at its end</td><td><kbd>Shift</kbd>+<kbd>→</kbd></td></tr>
+      <tr><td data-i18n="shortcut.startEarlier">Lengthen the clip at its start</td><td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>←</kbd></td></tr>
+      <tr><td data-i18n="shortcut.startLater">Shorten the clip from its start</td><td><kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>→</kbd></td></tr>
+      <tr><td data-i18n="shortcut.gainUp">Raise the clips’ gain</td><td><kbd>=</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>+</kbd></td></tr>
+      <tr><td data-i18n="shortcut.gainDown">Lower the clips’ gain</td><td><kbd>-</kbd></td></tr>
+      <tr><td data-i18n="shortcut.cursorEarlier">Move the edit cursor earlier</td><td><kbd>,</kbd></td></tr>
+      <tr><td data-i18n="shortcut.cursorLater">Move the edit cursor later</td><td><kbd>.</kbd></td></tr>
+      <tr><td data-i18n="shortcut.split">Split at the edit cursor</td><td><kbd>S</kbd></td></tr>
+      <tr><td data-i18n="shortcut.fades">Hold the clip’s fade handles</td><td><kbd>F</kbd></td></tr>
+      <tr><td data-i18n="shortcut.reverse">Reverse the selected clips</td><td><kbd>R</kbd></td></tr>
+      <tr><td data-i18n="shortcut.lock">Lock or unlock the selected clips</td><td><kbd>L</kbd></td></tr>
+      <tr><td data-i18n="shortcut.copy">Copy the selected clips</td><td><kbd>Ctrl/⌘</kbd>+<kbd>C</kbd></td></tr>
+      <tr><td data-i18n="shortcut.cut">Cut the selected clips</td><td><kbd>Ctrl/⌘</kbd>+<kbd>X</kbd></td></tr>
+      <tr><td data-i18n="shortcut.paste">Paste at the edit cursor</td><td><kbd>Ctrl/⌘</kbd>+<kbd>V</kbd></td></tr>
+      <tr><td data-i18n="shortcut.clone">Clone after the selection</td><td><kbd>Ctrl/⌘</kbd>+<kbd>D</kbd></td></tr>
+      <tr><td data-i18n="shortcut.duplicate">Duplicate in place</td><td><kbd>Shift</kbd>+<kbd>D</kbd></td></tr>
+      <tr><td data-i18n="shortcut.delete">Delete the selected clips, or the picked move</td><td><kbd>Delete</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>Backspace</kbd></td></tr>
+      <tr><td data-i18n="shortcut.clipMenu">Open the clip’s menu</td><td><kbd>Shift</kbd>+<kbd>F10</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>ContextMenu</kbd></td></tr>
+      <tr><td data-i18n="shortcut.sectionMenu">Open the section’s menu</td><td><kbd>M</kbd></td></tr>
+    </table></div>
+    <h3 data-i18n="shortcutScope.fades">While holding fade handles</h3>
+    <div class="table-wrap"><table class="keys">
+      <tr><td data-i18n="shortcut.fadeLonger">Lengthen the fade by the snap</td><td><kbd>→</kbd></td></tr>
+      <tr><td data-i18n="shortcut.fadeShorter">Shorten the fade by the snap</td><td><kbd>←</kbd></td></tr>
+      <tr><td data-i18n="shortcut.fadeCurveUp">Bend the fade’s curve up</td><td><kbd>↑</kbd></td></tr>
+      <tr><td data-i18n="shortcut.fadeCurveDown">Bend the fade’s curve down</td><td><kbd>↓</kbd></td></tr>
+      <tr><td data-i18n="shortcut.fadeOtherSide">Switch to the other fade</td><td><kbd>Tab</kbd></td></tr>
+      <tr><td data-i18n="shortcut.fadeDone">Let go of the fade handles</td><td><kbd>Escape</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>F</kbd></td></tr>
+    </table></div>
+    <h3 data-i18n="shortcutScope.fader">On a fader</h3>
+    <div class="table-wrap"><table class="keys">
+      <tr><td data-i18n="shortcut.faderUp">Raise the fader a step</td><td><kbd>↑</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>→</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderDown">Lower the fader a step</td><td><kbd>↓</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>←</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderFineUp">Raise the fader a fine step</td><td><kbd>Shift</kbd>+<kbd>↑</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>Shift</kbd>+<kbd>→</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderFineDown">Lower the fader a fine step</td><td><kbd>Shift</kbd>+<kbd>↓</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>Shift</kbd>+<kbd>←</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderBigUp">Raise the fader six steps</td><td><kbd>PageUp</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderBigDown">Lower the fader six steps</td><td><kbd>PageDown</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderTop">Fader to the top</td><td><kbd>Home</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderOff">Fader off</td><td><kbd>End</kbd></td></tr>
+    </table></div>
+    <h3 data-i18n="shortcutScope.lane">On an automation lane</h3>
+    <div class="table-wrap"><table class="keys">
+      <tr><td data-i18n="shortcut.pointsDelete">Delete the picked points</td><td><kbd>Delete</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>Backspace</kbd></td></tr>
+      <tr><td data-i18n="shortcut.pointsCancel">Let go of a drag</td><td><kbd>Escape</kbd></td></tr>
+    </table></div>
+    <h3 data-i18n="shortcutScope.search">In the search</h3>
+    <div class="table-wrap"><table class="keys">
+      <tr><td data-i18n="shortcut.searchNext">Next result</td><td><kbd>↓</kbd></td></tr>
+      <tr><td data-i18n="shortcut.searchPrevious">Previous result</td><td><kbd>↑</kbd></td></tr>
+      <tr><td data-i18n="shortcut.searchPick">Choose the result</td><td><kbd>Enter</kbd></td></tr>
+      <tr><td data-i18n="shortcut.searchClose">Close the results</td><td><kbd>Escape</kbd></td></tr>
+    </table></div>
+    <h3 data-i18n="shortcutScope.menu">In a menu</h3>
+    <div class="table-wrap"><table class="keys">
+      <tr><td data-i18n="shortcut.menuNext">Next item</td><td><kbd>↓</kbd></td></tr>
+      <tr><td data-i18n="shortcut.menuPrevious">Previous item</td><td><kbd>↑</kbd></td></tr>
+      <tr><td data-i18n="shortcut.menuClose">Close the menu</td><td><kbd>Escape</kbd></td></tr>
+    </table></div>
+    <!-- shortcuts:end -->
+  </section>
+
+  <section>
+    <h2 id="language" data-i18n="docs.language.title">Languages</h2>
+    <p data-i18n="docs.language.p1">Unloop speaks eighteen languages. It starts in your system's language; to choose another, open Settings with the gear and pick one.</p>
+  </section>
+
+  <section>
+    <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
+    <p data-i18n="docs.privacy.p1">Unloop has no account and no telemetry, and the plugin and the standalone app contain no networking code at all. Your loops, your projects and your records never leave your computer, and a loop, a project or an export folder on a network drive is refused before anything on it is touched.</p>
+    <p data-i18n="docs.privacy.p2">It keeps its own files in your app-data folder (%APPDATA%\Freally Unloop on Windows): the licence answer, your preferences, Recent Projects, the Loop Library's index, the capture cache (at most 2 GB) and the files instances meet through. It never writes into your loop folders; exports and projects go where you choose.</p>
+    <p data-i18n="docs.privacy.p3">It contains no AI of any kind: every arrangement is planned by deterministic rules over researched arrangement data and performed by classic signal processing, and a build gate fails if a machine-learning library is ever added.</p>
+  </section>
+
+  <section>
+    <h2 id="limits" data-i18n="docs.limits.title">Known limitations</h2>
+    <ul>
+      <li data-i18n="docs.limits.midi">MIDI — the song template, MIDI loops and the Velocity Doctor — arrives in version 0.7.0. A loop's key is not known until then, so default file names leave the key out.</li>
+      <li data-i18n="docs.limits.picture">A drag shows no picture of what you are dragging yet.</li>
+      <li data-i18n="docs.limits.throw">A reverb or delay throw on the last bar is cut at the record's last bar line; the print does not ring on past it.</li>
+      <li data-i18n="docs.limits.display">On a second monitor at another display scale, the editor sizes itself from the primary display.</li>
+      <li data-i18n="docs.limits.hands">Unloop has not yet been worked through by hand in every DAW, on every system. That is the release candidate's job, before 1.0.0.</li>
+    </ul>
+  </section>
+</kit-manual>

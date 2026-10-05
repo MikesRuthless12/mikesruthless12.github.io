@@ -1,291 +1,231 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="index" data-product="teleprompt" data-name="Freally Teleprompt" data-title-key="site.tagline">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <title data-i18n="meta.title.home">Freally Teleprompt — look confident, stay on script</title>
-    <meta
-      name="description"
-      content="Freally Teleprompt is a teleprompter for Windows, macOS and Linux that reads at a real human pace — characters per second or BPM — and marks every pause you write. No account, no telemetry. Free today; future versions may be sold."
-    />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Freally Teleprompt — Look confident. Stay on script.</title>
+    <meta name="description" content="Freally Teleprompt is a teleprompter for Windows, macOS and Linux that reads at a real human pace — characters per second or BPM — and marks every pause you write. No account, no telemetry. Free today; future versions may be sold." />
+    <meta property="og:title" content="Freally Teleprompt — Look confident. Stay on script." />
+    <meta property="og:description" content="Freally Teleprompt is a teleprompter for Windows, macOS and Linux that reads at a real human pace — characters per second or BPM — and marks every pause you write. No account, no telemetry. Free today; future versions may be sold." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="teleprompt-icon.png" alt="" width="28" height="28" />
-          <span>Freally Teleprompt</span>
-        </a>
-        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-            <!-- ⚠ Filled by site.js: English first, the other seventeen alphabetically. -->
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="teleprompt-icon.png" alt="" width="28" height="28" /><span>Freally Teleprompt</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
     <main id="main">
-      <section class="hero">
-        <img class="mark" src="teleprompt-icon.png" alt="" width="96" height="96" />
-        <h1>Freally Teleprompt</h1>
-        <p class="tagline" data-i18n="hero.tagline">Look confident. Stay on script.</p>
-        <p class="sub" data-i18n="hero.sub">
-          A teleprompter for your computer that reads at a real human pace — characters per second,
-          or the BPM of your track — and marks every pause you write into the script.
-        </p>
-        <p class="sub" data-i18n="notice.price">
-          Freally Teleprompt is free today, but it might not be free forever: future versions may be sold.
-        </p>
-        <ul class="chips">
-          <li>Windows</li>
-          <li>macOS</li>
-          <li>Linux</li>
-          <li data-i18n="hero.chipDesktop">Desktop app</li>
-          <li data-i18n="hero.chipLanguages">18 languages</li>
-          <li data-i18n="hero.chipNoAccount">No account</li>
-        </ul>
-        <p class="sub">
-          <strong data-i18n="hero.notice"
-            >Version 1.5.0 is the current release. This site has no downloads, and the source code is private.</strong
-          >
-        </p>
-      </section>
-
-      <section id="ladder">
-        <h2 data-i18n="ladder.title">The road to 2.0</h2>
-        <p data-i18n="ladder.intro">
-          Every release so far, then the steps planned on the way to 2.0. A step gets its version
-          number when it ships, and a plan can change.
-        </p>
-        <table class="ladder">
-          <thead>
-            <tr>
-              <th data-i18n="ladder.version">Version</th>
-              <th data-i18n="ladder.state">State</th>
-              <th data-i18n="ladder.lands">What it lands</th>
-            </tr>
-          </thead>
-          <!-- LADDER:START — generated from docs/ladder.json by scripts/build-docs-site.mjs. Do not edit by hand. -->
-<tbody>
-            <tr>
-              <td><code>v0.100.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.100.0">The foundation: the app runs on Windows, macOS and Linux, asks you to accept its licence, and scrolls a script with the character-based engine from Freally Capture.</td>
-            </tr>
-            <tr>
-              <td><code>v0.200.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.200.0">The standalone teleprompter: a script library, pause chips, a projector for the talent with a mirror flip, a mirror to phones on your own network, a real transport, BPM pacing and read-aloud.</td>
-            </tr>
-            <tr>
-              <td><code>v0.300.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.300.0">Offline autocomplete: it finishes words and common phrases as you type, in all 18 languages, from word lists inside the app.</td>
-            </tr>
-            <tr>
-              <td><code>v1.0.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.0.0">The first full release: a one-minute welcome tour, a keyboard and screen-reader pass, a theme that follows your system, and updates that install only after you say yes.</td>
-            </tr>
-            <tr>
-              <td><code>v1.1.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.1.0">Write your script by speaking: dictation that runs on your computer, with nothing to train.</td>
-            </tr>
-            <tr>
-              <td><code>v1.2.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.2.0">Dictation, finished: a proper record button, words that land where your cursor is, and an undo that takes back one thing you said.</td>
-            </tr>
-            <tr>
-              <td><code>v1.3.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.3.0">Reading to time: a tempo you tap to match your delivery, a metronome, a bar and beat counter, rehearsal with a timing report, and labels that cost no read time.</td>
-            </tr>
-            <tr>
-              <td><code>v1.4.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.4.0">Getting the script in: import Word, RTF, PDF, text and Markdown files, section markers with a jump list, find and replace, and script statistics.</td>
-            </tr>
-            <tr>
-              <td><code>v1.5.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v1.5.0">Anything in the room can drive it: foot pedals and presenter remotes, keys that work when the app is not in front, and a rebindable map of every command.</td>
-            </tr>
-            <tr>
-              <td><span class="unnumbered" aria-hidden="true">—</span></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.rig">Built for the rig: a vertical flip for overhead glass, lens and safe-margin guides, an elapsed and remaining time display, and presets for reading at a distance.</td>
-            </tr>
-            <tr>
-              <td><span class="unnumbered" aria-hidden="true">—</span></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.takes">Never lose a take: recovery of unsaved edits after a crash, settings that travel with each script, local version history, and export to PDF for a paper backup.</td>
-            </tr>
-            <tr>
-              <td><span class="unnumbered" aria-hidden="true">—</span></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.writing">Help with the writing: a rhyme finder, syllable counts for each line, a tongue-twister check and suggested pauses — from dictionaries, with no model.</td>
-            </tr>
-            <tr>
-              <td><span class="unnumbered" aria-hidden="true">—</span></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.remote">Drive it from anywhere: a phone-sized control page, plus MIDI and OSC for the desk you already run — on your own network only, and off by default.</td>
-            </tr>
-            <tr>
-              <td><span class="unnumbered" aria-hidden="true">—</span></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.show">Run a whole show: rundowns with a duration for each item, more than one prompter output, and a big countdown and cue-light display for the floor.</td>
-            </tr>
-            <tr>
-              <td><span class="unnumbered" aria-hidden="true">—</span></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.record">Record while you prompt: a webcam take as the script runs, or audio only with your section markers written into the file as chapters.</td>
-            </tr>
-            <tr>
-              <td><span class="unnumbered" aria-hidden="true">—</span></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.languages">Every script, every language: emphasis on single words, furigana above the line, right-to-left polish for Arabic, and vertical Japanese and Chinese.</td>
-            </tr>
-            <tr>
-              <td><code>v2.0.0</code></td>
-              <td><span class="state state-goal" data-i18n="ladder.state.goal">The goal</span></td>
-              <td data-i18n="ladder.rung.v2.0.0">Version 2.0: all of the above, on Windows, macOS and Linux.</td>
-            </tr>
-          </tbody>
-      <!-- LADDER:END -->
-        </table>
-        <p class="sub" data-i18n="ladder.note">
-          Done means released and tagged. Even so, this site offers no downloads.
-        </p>
-      </section>
-
-      <section id="what">
-        <h2 data-i18n="what.title">What it does</h2>
-        <div class="grid">
-          <article class="card">
-            <h3 data-i18n="features.pace.title">A real reading pace</h3>
-            <p data-i18n="features.pace.body">
-              Set the speed in characters per second, or in BPM from 20 to 250 to read in time
-              with a track — not an arbitrary dial from 1 to 10.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.pauses.title">Pauses you can see</h3>
-            <p data-i18n="features.pauses.body">
-              Type -- for a short pause or --3 for a three-second hold. Each becomes a chip in the
-              editor, and lights up as the read reaches it.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.screens.title">Every screen on the same word</h3>
-            <p data-i18n="features.screens.body">
-              One engine, counted in characters, drives your preview, the talent's projector —
-              flipped for prompter glass if you need it — and phones on your own network, so they
-              never drift apart.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.import.title">Open the file you were sent</h3>
-            <p data-i18n="features.import.body">
-              Import Word, RTF, PDF, plain text and Markdown files as clean prompter text, with a
-              report of anything it could not bring across.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.markers.title">Find your way around</h3>
-            <p data-i18n="features.markers.body">
-              A line that starts with # becomes a section marker in a jump list, beside find and
-              replace and live word counts.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.timing.title">Read to time</h3>
-            <p data-i18n="features.timing.body">
-              Tap your own tempo, hear a click with a count-in, see the bars and beats, and rehearse
-              for a section-by-section timing report.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.control.title">Pedals, remotes and hotkeys</h3>
-            <p data-i18n="features.control.body">
-              Every command has a key you can change. Foot pedals and presenter remotes bind like
-              any key, and a key can work even when the app is not in front.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.writing.title">Help while you write</h3>
-            <p data-i18n="features.writing.body">
-              Autocomplete in 18 languages from word lists inside the app, and dictation in
-              English: say it, and it is written into the script.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.private.title">Yours, on your computer</h3>
-            <p data-i18n="features.private.body">
-              No account, no telemetry, no cloud. Scripts are plain files on your computer, and the
-              app asks the internet one thing: whether a newer version exists.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="honest">
-        <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
-        <div class="honest">
-          <h3 data-i18n="honest.model.title">Dictation uses a speech model</h3>
-          <p data-i18n="honest.model.body">
-            Dictation is the one part of the app that uses machine learning: Vosk, an open-source
-            speech recogniser, with a small English model of about 40 MB inside the app. It runs on
-            your computer, uploads and downloads nothing, understands English only, and stays off
-            until you switch it on. Everything else is ordinary code and word lists.
-          </p>
-
-          <h3 data-i18n="honest.update.title">It asks the internet one question</h3>
-          <p data-i18n="honest.update.body">
-            Each time it starts, the app asks GitHub whether a newer version exists. The request
-            carries no script, no settings and no identifier, and nothing installs unless you say
-            yes. Everything else works with no connection at all.
-          </p>
-
-          <h3 data-i18n="honest.voice.title">It does not follow your voice</h3>
-          <p data-i18n="honest.voice.body">
-            Some teleprompters scroll by listening to you read. Freally Teleprompt 1.5.0 scrolls at
-            the pace you set, and you, a key or a pedal take over when the read changes. A
-            voice-following mode was tried in 1.0.0 and removed in 1.1.0.
-          </p>
-
-          <h3 data-i18n="honest.downloads.title">There are no downloads on this site</h3>
-          <p data-i18n="honest.downloads.body">
-            No download link, no button and no beta. The source code is private as well.
-          </p>
-        </div>
-      </section>
+<section class="hero">
+<div class="hero__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap hero__inner">
+<div class="hero__copy">
+<div class="hero__brand"><img class="app-icon" src="teleprompt-icon.png" alt="" width="56" height="56" /><span class="hero__name">Freally Teleprompt</span><p class="badge"><span class="badge__dot"></span><span data-i18n="hero.badge">Version 1.5.0 is the current release</span></p></div>
+<h1 class="display" data-i18n-html="hero.headline"><span class="hl-muted">Look confident.</span> <span class="hl-bright">Stay on script.</span></h1>
+<p class="lead" data-i18n="hero.sub">A teleprompter for your computer that reads at a real human pace — characters per second, or the BPM of your track — and marks every pause you write into the script.</p>
+<div class="actions"><a class="btn btn-primary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="documentation.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg><span data-i18n="kit.cta.docs">Read the documentation</span></a></div>
+<p class="fineprint" data-i18n="kit.price">Freally Teleprompt is free today, but it might not be free forever: future versions may be sold.</p>
+<p class="fineprint"><strong data-i18n="kit.noDownloads">There are no downloads yet, and the source code is private.</strong></p>
+<ul class="chips"><li>Windows</li><li>macOS</li><li>Linux</li><li data-i18n="hero.chipDesktop">Desktop app</li><li data-i18n="hero.chipLanguages">18 languages</li><li data-i18n="hero.chipNoAccount">No account</li></ul>
+</div>
+<div class="hero__visual" aria-hidden="true"><img class="hero__orbit" src="kit/art/orbit.svg" alt="" width="640" height="640" /><div class="hero__core"><img src="teleprompt-icon.png" alt="" width="200" height="200" /></div></div>
+</div>
+</section>
+<section class="section" id="what">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.overview">Overview</span>
+<div class="split">
+    <div>
+      <h2 data-i18n="what.is.title">What it is</h2>
+      <p class="lead" data-i18n="what.is.lead">Reading a script on camera usually means a scroll that is too fast or too slow, a pause you forgot, and a second screen a line behind.</p>
+      <p data-i18n="what.is.body">Freally Teleprompt is a teleprompter for your computer. Open the script you were sent, set the pace in characters per second or to the BPM of your track, and it reads at a real human speed — every pause you wrote marked in the script, and every screen on the same word.</p>
+    </div>
+    <figure class="split__art"><img src="kit/art/lines.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></figure>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="does">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.inside">Inside</span>
+<h2 data-i18n="what.title">What it does</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><img src="kit/art/signal.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.pace.title">A real reading pace</h3>
+        <p data-i18n="features.pace.body">Set the speed in characters per second, or in BPM from 20 to 250 to read in time with a track — not an arbitrary dial from 1 to 10.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/lines.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.pauses.title">Pauses you can see</h3>
+        <p data-i18n="features.pauses.body">Type -- for a short pause or --3 for a three-second hold. Each becomes a chip in the editor, and lights up as the read reaches it.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/layers.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.screens.title">Every screen on the same word</h3>
+        <p data-i18n="features.screens.body">One engine, counted in characters, drives your preview, the talent's projector — flipped for prompter glass if you need it — and phones on your own network, so they never drift apart.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/index.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.import.title">Open the file you were sent</h3>
+        <p data-i18n="features.import.body">Import Word, RTF, PDF, plain text and Markdown files as clean prompter text, with a report of anything it could not bring across.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/tree.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.markers.title">Find your way around</h3>
+        <p data-i18n="features.markers.body">A line that starts with # becomes a section marker in a jump list, beside find and replace and live word counts.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/rings.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.timing.title">Read to time</h3>
+        <p data-i18n="features.timing.body">Tap your own tempo, hear a click with a count-in, see the bars and beats, and rehearse for a section-by-section timing report.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/faders.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.control.title">Pedals, remotes and hotkeys</h3>
+        <p data-i18n="features.control.body">Every command has a key you can change. Foot pedals and presenter remotes bind like any key, and a key can work even when the app is not in front.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/chat.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.writing.title">Help while you write</h3>
+        <p data-i18n="features.writing.body">Autocomplete in 18 languages from word lists inside the app, and dictation in English: say it, and it is written into the script.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/shield.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.private.title">Yours, on your computer</h3>
+        <p data-i18n="features.private.body">No account, no telemetry, no cloud. Scripts are plain files on your computer, and the app asks the internet one thing: whether a newer version exists.</p>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+<section class="section" id="ladder">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.roadmap">Roadmap</span>
+<h2 data-i18n="ladder.title">The road to 2.0</h2>
+  <p class="lead" data-i18n="ladder.intro">Every release so far, then the steps planned on the way to 2.0. A step gets its version number when it ships, and a plan can change.</p>
+  <ol class="ladder">
+<li class="rung rung--done"><code class="rung__ver">v0.100.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.100.0">The foundation: the app runs on Windows, macOS and Linux, asks you to accept its licence, and scrolls a script with the character-based engine from Freally Capture.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.200.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.200.0">The standalone teleprompter: a script library, pause chips, a projector for the talent with a mirror flip, a mirror to phones on your own network, a real transport, BPM pacing and read-aloud.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.300.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.300.0">Offline autocomplete: it finishes words and common phrases as you type, in all 18 languages, from word lists inside the app.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.0.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.0.0">The first full release: a one-minute welcome tour, a keyboard and screen-reader pass, a theme that follows your system, and updates that install only after you say yes.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.1.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.1.0">Write your script by speaking: dictation that runs on your computer, with nothing to train.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.2.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.2.0">Dictation, finished: a proper record button, words that land where your cursor is, and an undo that takes back one thing you said.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.3.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.3.0">Reading to time: a tempo you tap to match your delivery, a metronome, a bar and beat counter, rehearsal with a timing report, and labels that cost no read time.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v1.4.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.4.0">Getting the script in: import Word, RTF, PDF, text and Markdown files, section markers with a jump list, find and replace, and script statistics.</span></li>
+<li class="rung rung--done rung--last-done"><code class="rung__ver">v1.5.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v1.5.0">Anything in the room can drive it: foot pedals and presenter remotes, keys that work when the app is not in front, and a rebindable map of every command.</span></li>
+<li class="rung rung--planned rung--next"><code class="rung__ver">rig</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.rig">Built for the rig: a vertical flip for overhead glass, lens and safe-margin guides, an elapsed and remaining time display, and presets for reading at a distance.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">takes</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.takes">Never lose a take: recovery of unsaved edits after a crash, settings that travel with each script, local version history, and export to PDF for a paper backup.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">writing</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.writing">Help with the writing: a rhyme finder, syllable counts for each line, a tongue-twister check and suggested pauses — from dictionaries, with no model.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">remote</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.remote">Drive it from anywhere: a phone-sized control page, plus MIDI and OSC for the desk you already run — on your own network only, and off by default.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">show</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.show">Run a whole show: rundowns with a duration for each item, more than one prompter output, and a big countdown and cue-light display for the floor.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">record</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.record">Record while you prompt: a webcam take as the script runs, or audio only with your section markers written into the file as chapters.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">languages</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.languages">Every script, every language: emphasis on single words, furigana above the line, right-to-left polish for Arabic, and vertical Japanese and Chinese.</span></li>
+<li class="rung rung--goal"><code class="rung__ver">v2.0.0</code><span class="state state-goal" data-i18n="kit.ladder.goal">The goal</span><span class="rung__text" data-i18n="ladder.rung.v2.0.0">Version 2.0: all of the above, on Windows, macOS and Linux.</span></li>
+</ol>
+  <p class="fineprint" data-i18n="ladder.note">Done means released and tagged. Even so, this site offers no downloads.</p>
+</div>
+</section>
+<section class="section section--surface" id="honest">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.honesty">Honesty</span>
+<h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg><span data-i18n="honest.model.title">Dictation uses a speech model</span></h3>
+      <p data-i18n="honest.model.body">Dictation is the one part of the app that uses machine learning: Vosk, an open-source speech recogniser, with a small English model of about 40 MB inside the app. It runs on your computer, uploads and downloads nothing, understands English only, and stays off until you switch it on. Everything else is ordinary code and word lists.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg><span data-i18n="honest.update.title">It asks the internet one question</span></h3>
+      <p data-i18n="honest.update.body">Each time it starts, the app asks GitHub whether a newer version exists. The request carries no script, no settings and no identifier, and nothing installs unless you say yes. Everything else works with no connection at all.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M2 10v3M6 6v11M10 3v18M14 8v7M18 5v13M22 10v3"/></svg><span data-i18n="honest.voice.title">It does not follow your voice</span></h3>
+      <p data-i18n="honest.voice.body">Some teleprompters scroll by listening to you read. Freally Teleprompt 1.5.0 scrolls at the pace you set, and you, a key or a pedal take over when the read changes. A voice-following mode was tried in 1.0.0 and removed in 1.1.0.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span data-i18n="honest.downloads.title">There are no downloads on this site</span></h3>
+      <p data-i18n="honest.downloads.body">No download link, no button and no beta. The source code is private as well.</p>
+    </article>
+  </div>
+</div>
+</section>
+<section class="section section--tight family">
+<div class="wrap section-head section-head--center">
+<span class="label" data-i18n="kit.family.label">The Freally family</span>
+<h2 class="h2" data-i18n-html="kit.family.title"><span class="hl-muted">One family.</span> <span class="hl-bright">Eight apps.</span></h2>
+</div>
+<div class="marquee"><div class="marquee__track">
+<div class="marquee__group"><a class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/" aria-current="true"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a class="marquee__item" href="https://freallyproducts.com/freally-capture/"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+<div class="marquee__group" aria-hidden="true"><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/" aria-current="true"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-capture/"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+</div></div>
+</section>
+<section class="cta">
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<span class="label" data-i18n="kit.cta.label">What changed</span>
+<h2 class="h2" data-i18n-html="kit.cta.title"><span class="hl-muted">Every version,</span> <span class="hl-bright">written down.</span></h2>
+<p class="lead" data-i18n="kit.cta.lede">The changelog lists everything that changed in Freally Teleprompt, version by version, in all eighteen languages.</p>
+<div class="actions"><a class="btn btn-primary" href="changelog.html"><span data-i18n="kit.cta.changelog">Read the changelog</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span></a></div>
+</div>
+</section>
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.yours">
-          Your scripts are yours. They stay on your computer, and the app's author never receives,
-          stores or relays them.
-        </p>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="teleprompt-icon.png" alt="" width="28" height="28" /><span>Freally Teleprompt</span></a><p data-i18n="site.tagline">Look confident. Stay on script.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Teleprompt is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/" aria-current="true">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">Your scripts are yours. They stay on your computer, and the app's author never receives, stores or relays them.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v1.5.0</span>
+        </div>
       </div>
     </footer>
-
-    <script src="site.js"></script>
   </body>
 </html>

@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Uma sobreposição de chat lê o chat público** do canal para o qual você a aponta, do jeito que um espectador sem login leria — sem conta, chave ou login.",
   "manual.efe87d55bed1": "**Dois componentes só são baixados quando você precisa deles pela primeira vez:** o ffmpeg, para os codecs que as plataformas exigem, e o ambiente de execução do navegador, para a fonte de navegador. Cada um vem do seu próprio fornecedor e é verificado antes do uso.",
   "manual.3601a272b3b0": "**Uma verificação de atualizações** baixa um único arquivo pequeno uma vez a cada abertura, e quando você escolhe **Verificar atualizações…**. Nada sobre você ou o seu computador é enviado junto, e nada é instalado a menos que você diga sim.",
-  "manual.11abc96d8e21": "**Um relatório de problema só é enviado quando você aperta Enviar** na página de relatório, depois de ler o que ele contém (veja [Relatar um problema](#report)).",
+  "manual.aa2fa62ecaaf": "**Um relatório de problema só é enviado quando você aperta Enviar** na página de relatório, depois de ler o que ele contém (veja [Relatar um problema](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Sem IA.** Todos os filtros — redução de ruído, chroma key, mapeamento de tons — são processamento de sinal clássico. O app não contém nenhum modelo de aprendizado de máquina e não baixa nenhum."
 }

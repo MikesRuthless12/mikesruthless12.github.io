@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "Mọi thay đổi đáng chú ý của **Freally Teleprompt** đều được ghi lại ở đây.",
-  "changelog.c7791448f357": "Định dạng tuân theo [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Các bản trước 1.0 dùng một bậc thang theo giai đoạn (`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`); từ 1.0.0 trở đi là đánh số phiên bản ngữ nghĩa thông thường. Trang nhật ký thay đổi trên website được dựng từ tệp này bằng `scripts/build-docs-site.mjs` — một lịch sử duy nhất, không bao giờ có bản sao thứ hai giữ bằng tay.",
   "changelog.69c6a54708de": "[Chưa phát hành]",
   "changelog.c205924de0fe": "Tài liệu",
   "changelog.3ba1bf71dedb": "**Website đã được dựng lại** theo thiết kế của gia đình Freally, và nói cả 18 ngôn ngữ của ứng dụng — kể cả nhật ký thay đổi này. Nó không cung cấp bản tải xuống.",

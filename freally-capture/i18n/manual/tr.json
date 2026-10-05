@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Bir sohbet katmanı herkese açık sohbeti okur**; yönlendirdiğiniz kanaldan, oturum açmamış bir izleyicinin okuyacağı şekilde — hesap, anahtar ya da oturum açma olmadan.",
   "manual.efe87d55bed1": "**İki bileşen yalnızca ilk ihtiyaç duyduğunuzda indirilir:** platformların gerektirdiği kodekler için ffmpeg ve tarayıcı kaynağı için tarayıcı çalışma ortamı. Her biri kendi yayımcısından gelir ve kullanılmadan önce doğrulanır.",
   "manual.3601a272b3b0": "**Bir güncelleme denetimi**, her açılışta bir kez ve siz **Güncellemeleri denetle…** seçeneğini seçtiğinizde küçük bir dosya indirir. Bununla birlikte sizin ya da bilgisayarınız hakkında hiçbir şey gönderilmez ve siz evet demedikçe hiçbir şey kurulmaz.",
-  "manual.11abc96d8e21": "**Bir sorun bildirimi yalnızca siz Gönder'e bastığınızda gönderilir**; bildirim sayfasında, içeriğini okuduktan sonra (bkz. [Sorun bildirme](#report)).",
+  "manual.aa2fa62ecaaf": "**Bir sorun bildirimi yalnızca siz Gönder'e bastığınızda gönderilir**; bildirim sayfasında, içeriğini okuduktan sonra (bkz. [Sorun bildirme](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Yapay zekâ yok.** Her filtre — gürültü bastırma, kroma anahtarı, ton eşleme — klasik sinyal işlemedir. Uygulama hiçbir makine öğrenimi modeli içermez ve hiçbirini indirmez."
 }

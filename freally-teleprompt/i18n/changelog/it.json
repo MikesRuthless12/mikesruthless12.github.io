@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "Qui sono documentate tutte le modifiche rilevanti di **Freally Teleprompt**.",
-  "changelog.c7791448f357": "Il formato segue [Keep a Changelog](https://keepachangelog.com/en/1.1.0/). Le versioni precedenti alla 1.0 usavano una scala a fasi (`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`); dalla 1.0.0 in poi è un normale versionamento semantico. La pagina del registro delle modifiche del sito è generata da questo file con `scripts/build-docs-site.mjs`: una sola storia, mai una seconda copia tenuta a mano.",
   "changelog.69c6a54708de": "[Non ancora uscito]",
   "changelog.c205924de0fe": "Documentazione",
   "changelog.3ba1bf71dedb": "**Il sito web è stato rifatto** con il design della famiglia Freally, e parla tutte le 18 lingue dell'app, compreso questo registro delle modifiche. Non offre download.",

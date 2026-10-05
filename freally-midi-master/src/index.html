@@ -1,0 +1,142 @@
+<!-- Freally MIDI Master — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the road to 1.0's rows, the family strip, the
+     closing call, the footer) is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">Artist-accurate MIDI,</span> <span class="hl-bright">in your DAW.</span></kit-headline>
+  <kit-lede data-i18n-html="index.0e16857e">Drums, melodies, countermelodies, 808s, chords and full song arrangements — generated in the style of specific artists, as original MIDI, <strong>in your project's own key and tempo</strong>. Free, offline, and 100% AI-free.</kit-lede>
+</kit-hero>
+
+<kit-section id="status" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="index.a9e41a1f">Status — it is a plugin now</h2>
+      <p class="lead" data-i18n-html="index.4c860bcf">Freally MIDI Master began as a desktop app; <strong>v0.2.0</strong> was that build. As of <strong>29 July 2026 the desktop app is retired</strong> — it is no longer built or released. Nothing already installed stops working; it simply stops finding updates.</p>
+      <p data-i18n-html="index.986fa10d">It is now a <strong>CLAP plugin, with VST3 and AU projected from it</strong> — not for the format's sake, but because a plugin is handed the host's tempo, time signature and playhead. A generated pattern lands in the song you are actually writing, instead of at whatever tempo the artist happens to be authored at.</p>
+      <p data-i18n-html="index.e46c4677">It loads and generates in <strong>Ableton Live&nbsp;12</strong> (VST3) and <strong>FL&nbsp;Studio</strong> (CLAP). Reaper, Bitwig and Logic are not yet tested. The standalone build runs the same plugin in its own window with no DAW involved.</p>
+    </div>
+    <figure class="split__art"><kit-art name="circuit"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="see" label="kit.label.inAction">
+  <h2 data-i18n="see.title">What it looks like</h2>
+  <p class="lead" data-i18n="see.intro">The plugin as it runs: a generated melody with the keyboard you play it from, and a whole arrangement on a timeline.</p>
+  <div class="shots">
+    <figure class="shot">
+      <img src="screen-overview.png" data-i18n-attr="alt:features.0cdb36f4" alt="Freally MIDI Master with a trap melody generated: the drum pads across the top, the piano roll and its velocity lane, the four Re-Dream clips under it, and the on-screen keyboard along the bottom." width="1600" height="900" loading="lazy" decoding="async" />
+      <figcaption data-i18n="features.1ef3563d">A generated trap melody, its velocity lane, the four Re-Dreams of it, and the keyboard you can play it in from.</figcaption>
+    </figure>
+    <figure class="shot">
+      <img src="screen-song-mode.png" data-i18n-attr="alt:features.dacd8e46" alt="Song Mode: a 56-bar arrangement on a timeline, with INTRO, VERSE, HOOK and OUTRO sections and one editable clip per part — drums, chords, melody and countermelody — each carrying its own MIDI and Audio chip." width="1600" height="900" loading="lazy" decoding="async" />
+      <figcaption data-i18n="features.6fe61d69">Song Mode: a whole arrangement on a timeline you can edit, one clip per part, each with its own MIDI and audio to drag out.</figcaption>
+    </figure>
+  </div>
+</kit-section>
+
+<kit-section id="features" label="kit.label.inside">
+  <h2 data-i18n="home.inside.title">What is in it</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><kit-art name="lens"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.92530b36">Artists, not genres</h3>
+        <p data-i18n="index.420c17ef">Most generators think in genres. "Trap" is not "Metro Boomin," and no mainstream tool has heard of OsamaSon. Type a name and get patterns carrying that artist's actual signatures.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="tracks"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.e6a1356b">It follows your DAW</h3>
+        <p data-i18n-html="index.bab9531a">The plugin reads the host's tempo and time signature every block, so trap authored at 140 comes out at 92 in a 92&nbsp;BPM project. Pin a tempo and yours wins instead.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="layers"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.4a2c8227">Five generators, plus Song Mode</h3>
+        <p data-i18n="index.bd395814">Drums, Melody, Countermelody, Bassline and Chords — plus Song Mode, which is not a sixth generator but an arrangement that fills all five in.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="spectrum"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.04c8fb28">Every artist has moods</h3>
+        <p data-i18n-html="index.efa5276f">Pick a mood and stay there, or leave it on <em>Any</em> and let each press walk that artist's range. One artist writes more than one kind of record, and no seed could ever cross between them.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="knob"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.276d670e">Build a style of your own</h3>
+        <p data-i18n="index.84153fc4">Start from any artist, adjust what you care about, and save it — it sits in the roster beside the shipped ones and works exactly the same, because it is the same kind of thing. Star the takes you like and it fits a style to them.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="notes"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.5a9ab055">Notes land on the track</h3>
+        <p data-i18n="index.06309989">No file to drag, no folder to hunt for. The plugin emits MIDI where you inserted it, in the host's own time.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="rings"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.191153d2">Reproducible by seed</h3>
+        <p data-i18n="index.3bb0362b">Every generation has a seed. Copy it, paste it, get the exact same beat back — on any machine, on any day. Determinism is enforced by the test suite.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="shield"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="index.f52c92c0">No AI, no account, no cloud</h3>
+        <p data-i18n="index.21393e5c">No models, no training data, no inference, and no network calls during generation. No login and no telemetry. Everything happens on your machine — including "train your own style", which measures the takes you kept and writes the numbers back rather than learning anything. A build with an AI or an HTTP client anywhere in its dependencies fails the build.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="index.7f44a4fa">The road to 1.0</h2>
+  <p class="lead" data-i18n="index.99276787">Every build lands a whole capability. Nothing ships half-done.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n-html="index.daba7f83"><strong>There is nothing to download yet.</strong> <strong>v1.0.0RC is next</strong>, and it is being tested by hand right now — every host, every OS, and the things no test suite can judge. A plugin that half-works inside somebody's session is worse than one that is not there, so it ships when that matrix is green and not before.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="cpu"></kit-icon><span data-i18n="index.25a8716e">The engine is rule-based, not trained</span></h3>
+      <p data-i18n-html="index.644f2e23">There is <strong>no AI in this product</strong>. No models, no training data, no inference, no network calls during generation. The engine is deterministic procedural code reading hand-authored style parameters derived from published research. That is a legal architecture as much as a technical one: nothing here is copied MIDI, sampled audio, or a transcription of anyone's record, and there is no feature that recreates a specific song. Artist names are descriptive style references only.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="heart"></kit-icon><span data-i18n="index.2419a115.t">The music you make with it is yours</span></h3>
+      <p data-i18n-html="index.2419a115.b">With no royalty and no attribution requirement. Freally MIDI Master itself is proprietary, All Rights Reserved, and its source code is private — you may not redistribute it. It is <em>not</em> open source.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="info"></kit-icon><span data-i18n="honest.names.title">Names describe styles</span></h3>
+      <p data-i18n-html="index.7e9d277b">Artist and producer names in Freally MIDI Master are descriptive references to a musical style, nothing more. No affiliation, endorsement, or authorship is implied or claimed. Every pattern is generated procedurally from hand-authored style parameters — no MIDI, audio, or data is copied from any recording. All trademarks and names are the property of their respective owners. <a href="legal/disclaimer.md">Read the full disclaimer</a>.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="lock"></kit-icon><span data-i18n="index.cf01481f">Privacy</span></h3>
+      <p data-i18n="index.a4c6de24">No accounts. No telemetry. Nothing about you, your projects or your output is ever transmitted. Generation, playback, import and export are entirely local.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="wifi-off"></kit-icon><span data-i18n="index.6a3c2dd2.t">The plugin makes no outbound connections at all</span></h3>
+      <p data-i18n-html="index.6a3c2dd2.b">The two that used to exist — a launch-time update check and an opt-in crash report — belonged to the desktop app and were removed with it. A plugin is installed and updated by whoever installs plugins. Enforced by two build gates rather than promised: <strong>no HTTP client is compiled into the plugin</strong> — still true, because the collaboration service is reached by a separate program, never by the plugin your DAW loads — and the interface itself is driven through a generation on every commit and fails if it attempts a single request off the machine. Crash reports are written to your own disk and never sent anywhere.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="globe"></kit-icon><span data-i18n="index.1497b93b.t">The web app is delivered over the network; what you make is not</span></h3>
+      <p data-i18n-html="index.1497b93b.b">A page has to be fetched — the app itself, and the style data it generates from. That is the whole of it. Generation runs on your own machine, in your own browser; your beats, your seeds and anything you import stay there and are never uploaded. After one visit the tab works with the network switched off, which is closer to offline than most software manages.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="users"></kit-icon><span data-i18n="index.40df2f36.t">Collaboration is the one exception, and only if you use it</span></h3>
+      <p data-i18n-html="index.40df2f36.b">Rooms connect your machine directly to the people you invite. If you save someone as a buddy, a small service can tell you when they are online — and it is told nothing worth knowing: a key that changes every few minutes, and an address encrypted to a secret only the two of you hold. It cannot read it, cannot list who is there, and cannot work out who knows whom. Turn it off, or never save a buddy, and you paste a code instead — which is how rooms work anyway.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="sparkles"></kit-icon><span data-i18n="index.b5d5c2d0.t">One thing that is coming, said now rather than when it ships</span></h3>
+      <p data-i18n-html="index.b5d5c2d0.b">The collaboration feature — rooms, in development and not installed by anything today — needs to learn your machine's public address before two people can connect directly, which is what a STUN server is for. When it lands, opening or joining a room will contact one; this build names Cloudflare and Google. Such a server learns only that some address is using a WebRTC application — not who you are talking to, and not what you send — and nothing is contacted until you open or join a room. The sentence above stays true for the plugin as it ships today.</p>
+    </article>
+  </div>
+</kit-section>

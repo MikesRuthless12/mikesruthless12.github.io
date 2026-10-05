@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Nakładka czatu czyta publiczny czat** kanału, który jej wskażesz, tak jak widziałby go niezalogowany widz — bez konta, klucza ani logowania.",
   "manual.efe87d55bed1": "**Dwa komponenty są pobierane dopiero wtedy, gdy pierwszy raz ich potrzebujesz:** ffmpeg, dla kodeków wymaganych przez platformy, i środowisko uruchomieniowe przeglądarki, dla źródła przeglądarki. Każdy pochodzi od własnego wydawcy i jest sprawdzany przed użyciem.",
   "manual.3601a272b3b0": "**Sprawdzanie aktualizacji** pobiera jeden mały plik raz przy każdym uruchomieniu oraz wtedy, gdy wybierzesz **Sprawdź aktualizacje…**. Nie jest przy tym wysyłane nic o tobie ani o twoim komputerze i nic nie jest instalowane, dopóki się nie zgodzisz.",
-  "manual.11abc96d8e21": "**Zgłoszenie problemu jest wysyłane tylko wtedy, gdy naciśniesz Wyślij** na stronie zgłoszenia, po przeczytaniu, co zawiera (zobacz [Zgłaszanie problemu](#report)).",
+  "manual.aa2fa62ecaaf": "**Zgłoszenie problemu jest wysyłane tylko wtedy, gdy naciśniesz Wyślij** na stronie zgłoszenia, po przeczytaniu, co zawiera (zobacz [Zgłaszanie problemu](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Bez AI.** Każdy filtr — redukcja szumów, chroma key, mapowanie tonów — to klasyczne przetwarzanie sygnału. Aplikacja nie zawiera żadnego modelu uczenia maszynowego i żadnego nie pobiera."
 }

@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Een chat-overlay leest de openbare chat** van het kanaal waarop je hem richt, zoals een niet-ingelogde kijker dat zou doen — zonder account, sleutel of inloggen.",
   "manual.efe87d55bed1": "**Twee componenten worden pas gedownload als je ze voor het eerst nodig hebt:** ffmpeg, voor de codecs die de platforms eisen, en de browserruntime, voor de browserbron. Elk komt van zijn eigen uitgever en wordt vóór gebruik gecontroleerd.",
   "manual.3601a272b3b0": "**Een updatecontrole** haalt één klein bestand op bij elke start, en wanneer je **Controleren op updates…** kiest. Er wordt niets over jou of je computer meegestuurd, en er wordt niets geïnstalleerd tenzij je ja zegt.",
-  "manual.11abc96d8e21": "**Een probleemmelding wordt alleen verstuurd als je op Verzenden drukt** op de meldingspagina, nadat je hebt gelezen wat erin staat (zie [Een probleem melden](#report)).",
+  "manual.aa2fa62ecaaf": "**Een probleemmelding wordt alleen verstuurd als je op Verzenden drukt** op de meldingspagina, nadat je hebt gelezen wat erin staat (zie [Een probleem melden](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Geen AI.** Elk filter — ruisonderdrukking, chroma key, tonemapping — is klassieke signaalverwerking. De app bevat geen machine-learningmodel en downloadt er ook geen."
 }

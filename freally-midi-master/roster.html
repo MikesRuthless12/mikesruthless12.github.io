@@ -1,296 +1,163 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr" class="no-js" data-page="roster" data-product="midi-master" data-name="Freally MIDI Master" data-title-key="kit.nav.roster">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title data-i18n="roster.e6123a9e">Freally MIDI Master — Styles the plugin can generate in</title>
-    <meta data-i18n-attrs="content:roster.ec336309"
-      name="description"
-      content="The musical styles Freally MIDI Master can generate in, searchable by era, genre and tier. Hand-authored style parameters, never trained on anyone's audio. Names are descriptive references only — no affiliation or endorsement."
-    />
-    <!-- ⛔⛔ **NOINDEX, DELIBERATELY, AND IT COSTS THE SEO ON PURPOSE.**
-         TASK-105 built this page as *"the 'we probably got them' proof + SEO
-         surface"*. The proof half is worth keeping; the SEO half is the one
-         thing on this site that uses 2,413 real people's names to pull their
-         search traffic toward a product. Describing a style to somebody already
-         using the tool is nominative use; ranking for their name is using their
-         identity to build a user base, which is the core of what right of
-         publicity covers. Owner's decision, 2026-09-10. Delete this line to
-         reverse it. -->
-    <meta name="robots" content="noindex, follow" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Roster — Freally MIDI Master</title>
+    <meta name="description" content="Freally MIDI Master — a CLAP/VST3/AU plugin that generates original artist-style MIDI onto the track you are already working on, in your project's own key and tempo. Free today, offline, and 100% AI-free." />
+    <meta name="robots" content="noindex" />
+    <meta property="og:title" content="Roster — Freally MIDI Master" />
+    <meta property="og:description" content="Freally MIDI Master — a CLAP/VST3/AU plugin that generates original artist-style MIDI onto the track you are already working on, in your project's own key and tempo. Free today, offline, and 100% AI-free." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png" />
-    <link rel="icon" type="image/png" sizes="48x48" href="favicon-48.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="favicon-96.png" />
-    <link rel="icon" type="image/png" sizes="192x192" href="favicon-192.png" />
+    <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
-    <style>
-      /* ⛔ **What makes the full A–Z list affordable.** The browser skips
-         layout and paint for any row that is off screen, so 2,413 rows cost
-         about what the visible dozen cost. The intrinsic size is a row's real
-         height, which keeps the scrollbar proportional while rows are skipped. */
-      table.roster tbody tr {
-        content-visibility: auto;
-        contain-intrinsic-size: auto 38px;
-      }
-
-      /* ⚠ The flagship models are the ones a producer is most likely to be
-         looking for, so the tier column marks them rather than merely naming
-         them. Colour is not the only signal — the word is still there. */
-      .flag-flagship {
-        color: var(--accent-2);
-        font-weight: 700;
-      }
-    </style>
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="favicon-32.png" alt="" width="28" height="28" />
-          <span>Freally MIDI Master</span>
-        </a>
-        <nav data-i18n-attrs="aria-label:roster.5b6825d3" class="nav" aria-label="Site">
-          <a data-i18n="roster.70f8bb9a" href="index.html">Home</a>
-          <a data-i18n="roster.fc338f87" href="features.html">Features</a>
-          <a data-i18n="roster.9e9cf322" href="documentation.html">Documentation</a>
-          <a data-i18n="roster.e55198ac" href="roster.html" aria-current="page">Roster</a>
-          <a data-i18n="roster.164b3d48" href="changelog.html">Changelog</a>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="midi-master-icon.png" alt="" width="28" height="28" /><span>Freally MIDI Master</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="roster.html" data-i18n="kit.nav.roster">Roster</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
-    <main>
-      <h1 data-i18n="roster.40f89a05">The roster</h1>
-      <!-- ⛔ **The sentence is keyed, the element is not.** `#count` is written
-           by `docs-roster.mjs`; swapping this paragraph's innerHTML for a
-           translation would wipe the number it had just put there. -->
-      <p class="summary">
-        <span data-i18n="roster.827703c6">Every artist, producer and genre the plugin models.</span> <strong id="count">Loading…</strong>
-      </p>
-
-      <!-- ⛔ The claim that matters most on this page, and it is not a feature
-           list. Anyone reading a list of artist names beside a music tool will
-           want to know what was done with their music. Nothing was. -->
-      <p data-i18n="roster.8d0c67df" class="note">
-        <strong>These are hand-authored parameters, not training data.</strong> Nobody's audio was
-        analysed to build any of this. Each entry is a set of numbers a human wrote down from
-        published research — tempo ranges, swing, which beats a kick lands on — and the names are
-        used the way a genre name is used, to say what a style sounds like. There is no model
-        trained on anyone here, and the plugin generates original patterns rather than reproducing
-        any recording.
-      </p>
-
-      <p data-i18n="roster.fb1a2b56" class="note">
-        <strong>No affiliation, endorsement, or authorship is implied or claimed.</strong> No artist,
-        producer, label, publisher, or rights-holder listed here has endorsed, sponsored, approved,
-        reviewed, or is connected with this software in any way. No name below is used as a brand or
-        product name, or as a badge of origin for this software or for anything it generates. All
-        trademarks and names are the property of their respective owners.
-        <a href="legal/disclaimer.md">Read the full disclaimer</a>.
-      </p>
-
-      <div class="roster-controls">
-        <!-- ⛔ **The word is keyed, the label is not** — this one wraps the live
-             `#q` input, and replacing it would recreate the box and drop both its
-             listener and whatever the reader had typed. The placeholder travels on
-             the input itself. -->
-        <label>
-          <span data-i18n="roster.bce06414">Search</span>
-          <input data-i18n-attrs="placeholder:roster.e13848fc" id="q" type="search" placeholder="Name, genre or era" autocomplete="off" />
-        </label>
-        <label>
-          <span>Type</span>
-          <select id="type">
-            <option data-i18n="roster.6a720856" value="">All</option>
-            <option data-i18n="roster.1528d87e" value="artist">Artists</option>
-            <option data-i18n="roster.a44fa04f" value="producer">Producers</option>
-            <option data-i18n="roster.96817ade" value="genre">Genres</option>
-          </select>
-        </label>
-        <label>
-          <span>Tier</span>
-          <select id="tier">
-            <option data-i18n="roster.6a720856" value="">All</option>
-            <option data-i18n="roster.ab64ea9b" value="flagship">Flagship</option>
-            <option data-i18n="roster.2dfa6607" value="standard">Standard</option>
-          </select>
-        </label>
-      </div>
-
-      <p id="shown" class="summary" aria-live="polite"></p>
-
-      <table class="roster">
-        <thead>
-          <tr>
-            <th data-i18n="roster.2a864697">Style of</th>
-            <th data-i18n="roster.3deb7456">Type</th>
-            <th data-i18n="roster.f37a89cb">Era</th>
-            <th data-i18n="roster.96817ade">Genres</th>
-            <th data-i18n="roster.5bd44ebe">Tier</th>
-          </tr>
-        </thead>
-        <tbody id="rows">
-          <tr>
-            <td data-i18n="roster.55ac5448" colspan="5">Loading the roster…</td>
-          </tr>
-        </tbody>
-      </table>
+    <main id="main">
+<section class="page-head">
+<div class="page-head__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<img class="app-icon" src="midi-master-icon.png" alt="" width="72" height="72" />
+<span class="label" data-i18n="kit.nav.roster">Roster</span>
+<h1 data-i18n-html="kit.head.roster"><span class="hl-muted">Every style,</span> <span class="hl-bright">in one list.</span></h1>
+<p class="lead" data-i18n="roster.827703c6">Every artist, producer and genre the plugin models.</p>
+</div>
+</section>
+<section class="section section--tight stats-band" id="numbers">
+<div class="stats-band__code" aria-hidden="true">AC 5F A3 97 16 8E 41 13 19 D5 E1 98 E8 F8 C8 58 A8 53 87 AB FF C3 37 9B 2F 33
+E7 26 94 34 54 F4 14 B4 6F 73 27 CB 3A E2 6A 52 1A 42 4A 4D BC 3C BC D8 28 D3
+07 2B 7F 43 B8 88 18 68 78 48 D8 28 38 08 33 E7 8B 5F A3 97 A3 97 7B 8F AE 7C
+CE E6 1E F6 EE AE 46 FE 56 69 E5 B1 28 38 A3 97 7B 2A 48 0E 26 5E 36 2E C6 7E
+D6 4E 66 9E 76 6E A1 F4 14 B4 6F 73 C2 CA 32 7A 22 AA 2D 59 15 21 3D 29 A5 0C
+82 8A 8D 39 75 01 9D 09 05 51 AD D9 94 34 54 F4 14 B4 6F 73 27 F3 A7 4B 1F 63
+57 3B 4F 6E 06 BE 3E 96 A9 5B 26 5E 36 2E C6 7E D6 76 3B 21 3D 29 A5 71 4D 94
+6A 52 1A 42 4A B2 FA A2 C5 11 6D 34 8A C4 A4 04 7F 43 B7 1B 4A E8 CA 32 7A 22
+AA 2D 59 15 21 D8 5E 6C 2C EC AC 6C C7 EB 3F 03 77 DB 0A 72 BA 62 EA 6E 06 BE
+16 29 DC DC DC DC DC DC DC DC DC DC DC DC DC DC DC 77 12 DA 02 0A 9A 90 80 B0
+20 D0 C0 F0 60 10 00 30 3B 4F D3 07 2B 7F 43 52 1A DD 80 B0 20 D0 5B EF F3 A8
+B8 88 18 68 13 47 06 81 1D 89 85 D1 2D F4 4A B2 FA A2 C5 11 6D 34 8A C4 A4 04
+7F 43 B7 B6 AE 46 FE 7E D6 E9 65 31 0D 54 F4 AF B3 8F 13 47 6B BF 83 92 90 80
+4B 1F 63 57 D6 84 36 2E C6 7E D6 4E 01 9D 09 05 51 AD D9 95 3C BC 3C BC 3C BC
+3C 57 3B 4F D3 07 2B 7F 43 B7 1B AF B3 67 0B DF 23 17 96 0E 26 5E 36 C9 C5 11
+08 CE E6 B9 B8 88 18 68 13 47 6B 5A 82 25 F1 CD 79 B5 41 DD 49 45 91 ED B4 D4
+74 94 CF 53 87 AB FF C3 37 9B CA 32 15 E4 44 24 1F 63 57 3B 4F D3 2F 33 0F 93
+EF F3 A7 E6 54 2A 12 DA 02 0A 72 55 61 7D 69 E5 B1 8D 39 75 9C 9C 9C 9C C4 A4</div>
+<div class="wrap">
+<div class="section-head"><span class="label" data-i18n="kit.label.numbers">By the numbers</span><p class="lead" data-i18n="kit.numbers.lead">Every figure is counted from the app itself. Nothing is estimated, and nothing is rounded up.</p></div>
+<div class="stats"><div class="stat"><span class="stat__num" data-roster-count="all">…</span><span class="stat__label" data-i18n="featuresPage.numbers.models">style models</span></div>
+  <div class="stat"><span class="stat__num" data-roster-count="artist">…</span><span class="stat__label" data-i18n="featuresPage.numbers.artists">artists</span></div>
+  <div class="stat"><span class="stat__num" data-roster-count="producer">…</span><span class="stat__label" data-i18n="featuresPage.numbers.producers">producers</span></div>
+  <div class="stat"><span class="stat__num" data-roster-count="genre">…</span><span class="stat__label" data-i18n="roster.numbers.genres">genres</span></div></div>
+</div>
+</section>
+<section class="section section--surface" id="about">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.honesty">Honesty</span>
+<div class="notes">
+    <article class="note"><p data-i18n-html="roster.8d0c67df"><strong>These are hand-authored parameters, not training data.</strong> Nobody's audio was analysed to build any of this. Each entry is a set of numbers a human wrote down from published research — tempo ranges, swing, which beats a kick lands on — and the names are used the way a genre name is used, to say what a style sounds like. There is no model trained on anyone here, and the plugin generates original patterns rather than reproducing any recording.</p></article>
+    <article class="note"><p data-i18n-html="roster.fb1a2b56"><strong>No affiliation, endorsement, or authorship is implied or claimed.</strong> No artist, producer, label, publisher, or rights-holder listed here has endorsed, sponsored, approved, reviewed, or is connected with this software in any way. No name below is used as a brand or product name, or as a badge of origin for this software or for anything it generates. All trademarks and names are the property of their respective owners. <a href="legal/disclaimer.md">Read the full disclaimer</a>.</p></article>
+  </div>
+</div>
+</section>
+<section class="section" id="styles">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.styles">Styles</span>
+<h2 id="roster-title" data-i18n="roster.40f89a05">The roster</h2>
+  <div class="search">
+    <div class="search__field">
+      <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+      <input id="roster-q" type="search" autocomplete="off" placeholder="Name, genre or era" aria-label="Search" data-i18n-attr="placeholder:roster.e13848fc,aria-label:roster.bce06414" />
+    </div>
+  </div>
+  <div class="legend">
+    <div class="actions" role="group" aria-label="Type" data-i18n-attr="aria-label:roster.3deb7456">
+      <button type="button" class="btn btn-primary btn-sm" data-roster-type="" aria-pressed="true"><span data-i18n="roster.6a720856">All</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-type="artist" aria-pressed="false"><span data-i18n="roster.1528d87e">Artists</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-type="producer" aria-pressed="false"><span data-i18n="roster.a44fa04f">Producers</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-type="genre" aria-pressed="false"><span data-i18n="roster.96817ade">Genres</span></button>
+    </div>
+    <div class="actions" role="group" aria-label="Tier" data-i18n-attr="aria-label:roster.5bd44ebe">
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-tier="flagship" aria-pressed="false"><span data-i18n="roster.ab64ea9b">Flagship</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-tier="standard" aria-pressed="false"><span data-i18n="roster.2dfa6607">Standard</span></button>
+    </div>
+  </div>
+  <p class="fineprint" id="roster-shown" aria-live="polite"></p>
+  <div class="table-wrap" role="region" tabindex="0" aria-labelledby="roster-title">
+    <table id="roster-table">
+      <thead>
+        <tr>
+          <th scope="col" data-i18n="roster.2a864697">Style of</th>
+          <th scope="col" data-i18n="roster.3deb7456">Type</th>
+          <th scope="col" data-i18n="roster.f37a89cb">Era</th>
+          <th scope="col" data-i18n="roster.96817ade">Genres</th>
+          <th scope="col" data-i18n="roster.5bd44ebe">Tier</th>
+        </tr>
+      </thead>
+      <tbody id="roster-rows">
+        <tr><td colspan="5" data-i18n="roster.55ac5448">Loading the roster…</td></tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <div hidden>
+    <span data-roster-word="artist" data-i18n="roster.type.artist">Artist</span>
+    <span data-roster-word="producer" data-i18n="roster.type.producer">Producer</span>
+    <span data-roster-word="genre" data-i18n="roster.type.genre">Genre</span>
+    <span data-roster-word="flagship" data-i18n="roster.ab64ea9b">Flagship</span>
+    <span data-roster-word="standard" data-i18n="roster.2dfa6607">Standard</span>
+    <span data-roster-word="shown" data-i18n="roster.shown">{shown} of {total} match</span>
+    <span data-roster-word="none" data-i18n="roster.none">Nothing matches that.</span>
+    <span data-roster-word="failed" data-i18n="roster.failed">The roster could not be loaded. Try refreshing the page.</span>
+    <span data-roster-word="file" data-i18n="roster.file">This page is open as a local file, and browsers refuse to load the roster from a file:// page. Open it over HTTP instead.</span>
+  </div>
+</div>
+</section>
     </main>
-
-    <script>
-      /* The roster browser (TASK-105).
-
-         ⛔⛔ GENERATED, NEVER HAND-MAINTAINED. `roster.json` is written by
-         `node scripts/docs-roster.mjs`, walking the same registry the CI gate
-         walks; `--check` fails the build when the published file disagrees
-         with `data/`. A hand-written list of 1,318 models would have been
-         wrong the day it shipped and would have gone on being wrong quietly.
-
-         ⚠ THIS COMMENT NAMED A SECOND, WRONG GENERATOR until 2026-09-10 — a
-         `cargo run -p datasetc` line that does not produce this file — while
-         the note further down named the real one. Two statements of one
-         contract, in one file, about the artifact that had already gone 1,095
-         models stale once.
-
-         ⚠ No framework and no build step: this page is served by GitHub Pages
-         straight from the repository, like every other page on this site. */
-      (function () {
-        var rows = document.getElementById('rows');
-        var count = document.getElementById('count');
-        var shown = document.getElementById('shown');
-        var q = document.getElementById('q');
-        var typeFilter = document.getElementById('type');
-        var tier = document.getElementById('tier');
-        var models = [];
-
-        /* ⛔ **The dataset's key is not the word a producer reads.** These cells
-           were drawing the raw values — "flagship", "artist" — which is the
-           dataset's spelling rather than the product's, and it made the tier
-           column look like debug output on a public page. The filter still
-           matches on the raw value; only the rendering changes. */
-        function label(value) {
-          if (!value) return '—';
-          return String(value).charAt(0).toUpperCase() + String(value).slice(1);
-        }
-
-        function escape(text) {
-          return String(text).replace(/[&<>"]/g, function (c) {
-            return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c];
-          });
-        }
-
-        /* ⛔⛔ **EVERY MODEL IS DRAWN, A–Z.** This used to stop at 300 rows,
-           which — sorted by name — meant the published roster silently ended at
-           "Darius Rucker" and 2,100 artists a producer might search for looked
-           like ones this product does not have. The cap was there because 2,413
-           rows is ~12,000 DOM nodes and that is a visible stall on a phone.
-           ▶ The fix is `content-visibility: auto` on the rows (see the sheet
-           above), which lets the browser skip layout and paint for everything
-           off screen — so the list is complete *and* the first screen is cheap.
-           `contain-intrinsic-size` keeps the scrollbar honest while it does. */
-
-        function draw() {
-          var needle = q.value.trim().toLowerCase();
-          var wantType = typeFilter.value;
-          var wantTier = tier.value;
-
-          var matched = models.filter(function (m) {
-            if (wantType && m.type !== wantType) return false;
-            if (wantTier && m.tier !== wantTier) return false;
-            if (!needle) return true;
-            /* ⚠ Built once when the roster lands, not per keystroke — see below. */
-            return m.hay.indexOf(needle) !== -1;
-          });
-
-          shown.textContent =
-            matched.length === models.length
-              ? ''
-              : matched.length + ' of ' + models.length + ' match';
-
-          if (matched.length === 0) {
-            rows.innerHTML = '<tr><td colspan="5">Nothing matches that.</td></tr>';
-            return;
-          }
-
-          rows.innerHTML = matched
-            .map(function (m) {
-              return (
-                '<tr><td>' +
-                escape(m.name) +
-                '</td><td>' +
-                escape(label(m.type)) +
-                '</td><td>' +
-                escape(m.era) +
-                '</td><td>' +
-                escape(m.genres.join(', ')) +
-                '</td><td>' +
-                (m.tier === 'flagship'
-                  ? '<span class="flag-flagship">Flagship</span>'
-                  : escape(label(m.tier))) +
-                '</td></tr>'
-              );
-            })
-            .join('');
-        }
-
-        /* ⛔⛔ **`no-store`, because a cached roster is a roster that lies.**
-           This file is regenerated from `data/` by `scripts/docs-roster.mjs`, and
-           a browser holding yesterday's copy would draw a smaller roster with no
-           sign anything was wrong — which is exactly how it came to be published
-           1,095 models short. */
-        fetch('roster.json', { cache: 'no-store' })
-          .then(function (r) {
-            if (!r.ok) throw new Error(String(r.status));
-            return r.json();
-          })
-          .then(function (data) {
-            models = data.models || [];
-            /* ⚠ **The search haystack, built once.** Doing it inside the filter
-               meant 2,413 joins, concatenations and toLowerCase allocations on
-               every single keystroke. */
-            models.forEach(function (m) {
-              m.hay = (m.name + ' ' + m.era + ' ' + m.genres.join(' ')).toLowerCase();
-            });
-            var artists = models.filter(function (m) { return m.type === 'artist'; }).length;
-            var producers = models.filter(function (m) { return m.type === 'producer'; }).length;
-            var genres = models.filter(function (m) { return m.type === 'genre'; }).length;
-            count.textContent =
-              models.length + ' models — ' + artists + ' artists, ' + producers +
-              ' producers, ' + genres + ' genres.';
-            draw();
-          })
-          .catch(function () {
-            /* ⚠ Says what went wrong rather than sitting on "Loading…" for ever.
-               A page that never resolves is indistinguishable from a slow one.
-
-               ⛔⛔ **AND IT NAMES THE ONE CAUSE A PERSON ACTUALLY HITS.** Opening
-               this page by double-clicking the file gives it a `file://` origin,
-               and browsers refuse `fetch` from there — so the roster is empty,
-               every filter honestly answers "Nothing matches that", and the
-               dropdowns look broken when they are not. The old message said only
-               "did not load", which sent a reader hunting the filters instead of
-               the URL. A readout that does not say *why* is barely better than
-               one that says nothing. */
-            var isFile = location.protocol === 'file:';
-            count.textContent = isFile
-              ? 'The roster cannot load from a file:// page.'
-              : 'The roster could not be loaded.';
-            rows.innerHTML = isFile
-              ? '<tr><td colspan="5">This page is open as a local <strong>file</strong>, and' +
-                ' browsers block data requests from <code>file://</code> pages. Serve the' +
-                ' folder over HTTP instead — for example' +
-                ' <code>python -m http.server 8123</code> inside <code>docs/</code> — and open' +
-                ' <code>http://localhost:8123/roster.html</code>.</td></tr>'
-              : '<tr><td colspan="5">roster.json did not load. Try refreshing.</td></tr>';
-          });
-
-        q.addEventListener('input', draw);
-        typeFilter.addEventListener('change', draw);
-        tier.addEventListener('change', draw);
-      })();
-    </script>
-    <script src="i18n.js"></script>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="midi-master-icon.png" alt="" width="28" height="28" /><span>Freally MIDI Master</span></a><p data-i18n="site.tagline">Artist-accurate MIDI, generated onto the track you are already working on.</p>
+<p class="fineprint" data-i18n="kit.price">Freally MIDI Master is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="roster.html" data-page data-i18n="kit.nav.roster">Roster</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/" aria-current="true">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The music you make with it is yours, with no royalty and no attribution requirement.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v1.0.0-beta</span>
+        </div>
+      </div>
+    </footer>
+    <script src="roster.js"></script>
   </body>
 </html>

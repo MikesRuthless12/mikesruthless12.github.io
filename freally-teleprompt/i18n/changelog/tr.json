@@ -1,6 +1,4 @@
 {
-  "changelog.f7718ff2097a": "**Freally Teleprompt**'taki tüm önemli değişiklikler burada belgelenir.",
-  "changelog.c7791448f357": "Biçim [Keep a Changelog](https://keepachangelog.com/en/1.1.0/) kurallarını izler. 1.0 öncesi sürümler aşama tabanlı bir merdiven kullanıyordu (`0.100.0` → `0.200.0` → `0.300.0` → `1.0.0`); 1.0.0'dan itibaren sıradan anlamsal sürümlemedir. Web sitesindeki değişiklik günlüğü sayfası bu dosyadan `scripts/build-docs-site.mjs` ile üretilir — tek bir tarihçe, asla elle tutulan ikinci bir kopya değil.",
   "changelog.69c6a54708de": "[Yayımlanmadı]",
   "changelog.c205924de0fe": "Belgeler",
   "changelog.3ba1bf71dedb": "**Web sitesi yeniden yapıldı**: Freally ailesinin tasarımında ve uygulamanın 18 dilinin hepsinde — bu değişiklik günlüğü de dahil. İndirme sunmaz.",

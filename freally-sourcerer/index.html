@@ -1,302 +1,227 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="index" data-product="sourcerer" data-name="Freally Sourcerer" data-title-key="site.tagline">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <title>Freally Sourcerer — one search for every file, on every OS</title>
-    <meta
-      name="description"
-      content="One search bar for every file on Windows, macOS and Linux: names, the text inside documents, audio by how it sounds, what a file's header says, and names that are only close. Free today; future versions may be sold."
-    />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Freally Sourcerer — One search. Every source. Every OS.</title>
+    <meta name="description" content="One search bar for every file on Windows, macOS and Linux: names, the text inside documents, audio by how it sounds, what a file's header says, and names that are only close. Free today; future versions may be sold." />
+    <meta property="og:title" content="Freally Sourcerer — One search. Every source. Every OS." />
+    <meta property="og:description" content="One search bar for every file on Windows, macOS and Linux: names, the text inside documents, audio by how it sounds, what a file's header says, and names that are only close. Free today; future versions may be sold." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="sourcerer-icon.png" alt="" width="28" height="28" />
-          <span>Freally Sourcerer</span>
-        </a>
-        <nav class="site-nav" aria-label="Site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-            <!-- ⚠ Filled by site.js: English first, the other seventeen alphabetically. -->
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="sourcerer-icon.png" alt="" width="28" height="28" /><span>Freally Sourcerer</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-
     <main id="main">
-      <section class="hero">
-        <img class="mark" src="sourcerer-icon.png" alt="" width="96" height="96" />
-        <h1>Freally Sourcerer</h1>
-        <p class="tagline" data-i18n="hero.tagline">One search. Every source. Every OS.</p>
-        <p class="sub" data-i18n="hero.sub">
-          Find any file as you type: by its name, the words inside it, how it sounds, what its
-          header says, or a name that is only close to the one you remember.
-        </p>
-        <p class="sub" data-i18n="notice.price">
-          Freally Sourcerer is free today. Future versions may be sold.
-        </p>
-        <ul class="chips">
-          <li>Windows</li>
-          <li>macOS</li>
-          <li>Linux</li>
-          <li data-i18n="hero.chipApp">Desktop app</li>
-          <li data-i18n="hero.chipCli">Command line</li>
-          <li data-i18n="hero.chipLanguages">18 languages</li>
-        </ul>
-        <p class="sub">
-          <strong data-i18n="hero.noDownloads"
-            >In development. There are no downloads until version 1.0.0, and the source code is private.</strong
-          >
-        </p>
-      </section>
-
-      <section id="what">
-        <h2 data-i18n="what.title">What it is</h2>
-        <p data-i18n="what.p1">
-          Every operating system has a search box, and each falls short in its own way. voidtools'
-          Everything made file-name search instant on Windows years ago, and it has stayed on
-          Windows.
-        </p>
-        <p data-i18n="what.p2">
-          Freally Sourcerer is that kind of search for Windows, macOS and Linux. It keeps one index
-          of your disks, kept current by each system's own record of file changes — the NTFS change
-          journal on Windows, FSEvents on macOS, inotify and fanotify on Linux — so new and renamed
-          files are found without a rescan.
-        </p>
-        <p data-i18n="what.p3">
-          Then it reads further than the name. One query can ask about the name, the text inside a
-          document, an audio file's measured loudness, what an image or a program says about itself
-          in its header, and names that are only close to what you typed.
-        </p>
-      </section>
-
-      <section id="features">
-        <h2 data-i18n="features.title">What is in it</h2>
-        <div class="grid">
-          <article class="card">
-            <h3 data-i18n="features.filename.title">File names, instantly</h3>
-            <p data-i18n="features.filename.body">
-              Substrings, wildcards, regular expressions, AND, OR and NOT, and Everything's own
-              modifiers for size, date, extension and path, answered from the index as you type.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.content.title">The text inside files</h3>
-            <p data-i18n="features.content.body">
-              Full-text search in PDFs, Word, Excel and PowerPoint files, Markdown, source code in
-              32 languages, JSON, CSV and YAML, mail, and inside archives without unpacking them.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.audio.title">Audio by how it sounds</h3>
-            <p data-i18n="features.audio.body">
-              Find audio by its measured loudness in LUFS, true peak, silence, dynamic range,
-              length, codec and sample rate — not by tags somebody typed.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.properties.title">What a file says about itself</h3>
-            <p data-i18n="features.properties.body">
-              Seventy-two properties read from file headers: image size and camera, video codec and
-              length, document author and pages, a program's architecture and signature, and more.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.similar.title">Names that are only close</h3>
-            <p data-i18n="features.similar.body">
-              The similarity lens finds names near what you typed — a typo, a version number, a
-              different prefix — and a search that finds nothing offers the closest real name.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.everything.title">At home if you come from Everything</h3>
-            <p data-i18n="features.everything.body">
-              Everything's search syntax works here too, and its file lists open and export, so a
-              catalogue of a drive moves between the two.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.results.title">Act on what you find</h3>
-            <p data-i18n="features.results.body">
-              Open, reveal, copy, rename a whole set of results with a preview and undo it, find
-              duplicates and empty folders, and run commands of your own.
-            </p>
-          </article>
-          <article class="card">
-            <h3 data-i18n="features.platforms.title">One app, three systems</h3>
-            <p data-i18n="features.platforms.body">
-              The same app, query language and index on Windows, macOS and Linux, a command line for
-              scripts, and eighteen languages.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section id="ladder">
-        <h2 data-i18n="ladder.title">The road to 1.0</h2>
-        <p data-i18n="ladder.intro">
-          One line per version. The versions after 0.23 are the plan, in the order they will be
-          built.
-        </p>
-        <table class="ladder">
-          <thead>
-            <tr>
-              <th data-i18n="ladder.version">Version</th>
-              <th data-i18n="ladder.state">State</th>
-              <th data-i18n="ladder.lands">What it lands</th>
-            </tr>
-          </thead>
-          <!-- LADDER:START — generated from docs/ladder.json by scripts/build-docs-site.mjs. Do not edit by hand. -->
-<tbody>
-            <tr>
-              <td><code>v0.19.84</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.19.84">The first public build: file-name search kept current by each system's own change journal, the query language, the app and its settings, in eighteen languages on Windows, macOS and Linux.</td>
-            </tr>
-            <tr>
-              <td><code>v0.21.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.21.0">Must-have features, part 1 of 3: duplicates, empty folders, Everything's file lists, and every action on a result from its right-click menu.</td>
-            </tr>
-            <tr>
-              <td><code>v0.22.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.22.0">Must-have features, part 2 of 3: the index follows the disk live, Index Health, renaming in bulk with undo, unplugged drives that stay searchable, and a command line for scripts.</td>
-            </tr>
-            <tr>
-              <td><code>v0.23.0</code></td>
-              <td><span class="state state-done" data-i18n="ladder.state.done">Done</span></td>
-              <td data-i18n="ladder.rung.v0.23.0">Must-have features, part 3 of 3, and the stable release: portable mode, audio and video in the preview, Quick Look, a regular-expression builder, and a report of the folders search cannot see. Its fix release, 0.23.2, is the current version.</td>
-            </tr>
-            <tr>
-              <td><code>v0.24.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.24.0">The property lens for images and video: dimensions, camera data, codecs and duration, searchable and shown as columns.</td>
-            </tr>
-            <tr>
-              <td><code>v0.25.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.25.0">The property lens for documents, programs and packages: authors and page counts, architectures and signatures, installers, shortcuts, archives, fonts, mail and databases.</td>
-            </tr>
-            <tr>
-              <td><code>v0.26.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.26.0">Music tags, and more for people who work with audio.</td>
-            </tr>
-            <tr>
-              <td><code>v0.27.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.27.0">Duplicates and disk clean-up.</td>
-            </tr>
-            <tr>
-              <td><code>v0.28.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.28.0">Tags, notes and collections for your files.</td>
-            </tr>
-            <tr>
-              <td><code>v0.29.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.29.0">Power search: macros, snapshots, monitors and file hashes.</td>
-            </tr>
-            <tr>
-              <td><code>v0.30.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.30.0">Views and windows.</td>
-            </tr>
-            <tr>
-              <td><code>v0.31.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.31.0">A launcher, and closer ties to your operating system.</td>
-            </tr>
-            <tr>
-              <td><code>v0.32.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.32.0">The command line, a terminal interface, and automation.</td>
-            </tr>
-            <tr>
-              <td><code>v0.33.0</code></td>
-              <td><span class="state state-planned" data-i18n="ladder.state.planned">Planned</span></td>
-              <td data-i18n="ladder.rung.v0.33.0">Searching across your local network, catalogues, and index tools for power users.</td>
-            </tr>
-            <tr>
-              <td><code>v1.0.0</code></td>
-              <td><span class="state state-goal" data-i18n="ladder.state.goal">The goal</span></td>
-              <td data-i18n="ladder.rung.v1.0.0">The code and knowledge lenses, and the release: version 1.0.</td>
-            </tr>
-          </tbody>
-      <!-- LADDER:END -->
-        </table>
-        <p class="sub" data-i18n="ladder.note">
-          A version that is done is built and tagged. It is not a download: there are none, and
-          there will not be until 1.0.0.
-        </p>
-      </section>
-
-      <section id="honest">
-        <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
-        <div class="honest">
-          <h3 data-i18n="honest.firstIndex.title">The first index takes longer on macOS and Linux</h3>
-          <p data-i18n="honest.firstIndex.body">
-            On Windows, the NTFS change journal lets a whole volume be indexed quickly. macOS and
-            Linux have nothing like it, so the first index there walks every folder: minutes, not
-            seconds, on a large disk. After that, the system's own change events keep it current.
-          </p>
-
-          <h3 data-i18n="honest.network.title">What goes online, and what never does</h3>
-          <p data-i18n="honest.network.body">
-            There is no telemetry, and nothing about your files or your searches is sent anywhere.
-            On its own the app goes online for one thing: to ask whether there is a newer version,
-            once a day unless you change it, and you can switch that off. A bug report is sent only
-            when you choose to send one, after you have seen what it holds.
-          </p>
-
-          <h3 data-i18n="honest.unreadable.title">It tells you what it cannot see</h3>
-          <p data-i18n="honest.unreadable.body">
-            A folder that could not be read looks just like an empty one. Sourcerer lists the
-            folders it had to skip, with the reason and the fix for your system, instead of quietly
-            returning fewer results.
-          </p>
-
-          <h3 data-i18n="honest.lenses.title">Two of the five lenses are not connected yet</h3>
-          <p data-i18n="honest.lenses.body">
-            The content lens, which reads the text inside files, and the similarity lens, which finds
-            names that are only close, are built but do not answer searches yet. Today the file-name,
-            audio and property lenses do. Connecting the other two is part of the road to 1.0.
-          </p>
-
-          <h3 data-i18n="honest.downloads.title">There are no downloads before 1.0.0</h3>
-          <p data-i18n="honest.downloads.body">
-            No beta on this page, no preview build, no early access. Version 1.0.0 is the first one
-            this site will offer.
-          </p>
-        </div>
-      </section>
+<section class="hero">
+<div class="hero__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap hero__inner">
+<div class="hero__copy">
+<div class="hero__brand"><img class="app-icon" src="sourcerer-icon.png" alt="" width="56" height="56" /><span class="hero__name">Freally Sourcerer</span><p class="badge"><span class="badge__dot"></span><span data-i18n="kit.badge.progress">v0.23.0 is done · v0.24.0 is next</span></p></div>
+<h1 class="display" data-i18n-html="hero.headline"><span class="hl-muted">One search.</span> <span class="hl-bright">Every source. Every OS.</span></h1>
+<p class="lead" data-i18n="hero.sub">Find any file as you type: by its name, the words inside it, how it sounds, what its header says, or a name that is only close to the one you remember.</p>
+<div class="actions"><a class="btn btn-primary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="documentation.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg><span data-i18n="kit.cta.docs">Read the documentation</span></a></div>
+<p class="fineprint" data-i18n="kit.price">Freally Sourcerer is free today, but it might not be free forever: future versions may be sold.</p>
+<p class="fineprint"><strong data-i18n="kit.noDownloads">There are no downloads yet, and the source code is private.</strong></p>
+<ul class="chips"><li>Windows</li><li>macOS</li><li>Linux</li><li data-i18n="hero.chipApp">Desktop app</li><li data-i18n="hero.chipCli">Command line</li><li data-i18n="hero.chipLanguages">18 languages</li></ul>
+</div>
+<div class="hero__visual" aria-hidden="true"><img class="hero__orbit" src="kit/art/orbit.svg" alt="" width="640" height="640" /><div class="hero__core"><img src="sourcerer-icon.png" alt="" width="200" height="200" /></div></div>
+</div>
+</section>
+<section class="section" id="what">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.overview">Overview</span>
+<div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Every operating system has a search box, and each falls short in its own way. voidtools' Everything made file-name search instant on Windows years ago, and it has stayed on Windows.</p>
+      <p data-i18n="what.p2">Freally Sourcerer is that kind of search for Windows, macOS and Linux. It keeps one index of your disks, kept current by each system's own record of file changes — the NTFS change journal on Windows, FSEvents on macOS, inotify and fanotify on Linux — so new and renamed files are found without a rescan.</p>
+      <p data-i18n="what.p3">Then it reads further than the name. One query can ask about the name, the text inside a document, an audio file's measured loudness, what an image or a program says about itself in its header, and names that are only close to what you typed.</p>
+    </div>
+    <figure class="split__art"><img src="kit/art/lens.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></figure>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="features">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.inside">Inside</span>
+<h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><img src="kit/art/index.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.filename.title">File names, instantly</h3>
+        <p data-i18n="features.filename.body">Substrings, wildcards, regular expressions, AND, OR and NOT, and Everything's own modifiers for size, date, extension and path, answered from the index as you type.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/lines.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.content.title">The text inside files</h3>
+        <p data-i18n="features.content.body">Full-text search in PDFs, Word, Excel and PowerPoint files, Markdown, source code in 32 languages, JSON, CSV and YAML, mail, and inside archives without unpacking them.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/wave.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.audio.title">Audio by how it sounds</h3>
+        <p data-i18n="features.audio.body">Find audio by its measured loudness in LUFS, true peak, silence, dynamic range, length, codec and sample rate — not by tags somebody typed.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/layers.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.properties.title">What a file says about itself</h3>
+        <p data-i18n="features.properties.body">Seventy-two properties read from file headers: image size and camera, video codec and length, document author and pages, a program's architecture and signature, and more.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/nodes.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.similar.title">Names that are only close</h3>
+        <p data-i18n="features.similar.body">The similarity lens finds names near what you typed — a typo, a version number, a different prefix — and a search that finds nothing offers the closest real name.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/stack.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.everything.title">At home if you come from Everything</h3>
+        <p data-i18n="features.everything.body">Everything's search syntax works here too, and its file lists open and export, so a catalogue of a drive moves between the two.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/tree.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.results.title">Act on what you find</h3>
+        <p data-i18n="features.results.body">Open, reveal, copy, rename a whole set of results with a preview and undo it, find duplicates and empty folders, and run commands of your own.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/horizon.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="features.platforms.title">One app, three systems</h3>
+        <p data-i18n="features.platforms.body">The same app, query language and index on Windows, macOS and Linux, a command line for scripts, and eighteen languages.</p>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+<section class="section" id="ladder">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.roadmap">Roadmap</span>
+<h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per version. The versions after 0.23 are the plan, in the order they will be built.</p>
+  <ol class="ladder">
+<li class="rung rung--done"><code class="rung__ver">v0.19.84</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.19.84">The first public build: file-name search kept current by each system's own change journal, the query language, the app and its settings, in eighteen languages on Windows, macOS and Linux.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.21.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.21.0">Must-have features, part 1 of 3: duplicates, empty folders, Everything's file lists, and every action on a result from its right-click menu.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.22.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.22.0">Must-have features, part 2 of 3: the index follows the disk live, Index Health, renaming in bulk with undo, unplugged drives that stay searchable, and a command line for scripts.</span></li>
+<li class="rung rung--done rung--last-done"><code class="rung__ver">v0.23.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.23.0">Must-have features, part 3 of 3, and the stable release: portable mode, audio and video in the preview, Quick Look, a regular-expression builder, and a report of the folders search cannot see. Its fix release, 0.23.2, is the current version.</span></li>
+<li class="rung rung--planned rung--next"><code class="rung__ver">v0.24.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.24.0">The property lens for images and video: dimensions, camera data, codecs and duration, searchable and shown as columns.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.25.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.25.0">The property lens for documents, programs and packages: authors and page counts, architectures and signatures, installers, shortcuts, archives, fonts, mail and databases.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.26.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.26.0">Music tags, and more for people who work with audio.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.27.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.27.0">Duplicates and disk clean-up.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.28.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.28.0">Tags, notes and collections for your files.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.29.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.29.0">Power search: macros, snapshots, monitors and file hashes.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.30.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.30.0">Views and windows.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.31.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.31.0">A launcher, and closer ties to your operating system.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.32.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.32.0">The command line, a terminal interface, and automation.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.33.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.33.0">Searching across your local network, catalogues, and index tools for power users.</span></li>
+<li class="rung rung--goal"><code class="rung__ver">v1.0.0</code><span class="state state-goal" data-i18n="kit.ladder.goal">The goal</span><span class="rung__text" data-i18n="ladder.rung.v1.0.0">The code and knowledge lenses, and the release: version 1.0.</span></li>
+</ol>
+  <p class="fineprint" data-i18n="ladder.note">A version that is done is built and tagged. It is not a download: there are none, and there will not be until 1.0.0.</p>
+</div>
+</section>
+<section class="section section--surface" id="honest">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.honesty">Honesty</span>
+<h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg><span data-i18n="honest.firstIndex.title">The first index takes longer on macOS and Linux</span></h3>
+      <p data-i18n="honest.firstIndex.body">On Windows, the NTFS change journal lets a whole volume be indexed quickly. macOS and Linux have nothing like it, so the first index there walks every folder: minutes, not seconds, on a large disk. After that, the system's own change events keep it current.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg><span data-i18n="honest.network.title">What goes online, and what never does</span></h3>
+      <p data-i18n="honest.network.body">There is no telemetry, and nothing about your files or your searches is sent anywhere. On its own the app goes online for one thing: to ask whether there is a newer version, once a day unless you change it, and you can switch that off. A bug report is sent only when you choose to send one, after you have seen what it holds.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z"/></svg><span data-i18n="honest.unreadable.title">It tells you what it cannot see</span></h3>
+      <p data-i18n="honest.unreadable.body">A folder that could not be read looks just like an empty one. Sourcerer lists the folders it had to skip, with the reason and the fix for your system, instead of quietly returning fewer results.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><span data-i18n="honest.lenses.title">Two of the five lenses are not connected yet</span></h3>
+      <p data-i18n="honest.lenses.body">The content lens, which reads the text inside files, and the similarity lens, which finds names that are only close, are built but do not answer searches yet. Today the file-name, audio and property lenses do. Connecting the other two is part of the road to 1.0.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span data-i18n="honest.downloads.title">There are no downloads before 1.0.0</span></h3>
+      <p data-i18n="honest.downloads.body">No beta on this page, no preview build, no early access. Version 1.0.0 is the first one this site will offer.</p>
+    </article>
+  </div>
+</div>
+</section>
+<section class="section section--tight family">
+<div class="wrap section-head section-head--center">
+<span class="label" data-i18n="kit.family.label">The Freally family</span>
+<h2 class="h2" data-i18n-html="kit.family.title"><span class="hl-muted">One family.</span> <span class="hl-bright">Eight apps.</span></h2>
+</div>
+<div class="marquee"><div class="marquee__track">
+<div class="marquee__group"><a class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/" aria-current="true"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a class="marquee__item" href="https://freallyproducts.com/freally-capture/"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+<div class="marquee__group" aria-hidden="true"><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/" aria-current="true"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-capture/"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+</div></div>
+</section>
+<section class="cta">
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<span class="label" data-i18n="kit.cta.label">What changed</span>
+<h2 class="h2" data-i18n-html="kit.cta.title"><span class="hl-muted">Every version,</span> <span class="hl-bright">written down.</span></h2>
+<p class="lead" data-i18n="kit.cta.lede">The changelog lists everything that changed in Freally Sourcerer, version by version, in all eighteen languages.</p>
+<div class="actions"><a class="btn btn-primary" href="changelog.html"><span data-i18n="kit.cta.changelog">Read the changelog</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span></a></div>
+</div>
+</section>
     </main>
-
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.everything">
-          Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is
-          not affiliated with voidtools.
-        </p>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="sourcerer-icon.png" alt="" width="28" height="28" /><span>Freally Sourcerer</span></a><p data-i18n="site.tagline">One search. Every source. Every OS.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Sourcerer is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/" aria-current="true">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.23.2</span>
+        </div>
       </div>
     </footer>
-
-    <script src="site.js"></script>
   </body>
 </html>

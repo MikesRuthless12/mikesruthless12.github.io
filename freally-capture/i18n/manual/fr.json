@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Une incrustation de chat lit le chat public** de la chaîne que vous lui indiquez, comme le ferait un spectateur non connecté — sans compte, sans clé et sans connexion.",
   "manual.efe87d55bed1": "**Deux composants ne sont téléchargés que la première fois que vous en avez besoin :** ffmpeg, pour les codecs qu'exigent les plateformes, et l'environnement d'exécution du navigateur, pour la source navigateur. Chacun provient de son propre éditeur et est vérifié avant utilisation.",
   "manual.3601a272b3b0": "**Une vérification des mises à jour** télécharge un petit fichier une fois par lancement, et lorsque vous choisissez **Vérifier les mises à jour…**. Rien vous concernant, vous ou votre ordinateur, n'est envoyé avec elle, et rien n'est installé sans votre accord.",
-  "manual.11abc96d8e21": "**Un rapport de problème n'est envoyé que lorsque vous appuyez sur Envoyer** sur la page de signalement, après avoir lu ce qu'il contient (voir [Signaler un problème](#report)).",
+  "manual.aa2fa62ecaaf": "**Un rapport de problème n'est envoyé que lorsque vous appuyez sur Envoyer** sur la page de signalement, après avoir lu ce qu'il contient (voir [Signaler un problème](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Pas d'IA.** Chaque filtre — suppression du bruit, incrustation chroma, mappage tonal — relève du traitement du signal classique. L'application ne contient aucun modèle d'apprentissage automatique et n'en télécharge aucun."
 }

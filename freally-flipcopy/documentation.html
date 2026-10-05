@@ -1,161 +1,144 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="documentation" data-product="flipcopy" data-name="Freally Flipcopy" data-title-key="kit.nav.documentation">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
     <title>Documentation — Freally Flipcopy</title>
-    <meta
-      name="description"
-      content="How to use Freally Flipcopy: the window, the licence agreement, languages and privacy. The full illustrated manual arrives with the beta."
-    />
+    <meta name="description" content="Put it on the glass. Press START. Drag the copy. Audio in, MIDI out; MIDI in, audio out. A CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux — free today, offline and 100% AI-free." />
+    <meta property="og:title" content="Documentation — Freally Flipcopy" />
+    <meta property="og:description" content="Put it on the glass. Press START. Drag the copy. Audio in, MIDI out; MIDI in, audio out. A CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux — free today, offline and 100% AI-free." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="flipcopy-icon.png" alt="" width="28" height="28" />
-          <span>Freally Flipcopy</span>
-        </a>
-        <nav class="site-nav" aria-label="Site">
-          <a href="index.html" data-i18n="nav.home">Home</a>
-          <a href="features.html" data-i18n="nav.features">Features</a>
-          <a href="documentation.html" data-i18n="nav.documentation">Documentation</a>
-          <a href="changelog.html" data-i18n="nav.changelog">Changelog</a>
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language">
-          </select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="flipcopy-icon.png" alt="" width="28" height="28" /><span>Freally Flipcopy</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
-      </div>
-    </header>
-
-    <main id="main">
-      <h1 data-i18n="docs.title">Documentation</h1>
-      <p data-i18n="docs.intro">
-        This manual grows with every version. Right now it covers what version 0.2.0 does; the full illustrated manual, with a screenshot for every step, arrives with the beta.
-      </p>
-
-      <div class="search">
-        <input
-          type="search"
-          placeholder="Search the documentation"
-          aria-label="Search the documentation"
-          data-i18n-attr="placeholder:search.placeholder,aria-label:search.placeholder"
-        />
-        <ul class="search-results" aria-live="polite"></ul>
-      </div>
-
-      <div class="manual">
-        <nav class="manual-toc" aria-label="Contents" data-i18n-attr="aria-label:docs.contents">
-          <ol>
-            <li><a href="#start" data-i18n="docs.start.title">Getting started</a></li>
-            <li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li>
-            <li><a href="#window" data-i18n="docs.window.title">The window</a></li>
-            <li><a href="#copier" data-i18n="docs.copier.title">Making a copy</a></li>
-            <li><a href="#language" data-i18n="docs.language.title">Languages</a></li>
-            <li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li>
-          </ol>
-        </nav>
-
-        <div class="manual-body">
-          <section>
-            <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
-            <p data-i18n="docs.start.p1">
-              Flipcopy runs inside your DAW as a CLAP, VST3 or AU plugin, or on its own as a
-              standalone app. Put it on any audio track: it passes the track's audio through
-              exactly as it arrives, so it is safe to leave in place.
-            </p>
-            <p data-i18n="docs.start.p2">
-              There are no downloads before version 1.0.0, and the source code is private.
-            </p>
-          </section>
-
-          <section>
-            <h2 id="agreement" data-i18n="docs.agreement.title">The licence agreement</h2>
-            <p data-i18n="docs.agreement.p1">
-              The first time Flipcopy opens it shows its licence agreement. Read it to the end and
-              Agree becomes available. Until you agree, Flipcopy reads nothing, copies nothing and
-              adds nothing to your track's audio.
-            </p>
-            <p data-i18n="docs.agreement.p2">
-              Your answer is kept on your computer and shared by every open copy of Flipcopy, in
-              every DAW and in the standalone app. If you decline, choose Read it again whenever
-              you are ready.
-            </p>
-          </section>
-
-          <section>
-            <h2 id="window" data-i18n="docs.window.title">The window</h2>
-            <p data-i18n="docs.window.p1">
-              On one side is the browser, with the preview player docked under it. The rest of the
-              window is the stage, where the copier stands. Drag the line between them to make the
-              browser wider or narrower, or focus it and use the arrow keys.
-            </p>
-            <p data-i18n="docs.window.p2">
-              The browser arrives in version 0.4.0. Until then the stage belongs to the copier.
-            </p>
-          </section>
-
-          <section>
-            <h2 id="copier" data-i18n="docs.copier.title">Making a copy</h2>
-            <p data-i18n="docs.copier.p1">
-              Drop a MIDI file on the copier — from Explorer or Finder, anywhere on the window — or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Dropping a file never starts a copy.
-            </p>
-            <p data-i18n="docs.copier.p2">
-              Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy — the MIDI played through a default instrument at the file’s tempo — slides out onto the tray. Esc or the red STOP key cancels it; the grey HOME key clears the glass.
-            </p>
-            <p data-i18n="docs.copier.p3">
-              The copy is a real WAV file in Documents/Freally Flipcopy/Copies, numbered, and never moved, overwritten or deleted. Grab it by the lime frame round the printed clip and drag it straight onto a track in your DAW. Copying audio to MIDI arrives in version 0.3.0.
-            </p>
-            <p data-i18n="docs.copier.p4">
-              The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings.
-            </p>
-          </section>
-
-          <section>
-            <h2 id="language" data-i18n="docs.language.title">Languages</h2>
-            <p data-i18n="docs.language.p1">
-              Flipcopy speaks eighteen languages. It starts in your system's language; to choose
-              another, open Settings with the gear at the top of the browser and pick one. The
-              choice applies to every copy of Flipcopy on the computer.
-            </p>
-          </section>
-
-          <section>
-            <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
-            <p data-i18n="docs.privacy.p1">
-              Flipcopy has no account and no telemetry, and the plugin and standalone app contain
-              no networking code at all. Your files and your copies never leave your computer.
-            </p>
-            <p data-i18n="docs.privacy.p2">
-              It contains no AI of any kind: every copy is made by classic, deterministic signal
-              processing, and a build gate fails if a machine-learning library is ever added.
-            </p>
-          </section>
-
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
         </div>
       </div>
-    </main>
+    </header>
+    <main id="main">
+<section class="page-head">
+<div class="page-head__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<img class="app-icon" src="flipcopy-icon.png" alt="" width="72" height="72" />
+<span class="label" data-i18n="kit.nav.documentation">Documentation</span>
+<h1 data-i18n-html="kit.head.documentation"><span class="hl-muted">How it works,</span> <span class="hl-bright">step by step.</span></h1>
+<p class="lead" data-i18n="docs.intro">This manual grows with every version. Right now it covers what version 0.4.0 does; the full illustrated manual, with a screenshot for every step, arrives with the beta.</p>
+<div class="search">
+<div class="search__field">
+<svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+<input type="search" placeholder="Search the documentation" aria-label="Search the documentation" data-i18n-attr="placeholder:kit.search.placeholder,aria-label:kit.search.placeholder" />
+</div>
+<ul class="search-results" aria-live="polite"></ul>
+</div>
+</div>
+</section>
+<section class="section section--tight">
+<div class="wrap manual">
+<nav class="manual-toc" data-spy aria-label="Contents" data-i18n-attr="aria-label:kit.docs.contents">
+<span class="label" data-i18n="kit.docs.contents">Contents</span>
+<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#window" data-i18n="docs.window.title">The window</a></li><li><a href="#copier" data-i18n="docs.copier.title">Making a copy</a></li><li><a href="#browser" data-i18n="docs.browser.title">The browser</a></li><li><a href="#preview" data-i18n="docs.preview.title">The preview player</a></li><li><a href="#problems" data-i18n="docs.report.title">When something goes wrong</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li></ol>
+</nav>
+<div class="manual-body"><section>
+    <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
+    <p data-i18n="docs.start.p1">Flipcopy runs inside your DAW as a CLAP, VST3 or AU plugin, or on its own as a standalone app. Put it on any audio track: it passes the track's audio through exactly as it arrives, so it is safe to leave in place.</p>
+    <p data-i18n="docs.start.p2">There are no downloads before version 1.0.0, and the source code is private.</p>
+  </section>
 
-    <footer class="site-footer">
-      <div class="site-footer-inner">
-        <p data-i18n="footer.licence">
-          Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.
-        </p>
-        <p data-i18n="footer.yours">
-          The copies you make are yours, as far as the files you copied were yours to use.
-          Flipcopy's author claims no ownership of them.
-        </p>
+  <section>
+    <h2 id="agreement" data-i18n="docs.agreement.title">The licence agreement</h2>
+    <p data-i18n="docs.agreement.p1">The first time Flipcopy opens it shows its licence agreement. Read it to the end and Agree becomes available. Until you agree, Flipcopy reads nothing, copies nothing and adds nothing to your track's audio.</p>
+    <p data-i18n="docs.agreement.p2">Your answer is kept on your computer and shared by every open copy of Flipcopy, in every DAW and in the standalone app. If you decline, choose Read it again whenever you are ready.</p>
+  </section>
+
+  <section>
+    <h2 id="window" data-i18n="docs.window.title">The window</h2>
+    <p data-i18n="docs.window.p1">On one side is the browser, with the preview player docked under it. The rest of the window is the stage, where the copier stands. Drag the line between them to make the browser wider or narrower, or focus it and use the arrow keys.</p>
+    <p data-i18n="docs.window.p2">Press Ctrl+B (Cmd+B on a Mac), or the button at the browser’s edge, to fold the browser and its preview away: the stage takes the whole window. Press it again and they come back at the width you left them. Flipcopy remembers which you chose.</p>
+  </section>
+
+  <section>
+    <h2 id="copier" data-i18n="docs.copier.title">Making a copy</h2>
+    <p data-i18n="docs.copier.p1">Put an audio or MIDI file on the glass: drop it from Explorer or Finder anywhere on the window, drag it from the browser or the preview strip onto the copier, press Enter on a row in the browser, or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Putting a file on the glass never starts a copy.</p>
+    <p data-i18n="docs.copier.p2">Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass.</p>
+    <p data-i18n="docs.copier.p3">Every page is a real file in Documents/Freally Flipcopy/Copies, numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once.</p>
+    <p data-i18n="docs.copier.p4">The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings.</p>
+  </section>
+
+  <section>
+    <h2 id="browser" data-i18n="docs.browser.title">The browser</h2>
+    <p data-i18n="docs.browser.p1">The browser opens on its Categories: Copies, every page and mix you have made, and Recent, the originals you last put on the glass. Under them are the folders you have added; choose + Add Folder to add one, up to 128. A folder on a drive that is not plugged in keeps its place and says it isn’t connected right now. To stop browsing a folder, right-click it, or select it and press Delete; nothing on disk is touched.</p>
+    <p data-i18n="docs.browser.p2">Open a folder to walk it as a tree. Type to filter it by name, pick a tag or Starred to narrow it, and choose Show all files to see the sidecar files Flipcopy hides, such as .asd and .reapeaks. Back and Forward take you through the places you have been.</p>
+    <p data-i18n="docs.browser.p3">Walk the rows with ↑ and ↓: each row you land on plays once in the preview. → opens a folder and ← closes it. Enter puts the selected file on the glass, and so does dragging its row onto the copier.</p>
+    <p data-i18n="docs.browser.p4">The first time you add a folder, Flipcopy counts its files, with a bar that shows how far it has got. It reads at most 12 folders deep and 50,000 files, and never follows a shortcut out of the folder.</p>
+  </section>
+
+  <section>
+    <h2 id="preview" data-i18n="docs.preview.title">The preview player</h2>
+    <p data-i18n="docs.preview.p1">The preview player sits under the browser. An audio file shows its real waveform. A MIDI file shows its notes and plays through Preview Piano, the same sound a copy uses unless you choose another, so you hear what the copy will sound like.</p>
+    <p data-i18n="docs.preview.p2">Space plays and pauses, Stop goes back to the start, and a click or a drag on the strip moves the playhead. Loop repeats the file, Play when selected (the headphones) plays each file you select, and the slider sets the level. The preview plays through Flipcopy’s own output and never into a bounce. A WAV file of any length plays; a file in another format plays if it is five minutes or shorter.</p>
+    <p data-i18n="docs.preview.p3">Click the original on the glass, or a page on the tray, to hear it. When a copy is finished, Copy plays all its pages together and Original plays the file on the glass, from the same place in the music, so you can hear the difference before you drag. Playing it is never required: the pages can be dragged as soon as the last one lands.</p>
+    <p data-i18n="docs.preview.p4">The strip wears the same lime frame as a page. Drag it onto the glass to put that file there.</p>
+  </section>
+
+  <section>
+    <h2 id="problems" data-i18n="docs.report.title">When something goes wrong</h2>
+    <p data-i18n="docs.report.p1">If Flipcopy itself fails, such as a copy it could not write, the screen offers Report. It opens a page in your web browser that shows exactly what the report holds; nothing is sent unless you press Send there. A file the copier refuses, because it is too long, silent or not audio, is not a failure, and the screen says why instead.</p>
+  </section>
+
+  <section>
+    <h2 id="language" data-i18n="docs.language.title">Languages</h2>
+    <p data-i18n="docs.language.p1">Flipcopy speaks eighteen languages. It starts in your system's language; to choose another, open Settings with the gear at the top of the browser and pick one. The choice applies to every copy of Flipcopy on the computer.</p>
+  </section>
+
+  <section>
+    <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
+    <p data-i18n="docs.privacy.p1">Flipcopy has no account and no telemetry, and the plugin and standalone app contain no networking code at all. Your files and your copies never leave your computer.</p>
+    <p data-i18n="docs.privacy.p2">It contains no AI of any kind: every copy is made by classic, deterministic signal processing, and a build gate fails if a machine-learning library is ever added.</p>
+  </section></div>
+</div>
+</section>
+    </main>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="flipcopy-icon.png" alt="" width="28" height="28" /><span>Freally Flipcopy</span></a><p data-i18n="site.tagline">Put it on the glass. Press START. Drag the copy.</p>
+<p class="fineprint" data-i18n="kit.price">Freally Flipcopy is free today, but it might not be free forever: future versions may be sold.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/" aria-current="true">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.4.0</span>
+        </div>
       </div>
     </footer>
-
-    <script src="site.js"></script>
     <script src="search-index.js"></script>
-    <script src="search.js"></script>
   </body>
 </html>

@@ -1,30 +1,26 @@
 /*
- * Freally Capture — the docs site's only script, ported from Freally Flipcopy's
- * (itself taken from Freally Oscillate's), dark-only like the family: there is
- * no theme button.
+ * Freally Capture — the guest join page's script (`join.html` only).
  *
- * ⛔⛔ NO THIRD-PARTY SCRIPT, NO ANALYTICS, NO TRACKER, NO CDN. This file,
- * `search.js` and the generated catalogue and index scripts are the whole of
- * the docs pages' JavaScript, and `scripts/site.test.mjs` fails on any
- * `<script src>` pointing off this origin. (The guest's `join.html` also loads
- * its vendored PeerJS, from this site.)
+ * ⚠ Every other page on this site is the Freally site kit's (`kit/kit.js`,
+ * built by `kit/build.mjs`). The join page is not a kit page: it is a working
+ * tool — the browser end of a remote-guest session — and it keeps its own
+ * look (`styles.css`), this script and its own strings.
+ *
+ * ⛔⛔ NO THIRD-PARTY SCRIPT, NO ANALYTICS, NO TRACKER, NO CDN. The join page
+ * loads this file, its catalogue and its vendored PeerJS, all from this site;
+ * `scripts/site.test.mjs` fails on any `<script src>` pointing off this origin.
  *
  * ⛔ **A catalogue is a `<script>` from this site, added when its language is
- * chosen — never a `fetch`, never all seventeen at once.**
- *   · `i18n/<code>.js` holds one language's page strings;
- *   · a long page — the changelog, the manual — names its own bundle in
- *     `<html data-i18n-bundles="…">`, and `i18n/<bundle>/<code>.js` is loaded
- *     beside it, so no other page carries those blocks;
- *   · a script tag works from `file://`, so anybody reviewing the site from a
- *     checkout sees the real thing;
- *   · ⚠ the cost: a reader in another language sees the English markup until
- *     their catalogue arrives (a same-origin file, milliseconds). `lang` and
- *     `dir` change only together with the text.
+ * chosen — never a `fetch`, never all seventeen at once.** `i18n/join/<code>.js`
+ * holds one language's join-page strings (`scripts/build-join-i18n.mjs` writes
+ * it from `i18n/join/<code>.json`). A script tag works from `file://`.
+ *
+ * ⚠ The language a reader picked on the rest of the site is the one this page
+ * opens in: the choice is stored under the kit's own key.
  *
  * ⚠ **The page ships in English in the markup.** Every translatable node
- * carries `data-i18n` (text) or `data-i18n-html` (a block with its bold, code
- * and links); this replaces them when a different locale is chosen. A reader
- * with JavaScript off gets the English site.
+ * carries `data-i18n`; this replaces them when a different locale is chosen. A
+ * reader with JavaScript off gets the English page.
  */
 
 (function () {
@@ -57,13 +53,14 @@
     { code: 'zh-CN', name: '简体中文' },
   ];
 
-  var STORE_LOCALE = 'capture.docs.locale';
+  /** The site kit's key (`kit/kit.js`), so one choice holds on every page. */
+  var STORE_LOCALE = 'freally.site.locale';
 
   function stored(key) {
     try {
       return window.localStorage.getItem(key);
     } catch {
-      // ⚠ A private window, or storage blocked. The site works; it just does
+      // ⚠ A private window, or storage blocked. The page works; it just does
       // not remember.
       return null;
     }
@@ -107,8 +104,8 @@
   }
 
   /**
-   * `data-i18n-attr="placeholder:search.placeholder"` as `[[attribute, key]]` —
-   * ⚠ one parser, both halves trimmed (`scripts/site.test.mjs` reads it the
+   * `data-i18n-attr="aria-label:nav.site"` as `[[attribute, key]]` — ⚠ one
+   * parser, both halves trimmed (`scripts/build-join-i18n.mjs` reads it the
    * same way).
    */
   function attrPairs(el) {
@@ -123,21 +120,14 @@
 
   /**
    * ⛔ Each node's English, recorded the first time this script sees the node,
-   * before anything can overwrite it — per node, so a node a script builds
-   * later (the search's empty row) has its own English to go back to.
+   * before anything can overwrite it.
    */
   var ENGLISH_TEXT = new WeakMap();
-  var ENGLISH_HTML = new WeakMap();
   var ENGLISH_ATTRS = new WeakMap();
 
   function englishText(node) {
     if (!ENGLISH_TEXT.has(node)) ENGLISH_TEXT.set(node, node.textContent);
     return ENGLISH_TEXT.get(node);
-  }
-
-  function englishHtml(node) {
-    if (!ENGLISH_HTML.has(node)) ENGLISH_HTML.set(node, node.innerHTML);
-    return ENGLISH_HTML.get(node);
   }
 
   function englishAttr(node, attribute) {
@@ -150,30 +140,21 @@
     return attrs[attribute];
   }
 
-  /** A loaded language's strings, or `undefined` while its scripts have not all arrived. */
-  var ready = {};
+  /** A loaded language's strings, or `undefined` while its script has not arrived. */
   function catalogue(code) {
-    return ready[code] === true ? (window.CAPTURE_I18N || {})[code] : undefined;
-  }
-
-  /** The long-page bundles this page shows (`<html data-i18n-bundles="changelog">`). */
-  function bundles() {
-    var named = document.documentElement.getAttribute('data-i18n-bundles') || '';
-    return named.split(/\s+/).filter(function (name) {
-      return /^[a-z]+$/.test(name);
-    });
+    return (window.CAPTURE_I18N || {})[code];
   }
 
   /**
-   * Runs `then` once all of `code`'s scripts for this page are here, adding
-   * them the first time. English is the markup and needs nothing.
+   * Runs `then` once `code`'s catalogue is here, adding its script the first
+   * time. English is the markup and needs nothing.
    *
-   * ⚠ `then` also runs when a script fails to load (an offline copy):
+   * ⚠ `then` also runs when the script fails to load (an offline copy):
    * `apply` checks for the catalogue itself and leaves the page as it is.
    */
   var waiting = {};
   function load(code, then) {
-    if (code === 'en' || ready[code] === true) {
+    if (code === 'en' || catalogue(code) !== undefined) {
       then();
       return;
     }
@@ -182,31 +163,16 @@
       return;
     }
     waiting[code] = [then];
-    var sources = ['i18n/' + code + '.js'];
-    var named = bundles();
-    for (var b = 0; b < named.length; b += 1) sources.push('i18n/' + named[b] + '/' + code + '.js');
-    var pending = sources.length;
-    var failed = false;
-    var settle = function (ok) {
-      if (!ok) failed = true;
-      pending -= 1;
-      if (pending > 0) return;
-      if (!failed && (window.CAPTURE_I18N || {})[code] !== undefined) ready[code] = true;
+    var settle = function () {
       var callbacks = waiting[code];
       delete waiting[code];
       for (var i = 0; i < callbacks.length; i += 1) callbacks[i]();
     };
-    for (var s = 0; s < sources.length; s += 1) {
-      var script = document.createElement('script');
-      script.src = sources[s];
-      script.onload = function () {
-        settle(true);
-      };
-      script.onerror = function () {
-        settle(false);
-      };
-      document.head.appendChild(script);
-    }
+    var script = document.createElement('script');
+    script.src = 'i18n/join/' + code + '.js';
+    script.onload = settle;
+    script.onerror = settle;
+    document.head.appendChild(script);
   }
 
   /** Which language is on the page right now — what was last written into the nodes. */
@@ -240,7 +206,7 @@
         translateWithin(document, locale.code);
         painted = locale.code;
       }
-      // A page that writes its own text (the guest's join page) repaints it.
+      // The page writes its own text (the status line) and repaints it.
       document.dispatchEvent(new CustomEvent('capture:locale', { detail: painted }));
     });
   }
@@ -258,17 +224,6 @@
       if (typeof text === 'string' && text !== '') nodes[i].textContent = text;
     }
 
-    // ⛔ The long pages, in every language: their blocks keep their bold, code
-    // and links, so they carry HTML — written by `scripts/build-docs-site.mjs`
-    // from this site's own translated Markdown (escaped, `http(s)` and
-    // relative links only), never from anything a reader typed.
-    var rich = root.querySelectorAll('[data-i18n-html]');
-    for (var r = 0; r < rich.length; r += 1) {
-      var englishMarkup = englishHtml(rich[r]);
-      var markup = strings === null ? englishMarkup : strings[rich[r].getAttribute('data-i18n-html')];
-      if (typeof markup === 'string' && markup !== '') rich[r].innerHTML = markup;
-    }
-
     var attributed = root.querySelectorAll('[data-i18n-attr]');
     for (var k = 0; k < attributed.length; k += 1) {
       var pairs = attrPairs(attributed[k]);
@@ -282,16 +237,11 @@
     }
   }
 
-  /** ⛔ The one way anything else on a page gets translated (`search.js`). */
-  window.CAPTURE_TRANSLATE = function (root) {
-    translateWithin(root || document, painted);
-  };
-
   /**
-   * One string a page's own script writes (the join page's status line), in
-   * the language on the page, with its `{{placeholders}}` filled. `english`
-   * is the fallback and the source of truth (`scripts/site.test.mjs` holds
-   * `i18n/en.json` to it).
+   * One string the page's own script writes (the status line), in the
+   * language on the page, with its `{{placeholders}}` filled. `english` is the
+   * fallback and the source of truth (`scripts/build-join-i18n.mjs` writes
+   * `i18n/join/en.json` from it).
    */
   window.CAPTURE_T = function (key, english, values) {
     var strings = painted === 'en' ? null : catalogue(painted);
@@ -321,19 +271,8 @@
     });
   }
 
-  function markCurrentPage() {
-    var here = location.pathname.split('/').pop() || 'index.html';
-    var links = document.querySelectorAll('.site-nav a[href]');
-    for (var i = 0; i < links.length; i += 1) {
-      if (links[i].getAttribute('href') === here) {
-        links[i].setAttribute('aria-current', 'page');
-      }
-    }
-  }
-
   function start() {
     buildPicker();
-    markCurrentPage();
     apply(initialLocale());
   }
 

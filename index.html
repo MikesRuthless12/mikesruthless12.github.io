@@ -1,189 +1,198 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="index" data-product="home" data-name="Freally Products" data-title-key="site.tagline">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
-    />
-    <title data-i18n="meta.title">Freally Products: desktop apps for producers and creators</title>
-    <meta
-      name="description"
-      data-i18n-attr="content:meta.description"
-      content="Eight desktop apps for Windows, macOS and Linux: four for making music and four for the work around it. Free today; future versions may be sold."
-    />
-    <!-- The company's own mark (owner, 2026-10-01). ⚠ `?v=` busts the browser's
-         favicon cache; bump it whenever the mark changes. -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Freally Products — Desktop apps for producers and creators.</title>
+    <meta name="description" content="Eight desktop apps for Windows, macOS and Linux: four for making music and four for the work around it. Free today; future versions may be sold." />
+    <meta property="og:title" content="Freally Products — Desktop apps for producers and creators." />
+    <meta property="og:description" content="Eight desktop apps for Windows, macOS and Linux: four for making music and four for the work around it. Free today; future versions may be sold." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico?v=2" sizes="any" />
     <link rel="icon" href="favicon-192.png?v=2" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png?v=2" />
-    <link rel="stylesheet" href="home/styles.css" />
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
   </head>
   <body>
-    <a class="skip" href="#main" data-i18n="nav.skip">Skip to the content</a>
-
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark-small" href="index.html">
-          <img src="favicon-192.png?v=2" alt="" width="28" height="28" />
-          <span>Freally Products</span>
-        </a>
-        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:nav.label">
-          <a href="#products" data-i18n="nav.products">Products</a>
-          <a href="#about" data-i18n="nav.about">About</a>
-          <!-- ⚠ Filled by home/site.js with the languages this site has. -->
-          <select class="locale" aria-label="Language" data-i18n-attr="aria-label:nav.language"></select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="freally-icon.png" alt="" width="28" height="28" /><span>Freally Products</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="#products" data-i18n="kit.nav.products">Products</a>
+          <a href="#about" data-i18n="kit.nav.about">About</a>
         </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+        </div>
       </div>
     </header>
-
     <main id="main">
-      <section class="hero">
-        <!-- ⛔ The title turns on its Y axis like every Freally app's wordmark (owner,
-             2026-10-01: "the spinning on the Y-Axis that all my apps have, but ensure
-             it says 'Freally Products' … keep it the same font size and green though
-             like my icons"). Pure CSS, ten layers: see home/styles.css. -->
-        <h1 class="wordmark" dir="ltr">
-          <span class="visually-hidden">Freally Products</span>
-          <span class="wordmark__spin" aria-hidden="true">
-            <span class="wordmark__layer" data-depth="9" style="transform: translateZ(-27px); color: color-mix(in srgb, var(--primary) 34%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="8" style="transform: translateZ(-24px); color: color-mix(in srgb, var(--primary) 43%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="7" style="transform: translateZ(-21px); color: color-mix(in srgb, var(--primary) 51%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="6" style="transform: translateZ(-18px); color: color-mix(in srgb, var(--primary) 59%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="5" style="transform: translateZ(-15px); color: color-mix(in srgb, var(--primary) 67%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="4" style="transform: translateZ(-12px); color: color-mix(in srgb, var(--primary) 75%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="3" style="transform: translateZ(-9px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="2" style="transform: translateZ(-6px); color: color-mix(in srgb, var(--primary) 92%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="1" style="transform: translateZ(-3px); color: color-mix(in srgb, var(--primary) 84%, var(--bg))">Freally Products</span>
-            <span class="wordmark__layer" data-depth="0" style="transform: translateZ(0px); color: var(--primary)">Freally Products</span>
-          </span>
-        </h1>
-        <p class="tagline" data-i18n="hero.tagline">Desktop apps for producers and creators.</p>
-        <p class="lede" data-i18n="hero.lede">
-          Eight apps for Windows, macOS and Linux: four for making music, and four for the work
-          around it. They run on your own computer, look like one family and speak eighteen
-          languages.
-        </p>
-        <p class="notice" data-i18n-html="hero.notice">
-          <strong>Free today.</strong> Every Freally app is free today, but it might not be free
-          forever: future versions may be sold.
-        </p>
-      </section>
+<section class="hero">
+<div class="hero__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap hero__inner">
+<div class="hero__copy">
+<div class="hero__brand"><img class="app-icon" src="freally-icon.png" alt="" width="56" height="56" /><h1 class="wordmark" dir="ltr"><span class="visually-hidden">Freally Products</span><span class="wordmark__spin" aria-hidden="true"><span class="wordmark__layer" data-depth="9">Freally Products</span><span class="wordmark__layer" data-depth="8">Freally Products</span><span class="wordmark__layer" data-depth="7">Freally Products</span><span class="wordmark__layer" data-depth="6">Freally Products</span><span class="wordmark__layer" data-depth="5">Freally Products</span><span class="wordmark__layer" data-depth="4">Freally Products</span><span class="wordmark__layer" data-depth="3">Freally Products</span><span class="wordmark__layer" data-depth="2">Freally Products</span><span class="wordmark__layer" data-depth="1">Freally Products</span><span class="wordmark__layer" data-depth="0">Freally Products</span></span></h1><p class="badge"><span class="badge__dot"></span><span data-i18n="hero.badge">Eight apps · one family</span></p></div>
+<p class="display" data-i18n-html="hero.headline"><span class="hl-muted">Desktop apps</span> <span class="hl-bright">for producers and creators.</span></p>
+<p class="lead" data-i18n="hero.lede">Eight apps for Windows, macOS and Linux: four for making music, and four for the work around it. They run on your own computer, look like one family and speak eighteen languages.</p>
+<div class="actions"><a class="btn btn-primary" href="#products"><span data-i18n="hero.cta.apps">See the eight apps</span></a><a class="btn btn-secondary" href="#about"><span data-i18n="about.title">About Freally</span></a></div>
+<p class="fineprint" data-i18n="site.price">Every Freally app is free today, but it might not be free forever: future versions may be sold.</p>
+<p class="fineprint"><strong data-i18n="kit.noDownloads">There are no downloads yet, and the source code is private.</strong></p>
+<ul class="chips"><li>Windows</li><li>macOS</li><li>Linux</li><li data-i18n="hero.chipLanguages">18 languages</li></ul>
+</div>
+<div class="hero__visual" aria-hidden="true"><img class="hero__orbit" src="kit/art/orbit.svg" alt="" width="640" height="640" /><div class="hero__core"><img src="freally-icon.png" alt="" width="200" height="200" /></div></div>
+</div>
+</section>
+<section class="section" id="products">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.products">Products</span>
+<h2 data-i18n="products.title">The apps</h2>
+  <p class="lead" data-i18n="products.lead">Each one has its own site, in the same eighteen languages: what it does, how it compares with the commercial tools, and what is still to come.</p>
 
-      <section id="products" class="products">
-        <h2 data-i18n="products.title">The apps</h2>
+  <div class="prose"><h3 data-i18n="products.music">For making music</h3></div>
+  <div class="cards cards--4">
+    <a class="card product-card" href="https://freallyproducts.com/freally-midi-master/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/midi-master.png" alt="" width="56" height="56" />
+        <h3>Freally MIDI Master</h3>
+        <p data-i18n="products.midiMaster">Artist-accurate MIDI, generated in your DAW, in your project's own key and tempo.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-flipcopy/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/flipcopy.png" alt="" width="56" height="56" />
+        <h3>Freally Flipcopy</h3>
+        <p data-i18n="products.flipcopy">A copy machine for your clips: audio in, MIDI out; MIDI in, audio out.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-oscillate/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/oscillate.png" alt="" width="56" height="56" />
+        <h3>Freally Oscillate</h3>
+        <p data-i18n="products.oscillate">A DAW where four producers work in the same session at once.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-unloop/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/unloop.png" alt="" width="56" height="56" />
+        <h3>Freally Unloop</h3>
+        <p data-i18n="products.unloop">Turns an 8-bar loop into a finished, arranged record.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+  </div>
 
-        <h3 data-i18n="products.music">For making music</h3>
-        <ul class="cards">
-          <li>
-            <a class="card" href="freally-midi-master/index.html">
-              <img src="freally-midi-master/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally MIDI Master</span>
-              <span class="card-line" data-i18n="products.midiMaster">Artist-accurate MIDI, generated in your DAW, in your project's own key and tempo.</span>
-            </a>
-          </li>
-          <li>
-            <a class="card" href="freally-flipcopy/index.html">
-              <img src="freally-flipcopy/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally Flipcopy</span>
-              <span class="card-line" data-i18n="products.flipcopy">A copy machine for your clips: audio in, MIDI out; MIDI in, audio out.</span>
-            </a>
-          </li>
-          <li>
-            <a class="card" href="freally-oscillate/index.html">
-              <img src="freally-oscillate/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally Oscillate</span>
-              <span class="card-line" data-i18n="products.oscillate">A DAW where four producers work in the same session at once.</span>
-            </a>
-          </li>
-          <li>
-            <a class="card" href="freally-unloop/index.html">
-              <img src="freally-unloop/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally Unloop</span>
-              <span class="card-line" data-i18n="products.unloop">Turns an 8-bar loop into a finished, arranged record.</span>
-            </a>
-          </li>
-        </ul>
-
-        <h3 data-i18n="products.work">For the work around it</h3>
-        <ul class="cards">
-          <li>
-            <a class="card" href="freally-sourcerer/index.html">
-              <img src="freally-sourcerer/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally Sourcerer</span>
-              <span class="card-line" data-i18n="products.sourcerer">One search for every file, on every OS.</span>
-            </a>
-          </li>
-          <li>
-            <a class="card" href="freally-file-manager/index.html">
-              <img src="freally-file-manager/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally File Manager</span>
-              <span class="card-line" data-i18n="products.fileManager">Copy, move, sync and verify files, byte for byte.</span>
-            </a>
-          </li>
-          <li>
-            <a class="card" href="freally-teleprompt/index.html">
-              <img src="freally-teleprompt/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally Teleprompt</span>
-              <span class="card-line" data-i18n="products.teleprompt">A teleprompter that reads at a real human pace.</span>
-            </a>
-          </li>
-          <li>
-            <a class="card" href="freally-capture/index.html">
-              <img src="freally-capture/favicon-192.png" alt="" width="64" height="64" />
-              <span class="card-name">Freally Capture</span>
-              <span class="card-line" data-i18n="products.capture">Record and stream like a studio, straight from your machine.</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-
-      <section id="about" class="about">
-        <h2 data-i18n="about.title">About Freally</h2>
-        <p data-i18n="about.p1">
-          Freally Products makes desktop software for people who make things: producers,
-          musicians, streamers, presenters, and anyone with a lot of files. Every app is built to
-          do its one job well, on your own computer, without getting in your way.
-        </p>
-        <p data-i18n="about.p2">
-          The apps are made by Mike Weaver, and they share one design, one set of controls and
-          one way of being honest about what they do.
-        </p>
-
-        <ul class="principles">
-          <li>
-            <h3 data-i18n="principles.desktop.title">On your computer</h3>
-            <p data-i18n="principles.desktop.body">Real desktop apps for Windows, macOS and Linux, not a website you rent.</p>
-          </li>
-          <li>
-            <h3 data-i18n="principles.honest.title">Honest about what's done</h3>
-            <p data-i18n="principles.honest.body">Each app's site says what works today, what doesn't yet, and where other tools do better.</p>
-          </li>
-          <li>
-            <h3 data-i18n="principles.languages.title">Eighteen languages</h3>
-            <p data-i18n="principles.languages.body">Every app and every site, in the same eighteen languages.</p>
-          </li>
-          <li>
-            <h3 data-i18n="principles.free.title">Free today</h3>
-            <p data-i18n="principles.free.body">Free today, with no paid tiers. Future versions may be sold, and the sites will say so first.</p>
-          </li>
-        </ul>
-      </section>
-
-      <section class="downloads">
-        <h2 data-i18n="downloads.title">Downloads</h2>
-        <p data-i18n="downloads.body">
-          There are no downloads yet. Each app's own site shows where it is on its road to 1.0,
-          and that's where its downloads will be.
-        </p>
-      </section>
+  <div class="prose"><h3 data-i18n="products.work">For the work around it</h3></div>
+  <div class="cards cards--4">
+    <a class="card product-card" href="https://freallyproducts.com/freally-sourcerer/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/sourcerer.png" alt="" width="56" height="56" />
+        <h3>Freally Sourcerer</h3>
+        <p data-i18n="products.sourcerer">One search for every file, on every OS.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-teleprompt/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/teleprompt.png" alt="" width="56" height="56" />
+        <h3>Freally Teleprompt</h3>
+        <p data-i18n="products.teleprompt">A teleprompter that reads at a real human pace.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-file-manager/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/file-manager.png" alt="" width="56" height="56" />
+        <h3>Freally File Manager</h3>
+        <p data-i18n="products.fileManager">Copy, move, sync and verify files, byte for byte.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-capture/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/capture.png" alt="" width="56" height="56" />
+        <h3>Freally Capture</h3>
+        <p data-i18n="products.capture">Record and stream like a studio, straight from your machine.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></span>
+      </div>
+    </a>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="about">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.about">About</span>
+<div class="split">
+    <div>
+      <h2 data-i18n="about.title">About Freally</h2>
+      <p class="lead" data-i18n="about.p1">Freally Products makes desktop software for people who make things: producers, musicians, streamers, presenters, and anyone with a lot of files. Every app is built to do its one job well, on your own computer, without getting in your way.</p>
+      <p data-i18n="about.p2">The apps are made by Mike Weaver, and they share one design, one set of controls and one way of being honest about what they do.</p>
+    </div>
+    <figure class="split__art"><img src="kit/art/nodes.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></figure>
+  </div>
+</div>
+</section>
+<section class="section" id="principles">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.principles">Principles</span>
+<h2 data-i18n="principles.title">The same in every app</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect width="16" height="16" x="4" y="4" rx="2"/><rect width="6" height="6" x="9" y="9" rx="1"/><path d="M15 2v2M15 20v2M2 15h2M2 9h2M20 15h2M20 9h2M9 2v2M9 20v2"/></svg><span data-i18n="principles.desktop.title">On your computer</span></h3>
+      <p data-i18n="principles.desktop.body">Real desktop apps for Windows, macOS and Linux, not a website you rent.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65"/></svg><span data-i18n="principles.family.title">One family</span></h3>
+      <p data-i18n="principles.family.body">One design and one set of controls across all eight apps, so what you learn in one carries over to the rest.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M20 6 9 17l-5-5"/></svg><span data-i18n="principles.honest.title">Honest about what's done</span></h3>
+      <p data-i18n="principles.honest.body">Each app's site says what works today, what doesn't yet, and where other tools do better.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m5 8 6 6"/><path d="m4 14 6-6 2-3"/><path d="M2 5h12"/><path d="M7 2h1"/><path d="m22 22-5-10-5 10"/><path d="M14 18h6"/></svg><span data-i18n="principles.languages.title">Eighteen languages</span></h3>
+      <p data-i18n="principles.languages.body">Every app and every site, in the same eighteen languages.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg><span data-i18n="principles.free.title">Free today</span></h3>
+      <p data-i18n="principles.free.body">Free today, with no paid tiers. Future versions may be sold, and the sites will say so first.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span data-i18n="downloads.title">Downloads</span></h3>
+      <p data-i18n="downloads.body">There are no downloads yet. Each app's own site shows where it is on its road to 1.0, and that's where its downloads will be.</p>
+    </article>
+  </div>
+</div>
+</section>
     </main>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top footer__top--home">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="freally-icon.png" alt="" width="28" height="28" /><span>Freally Products</span></a><p data-i18n="site.tagline">Desktop apps for producers and creators.</p>
+<p class="fineprint" data-i18n="site.price">Every Freally app is free today, but it might not be free forever: future versions may be sold.</p></div>
 
-    <footer class="site-footer">
-      <p data-i18n="footer.rights">© 2026 Mike Weaver. All Rights Reserved. Free today; future versions may be sold.</p>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul><li><a href="https://freallyproducts.com/" data-i18n="kit.footer.home">Freally Products</a></li><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.rights">© 2026 Mike Weaver. All Rights Reserved. Free today; future versions may be sold.</p></div>
+          <span class="status" data-i18n="kit.status.dev">In development</span>
+        </div>
+      </div>
     </footer>
-
-    <script src="home/site.js"></script>
   </body>
 </html>

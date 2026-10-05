@@ -1,0 +1,130 @@
+<!-- freallyproducts.com — the main site's own words. The shell around them
+     (head, navigation, hero furniture, footer) is the site kit's: kit/build.mjs.
+     ⛔ The title turns on its Y axis like every Freally app's wordmark (owner,
+     2026-10-01): <kit-wordmark> makes it the page's <h1>, at 2.4rem in the
+     icons' green, and the headline beside it becomes display type. -->
+
+<kit-hero>
+  <kit-wordmark>Freally Products</kit-wordmark>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">Desktop apps</span> <span class="hl-bright">for producers and creators.</span></kit-headline>
+  <kit-lede data-i18n="hero.lede">Eight apps for Windows, macOS and Linux: four for making music, and four for the work around it. They run on your own computer, look like one family and speak eighteen languages.</kit-lede>
+</kit-hero>
+
+<!-- ⚠ The order is the kit's FAMILY order. Each card opens that app's own site. -->
+<kit-section id="products" label="kit.label.products">
+  <h2 data-i18n="products.title">The apps</h2>
+  <p class="lead" data-i18n="products.lead">Each one has its own site, in the same eighteen languages: what it does, how it compares with the commercial tools, and what is still to come.</p>
+
+  <div class="prose"><h3 data-i18n="products.music">For making music</h3></div>
+  <div class="cards cards--4">
+    <a class="card product-card" href="https://freallyproducts.com/freally-midi-master/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/midi-master.png" alt="" width="56" height="56" />
+        <h3>Freally MIDI Master</h3>
+        <p data-i18n="products.midiMaster">Artist-accurate MIDI, generated in your DAW, in your project's own key and tempo.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-flipcopy/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/flipcopy.png" alt="" width="56" height="56" />
+        <h3>Freally Flipcopy</h3>
+        <p data-i18n="products.flipcopy">A copy machine for your clips: audio in, MIDI out; MIDI in, audio out.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-oscillate/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/oscillate.png" alt="" width="56" height="56" />
+        <h3>Freally Oscillate</h3>
+        <p data-i18n="products.oscillate">A DAW where four producers work in the same session at once.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-unloop/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/unloop.png" alt="" width="56" height="56" />
+        <h3>Freally Unloop</h3>
+        <p data-i18n="products.unloop">Turns an 8-bar loop into a finished, arranged record.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+  </div>
+
+  <div class="prose"><h3 data-i18n="products.work">For the work around it</h3></div>
+  <div class="cards cards--4">
+    <a class="card product-card" href="https://freallyproducts.com/freally-sourcerer/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/sourcerer.png" alt="" width="56" height="56" />
+        <h3>Freally Sourcerer</h3>
+        <p data-i18n="products.sourcerer">One search for every file, on every OS.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-teleprompt/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/teleprompt.png" alt="" width="56" height="56" />
+        <h3>Freally Teleprompt</h3>
+        <p data-i18n="products.teleprompt">A teleprompter that reads at a real human pace.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-file-manager/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/file-manager.png" alt="" width="56" height="56" />
+        <h3>Freally File Manager</h3>
+        <p data-i18n="products.fileManager">Copy, move, sync and verify files, byte for byte.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+    <a class="card product-card" href="https://freallyproducts.com/freally-capture/">
+      <div class="card__body">
+        <img class="product-card__icon" src="kit/family/capture.png" alt="" width="56" height="56" />
+        <h3>Freally Capture</h3>
+        <p data-i18n="products.capture">Record and stream like a studio, straight from your machine.</p>
+        <span class="more"><span data-i18n="products.visit">Visit the site</span><kit-icon name="arrow-right"></kit-icon></span>
+      </div>
+    </a>
+  </div>
+</kit-section>
+
+<kit-section id="about" label="kit.label.about">
+  <div class="split">
+    <div>
+      <h2 data-i18n="about.title">About Freally</h2>
+      <p class="lead" data-i18n="about.p1">Freally Products makes desktop software for people who make things: producers, musicians, streamers, presenters, and anyone with a lot of files. Every app is built to do its one job well, on your own computer, without getting in your way.</p>
+      <p data-i18n="about.p2">The apps are made by Mike Weaver, and they share one design, one set of controls and one way of being honest about what they do.</p>
+    </div>
+    <figure class="split__art"><kit-art name="nodes"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="principles" label="kit.label.principles">
+  <h2 data-i18n="principles.title">The same in every app</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="cpu"></kit-icon><span data-i18n="principles.desktop.title">On your computer</span></h3>
+      <p data-i18n="principles.desktop.body">Real desktop apps for Windows, macOS and Linux, not a website you rent.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="layers"></kit-icon><span data-i18n="principles.family.title">One family</span></h3>
+      <p data-i18n="principles.family.body">One design and one set of controls across all eight apps, so what you learn in one carries over to the rest.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="check"></kit-icon><span data-i18n="principles.honest.title">Honest about what's done</span></h3>
+      <p data-i18n="principles.honest.body">Each app's site says what works today, what doesn't yet, and where other tools do better.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="languages"></kit-icon><span data-i18n="principles.languages.title">Eighteen languages</span></h3>
+      <p data-i18n="principles.languages.body">Every app and every site, in the same eighteen languages.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="heart"></kit-icon><span data-i18n="principles.free.title">Free today</span></h3>
+      <p data-i18n="principles.free.body">Free today, with no paid tiers. Future versions may be sold, and the sites will say so first.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="downloads.title">Downloads</span></h3>
+      <p data-i18n="downloads.body">There are no downloads yet. Each app's own site shows where it is on its road to 1.0, and that's where its downloads will be.</p>
+    </article>
+  </div>
+</kit-section>

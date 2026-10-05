@@ -1,5 +1,4 @@
 {
-  "changelog.1514cf901bca": "All notable changes to Freally File Manager, newest first. Every version here is built and tagged; there are no downloads on this site yet.",
   "changelog.086fc6b9eb45": "[1.0.0] — 2026-08-22 — The correctness release",
   "changelog.490081990d07": "Every feature from 0.22.0 is here. What changed is a full review of the code, section by section, and the fixes that came out of it. Several of them could lose data without ever showing an error.",
   "changelog.1246fc93bca0": "Fixed",

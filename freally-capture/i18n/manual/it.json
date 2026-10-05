@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Una sovrimpressione della chat legge la chat pubblica** del canale a cui la punti, come farebbe uno spettatore non connesso: nessun account, nessuna chiave, nessun accesso.",
   "manual.efe87d55bed1": "**Due componenti vengono scaricati solo la prima volta che ti servono:** ffmpeg, per i codec richiesti dalle piattaforme, e l'ambiente di esecuzione del browser, per la sorgente browser. Ciascuno proviene dal proprio editore e viene verificato prima dell'uso.",
   "manual.3601a272b3b0": "**Un controllo degli aggiornamenti** scarica un piccolo file una volta a ogni avvio, e quando scegli **Controlla aggiornamenti…**. Non viene inviato nulla su di te o sul tuo computer, e nulla viene installato se non dici di sì.",
-  "manual.11abc96d8e21": "**Una segnalazione di problemi viene inviata solo quando premi Invia** sulla pagina di segnalazione, dopo che hai letto cosa contiene (vedi [Segnalare un problema](#report)).",
+  "manual.aa2fa62ecaaf": "**Una segnalazione di problemi viene inviata solo quando premi Invia** sulla pagina di segnalazione, dopo che hai letto cosa contiene (vedi [Segnalare un problema](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Niente IA.** Ogni filtro (soppressione del rumore, chroma key, tone mapping) è elaborazione del segnale classica. L'app non contiene alcun modello di machine learning e non ne scarica nessuno."
 }

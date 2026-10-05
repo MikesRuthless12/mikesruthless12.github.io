@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Overlay chat membaca chat publik** dari kanal yang Anda tuju, seperti yang dilakukan penonton yang tidak masuk — tanpa akun, kunci, atau proses masuk.",
   "manual.efe87d55bed1": "**Dua komponen hanya diunduh saat pertama kali Anda membutuhkannya:** ffmpeg, untuk codec yang diwajibkan platform, dan runtime peramban, untuk sumber peramban. Masing-masing berasal dari penerbitnya sendiri dan diperiksa sebelum dipakai.",
   "manual.3601a272b3b0": "**Pemeriksaan pembaruan** mengambil satu berkas kecil sekali setiap peluncuran, dan saat Anda memilih **Periksa pembaruan…**. Tidak ada informasi tentang Anda atau komputer Anda yang dikirim bersamanya, dan tidak ada yang dipasang kecuali Anda menyetujuinya.",
-  "manual.11abc96d8e21": "**Laporan masalah hanya dikirim saat Anda menekan Kirim** di halaman laporan, setelah Anda membaca isinya (lihat [Melaporkan masalah](#report)).",
+  "manual.aa2fa62ecaaf": "**Laporan masalah hanya dikirim saat Anda menekan Kirim** di halaman laporan, setelah Anda membaca isinya (lihat [Melaporkan masalah](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Tanpa AI.** Setiap filter — peredam bising, chroma key, tone-mapping — adalah pemrosesan sinyal klasik. Aplikasi ini tidak berisi model machine learning dan tidak mengunduh satu pun."
 }

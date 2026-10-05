@@ -1,0 +1,75 @@
+<!-- Freally MIDI Master — the roster: every style the plugin models, drawn by
+     roster.js from roster.json (written from data/ by scripts/docs-roster.mjs).
+     ⛔ roster.js also marks this page noindex: it lists 2,413 real people's
+     names, and ranking for their names would be using their identity to pull
+     search traffic toward a product (owner's decision, 2026-09-10). -->
+
+<kit-head>
+  <kit-lede data-i18n="roster.827703c6">Every artist, producer and genre the plugin models.</kit-lede>
+</kit-head>
+
+<kit-stats>
+  <div class="stat"><span class="stat__num" data-roster-count="all">…</span><span class="stat__label" data-i18n="featuresPage.numbers.models">style models</span></div>
+  <div class="stat"><span class="stat__num" data-roster-count="artist">…</span><span class="stat__label" data-i18n="featuresPage.numbers.artists">artists</span></div>
+  <div class="stat"><span class="stat__num" data-roster-count="producer">…</span><span class="stat__label" data-i18n="featuresPage.numbers.producers">producers</span></div>
+  <div class="stat"><span class="stat__num" data-roster-count="genre">…</span><span class="stat__label" data-i18n="roster.numbers.genres">genres</span></div>
+</kit-stats>
+
+<kit-section id="about" label="kit.label.honesty">
+  <div class="notes">
+    <article class="note"><p data-i18n-html="roster.8d0c67df"><strong>These are hand-authored parameters, not training data.</strong> Nobody's audio was analysed to build any of this. Each entry is a set of numbers a human wrote down from published research — tempo ranges, swing, which beats a kick lands on — and the names are used the way a genre name is used, to say what a style sounds like. There is no model trained on anyone here, and the plugin generates original patterns rather than reproducing any recording.</p></article>
+    <article class="note"><p data-i18n-html="roster.fb1a2b56"><strong>No affiliation, endorsement, or authorship is implied or claimed.</strong> No artist, producer, label, publisher, or rights-holder listed here has endorsed, sponsored, approved, reviewed, or is connected with this software in any way. No name below is used as a brand or product name, or as a badge of origin for this software or for anything it generates. All trademarks and names are the property of their respective owners. <a href="legal/disclaimer.md">Read the full disclaimer</a>.</p></article>
+  </div>
+</kit-section>
+
+<kit-section id="styles" label="kit.label.styles">
+  <h2 id="roster-title" data-i18n="roster.40f89a05">The roster</h2>
+  <div class="search">
+    <div class="search__field">
+      <kit-icon name="search"></kit-icon>
+      <input id="roster-q" type="search" autocomplete="off" placeholder="Name, genre or era" aria-label="Search" data-i18n-attr="placeholder:roster.e13848fc,aria-label:roster.bce06414" />
+    </div>
+  </div>
+  <div class="legend">
+    <div class="actions" role="group" aria-label="Type" data-i18n-attr="aria-label:roster.3deb7456">
+      <button type="button" class="btn btn-primary btn-sm" data-roster-type="" aria-pressed="true"><span data-i18n="roster.6a720856">All</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-type="artist" aria-pressed="false"><span data-i18n="roster.1528d87e">Artists</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-type="producer" aria-pressed="false"><span data-i18n="roster.a44fa04f">Producers</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-type="genre" aria-pressed="false"><span data-i18n="roster.96817ade">Genres</span></button>
+    </div>
+    <div class="actions" role="group" aria-label="Tier" data-i18n-attr="aria-label:roster.5bd44ebe">
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-tier="flagship" aria-pressed="false"><span data-i18n="roster.ab64ea9b">Flagship</span></button>
+      <button type="button" class="btn btn-secondary btn-sm" data-roster-tier="standard" aria-pressed="false"><span data-i18n="roster.2dfa6607">Standard</span></button>
+    </div>
+  </div>
+  <p class="fineprint" id="roster-shown" aria-live="polite"></p>
+  <div class="table-wrap" role="region" tabindex="0" aria-labelledby="roster-title">
+    <table id="roster-table">
+      <thead>
+        <tr>
+          <th scope="col" data-i18n="roster.2a864697">Style of</th>
+          <th scope="col" data-i18n="roster.3deb7456">Type</th>
+          <th scope="col" data-i18n="roster.f37a89cb">Era</th>
+          <th scope="col" data-i18n="roster.96817ade">Genres</th>
+          <th scope="col" data-i18n="roster.5bd44ebe">Tier</th>
+        </tr>
+      </thead>
+      <tbody id="roster-rows">
+        <tr><td colspan="5" data-i18n="roster.55ac5448">Loading the roster…</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- The words roster.js writes, kept here so the kit translates them: the
+       script reads each one back in whatever language is on the page. -->
+  <div hidden>
+    <span data-roster-word="artist" data-i18n="roster.type.artist">Artist</span>
+    <span data-roster-word="producer" data-i18n="roster.type.producer">Producer</span>
+    <span data-roster-word="genre" data-i18n="roster.type.genre">Genre</span>
+    <span data-roster-word="flagship" data-i18n="roster.ab64ea9b">Flagship</span>
+    <span data-roster-word="standard" data-i18n="roster.2dfa6607">Standard</span>
+    <span data-roster-word="shown" data-i18n="roster.shown">{shown} of {total} match</span>
+    <span data-roster-word="none" data-i18n="roster.none">Nothing matches that.</span>
+    <span data-roster-word="failed" data-i18n="roster.failed">The roster could not be loaded. Try refreshing the page.</span>
+    <span data-roster-word="file" data-i18n="roster.file">This page is open as a local file, and browsers refuse to load the roster from a file:// page. Open it over HTTP instead.</span>
+  </div>
+</kit-section>

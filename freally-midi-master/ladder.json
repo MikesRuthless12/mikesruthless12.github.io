@@ -1,0 +1,65 @@
+{
+  "note": "The public road to 1.0 on the home page, exactly as the site has shown it. `summary` is written for the site. States: done, planned, goal, later.",
+  "rungs": [
+    {
+      "version": "v0.3.0",
+      "state": "done",
+      "summary": "Plugin pivot. CLAP, with VST3 and AU projected from it. Loads in Ableton and FL Studio."
+    },
+    {
+      "version": "v0.4.0",
+      "state": "done",
+      "summary": "Unlimited undo. Every session change, one keystroke back — no depth limit."
+    },
+    {
+      "version": "v0.5.0",
+      "state": "done",
+      "summary": "It makes a sound. A sampler behind the generators, your own one-shots on any part, and a transport that plays inside the plugin."
+    },
+    {
+      "version": "v0.5.5",
+      "state": "done",
+      "summary": "It plays an instrument. A synthesizer behind every part, a factory library of 2,729,088 sounds you can browse by instrument and genre, a sample-pack maker, and a keyboard you can play at any time."
+    },
+    {
+      "version": "v0.5.7",
+      "state": "done",
+      "summary": "A vast, ultra-realistic library. Twenty-four new synthesis engines and 750 new instruments — 975 in all, from concert grands and bowed sections to modelled analog circuits — each one measured against the real thing it is named for. 1,614,600 sounds, and still not one file on your disk."
+    },
+    {
+      "version": "v0.6.0",
+      "state": "done",
+      "summary": "Your sample library. A folder tree with preview, starred favourites, drag-to-pad and reverse — plus drop a MIDI file in and it works out which parts are in it."
+    },
+    {
+      "version": "v0.7.0",
+      "state": "done",
+      "summary": "The arrangement, like a DAW. Clips drawn from their own notes, zoom, multi-select, trim and clone — and drag the whole song out, one track per part."
+    },
+    {
+      "version": "v0.8.0",
+      "state": "done",
+      "summary": "67 genres, 2,000 artists. The full roster — the underground beside the mainstream — every one a hand-written style model. The 67 genres are written and so are 1,250 artists and producers; the rest are being encoded from the research a volume at a time."
+    },
+    {
+      "version": "v0.9.0",
+      "state": "done",
+      "summary": "Polish and hardening. Every state designed and every edge handled: accessibility, HiDPI, crash safety, cold start under three seconds."
+    },
+    {
+      "version": "v1.0.0-beta",
+      "state": "done",
+      "summary": "Feature complete. Everything 1.0 promises, plus collaboration rooms and Freally MixSir, the phone companion. Still no download — this is the build that gets tested by hand."
+    },
+    {
+      "version": "v1.0.0RC",
+      "state": "planned",
+      "summary": "Release candidate. Re-Dream lands — every generation arrives as four, the take you have plus three dreamed after it, auditioned in the track before one replaces the part. Then the manual test pass, worked end to end on real hardware in a real DAW."
+    },
+    {
+      "version": "v1.0.0",
+      "state": "goal",
+      "summary": "Downloads open. All five generators plus Song Mode, collaboration rooms and MixSir, every format, on all three platforms. The first build anyone can install — after an optimization pass, a simplification pass, a code review and a security review, with both self-hosted CI runners green."
+    }
+  ]
+}

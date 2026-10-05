@@ -298,6 +298,6 @@
   "manual.20c95c4687b3": "**Ein Chat-Overlay liest den öffentlichen Chat** des Kanals, auf den du es richtest, so wie ein nicht angemeldeter Zuschauer — ohne Konto, Schlüssel oder Anmeldung.",
   "manual.efe87d55bed1": "**Zwei Komponenten werden erst heruntergeladen, wenn du sie zum ersten Mal brauchst:** ffmpeg für die Codecs, die die Plattformen verlangen, und die Browser-Laufzeitumgebung für die Browserquelle. Jede kommt von ihrem eigenen Herausgeber und wird vor der Nutzung geprüft.",
   "manual.3601a272b3b0": "**Eine Update-Suche** ruft einmal pro Start eine kleine Datei ab, und wenn du **Nach Updates suchen…** wählst. Dabei wird nichts über dich oder deinen Rechner gesendet, und nichts wird installiert, solange du nicht zustimmst.",
-  "manual.11abc96d8e21": "**Ein Problembericht wird nur gesendet, wenn du auf der Meldeseite auf Senden drückst**, nachdem du gelesen hast, was er enthält (siehe [Ein Problem melden](#report)).",
+  "manual.aa2fa62ecaaf": "**Ein Problembericht wird nur gesendet, wenn du auf der Meldeseite auf Senden drückst**, nachdem du gelesen hast, was er enthält (siehe [Ein Problem melden](#reporting-a-problem)).",
   "manual.804fa6536d40": "**Keine KI.** Jeder Filter — Rauschunterdrückung, Chroma-Key, Tonemapping — ist klassische Signalverarbeitung. Die App enthält kein Machine-Learning-Modell und lädt auch keines herunter."
 }

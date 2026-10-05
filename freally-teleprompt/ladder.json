@@ -1,97 +1,87 @@
 {
-  "note": "The public version ladder, rendered into index.html by scripts/build-docs-site.mjs. Every `done` rung is a released version with its own section in CHANGELOG.md (scripts/site.test.mjs checks it). The planned steps are the ones this site has already published for the road to 2.0; a step is given a version number only when it ships. `summary` is written for the site and translated in docs/i18n (key ladder.rung.<id>). States: done, planned, goal.",
+  "note": "The public road to 2.0, rendered on index.html by the site kit (docs/kit/build.mjs, key ladder.rung.<version>). Every done rung is a released version with its own section in CHANGELOG.md (scripts/site.test.mjs checks it). The planned steps are the ones this site has already published for the road to 2.0; a step gets its version number only when it ships, so until then its version is its name (rig, takes, ...), never a number nobody decided on. States: done, planned, goal.",
   "rungs": [
     {
-      "id": "v0.100.0",
       "version": "v0.100.0",
       "state": "done",
       "summary": "The foundation: the app runs on Windows, macOS and Linux, asks you to accept its licence, and scrolls a script with the character-based engine from Freally Capture."
     },
     {
-      "id": "v0.200.0",
       "version": "v0.200.0",
       "state": "done",
       "summary": "The standalone teleprompter: a script library, pause chips, a projector for the talent with a mirror flip, a mirror to phones on your own network, a real transport, BPM pacing and read-aloud."
     },
     {
-      "id": "v0.300.0",
       "version": "v0.300.0",
       "state": "done",
       "summary": "Offline autocomplete: it finishes words and common phrases as you type, in all 18 languages, from word lists inside the app."
     },
     {
-      "id": "v1.0.0",
       "version": "v1.0.0",
       "state": "done",
       "summary": "The first full release: a one-minute welcome tour, a keyboard and screen-reader pass, a theme that follows your system, and updates that install only after you say yes."
     },
     {
-      "id": "v1.1.0",
       "version": "v1.1.0",
       "state": "done",
       "summary": "Write your script by speaking: dictation that runs on your computer, with nothing to train."
     },
     {
-      "id": "v1.2.0",
       "version": "v1.2.0",
       "state": "done",
       "summary": "Dictation, finished: a proper record button, words that land where your cursor is, and an undo that takes back one thing you said."
     },
     {
-      "id": "v1.3.0",
       "version": "v1.3.0",
       "state": "done",
       "summary": "Reading to time: a tempo you tap to match your delivery, a metronome, a bar and beat counter, rehearsal with a timing report, and labels that cost no read time."
     },
     {
-      "id": "v1.4.0",
       "version": "v1.4.0",
       "state": "done",
       "summary": "Getting the script in: import Word, RTF, PDF, text and Markdown files, section markers with a jump list, find and replace, and script statistics."
     },
     {
-      "id": "v1.5.0",
       "version": "v1.5.0",
       "state": "done",
       "summary": "Anything in the room can drive it: foot pedals and presenter remotes, keys that work when the app is not in front, and a rebindable map of every command."
     },
     {
-      "id": "rig",
+      "version": "rig",
       "state": "planned",
       "summary": "Built for the rig: a vertical flip for overhead glass, lens and safe-margin guides, an elapsed and remaining time display, and presets for reading at a distance."
     },
     {
-      "id": "takes",
+      "version": "takes",
       "state": "planned",
       "summary": "Never lose a take: recovery of unsaved edits after a crash, settings that travel with each script, local version history, and export to PDF for a paper backup."
     },
     {
-      "id": "writing",
+      "version": "writing",
       "state": "planned",
       "summary": "Help with the writing: a rhyme finder, syllable counts for each line, a tongue-twister check and suggested pauses — from dictionaries, with no model."
     },
     {
-      "id": "remote",
+      "version": "remote",
       "state": "planned",
       "summary": "Drive it from anywhere: a phone-sized control page, plus MIDI and OSC for the desk you already run — on your own network only, and off by default."
     },
     {
-      "id": "show",
+      "version": "show",
       "state": "planned",
       "summary": "Run a whole show: rundowns with a duration for each item, more than one prompter output, and a big countdown and cue-light display for the floor."
     },
     {
-      "id": "record",
+      "version": "record",
       "state": "planned",
       "summary": "Record while you prompt: a webcam take as the script runs, or audio only with your section markers written into the file as chapters."
     },
     {
-      "id": "languages",
+      "version": "languages",
       "state": "planned",
       "summary": "Every script, every language: emphasis on single words, furigana above the line, right-to-left polish for Arabic, and vertical Japanese and Chinese."
     },
     {
-      "id": "v2.0.0",
       "version": "v2.0.0",
       "state": "goal",
       "summary": "Version 2.0: all of the above, on Windows, macOS and Linux."
