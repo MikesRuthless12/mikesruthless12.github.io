@@ -1383,6 +1383,9 @@ main {
   color: var(--text-primary);
   font-variant-numeric: tabular-nums;
   margin-bottom: 12px;
+  /* one line, so its width can be measured: kit.js sets a number smaller
+     when it is wider than its card (fitStats) */
+  white-space: nowrap;
 }
 
 .stat__num .unit {
@@ -2726,6 +2729,20 @@ td.price {
 
 .footer li {
   margin: 0 0 10px;
+}
+
+/* The family: two columns of four, filled down each column (owner,
+   2026-10-05: "2 separate columns 4 for each column"). */
+.footer .footer__family {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, max-content));
+  grid-template-rows: repeat(4, auto);
+  grid-auto-flow: column;
+  gap: 10px 32px;
+}
+
+.footer .footer__family li {
+  margin: 0;
 }
 
 .footer li a {

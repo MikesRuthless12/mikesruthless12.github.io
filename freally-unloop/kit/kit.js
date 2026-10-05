@@ -193,6 +193,8 @@
       painted = locale.code;
       retitle();
       restartCycles();
+      // the numbers are written in the new language: fit them again
+      queueFit();
     });
   }
 
@@ -358,14 +360,22 @@
     var observer = new IntersectionObserver(
       function (entries) {
         for (var e = 0; e < entries.length; e += 1) {
-          if (!entries[e].isIntersecting) continue;
-          var target = entries[e].target;
+          var entry = entries[e];
+          if (!entry.isIntersecting) continue;
+          // ⛔ 8 % of an element on the screen — or, for one taller than the
+          // screen, any of it: 8 % of a 2,413-row roster or a long release can
+          // never be on a screen, and it stayed at opacity 0 (owner, 2026-10-05)
+          var screen = entry.rootBounds ? entry.rootBounds.height : window.innerHeight;
+          var tall = entry.boundingClientRect.height > screen;
+          if (entry.intersectionRatio < 0.08 && !tall) continue;
+          var target = entry.target;
           var delay = Number(target.getAttribute('data-delay') || 0);
           window.setTimeout(reveal.bind(null, target), delay);
           observer.unobserve(target);
         }
       },
-      { threshold: 0.08, rootMargin: '0px 0px -40px 0px' },
+      // 0 as well, so a tall element is told it is on the screen at all
+      { threshold: [0, 0.08], rootMargin: '0px 0px -40px 0px' },
     );
     for (var j = 0; j < items.length; j += 1) {
       var item = items[j];
@@ -411,6 +421,50 @@
     } catch (_) {
       return String(value);
     }
+  }
+
+  /**
+   * ⛔ A big number never runs out of its card (owner, 2026-10-05: "the
+   * 463,985 is running out of the container"). The type is sized by the window;
+   * a number wider than its card is set smaller by the ratio it overflows,
+   * measured at its final value (a count-up starts at 0) in the reader's
+   * language — again when the language, the window or the fonts change.
+   */
+  function fitStats() {
+    var items = document.querySelectorAll('.stat__num');
+    for (var i = 0; i < items.length; i += 1) fitStat(items[i]);
+  }
+
+  function fitStat(el) {
+    el.style.fontSize = '';
+    var target = parseFloat(el.getAttribute('data-countup'));
+    var counting = isFinite(target);
+    var shown = el.textContent;
+    if (counting) el.textContent = formatNumber(target);
+    var room = el.clientWidth;
+    var need = el.scrollWidth;
+    if (room > 0 && need > room) {
+      var size = parseFloat(window.getComputedStyle(el).fontSize);
+      if (isFinite(size)) el.style.fontSize = Math.floor(((size * room) / need) * 0.97 * 10) / 10 + 'px';
+    }
+    if (counting) el.textContent = shown;
+  }
+
+  var fitQueued = false;
+  function queueFit() {
+    if (fitQueued) return;
+    fitQueued = true;
+    window.requestAnimationFrame(function () {
+      fitQueued = false;
+      fitStats();
+    });
+  }
+
+  function wireFits() {
+    if (document.querySelector('.stat__num') === null) return;
+    fitStats();
+    window.addEventListener('resize', queueFit);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(queueFit);
   }
 
   function countUp(el) {
@@ -500,10 +554,18 @@
   /** The contents rail and the changelog rail follow the reader. */
   function wireScrollSpy() {
     var rails = document.querySelectorAll('[data-spy]');
-    if (rails.length === 0 || typeof window.IntersectionObserver !== 'function') return;
     for (var r = 0; r < rails.length; r += 1) spy(rails[r]);
   }
 
+  /**
+   * ⛔ The section being read is the last whose heading has passed a line 30 %
+   * down the screen — and at the very bottom of the page, the last heading on
+   * the screen, since the short last sections can never reach the line. The
+   * rail scrolls itself to keep that entry on it (owner, 2026-10-05: "you don't
+   * have anything on the left hand side within the sidebar for these": a band
+   * 20–35 % down the screen marked nothing in the middle of a long section or
+   * at the end of a manual, and a long rail kept its mark out of sight).
+   */
   function spy(rail) {
     var links = rail.querySelectorAll('a[href^="#"]');
     var byId = {};
@@ -516,29 +578,63 @@
       targets.push(target);
     }
     if (targets.length === 0) return;
-    var visible = {};
-    var observer = new IntersectionObserver(
-      function (entries) {
-        for (var e = 0; e < entries.length; e += 1) {
-          visible[entries[e].target.id] = entries[e].isIntersecting;
-        }
-        var current = null;
-        for (var t = 0; t < targets.length; t += 1) {
-          if (visible[targets[t].id]) {
-            current = targets[t].id;
+    var shown = null;
+    var queued = false;
+
+    function update() {
+      queued = false;
+      var screen = window.innerHeight;
+      var current = targets[0];
+      for (var t = 0; t < targets.length; t += 1) {
+        if (targets[t].getBoundingClientRect().top > screen * 0.3) break;
+        current = targets[t];
+      }
+      var page = document.documentElement.scrollHeight;
+      if (window.scrollY + screen >= page - 2) {
+        for (var b = targets.length - 1; b >= 0; b -= 1) {
+          if (targets[b].getBoundingClientRect().top < screen) {
+            current = targets[b];
             break;
           }
         }
-        if (current === null) return;
-        for (var key in byId) {
-          if (Object.prototype.hasOwnProperty.call(byId, key)) {
-            byId[key].classList.toggle('is-active', key === current);
-          }
+      }
+      if (current.id === shown) return;
+      shown = current.id;
+      for (var key in byId) {
+        if (Object.prototype.hasOwnProperty.call(byId, key)) {
+          byId[key].classList.toggle('is-active', key === shown);
         }
-      },
-      { rootMargin: '-20% 0px -65% 0px' },
-    );
-    for (var k = 0; k < targets.length; k += 1) observer.observe(targets[k]);
+      }
+      keepInView(rail, byId[shown]);
+    }
+
+    function queue() {
+      if (queued) return;
+      queued = true;
+      window.requestAnimationFrame(update);
+    }
+
+    window.addEventListener('scroll', queue, { passive: true });
+    window.addEventListener('resize', queue);
+    update();
+  }
+
+  /** Scroll `rail` (only the rail, never the page) so that `link` is on it. */
+  function keepInView(rail, link) {
+    if (rail.scrollHeight <= rail.clientHeight + 1) return;
+    var box = rail.getBoundingClientRect();
+    var at = link.getBoundingClientRect();
+    var top = at.top - box.top + rail.scrollTop;
+    var margin = 24;
+    if (top >= rail.scrollTop + margin && top + at.height <= rail.scrollTop + rail.clientHeight - margin) {
+      return;
+    }
+    var goal = Math.max(0, top - (rail.clientHeight - at.height) / 2);
+    if (typeof rail.scrollTo === 'function') {
+      rail.scrollTo({ top: goal, behavior: reduceMotion ? 'auto' : 'smooth' });
+    } else {
+      rail.scrollTop = goal;
+    }
   }
 
   // ── search (the index is a file this page already loaded) ──────────────
@@ -691,6 +787,7 @@
       function () {
         apply(initialLocale());
       },
+      wireFits,
       restartCycles,
     ];
     for (var i = 0; i < parts.length; i += 1) {

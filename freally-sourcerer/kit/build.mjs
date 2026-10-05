@@ -385,7 +385,9 @@ function footer() {
     own === '' ? '' : `          ${own}`,
     '          <div>',
     `            <h2 ${T('kit.footer.family')}>${escapeHtml(kitText('kit.footer.family'))}</h2>`,
-    `            <ul><li><a href="${DOMAIN}" ${T('kit.footer.home')}>${escapeHtml(kitText('kit.footer.home'))}</a></li>${familyLinks(site.product)}</ul>`,
+    // the eight apps only, in two columns of four (owner, 2026-10-05: no
+    // "Freally Products" here, and no tall column)
+    `            <ul class="footer__family">${familyLinks(site.product)}</ul>`,
     '          </div>',
     '        </div>',
     '        <div class="footer__bottom">',
