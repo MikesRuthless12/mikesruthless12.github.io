@@ -74,7 +74,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#window",
   "heading": "The window",
-  "text": "Along the top are the loop project menu (the folder button), the Arrangement menu, the search, the mode, and Undo and Redo; on the right, the tempo, the clock and Settings (the gear). In the middle is the arrangement map: the record's sections, a lane for each part, and its moves. Along the bottom is the console: Generate, a strip for each part, the master section and the seed. Settings holds the language, the theme — System, Dark or Light — and the list of keyboard shortcuts."
+  "text": "Along the top are the loop project menu (the folder button), the Arrangement menu, the search, the mode, and Undo and Redo; on the right, the tempo, the clock and Settings (the gear). In the middle is the arrangement map: the record's sections, a lane for each part, and its moves. Along the bottom is the console: Generate, a strip for each part, the master section and the seed. Settings holds the language, the theme — System, Dark or Light — the interface sounds and the list of keyboard shortcuts."
  },
  {
   "url": "documentation.html#name",
@@ -152,6 +152,11 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Every edit in the Song Arrangement view works without a mouse. In Unloop, press ? for this sheet; on a Mac, Ctrl/⌘ is ⌘ . Everywhere Undo Ctrl/⌘ + Z Redo Ctrl/⌘ + Shift + Z or Ctrl + Y Show this sheet ? Play or pause the preview while your DAW is stopped Space Close a dialog, a card or a panel Escape Song Arrangement view Select the next clip ] Select the previous clip [ Select the clip on the lane above Alt + ↑ Select the clip on the lane below Alt + ↓ Select every clip Ctrl/⌘ + A Select nothing, or let go of a drag Escape Move the selected clips earlier by the snap ← Move the selected clips later by the snap → Move the selected clips to the lane above ↑ Move the selected clips to the lane below ↓ Shorten the clip from its end Shift + ← Lengthen the clip at its end Shift + → Lengthen the clip at its start Alt + Shift + ← Shorten the clip from its start Alt + Shift + → Raise the clips’ gain = or + Lower the clips’ gain - Move the edit cursor earlier , Move the edit cursor later . Split at the edit cursor S Hold the clip’s fade handles F Reverse the selected clips R Lock or unlock the selected clips L Copy the selected clips Ctrl/⌘ + C Cut the selected clips Ctrl/⌘ + X Paste at the "
  },
  {
+  "url": "documentation.html#sounds",
+  "heading": "Interface sounds and the title bar",
+  "text": "Opening or closing Settings, a menu or a dialog, and showing or hiding the Loop Library, each makes a short sound — the same sounds in every Freally app — that lasts exactly as long as the move on screen. They play through Unloop's own output in your DAW, never into your record: not into a Print, a capture, a stem, a drag or an offline bounce. In Settings you can switch them off, set their level, or keep Quiet while playing on (it is on to start with), so they stay silent while your DAW or the preview plays. With reduced motion turned on in your system, nothing moves and a short tick plays instead. In the standalone app the title bar follows the theme — dark in the dark theme, light in the light one — and carries no title, because the turning name at the top of the window is the title. Inside a DAW the plugin's window belongs to the DAW and keeps its title."
+ },
+ {
   "url": "documentation.html#language",
   "heading": "Languages",
   "text": "Unloop speaks eighteen languages. It starts in your system's language; to choose another, open Settings with the gear and pick one."
@@ -162,9 +167,24 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Unloop has no account and no telemetry, and the plugin and the standalone app contain no networking code at all. Your loops, your projects and your records never leave your computer, and a loop, a project or an export folder on a network drive is refused before anything on it is touched. It keeps its own files in your app-data folder (%APPDATA%\\Freally Unloop on Windows): the licence answer, your preferences, Recent Projects, the Loop Library's index, the capture cache (at most 2 GB) and the files instances meet through. It never writes into your loop folders; exports and projects go where you choose. It contains no AI of any kind: every arrangement is planned by deterministic rules over researched arrangement data and performed by classic signal processing, and a build gate fails if a machine-learning library is ever added."
  },
  {
+  "url": "documentation.html#report",
+  "heading": "Reporting a problem",
+  "text": "When Unloop itself fails — it could not write one of its own files, an export or a drag went wrong, a loop it should read could not be read, or the window crashed — the error has a Report button. It opens the report page in your browser with the facts already filled in: where it failed, the version and your system, signed so they cannot be changed. You add what happened, and nothing is sent until you press Send there. Unloop itself sends nothing. If Unloop crashed, the next time it opens it offers to report it once; Dismiss forgets it. An error that only says no to something you asked — a name that cannot be a file, a folder that is not there — has no Report button. Only release builds can make a report."
+ },
+ {
   "url": "documentation.html#limits",
   "heading": "Known limitations",
   "text": "MIDI — the song template, MIDI loops and the Velocity Doctor — arrives in version 0.7.0. A loop's key is not known until then, so default file names leave the key out. A drag shows no picture of what you are dragging yet. A reverb or delay throw on the last bar is cut at the record's last bar line; the print does not ring on past it. On a second monitor at another display scale, the editor sizes itself from the primary display. Unloop has not yet been worked through by hand in every DAW, on every system. That is the release candidate's job, before 1.0.0."
+ },
+ {
+  "url": "changelog.html#0-6-5-2026-10-05-u-sounds-the-title-bar-report-this-added",
+  "heading": "Added",
+  "text": "Interface sounds — the Freally family's one set, soft glassy , the same files in every Freally app: a popover or dialog opening and closing (Settings and every header and console popover, the Roles & bus panel, the project menu, the export dialog, the shortcut sheet) and the Loop Library shown and hidden. Each lasts exactly as long as its move, both read from one timing table. They play through Unloop's own output — never the PC's speakers behind the DAW's back — and never into the record: not in a Print, a capture, a stem or a drag-out, not in an offline bounce, not while bypassed. On by default; Settings has their switch, their level and Quiet while playing (on). With reduced motion, a short tick plays instead. Popovers, dialogs and the Loop Library move — they open and close over the family's moves (the Loop Library slides from its edge, the other way in a right-to-left language); with reduced motion they appear at once. The standalone's title bar is dark in dark mode and follows the theme live, and it carries no title — the turning wordmark is the title. Inside a DAW the plugin window's title stays the DAW's. Report this. When Unloop itself fails — a file of its own it could no"
+ },
+ {
+  "url": "changelog.html#0-6-5-2026-10-05-u-sounds-the-title-bar-report-this-changed",
+  "heading": "Changed",
+  "text": "Every shared crate from Freally MIDI Master moved to shared-v10 (from shared-v5 ; freally-report from shared-v7 ). The roster data is unchanged, but a plan's dataset version names the tag, so every plan hash changed with it — a golden change in the snapshots' header lines only. The app id is com.freallyproducts.unloop (it was com.mikeweaver.freally-unloop ): a DAW project saved with an earlier pre-release looks for the old id and will not find the plugin. Nothing has been released yet. The road to 1.0 gains a rung : the skins and the hardware set move to v0.6.7 , which copies them from Freally Flipcopy once the owner has approved them there. v0.6.0 2026-10-01 T: The timeline The arrangement is yours to edit, every piece of it, and every output hears exactly what you edited. Move, copy, paste, clone, resize, slip and split clips; draw fades with MIDI Master's three handles; ride clip, part and master faders; draw automation; reshape the sections; lock what you like and reroll the rest; place moves by hand — every change one undo step, undone and redone as far as you like. A loop's project now holds a shelf of arrangements you switch between on the next bar, and an arrangement travel"
  },
  {
   "url": "changelog.html#0-6-0-2026-10-01-t-the-timeline-added",

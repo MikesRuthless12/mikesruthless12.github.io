@@ -28,7 +28,7 @@
     {
       "version": "v0.5.0",
       "phase": "Phase 4 — The touch screen",
-      "state": "planned",
+      "state": "done",
       "summary": "The touch screen: copy settings, instruments for your copies, file formats, and the history of every copy you have made."
     },
     {
@@ -47,7 +47,7 @@
       "version": "v0.5.9",
       "phase": "Phase 4.9 — Skins and light mode",
       "state": "planned",
-      "summary": "Skins and light mode: five skins, each a raised chassis rendered in Blender and the same across every Freally app, in light and dark, beside a new light mode."
+      "summary": "Skins and light mode: five eye-catching skins, drawn in code and the same across every Freally app, each in light and dark, beside a new light mode."
     },
     {
       "version": "v0.6.0",

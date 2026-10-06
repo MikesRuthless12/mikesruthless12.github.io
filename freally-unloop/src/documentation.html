@@ -3,7 +3,7 @@
      the rail's entry. -->
 
 <kit-head>
-  <kit-lede data-i18n="docs.intro">This manual describes version 0.6.0, the version built today. Where something on the Features page arrives in a later version, the manual says which.</kit-lede>
+  <kit-lede data-i18n="docs.intro">This manual describes version 0.6.5, the version built today. Where something on the Features page arrives in a later version, the manual says which.</kit-lede>
 </kit-head>
 
 <kit-manual>
@@ -23,7 +23,7 @@
   <section>
     <h2 id="window" data-i18n="docs.window.title">The window</h2>
     <p data-i18n="docs.window.p1">Along the top are the loop project menu (the folder button), the Arrangement menu, the search, the mode, and Undo and Redo; on the right, the tempo, the clock and Settings (the gear). In the middle is the arrangement map: the record's sections, a lane for each part, and its moves. Along the bottom is the console: Generate, a strip for each part, the master section and the seed.</p>
-    <p data-i18n="docs.window.p2">Settings holds the language, the theme — System, Dark or Light — and the list of keyboard shortcuts.</p>
+    <p data-i18n="docs.window.p2">Settings holds the language, the theme — System, Dark or Light — the interface sounds and the list of keyboard shortcuts.</p>
   </section>
 
   <section>
@@ -203,6 +203,12 @@
   </section>
 
   <section>
+    <h2 id="sounds" data-i18n="docs.sounds.title">Interface sounds and the title bar</h2>
+    <p data-i18n="docs.sounds.p1">Opening or closing Settings, a menu or a dialog, and showing or hiding the Loop Library, each makes a short sound — the same sounds in every Freally app — that lasts exactly as long as the move on screen. They play through Unloop's own output in your DAW, never into your record: not into a Print, a capture, a stem, a drag or an offline bounce. In Settings you can switch them off, set their level, or keep Quiet while playing on (it is on to start with), so they stay silent while your DAW or the preview plays. With reduced motion turned on in your system, nothing moves and a short tick plays instead.</p>
+    <p data-i18n="docs.sounds.p2">In the standalone app the title bar follows the theme — dark in the dark theme, light in the light one — and carries no title, because the turning name at the top of the window is the title. Inside a DAW the plugin's window belongs to the DAW and keeps its title.</p>
+  </section>
+
+  <section>
     <h2 id="language" data-i18n="docs.language.title">Languages</h2>
     <p data-i18n="docs.language.p1">Unloop speaks eighteen languages. It starts in your system's language; to choose another, open Settings with the gear and pick one.</p>
   </section>
@@ -212,6 +218,12 @@
     <p data-i18n="docs.privacy.p1">Unloop has no account and no telemetry, and the plugin and the standalone app contain no networking code at all. Your loops, your projects and your records never leave your computer, and a loop, a project or an export folder on a network drive is refused before anything on it is touched.</p>
     <p data-i18n="docs.privacy.p2">It keeps its own files in your app-data folder (%APPDATA%\Freally Unloop on Windows): the licence answer, your preferences, Recent Projects, the Loop Library's index, the capture cache (at most 2 GB) and the files instances meet through. It never writes into your loop folders; exports and projects go where you choose.</p>
     <p data-i18n="docs.privacy.p3">It contains no AI of any kind: every arrangement is planned by deterministic rules over researched arrangement data and performed by classic signal processing, and a build gate fails if a machine-learning library is ever added.</p>
+  </section>
+
+  <section>
+    <h2 id="report" data-i18n="docs.report.title">Reporting a problem</h2>
+    <p data-i18n="docs.report.p1">When Unloop itself fails — it could not write one of its own files, an export or a drag went wrong, a loop it should read could not be read, or the window crashed — the error has a Report button. It opens the report page in your browser with the facts already filled in: where it failed, the version and your system, signed so they cannot be changed. You add what happened, and nothing is sent until you press Send there. Unloop itself sends nothing.</p>
+    <p data-i18n="docs.report.p2">If Unloop crashed, the next time it opens it offers to report it once; Dismiss forgets it. An error that only says no to something you asked — a name that cannot be a file, a folder that is not there — has no Report button. Only release builds can make a report.</p>
   </section>
 
   <section>

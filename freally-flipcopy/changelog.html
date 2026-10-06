@@ -53,9 +53,30 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
+<ol><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-4-0-2026-10-05-the-file-browser-and-the-preview-player">
+<div class="releases"><article class="release release--latest" id="0-5-0-2026-10-05-the-touch-screen">
+<h2 class="release__head" data-i18n-html="changelog.438e4f8ca3fc"><span class="release__meta"><span class="release__ver">v0.5.0</span><time class="release__date" datetime="2026-10-05">2026-10-05</time></span><span class="release__title">The touch screen</span></h2>
+<p data-i18n-html="changelog.63f032bc62d6">The copier's touch screen comes alive. <strong>Copy Settings</strong> opens out of it — which parts to copy, the grid, the swing, the tempo, the instruments, the format — and every setting changes the copy you make; the screen's keys page through your copies, save them, show them and print them again; and a copy can go back on the glass to be copied the other way.</p>
+<h3 id="0-5-0-2026-10-05-the-touch-screen-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.fe9572610f3a"><strong>Copy Settings.</strong> Press <strong>SETTINGS</strong> on the touch screen and the panel grows out of it. For an audio loop: copy <strong>every part</strong>, one part <strong>only</strong> (drums, bassline, melody or chords — refused, never a blank page, when the loop has none of it), or the <strong>vocal line</strong>, read as one note at a time; put the notes on a <strong>grid</strong> (1/8, 1/16, 1/32 or 1/16T) and <strong>straighten</strong> a swing. For a MIDI file: a page per part, or the <strong>mix only</strong>; an <strong>instrument</strong> for each part — search the library by name, genre or family — and a <strong>drum machine</strong> (808, 909, 707, 606); the <strong>tail</strong> after the last note; <strong>WAV</strong>, <strong>AIFF</strong>, <strong>FLAC</strong> or <strong>MP3</strong> (320 kbps), at 44.1, 48, 88.2 or 96 kHz, in 16, 24 or 32-bit float. Both ways: the <strong>tempo</strong> — automatic, the project's, the file's own, the file name's, or one you set. Changes are for the next copy, never one being made, and the project keeps them.</li>
+<li data-i18n-html="changelog.80133c005eb5"><strong>Every page says its instrument</strong> on its TONER line, beside its tempo and where that tempo came from.</li>
+<li data-i18n-html="changelog.54c5f05f9607"><strong>The file name's tempo, offered.</strong> A MIDI file with no tempo of its own whose name says one (<em>Hook 127 BPM.mid</em>) gets a chip by the screen: <em>Use 127 BPM</em> copies that file at it; the project's tempo never moves.</li>
+<li data-i18n-html="changelog.762dc63396b4"><strong>The stack.</strong> ◀ <strong>PREV</strong> and <strong>NEXT</strong> ▶ (or <code>[</code> and <code>]</code>) page through your copies, each lying in the tray ready to drag; <strong>SAVE</strong> saves the page on top as a new file, in the format you pick; <strong>REVEAL</strong> shows it in its folder; <strong>REPRINT</strong> puts the copy's original back on the glass with the settings it was made with — press START to make it again.</li>
+<li data-i18n-html="changelog.5e9b6523831f"><strong>A copy of a copy.</strong> A page dragged back onto the glass — or dropped from your Copies — goes on as an original, and the new copy says which page it came from.</li>
+<li data-i18n-html="changelog.9c72fd49cbf7"><strong>Several pages at once.</strong> Shift-click pages to pick them; drag one and they all go, in page order.</li>
+<li data-i18n-html="changelog.c754df195ab0"><strong>The ticket.</strong> Every copy's folder holds a <code>ticket.txt</code>: the original and its fingerprint, the settings, the tempo and where it came from, the instruments, the session it was made in, and every page's file and fingerprint. <code>flipc copy --ticket</code> makes the same copy again, byte for byte.</li>
+<li data-i18n-html="changelog.14e910f0a79b"><strong>Settings.</strong> Speed (<strong>Quick</strong> runs the machine short), <strong>Reduced motion</strong> (follow the system, or always), the <strong>Copies folder</strong> (<strong>Change…</strong> and <strong>Show in folder</strong> — new copies go to the new folder, old ones stay where they are), the interface sounds' own switch, and About's licences and agreement.</li>
+<li data-i18n-html="changelog.54aac57413aa"><strong>Interface sounds.</strong> Settings, Copy Settings and the browser open, close, hide and show with short, soft, glassy sounds, each exactly as long as its move — through the plugin's own output, never into a bounce, and off with their own switch.</li>
+<li data-i18n-html="changelog.49cc52f4d8b8"><strong><code>flipc copy</code></strong> takes every Copy Setting: <code>--parts</code>, <code>--grid</code>, <code>--swing</code>, <code>--stems</code>, <code>--toner</code>, <code>--drums</code>, <code>--format</code>, <code>--rate</code>.</li>
+</ul>
+<h3 id="0-5-0-2026-10-05-the-touch-screen-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.b58b14c86e76"><strong>A page under the top one</strong> can be pressed where it shows past the tray's edge.</li>
+</ul>
+</article>
+<article class="release" id="0-4-0-2026-10-05-the-file-browser-and-the-preview-player">
 <h2 class="release__head" data-i18n-html="changelog.b0befc5e6040"><span class="release__meta"><span class="release__ver">v0.4.0</span><time class="release__date" datetime="2026-10-05">2026-10-05</time></span><span class="release__title">The file browser and the preview player</span></h2>
 <p data-i18n-html="changelog.e884ffe2f90e">Find a sample or a MIDI clip, hear it, see it, and put it on the glass — the browser and the preview player from Freally Oscillate, beside the copier. Everything essential is here: the MVP is complete.</p>
 <h3 id="0-4-0-2026-10-05-the-file-browser-and-the-preview-player-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -178,7 +199,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.4.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.0</span>
         </div>
       </div>
     </footer>

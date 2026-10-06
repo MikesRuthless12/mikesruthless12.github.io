@@ -79,7 +79,27 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#copier",
   "heading": "Making a copy",
-  "text": "Put an audio or MIDI file on the glass: drop it from Explorer or Finder anywhere on the window, drag it from the browser or the preview strip onto the copier, press Enter on a row in the browser, or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Putting a file on the glass never starts a copy. Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass. Every page is a real file in Documents/Freally Flipcopy/Copies, numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once. The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings."
+  "text": "Put an audio or MIDI file on the glass: drop it from Explorer or Finder anywhere on the window, drag it from the browser or the preview strip onto the copier, press Enter on a row in the browser, or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Putting a file on the glass never starts a copy. Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass. Every page is a real file in your Copies folder (Documents/Freally Flipcopy/Copies, unless you choose another in Settings), numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once. The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings."
+ },
+ {
+  "url": "documentation.html#screen",
+  "heading": "The touch screen",
+  "text": "The copier’s screen says what it is doing and which way it copies: AUDIO > MIDI or MIDI > AUDIO. Under it are its soft keys. SETTINGS opens Copy Settings; ◀ PREV and NEXT ▶ page through your copies; SAVE, REVEAL and REPRINT work on the copy in the tray. None of them starts a copy: only START does. When a MIDI file has no tempo of its own but its name says one, such as Hook 127 BPM.mid, a chip beside the screen offers it. Use 127 BPM copies that file at that tempo; Keep the project’s tempo leaves it. Flipcopy never changes your DAW’s tempo, and every page prints its tempo and where that tempo came from."
+ },
+ {
+  "url": "documentation.html#copy-settings",
+  "heading": "Copy Settings",
+  "text": "Press SETTINGS on the touch screen and the panel grows out of it. Every setting changes the copy you make, and a change is for the next copy, never one already being made; your project keeps them. Tab moves through the panel, the arrow keys choose, and Esc closes it. For an audio loop, Parts chooses what to copy: every part, a page each; one part only, the drums, bassline, melody or chords; or the vocal line, one note at a time. If the loop has none of the part you asked for, the copier says so instead of printing a blank page. Grid puts the notes on 1/8, 1/16, 1/32 or 1/16T, or leaves them as they were read, and Swing keeps a swing or straightens it. For a MIDI file, Pages chooses a page per part or the mix only, and Tail sets how long the sound rings on after the last note. Format writes WAV, AIFF, FLAC or MP3 (320 kbps), at the project’s sample rate or at 44.1, 48, 88.2 or 96 kHz, in 16 or 24-bit or 32-bit float. FLAC and AIFF have no float, so they write 24-bit; MP3 is written at 44.1 or 48 kHz. Both ways, Tempo is Automatic, the project’s, the file’s own, from the file name, or one you set."
+ },
+ {
+  "url": "documentation.html#instruments",
+  "heading": "Instruments",
+  "text": "A MIDI copy plays each part through an instrument from the Freally library, the same library Freally MIDI Master uses. In Copy Settings, type in a part’s search box to find one by its name, genre or family, add a number to ask for one of its variations, and pick it: the bassline, melody, countermelody and chords can each have their own. Preview Piano is the default. The drums play through the drum machine you choose: Preview Kit by default, or the 808, the 707 or the 606. Every audio page prints the instrument it was played with on its TONER line, beside its tempo."
+ },
+ {
+  "url": "documentation.html#copies",
+  "heading": "Your copies",
+  "text": "◀ PREV and NEXT ▶ on the touch screen, or the [ and ] keys, page through every copy you have made; each lies in the tray, ready to drag. SAVE saves the page on top as a new file, wherever you choose and in the format you pick. REVEAL shows the copy in its folder. REPRINT puts the copy’s original back on the glass with the settings it was made with: press START to make it again. Drag a page back onto the glass, or drop one from your Copies, and it goes on as an original, ready to be copied the other way; the new copy says which page it came from. To drag several pages at once, Shift-click them, then drag one: they all go, in page order. Every copy’s folder holds a ticket.txt, a plain-text record of how it was made: the original and its fingerprint, the settings, the tempo and where it came from, the instruments, and every page’s file and fingerprint."
  },
  {
   "url": "documentation.html#browser",
@@ -90,6 +110,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#preview",
   "heading": "The preview player",
   "text": "The preview player sits under the browser. An audio file shows its real waveform. A MIDI file shows its notes and plays through Preview Piano, the same sound a copy uses unless you choose another, so you hear what the copy will sound like. Space plays and pauses, Stop goes back to the start, and a click or a drag on the strip moves the playhead. Loop repeats the file, Play when selected (the headphones) plays each file you select, and the slider sets the level. The preview plays through Flipcopy’s own output and never into a bounce. A WAV file of any length plays; a file in another format plays if it is five minutes or shorter. Click the original on the glass, or a page on the tray, to hear it. When a copy is finished, Copy plays all its pages together and Original plays the file on the glass, from the same place in the music, so you can hear the difference before you drag. Playing it is never required: the pages can be dragged as soon as the last one lands. The strip wears the same lime frame as a page. Drag it onto the glass to put that file there."
+ },
+ {
+  "url": "documentation.html#settings",
+  "heading": "Settings",
+  "text": "Open Settings with the gear at the top of the browser. Machine sounds turns the copier’s sounds on or off, sets their level and keeps them quiet while your DAW plays. A switch of its own turns off the soft sounds the panels and dialogs make as they open and close. Under Motion, Quick runs the machine at its short timings, with every sound still in its place. Reduced motion follows your system’s setting, or choose Reduce to have it always: no flip, no swing of the lid, no sweep and no dimming of the room. The copier still shows each step and plays each sound, and START is still the only way to make a copy. Copies folder shows where your copies go. Change… picks another folder: new copies go there, and the copies already made stay where they are. Show in folder opens it. About shows the version, the third-party licences and the licence agreement."
  },
  {
   "url": "documentation.html#problems",
@@ -105,6 +130,16 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Privacy and the network",
   "text": "Flipcopy has no account and no telemetry, and the plugin and standalone app contain no networking code at all. Your files and your copies never leave your computer. It contains no AI of any kind: every copy is made by classic, deterministic signal processing, and a build gate fails if a machine-learning library is ever added."
+ },
+ {
+  "url": "changelog.html#0-5-0-2026-10-05-the-touch-screen-added",
+  "heading": "Added",
+  "text": "Copy Settings. Press SETTINGS on the touch screen and the panel grows out of it. For an audio loop: copy every part , one part only (drums, bassline, melody or chords — refused, never a blank page, when the loop has none of it), or the vocal line , read as one note at a time; put the notes on a grid (1/8, 1/16, 1/32 or 1/16T) and straighten a swing. For a MIDI file: a page per part, or the mix only ; an instrument for each part — search the library by name, genre or family — and a drum machine (808, 909, 707, 606); the tail after the last note; WAV , AIFF , FLAC or MP3 (320 kbps), at 44.1, 48, 88.2 or 96 kHz, in 16, 24 or 32-bit float. Both ways: the tempo — automatic, the project's, the file's own, the file name's, or one you set. Changes are for the next copy, never one being made, and the project keeps them. Every page says its instrument on its TONER line, beside its tempo and where that tempo came from. The file name's tempo, offered. A MIDI file with no tempo of its own whose name says one ( Hook 127 BPM.mid ) gets a chip by the screen: Use 127 BPM copies that file at it; the project's tempo never moves. The stack. ◀ PREV and NEXT ▶ (or [ and ] ) page through your copies, eac"
+ },
+ {
+  "url": "changelog.html#0-5-0-2026-10-05-the-touch-screen-fixed",
+  "heading": "Fixed",
+  "text": "A page under the top one can be pressed where it shows past the tray's edge. v0.4.0 2026-10-05 The file browser and the preview player Find a sample or a MIDI clip, hear it, see it, and put it on the glass — the browser and the preview player from Freally Oscillate, beside the copier. Everything essential is here: the MVP is complete."
  },
  {
   "url": "changelog.html#0-4-0-2026-10-05-the-file-browser-and-the-preview-player-added",

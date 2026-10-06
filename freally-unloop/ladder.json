@@ -39,9 +39,15 @@
     },
     {
       "version": "v0.6.5",
+      "phase": "U — Sounds, the title bar & Report this",
+      "state": "done",
+      "summary": "Interface sounds that last exactly as long as their panels, a dark standalone title bar with no title, and Report this for the app's own errors — the same in every Freally app."
+    },
+    {
+      "version": "v0.6.7",
       "phase": "L — The look",
       "state": "planned",
-      "summary": "Knobs, faders and buttons rendered in Blender, five skins in light and dark, interface sounds and a dark title bar — the same in every Freally app."
+      "summary": "Five skins in light and dark drawn in code, and knobs, faders, buttons, sliders and toggles rendered in Blender — copied from Freally Flipcopy, the same in every Freally app."
     },
     {
       "version": "v0.7.0",

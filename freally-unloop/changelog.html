@@ -53,9 +53,26 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-6-0-2026-10-01-t-the-timeline">v0.6.0</a></li><li><a href="#0-5-0-2026-09-28-c-capture-preview-print">v0.5.0</a></li><li><a href="#0-4-0-2026-09-26-r-roles-the-conductor">v0.4.0</a></li><li><a href="#0-3-0-2026-09-26-m-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-24-p-the-planner">v0.2.0</a></li><li><a href="#0-1-0-2026-09-24-f-foundation">v0.1.0</a></li></ol>
+<ol><li><a href="#0-6-5-2026-10-05-u-sounds-the-title-bar-report-this">v0.6.5</a></li><li><a href="#0-6-0-2026-10-01-t-the-timeline">v0.6.0</a></li><li><a href="#0-5-0-2026-09-28-c-capture-preview-print">v0.5.0</a></li><li><a href="#0-4-0-2026-09-26-r-roles-the-conductor">v0.4.0</a></li><li><a href="#0-3-0-2026-09-26-m-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-24-p-the-planner">v0.2.0</a></li><li><a href="#0-1-0-2026-09-24-f-foundation">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-6-0-2026-10-01-t-the-timeline">
+<div class="releases"><article class="release release--latest" id="0-6-5-2026-10-05-u-sounds-the-title-bar-report-this">
+<h2 class="release__head" data-i18n-html="changelog.282953e12efa"><span class="release__meta"><span class="release__ver">v0.6.5</span><time class="release__date" datetime="2026-10-05">2026-10-05</time></span><span class="release__title">U: Sounds, the title bar &amp; Report this</span></h2>
+<p data-i18n-html="changelog.87ee3a6f936b">Unloop now sounds and stands like the rest of the Freally family, and when it fails, it says so in a way you can report. Opening a popover or a dialog and showing the Loop Library each make the family's own short sound, exactly as long as the move; the standalone's title bar is dark in dark mode, with no title; and an error that is Unloop's own fault offers <strong>Report</strong>.</p>
+<h3 id="0-6-5-2026-10-05-u-sounds-the-title-bar-report-this-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.9be25b6e3986"><strong>Interface sounds</strong> — the Freally family's one set, <em>soft glassy</em>, the same files in every Freally app: a popover or dialog opening and closing (Settings and every header and console popover, the Roles &amp; bus panel, the project menu, the export dialog, the shortcut sheet) and the Loop Library shown and hidden. Each lasts exactly as long as its move, both read from one timing table. They play through Unloop's own output — never the PC's speakers behind the DAW's back — and never into the record: not in a Print, a capture, a stem or a drag-out, not in an offline bounce, not while bypassed. On by default; Settings has their switch, their level and <em>Quiet while playing</em> (on). With reduced motion, a short tick plays instead.</li>
+<li data-i18n-html="changelog.d21989d83caf"><strong>Popovers, dialogs and the Loop Library move</strong> — they open and close over the family's moves (the Loop Library slides from its edge, the other way in a right-to-left language); with reduced motion they appear at once.</li>
+<li data-i18n-html="changelog.598761b72492"><strong>The standalone's title bar is dark in dark mode</strong> and follows the theme live, and it carries no title — the turning wordmark is the title. Inside a DAW the plugin window's title stays the DAW's.</li>
+<li data-i18n-html="changelog.01213ea06966"><strong>Report this.</strong> When Unloop itself fails — a file of its own it could not write, an export or a drag it could not make, a loop it failed to read, a call from its own page it could not read, the page crashing — the error offers <strong>Report</strong>, which opens the report page in your browser with the facts filled in (where it failed, the version, the system), signed so they cannot be altered. Nothing is sent until you press Send there. A crash is offered once the next time Unloop opens. A refusal of what you asked never offers a report, and only release builds can make one.</li>
+</ul>
+<h3 id="0-6-5-2026-10-05-u-sounds-the-title-bar-report-this-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.a23b97bb00ba"><strong>Every shared crate from Freally MIDI Master moved to <code>shared-v10</code></strong> (from <code>shared-v5</code>; <code>freally-report</code> from <code>shared-v7</code>). The roster data is unchanged, but a plan's dataset version names the tag, so every plan hash changed with it — a golden change in the snapshots' header lines only.</li>
+<li data-i18n-html="changelog.80b45d96b56e"><strong>The app id is <code>com.freallyproducts.unloop</code></strong> (it was <code>com.mikeweaver.freally-unloop</code>): a DAW project saved with an earlier pre-release looks for the old id and will not find the plugin. Nothing has been released yet.</li>
+<li data-i18n-html="changelog.07fa6f54161c"><strong>The road to 1.0 gains a rung</strong>: the skins and the hardware set move to <code>v0.6.7</code>, which copies them from Freally Flipcopy once the owner has approved them there.</li>
+</ul>
+</article>
+<article class="release" id="0-6-0-2026-10-01-t-the-timeline">
 <h2 class="release__head" data-i18n-html="changelog.c4b898d0a012"><span class="release__meta"><span class="release__ver">v0.6.0</span><time class="release__date" datetime="2026-10-01">2026-10-01</time></span><span class="release__title">T: The timeline</span></h2>
 <p data-i18n-html="changelog.0a8e4d670c30">The arrangement is yours to edit, every piece of it, and every output hears exactly what you edited. Move, copy, paste, clone, resize, slip and split clips; draw fades with MIDI Master's three handles; ride clip, part and master faders; draw automation; reshape the sections; lock what you like and reroll the rest; place moves by hand — every change one undo step, undone and redone as far as you like. A loop's project now holds a shelf of arrangements you switch between on the next bar, and an arrangement travels on its own as an <code>.unarr</code> file.</p>
 <h3 id="0-6-0-2026-10-01-t-the-timeline-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -269,7 +286,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The music you make with Unloop is yours, as far as the loops you arranged were yours to use, with no royalty and no attribution required.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.5</span>
         </div>
       </div>
     </footer>
