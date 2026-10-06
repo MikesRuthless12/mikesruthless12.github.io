@@ -102,6 +102,16 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "◀ PREV and NEXT ▶ on the touch screen, or the [ and ] keys, page through every copy you have made; each lies in the tray, ready to drag. SAVE saves the page on top as a new file, wherever you choose and in the format you pick. REVEAL shows the copy in its folder. REPRINT puts the copy’s original back on the glass with the settings it was made with: press START to make it again. Drag a page back onto the glass, or drop one from your Copies, and it goes on as an original, ready to be copied the other way; the new copy says which page it came from. To drag several pages at once, Shift-click them, then drag one: they all go, in page order. Every copy’s folder holds a ticket.txt, a plain-text record of how it was made: the original and its fingerprint, the settings, the tempo and where it came from, the instruments, and every page’s file and fingerprint."
  },
  {
+  "url": "documentation.html#studio",
+  "heading": "The Studio",
+  "text": "Above the machine are two tabs, COPIER and STUDIO. Press Ctrl+1 or Ctrl+2 (Cmd+1 or Cmd+2 on a Mac) to reach them from anywhere in the window, or move between the tabs with the arrow keys. Switching never stops anything: a copy being scanned carries on behind the Studio, and its pages are out when you come back. Each instance of the plugin keeps its own tab. To open a copy, press STUDIO on the touch screen to open the copy in the tray, or select a file under Copies in the browser and press Open in Studio. A copy of an audio loop opens its MIDI pages, one part tab each, in page order; a copy of a MIDI file opens the parts of the MIDI it was made from. The notes are read from the files the copy wrote, so a copy whose files have moved or changed does not open, and the Studio says why. If the copy already open has changes you haven’t sent, opening another asks first. Each part is edited in Freally MIDI Master’s piano roll. Double-click to draw a note, and drag a note to move it. Drag its left or right edge, where the pointer becomes [ or ], to shorten or lengthen it. Select notes with a box, with Shift-click or with Ctrl-click; copy, cut and paste them; clone them with Shift+D or by dr"
+ },
+ {
+  "url": "documentation.html#mixer",
+  "heading": "The mixer and your own sounds",
+  "text": "The Studio has three views, Notes, Mixer and Sound, in the tabs at its top right; the arrow keys move between them. Every fader, knob and choice in them belongs to the project's Copy Settings, so what the Studio plays is exactly what START prints, and it is saved with the project. The Mixer has a strip for every part of the open copy and one for the master. A pitched part's strip has Freally MIDI Master's channel strip: Low, Mid and High, the Room and Echo sends, Heat and Pitch Mod. Under it are the pan knob, the fader with its meter, and the S and M keys. The meter is green below −12 dBFS, yellow up to −3 and red above, and its clip light comes on at 0 dBFS and stays on until you click it. A part with its fader all the way down is not printed at all. Drag a fader or a knob up and down, hold Shift to move it finely, or turn the mouse wheel over it. With it focused, the arrow keys move it a step, Home and End take it to either end, and a double-click puts it back: a fader to 0 dB, a knob to its own default. Every one says its value as it moves. Sound shapes the part shown. It plays through the library's instrument, with Freally MIDI Master's SYNTH page beneath it: the oscillators, t"
+ },
+ {
   "url": "documentation.html#browser",
   "heading": "The browser",
   "text": "The browser opens on its Categories: Copies, every page and mix you have made, and Recent, the originals you last put on the glass. Under them are the folders you have added; choose + Add Folder to add one, up to 128. A folder on a drive that is not plugged in keeps its place and says it isn’t connected right now. To stop browsing a folder, right-click it, or select it and press Delete; nothing on disk is touched. Open a folder to walk it as a tree. Type to filter it by name, pick a tag or Starred to narrow it, and choose Show all files to see the sidecar files Flipcopy hides, such as .asd and .reapeaks. Back and Forward take you through the places you have been. Walk the rows with ↑ and ↓: each row you land on plays once in the preview. → opens a folder and ← closes it. Enter puts the selected file on the glass, and so does dragging its row onto the copier. The first time you add a folder, Flipcopy counts its files, with a bar that shows how far it has got. It reads at most 12 folders deep and 50,000 files, and never follows a shortcut out of the folder."
@@ -130,6 +140,36 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Privacy and the network",
   "text": "Flipcopy has no account and no telemetry, and the plugin and standalone app contain no networking code at all. Your files and your copies never leave your computer. It contains no AI of any kind: every copy is made by classic, deterministic signal processing, and a build gate fails if a machine-learning library is ever added."
+ },
+ {
+  "url": "changelog.html#0-5-7-2026-10-06-the-mixer-and-your-own-instruments-added",
+  "heading": "Added",
+  "text": "Notes, Mixer and Sound. Three views in the Studio, side by side at its top; the arrow keys move between them. The mixer. A strip for every part and one for the master: a fader with its meter, pan, solo and mute, and — for a part on a library instrument — MIDI Master's channel strip: Low, Mid and High, Room, Echo, Heat and, for an instrument that sings, Pitch Mod. The meter runs green, then yellow from −12 dBFS, then red from −3, and its clip light comes on at 0 dBFS and stays on until you click it. The mixer is the copy's: what the Studio plays is what START prints, and a part with its fader all the way down is not printed. Realistic faders, knobs and keys. Rendered in Blender for every Freally product: the faders, every knob, the command keys and the toggle keys, with a pressed animation (reduced motion keeps the press without the glow). Drag, hold Shift to move finely, turn the mouse wheel, double-click to go back, or use the keyboard; every one says its value. Realistic sliders and on/off switches. Every slider has a gray, grooved thumb on a groove lit up to it, and every on/off setting is a pill switch — lit when it is on, its knob slid to that end, ON or OFF pressed into it. R"
+ },
+ {
+  "url": "changelog.html#0-5-7-2026-10-06-the-mixer-and-your-own-instruments-changed",
+  "heading": "Changed",
+  "text": "Copy Settings says what the copy plays : a part on one of your sampler sounds, the drums on your kit, and a mixer set in the Studio — with a button to reset it. Choosing a part's instrument starts it as itself: the knobs moved on the instrument before, and a sampler sound, are let go."
+ },
+ {
+  "url": "changelog.html#0-5-7-2026-10-06-the-mixer-and-your-own-instruments-fixed",
+  "heading": "Fixed",
+  "text": "Waveforms drawn from the sound itself. The preview's waveform — and the picture a file carries when it is dragged — is read from the file's own samples, every column its true peaks and its loudness, drawn as a DAW draws one: the peaks as a soft outline round a solid body. A short one-shot had drawn as a few flat blocks. A maximized window is filled. Maximized or made bigger, the standalone showed the app at the size it opened at, with a white edge beside it; now the whole window is the app, scaled as one. In Arabic, the Studio's SEND TO THE COPIER key sits at the end of its row again. v0.5.5 2026-10-06 The Studio A second tab beside the copier. Open a copy in the Studio and each of its parts is a tab in MIDI Master's own piano roll: change the notes, hear them through the instruments the copy prints with, and send the edit back to the glass — where the green START makes a new copy of it that drags into your DAW."
+ },
+ {
+  "url": "changelog.html#0-5-5-2026-10-06-the-studio-added",
+  "heading": "Added",
+  "text": "COPIER and STUDIO. Two tabs above the machine — Ctrl+1 and Ctrl+2 ( Cmd on a Mac) from anywhere, or the arrows between them. Switching never stops anything: a copy being scanned carries on behind the Studio, and its pages are out when you come back. Each instance keeps its own tab. Open in Studio. The touch screen's STUDIO key opens the copy in the tray; in the browser, Open in Studio opens the copy of a file you select in Copies. A copy of an audio loop opens its MIDI pages, one tab each in page order; an audio copy opens the parts of the MIDI it was made from. The notes are read from the files the copy wrote — a copy whose files have moved or changed is refused, and the Studio says why. MIDI Master's piano roll. Draw a note with a double-click; drag a note to move it; drag its left edge [ or its right edge ] to lengthen or shorten it; box-select, Shift- and Ctrl-click; copy, cut, paste, clone ( Shift+D , or drag with Alt), delete (Delete, Backspace, or a right-click); nudge with the arrows; the velocity lane underneath; snap; undo and redo. Drums show their kit voices by name down the side. Hear it. PLAY, STOP and LOOP, and a solo and a mute on every part. What plays is exactly t"
+ },
+ {
+  "url": "changelog.html#0-5-5-2026-10-06-the-studio-changed",
+  "heading": "Changed",
+  "text": "The fan of pages is wider. Every page under the top one shows its left and front edges, wide enough to Shift-click and grab; a page you raise goes to the top of the pile and the pages under it close up. A Shift-click picks a page without moving the pile. A one-part MIDI file is copied as the part its name says. A file of a single line named for its part — …-Bass.mid , … - Countermelody - … — is copied as that part, through that part's instrument, rather than guessed from how high or low it sits."
+ },
+ {
+  "url": "changelog.html#0-5-5-2026-10-06-the-studio-fixed",
+  "heading": "Fixed",
+  "text": "A long row of buttons under a selected file in the browser could push the browser under the copier; it now wraps. A file the copier writes is never written over another that a second copier (another instance of Flipcopy in your DAW) saved under the same name a moment before; it takes the next free name. v0.5.0 2026-10-05 The touch screen The copier's touch screen comes alive. Copy Settings opens out of it — which parts to copy, the grid, the swing, the tempo, the instruments, the format — and every setting changes the copy you make; the screen's keys page through your copies, save them, show them and print them again; and a copy can go back on the glass to be copied the other way."
  },
  {
   "url": "changelog.html#0-5-0-2026-10-05-the-touch-screen-added",

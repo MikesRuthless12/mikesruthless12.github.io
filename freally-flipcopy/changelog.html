@@ -53,9 +53,60 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
+<ol><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-5-0-2026-10-05-the-touch-screen">
+<div class="releases"><article class="release release--latest" id="0-5-7-2026-10-06-the-mixer-and-your-own-instruments">
+<h2 class="release__head" data-i18n-html="changelog.32a3454bd7d7"><span class="release__meta"><span class="release__ver">v0.5.7</span><time class="release__date" datetime="2026-10-06">2026-10-06</time></span><span class="release__title">The Mixer and Your Own Instruments</span></h2>
+<p data-i18n-html="changelog.17791d5cece3">The Studio gets a mixer and a sound for every part. Mix the parts with realistic faders and knobs, shape each instrument with Freally MIDI Master's synth controls, and play the parts through your own samples — a drum kit of your one-shots, or one sample across the keyboard — kept in one instrument library every Freally product on your computer shares.</p>
+<h3 id="0-5-7-2026-10-06-the-mixer-and-your-own-instruments-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.79b010c66ef4"><strong>Notes, Mixer and Sound.</strong> Three views in the Studio, side by side at its top; the arrow keys move between them.</li>
+<li data-i18n-html="changelog.e333eccd6937"><strong>The mixer.</strong> A strip for every part and one for the master: a fader with its meter, pan, solo and mute, and — for a part on a library instrument — MIDI Master's channel strip: Low, Mid and High, Room, Echo, Heat and, for an instrument that sings, Pitch Mod. The meter runs green, then yellow from −12 dBFS, then red from −3, and its clip light comes on at 0 dBFS and stays on until you click it. The mixer is the copy's: what the Studio plays is what START prints, and a part with its fader all the way down is not printed.</li>
+<li data-i18n-html="changelog.1e76a79a1d7a"><strong>Realistic faders, knobs and keys.</strong> Rendered in Blender for every Freally product: the faders, every knob, the command keys and the toggle keys, with a pressed animation (reduced motion keeps the press without the glow). Drag, hold Shift to move finely, turn the mouse wheel, double-click to go back, or use the keyboard; every one says its value.</li>
+<li data-i18n-html="changelog.a3541ed53ef6"><strong>Realistic sliders and on/off switches.</strong> Every slider has a gray, grooved thumb on a groove lit up to it, and every on/off setting is a pill switch — lit when it is on, its knob slid to that end, ON or OFF pressed into it. Rendered in Blender with the faders, for dark and light.</li>
+<li data-i18n-html="changelog.09c5e76649f5"><strong>Every button is a rendered key.</strong> Settings, the licence agreement, the browser and the Studio use the same Blender keys as the copier, with their press, and keys that sit together are all one width.</li>
+<li data-i18n-html="changelog.1f83f75b3bdd"><strong>A part's sound.</strong> The library instrument with Freally MIDI Master's SYNTH page — oscillators, sub and noise, filter, both envelopes, LFOs, macros and effects — kept with the copy's settings; Reset puts it back.</li>
+<li data-i18n-html="changelog.e93b9221b8bd"><strong>Your own samples.</strong> Select an audio file in the browser and press <em>Add to your samples</em>. A sample is a file on this computer, up to 20 seconds; its pitch is read as it is added, and it is checked again every time it plays, so a sample that has moved or changed is never played as something else.</li>
+<li data-i18n-html="changelog.8f95a81b18c2"><strong>Your own drum kit.</strong> <em>New kit</em>, then a one-shot on each lane — chosen from your samples or dragged from the browser onto the lane.</li>
+<li data-i18n-html="changelog.4f44482071a3"><strong>The simple sampler.</strong> One of your samples across the keyboard for a part, with its root note, tuning, envelope, filter and volume.</li>
+<li data-i18n-html="changelog.26e0f4686505"><strong>Favourites.</strong> A star on any instrument, drum machine, sample, kit or sampler sound; the <em>Starred</em> list plays one on the part.</li>
+<li data-i18n-html="changelog.d16f22a46ceb"><strong>One instrument library for every Freally product</strong> on this computer. Flipcopy ships no samples: yours are read where they are.</li>
+</ul>
+<h3 id="0-5-7-2026-10-06-the-mixer-and-your-own-instruments-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.09f42e7fbf57"><strong>Copy Settings says what the copy plays</strong>: a part on one of your sampler sounds, the drums on your kit, and a mixer set in the Studio — with a button to reset it.</li>
+<li data-i18n-html="changelog.30e9ac21e3ee">Choosing a part's instrument starts it as itself: the knobs moved on the instrument before, and a sampler sound, are let go.</li>
+</ul>
+<h3 id="0-5-7-2026-10-06-the-mixer-and-your-own-instruments-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.64c277607a3c"><strong>Waveforms drawn from the sound itself.</strong> The preview's waveform — and the picture a file carries when it is dragged — is read from the file's own samples, every column its true peaks and its loudness, drawn as a DAW draws one: the peaks as a soft outline round a solid body. A short one-shot had drawn as a few flat blocks.</li>
+<li data-i18n-html="changelog.df0a41720e80"><strong>A maximized window is filled.</strong> Maximized or made bigger, the standalone showed the app at the size it opened at, with a white edge beside it; now the whole window is the app, scaled as one.</li>
+<li data-i18n-html="changelog.b75b41a222c5">In Arabic, the Studio's SEND TO THE COPIER key sits at the end of its row again.</li>
+</ul>
+</article>
+<article class="release" id="0-5-5-2026-10-06-the-studio">
+<h2 class="release__head" data-i18n-html="changelog.2e81a71b3108"><span class="release__meta"><span class="release__ver">v0.5.5</span><time class="release__date" datetime="2026-10-06">2026-10-06</time></span><span class="release__title">The Studio</span></h2>
+<p data-i18n-html="changelog.8b3ee24a5a5b">A second tab beside the copier. Open a copy in the <strong>Studio</strong> and each of its parts is a tab in MIDI Master's own piano roll: change the notes, hear them through the instruments the copy prints with, and send the edit back to the glass — where the green START makes a new copy of it that drags into your DAW.</p>
+<h3 id="0-5-5-2026-10-06-the-studio-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.05f4a806504e"><strong>COPIER and STUDIO.</strong> Two tabs above the machine — <code>Ctrl+1</code> and <code>Ctrl+2</code> (<code>Cmd</code> on a Mac) from anywhere, or the arrows between them. Switching never stops anything: a copy being scanned carries on behind the Studio, and its pages are out when you come back. Each instance keeps its own tab.</li>
+<li data-i18n-html="changelog.c3cc9f721474"><strong>Open in Studio.</strong> The touch screen's <strong>STUDIO</strong> key opens the copy in the tray; in the browser, <strong>Open in Studio</strong> opens the copy of a file you select in Copies. A copy of an audio loop opens its MIDI pages, one tab each in page order; an audio copy opens the parts of the MIDI it was made from. The notes are read from the files the copy wrote — a copy whose files have moved or changed is refused, and the Studio says why.</li>
+<li data-i18n-html="changelog.93f13976feb6"><strong>MIDI Master's piano roll.</strong> Draw a note with a double-click; drag a note to move it; drag its left edge <code>[</code> or its right edge <code>]</code> to lengthen or shorten it; box-select, Shift- and Ctrl-click; copy, cut, paste, clone (<code>Shift+D</code>, or drag with Alt), delete (Delete, Backspace, or a right-click); nudge with the arrows; the velocity lane underneath; snap; undo and redo. Drums show their kit voices by name down the side.</li>
+<li data-i18n-html="changelog.71cc9842a84d"><strong>Hear it.</strong> PLAY, STOP and LOOP, and a solo and a mute on every part. What plays is exactly the file the copier will be given, through the instruments the copy prints with — change a part's instrument right there. A part you solo sounds exactly as its page of the copy will, whatever else is muted.</li>
+<li data-i18n-html="changelog.118cc9125c81"><strong>Send to the copier.</strong> The edit is written as a new MIDI file in your Copies folder's <code>Studio</code> folder — never over another — and put on the glass. Press START and it is copied like any original; its ticket says which copy it was edited from.</li>
+</ul>
+<h3 id="0-5-5-2026-10-06-the-studio-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.9ee308e27a53"><strong>The fan of pages is wider.</strong> Every page under the top one shows its left and front edges, wide enough to Shift-click and grab; a page you raise goes to the top of the pile and the pages under it close up. A Shift-click picks a page without moving the pile.</li>
+<li data-i18n-html="changelog.14a8f0896eef"><strong>A one-part MIDI file is copied as the part its name says.</strong> A file of a single line named for its part — <code>…-Bass.mid</code>, <code>… - Countermelody - …</code> — is copied as that part, through that part's instrument, rather than guessed from how high or low it sits.</li>
+</ul>
+<h3 id="0-5-5-2026-10-06-the-studio-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.ba657b6bc761">A long row of buttons under a selected file in the browser could push the browser under the copier; it now wraps.</li>
+<li data-i18n-html="changelog.0f03db88ad85">A file the copier writes is never written over another that a second copier (another instance of Flipcopy in your DAW) saved under the same name a moment before; it takes the next free name.</li>
+</ul>
+</article>
+<article class="release" id="0-5-0-2026-10-05-the-touch-screen">
 <h2 class="release__head" data-i18n-html="changelog.438e4f8ca3fc"><span class="release__meta"><span class="release__ver">v0.5.0</span><time class="release__date" datetime="2026-10-05">2026-10-05</time></span><span class="release__title">The touch screen</span></h2>
 <p data-i18n-html="changelog.63f032bc62d6">The copier's touch screen comes alive. <strong>Copy Settings</strong> opens out of it — which parts to copy, the grid, the swing, the tempo, the instruments, the format — and every setting changes the copy you make; the screen's keys page through your copies, save them, show them and print them again; and a copy can go back on the glass to be copied the other way.</p>
 <h3 id="0-5-0-2026-10-05-the-touch-screen-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -199,7 +250,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.7</span>
         </div>
       </div>
     </footer>

@@ -34,20 +34,20 @@
     {
       "version": "v0.5.5",
       "phase": "Phase 4.5 — The Studio",
-      "state": "planned",
+      "state": "done",
       "summary": "The Studio: open any copy in a piano roll, change its notes, hear it through any instrument, and print your edit as a new copy."
     },
     {
       "version": "v0.5.7",
       "phase": "Phase 4.7 — The mixer and your own instruments",
-      "state": "planned",
+      "state": "done",
       "summary": "The mixer and your own instruments: realistic knobs to shape every part, your own drum kits and samples, favourites, and one instrument library shared by every Freally app."
     },
     {
       "version": "v0.5.9",
-      "phase": "Phase 4.9 — Skins and light mode",
+      "phase": "Phase 4.9 — Light mode",
       "state": "planned",
-      "summary": "Skins and light mode: five eye-catching skins, drawn in code and the same across every Freally app, each in light and dark, beside a new light mode."
+      "summary": "Light mode: a modern, sleek light mode in Freally green beside the dark one, with the same realistic hardware in both."
     },
     {
       "version": "v0.6.0",
