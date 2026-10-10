@@ -119,7 +119,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#fades",
   "heading": "Fades and faders",
-  "text": "Each end of a clip has three fade handles, as in Freally MIDI Master's Song Arrangement: the length on the clip's top edge and the curve on the fade itself. They never cross, at any clip length. Drag a clip's gain handle from −∞ to +6 dB — hold Shift for fine steps, double-click for 0 dB. The console has a fader for each part and a master fader. Every move is heard while you drag, and is one undo step when you let go."
+  "text": "Each end of a clip has three fade handles, as in Freally MIDI Master's Song Arrangement: the length on the clip's top edge and the curve on the fade itself. They never cross, at any clip length. Drag a clip's gain handle from −∞ to +6 dB — hold Shift for fine steps, double-click for 0 dB. The console has a fader for each part and a master fader. Every move is heard while you drag, and is one undo step when you let go. The console's faders work like every Freally app's: from −96 dB to +6 dB, even in decibels, 0.1 dB a step, the whole range over 200 pixels — hold Shift for a quarter of that. Double-click or Alt-click a fader for 0 dB; on the keyboard, Page Up and Page Down move it a tenth of the way, Home sends it to the floor and End to the top. The number under a fader is what you set; the meter beside it shows what plays — green below −12 dBFS, yellow to −3, red above — and its clip light stays on until you click it."
  },
  {
   "url": "documentation.html#automation",
@@ -147,6 +147,11 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "The Arrangement menu holds every arrangement of the loop you have open: New, Duplicate, Rename, Delete, Switch — on the next bar while playing, at once when stopped — and Compare, an A/B between any two. Each arrangement keeps four snapshots, A to D: click one to recall it, or Shift-click to keep the arrangement there. Export arrangement… writes one arrangement as an .unarr file, without its loop. Import arrangement… lays one over the loop you have open, finding each section, clip, move and lane by what it is, and lists anything that had no place."
  },
  {
+  "url": "documentation.html#midi",
+  "heading": "The MIDI view and the Velocity Doctor",
+  "text": "Press MIDI in the header to see the arrangement as notes: each clip on the timeline shows the notes its part plays, and every handle in the drag rack — the mix, a part, a section — now carries a MIDI file instead of audio. Press it again for the audio. The toggle changes only what you see and drag: no clip, section, fade or marker moves, and nothing joins your undo history. MIDI in the header: the loop read as notes, why each part was read as it was, and the audio again. The notes come from your loop. Unloop reads each captured part as notes with Freally MIDI Master's audio-to-MIDI road — classic signal analysis, no AI — while your DAW keeps working. The MIDI panel lists every part and why it was read as it was (on the drum channel, plays like a kit, the lowest voice, split by pitch…), and says plainly what the road cannot do: it writes no counter-melody from audio, a sung line is not written as notes, chords are spelled plainly, and a hit hidden under a louder one is lost. If you have the loop as MIDI, drop the .mid file on the MIDI panel, or choose it there: its notes are used for this part instead, split exactly as Freally MIDI Master splits a file. It is kept with your project "
+ },
+ {
   "url": "documentation.html#keys",
   "heading": "Keyboard shortcuts",
   "text": "Every edit in the Song Arrangement view works without a mouse. In Unloop, press ? for this sheet; on a Mac, Ctrl/⌘ is ⌘ . Everywhere Undo Ctrl/⌘ + Z Redo Ctrl/⌘ + Shift + Z or Ctrl + Y Show this sheet ? Play or pause the preview while your DAW is stopped Space Close a dialog, a card or a panel Escape Song Arrangement view Select the next clip ] Select the previous clip [ Select the clip on the lane above Alt + ↑ Select the clip on the lane below Alt + ↓ Select every clip Ctrl/⌘ + A Select nothing, or let go of a drag Escape Move the selected clips earlier by the snap ← Move the selected clips later by the snap → Move the selected clips to the lane above ↑ Move the selected clips to the lane below ↓ Shorten the clip from its end Shift + ← Lengthen the clip at its end Shift + → Lengthen the clip at its start Alt + Shift + ← Shorten the clip from its start Alt + Shift + → Raise the clips’ gain = or + Lower the clips’ gain - Move the edit cursor earlier , Move the edit cursor later . Split at the edit cursor S Hold the clip’s fade handles F Reverse the selected clips R Lock or unlock the selected clips L Copy the selected clips Ctrl/⌘ + C Cut the selected clips Ctrl/⌘ + X Paste at the "
@@ -154,7 +159,12 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#sounds",
   "heading": "Interface sounds and the title bar",
-  "text": "Opening or closing Settings, a menu or a dialog, and showing or hiding the Loop Library, each makes a short sound — the same sounds in every Freally app — that lasts exactly as long as the move on screen. They play through Unloop's own output in your DAW, never into your record: not into a Print, a capture, a stem, a drag or an offline bounce. In Settings you can switch them off, set their level, or keep Quiet while playing on (it is on to start with), so they stay silent while your DAW or the preview plays. With reduced motion turned on in your system, nothing moves and a short tick plays instead. In the standalone app the title bar follows the theme — dark in the dark theme, light in the light one — and carries no title, because the turning name at the top of the window is the title. Inside a DAW the plugin's window belongs to the DAW and keeps its title."
+  "text": "Opening or closing Settings, a menu or a dialog, and showing or hiding the Loop Library, each makes a short sound — the same sounds in every Freally app — that lasts exactly as long as the move on screen. They play through Unloop's own output in your DAW, never into your record: not into a Print, a capture, a stem, a drag or an offline bounce. In Settings you can switch them off, set their level, or keep Quiet while playing on (it is on to start with), so they stay silent while your DAW or the preview plays. With reduced motion turned on in your system, nothing moves and a short tick plays instead. Interface sounds in Settings: on or off, their level, and Quiet while playing. In the standalone app the title bar follows the theme — dark in the dark theme, light in the light one — and carries no title, because the turning name at the top of the window is the title. Inside a DAW the plugin's window belongs to the DAW and keeps its title."
+ },
+ {
+  "url": "documentation.html#look",
+  "heading": "Themes, controls and motion",
+  "text": "Unloop has two themes, dark and light, on Freally green; in Settings choose Dark, Light or System, which follows your computer. Its faders, knob and meters, the GENERATE, REROLL and PRINT keys, and the sliders and switches are the Freally family's — the same controls as Freally Flipcopy, rendered for each theme — so every Freally app looks and presses the same. Pressing REROLL and moving a fader, then Light, Dark and System. In Settings, Motion has two choices. Speed: Quick turns the name at the top twice as fast. Reduced motion: Reduce lays the name flat and stills every animation; Follow the system does the same whenever your computer asks for less motion. Quick turns the name at the top faster; Reduce lays it flat."
  },
  {
   "url": "documentation.html#language",
@@ -174,7 +184,42 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#limits",
   "heading": "Known limitations",
-  "text": "MIDI — the song template, MIDI loops and the Velocity Doctor — arrives in version 0.7.0. A loop's key is not known until then, so default file names leave the key out. A drag shows no picture of what you are dragging yet. A reverb or delay throw on the last bar is cut at the record's last bar line; the print does not ring on past it. On a second monitor at another display scale, the editor sizes itself from the primary display. Unloop has not yet been worked through by hand in every DAW, on every system. That is the release candidate's job, before 1.0.0."
+  "text": "A loop's key is not read yet, so default file names leave the key out. A drag shows no picture of what you are dragging yet. A reverb or delay throw on the last bar is cut at the record's last bar line; the print does not ring on past it. On a second monitor at another display scale, the editor sizes itself from the primary display. Unloop has not yet been worked through by hand in every DAW, on every system. That is the release candidate's job, before 1.0.0."
+ },
+ {
+  "url": "changelog.html#unreleased-added",
+  "heading": "Added",
+  "text": "Feature videos in the manual — six short, silent videos that loop beside their chapters, filmed in the real app: the themes and the console's controls, motion, the interface sounds, the MIDI view, a MIDI loop and the Velocity Doctor. npm run showcase films them from the release standalone, on a profile of its own, with a drawn cursor. v0.7.0 2026-10-06 X: MIDI Flip the view to MIDI and drag the same arranged record out as a multi-track MIDI song. The notes come from your loop, read by Freally MIDI Master's audio-to-MIDI road (no AI anywhere in it), or from a MIDI loop you drop on the instance. Every move, fade and section lands in the file honestly, and each part's velocities are set to the right kind. 0.6.7 , the look, ships inside this tag."
+ },
+ {
+  "url": "changelog.html#0-7-0-2026-10-06-x-midi-added",
+  "heading": "Added",
+  "text": "The AUDIO/MIDI toggle — the MIDI chip in the header. Pressed, the lanes draw each clip's notes and every drag handle (the mix, a role, a section) carries a Standard MIDI File instead of a WAV. It changes the view and nothing else: no clip, section, fade or marker moves, and undo is untouched. The MIDI song template — one Type 1 file: a conductor track with the tempo, the time signature and a marker per section, then one track per part, named by part, with drums on channel 10. Each clip's notes follow its slip, repeat and reverse. A mute, drop-out or cut takes notes out, a stutter or roll repeats them with ramped velocities, and half-time stretches them. Filters, volume, pan and sends become controllers. The same seed gives the same bytes, and the MIDI plan is the audio plan, one tiling. Honest about what MIDI cannot say. A move with no MIDI meaning (a rewind, a reverse, lo-fi) is a marker in the file and a badge on the map. A move MIDI can only approximate (a tape stop, a pitch dive) is a pitch bend plus a marker, flagged in its tooltip. The MIDI panel counts them. Fades in MIDI — a fade scales the velocities of the notes it covers, along the same curve the audio follows, or, by ch"
+ },
+ {
+  "url": "changelog.html#0-7-0-2026-10-06-x-midi-changed",
+  "heading": "Changed",
+  "text": "Loop projects are schema 7 : they keep the MIDI view, the MIDI loop and the velocity choices. A schema 6 project opens in the audio view with the model's velocities. A receipt now says which format was exported, and for a MIDI file, what it held (the song, a part or a section) and how its fades were written. The contact is freallyproducts@gmail.com everywhere (the licence, the EULA, the security policy, the plugin's details a DAW shows, the crate metadata)."
+ },
+ {
+  "url": "changelog.html#0-7-0-2026-10-06-x-midi-security",
+  "heading": "Security",
+  "text": "A dropped MIDI loop is bounded : refused over 40 KB, by the page before it is sent and by the plugin before it is decoded, parsed by engine 's reader, and kept only in the loop project. v0.6.7 2026-10-06 L: The look Unloop now looks and presses like the rest of the Freally family. Its keys, faders, knob, meters, slider and switches are Freally Flipcopy's, and so are its light and dark themes on Freally green, copied as they are and never redrawn here. Shipped inside 0.7.0 ; this rung has no tag of its own."
+ },
+ {
+  "url": "changelog.html#0-6-7-2026-10-06-l-the-look-added",
+  "heading": "Added",
+  "text": "Motion settings — Speed ( Normal or Quick : Quick turns the title twice as fast; a popover's or panel's move stays as long as its sound) and Reduced motion ( Follow the system or Reduce : Reduce lays the title flat and stills every animation)."
+ },
+ {
+  "url": "changelog.html#0-6-7-2026-10-06-l-the-look-changed",
+  "heading": "Changed",
+  "text": "The look is Freally Flipcopy's, copied, never redrawn. The console's faders, knob and meters, its GENERATE, REROLL and PRINT keys, and Settings' slider and switches are Flipcopy's components drawing the Freally playbook's Blender renders, in a light set and a dark set. Every other button stays a plain labeled button, and the preview's play, stop and loop are plain icon buttons. A gate holds every copied file to Flipcopy's, byte for byte. Two themes, light and dark, on Freally green ( #79d920 ), from the shared Freally UI kit Flipcopy uses: its grounds, glass panels, chassis and glow. The console follows the theme, and its lamps have daylight colours of their own. Every pair passes WCAG 2.1 AA in both themes. No skins (the owner, 2026-10-06). The faders work like the rest of the family's : −96 to +6 dB, even in dB, 0.1 dB a step, the whole range over 200 pixels ( Shift for a quarter of that), a double-click or Alt -click back to 0 dB, Page Up / Page Down a tenth of the travel, Home to the floor and End to the top. The cap shows what you set, and the meter beside it shows what plays. The meters are Flipcopy's : green below −12 dBFS, yellow to −3, red above, and a clip light at 0 dBFS"
+ },
+ {
+  "url": "changelog.html#0-6-7-2026-10-06-l-the-look-security",
+  "heading": "Security",
+  "text": "The editor's pages allow inline styles ( style-src 'self' 'unsafe-inline' ). Flipcopy's hardware set declares each render's address in one stylesheet of the page's own, and that address depends on where the page is served, so a hash cannot pin it. Scripts are still 'self' only, and nothing else loosened. v0.6.5 2026-10-05 U: Sounds, the title bar & Report this Unloop now sounds and stands like the rest of the Freally family, and when it fails, it says so in a way you can report. Opening a popover or a dialog and showing the Loop Library each make the family's own short sound, exactly as long as the move; the standalone's title bar is dark in dark mode, with no title; and an error that is Unloop's own fault offers Report ."
  },
  {
   "url": "changelog.html#0-6-5-2026-10-05-u-sounds-the-title-bar-report-this-added",

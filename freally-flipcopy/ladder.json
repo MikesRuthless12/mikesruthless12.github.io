@@ -46,14 +46,14 @@
     {
       "version": "v0.5.9",
       "phase": "Phase 4.9 — Light mode",
-      "state": "planned",
+      "state": "done",
       "summary": "Light mode: a modern, sleek light mode in Freally green beside the dark one, with the same realistic hardware in both."
     },
     {
       "version": "v0.6.0",
       "phase": "Phase 5 — In every DAW",
-      "state": "planned",
-      "summary": "In every DAW: saved with your project, several copies at once, scanning straight from a track, and checked DAW by DAW."
+      "state": "done",
+      "summary": "In every DAW: saved with your project, a scan straight from the track, any file dragged from the browser onto a track, and eight copiers at once."
     },
     {
       "version": "v0.7.0",

@@ -53,9 +53,51 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
+<ol><li><a href="#0-6-0-2026-10-09-in-every-daw">v0.6.0</a></li><li><a href="#0-5-9-2026-10-09-light-mode">v0.5.9</a></li><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-5-7-2026-10-06-the-mixer-and-your-own-instruments">
+<div class="releases"><article class="release release--latest" id="0-6-0-2026-10-09-in-every-daw">
+<h2 class="release__head" data-i18n-html="changelog.ad1079ac0447"><span class="release__meta"><span class="release__ver">v0.6.0</span><time class="release__date" datetime="2026-10-09">2026-10-09</time></span><span class="release__title">In Every DAW</span></h2>
+<p data-i18n-html="changelog.8e143766c735">Flipcopy behaves as a well-mannered plugin in your DAW. Your project remembers what was on the glass. Scan a few bars straight from the track the copier sits on. Drag a file from the browser straight into a track. Eight copiers at once, at a 256-sample buffer, never crackle.</p>
+<h3 id="0-6-0-2026-10-09-in-every-daw-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.ce12abba882c"><strong>Saved with your project.</strong> The original on the glass is kept with your DAW's project, and the glass shows it again when you reopen it. If the file has moved, the glass says <em>The original has moved</em>, with <strong>Locate…</strong> to find it. A project whose Flipcopy state can't be read opens with an empty glass and says so; nothing from an earlier project is ever carried over. A newer Flipcopy's settings in a project are kept as they are, so opening a project in an older version and saving it again loses nothing.</li>
+<li data-i18n-html="changelog.fd7b1afa3b01"><strong>Scan from track.</strong> In a DAW, Copy Settings has <em>Scan from track</em>: choose 1 to 16 bars, <strong>Arm</strong>, and press play in your DAW. The track's audio — or the notes it receives — is captured as it plays, written as a new file in your Copies folder's <code>Captures</code> folder, and put on the glass. Nothing is copied until you press START. The panel says what a host won't send: Ableton Live gives an audio effect no MIDI, and Logic may not run a track that isn't live.</li>
+<li data-i18n-html="changelog.222f72339df2"><strong>Drag a file straight into your DAW.</strong> A grip at the end of every audio and MIDI file in the browser, and on the Preview strip, drags the file itself onto a track. The row itself still drags onto the glass.</li>
+<li data-i18n-html="changelog.38dd0a51f105"><strong>The drag shows the exact clip.</strong> While a page or a file is dragged out to your DAW, the picture under the cursor is that clip — its notes or its waveform — in the lime frame.</li>
+</ul>
+<h3 id="0-6-0-2026-10-09-in-every-daw-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.4349d2ea9d2d"><strong>The pianos sound like pianos.</strong> The Grand, Acoustic, Upright and Honky-Tonk pianos — the default toner among them — play Freally MIDI Master's new acoustic voice, built from measurements of a recorded concert grand and upright, with no buzz. A copy you made before keeps the piano it was made with: REPRINT and its ticket make it again exactly as it was.</li>
+<li data-i18n-html="changelog.4dbfe3c38777"><strong>A piano copy, copied back to MIDI, reads less well for now.</strong> The new pianos ring with real overtones, and the copier can hear them as a line of their own: the melody page may come out an octave or more too high, with the true notes on the countermelody page. Other instruments read as before. A later version teaches the copier to tell a note from its overtones.</li>
+<li data-i18n-html="changelog.528ac7aef2bf"><strong>Eight copiers at once.</strong> Eight instances, each with its sounds, its preview and a scan running, cost well under one percent of a 256-sample block; an editor with nothing moving runs no animation loop.</li>
+<li data-i18n-html="changelog.c5bb4099ef7c"><strong>Arrow keys and the mouse wheel move a fader one step, with or without Shift.</strong> A tenth of a decibel is the finest a fader holds; Shift still makes a drag finer.</li>
+</ul>
+<h3 id="0-6-0-2026-10-09-in-every-daw-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.489f105e939c"><strong>Two Flipcopy windows opened at once both open.</strong> Opened together — two standalones, or a DAW that runs each plugin in its own process and restores their windows — an editor could stay blank. Fixed in the webview the Freally apps share.</li>
+<li data-i18n-html="changelog.047de85cd8a2"><strong>No click when your DAW changes its sample rate or buffer size</strong> while the preview plays: the sound comes back in where it was, faded in over five milliseconds.</li>
+<li data-i18n-html="changelog.ea5df30e60e0">The search for an instrument, and every other thing the window asks of the plugin, is held to a size; a request too large is refused unread.</li>
+</ul>
+</article>
+<article class="release" id="0-5-9-2026-10-09-light-mode">
+<h2 class="release__head" data-i18n-html="changelog.598233edd80f"><span class="release__meta"><span class="release__ver">v0.5.9</span><time class="release__date" datetime="2026-10-09">2026-10-09</time></span><span class="release__title">Light Mode</span></h2>
+<p data-i18n-html="changelog.ee349e4aa239">A light mode beside the dark one, both in Freally green — and one look, one set of rendered hardware, for every Freally app.</p>
+<h3 id="0-5-9-2026-10-09-light-mode-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.e47c7e599a1f"><strong>Light and dark.</strong> <em>Settings → Appearance</em>: Dark or Light, each shown by its own copier. The change is immediate, with no flash of the other colour, and kept on this computer, the same in the plugin and the standalone. The copier is rendered on each mode's own ground, so it always sits in one room with no box around it.</li>
+<li data-i18n-html="changelog.b936af04b352"><strong>The Freally look.</strong> The panels, the glass, the dialogs and the keys come from one design shared by every Freally app — modern, sleek and futuristic, in light and in dark — and the knobs, faders, sliders, switches and keys are rendered for each mode.</li>
+<li data-i18n-html="changelog.8d9fb3f2fece"><strong>The title bar follows the mode.</strong> The standalone's title bar is light in light mode and dark in dark mode, with no title (the turning wordmark is the title).</li>
+</ul>
+<h3 id="0-5-9-2026-10-09-light-mode-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.58c3153a8c37"><strong>Reduce lays the title flat.</strong> With reduced motion — Flipcopy's own setting, or your system's — the turning title stops square to you, level and flat, rather than held at an angle.</li>
+<li data-i18n-html="changelog.930a82a2f066"><strong>Quick turns the title faster</strong>: in half the time, as everything Quick speeds up. Reduced motion still wins over both speeds.</li>
+<li data-i18n-html="changelog.9a34338f7069"><strong>Every key is one width</strong>, in every language, and labels that were too long for it are shorter.</li>
+<li data-i18n-html="changelog.11bbf02df3a2"><strong>The Studio's play, stop and loop are plain buttons</strong>, as a transport's are.</li>
+<li data-i18n-html="changelog.27a86b95b65b"><strong>Settings → Sounds says what its switch does</strong>: <em>Animation sounds</em> — the sounds of dialogs and panels opening and closing — on or off, beside the machine's own sounds.</li>
+</ul>
+</article>
+<article class="release" id="0-5-7-2026-10-06-the-mixer-and-your-own-instruments">
 <h2 class="release__head" data-i18n-html="changelog.32a3454bd7d7"><span class="release__meta"><span class="release__ver">v0.5.7</span><time class="release__date" datetime="2026-10-06">2026-10-06</time></span><span class="release__title">The Mixer and Your Own Instruments</span></h2>
 <p data-i18n-html="changelog.17791d5cece3">The Studio gets a mixer and a sound for every part. Mix the parts with realistic faders and knobs, shape each instrument with Freally MIDI Master's synth controls, and play the parts through your own samples — a drum kit of your one-shots, or one sample across the keyboard — kept in one instrument library every Freally product on your computer shares.</p>
 <h3 id="0-5-7-2026-10-06-the-mixer-and-your-own-instruments-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -250,7 +292,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.7</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.0</span>
         </div>
       </div>
     </footer>

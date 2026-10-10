@@ -46,14 +46,14 @@
     {
       "version": "v0.6.7",
       "phase": "L — The look",
-      "state": "planned",
-      "summary": "Five skins in light and dark drawn in code, and knobs, faders, buttons, sliders and toggles rendered in Blender — copied from Freally Flipcopy, the same in every Freally app."
+      "state": "done",
+      "summary": "Knobs, faders, meters, keys, sliders and switches rendered in Blender, on two themes — light and dark on Freally green — copied from Freally Flipcopy, the same in every Freally app."
     },
     {
       "version": "v0.7.0",
       "phase": "X — MIDI",
-      "state": "planned",
-      "summary": "Audio-to-MIDI, MIDI loops in, the MIDI song template, the Velocity Doctor, MIDI drag-out."
+      "state": "done",
+      "summary": "Audio-to-MIDI with no AI, MIDI loops in, the MIDI song template, the Velocity Doctor, the AUDIO/MIDI toggle and MIDI drag-out."
     },
     {
       "version": "v0.8.0",

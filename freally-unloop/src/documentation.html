@@ -3,7 +3,7 @@
      the rail's entry. -->
 
 <kit-head>
-  <kit-lede data-i18n="docs.intro">This manual describes version 0.6.5, the version built today. Where something on the Features page arrives in a later version, the manual says which.</kit-lede>
+  <kit-lede data-i18n="docs.intro">This manual describes version 0.7.0, the version built today. Where something on the Features page arrives in a later version, the manual says which.</kit-lede>
 </kit-head>
 
 <kit-manual>
@@ -85,6 +85,7 @@
     <h2 id="fades" data-i18n="docs.fades.title">Fades and faders</h2>
     <p data-i18n="docs.fades.p1">Each end of a clip has three fade handles, as in Freally MIDI Master's Song Arrangement: the length on the clip's top edge and the curve on the fade itself. They never cross, at any clip length.</p>
     <p data-i18n="docs.fades.p2">Drag a clip's gain handle from −∞ to +6 dB — hold Shift for fine steps, double-click for 0 dB. The console has a fader for each part and a master fader. Every move is heard while you drag, and is one undo step when you let go.</p>
+    <p data-i18n="docs.fades.p3">The console's faders work like every Freally app's: from −96 dB to +6 dB, even in decibels, 0.1 dB a step, the whole range over 200 pixels — hold Shift for a quarter of that. Double-click or Alt-click a fader for 0 dB; on the keyboard, Page Up and Page Down move it a tenth of the way, Home sends it to the floor and End to the top. The number under a fader is what you set; the meter beside it shows what plays — green below −12 dBFS, yellow to −3, red above — and its clip light stays on until you click it.</p>
   </section>
 
   <section>
@@ -114,6 +115,18 @@
     <h2 id="shelf" data-i18n="docs.shelf.title">Many arrangements on one loop</h2>
     <p data-i18n="docs.shelf.p1">The Arrangement menu holds every arrangement of the loop you have open: New, Duplicate, Rename, Delete, Switch — on the next bar while playing, at once when stopped — and Compare, an A/B between any two. Each arrangement keeps four snapshots, A to D: click one to recall it, or Shift-click to keep the arrangement there.</p>
     <p data-i18n="docs.shelf.p2">Export arrangement… writes one arrangement as an .unarr file, without its loop. Import arrangement… lays one over the loop you have open, finding each section, clip, move and lane by what it is, and lists anything that had no place.</p>
+  </section>
+
+  <section>
+    <h2 id="midi" data-i18n="docs.midi.title">The MIDI view and the Velocity Doctor</h2>
+    <p data-i18n="docs.midi.p1">Press MIDI in the header to see the arrangement as notes: each clip on the timeline shows the notes its part plays, and every handle in the drag rack — the mix, a part, a section — now carries a MIDI file instead of audio. Press it again for the audio. The toggle changes only what you see and drag: no clip, section, fade or marker moves, and nothing joins your undo history.</p>
+    <figure class="demo"><video src="media/midi.webm" poster="media/midi.jpg" autoplay muted loop playsinline preload="metadata" width="1600" height="900"></video><figcaption data-i18n="docs.midi.demo">MIDI in the header: the loop read as notes, why each part was read as it was, and the audio again.</figcaption></figure>
+    <p data-i18n="docs.midi.p2">The notes come from your loop. Unloop reads each captured part as notes with Freally MIDI Master's audio-to-MIDI road — classic signal analysis, no AI — while your DAW keeps working. The MIDI panel lists every part and why it was read as it was (on the drum channel, plays like a kit, the lowest voice, split by pitch…), and says plainly what the road cannot do: it writes no counter-melody from audio, a sung line is not written as notes, chords are spelled plainly, and a hit hidden under a louder one is lost.</p>
+    <p data-i18n="docs.midi.p3">If you have the loop as MIDI, drop the .mid file on the MIDI panel, or choose it there: its notes are used for this part instead, split exactly as Freally MIDI Master splits a file. It is kept with your project and never changed on disk. A MIDI loop can be at most 40 KB; Forget the MIDI loop goes back to the notes read from the capture.</p>
+    <figure class="demo"><video src="media/midi-loop.webm" poster="media/midi-loop.jpg" autoplay muted loop playsinline preload="metadata" width="1600" height="900"></video><figcaption data-i18n="docs.midi.demoLoop">A MIDI loop chosen on the MIDI panel, split into drums, bass and chords, then forgotten.</figcaption></figure>
+    <p data-i18n="docs.midi.p4">Dragging the mix gives one MIDI file for the whole song: a track for each part, named after it, with drums on channel 10, the tempo, and a marker at every section. Each clip's notes follow its slip, repeat and reverse. A mute, drop-out or cut takes notes out, a stutter or roll repeats them, half-time stretches them, and filters, volume, pan and sends become controllers. A move MIDI cannot say — a rewind, a reverse, lo-fi — becomes a marker in the file and has a badge on the map; a tape stop or a pitch dive becomes a pitch bend and a marker. The same seed always gives the same file.</p>
+    <p data-i18n="docs.midi.p5">The Velocity Doctor sets each part's velocities to the right kind: drums Tiered — every hit classed as an accent, a main or a ghost, then placed in its band (100–127, 76–89 and 38–51 unless the model says otherwise) — bass and 808 Fixed at 127, chords Flat at 96 with the top voice 6 louder, a melody Contoured into its band with a phrase arch, and a counter-melody 12 lower. Measured keeps the notes' own velocities, and Artist feel uses the model's. Each change is one undo step, and no ghost in a lane is ever louder than a main. Fades in MIDI scales the velocities along each fade, or, if you choose, writes it as expression (CC11).</p>
+    <figure class="demo"><video src="media/velocity.webm" poster="media/velocity.jpg" autoplay muted loop playsinline preload="metadata" width="1600" height="900"></video><figcaption data-i18n="docs.midi.demoDoctor">The Velocity Doctor: drums from Tiered to Fixed, back with Use the model’s, then undo and redo.</figcaption></figure>
   </section>
 
   <section>
@@ -174,12 +187,10 @@
     <div class="table-wrap"><table class="keys">
       <tr><td data-i18n="shortcut.faderUp">Raise the fader a step</td><td><kbd>↑</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>→</kbd></td></tr>
       <tr><td data-i18n="shortcut.faderDown">Lower the fader a step</td><td><kbd>↓</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>←</kbd></td></tr>
-      <tr><td data-i18n="shortcut.faderFineUp">Raise the fader a fine step</td><td><kbd>Shift</kbd>+<kbd>↑</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>Shift</kbd>+<kbd>→</kbd></td></tr>
-      <tr><td data-i18n="shortcut.faderFineDown">Lower the fader a fine step</td><td><kbd>Shift</kbd>+<kbd>↓</kbd> <span data-i18n="docs.keys.or">or</span> <kbd>Shift</kbd>+<kbd>←</kbd></td></tr>
-      <tr><td data-i18n="shortcut.faderBigUp">Raise the fader six steps</td><td><kbd>PageUp</kbd></td></tr>
-      <tr><td data-i18n="shortcut.faderBigDown">Lower the fader six steps</td><td><kbd>PageDown</kbd></td></tr>
-      <tr><td data-i18n="shortcut.faderTop">Fader to the top</td><td><kbd>Home</kbd></td></tr>
-      <tr><td data-i18n="shortcut.faderOff">Fader off</td><td><kbd>End</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderBigUp">Raise the fader a tenth of its travel</td><td><kbd>PageUp</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderBigDown">Lower the fader a tenth of its travel</td><td><kbd>PageDown</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderTop">Fader to the top</td><td><kbd>End</kbd></td></tr>
+      <tr><td data-i18n="shortcut.faderOff">Fader off</td><td><kbd>Home</kbd></td></tr>
     </table></div>
     <h3 data-i18n="shortcutScope.lane">On an automation lane</h3>
     <div class="table-wrap"><table class="keys">
@@ -205,7 +216,16 @@
   <section>
     <h2 id="sounds" data-i18n="docs.sounds.title">Interface sounds and the title bar</h2>
     <p data-i18n="docs.sounds.p1">Opening or closing Settings, a menu or a dialog, and showing or hiding the Loop Library, each makes a short sound — the same sounds in every Freally app — that lasts exactly as long as the move on screen. They play through Unloop's own output in your DAW, never into your record: not into a Print, a capture, a stem, a drag or an offline bounce. In Settings you can switch them off, set their level, or keep Quiet while playing on (it is on to start with), so they stay silent while your DAW or the preview plays. With reduced motion turned on in your system, nothing moves and a short tick plays instead.</p>
+    <figure class="demo"><video src="media/sounds.webm" poster="media/sounds.jpg" autoplay muted loop playsinline preload="metadata" width="1600" height="900"></video><figcaption data-i18n="docs.sounds.demo">Interface sounds in Settings: on or off, their level, and Quiet while playing.</figcaption></figure>
     <p data-i18n="docs.sounds.p2">In the standalone app the title bar follows the theme — dark in the dark theme, light in the light one — and carries no title, because the turning name at the top of the window is the title. Inside a DAW the plugin's window belongs to the DAW and keeps its title.</p>
+  </section>
+
+  <section>
+    <h2 id="look" data-i18n="docs.look.title">Themes, controls and motion</h2>
+    <p data-i18n="docs.look.p1">Unloop has two themes, dark and light, on Freally green; in Settings choose Dark, Light or System, which follows your computer. Its faders, knob and meters, the GENERATE, REROLL and PRINT keys, and the sliders and switches are the Freally family's — the same controls as Freally Flipcopy, rendered for each theme — so every Freally app looks and presses the same.</p>
+    <figure class="demo"><video src="media/look.webm" poster="media/look.jpg" autoplay muted loop playsinline preload="metadata" width="1600" height="900"></video><figcaption data-i18n="docs.look.demo">Pressing REROLL and moving a fader, then Light, Dark and System.</figcaption></figure>
+    <p data-i18n="docs.look.p2">In Settings, Motion has two choices. Speed: Quick turns the name at the top twice as fast. Reduced motion: Reduce lays the name flat and stills every animation; Follow the system does the same whenever your computer asks for less motion.</p>
+    <figure class="demo"><video src="media/motion.webm" poster="media/motion.jpg" autoplay muted loop playsinline preload="metadata" width="1600" height="900"></video><figcaption data-i18n="docs.look.demoMotion">Quick turns the name at the top faster; Reduce lays it flat.</figcaption></figure>
   </section>
 
   <section>
@@ -229,7 +249,7 @@
   <section>
     <h2 id="limits" data-i18n="docs.limits.title">Known limitations</h2>
     <ul>
-      <li data-i18n="docs.limits.midi">MIDI — the song template, MIDI loops and the Velocity Doctor — arrives in version 0.7.0. A loop's key is not known until then, so default file names leave the key out.</li>
+      <li data-i18n="docs.limits.key">A loop's key is not read yet, so default file names leave the key out.</li>
       <li data-i18n="docs.limits.picture">A drag shows no picture of what you are dragging yet.</li>
       <li data-i18n="docs.limits.throw">A reverb or delay throw on the last bar is cut at the record's last bar line; the print does not ring on past it.</li>
       <li data-i18n="docs.limits.display">On a second monitor at another display scale, the editor sizes itself from the primary display.</li>

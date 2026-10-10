@@ -71,8 +71,8 @@
       <p data-i18n="featuresPage.cards.daw.body">CLAP and VST3 on Windows, macOS and Linux, AU on macOS, and a standalone app for working without a DAW — and for Pro Tools, by dragging. Saved with your project, safe in many instances at once, and able to scan straight from a track.</p>
     </div></article>
     <article class="card"><div class="card__media"><kit-art name="particles"></kit-art></div><div class="card__body">
-      <h3 id="skins" data-i18n="featuresPage.cards.skins.title">Skins, light and dark</h3>
-      <p data-i18n="featuresPage.cards.skins.body">Five skins, each a raised chassis rendered in Blender and shared by every Freally app, in light and dark, beside plain light and dark modes. The copier is rendered again for each one, so it always stands on its own ground.</p>
+      <h3 id="light-dark" data-i18n="featuresPage.cards.lightDark.title">Light and dark</h3>
+      <p data-i18n="featuresPage.cards.lightDark.body">A dark mode and a light mode, both in Freally green, from one modern design every Freally app shares, with the knobs, faders, sliders, switches and keys rendered in Blender for each. The copier is rendered again on each mode's own ground, so it always stands in one room.</p>
     </div></article>
     <article class="card"><div class="card__media"><kit-art name="shield"></kit-art></div><div class="card__body">
       <h3 id="offline" data-i18n="featuresPage.cards.offline.title">Offline, private, no AI</h3>
@@ -82,10 +82,18 @@
 </kit-section>
 
 <!-- The comparison. Every cell for another product is from its maker's own
-     pages, checked on 2026-10-01; a cell that could not be verified says so. -->
+     pages, checked on 2026-10-01 (the rows "takes the audio straight from a
+     track" and "light and dark modes" on 2026-10-06: Celemony's page on the
+     Melodyne plug-in's Transfer and ARA; Ableton's Live 12 manual, chapter 13
+     "Converting Audio to MIDI" (audio clips in Live) and Theme & Colors (a
+     light or dark theme, or the system's); Apple's Logic Pro guide, "Create
+     MIDI Track from Flex Pitch Data" (audio regions in Logic). No page of
+     Celemony's, Hit'n'Mix's, Apple's or Lunaverus's was found that says
+     whether their product has a light and a dark mode, so those four cells
+     say not verified); a cell that could not be verified says so. -->
 <kit-section id="compare" label="kit.label.compare">
   <h2 data-i18n="featuresPage.compare.title">Side by side with the commercial tools</h2>
-  <p class="lead" data-i18n="featuresPage.compare.intro">Freally Flipcopy 1.0 next to the commercial tools producers use to turn audio into MIDI and MIDI into audio. Every cell for another product comes from its maker's own pages, checked on 1 October 2026, and prices are US list prices as of October 2026.</p>
+  <p class="lead" data-i18n="featuresPage.compare.intro">Freally Flipcopy 1.0 next to the commercial tools producers use to turn audio into MIDI and MIDI into audio. Every cell for another product comes from its maker's own pages, checked in October 2026, and prices are US list prices as of October 2026.</p>
   <div class="table-wrap" role="region" tabindex="0" aria-labelledby="compare-table">
     <table class="compare" id="compare-table">
       <thead>
@@ -134,7 +142,7 @@
         </tr>
         <tr>
           <th scope="row" data-i18n="featuresPage.compare.row.drag">Drag the result straight onto a DAW track</th>
-          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.anyFile">every page, and any file in its browser</span></td>
           <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ara">in some DAWs, through ARA</span></td>
           <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
           <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
@@ -151,6 +159,15 @@
           <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.appOnly">standalone app only</span></td>
         </tr>
         <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.scan">Takes the audio straight from a track in your DAW</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.audioOrNotes">its audio, or the notes it receives</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.transfer">audio, by Transfer or ARA</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.link">sends audio to its own app</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ownDaw">its own DAW only</span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.ownDaw">its own DAW only</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.appOnly">standalone app only</span></td>
+        </tr>
+        <tr>
           <th scope="row" data-i18n="featuresPage.compare.row.systems">Windows, macOS and Linux</th>
           <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">Windows · macOS · Linux</span></td>
           <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows · macOS</span></td>
@@ -158,6 +175,15 @@
           <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">Windows · macOS</span></td>
           <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note">macOS</span></td>
           <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note">Windows · macOS · Linux</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.lightDark">A light mode and a dark mode</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
+          <td class="unknown"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.unknown">not verified</span></span></td>
         </tr>
         <tr>
           <th scope="row" data-i18n="featuresPage.compare.row.noAi">No AI or machine learning</th>
@@ -187,7 +213,7 @@
       <p data-i18n="featuresPage.compare.theyWin">Where they win: Melodyne Studio, RipX, AnthemScore and Ableton Live can write out the individual notes of a chord from a polyphonic recording (Melodyne only from an instrument recorded on its own); Flipcopy gives you the progression instead, and says so. RipX, Ableton Live Suite and Logic Pro also separate a mix into audio stems, which Flipcopy 1.0 does not.</p>
     </article>
   </div>
-  <p class="fineprint" data-i18n="featuresPage.compare.asOf">Flipcopy's column is version 1.0, which is not out yet, and its price is today's: Flipcopy is free today, and future versions may be sold. The other products change too; this table is as of 1 October 2026.</p>
+  <p class="fineprint" data-i18n="featuresPage.compare.asOf">Flipcopy's column is version 1.0, which is not out yet, and its price is today's: Flipcopy is free today, and future versions may be sold. The other products change too; this table is as of October 2026.</p>
 </kit-section>
 
 <kit-section id="why" label="kit.label.principles">
