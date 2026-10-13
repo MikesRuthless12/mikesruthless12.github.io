@@ -1,0 +1,17 @@
+{
+  "product": "capture",
+  "name": "Freally Capture",
+  "icon": "capture-icon.png",
+  "pages": ["index", "features", "documentation", "changelog"],
+  "changelog": "../CHANGELOG.md",
+  "ladder": "ladder.json",
+  "version": "1.2.1",
+  "status": "kit.status.version",
+  "chips": ["@hero.chipDesktop|Desktop app", "Windows", "macOS", "Linux", "RTMP", "SRT", "WHIP"],
+  "strings": {
+    "site.tagline": "Record and stream like a studio — scenes, sources, multistream, one clean app.",
+    "site.description": "A live-streaming and recording studio for Windows, macOS and Linux: scenes on the GPU, multi-track recording, multistream straight from your machine. No accounts, no telemetry, no AI. Free today; future versions may be sold.",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
+    "footer.yours": "What you record and stream is yours, and so is the responsibility for it. Freally Capture's author never receives, stores or relays any of it."
+  }
+}

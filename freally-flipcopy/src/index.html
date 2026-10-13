@@ -1,0 +1,139 @@
+<!-- Freally Flipcopy — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the family strip, the closing call, the footer)
+     is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">Put it on the glass. Press START.</span> <span class="cycle" data-cycle="hero.cycle" data-words="Drag the copy.|Drag the MIDI.|Drag the audio.">Drag the copy.</span></kit-headline>
+  <kit-lede data-i18n="hero.sub">Audio in, MIDI out. MIDI in, audio out. Free, offline and 100% AI-free.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Turning a loop into MIDI, or a MIDI file into audio, usually means a chain of tools, an export, a re-import and a lot of guessing about what came out.</p>
+      <p data-i18n="what.p2">Flipcopy is a copy machine. Put an audio file or a MIDI file on its glass and it prints the original — the real waveform, or every note, with its data. Press the green START and it prints the copy in the other form: audio in, MIDI out; MIDI in, audio out.</p>
+      <p data-i18n="what.p3">The copy comes out as a printed page with a lime-green frame around its clip. Grab the frame and drag it onto a track in your DAW. Every copy is a real file that stays where it is, so your project never loses it.</p>
+    </div>
+    <figure class="split__art"><kit-art name="stack"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="see" label="kit.label.inAction">
+  <h2 data-i18n="see.title">See it copy</h2>
+  <p class="lead" data-i18n="see.intro">The copier, rendered in Blender: the original lands on the glass, the lid closes, the lamp sweeps, and the copy slides out onto the tray.</p>
+  <div class="stories">
+    <figure class="story">
+      <div class="story__frame" dir="ltr">
+        <video src="media/copier-story-audio-to-midi.mp4#t=0.001" controls playsinline preload="metadata" width="640" height="360"></video>
+        <button type="button" class="story__start" aria-label="Press START to watch it copy" data-i18n-attr="aria-label:see.start">START</button>
+      </div>
+      <figcaption data-i18n="see.audioToMidi">Audio in, MIDI out: a page for each layer — melody, chords, bassline and countermelody.</figcaption>
+    </figure>
+    <figure class="story">
+      <div class="story__frame" dir="ltr">
+        <video src="media/copier-story-midi-to-audio.mp4#t=0.001" controls playsinline preload="metadata" width="640" height="360"></video>
+        <button type="button" class="story__start" aria-label="Press START to watch it copy" data-i18n-attr="aria-label:see.start">START</button>
+      </div>
+      <figcaption data-i18n="see.midiToAudio">MIDI in, audio out.</figcaption>
+    </figure>
+  </div>
+</kit-section>
+
+<kit-section id="features" label="kit.label.inside">
+  <h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><kit-art name="layers"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.copier.title">The copier</h3>
+        <p data-i18n="features.copier.body">A photoreal copy machine rendered in Blender. Put a clip on the glass and it prints the real thing: every note, or the real waveform, with its tempo, length and levels.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="rings"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.start.title">The green START</h3>
+        <p data-i18n="features.start.body">Dropping a clip only places it on the glass. Nothing is copied until you press START, so nothing happens that you did not ask for.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="notes"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.audioToMidi.title">Audio → MIDI</h3>
+        <p data-i18n="features.audioToMidi.body">The drums, bass, melody, countermelody and chords found in a loop, one page each, printed back to back from a single scan, so they drag into your DAW as separate tracks.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="wave"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.midiToAudio.title">MIDI → audio</h3>
+        <p data-i18n="features.midiToAudio.body">A MIDI file played through a real instrument, and drums through a drum machine, printed as an audio file you can drag.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="stack"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.drag.title">Drag the copy</h3>
+        <p data-i18n="features.drag.body">Every page wears a lime-green frame around its clip. Grab it and drop it on a track. The file is real, and Flipcopy never overwrites or deletes it.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="tree"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.browser.title">The browser</h3>
+        <p data-i18n="features.browser.body">A file browser with a preview player, from Freally Oscillate. It shows a waveform for audio and the notes for MIDI, and plays MIDI through the instrument the copy uses.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="horizon"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.daw.title">In any DAW</h3>
+        <p data-i18n="features.daw.body">CLAP, VST3 and AU, plus a standalone app for working without a DAW and for Pro Tools. Windows, macOS and Linux.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="shield"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.free.title">Free, offline, no AI</h3>
+        <p data-i18n="features.free.body">No tier, no account, no telemetry, no network, no model. Classic signal processing, enforced by a build gate rather than promised.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="globe"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="docs.language.title">Languages</h3>
+        <p data-i18n="docs.language.p1">Flipcopy speaks eighteen languages. It starts in your system's language; to choose another, open Settings with the gear at the top of the browser and pick one. The choice applies to every copy of Flipcopy on the computer.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per version. This is the same ladder the private plan follows — if one moves, both move, and a build gate compares them.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">A version that is done is built and tagged. It is not a download: there are none, and there will not be until 1.0.0.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="audio-lines"></kit-icon><span data-i18n="honest.transcription.title">A MIDI copy of a mix is a transcription</span></h3>
+      <p data-i18n="honest.transcription.body">Finding notes in a finished mix is hard, and Flipcopy does it with classic signal processing rather than a model. It will miss some notes and hear some that are not there. It prints what it found, and says what it could not do.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="music"></kit-icon><span data-i18n="honest.chords.title">Chords come back as a progression</span></h3>
+      <p data-i18n="honest.chords.body">A chord part is printed as the progression it follows, not the exact voicing that was played, and the page says so in so many words.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads before 1.0.0</span></h3>
+      <p data-i18n="honest.downloads.body">No beta on this page, no preview build, no early access. A copier that half-works is worse than one that is not there yet.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="wifi-off"></kit-icon><span data-i18n="honest.network.title">It never goes online</span></h3>
+      <p data-i18n="honest.network.body">The plugin and the standalone app contain no networking code at all, and a build gate fails if any is added. A later version may add an update check that is off unless you switch it on, run by a separate program.</p>
+    </article>
+  </div>
+</kit-section>

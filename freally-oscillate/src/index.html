@@ -1,0 +1,119 @@
+<!-- Freally Oscillate — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the family strip, the closing call, the footer)
+     is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">One session.</span> <span class="hl-bright">Four producers.</span> <span class="cycle" data-cycle="hero.cycle" data-words="No server.|No account.|No AI.">No server.</span></kit-headline>
+  <kit-lede data-i18n="hero.tagline">A DAW where four producers work in the same session at once.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Every DAW is single-player software. Making a record with someone in another country still means exporting stems, uploading them, waiting, re-importing, and losing the thread — and six months later nobody remembers who wrote the bassline.</p>
+      <p data-i18n="what.p2">Oscillate is a full DAW built around the opposite assumption. You paste a room code into a chat and up to three other producers drop into your session: you see their cameras, you hear them, their cursors move on your timeline, and when you are finished it prints a split sheet saying who wrote what.</p>
+      <p data-i18n="what.p3">It is free today, and there is no server behind it. The room code <em>is</em> the connection offer, so the first person to join pastes a code and after that the room relays for everybody else. Nothing to keep running, nothing to pay for, nothing anybody can switch off.</p>
+    </div>
+    <figure class="split__art"><kit-art name="nodes"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="features" label="kit.label.inside">
+  <h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards cards--4">
+    <article class="card">
+      <div class="card__media"><kit-art name="signal"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.room.title">The room</h3>
+        <p data-i18n="features.room.body">Up to four producers, peer to peer, with no account and no server. Live cursors, chat, voice, camera tiles and screen share. Your undo takes back your change and never somebody else's.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="tracks"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.arrangement.title">The arrangement</h3>
+        <p data-i18n="features.arrangement.body">Unlimited audio and MIDI tracks, clips drawn from their own content, automation lanes, comping, groups, markers, and a tempo and time-signature map. Every edit is one press of undo however many clips it touched.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="notes"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.pianoRoll.title">The piano roll</h3>
+        <p data-i18n="features.pianoRoll.body">Around ninety scales with highlighting, snapping and folding, ghost notes from any other clip, a velocity lane with per-note handles, and a playable keyboard where one key plays a whole chord.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="circuit"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.plugins.title">Plugin hosting</h3>
+        <p data-i18n="features.plugins.body">VST3 and CLAP, each in a process of its own, so a plugin that crashes greys out a device instead of losing your session. Graph-wide delay compensation, proved by a null test rather than asserted.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="knob"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.devices.title">Its own instruments</h3>
+        <p data-i18n="features.devices.body">Sixty-nine instruments and effects, with panels drawn from the device's own description — so the number on the knob is the number the audio is using, measured to a tenth of a decibel.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="lines"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.cut.title">The Cut</h3>
+        <p data-i18n="features.cut.body">Draw a blade stroke across the arrangement and it splits every clip it crosses; the angle of the stroke sets the crossfade slope. It is the motion language the whole interface is built on.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="index"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.kumite.title">Kumite and the Split Sheet</h3>
+        <p data-i18n="features.kumite.body">A beat battle mode where each turn owns its own bars, and an authorship ledger derived from the edit log with work anybody undid netted out.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="shield"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="features.free.title">Free, and no AI</h3>
+        <p data-i18n="features.free.body">No tier, no trial, no account, no licence key. No model, no inference, no "smart" anything — and that is enforced by a build gate that fails on any ML runtime entering the dependency graph, not left as a promise.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per rung. This is the same ladder the private plan follows — if one moves, both move, and a build gate compares them.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">A rung that is done is built and on the development branch. It is not a download: there are none, and there will not be until 1.0.0.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="users"></kit-icon><span data-i18n="honest.peers.title">Four producers, and not five</span></h3>
+      <p data-i18n="honest.peers.body">A room holds four people. There is no server relaying audio, so every peer sends to every other peer, and the fifth connection is where an ordinary home upload gives out. Four is the number that works rather than the number that sounded good.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="wifi-off"></kit-icon><span data-i18n="honest.failure.title">Roughly one connection in ten will not form</span></h3>
+      <p data-i18n="honest.failure.body">Some networks hand every outbound connection a different address, and two of those cannot find each other without a relay in the middle. A relay costs bandwidth forever, and that is a running bill a free application cannot carry — so Oscillate ships without one and lets you put your own in Settings. When a connection fails it names which of the nine causes it was.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="lock"></kit-icon><span data-i18n="honest.code.title">What a room code actually contains</span></h3>
+      <p data-i18n="honest.code.body">It is the connection offer itself, and it carries your computer's public address. Treat it like a password: send it to the people you are working with and nobody else. The application says so at the moment you copy one.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads before 1.0.0</span></h3>
+      <p data-i18n="honest.downloads.body">No beta on this page, no preview build, no early access. A DAW that half-works is worse than one that is not there yet.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="cpu"></kit-icon><span data-i18n="honest.ai.title">No AI, and how that is enforced</span></h3>
+      <p data-i18n="honest.ai.body">A build gate walks the dependency graph and fails on any inference runtime, any model file, and any analytics or crash-reporting library. It is a property of the build rather than a sentence on a website.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="shield"></kit-icon><span data-i18n="honest.updater.title">The one connection the application makes</span></h3>
+      <p data-i18n="honest.updater.body">An update check, and only when you press the button or switch on checking at launch — it is off by default. It asks for one static file and sends nothing about you or your machine, every update is signed, and none is ever installed without your choice.</p>
+    </article>
+  </div>
+</kit-section>

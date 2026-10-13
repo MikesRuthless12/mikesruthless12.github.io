@@ -1,0 +1,15 @@
+{
+  "product": "flipcopy",
+  "name": "Freally Flipcopy",
+  "icon": "flipcopy-icon.png",
+  "pages": ["index", "features", "documentation", "changelog"],
+  "changelog": "../CHANGELOG.md",
+  "ladder": "ladder.json",
+  "chips": ["CLAP", "VST3", "AU", "@hero.chipStandalone|Standalone", "Windows", "macOS", "Linux"],
+  "strings": {
+    "site.tagline": "Put it on the glass. Press START. Drag the copy.",
+    "site.description": "Put it on the glass. Press START. Drag the copy. Audio in, MIDI out; MIDI in, audio out. A CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux — free today, offline and 100% AI-free.",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
+    "footer.yours": "The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them."
+  }
+}

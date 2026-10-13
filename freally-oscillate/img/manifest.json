@@ -1,0 +1,38 @@
+{
+  "theme": "dark",
+  "renderedOn": "win32",
+  "shots": [
+    {
+      "file": "start-01-first-window.png",
+      "topic": "start",
+      "step": 1,
+      "frame": "[data-testid=\"app-frame\"]",
+      "targets": [
+        "[data-testid=\"transport\"]"
+      ],
+      "alt": "The Oscillate window on a first run, with the File Explorer down the left, the arrangement in the middle, and the transport controls along the bottom boxed in red."
+    },
+    {
+      "file": "room-01-create.png",
+      "topic": "room",
+      "step": 1,
+      "frame": "[data-testid=\"room-panel\"]",
+      "targets": [
+        "[data-testid=\"room-make\"]",
+        "[data-testid=\"room-join\"]"
+      ],
+      "alt": "The Room panel with the Create a room code button boxed in red and numbered 1, and the Let them in button — where you paste the code somebody sent you — boxed and numbered 2."
+    },
+    {
+      "file": "updates-01-panel.png",
+      "topic": "updates",
+      "step": 1,
+      "frame": "[data-testid=\"settings\"]",
+      "targets": [
+        "[data-testid=\"updates-check\"]",
+        "[data-testid=\"updates-at-launch\"]"
+      ],
+      "alt": "Settings with the Updates section selected, the Check for updates button boxed in red and numbered 1, and the Check when Oscillate starts toggle boxed and numbered 2 in its off position."
+    }
+  ]
+}

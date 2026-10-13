@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/freally-file-manager/mobile/sw.js', { scope: '/freally-file-manager/mobile/' })})}

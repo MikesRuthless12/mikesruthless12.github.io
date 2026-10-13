@@ -1,0 +1,105 @@
+<!-- Freally Unloop — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the family strip, the closing call, the footer)
+     is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">Your loop. Their arrangement.</span> <span class="cycle" data-cycle="hero.cycle" data-words="Your record.|Your stems.|Your MIDI.">Your record.</span></kit-headline>
+  <kit-lede data-i18n="hero.sub">Turn an 8-bar loop into a finished, arranged record in the style of any artist, producer or genre — performed live in your DAW, then dragged out as audio stems or as a MIDI song template. Free, offline, and 100% AI-free.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">A loop that sounds finished at bar 8 is still a loop at bar 64. Turning it into a record means hours of muting, copying, cutting and automating — the intro, the hooks, the drop-outs, the switch-ups — before you hear whether the idea holds up.</p>
+      <p data-i18n="what.p2">Freally Unloop arranges it for you. Put it on the track that plays your loop, pick an artist, a producer or a genre, and press play: Unloop performs the whole record over your own audio, in time with your project, the way that name arranges.</p>
+      <p data-i18n="what.p3">Then the record is yours. Edit it clip by clip, keep what you like and reroll the rest, and print it — the mix or one file per part — to drag straight onto your tracks.</p>
+    </div>
+    <figure class="split__art"><kit-art name="tracks"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="how" label="kit.label.inside">
+  <h2 data-i18n="how.title">How it works</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><kit-art name="wave"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="how.loop.title">Loop it.</h3>
+        <p data-i18n="how.loop.body">Your 8 bars loop in the DAW — or drop stems or a MIDI loop into the standalone or the web app.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="lens"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="how.name.title">Pick a name.</h3>
+        <p data-i18n="how.name.body">Search 2,413 artists, producers and genres and choose a mode: every genre can be arranged several ways.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="signal"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="how.play.title">Press play.</h3>
+        <p data-i18n="how.play.body">Unloop performs the whole record over your own audio — intros, hooks, drop-outs, 808 cuts, stutter builds, tape stops, beat switches — in time with your project.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="faders"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="how.shape.title">Shape it.</h3>
+        <p data-i18n="how.shape.body">Move, copy, split and fade clips, ride faders, draw automation, lock what you like and reroll the rest.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="stack"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="how.take.title">Take it.</h3>
+        <p data-i18n="how.take.body">Drag out the arranged record as WAV, AIFF, FLAC or MP3 — mix or stems — or as a multi-track MIDI song template.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="globe"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="docs.language.title">Languages</h3>
+        <p data-i18n="docs.language.p1">Unloop speaks eighteen languages. It starts in your system's language; to choose another, open Settings with the gear and pick one.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per version. This is the same ladder the private plan follows — if one moves, both move, and a build gate compares them.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">A version that is done is built and tagged. It is not a download: there are none, and there will not be until 1.0.0.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="music"></kit-icon><span data-i18n="honest.notes.title">It arranges your music; it does not write any</span></h3>
+      <p data-i18n="honest.notes.body">Every sound in an arranged record comes from your loop, or is a transition effect Unloop builds from oscillators and noise. It decides when each part plays and performs moves on it, but it never writes a note of new music and never changes the loop file on your disk. A new fill, or a second beat for a switch, comes from you.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="audio-lines"></kit-icon><span data-i18n="honest.bands.title">One stereo loop is arranged in three bands</span></h3>
+      <p data-i18n="honest.bands.body">With only a finished stereo loop to work from, Unloop moves its low, mid and high bands, so a move cannot pull a snare away from a melody. Put an instance on each part's own track for the full set of moves.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="info"></kit-icon><span data-i18n="honest.styles.title">Names describe styles</span></h3>
+      <p><span data-i18n="honest.styles.body">Artist, producer and genre names are used only to describe musical styles. Freally Unloop is not affiliated with, endorsed by, sponsored by or approved by any artist, producer, label or rights holder, and it never recreates a specific song's arrangement.</span> <a href="legal/disclaimer.md" data-i18n="honest.styles.link">Read the full disclaimer (in English)</a></p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="users"></kit-icon><span data-i18n="honest.hands.title">Not yet tried by hand in every DAW</span></h3>
+      <p data-i18n="honest.hands.body">Unloop is built and checked by automated gates on Windows, Linux and macOS. Working it through by hand in real DAWs, on every system, is the release candidate's job, before 1.0.0.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads before 1.0.0</span></h3>
+      <p data-i18n="honest.downloads.body">No beta on this page, no preview build, no early access. An arranger that half-works is worse than one that is not there yet.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="wifi-off"></kit-icon><span data-i18n="honest.network.title">It never goes online</span></h3>
+      <p data-i18n="honest.network.body">The plugin and the standalone app contain no networking code at all, and a build gate fails if any is added. A later version may add an update check that is off unless you switch it on, run by a separate program.</p>
+    </article>
+  </div>
+</kit-section>

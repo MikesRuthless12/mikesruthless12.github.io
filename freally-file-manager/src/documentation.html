@@ -1,0 +1,281 @@
+<!-- Freally File Manager — the manual. The contents rail and the search box are
+     the kit's; each <section> is one chapter, its <h2> the rail's entry. -->
+
+<kit-head>
+  <kit-lede data-i18n="docs.intro">How to use Freally File Manager version 1.0.0. Buttons, tabs and menus are named here as the app names them.</kit-lede>
+</kit-head>
+
+<kit-manual>
+  <section>
+    <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
+    <p data-i18n="docs.start.p1">Freally File Manager is a desktop app for Windows 11, macOS 12 or later, and Linux. The first time it opens it shows its licence agreement: scroll to the end, then choose I Agree to start, or Decline &amp; Quit.</p>
+    <p data-i18n="docs.start.p2">The window is a drop zone above the Activity panel. Add files, Add folders and Import list sit in the header. The footer holds Totals, History, Hash, Re-verify, Salvage, Sync, Library, Tasks and the gear that opens Settings.</p>
+    <p data-i18n="docs.start.p3">There are no downloads on this site yet.</p>
+  </section>
+
+  <section>
+    <h2 id="copy" data-i18n="docs.copy.title">Copy files</h2>
+    <ol>
+      <li data-i18n="docs.copy.s1">Drag files or folders onto the window, or click Add files or Add folders in the header.</li>
+      <li data-i18n="docs.copy.s2">The Transfer dropped items dialog opens. Leave Operation on Copy and click Pick destination to choose the folder to copy into.</li>
+      <li data-i18n="docs.copy.s3">Under If a file already exists, choose what happens to files that are already there: keep both, skip, overwrite, overwrite only if newer, overwrite only if the content differs, skip if identical and ask otherwise, or ask every time.</li>
+      <li data-i18n="docs.copy.s4">Use Order to sort the list by name or size, or drag the rows. Files always come before folders.</li>
+      <li data-i18n="docs.copy.s5">Click Start copying. Each file gets a row in the Activity panel with its progress, speed and time left, and the header shows the totals.</li>
+    </ol>
+    <p data-i18n="docs.copy.p1">To pause a job, focus its row and press Space, or right-click it and choose Pause; Resume carries on and Cancel stops it. Pause all jobs, Resume all jobs and Cancel all jobs are in the header.</p>
+    <p data-i18n="docs.copy.p2">If the destination has no room for everything, you are warned before the first byte moves and can pick which items to copy. The dialog also flags names the destination cannot hold, such as reserved names, characters it does not allow and paths that are too long, and offers to rename them.</p>
+    <p data-i18n="docs.copy.p3">Use When done at the bottom of the window to close the app, log off, shut down or sleep when every job has finished.</p>
+  </section>
+
+  <section>
+    <h2 id="move" data-i18n="docs.move.title">Move files</h2>
+    <p data-i18n="docs.move.p1">Moving works like copying: in the Transfer dropped items dialog, set Operation to Move, pick a destination and click Start moving.</p>
+    <p data-i18n="docs.move.p2">Each file is copied first, and the original is deleted only after the copy has succeeded. If anything fails, the original stays where it was and the row is marked as failed.</p>
+    <p data-i18n="docs.move.p3">To make every move recoverable, switch on Send moved source files to Trash in Settings → Secure delete: the originals then go to the Recycle Bin or Trash instead of being deleted.</p>
+  </section>
+
+  <section>
+    <h2 id="verify" data-i18n="docs.verify.title">Verify a copy</h2>
+    <p data-i18n="docs.verify.p1">Verification is off until you switch it on. Open Settings → Transfer and choose a checksum under Verify after copy: xxHash3 is the fastest, BLAKE3 is strong and still fast, and SHA-256 matches most other tools.</p>
+    <p data-i18n="docs.verify.p2">From then on every copy is checked. The original is hashed while it is read, so it is not read twice; once the copy is written, the copy is hashed too and the two are compared.</p>
+    <p data-i18n="docs.verify.p3">A match finishes the row as done. A mismatch fails the row and shows the expected and the actual checksum. If a large copy seems to sit at 100%, the header probably says Verifying: the check is still running.</p>
+  </section>
+
+  <section>
+    <h2 id="history" data-i18n="docs.history.title">History, re-runs and undo</h2>
+    <p data-i18n="docs.history.p1">Click History in the footer. Every job is listed with its kind, source, destination, size, status and duration, and you can filter the list by kind, status or text. Export CSV saves it.</p>
+    <p data-i18n="docs.history.p2">From a job you can Re-run it, use Retry failed to copy only the files that failed, Export failed to save that list, Re-verify it, or export a Certificate: a printable HTML, CSV or JSON report of every file's checksum, size and status, which you can sign with your own key.</p>
+    <p data-i18n="docs.history.p3">Undo, or Ctrl+Z, reverses the newest copy or move after showing exactly what it will touch. Copied files go to the Recycle Bin or Trash, and only if they still match what was copied; moved files go back where they came from.</p>
+    <p data-i18n="docs.history.p4">Totals, also in the footer, shows lifetime figures for bytes, files and jobs, and a chart of the last 30 days.</p>
+  </section>
+
+  <section>
+    <h2 id="checks" data-i18n="docs.checks.title">Hash, re-verify and checksum files</h2>
+    <p data-i18n="docs.checks.p1">Hash, in the footer, opens the hash inspector. Add files or folders, choose an algorithm and click Hash. Paste a checksum, a line from a checksum file or an SFV row to compare against it, or pick two files to see whether they are identical.</p>
+    <p data-i18n="docs.checks.p2">Re-verify, also in the footer, compares a folder with its copy again, at any time and without writing anything. It reports every file that matches, differs, is missing from the copy, exists only in the copy, or cannot be read.</p>
+    <p data-i18n="docs.checks.p3">To make a checksum file for a whole folder, right-click a finished job and choose Create checksums (SHA-256). To check one, drop a .md5, .sha1, .sha256, .sha512, .b3 or .sfv file on the window: every file it lists is hashed and the result is shown.</p>
+  </section>
+
+  <section>
+    <h2 id="sync" data-i18n="docs.sync.title">Sync two folders</h2>
+    <ol>
+      <li data-i18n="docs.sync.s1">Click Sync in the footer, then Add pair.</li>
+      <li data-i18n="docs.sync.s2">Give the pair a label, choose the left and the right folder, and pick a mode: Two-way; Mirror, left to right or right to left; or Contribute, which copies left to right and never deletes.</li>
+      <li data-i18n="docs.sync.s3">Click Save pair, then Run now.</li>
+    </ol>
+    <p data-i18n="docs.sync.p1">When a file has changed on both sides since the last run, nothing is overwritten: the other version is kept beside it as a sync-conflict file, and View conflicts lets you keep the left one, the right one or both.</p>
+    <p data-i18n="docs.sync.p2">Start live mirror watches the left folder and syncs again after every change you save. The pair shows Watching while it runs; Stop live mirror ends it.</p>
+  </section>
+
+  <section>
+    <h2 id="filters" data-i18n="docs.filters.title">Choose what gets copied</h2>
+    <p data-i18n="docs.filters.p1">Settings → Filters applies to every copy: patterns to include or exclude, such as **/*.log or **/node_modules, size and date limits, and whether to skip hidden, system or read-only files. A folder that matches an exclude pattern is skipped whole.</p>
+    <p data-i18n="docs.filters.p2">To copy an exact list of files, click Import list in the header and choose a TXT, CSV or JSON file of paths. Copy them flat into one folder, or keep their folders below a common root.</p>
+    <p data-i18n="docs.filters.p3">Before a big copy, Export plan in the Transfer dropped items dialog saves a report of what the copy will add, replace, skip or find in conflict, before a single byte moves.</p>
+  </section>
+
+  <section>
+    <h2 id="shell" data-i18n="docs.shell.title">Right-click menus and the paste shortcut</h2>
+    <p data-i18n="docs.shell.p1">Freally File Manager can add Copy with Freally File Manager and Move with Freally File Manager to the right-click menu: in Explorer on Windows, in Finder on macOS, and in Nautilus, Dolphin and Thunar on Linux. On Windows, Settings → Shell turns them on or off.</p>
+    <p data-i18n="docs.shell.p2">Copy files as usual with Ctrl+C (Cmd+C on a Mac), then press Ctrl+Shift+V (Cmd+Shift+V on a Mac) anywhere: the files open in Freally File Manager's dialog. Change the shortcut or switch it off in Settings → General.</p>
+    <p data-i18n="docs.shell.p3">On Windows you can go further: Intercept default copy handler, in Settings → Shell, routes Explorer's own copy and paste through Freally File Manager, and each paste then asks whether you want a plain system copy or a verified one. Revert to Windows copy handler undoes it in one click.</p>
+  </section>
+
+  <section>
+    <h2 id="library" data-i18n="docs.library.title">Snapshots and backups</h2>
+    <p data-i18n="docs.library.p1">Library, in the footer, opens the repository: each file's contents are stored once, in deduplicated chunks, and every snapshot is shown on one timeline. The header shows how much is stored on disk against how much it represents.</p>
+    <p data-i18n="docs.library.p2">On Sources, add a folder and click Back up now to take a snapshot; a second backup of an unchanged folder takes almost no space. Each source can keep all its snapshots, the last few, or a rolling set, and can run hourly, daily or weekly.</p>
+    <p data-i18n="docs.library.p3">On Snapshots, Restore lets you browse a snapshot's files, choose a destination and decide what happens to files that already exist. Forget drops a snapshot, and Reclaim space frees the chunks nothing uses any more.</p>
+  </section>
+
+  <section>
+    <h2 id="salvage" data-i18n="docs.salvage.title">Rescue a file from a failing drive</h2>
+    <p data-i18n="docs.salvage.p1">Salvage, in the footer, copies whatever can still be read of a file on a damaged drive. Choose the file, then where to write the copy.</p>
+    <p data-i18n="docs.salvage.p2">Unreadable spots are retried in smaller and smaller pieces, then filled with zeros so the rest of the file keeps its place, and a map of the gaps is saved beside the copy. Run Salvage again on the same file later and only the gaps are tried.</p>
+    <p data-i18n="docs.salvage.p3">A salvaged file with gaps is not a byte-exact copy, and its history entry says so.</p>
+  </section>
+
+  <section>
+    <h2 id="server" data-i18n="docs.server.title">Run it as a file server</h2>
+    <p data-i18n="docs.server.p1">Freally File Manager can serve a folder to other computers over WebDAV, plain HTTP, an S3-compatible API or SFTP.</p>
+    <ol>
+      <li data-i18n="docs.server.s1">Open Settings → Server and tick the protocols to offer.</li>
+      <li data-i18n="docs.server.s2">Set the bind address. The default, 127.0.0.1:8080, serves only this computer; 0.0.0.0:8080 or your network address serves others, once your firewall allows it.</li>
+      <li data-i18n="docs.server.s3">Choose the served folder, tick Read-only if nothing should be uploaded or deleted, and choose the authentication: none, a bearer token, or a user name and password.</li>
+      <li data-i18n="docs.server.s4">Click Start server. The status line shows the address, and a Metrics link points to the Prometheus endpoint. Stop server, or quitting the app, stops it.</li>
+    </ol>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="docs.server.protocol">Protocol</th>
+            <th data-i18n="docs.server.connect">Connect with</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>WebDAV</td>
+            <td data-i18n="docs.server.webdav">Map a network drive in Windows, Connect to Server in Finder, GNOME Files or davfs2</td>
+          </tr>
+          <tr>
+            <td>HTTP</td>
+            <td data-i18n="docs.server.http">A web browser, curl or wget</td>
+          </tr>
+          <tr>
+            <td>S3</td>
+            <td data-i18n="docs.server.s3client">The AWS command line, rclone or any S3 library, with the user name and password as the access key and secret</td>
+          </tr>
+          <tr>
+            <td>SFTP</td>
+            <td data-i18n="docs.server.sftp">sftp, scp, FileZilla, WinSCP or rclone</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p data-i18n="docs.server.p2">WebDAV and HTTP can run together on one address; S3 and SFTP each need a server of their own, and S3 needs a password or no authentication rather than a token.</p>
+    <p data-i18n="docs.server.p3">A server open to the network with no authentication can be read, and written unless it is read-only, by anything that can reach it. Beyond your own computer, always set a token or a password.</p>
+    <p data-i18n="docs.server.p4">On a computer without a screen, the freally command does the same:</p>
+    <pre><code>freally serve --webdav --root /data --bind 0.0.0.0:8080 --token &lt;token&gt;</code></pre>
+  </section>
+
+  <section>
+    <h2 id="migrate" data-i18n="docs.migrate.title">Bring in a restic, Borg or Kopia repository</h2>
+    <p data-i18n="docs.migrate.p1">The freally migrate command reads another backup tool's repository, rebuilds every file and stores it in a repository in the open CDR-0 format, deduplicated again with Freally File Manager's own chunking.</p>
+    <pre><code>freally migrate restic /path/to/restic-repo /path/to/new-repo --password &lt;passphrase&gt;
+freally migrate borg   /path/to/borg-repo   /path/to/new-repo --password &lt;passphrase&gt;
+freally migrate kopia  /path/to/kopia-repo  /path/to/new-repo --password &lt;passphrase&gt;</code></pre>
+    <p data-i18n="docs.migrate.p2">Each importer is tested to restore every file byte for byte. The CDR-0 format is described in the specification published beside this site.</p>
+    <p><a href="spec/CDR-0.md" data-i18n="docs.migrate.spec">Read the CDR-0 specification</a></p>
+  </section>
+
+  <section>
+    <h2 id="settings" data-i18n="docs.settings.title">Settings</h2>
+    <p data-i18n="docs.settings.p1">The gear in the footer opens Settings. Changes take effect at once, with no restart. The tabs you will use most:</p>
+    <ul>
+      <li data-i18n="docs.settings.general">General: language, the app's theme, start at login, minimize to the tray, how errors are shown, the paste shortcut and the clipboard watcher.</li>
+      <li data-i18n="docs.settings.transfer">Transfer: verification, buffer size, how many files copy at once, clones, timestamps and permissions, sparse files, locked files and the security marks a file carries.</li>
+      <li data-i18n="docs.settings.filters">Filters: what to include and exclude.</li>
+      <li data-i18n="docs.settings.shell">Shell: the right-click menu and taking over Windows' own copy.</li>
+      <li data-i18n="docs.settings.network">Network: a speed limit, fixed or on a schedule.</li>
+      <li data-i18n="docs.settings.server">Server: the built-in file server.</li>
+      <li data-i18n="docs.settings.updates">Updates: the daily update check, and a button to check now.</li>
+      <li data-i18n="docs.settings.profiles">Profiles: save your settings under a name, switch between them, and import or export them.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2 id="shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="docs.shortcuts.keys">Keys</th>
+            <th data-i18n="docs.shortcuts.action">What it does</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></td>
+            <td data-i18n="docs.shortcuts.paste">Paste copied files through Freally File Manager, from anywhere</td>
+          </tr>
+          <tr>
+            <td><kbd>Ctrl</kbd> / <kbd>Cmd</kbd> + <kbd>Z</kbd></td>
+            <td data-i18n="docs.shortcuts.undo">Undo the newest copy or move</td>
+          </tr>
+          <tr>
+            <td><kbd>Space</kbd></td>
+            <td data-i18n="docs.shortcuts.pause">Pause or resume the focused job</td>
+          </tr>
+          <tr>
+            <td><kbd>Esc</kbd></td>
+            <td data-i18n="docs.shortcuts.escape">Close the topmost dialog or drawer</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2 id="speed" data-i18n="featuresPage.speed.title">How fast it is</h2>
+    <p class="lead" data-i18n="featuresPage.speed.intro">Measured on 30 April 2026 on one Windows 11 laptop (Intel Core i9-13900HX, 32 GB of memory, a PCIe 4.0 NVMe drive), copying within the same NTFS drive. Each figure is the median of several runs, in MiB per second: higher is faster.</p>
+    <div class="table-wrap" role="region" tabindex="0" aria-labelledby="speed">
+      <table class="compare" id="speed-table">
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="featuresPage.speed.workload">What was copied</th>
+            <th scope="col" class="ours">Freally File Manager</th>
+            <th scope="col">Robocopy</th>
+            <th scope="col" data-i18n="featuresPage.speed.cmd">Windows copy command</th>
+            <th scope="col">FastCopy</th>
+            <th scope="col">TeraCopy</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" data-i18n="featuresPage.speed.mixed">A folder of 100 files, 100 KB to 150 MB</th>
+            <td class="ours price"><strong>4,308</strong></td>
+            <td class="price">3,424</td>
+            <td class="price">3,172</td>
+            <td class="price">1,769</td>
+            <td class="price">496</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="featuresPage.speed.file512">One 512 MB file</th>
+            <td class="ours price"><strong>3,605</strong></td>
+            <td class="price">3,220</td>
+            <td class="price">3,122</td>
+            <td class="price">1,208</td>
+            <td class="price">174</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="featuresPage.speed.file256">One 256 MB file</th>
+            <td class="ours price">3,200</td>
+            <td class="price">3,460</td>
+            <td class="price"><strong>3,765</strong></td>
+            <td class="price">1,000</td>
+            <td class="price">102</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="featuresPage.speed.file10g">One 10 GB file</th>
+            <td class="ours price">1,988</td>
+            <td class="price">2,064</td>
+            <td class="price"><strong>2,095</strong></td>
+            <td class="price">1,591</td>
+            <td class="price">1,134</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p data-i18n="featuresPage.speed.result">It was the fastest on the folder of files and on the 512 MB file, and a little slower than Robocopy and the Windows copy command on the 256 MB and 10 GB files. It was faster than FastCopy and TeraCopy in every test.</p>
+    <p class="fineprint" data-i18n="featuresPage.speed.caveat">One machine and one drive, measured with a build from before 1.0.0, and each tool run from its own command line, start-up included. Your numbers will differ, and when the destination drive is the slowest part, every tool runs at its speed.</p>
+  </section>
+
+  <section>
+    <h2 id="troubleshooting" data-i18n="docs.trouble.title">Tips and troubleshooting</h2>
+    <h3 id="trouble-slow" data-i18n="docs.trouble.slow.title">Why is my copy slow?</h3>
+    <p data-i18n="docs.trouble.slow.body">While a copy runs below the speed it should reach, the header shows a small badge naming the cause: the source disk, the destination disk, the network, an antivirus scanner, the processor or heat. Hover it for details.</p>
+    <h3 id="trouble-stall" data-i18n="docs.trouble.stall.title">A copy stops at 100%</h3>
+    <p data-i18n="docs.trouble.stall.body">If the header says Verifying, the copy is being checked against its checksum. That is normal for large files; switch verification off in Settings → Transfer if you do not need it.</p>
+    <h3 id="trouble-locked" data-i18n="docs.trouble.locked.title">A file is in use on Windows</h3>
+    <p data-i18n="docs.trouble.locked.body">Files are opened so that other programs can keep using them, and a refused file is retried a few times. If another program still holds it exclusively, close that program, or choose in Settings → Transfer to copy locked files from a snapshot.</p>
+    <h3 id="trouble-permission" data-i18n="docs.trouble.permission.title">Permission denied</h3>
+    <p data-i18n="docs.trouble.permission.body">When files are refused for permissions, Freally File Manager can retry them through one administrator prompt for the whole list, showing exactly which files it will touch before you approve.</p>
+    <h3 id="trouble-changed" data-i18n="docs.trouble.changed.title">Source changed during copy</h3>
+    <p data-i18n="docs.trouble.changed.body">The file changed while it was being read, so the copy may mix old and new contents. By default the file is flagged; Settings → Transfer can copy it again once or fail it instead.</p>
+  </section>
+
+  <section>
+    <h2 id="report" data-i18n="docs.report.title">Reporting a problem</h2>
+    <p data-i18n="docs.report.p1">When the app itself causes an error, a Report button appears beside the message. After a crash, the next launch offers Report or Dismiss.</p>
+    <p data-i18n="docs.report.p2">Report opens this page in your browser, with the technical facts already filled in: you can read them but not change them. Add what you were doing and, if you like, an email address for a reply.</p>
+    <p><code>https://freallyproducts.com/freally-file-manager/report/</code></p>
+    <p data-i18n="docs.report.p3">Nothing is sent unless you press Send on that page, and nothing is ever sent in the background. File paths in a report are shortened, with your home folder shown as ~.</p>
+  </section>
+
+  <section>
+    <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
+    <p data-i18n="docs.privacy.p1">Freally File Manager has no account and no telemetry. The telemetry switch in its settings is permanently off: a value written into the settings file by hand is ignored.</p>
+    <p data-i18n="docs.privacy.p2">Copying, moving and verifying files on your own drives make no network requests. The app goes online for the things you set up, such as the file server or testing a cloud account, and to check for updates when it starts, at most once a day. The update check reads only the list of releases, sends none of your files or paths, and can be switched off in Settings → Updates.</p>
+    <p data-i18n="docs.privacy.p3">It contains no AI: everything it decides comes from checksums, sizes and timestamps, and no machine-learning library is part of it.</p>
+  </section>
+</kit-manual>

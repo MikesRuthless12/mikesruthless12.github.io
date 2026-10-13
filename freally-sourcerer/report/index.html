@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-product="sourcerer" data-product-name="Freally Sourcerer">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self'; connect-src https://freallyproducts.pythonanywhere.com; object-src 'none'; base-uri 'none'; form-action 'none'"
+    />
+    <meta name="robots" content="noindex" />
+    <title>Report a problem · Freally Sourcerer</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon-192.png" />
+    <link rel="stylesheet" href="/report-kit/report.css" />
+  </head>
+  <body>
+    <header>
+      <label class="lang"><span data-t="language">Language</span> <select id="lang"></select></label>
+    </header>
+    <main>
+      <!-- The app this report is about: its own icon and its own name, at the top. -->
+      <a class="brand" href="../index.html">
+        <img src="../favicon-192.png" width="112" height="112" alt="" />
+        <span class="brand-name">Freally Sourcerer</span>
+      </a>
+      <h1 data-t="title">Report a problem</h1>
+
+      <p id="none" data-t="none" hidden></p>
+
+      <section id="report" hidden>
+        <p data-t="intro"></p>
+        <h2 data-t="facts.heading"></h2>
+        <p class="note" data-t="facts.note"></p>
+        <table id="facts"></table>
+
+        <form id="form" novalidate>
+          <h2 data-t="you.heading"></h2>
+          <label for="what" data-t="what.label"></label>
+          <textarea id="what" rows="4" maxlength="4000"></textarea>
+          <label for="steps" data-t="steps.label"></label>
+          <textarea id="steps" rows="4" maxlength="4000"></textarea>
+          <label for="email" data-t="email.label"></label>
+          <input id="email" type="email" maxlength="254" autocomplete="email" />
+          <p id="email-note" class="note" aria-live="polite"></p>
+          <p class="note" data-t="privacy"></p>
+          <button id="send" type="submit" data-t="send"></button>
+        </form>
+        <p id="status" class="status" role="status" aria-live="polite"></p>
+      </section>
+    </main>
+    <script src="/report-kit/emailcheck.js"></script>
+    <script src="/report-kit/report-strings.js"></script>
+    <script src="/report-kit/report.js"></script>
+  </body>
+</html>

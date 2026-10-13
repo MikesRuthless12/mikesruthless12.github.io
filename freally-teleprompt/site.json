@@ -1,0 +1,17 @@
+{
+  "product": "teleprompt",
+  "name": "Freally Teleprompt",
+  "icon": "teleprompt-icon.png",
+  "pages": ["index", "features", "documentation", "changelog"],
+  "changelog": "../CHANGELOG.md",
+  "ladder": "ladder.json",
+  "badge": "hero.badge",
+  "chips": ["Windows", "macOS", "Linux", "@hero.chipDesktop|Desktop app", "@hero.chipLanguages|18 languages", "@hero.chipNoAccount|No account"],
+  "strings": {
+    "site.tagline": "Look confident. Stay on script.",
+    "site.description": "Freally Teleprompt is a teleprompter for Windows, macOS and Linux that reads at a real human pace — characters per second or BPM — and marks every pause you write. No account, no telemetry. Free today; future versions may be sold.",
+    "hero.badge": "Version 1.5.0 is the current release",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
+    "footer.yours": "Your scripts are yours. They stay on your computer, and the app's author never receives, stores or relays them."
+  }
+}

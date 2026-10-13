@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 640" width="640" height="640" fill="none">
+<style>
+@keyframes p{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes d{to{stroke-dashoffset:-200}}
+@keyframes s{from{transform:translateX(-120px)}to{transform:translateX(920px)}}
+@keyframes r{to{transform:rotate(360deg)}}
+@keyframes b{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+.p{animation:p 3.2s ease-in-out infinite}
+.d{stroke-dasharray:6 10;animation:d 9s linear infinite}
+.s{animation:s 7s linear infinite}
+.b{transform-box:fill-box;transform-origin:50% 100%;animation:b 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+<filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+<linearGradient id="lime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8cf523"/><stop offset="1" stop-color="#79d920" stop-opacity=".35"/></linearGradient>
+<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#79d920" stop-opacity=".28"/><stop offset="1" stop-color="#79d920" stop-opacity="0"/></radialGradient>
+<radialGradient id="fade" cx=".5" cy=".5" r=".62"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+<mask id="m"><rect width="800" height="440" fill="url(#fade)"/></mask>
+
+</defs>
+<circle cx="320" cy="320" r="314" fill="url(#halo)"/><circle cx="320" cy="320" r="300" stroke="#79d920" stroke-opacity="0.3"/><circle cx="320" cy="320" r="262" stroke="#e8f5e1" stroke-opacity="0.09" stroke-dasharray="2 8"/><circle cx="320" cy="320" r="224" stroke="#79d920" stroke-opacity="0.2"/><circle cx="320" cy="320" r="186" stroke="#e8f5e1" stroke-opacity="0.09"/><path d="M606 320L620 320M612.4 350.7L618.4 351.4M607.6 381.1L613.4 382.4M599.6 410.9L605.3 412.7M588.6 439.6L594.1 442M567.7 463L579.8 470M557.9 492.8L562.7 496.3M538.5 516.7L542.9 520.7M516.7 538.5L520.7 542.9M492.8 557.9L496.3 562.7M463 567.7L470 579.8M439.6 588.6L442 594.1M410.9 599.6L412.7 605.3M381.1 607.6L382.4 613.4M350.7 612.4L351.4 618.4M320 606L320 620M289.3 612.4L288.6 618.4M258.9 607.6L257.6 613.4M229.1 599.6L227.3 605.3M200.4 588.6L198 594.1M177 567.7L170 579.8M147.2 557.9L143.7 562.7M123.3 538.5L119.3 542.9M101.5 516.7L97.1 520.7M82.1 492.8L77.3 496.3M72.3 463L60.2 470M51.4 439.6L45.9 442M40.4 410.9L34.7 412.7M32.4 381.1L26.6 382.4M27.6 350.7L21.6 351.4M34 320L20 320M27.6 289.3L21.6 288.6M32.4 258.9L26.6 257.6M40.4 229.1L34.7 227.3M51.4 200.4L45.9 198M72.3 177L60.2 170M82.1 147.2L77.3 143.7M101.5 123.3L97.1 119.3M123.3 101.5L119.3 97.1M147.2 82.1L143.7 77.3M177 72.3L170 60.2M200.4 51.4L198 45.9M229.1 40.4L227.3 34.7M258.9 32.4L257.6 26.6M289.3 27.6L288.6 21.6M320 34L320 20M350.7 27.6L351.4 21.6M381.1 32.4L382.4 26.6M410.9 40.4L412.7 34.7M439.6 51.4L442 45.9M463 72.3L470 60.2M492.8 82.1L496.3 77.3M516.7 101.5L520.7 97.1M538.5 123.3L542.9 119.3M557.9 147.2L562.7 143.7M567.7 177L579.8 170M588.6 200.4L594.1 198M599.6 229.1L605.3 227.3M607.6 258.9L613.4 257.6M612.4 289.3L618.4 288.6" stroke="#79d920" stroke-opacity=".38"/><path d="M614 379.6A300 300 0 0 1 456.1 587.4" stroke="#8cf523" stroke-width="2.5" stroke-linecap="round" filter="url(#g)"/><circle cx="456.1" cy="587.4" r="5" fill="#8cf523" filter="url(#g)" class="p"/><path d="M126.8 497A262 262 0 0 1 61.3 278.7" stroke="#8cf523" stroke-width="2.5" stroke-linecap="round" filter="url(#g)"/><circle cx="61.3" cy="278.7" r="5" fill="#8cf523" filter="url(#g)" class="p"/><path d="M191.2 136.7A224 224 0 0 1 424.9 122.1" stroke="#8cf523" stroke-width="2.5" stroke-linecap="round" filter="url(#g)"/><circle cx="424.9" cy="122.1" r="5" fill="#8cf523" filter="url(#g)" class="p"/><path d="M387.4 493.4A186 186 0 0 1 259.9 496" stroke="#8cf523" stroke-width="2.5" stroke-linecap="round" filter="url(#g)"/><circle cx="259.9" cy="496" r="5" fill="#8cf523" filter="url(#g)" class="p"/><path d="M320 8V170M320 470V632M8 320H170M470 320H632" stroke="#e8f5e1" stroke-opacity=".08"/>
+</svg>

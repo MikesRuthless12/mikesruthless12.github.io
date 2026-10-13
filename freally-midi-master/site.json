@@ -1,0 +1,38 @@
+{
+  "product": "midi-master",
+  "name": "Freally MIDI Master",
+  "icon": "midi-master-icon.png",
+  "pages": [
+    "index",
+    "features",
+    "documentation",
+    "roster",
+    "changelog"
+  ],
+  "changelog": "../CHANGELOG.md",
+  "ladder": "ladder.json",
+  "chips": [
+    "CLAP",
+    "VST3",
+    "AU",
+    "@hero.chipStandalone|Standalone",
+    "@hero.chipWeb|Web",
+    "Windows",
+    "macOS",
+    "@hero.chipLinux|Linux (editor in progress)"
+  ],
+  "strings": {
+    "site.tagline": "Artist-accurate MIDI, generated onto the track you are already working on.",
+    "site.description": "Freally MIDI Master — a CLAP/VST3/AU plugin that generates original artist-style MIDI onto the track you are already working on, in your project's own key and tempo. Free today, offline, and 100% AI-free.",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
+    "footer.yours": "The music you make with it is yours, with no royalty and no attribution requirement."
+  },
+  "scripts": {
+    "roster": [
+      "roster.js"
+    ]
+  },
+  "noindex": [
+    "roster"
+  ]
+}

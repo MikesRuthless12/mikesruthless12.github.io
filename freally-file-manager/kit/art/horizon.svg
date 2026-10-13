@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" fill="none">
+<style>
+@keyframes p{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes d{to{stroke-dashoffset:-200}}
+@keyframes s{from{transform:translateX(-120px)}to{transform:translateX(920px)}}
+@keyframes r{to{transform:rotate(360deg)}}
+@keyframes b{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+.p{animation:p 3.2s ease-in-out infinite}
+.d{stroke-dasharray:6 10;animation:d 9s linear infinite}
+.s{animation:s 7s linear infinite}
+.b{transform-box:fill-box;transform-origin:50% 100%;animation:b 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+<filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+<linearGradient id="lime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8cf523"/><stop offset="1" stop-color="#79d920" stop-opacity=".35"/></linearGradient>
+<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#79d920" stop-opacity=".28"/><stop offset="1" stop-color="#79d920" stop-opacity="0"/></radialGradient>
+<radialGradient id="fade" cx=".5" cy=".5" r=".62"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+<mask id="m"><rect width="800" height="440" fill="url(#fade)"/></mask>
+
+</defs>
+<ellipse cx="400" cy="150" rx="320" ry="60" fill="url(#halo)"/>
+<path d="M0 150H800" stroke="#8cf523" stroke-width="1.5" filter="url(#g)"/>
+<g mask="url(#m)"><path d="M400 150L-580 440" stroke="#79d920" stroke-opacity="0.1"/><path d="M400 150L-510 440" stroke="#79d920" stroke-opacity="0.2"/><path d="M400 150L-440 440" stroke="#79d920" stroke-opacity="0.2"/><path d="M400 150L-370 440" stroke="#79d920" stroke-opacity="0.2"/><path d="M400 150L-300 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L-230 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L-160 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L-90 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L-20 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L50 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L120 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L190 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L260 440" stroke="#79d920" stroke-opacity="0.5"/><path d="M400 150L330 440" stroke="#79d920" stroke-opacity="0.5"/><path d="M400 150L400 440" stroke="#79d920" stroke-opacity="0.5"/><path d="M400 150L470 440" stroke="#79d920" stroke-opacity="0.5"/><path d="M400 150L540 440" stroke="#79d920" stroke-opacity="0.5"/><path d="M400 150L610 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L680 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L750 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L820 440" stroke="#79d920" stroke-opacity="0.4"/><path d="M400 150L890 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L960 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L1030 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L1100 440" stroke="#79d920" stroke-opacity="0.3"/><path d="M400 150L1170 440" stroke="#79d920" stroke-opacity="0.2"/><path d="M400 150L1240 440" stroke="#79d920" stroke-opacity="0.2"/><path d="M400 150L1310 440" stroke="#79d920" stroke-opacity="0.2"/><path d="M400 150L1380 440" stroke="#79d920" stroke-opacity="0.1"/><path d="M0 153.3H800" stroke="#79d920" stroke-opacity="0.1"/><path d="M0 161.5H800" stroke="#79d920" stroke-opacity="0.1"/><path d="M0 173.9H800" stroke="#79d920" stroke-opacity="0.2"/><path d="M0 190.1H800" stroke="#79d920" stroke-opacity="0.2"/><path d="M0 210H800" stroke="#79d920" stroke-opacity="0.2"/><path d="M0 233.3H800" stroke="#79d920" stroke-opacity="0.3"/><path d="M0 259.9H800" stroke="#79d920" stroke-opacity="0.3"/><path d="M0 289.8H800" stroke="#79d920" stroke-opacity="0.3"/><path d="M0 322.8H800" stroke="#79d920" stroke-opacity="0.4"/><path d="M0 358.9H800" stroke="#79d920" stroke-opacity="0.4"/><path d="M0 398H800" stroke="#79d920" stroke-opacity="0.4"/></g>
+<circle cx="400" cy="110" r="34" fill="#79d920" fill-opacity=".9" filter="url(#g)" class="p"/>
+</svg>

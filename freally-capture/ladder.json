@@ -1,0 +1,135 @@
+{
+  "note": "The public version ladder: every released version, oldest first, each with a CHANGELOG.md section of its own (scripts/site.test.mjs). `summary` is written for the site. States: done, planned, goal, later. What comes after the current release is planned privately and is not listed until it ships.",
+  "rungs": [
+    {
+      "version": "v0.10.0",
+      "state": "done",
+      "summary": "The foundation: the desktop app's shell over its own engine, the build checks on Windows, macOS and Linux, and this site."
+    },
+    {
+      "version": "v0.25.0",
+      "state": "done",
+      "summary": "Capture: screens, windows and webcams on Windows, macOS and Linux, live in the preview."
+    },
+    {
+      "version": "v0.40.0",
+      "state": "done",
+      "summary": "The GPU compositor: scenes built from sources and composed on the graphics card, with filters such as chroma key, color correction, LUTs and blur."
+    },
+    {
+      "version": "v0.55.0",
+      "state": "done",
+      "summary": "Audio and recording: a mixer with up to six tracks and classic-DSP filters, and multi-track recording with hardware encoders and Capture's own lossless format."
+    },
+    {
+      "version": "v0.56.0",
+      "state": "done",
+      "summary": "A native GPU preview: the program painted straight from the compositor, with no lag."
+    },
+    {
+      "version": "v0.70.0",
+      "state": "done",
+      "summary": "The studio: streaming to Twitch, YouTube, Kick, Facebook and Trovo with automatic reconnects, Studio Mode with transitions, hotkeys, profiles and a stats dock."
+    },
+    {
+      "version": "v0.85.0",
+      "state": "done",
+      "summary": "Streaming depth: multistream to several platforms at once, SRT and WHIP, a vertical canvas, nested scenes, a replay buffer and a chat overlay that needs no sign-in."
+    },
+    {
+      "version": "v0.90.0",
+      "state": "done",
+      "summary": "Remote control and extensions: a password-protected WebSocket API, browser docks, sandboxed Lua scripting and a plugin SDK, all local and off by default."
+    },
+    {
+      "version": "v0.95.0",
+      "state": "done",
+      "summary": "Distribution: a signed auto-updater, audio captured per application, and the licence agreement on first run."
+    },
+    {
+      "version": "v0.96.0",
+      "state": "done",
+      "summary": "A studio for everyone: 18 languages, full keyboard and screen-reader support, a first-run setup wizard, a command palette and themes."
+    },
+    {
+      "version": "v0.97.0",
+      "state": "done",
+      "summary": "Scene authoring and monitoring: undo and redo, an OBS scene-collection importer, alignment guides, a keying workbench, a multiview and projectors."
+    },
+    {
+      "version": "v0.98.0",
+      "state": "done",
+      "summary": "Broadcast safety: a go-live pre-flight, alarms, a source-health dashboard, encoder failover, crash-safe recording, a panic button and a quit guard."
+    },
+    {
+      "version": "v0.99.0",
+      "state": "done",
+      "summary": "Sources, devices and calibration: test signals, A/V sync calibration, timers and clocks, text from a file, a hotkey map, deinterlacing and camera controls."
+    },
+    {
+      "version": "v0.200.0",
+      "state": "done",
+      "summary": "Automation and capture depth: rules, macros, MIDI and OSC control, a LAN touch panel, tally lights, PTZ cameras and a show rundown, plus punch-in zoom and HDR-to-SDR tone-mapping."
+    },
+    {
+      "version": "v0.300.0",
+      "state": "done",
+      "summary": "New sources and overlays: instant replay, a gapless playlist, a title and scoreboard designer, an audio visualizer, a stats overlay, a split timer, an input overlay, LAN ingest and Freally Link."
+    },
+    {
+      "version": "v0.400.0",
+      "state": "done",
+      "summary": "Compositor depth: 3D corner-pin, downstream keyers, freeze-frame, more blurs, the move transition, a WGSL shader studio, bezier masks and track-matte stingers."
+    },
+    {
+      "version": "v0.500.0",
+      "state": "done",
+      "summary": "Audio production: output routing, a ducking matrix, an auto-mixer, loudness normalization, a parametric EQ, a soundboard, podcast recording and CLAP and VST3 plugin discovery."
+    },
+    {
+      "version": "v0.600.0",
+      "state": "done",
+      "summary": "Recording and replay depth: per-source ISO recording, a clip trimmer, recording with transparency, automatic markers, a post-record pipeline, an integrity check and SMPTE timecode."
+    },
+    {
+      "version": "v0.700.0",
+      "state": "done",
+      "summary": "Streaming insight: a network simulator, a rehearsal mode, a dropped-frame timeline, a session report, an encoder benchmark, and sources shown only on the stream or only in the recording."
+    },
+    {
+      "version": "v0.800.0",
+      "state": "done",
+      "summary": "Remote guests and show production: up to eight guests, a green room, cues, a connection-quality dashboard, a telestrator, a teleprompter and automatic guest grids."
+    },
+    {
+      "version": "v0.900.0",
+      "state": "done",
+      "summary": "Studio management: scene packs, compare and merge, named snapshots, portable mode, one-file backups, a theme editor and dock layouts."
+    },
+    {
+      "version": "v0.910.0",
+      "state": "done",
+      "summary": "The teleprompter, reworked: pause chips, a start countdown, BPM pacing, read-aloud, and autocomplete in all 18 languages."
+    },
+    {
+      "version": "v1.0.0",
+      "state": "done",
+      "summary": "The first stable release: every planned feature, plus a Starting Soon countdown, background music, a social bar and a featured chat banner."
+    },
+    {
+      "version": "v1.1.0",
+      "state": "done",
+      "summary": "A shareable MP4, written beside each lossless recording when it stops."
+    },
+    {
+      "version": "v1.2.0",
+      "state": "done",
+      "summary": "Deep capture and the web: a virtual camera, a true browser source and game capture, Windows first."
+    },
+    {
+      "version": "v1.2.1",
+      "state": "done",
+      "summary": "The audit: no new features, a full security and correctness pass, and the three 1.2.0 additions made to work."
+    }
+  ]
+}

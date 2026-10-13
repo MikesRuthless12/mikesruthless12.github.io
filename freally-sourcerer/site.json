@@ -1,0 +1,24 @@
+{
+  "product": "sourcerer",
+  "name": "Freally Sourcerer",
+  "icon": "sourcerer-icon.png",
+  "pages": ["index", "features", "documentation", "changelog"],
+  "changelog": "CHANGELOG.md",
+  "ladder": "ladder.json",
+  "version": "v0.23.2",
+  "chips": [
+    "Windows",
+    "macOS",
+    "Linux",
+    "@hero.chipApp|Desktop app",
+    "@hero.chipCli|Command line",
+    "@hero.chipLanguages|18 languages"
+  ],
+  "legal": ["footer.licence", "footer.everything"],
+  "strings": {
+    "site.tagline": "One search. Every source. Every OS.",
+    "site.description": "One search bar for every file on Windows, macOS and Linux: names, the text inside documents, audio by how it sounds, what a file's header says, and names that are only close. Free today; future versions may be sold.",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.",
+    "footer.everything": "Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools."
+  }
+}
