@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "I pianoforti veri. Sul palco di Handscore ora ci sono quattro pianoforti — un pianoforte a coda da concerto, un pianoforte a coda da salotto, un verticale da studio e un vecchio verticale da saloon — ciascuno illuminato come in studio e ciascuno con la sua voce. Fai clic su un tasto o suona dalla tua DAW e il pianoforte suona: il tasto si abbassa, il suo nome sfuma e il pedale di risonanza tiene ciò che rilasci. Un selettore ti fa ascoltare un pianoforte prima di sceglierlo.",
+  "changelog.6b02e0d363a4": "Aggiunto",
+  "changelog.a8f76e859570": "**Quattro pianoforti veri.** Grand Piano, Acoustic Piano, Upright Piano e Honky-Tonk Piano, ciascuno con la sua forma, la sua finitura e il suo suono, in entrambi i temi.",
+  "changelog.6f544a8bd67f": "**Suona i tasti.** Fai clic su un tasto per sentirlo, o scorri sui tasti per suonarli uno dopo l'altro. Il MIDI della tua DAW suona il pianoforte e ne muove i tasti, e il pedale di risonanza tiene le note che rilasci finché non togli il piede.",
+  "changelog.3f265130a08f": "**Tasti che si muovono come quelli di un pianoforte.** Ogni tasto si abbassa basculando sul suo punto di bilanciamento, tanto più veloce quanto più forte viene suonato, e il suo nome sfuma mentre è abbassato e ritorna quando risale.",
+  "changelog.7fd2c1ed940d": "**Il selettore dei pianoforti.** Il pulsante dello strumento in alto a sinistra (o P) apre quattro schede. *Ascolta* suona una breve frase su quel pianoforte senza cambiare pianoforte; *Scegli* lo porta sul palco, in dissolvenza incrociata dal precedente. La tua scelta viene salvata con il tuo progetto.",
+  "changelog.72aa386a33ff": "**Una qualità su misura per il tuo computer.** Handscore misura quanto velocemente il tuo computer disegna il palco e si assesta sulla qualità che riesce a mantenere fluida.",
+  "changelog.1246fc93bca0": "Corretto",
+  "changelog.58e041aeca75": "**I tasti tengono il passo su un computer impegnato.** Un tasto suonato mentre il computer era lento a disegnare poteva restare sollevato, o il suo nome restare sfumato a metà; ora finisce sempre dove l'ha lasciato la tua esecuzione.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Le fondamenta. Freally Handscore si carica come plugin CLAP e VST3 e come app autonoma, ti chiede di accettarne la licenza e si apre sul suo palco: una tastiera a 88 tasti con le misure di un vero pianoforte, con il nome di ogni tasto sul suo frontale. Non viene ancora generato nulla — questo arriva con i pianoforti veri e le mani.",
+  "changelog.37cee751dc57": "**Il plugin e l'app autonoma.** CLAP e VST3 su Windows (l'AU viene compilato su un Mac), e un'app autonoma che porta l'icona di Handscore nella barra del titolo e nella barra delle applicazioni.",
+  "changelog.bf0d03d43bfd": "**Prima di tutto, il contratto di licenza.** Finché non accetti, Handscore non fa nulla. La tua risposta viene conservata sul tuo computer e condivisa da ogni copia aperta, in ogni DAW e nell'app autonoma.",
+  "changelog.28bc52fb055e": "**Il palco.** Una tastiera a 88 tasti, da A0 a C8, con le misure di un vero pianoforte, che occupa tutta la larghezza della finestra. Il nome di ogni tasto è sul suo frontale — i tasti bianchi in inchiostro scuro, quelli neri in bianco — e scompare mentre il tasto è abbassato.",
+  "changelog.d51fdbedfc0e": "**Chiaro e scuro.** L'interruttore in alto a destra; Handscore ricorda la tua scelta.",
+  "changelog.9e0609310c1a": "**Diciotto lingue.** Handscore si avvia nella lingua del tuo sistema.",
+  "changelog.f1cf7c9dfaa8": "**Una vista 3D che dice quando non può disegnare.** Una finestra senza WebGL 2 spiega come attivarlo invece di non mostrare nulla.",
+  "changelog.0fe089d138d3": "**I crash vengono conservati, mai inviati.** Se Handscore dovesse arrestarsi in modo imprevisto, un breve rapporto viene conservato sul tuo computer per l'avvio successivo. Nulla lascia il tuo computer, a meno che tu non scelga di segnalarlo."
+}

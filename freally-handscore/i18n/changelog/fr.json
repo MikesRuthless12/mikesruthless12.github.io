@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "Les vrais pianos. Quatre pianos se dressent désormais sur la scène de Handscore — un piano à queue de concert, un piano à queue de salon, un piano droit de studio et un vieux piano droit de saloon — chacun éclairé comme en studio et chacun avec sa propre voix. Cliquez sur une touche ou jouez depuis votre DAW et le piano joue : la touche s'enfonce, son nom s'estompe, et la pédale de sustain maintient ce que vous relâchez. Un sélecteur vous permet d'écouter un piano avant de le choisir.",
+  "changelog.6b02e0d363a4": "Ajouté",
+  "changelog.a8f76e859570": "**Quatre vrais pianos.** Grand Piano, Acoustic Piano, Upright Piano et Honky-Tonk Piano, chacun avec sa forme, sa finition et sa sonorité propres, dans les deux thèmes.",
+  "changelog.6f544a8bd67f": "**Jouez sur les touches.** Cliquez sur une touche pour l'entendre, ou glissez sur les touches pour les jouer l'une après l'autre. Le MIDI de votre DAW fait jouer le piano et bouger ses touches, et la pédale de sustain maintient les notes que vous relâchez jusqu'à ce que vous leviez le pied.",
+  "changelog.3f265130a08f": "**Des touches qui bougent comme celles d'un piano.** Chaque touche s'enfonce en pivotant sur son point d'équilibre, d'autant plus vite qu'elle est jouée fort, et son nom s'estompe tant qu'elle est enfoncée et revient quand elle remonte.",
+  "changelog.7fd2c1ed940d": "**Le sélecteur de piano.** Le bouton d'instrument en haut à gauche (ou P) ouvre quatre cartes. *Écouter* joue une courte phrase sur ce piano sans en changer ; *Choisir* le place sur la scène, en fondu enchaîné depuis le précédent. Votre choix est enregistré avec votre projet.",
+  "changelog.72aa386a33ff": "**Une qualité adaptée à votre ordinateur.** Handscore mesure la vitesse à laquelle votre ordinateur dessine la scène et s'en tient à la qualité qu'il peut maintenir de façon fluide.",
+  "changelog.1246fc93bca0": "Corrigé",
+  "changelog.58e041aeca75": "**Les touches suivent, même sur un ordinateur chargé.** Une touche jouée pendant que l'ordinateur tardait à dessiner pouvait rester levée, ou son nom rester à moitié estompé ; elle finit désormais toujours là où votre jeu l'a laissée.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Les fondations. Freally Handscore se charge en plugin CLAP et VST3 ainsi qu'en application autonome, vous demande d'accepter sa licence et s'ouvre sur sa scène : un clavier de 88 touches aux dimensions d'un vrai piano, dont chaque touche est nommée sur sa face avant. Rien n'est encore généré — cela arrivera avec les vrais pianos et les mains.",
+  "changelog.37cee751dc57": "**Le plugin et l'application autonome.** CLAP et VST3 sous Windows (l'AU est compilé sur un Mac), et une application autonome qui porte l'icône de Handscore dans sa barre de titre et dans la barre des tâches.",
+  "changelog.bf0d03d43bfd": "**Le contrat de licence d'abord.** Tant que vous n'avez pas accepté, Handscore ne fait rien. Votre réponse est conservée sur votre ordinateur et partagée par chaque copie ouverte, dans chaque DAW et dans l'application autonome.",
+  "changelog.28bc52fb055e": "**La scène.** Un clavier de 88 touches, de A0 à C8, aux dimensions d'un vrai piano, qui occupe toute la largeur de la fenêtre. Le nom de chaque touche figure sur sa face avant — à l'encre foncée sur les touches blanches, en blanc sur les noires — et disparaît tant que la touche est enfoncée.",
+  "changelog.d51fdbedfc0e": "**Clair et sombre.** L'interrupteur en haut à droite ; Handscore retient votre choix.",
+  "changelog.9e0609310c1a": "**Dix-huit langues.** Handscore démarre dans la langue de votre système.",
+  "changelog.f1cf7c9dfaa8": "**Une vue 3D qui prévient quand elle ne peut pas dessiner.** Une fenêtre sans WebGL 2 explique comment l'activer au lieu de ne rien afficher.",
+  "changelog.0fe089d138d3": "**Les plantages sont conservés, jamais envoyés.** Si Handscore s'arrête un jour de façon inattendue, un court rapport est conservé sur votre ordinateur pour le prochain lancement. Rien ne quitte votre ordinateur à moins que vous ne choisissiez de le signaler."
+}

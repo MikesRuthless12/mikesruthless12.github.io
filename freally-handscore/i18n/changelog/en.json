@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "The real pianos. Four pianos now stand on Handscore's stage — a concert grand, a parlor grand, a studio upright and an old saloon upright — each lit like a studio and each with its own voice. Click a key or play from your DAW and the piano plays: the key goes down, its name fades, and the sustain pedal holds what you let go. A picker lets you hear a piano before you choose it.",
+  "changelog.6b02e0d363a4": "Added",
+  "changelog.a8f76e859570": "**Four real pianos.** Grand Piano, Acoustic Piano, Upright Piano and Honky-Tonk Piano, each with its own shape, finish and sound, in both themes.",
+  "changelog.6f544a8bd67f": "**Play the keys.** Click a key to hear it, or slide across the keys to play each in turn. MIDI from your DAW plays the piano and moves its keys, and the sustain pedal holds the notes you let go until you lift it.",
+  "changelog.3f265130a08f": "**Keys that move like a piano's.** Each key goes down on its balance rail, faster the harder it is played, and its name fades while it is down and comes back when it rises.",
+  "changelog.7fd2c1ed940d": "**The piano picker.** The instrument button at the top left (or P) opens four cards. *Preview* plays a short phrase on that piano without switching; *Choose* puts it on the stage, crossfading from the last one. Your choice is saved with your project.",
+  "changelog.72aa386a33ff": "**Quality that fits your computer.** Handscore measures how fast your computer draws the stage and settles on the quality it can hold smoothly.",
+  "changelog.1246fc93bca0": "Fixed",
+  "changelog.58e041aeca75": "**Keys keep up on a busy computer.** A key played while the computer was slow to draw could stay up, or its name stay half-faded; it now always ends where your playing left it.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "The foundation. Freally Handscore loads as a CLAP and VST3 plugin and as a standalone app, asks you to accept its licence, and opens on its stage: an 88-key keyboard at a real piano's measurements, with every key named on its front. Nothing is generated yet — that arrives with the real pianos and the hands.",
+  "changelog.37cee751dc57": "**The plugin and the standalone app.** CLAP and VST3 on Windows (the AU is built on a Mac), and a standalone app that wears Handscore's icon in its title bar and taskbar.",
+  "changelog.bf0d03d43bfd": "**The licence agreement comes first.** Until you agree, Handscore does nothing. Your answer is kept on your computer and shared by every open copy, in every DAW and in the standalone app.",
+  "changelog.28bc52fb055e": "**The stage.** An 88-key keyboard, A0 to C8, at a real piano's measurements, filling the width of the window. Every key's name is on its front — white keys in dark ink, black keys in white — and hides while the key is down.",
+  "changelog.d51fdbedfc0e": "**Light and dark.** The switch at the top right; Handscore remembers your choice.",
+  "changelog.9e0609310c1a": "**Eighteen languages.** Handscore starts in your system's language.",
+  "changelog.f1cf7c9dfaa8": "**A 3D view that says when it cannot draw.** A window without WebGL 2 explains how to turn it on instead of showing nothing.",
+  "changelog.0fe089d138d3": "**Crashes are kept, never sent.** If Handscore ever stops unexpectedly, a short report is kept on your computer for the next launch. Nothing leaves your computer unless you choose to report it."
+}

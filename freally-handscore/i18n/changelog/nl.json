@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "De echte piano's. Op het podium van Handscore staan nu vier piano's — een concertvleugel, een salonvleugel, een studiobuffetpiano en een oude buffetpiano uit een saloon — elk belicht als in een studio en elk met een eigen stem. Klik op een toets of speel vanuit je DAW en de piano speelt: de toets gaat omlaag, zijn naam vervaagt en het sustainpedaal houdt vast wat je loslaat. Met de pianokiezer hoor je een piano voordat je hem kiest.",
+  "changelog.6b02e0d363a4": "Toegevoegd",
+  "changelog.a8f76e859570": "**Vier echte piano's.** Grand Piano, Acoustic Piano, Upright Piano en Honky-Tonk Piano, elk met een eigen vorm, afwerking en klank, in beide thema's.",
+  "changelog.6f544a8bd67f": "**Bespeel de toetsen.** Klik op een toets om hem te horen, of glijd over de toetsen om ze één voor één te spelen. MIDI uit je DAW bespeelt de piano en beweegt zijn toetsen, en het sustainpedaal houdt de noten die je loslaat vast tot je je voet optilt.",
+  "changelog.3f265130a08f": "**Toetsen die bewegen zoals die van een piano.** Elke toets kantelt omlaag op zijn balansrail, sneller naarmate hij harder wordt aangeslagen, en zijn naam vervaagt zolang hij is ingedrukt en komt terug als hij weer omhoogkomt.",
+  "changelog.7fd2c1ed940d": "**De pianokiezer.** De instrumentknop linksboven (of P) opent vier kaarten. *Voorbeluisteren* speelt een korte frase op die piano zonder te wisselen; *Kiezen* zet hem op het podium, met een crossfade vanaf de vorige. Je keuze wordt met je project opgeslagen.",
+  "changelog.72aa386a33ff": "**Kwaliteit die bij je computer past.** Handscore meet hoe snel je computer het podium tekent en kiest de kwaliteit die hij soepel kan volhouden.",
+  "changelog.1246fc93bca0": "Opgelost",
+  "changelog.58e041aeca75": "**Toetsen blijven bij op een drukke computer.** Een toets die werd gespeeld terwijl de computer traag tekende, kon omhoog blijven, of zijn naam half vervaagd blijven; nu eindigt hij altijd waar je spel hem achterliet.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Het fundament. Freally Handscore laadt als CLAP- en VST3-plug-in en als losse app, vraagt je de licentie te accepteren, en opent op zijn podium: een klavier met 88 toetsen op de maten van een echte piano, met de naam van elke toets op de voorkant. Er wordt nog niets gegenereerd — dat komt met de echte piano's en de handen.",
+  "changelog.37cee751dc57": "**De plug-in en de zelfstandige app.** CLAP en VST3 op Windows (de AU wordt op een Mac gebouwd), en een zelfstandige app die het pictogram van Handscore in zijn titelbalk en taakbalk draagt.",
+  "changelog.bf0d03d43bfd": "**Eerst de licentieovereenkomst.** Tot je akkoord gaat, doet Handscore niets. Je antwoord wordt op je computer bewaard en gedeeld door elke open kopie, in elke DAW en in de zelfstandige app.",
+  "changelog.28bc52fb055e": "**Het podium.** Een klavier met 88 toetsen, van A0 tot C8, op de maten van een echte piano, over de hele breedte van het venster. De naam van elke toets staat op de voorkant — witte toetsen in donkere inkt, zwarte toetsen in wit — en verdwijnt zolang de toets is ingedrukt.",
+  "changelog.d51fdbedfc0e": "**Licht en donker.** De schakelaar rechtsboven; Handscore onthoudt je keuze.",
+  "changelog.9e0609310c1a": "**Achttien talen.** Handscore start in de taal van je systeem.",
+  "changelog.f1cf7c9dfaa8": "**Een 3D-weergave die zegt wanneer hij niet kan tekenen.** Een venster zonder WebGL 2 legt uit hoe je het aanzet, in plaats van niets te tonen.",
+  "changelog.0fe089d138d3": "**Crashes worden bewaard, nooit verstuurd.** Als Handscore ooit onverwacht stopt, wordt er een kort rapport op je computer bewaard voor de volgende keer dat het start. Niets verlaat je computer, tenzij je ervoor kiest het te melden."
+}

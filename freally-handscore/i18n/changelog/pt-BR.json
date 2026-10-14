@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "Os pianos de verdade. Quatro pianos agora estão no palco do Handscore — um piano de cauda de concerto, um piano de cauda de salão, um piano vertical de estúdio e um velho piano vertical de saloon — cada um iluminado como em um estúdio e cada um com sua própria voz. Clique em uma tecla ou toque a partir da sua DAW e o piano toca: a tecla desce, o nome dela esmaece e o pedal de sustain segura o que você solta. Um seletor permite ouvir um piano antes de escolhê-lo.",
+  "changelog.6b02e0d363a4": "Adicionado",
+  "changelog.a8f76e859570": "**Quatro pianos de verdade.** Grand Piano, Acoustic Piano, Upright Piano e Honky-Tonk Piano, cada um com sua forma, acabamento e som, nos dois temas.",
+  "changelog.6f544a8bd67f": "**Toque as teclas.** Clique em uma tecla para ouvi-la, ou deslize pelas teclas para tocá-las uma após a outra. O MIDI da sua DAW toca o piano e move as teclas dele, e o pedal de sustain segura as notas que você solta até você tirar o pé.",
+  "changelog.3f265130a08f": "**Teclas que se movem como as de um piano.** Cada tecla desce girando sobre o seu trilho de equilíbrio, mais rápido quanto mais forte é tocada, e o nome dela esmaece enquanto está abaixada e volta quando ela sobe.",
+  "changelog.7fd2c1ed940d": "**O seletor de pianos.** O botão de instrumento no canto superior esquerdo (ou P) abre quatro cartões. *Ouvir* toca uma frase curta naquele piano sem trocar o piano atual; *Escolher* o coloca no palco, com um crossfade a partir do anterior. A sua escolha é salva com o seu projeto.",
+  "changelog.72aa386a33ff": "**Qualidade sob medida para o seu computador.** O Handscore mede a rapidez com que o seu computador desenha o palco e se fixa na qualidade que ele consegue manter com fluidez.",
+  "changelog.1246fc93bca0": "Corrigido",
+  "changelog.58e041aeca75": "**As teclas acompanham mesmo com o computador ocupado.** Uma tecla tocada enquanto o computador demorava a desenhar podia ficar levantada, ou o nome dela ficar meio esmaecido; agora ela sempre termina onde a sua execução a deixou.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "A base. O Freally Handscore carrega como plugin CLAP e VST3 e como aplicativo independente, pede que você aceite a licença e abre no seu palco: um teclado de 88 teclas com as medidas de um piano de verdade, com o nome de cada tecla na frente. Nada é gerado ainda — isso chega com os pianos de verdade e as mãos.",
+  "changelog.37cee751dc57": "**O plugin e o aplicativo independente.** CLAP e VST3 no Windows (o AU é compilado em um Mac), e um aplicativo independente que exibe o ícone do Handscore na barra de título e na barra de tarefas.",
+  "changelog.bf0d03d43bfd": "**O contrato de licença vem primeiro.** Até você concordar, o Handscore não faz nada. Sua resposta é guardada no seu computador e compartilhada por toda cópia aberta, em cada DAW e no aplicativo independente.",
+  "changelog.28bc52fb055e": "**O palco.** Um teclado de 88 teclas, de A0 a C8, com as medidas de um piano de verdade, ocupando toda a largura da janela. O nome de cada tecla está na sua frente — as teclas brancas em tinta escura, as pretas em branco — e se esconde enquanto a tecla está abaixada.",
+  "changelog.d51fdbedfc0e": "**Claro e escuro.** A chave no canto superior direito; o Handscore lembra a sua escolha.",
+  "changelog.9e0609310c1a": "**Dezoito idiomas.** O Handscore inicia no idioma do seu sistema.",
+  "changelog.f1cf7c9dfaa8": "**Uma visualização 3D que avisa quando não consegue desenhar.** Uma janela sem WebGL 2 explica como ativá-lo, em vez de não mostrar nada.",
+  "changelog.0fe089d138d3": "**Falhas são guardadas, nunca enviadas.** Se o Handscore parar inesperadamente, um breve relatório é guardado no seu computador para a próxima abertura. Nada sai do seu computador, a menos que você escolha relatá-lo."
+}

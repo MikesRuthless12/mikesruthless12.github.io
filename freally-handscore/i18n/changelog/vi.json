@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "Những cây piano thật. Giờ đây sân khấu của Handscore có bốn cây piano — một cây đại dương cầm biểu diễn, một cây đại dương cầm phòng khách, một cây piano đứng phòng thu và một cây piano đứng cũ kỹ từ quán rượu miền Viễn Tây — mỗi cây được chiếu sáng như trong phòng thu và mỗi cây có giọng riêng. Nhấp vào một phím hoặc chơi từ DAW của bạn và cây piano sẽ cất tiếng: phím đi xuống, tên của nó mờ dần, và pedal sustain giữ lại những nốt bạn buông ra. Bộ chọn piano cho phép bạn nghe một cây piano trước khi chọn nó.",
+  "changelog.6b02e0d363a4": "Đã thêm",
+  "changelog.a8f76e859570": "**Bốn cây piano thật.** Grand Piano, Acoustic Piano, Upright Piano và Honky-Tonk Piano, mỗi cây có hình dáng, lớp hoàn thiện và âm thanh riêng, ở cả hai giao diện.",
+  "changelog.6f544a8bd67f": "**Chơi các phím.** Nhấp vào một phím để nghe nó, hoặc lướt qua các phím để chơi lần lượt từng phím. MIDI từ DAW của bạn chơi cây piano và làm các phím của nó chuyển động, còn pedal sustain giữ những nốt bạn buông ra cho đến khi bạn nhấc chân khỏi pedal.",
+  "changelog.3f265130a08f": "**Phím chuyển động như phím đàn piano.** Mỗi phím đi xuống bằng cách xoay trên thanh cân bằng của nó, được chơi càng mạnh thì xuống càng nhanh, và tên của phím mờ đi khi phím đang xuống rồi hiện lại khi phím nâng lên.",
+  "changelog.7fd2c1ed940d": "**Bộ chọn piano.** Nút nhạc cụ ở góc trên bên trái (hoặc P) mở ra bốn thẻ. *Nghe thử* chơi một câu nhạc ngắn trên cây piano đó mà không đổi đàn; *Chọn* đưa nó lên sân khấu, chuyển tiếp mượt mà từ cây trước đó. Lựa chọn của bạn được lưu cùng dự án.",
+  "changelog.72aa386a33ff": "**Chất lượng vừa với máy tính của bạn.** Handscore đo xem máy tính của bạn vẽ sân khấu nhanh đến đâu và chọn mức chất lượng mà máy có thể duy trì mượt mà.",
+  "changelog.1246fc93bca0": "Đã sửa",
+  "changelog.58e041aeca75": "**Phím theo kịp ngay cả trên máy tính đang bận.** Một phím được chơi khi máy tính vẽ chậm có thể vẫn ở trên, hoặc tên của nó vẫn mờ một nửa; giờ đây phím luôn dừng đúng ở trạng thái mà cách chơi của bạn để lại.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Nền móng. Freally Handscore tải được dưới dạng plugin CLAP và VST3 lẫn ứng dụng độc lập, đề nghị bạn chấp nhận giấy phép, và mở ra trên sân khấu của nó: một bàn phím 88 phím theo đúng kích thước của một cây đàn piano thật, với tên của mọi phím ở mặt trước. Hiện chưa có gì được tạo ra — điều đó sẽ đến cùng những cây piano thật và đôi tay.",
+  "changelog.37cee751dc57": "**Plugin và ứng dụng độc lập.** CLAP và VST3 trên Windows (AU được dựng trên máy Mac), và một ứng dụng độc lập mang biểu tượng của Handscore trên thanh tiêu đề và thanh tác vụ.",
+  "changelog.bf0d03d43bfd": "**Thỏa thuận cấp phép đến trước tiên.** Cho đến khi bạn đồng ý, Handscore không làm gì. Câu trả lời của bạn được lưu trên máy tính của bạn và dùng chung cho mọi bản đang mở, trong mọi DAW và trong ứng dụng độc lập.",
+  "changelog.28bc52fb055e": "**Sân khấu.** Một bàn phím 88 phím, từ A0 đến C8, theo đúng kích thước của một cây đàn piano thật, trải kín chiều rộng cửa sổ. Tên của mỗi phím nằm ở mặt trước của nó — phím trắng in mực tối, phím đen in màu trắng — và ẩn đi khi phím đang được nhấn.",
+  "changelog.d51fdbedfc0e": "**Sáng và tối.** Công tắc ở góc trên bên phải; Handscore ghi nhớ lựa chọn của bạn.",
+  "changelog.9e0609310c1a": "**Mười tám ngôn ngữ.** Handscore khởi động bằng ngôn ngữ hệ thống của bạn.",
+  "changelog.f1cf7c9dfaa8": "**Chế độ xem 3D biết báo khi không thể vẽ.** Một cửa sổ không có WebGL 2 sẽ giải thích cách bật nó lên thay vì không hiển thị gì.",
+  "changelog.0fe089d138d3": "**Sự cố được lưu lại, không bao giờ gửi đi.** Nếu Handscore có lúc dừng đột ngột, một báo cáo ngắn sẽ được lưu trên máy tính của bạn cho lần khởi chạy tiếp theo. Không có gì rời khỏi máy tính của bạn trừ khi bạn chọn báo cáo sự cố."
+}

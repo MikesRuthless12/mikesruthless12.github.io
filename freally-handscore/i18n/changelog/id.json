@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "Piano sungguhan. Kini empat piano berdiri di panggung Handscore — grand piano konser, grand piano ruang tamu, piano upright studio, dan piano upright tua dari saloon — masing-masing disinari seperti di studio dan masing-masing dengan suaranya sendiri. Klik sebuah tuts atau mainkan dari DAW Anda, dan piano pun berbunyi: tuts turun, namanya memudar, dan pedal sustain menahan apa yang Anda lepaskan. Pemilih piano memungkinkan Anda mendengar sebuah piano sebelum memilihnya.",
+  "changelog.6b02e0d363a4": "Ditambahkan",
+  "changelog.a8f76e859570": "**Empat piano sungguhan.** Grand Piano, Acoustic Piano, Upright Piano, dan Honky-Tonk Piano, masing-masing dengan bentuk, hasil akhir, dan suaranya sendiri, di kedua tema.",
+  "changelog.6f544a8bd67f": "**Mainkan tutsnya.** Klik sebuah tuts untuk mendengarnya, atau geser di atas tuts untuk memainkannya satu per satu. MIDI dari DAW Anda memainkan piano dan menggerakkan tutsnya, dan pedal sustain menahan nada yang Anda lepaskan sampai Anda mengangkat kaki dari pedal.",
+  "changelog.3f265130a08f": "**Tuts yang bergerak seperti tuts piano.** Setiap tuts turun dengan berputar pada titik tumpunya, makin cepat makin keras dimainkan, dan namanya memudar selama tuts turun lalu kembali saat tuts naik.",
+  "changelog.7fd2c1ed940d": "**Pemilih piano.** Tombol instrumen di kiri atas (atau P) membuka empat kartu. *Pratinjau* memainkan frasa pendek pada piano itu tanpa berganti piano; *Pilih* menaruhnya di panggung, dengan crossfade dari piano sebelumnya. Pilihan Anda disimpan bersama proyek Anda.",
+  "changelog.72aa386a33ff": "**Kualitas yang sesuai dengan komputer Anda.** Handscore mengukur seberapa cepat komputer Anda menggambar panggung dan menetapkan kualitas yang dapat dipertahankannya dengan mulus.",
+  "changelog.1246fc93bca0": "Diperbaiki",
+  "changelog.58e041aeca75": "**Tuts tetap mengikuti di komputer yang sibuk.** Tuts yang dimainkan saat komputer lambat menggambar bisa tetap terangkat, atau namanya tetap setengah memudar; kini tuts selalu berakhir sesuai keadaan yang ditinggalkan permainan Anda.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Fondasi. Freally Handscore dimuat sebagai plugin CLAP dan VST3 serta sebagai aplikasi mandiri, meminta Anda menyetujui lisensinya, dan terbuka di panggungnya: keyboard 88 tuts dengan ukuran piano sungguhan, dengan nama setiap tuts di bagian depannya. Belum ada yang dihasilkan — itu hadir bersama piano sungguhan dan tangan.",
+  "changelog.37cee751dc57": "**Plugin dan aplikasi mandiri.** CLAP dan VST3 di Windows (AU dibangun di Mac), dan aplikasi mandiri yang memakai ikon Handscore di bilah judul dan bilah tugasnya.",
+  "changelog.bf0d03d43bfd": "**Perjanjian lisensi lebih dulu.** Sebelum Anda setuju, Handscore tidak melakukan apa pun. Jawaban Anda disimpan di komputer Anda dan dipakai bersama oleh setiap salinan yang terbuka, di setiap DAW dan di aplikasi mandiri.",
+  "changelog.28bc52fb055e": "**Panggung.** Keyboard 88 tuts, A0 sampai C8, dengan ukuran piano sungguhan, memenuhi lebar jendela. Nama setiap tuts tertera di bagian depannya — tuts putih dengan tinta gelap, tuts hitam dengan warna putih — dan tersembunyi selama tuts ditekan.",
+  "changelog.d51fdbedfc0e": "**Terang dan gelap.** Sakelar di kanan atas; Handscore mengingat pilihan Anda.",
+  "changelog.9e0609310c1a": "**Delapan belas bahasa.** Handscore dimulai dalam bahasa sistem Anda.",
+  "changelog.f1cf7c9dfaa8": "**Tampilan 3D yang memberi tahu saat tidak dapat menggambar.** Jendela tanpa WebGL 2 menjelaskan cara mengaktifkannya alih-alih tidak menampilkan apa pun.",
+  "changelog.0fe089d138d3": "**Laporan crash disimpan, tidak pernah dikirim.** Jika Handscore suatu saat berhenti secara tak terduga, laporan singkat disimpan di komputer Anda untuk peluncuran berikutnya. Tidak ada yang meninggalkan komputer Anda kecuali Anda memilih untuk melaporkannya."
+}

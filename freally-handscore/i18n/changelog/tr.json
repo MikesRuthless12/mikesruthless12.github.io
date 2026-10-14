@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "Gerçek piyanolar. Handscore'un sahnesinde artık dört piyano var — bir konser kuyruklu piyanosu, bir salon kuyruklu piyanosu, bir stüdyo duvar piyanosu ve eski bir kovboy barı duvar piyanosu — her biri stüdyodaki gibi ışıklandırılmış ve her birinin kendi sesi var. Bir tuşa tıklayın ya da DAW'ınızdan çalın, piyano çalar: tuş aşağı iner, adı solar ve sustain pedalı bıraktığınız sesleri tutar. Piyano seçici sayesinde bir piyanoyu seçmeden önce dinleyebilirsiniz.",
+  "changelog.6b02e0d363a4": "Eklenenler",
+  "changelog.a8f76e859570": "**Dört gerçek piyano.** Grand Piano, Acoustic Piano, Upright Piano ve Honky-Tonk Piano; her biri kendine özgü biçimi, cilası ve sesiyle, her iki temada da.",
+  "changelog.6f544a8bd67f": "**Tuşları çalın.** Duymak için bir tuşa tıklayın ya da tuşları sırayla çalmak için üzerlerinde kaydırın. DAW'ınızdan gelen MIDI piyanoyu çalar ve tuşlarını hareket ettirir; sustain pedalı da bıraktığınız notaları siz ayağınızı kaldırana kadar tutar.",
+  "changelog.3f265130a08f": "**Piyano tuşları gibi hareket eden tuşlar.** Her tuş denge çıtası üzerinde dönerek aşağı iner; ne kadar sert çalınırsa o kadar hızlı iner. Tuş aşağıdayken adı solar, tuş kalktığında geri gelir.",
+  "changelog.7fd2c1ed940d": "**Piyano seçici.** Sol üstteki enstrüman düğmesi (ya da P) dört kart açar. *Önizle*, piyanoyu değiştirmeden o piyanoda kısa bir müzik cümlesi çalar; *Seç* ise onu bir öncekinden çapraz geçişle sahneye getirir. Seçiminiz projenizle birlikte kaydedilir.",
+  "changelog.72aa386a33ff": "**Bilgisayarınıza uyan kalite.** Handscore, bilgisayarınızın sahneyi ne kadar hızlı çizdiğini ölçer ve akıcı biçimde sürdürebileceği kalitede karar kılar.",
+  "changelog.1246fc93bca0": "Düzeltilenler",
+  "changelog.58e041aeca75": "**Tuşlar meşgul bir bilgisayarda da geri kalmaz.** Bilgisayar çizmekte yavaş kaldığında çalınan bir tuş yukarıda kalabiliyor ya da adı yarı solmuş halde kalabiliyordu; artık her zaman çalışınızın bıraktığı yerde biter.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Temel. Freally Handscore bir CLAP ve VST3 eklentisi olarak ve bağımsız bir uygulama olarak yüklenir, lisansını kabul etmenizi ister ve sahnesinde açılır: gerçek bir piyanonun ölçülerinde, her tuşun adı ön yüzünde yazılı 88 tuşlu bir klavye. Henüz hiçbir şey üretilmiyor — bu, gerçek piyanolar ve ellerle birlikte gelecek.",
+  "changelog.37cee751dc57": "**Eklenti ve bağımsız uygulama.** Windows'ta CLAP ve VST3 (AU bir Mac'te derlenir) ve başlık çubuğunda ve görev çubuğunda Handscore'un simgesini taşıyan bağımsız bir uygulama.",
+  "changelog.bf0d03d43bfd": "**Önce lisans sözleşmesi gelir.** Siz kabul edene kadar Handscore hiçbir şey yapmaz. Yanıtınız bilgisayarınızda saklanır ve her DAW'da ve bağımsız uygulamada açık olan her kopya tarafından paylaşılır.",
+  "changelog.28bc52fb055e": "**Sahne.** Gerçek bir piyanonun ölçülerinde, A0'dan C8'e uzanan ve pencerenin genişliğini dolduran 88 tuşlu bir klavye. Her tuşun adı ön yüzünde yazılıdır — beyaz tuşlarda koyu mürekkeple, siyah tuşlarda beyazla — ve tuş basılıyken gizlenir.",
+  "changelog.d51fdbedfc0e": "**Açık ve koyu mod.** Sağ üstteki anahtar; Handscore seçiminizi hatırlar.",
+  "changelog.9e0609310c1a": "**On sekiz dil.** Handscore sisteminizin dilinde başlar.",
+  "changelog.f1cf7c9dfaa8": "**Çizemediğinde bunu söyleyen bir 3B görünüm.** WebGL 2 olmayan bir pencere, hiçbir şey göstermemek yerine onu nasıl açacağınızı anlatır.",
+  "changelog.0fe089d138d3": "**Çökme raporları saklanır, asla gönderilmez.** Handscore bir gün beklenmedik şekilde durursa, bir sonraki açılış için bilgisayarınızda kısa bir rapor saklanır. Siz bildirmeyi seçmedikçe hiçbir şey bilgisayarınızdan çıkmaz."
+}

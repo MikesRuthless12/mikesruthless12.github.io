@@ -1,0 +1,191 @@
+{
+  "note": "The public version ladder. Each rung has a short `phase` name and a `summary`, both written for this site. `scripts/check-ladder.mjs` checks every row against the plan: the same version, the same state, and a `phase` that names the same phase. States: done, planned, goal, later.",
+  "rungs": [
+    {
+      "version": "v0.1.0",
+      "phase": "Phase 0 — Foundation & CI Spine",
+      "state": "done",
+      "summary": "The foundation: the plugin loads as CLAP, VST3 and AU and as a standalone app, asks you to accept its licence, and opens on an 88-key keyboard with every key named."
+    },
+    {
+      "version": "v0.2.0",
+      "phase": "Phase 1 — The Real Pianos",
+      "state": "done",
+      "summary": "The real pianos: Grand, Acoustic, Upright and Honky-Tonk, their keys moving and sounding as they play."
+    },
+    {
+      "version": "v0.3.0",
+      "phase": "Phase 2 — Realistic Hands at the Keyboard",
+      "state": "planned",
+      "summary": "Realistic hands at the keyboard, fingering every note the way a pianist would."
+    },
+    {
+      "version": "v0.4.0",
+      "phase": "Phase 3 — Generate, Read & Drag",
+      "state": "planned",
+      "summary": "Generate in any style, read the four sheets as they light up, and drag the MIDI into your DAW."
+    },
+    {
+      "version": "v0.5.0",
+      "phase": "Phase 4 — The Overhead & Side Views",
+      "state": "planned",
+      "summary": "The overhead and side views, with the sheets lying flat on the piano, and a seamless switch between views."
+    },
+    {
+      "id": "lessons-1",
+      "version": "v0.6.0",
+      "phase": "Phase 4A — Lessons I",
+      "state": "planned",
+      "summary": "Lessons from Day 1: a piano course that listens to you play and moves on when you have it right, every lesson read aloud with each word lit as it is spoken."
+    },
+    {
+      "id": "mixer",
+      "version": "v0.7.0",
+      "phase": "Phase 4B — The Mixer",
+      "state": "planned",
+      "summary": "A mixer for every part, with faders, pan, EQ, effects and compression, and drags that keep the mix."
+    },
+    {
+      "id": "song-view",
+      "version": "v0.8.0",
+      "phase": "Phase 4C — The Song View",
+      "state": "planned",
+      "summary": "The Song view: build a whole song from sections by hand, or start from an artist's or a genre's arrangement, then watch it played and drag it out."
+    },
+    {
+      "id": "lessons-2",
+      "version": "v0.9.0",
+      "phase": "Phase 4D — Lessons II",
+      "state": "planned",
+      "summary": "More courses: reading sheet music, rhythm, ear training, music theory with the Nashville Number System, songwriting and lyrics, arranging, and mixing."
+    },
+    {
+      "id": "finger-drumming",
+      "version": "v0.10.0",
+      "phase": "Phase 4E — Finger Drumming",
+      "state": "planned",
+      "summary": "Finger drumming on a pad controller whose pads light up with every hit, from the first beat to full grooves."
+    },
+    {
+      "id": "live-listening",
+      "version": "v0.11.0",
+      "phase": "Phase 4F — Live Listening",
+      "state": "planned",
+      "summary": "Live listening: play a real instrument into a microphone or an instrument cable, and the lessons hear it."
+    },
+    {
+      "id": "guitars",
+      "version": "v0.12.0",
+      "phase": "Phase 5 — The Guitars",
+      "state": "planned",
+      "summary": "The guitars: acoustic, nylon, electric and muted, with real fretting, picking and strumming."
+    },
+    {
+      "id": "bass",
+      "version": "v0.13.0",
+      "phase": "Phase 6 — The Bass Guitar",
+      "state": "planned",
+      "summary": "The bass guitar, played with the fingers and slapped."
+    },
+    {
+      "id": "own-audio",
+      "version": "v0.14.0",
+      "phase": "Phase 7 — Your Own Audio & MIDI",
+      "state": "planned",
+      "summary": "Your own audio and MIDI, read into parts and played by the hands."
+    },
+    {
+      "id": "classics",
+      "version": "v0.15.0",
+      "phase": "Phase 8 — The Classics",
+      "state": "planned",
+      "summary": "The classics: public-domain tunes to watch and listen to."
+    },
+    {
+      "id": "realism",
+      "version": "v0.16.0",
+      "phase": "Phase 9 — The Realism Pass",
+      "state": "planned",
+      "summary": "The realism pass: lighting, materials and motion held to filmed playing."
+    },
+    {
+      "id": "finish",
+      "version": "v0.17.0",
+      "phase": "Phase 10 — The Finish",
+      "state": "planned",
+      "summary": "The finish: settings, eighteen languages throughout, accessibility and the manual."
+    },
+    {
+      "version": "v1.0.0-beta.1",
+      "phase": "Phase 11 — Updates, Trial & Paid",
+      "state": "planned",
+      "summary": "Update notices and the trial and paid editions."
+    },
+    {
+      "version": "v1.0.0",
+      "phase": "Phase 12 — Release Candidate & the First Public Release",
+      "state": "goal",
+      "summary": "The first public release."
+    },
+    {
+      "version": "v1.1.0",
+      "phase": "Phase 13 — The Keys Family I",
+      "state": "later",
+      "summary": "Electric pianos and organs, the organs with a pedalboard for the bassline."
+    },
+    {
+      "version": "v1.2.0",
+      "phase": "Phase 14 — The Keys Family II & More Frets",
+      "state": "later",
+      "summary": "Harpsichord, clavinet, celesta and toy piano; ukulele, banjo and mandolin."
+    },
+    {
+      "version": "v1.3.0",
+      "phase": "Phase 15 — The Mallets",
+      "state": "later",
+      "summary": "The mallets: xylophone, marimba, vibraphone and glockenspiel."
+    },
+    {
+      "version": "v1.4.0",
+      "phase": "Phase 16 — The Harp & More Plucked Strings",
+      "state": "later",
+      "summary": "The harp, koto, sitar and mountain dulcimer."
+    },
+    {
+      "version": "v1.5.0",
+      "phase": "Phase 17 — The Bowed Strings",
+      "state": "later",
+      "summary": "Violin, viola, cello and double bass, bowed and plucked."
+    },
+    {
+      "version": "v1.6.0",
+      "phase": "Phase 18 — The Woodwinds",
+      "state": "later",
+      "summary": "Flute, clarinet, saxophones, oboe and recorder."
+    },
+    {
+      "version": "v1.7.0",
+      "phase": "Phase 19 — The Brass",
+      "state": "later",
+      "summary": "Trumpet, trombone, French horn and tuba."
+    },
+    {
+      "version": "v1.8.0",
+      "phase": "Phase 20 — The Drums & Percussion",
+      "state": "later",
+      "summary": "A drum kit set up and played the way a professional drummer would."
+    },
+    {
+      "version": "v1.9.0",
+      "phase": "Phase 21 — Play Along & Learn Mode",
+      "state": "later",
+      "summary": "Play along and learn mode."
+    },
+    {
+      "version": "v2.0.0",
+      "phase": "Phase 22 — The Band",
+      "state": "later",
+      "summary": "The band: every part on its own instrument, each with its own player."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "Die echten Klaviere. Auf der Bühne von Handscore stehen jetzt vier Klaviere — ein Konzertflügel, ein Salonflügel, ein Studio-Klavier und ein altes Saloon-Klavier —, jedes ausgeleuchtet wie im Studio und jedes mit eigener Stimme. Klicke auf eine Taste oder spiele aus deiner DAW, und das Klavier spielt: Die Taste geht nach unten, ihr Name verblasst, und das Haltepedal hält, was du loslässt. Mit der Klavierauswahl hörst du ein Klavier, bevor du es wählst.",
+  "changelog.6b02e0d363a4": "Hinzugefügt",
+  "changelog.a8f76e859570": "**Vier echte Klaviere.** Grand Piano, Acoustic Piano, Upright Piano und Honky-Tonk Piano, jedes mit eigener Form, eigenem Finish und eigenem Klang, in beiden Designs.",
+  "changelog.6f544a8bd67f": "**Spiel die Tasten.** Klicke auf eine Taste, um sie zu hören, oder streiche über die Tasten, um eine nach der anderen zu spielen. MIDI aus deiner DAW spielt das Klavier und bewegt seine Tasten, und das Haltepedal hält die Töne, die du loslässt, bis du den Fuß hebst.",
+  "changelog.3f265130a08f": "**Tasten, die sich wie die eines Klaviers bewegen.** Jede Taste kippt auf ihrem Waagebalken nach unten, umso schneller, je kräftiger sie gespielt wird, und ihr Name verblasst, solange sie unten ist, und kehrt zurück, wenn sie sich hebt.",
+  "changelog.7fd2c1ed940d": "**Die Klavierauswahl.** Die Instrument-Schaltfläche oben links (oder P) öffnet vier Karten. *Vorhören* spielt eine kurze Phrase auf diesem Klavier, ohne zu wechseln; *Auswählen* stellt es auf die Bühne und blendet vom vorigen über. Deine Wahl wird mit deinem Projekt gespeichert.",
+  "changelog.72aa386a33ff": "**Qualität, die zu deinem Computer passt.** Handscore misst, wie schnell dein Computer die Bühne zeichnet, und legt sich auf die Qualität fest, die er flüssig halten kann.",
+  "changelog.1246fc93bca0": "Behoben",
+  "changelog.58e041aeca75": "**Tasten halten mit, auch auf einem ausgelasteten Computer.** Eine Taste, die gespielt wurde, während der Computer mit dem Zeichnen hinterherkam, konnte oben bleiben oder ihren Namen halb verblasst behalten; jetzt endet sie immer so, wie dein Spiel sie hinterlassen hat.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Das Fundament. Freally Handscore lädt als CLAP- und VST3-Plugin sowie als eigenständige App, bittet dich, seiner Lizenz zuzustimmen, und öffnet sich auf seiner Bühne: einer Klaviatur mit 88 Tasten in den Maßen eines echten Klaviers, jede Taste auf ihrer Vorderseite benannt. Noch wird nichts erzeugt — das kommt mit den echten Klavieren und den Händen.",
+  "changelog.37cee751dc57": "**Das Plugin und die eigenständige App.** CLAP und VST3 unter Windows (das AU wird auf einem Mac gebaut) und eine eigenständige App, die das Symbol von Handscore in ihrer Titelleiste und in der Taskleiste trägt.",
+  "changelog.bf0d03d43bfd": "**Die Lizenzvereinbarung kommt zuerst.** Bis du zustimmst, tut Handscore nichts. Deine Antwort wird auf deinem Computer gespeichert und von jeder offenen Kopie geteilt, in jeder DAW und in der eigenständigen App.",
+  "changelog.28bc52fb055e": "**Die Bühne.** Eine Klaviatur mit 88 Tasten, A0 bis C8, in den Maßen eines echten Klaviers, über die ganze Breite des Fensters. Der Name jeder Taste steht auf ihrer Vorderseite — auf weißen Tasten in dunkler Tinte, auf schwarzen in Weiß — und verschwindet, solange die Taste gedrückt ist.",
+  "changelog.d51fdbedfc0e": "**Hell und dunkel.** Der Schalter oben rechts; Handscore merkt sich deine Wahl.",
+  "changelog.9e0609310c1a": "**Achtzehn Sprachen.** Handscore startet in der Sprache deines Systems.",
+  "changelog.f1cf7c9dfaa8": "**Eine 3D-Ansicht, die sagt, wenn sie nicht zeichnen kann.** Ein Fenster ohne WebGL 2 erklärt, wie du es einschaltest, statt nichts anzuzeigen.",
+  "changelog.0fe089d138d3": "**Abstürze werden gespeichert, nie gesendet.** Falls Handscore jemals unerwartet abbricht, wird ein kurzer Bericht für den nächsten Start auf deinem Computer gespeichert. Nichts verlässt deinen Computer, es sei denn, du entscheidest dich, es zu melden."
+}

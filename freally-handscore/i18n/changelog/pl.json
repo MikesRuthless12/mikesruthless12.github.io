@@ -1,0 +1,21 @@
+{
+  "changelog.c59c86e0cd28": "[0.2.0] - 2026-10-14",
+  "changelog.14c84d5c455f": "Prawdziwe fortepiany. Na scenie Handscore stoją teraz cztery instrumenty — fortepian koncertowy, fortepian salonowy, pianino studyjne i stare pianino z saloonu — każdy oświetlony jak w studiu i każdy z własnym głosem. Kliknij klawisz albo graj ze swojego DAW, a fortepian zagra: klawisz opada, jego nazwa blednie, a pedał sustain podtrzymuje to, co puszczasz. Okno wyboru pozwala posłuchać fortepianu, zanim go wybierzesz.",
+  "changelog.6b02e0d363a4": "Dodano",
+  "changelog.a8f76e859570": "**Cztery prawdziwe fortepiany.** Grand Piano, Acoustic Piano, Upright Piano i Honky-Tonk Piano, każdy z własnym kształtem, wykończeniem i brzmieniem, w obu motywach.",
+  "changelog.6f544a8bd67f": "**Graj na klawiszach.** Kliknij klawisz, aby go usłyszeć, albo przesuń kursorem po klawiszach, aby zagrać je po kolei. MIDI z twojego DAW gra na fortepianie i porusza jego klawiszami, a pedał sustain podtrzymuje puszczone dźwięki, dopóki nie zdejmiesz z niego stopy.",
+  "changelog.3f265130a08f": "**Klawisze, które poruszają się jak w fortepianie.** Każdy klawisz opada, obracając się na swojej listwie wagowej, tym szybciej, im mocniej się go uderzy, a jego nazwa blednie, gdy jest wciśnięty, i wraca, gdy się podnosi.",
+  "changelog.7fd2c1ed940d": "**Wybór fortepianu.** Przycisk instrumentu w lewym górnym rogu (lub P) otwiera cztery karty. *Odsłuchaj* gra krótką frazę na tym fortepianie bez przełączania; *Wybierz* stawia go na scenie, płynnie przechodząc od poprzedniego. Twój wybór zapisuje się razem z projektem.",
+  "changelog.72aa386a33ff": "**Jakość dopasowana do twojego komputera.** Handscore mierzy, jak szybko twój komputer rysuje scenę, i ustala jakość, którą potrafi płynnie utrzymać.",
+  "changelog.1246fc93bca0": "Naprawiono",
+  "changelog.58e041aeca75": "**Klawisze nadążają na obciążonym komputerze.** Klawisz zagrany, gdy komputer wolno rysował, mógł zostać w górze albo jego nazwa mogła pozostać w połowie wyblakła; teraz zawsze kończy tam, gdzie zostawiła go twoja gra.",
+  "changelog.e6eef73c000a": "[0.1.0] - 2026-10-12",
+  "changelog.ff94e0b1d59f": "Fundament. Freally Handscore ładuje się jako wtyczka CLAP i VST3 oraz jako samodzielna aplikacja, prosi o akceptację licencji i otwiera się na swojej scenie: 88-klawiszowej klawiaturze o wymiarach prawdziwego fortepianu, z nazwą każdego klawisza na froncie. Nic jeszcze nie jest generowane — to przyjdzie wraz z prawdziwymi fortepianami i dłońmi.",
+  "changelog.37cee751dc57": "**Wtyczka i samodzielna aplikacja.** CLAP i VST3 w systemie Windows (AU jest budowany na Macu) oraz samodzielna aplikacja z ikoną Handscore na pasku tytułu i pasku zadań.",
+  "changelog.bf0d03d43bfd": "**Najpierw umowa licencyjna.** Dopóki nie zaakceptujesz, Handscore nic nie robi. Twoja odpowiedź jest zapisywana na twoim komputerze i współdzielona przez każdą otwartą kopię, w każdym DAW i w samodzielnej aplikacji.",
+  "changelog.28bc52fb055e": "**Scena.** 88-klawiszowa klawiatura, od A0 do C8, o wymiarach prawdziwego fortepianu, wypełniająca całą szerokość okna. Nazwa każdego klawisza jest na jego froncie — białe klawisze ciemnym tuszem, czarne na biało — i znika, gdy klawisz jest wciśnięty.",
+  "changelog.d51fdbedfc0e": "**Jasny i ciemny.** Przełącznik w prawym górnym rogu; Handscore zapamiętuje twój wybór.",
+  "changelog.9e0609310c1a": "**Osiemnaście języków.** Handscore uruchamia się w języku twojego systemu.",
+  "changelog.f1cf7c9dfaa8": "**Widok 3D, który mówi, kiedy nie może rysować.** Okno bez WebGL 2 wyjaśnia, jak go włączyć, zamiast nic nie pokazywać.",
+  "changelog.0fe089d138d3": "**Awarie są zachowywane, nigdy wysyłane.** Jeśli Handscore kiedykolwiek nieoczekiwanie przestanie działać, krótki raport zostanie zachowany na twoim komputerze na następne uruchomienie. Nic nie opuszcza twojego komputera, chyba że zdecydujesz się to zgłosić."
+}
