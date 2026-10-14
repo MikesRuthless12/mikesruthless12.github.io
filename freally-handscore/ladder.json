@@ -16,8 +16,8 @@
     {
       "version": "v0.3.0",
       "phase": "Phase 2 — Realistic Hands at the Keyboard",
-      "state": "planned",
-      "summary": "Realistic hands at the keyboard, fingering every note the way a pianist would."
+      "state": "done",
+      "summary": "Realistic hands at the keyboard, fingering every note the way a pianist would, with sixty-two public-domain classics to learn and a transport to scrub through them."
     },
     {
       "version": "v0.4.0",
@@ -36,7 +36,7 @@
       "version": "v0.6.0",
       "phase": "Phase 4A — Lessons I",
       "state": "planned",
-      "summary": "Lessons from Day 1: a piano course that listens to you play and moves on when you have it right, every lesson read aloud with each word lit as it is spoken."
+      "summary": "Lessons from Day 1: a piano course that listens to you play and moves on when you have it right, and a Read Aloud switch that reads each lesson to you, each word lit as it is spoken."
     },
     {
       "id": "mixer",

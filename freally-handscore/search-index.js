@@ -19,12 +19,27 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#pianos",
   "heading": "The pianos",
-  "text": "Four pianos take the stage one at a time: Grand Piano, Acoustic Piano, Upright Piano and Honky-Tonk Piano, each with its own shape, finish and sound. The instrument button at the top left (or P) opens the piano picker. Preview plays a short phrase on a piano without switching; Choose puts it on the stage, crossfading from the last one. Your choice is saved with your project."
+  "text": "Four pianos take the stage one at a time: Grand Piano, Acoustic Piano, Upright Piano and Honky-Tonk Piano, each with its own shape, finish and sound. The Select Mode button at the top left (or P) opens your choices by category. Under Instruments, Preview plays a short phrase on a piano without switching, and Choose puts it on the stage, crossfading from the last one. Your choice is saved with your project."
  },
  {
   "url": "documentation.html#play",
   "heading": "Playing the keys",
   "text": "Click a key to hear it, or slide across the keys to play each in turn. Each key goes down on its balance rail, faster the harder it is played, and its name fades while it is down and comes back when it rises. MIDI from your DAW plays the piano and moves its keys. The sustain pedal holds the notes you let go until you lift it."
+ },
+ {
+  "url": "documentation.html#hands",
+  "heading": "The hands",
+  "text": "Two realistic hands play every note on the stage, the way a pianist would: each finger chosen for the passage, the thumb passing under on a scale, wide chords reached, and a hand lifting up and over the other when the music crosses. When nothing plays they rest on the keys, ready. Handscore works out which hand plays each note, and with which finger, before the music plays, so the hands arrive as the keys go down."
+ },
+ {
+  "url": "documentation.html#classics",
+  "heading": "The classics",
+  "text": "Select Mode's Classics hold sixty-two public-domain songs to learn: nursery songs, Christmas songs and carols, folk songs, spirituals and anthems, classical themes and piano favourites. Each is arranged for two hands, the melody in the right and the chords in the left. Search by title or composer, then choose Play."
+ },
+ {
+  "url": "documentation.html#transport",
+  "heading": "The transport",
+  "text": "Under the stage: rewind, play or pause, stop and fast-forward, and a timeline with the song's time and a mark at every bar. Hover over the timeline to see the hands at that moment in a small preview; click or drag to go there. Hold rewind or fast-forward to move quickly. Either way you hear every note you pass. Space plays and pauses, and the arrow keys on the timeline step a bar. The M beside the keys is the metronome. Switch it on and a click marks each beat, the first of every bar higher, while its two dots show the beat."
  },
  {
   "url": "documentation.html#theme",
@@ -40,6 +55,16 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Your privacy",
   "text": "The plugin and the standalone app never use the network. If Handscore ever stops unexpectedly, a short report is kept on your computer and offered the next time it opens; nothing is sent unless you choose to report it."
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-10-14-added",
+  "heading": "Added",
+  "text": "Realistic hands at the keyboard. Two hands, ending at the wrist, play every note on all four pianos: each finger chosen as a pianist would choose it, the thumb passing under on scales, wide chords reached, the thumb lying on its side and gently bent, and a hand lifting up and over the other to cross. They rest on the keys, ready, when nothing plays. Fingering worked out before a note sounds. Handscore decides which hand plays each note and with which finger before the music plays, so the hands arrive as the keys go down rather than after. Select Mode. The button at the top left (or P) now reads Select Mode and opens your choices by category: Instruments, Classics, Passages, and Lessons (coming in a later version). Sixty-two classics to learn. Nursery songs, Christmas songs and carols, folk songs, spirituals and anthems, classical themes and piano favourites — Chopsticks, Jingle Bells, Silent Night, Ode to Joy, Für Elise, The Entertainer, The Star-Spangled Banner and more — each arranged for two hands, the melody in the right and the chords in the left. Search them by title or composer. Every one is in the public domain. Passages to watch. A scale, a ii–V–I, an arpeggio and a crossi"
+ },
+ {
+  "url": "changelog.html#0-3-0-2026-10-14-changed",
+  "heading": "Changed",
+  "text": "The instrument button is now Select Mode , and the piano you choose is marked Current among the Instruments. v0.2.0 2026-10-14 The real pianos. Four pianos now stand on Handscore's stage — a concert grand, a parlor grand, a studio upright and an old saloon upright — each lit like a studio and each with its own voice. Click a key or play from your DAW and the piano plays: the key goes down, its name fades, and the sustain pedal holds what you let go. A picker lets you hear a piano before you choose it."
  },
  {
   "url": "changelog.html#0-2-0-2026-10-14-added",

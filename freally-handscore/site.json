@@ -8,7 +8,7 @@
   "chips": ["CLAP", "VST3", "AU", "@hero.chipStandalone|Standalone", "Windows", "macOS", "Linux"],
   "strings": {
     "site.tagline": "Watch real hands play your music. Then drag it into your DAW.",
-    "site.description": "Freally Handscore writes chords, a melody, a bassline and a countermelody in the style of any genre, artist or producer, shows them as four sheets of music, and plays them on a realistic piano with realistic hands. A CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux — offline and 100% AI-free.",
+    "site.description": "Freally Handscore writes chords, a melody, a bassline and a countermelody in the style of any genre, artist or producer, shows them as sheets of music, and plays them with realistic hands on realistic instruments — pianos, guitars and bass first, then every family up to a whole band. Its music lessons teach you to play, from your first notes to finger drumming, songwriting and song arrangement. A CLAP, VST3 and AU plugin and standalone app for Windows, macOS and Linux — offline and 100% AI-free.",
     "footer.licence": "Proprietary — All Rights Reserved. © 2026 Mike Weaver, trading as Havoc Software. Not open source.",
     "footer.yours": "The MIDI you generate and drag into your DAW is yours. Handscore's author claims no ownership of it."
   }
