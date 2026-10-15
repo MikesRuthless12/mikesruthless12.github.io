@@ -46,7 +46,7 @@
 <img class="app-icon" src="handscore-icon.png" alt="" width="72" height="72" />
 <span class="label" data-i18n="kit.nav.documentation">Documentation</span>
 <h1 data-i18n-html="kit.head.documentation"><span class="hl-muted">How it works,</span> <span class="hl-bright">step by step.</span></h1>
-<p class="lead" data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.3.0 does: the pianos, the hands, the classics and the transport.</p>
+<p class="lead" data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.4.0 does: the pianos and the hands, generating a song, the sheets, the drag and export, the editor, the classics and the transport.</p>
 <div class="search">
 <div class="search__field">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -60,7 +60,7 @@
 <div class="wrap manual">
 <nav class="manual-toc" data-spy aria-label="Contents" data-i18n-attr="aria-label:kit.docs.contents">
 <span class="label" data-i18n="kit.docs.contents">Contents</span>
-<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#stage" data-i18n="docs.stage.title">The stage</a></li><li><a href="#pianos" data-i18n="docs.pianos.title">The pianos</a></li><li><a href="#play" data-i18n="docs.play.title">Playing the keys</a></li><li><a href="#hands" data-i18n="docs.hands.title">The hands</a></li><li><a href="#classics" data-i18n="docs.classics.title">The classics</a></li><li><a href="#transport" data-i18n="docs.transport.title">The transport</a></li><li><a href="#theme" data-i18n="docs.theme.title">Light and dark</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Your privacy</a></li></ol>
+<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#stage" data-i18n="docs.stage.title">The stage</a></li><li><a href="#pianos" data-i18n="docs.pianos.title">The pianos</a></li><li><a href="#play" data-i18n="docs.play.title">Playing the keys</a></li><li><a href="#hands" data-i18n="docs.hands.title">The hands</a></li><li><a href="#generate" data-i18n="docs.generate.title">Generating a song</a></li><li><a href="#sheets" data-i18n="docs.sheets.title">The sheets</a></li><li><a href="#tray" data-i18n="docs.tray.title">The sheet tray</a></li><li><a href="#drag" data-i18n="docs.drag.title">Into your DAW</a></li><li><a href="#edit" data-i18n="docs.edit.title">Editing the notes</a></li><li><a href="#lyrics" data-i18n="docs.lyrics.title">Lyrics</a></li><li><a href="#seeds" data-i18n="docs.seeds.title">Seeds and history</a></li><li><a href="#classics" data-i18n="docs.classics.title">The classics</a></li><li><a href="#transport" data-i18n="docs.transport.title">The transport</a></li><li><a href="#shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</a></li><li><a href="#project" data-i18n="docs.project.title">Your project</a></li><li><a href="#theme" data-i18n="docs.theme.title">Light and dark</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Your privacy</a></li></ol>
 </nav>
 <div class="manual-body"><section>
     <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
@@ -100,14 +100,65 @@
   </section>
 
   <section>
+    <h2 id="generate" data-i18n="docs.generate.title">Generating a song</h2>
+    <p data-i18n="docs.generate.p1">The panel on the left (its tab on the window's edge shows and hides it) searches 73 genres, 1,507 artists and 833 producers. Choose one and press Generate, or G: four parts — chords, melody, counter-melody and bassline — are written in that style, 4 or 8 bars long, and the hands play them on the piano.</p>
+    <p data-i18n="docs.generate.p2">The chips beside Generate set the key, the scale (41 of them), the mood, the tempo (20 to 999 BPM; drag up or down on the number), the complexity and 4 or 8 bars, and each shows what the song was made in. Follow DAW writes at your project's tempo. Playable voices the parts for two hands; Raw keeps them exactly as written.</p>
+  </section>
+
+  <section>
+    <h2 id="sheets" data-i18n="docs.sheets.title">The sheets</h2>
+    <p data-i18n="docs.sheets.p1">Each part is printed as a page of sheet music on the piano's music desk, with its title and page number, and a full score of all the parts stands beside them. Every note head lights as it sounds under a moving playhead, and a long part turns its pages as it plays. Click a sheet, or press 1 to 5, to bring it close; Esc goes back.</p>
+  </section>
+
+  <section>
+    <h2 id="tray" data-i18n="docs.tray.title">The sheet tray</h2>
+    <p data-i18n="docs.tray.p1">Under the stage, the tray holds each part with Solo, Mute, Lock and a new take. A locked part stays when you generate again. Take, Dream 1–3 and Re-Dream offer three new versions of a part beside the one you have: pick one and keep it.</p>
+  </section>
+
+  <section>
+    <h2 id="drag" data-i18n="docs.drag.title">Into your DAW</h2>
+    <p data-i18n="docs.drag.p1">Drag a part from its sheet, or the whole song with Drag all, straight into your DAW as MIDI. Export saves the MIDI of a part or the whole song to a file you name, with every note's velocity, each part's level and pan, the tempo and the time signature.</p>
+    <p data-i18n="docs.drag.p2">Export to PDF writes the sheets with a cover page: the title, tempo, key and scale, length, bars, the notes in total, per part and per page, and the instruments. Add credits — writers, vocalists, producers, the samples you used and where they came from, the record label — with names suggested as you type.</p>
+  </section>
+
+  <section>
+    <h2 id="edit" data-i18n="docs.edit.title">Editing the notes</h2>
+    <p data-i18n="docs.edit.p1">Stage, Melody, Chords, Counter and Bassline run along the top. A part's tab opens its own piano roll, with a mute dot, Solo and a × that clears the part. Select, move, lengthen, delete, copy, paste and clone notes; right-click and drag to take notes away and bring them back. Each part has its own gain and pan.</p>
+    <p data-i18n="docs.edit.p2">Record from a MIDI keyboard into the roll after a count-in of one or two bars. Fold a roll to the song's scale, or to the rows that hold notes: the scale's rows are tinted and a note outside it is marked. As you draw, the next note or chord is suggested faintly; Tab keeps it, a click keeps one, and drawing elsewhere clears it.</p>
+    <p data-i18n="docs.edit.p3">Switch on Chords beside the transport and one key plays a chord of 3, 4 or 5 notes in the song's key, from the mouse, the computer keyboard or a MIDI keyboard.</p>
+  </section>
+
+  <section>
+    <h2 id="lyrics" data-i18n="docs.lyrics.title">Lyrics</h2>
+    <p data-i18n="docs.lyrics.p1">Type words under the melody or the counter-melody, the syllables marked: they are printed on the sheet and lit as they are sung. A counter beside each line shows whether it fits its bar. As you type, the rest of the word is suggested (Tab takes it) and a misspelling is corrected, unless you tap the checkmark or press Shift+Tab to keep your word.</p>
+  </section>
+
+  <section>
+    <h2 id="seeds" data-i18n="docs.seeds.title">Seeds and history</h2>
+    <p data-i18n="docs.seeds.p1">Every generation shows its seed, and each part its take seed, with Copy. Paste a song's seed to make that song again, or a part's take seed to bring that take back. Back and Forward step through every generation you have made, each brought back exactly and kept across restarts; a new generation never repeats an old one.</p>
+  </section>
+
+  <section>
     <h2 id="classics" data-i18n="docs.classics.title">The classics</h2>
     <p data-i18n="docs.classics.p1">Select Mode's Classics hold sixty-two public-domain songs to learn: nursery songs, Christmas songs and carols, folk songs, spirituals and anthems, classical themes and piano favourites. Each is arranged for two hands, the melody in the right and the chords in the left. Search by title or composer, then choose Play.</p>
+    <p data-i18n="docs.classics.p2">A classic is yours to learn, never to take: only its chords may leave Handscore. A generated song whose melody, counter-melody or bassline matches a well-known tune keeps that part in, and says why.</p>
   </section>
 
   <section>
     <h2 id="transport" data-i18n="docs.transport.title">The transport</h2>
     <p data-i18n="docs.transport.p1">Under the stage: rewind, play or pause, stop and fast-forward, and a timeline with the song's time and a mark at every bar. Hover over the timeline to see the hands at that moment in a small preview; click or drag to go there. Hold rewind or fast-forward to move quickly. Either way you hear every note you pass. Space plays and pauses, and the arrow keys on the timeline step a bar.</p>
     <p data-i18n="docs.transport.p2">The M beside the keys is the metronome. Switch it on and a click marks each beat, the first of every bar higher, while its two dots show the beat.</p>
+    <p data-i18n="docs.transport.p3">When a song has words, the timeline's preview shows the ones being sung at that moment.</p>
+  </section>
+
+  <section>
+    <h2 id="shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</h2>
+    <p data-i18n="docs.shortcuts.p1">Press ? or the Shortcuts key in the top bar to see every shortcut.</p>
+  </section>
+
+  <section>
+    <h2 id="project" data-i18n="docs.project.title">Your project</h2>
+    <p data-i18n="docs.project.p1">Saving your DAW project keeps the song, its edits, its mix, its words, the piano, the view and the credits, and reopening it brings them back as they were.</p>
   </section>
 
   <section>
@@ -140,7 +191,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © 2026 Mike Weaver, trading as Havoc Software. Not open source.</p><p data-i18n="footer.yours">The MIDI you generate and drag into your DAW is yours. Handscore's author claims no ownership of it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.3.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.4.0</span>
         </div>
       </div>
     </footer>

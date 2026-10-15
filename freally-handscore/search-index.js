@@ -32,14 +32,59 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Two realistic hands play every note on the stage, the way a pianist would: each finger chosen for the passage, the thumb passing under on a scale, wide chords reached, and a hand lifting up and over the other when the music crosses. When nothing plays they rest on the keys, ready. Handscore works out which hand plays each note, and with which finger, before the music plays, so the hands arrive as the keys go down."
  },
  {
+  "url": "documentation.html#generate",
+  "heading": "Generating a song",
+  "text": "The panel on the left (its tab on the window's edge shows and hides it) searches 73 genres, 1,507 artists and 833 producers. Choose one and press Generate, or G: four parts — chords, melody, counter-melody and bassline — are written in that style, 4 or 8 bars long, and the hands play them on the piano. The chips beside Generate set the key, the scale (41 of them), the mood, the tempo (20 to 999 BPM; drag up or down on the number), the complexity and 4 or 8 bars, and each shows what the song was made in. Follow DAW writes at your project's tempo. Playable voices the parts for two hands; Raw keeps them exactly as written."
+ },
+ {
+  "url": "documentation.html#sheets",
+  "heading": "The sheets",
+  "text": "Each part is printed as a page of sheet music on the piano's music desk, with its title and page number, and a full score of all the parts stands beside them. Every note head lights as it sounds under a moving playhead, and a long part turns its pages as it plays. Click a sheet, or press 1 to 5, to bring it close; Esc goes back."
+ },
+ {
+  "url": "documentation.html#tray",
+  "heading": "The sheet tray",
+  "text": "Under the stage, the tray holds each part with Solo, Mute, Lock and a new take. A locked part stays when you generate again. Take, Dream 1–3 and Re-Dream offer three new versions of a part beside the one you have: pick one and keep it."
+ },
+ {
+  "url": "documentation.html#drag",
+  "heading": "Into your DAW",
+  "text": "Drag a part from its sheet, or the whole song with Drag all, straight into your DAW as MIDI. Export saves the MIDI of a part or the whole song to a file you name, with every note's velocity, each part's level and pan, the tempo and the time signature. Export to PDF writes the sheets with a cover page: the title, tempo, key and scale, length, bars, the notes in total, per part and per page, and the instruments. Add credits — writers, vocalists, producers, the samples you used and where they came from, the record label — with names suggested as you type."
+ },
+ {
+  "url": "documentation.html#edit",
+  "heading": "Editing the notes",
+  "text": "Stage, Melody, Chords, Counter and Bassline run along the top. A part's tab opens its own piano roll, with a mute dot, Solo and a × that clears the part. Select, move, lengthen, delete, copy, paste and clone notes; right-click and drag to take notes away and bring them back. Each part has its own gain and pan. Record from a MIDI keyboard into the roll after a count-in of one or two bars. Fold a roll to the song's scale, or to the rows that hold notes: the scale's rows are tinted and a note outside it is marked. As you draw, the next note or chord is suggested faintly; Tab keeps it, a click keeps one, and drawing elsewhere clears it. Switch on Chords beside the transport and one key plays a chord of 3, 4 or 5 notes in the song's key, from the mouse, the computer keyboard or a MIDI keyboard."
+ },
+ {
+  "url": "documentation.html#lyrics",
+  "heading": "Lyrics",
+  "text": "Type words under the melody or the counter-melody, the syllables marked: they are printed on the sheet and lit as they are sung. A counter beside each line shows whether it fits its bar. As you type, the rest of the word is suggested (Tab takes it) and a misspelling is corrected, unless you tap the checkmark or press Shift+Tab to keep your word."
+ },
+ {
+  "url": "documentation.html#seeds",
+  "heading": "Seeds and history",
+  "text": "Every generation shows its seed, and each part its take seed, with Copy. Paste a song's seed to make that song again, or a part's take seed to bring that take back. Back and Forward step through every generation you have made, each brought back exactly and kept across restarts; a new generation never repeats an old one."
+ },
+ {
   "url": "documentation.html#classics",
   "heading": "The classics",
-  "text": "Select Mode's Classics hold sixty-two public-domain songs to learn: nursery songs, Christmas songs and carols, folk songs, spirituals and anthems, classical themes and piano favourites. Each is arranged for two hands, the melody in the right and the chords in the left. Search by title or composer, then choose Play."
+  "text": "Select Mode's Classics hold sixty-two public-domain songs to learn: nursery songs, Christmas songs and carols, folk songs, spirituals and anthems, classical themes and piano favourites. Each is arranged for two hands, the melody in the right and the chords in the left. Search by title or composer, then choose Play. A classic is yours to learn, never to take: only its chords may leave Handscore. A generated song whose melody, counter-melody or bassline matches a well-known tune keeps that part in, and says why."
  },
  {
   "url": "documentation.html#transport",
   "heading": "The transport",
-  "text": "Under the stage: rewind, play or pause, stop and fast-forward, and a timeline with the song's time and a mark at every bar. Hover over the timeline to see the hands at that moment in a small preview; click or drag to go there. Hold rewind or fast-forward to move quickly. Either way you hear every note you pass. Space plays and pauses, and the arrow keys on the timeline step a bar. The M beside the keys is the metronome. Switch it on and a click marks each beat, the first of every bar higher, while its two dots show the beat."
+  "text": "Under the stage: rewind, play or pause, stop and fast-forward, and a timeline with the song's time and a mark at every bar. Hover over the timeline to see the hands at that moment in a small preview; click or drag to go there. Hold rewind or fast-forward to move quickly. Either way you hear every note you pass. Space plays and pauses, and the arrow keys on the timeline step a bar. The M beside the keys is the metronome. Switch it on and a click marks each beat, the first of every bar higher, while its two dots show the beat. When a song has words, the timeline's preview shows the ones being sung at that moment."
+ },
+ {
+  "url": "documentation.html#shortcuts",
+  "heading": "Keyboard shortcuts",
+  "text": "Press ? or the Shortcuts key in the top bar to see every shortcut."
+ },
+ {
+  "url": "documentation.html#project",
+  "heading": "Your project",
+  "text": "Saving your DAW project keeps the song, its edits, its mix, its words, the piano, the view and the credits, and reopening it brings them back as they were."
  },
  {
   "url": "documentation.html#theme",
@@ -55,6 +100,16 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Your privacy",
   "text": "The plugin and the standalone app never use the network. If Handscore ever stops unexpectedly, a short report is kept on your computer and offered the next time it opens; nothing is sent unless you choose to report it."
+ },
+ {
+  "url": "changelog.html#0-4-0-2026-10-15-added",
+  "heading": "Added",
+  "text": "Generate in any style. Search a genre, an artist or a producer in the panel on the left (its tab on the app's edge shows and hides it) and press Generate, or G. Chips beside it set the key, the scale (41 of them), the mood, the tempo (20 to 999 BPM; drag up or down on the number), the complexity and 4 or 8 bars, and each reads what the song was made in. Follow DAW writes at your project's tempo. Four parts, played by the hands. Chords, melody, counter-melody and bassline, voiced for two hands ( Playable ) or exactly as written ( Raw ). Every generation fills its 4 or 8 bars, and switching 4 to 8 repeats the first four. Real sheet music. Every part printed as a page on the music desk, with its title and page number, and a full score of all the parts beside them. Every note head lights as it sounds under a moving playhead, and a long part turns its pages as it plays. Click a sheet, or press 1 to 5, to bring it close; Esc goes back. The sheet tray. Under the stage, each part with Solo, Mute, Lock and a new take. A locked part stays when you generate again. Drag into your DAW. Drag one part, or the whole song with Drag all , from its sheet into your DAW as MIDI. Export. Save the MIDI o"
+ },
+ {
+  "url": "changelog.html#0-4-0-2026-10-15-changed",
+  "heading": "Changed",
+  "text": "The timeline's preview is larger , and shows the words being sung at that moment. v0.3.0 2026-10-14 The realistic hands. A pair of hands now plays the piano on Handscore's stage the way a pianist would — each finger chosen for the passage, the thumb passing under on a scale, a hand lifting up and over the other when the music crosses. Sixty-two public-domain classics are ready to learn, from Mary Had a Little Lamb to Silent Night and The Star-Spangled Banner, and a transport under the stage lets you pause, rewind, fast-forward or drag to any moment, hearing the notes as you go."
  },
  {
   "url": "changelog.html#0-3-0-2026-10-14-added",

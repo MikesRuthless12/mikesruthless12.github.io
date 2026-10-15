@@ -22,7 +22,7 @@
     {
       "version": "v0.4.0",
       "phase": "Phase 3 — Generate, Read & Drag",
-      "state": "planned",
+      "state": "done",
       "summary": "Generate in any style, read the four sheets as they light up, and drag the MIDI into your DAW."
     },
     {
