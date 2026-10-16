@@ -35,7 +35,7 @@
       "id": "lessons-1",
       "version": "v0.6.0",
       "phase": "Phase 4A — Lessons I",
-      "state": "planned",
+      "state": "done",
       "summary": "Lessons from Day 1: a piano course that listens to you play and moves on when you have it right, and a Read Aloud switch that reads each lesson to you, each word lit as it is spoken."
     },
     {

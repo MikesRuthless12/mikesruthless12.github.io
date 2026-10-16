@@ -82,6 +82,11 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Under the stage: rewind, play or pause, stop and fast-forward, and a timeline with the song's time and a mark at every bar. Hover over the timeline to see the hands at that moment in a small preview; click or drag to go there. Hold rewind or fast-forward to move quickly. Either way you hear every note you pass. Space plays and pauses, and the arrow keys on the timeline step a bar. The M beside the keys is the metronome. Switch it on and a click marks each beat, the first of every bar higher, while its two dots show the beat. When a song has words, the timeline's preview shows the ones being sung at that moment."
  },
  {
+  "url": "documentation.html#lessons",
+  "heading": "The lessons",
+  "text": "Select Mode → Lessons opens the piano course inside the studio: the course map and the Day's steps on the left, the stage in the middle and the lesson's text under it. The course goes Day by Day — Beginner, Days 1 to 90, then Elementary, Days 91 to 400 — each Day a guided session, with a review Day every week. The first time, it opens at Day 1; after that, Continue takes you straight back to the Day, the step and the word where you stopped. Any Day can be opened from the map, and Exit lessons goes back to the song you left. Each step reads, shows or listens. Watch: the hands play the exercise in the view the step names, slowly if it says so, with the finger numbers. Try: the keys to play light up and the music waits for them. In time: in tempo after a count-in, every note checked against the beat. Perform: play it through, with a summary at the end. Every take names the bar and the beat and gives the fix. A step passes after a few correct takes in a row, and a Day passes when its main exercise is played whole — in tempo, if the Day plays it in time. To practise, loop a few bars, play one hand while the stage plays the other, or change the tempo; on a tempo ladder the beat rises aft"
+ },
+ {
   "url": "documentation.html#shortcuts",
   "heading": "Keyboard shortcuts",
   "text": "Press ? or the Shortcuts key in the top bar to see every shortcut."
@@ -105,6 +110,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Your privacy",
   "text": "The plugin and the standalone app never use the network. If Handscore ever stops unexpectedly, a short report is kept on your computer and offered the next time it opens; nothing is sent unless you choose to report it."
+ },
+ {
+  "url": "changelog.html#0-6-0-2026-10-16-added",
+  "heading": "Added",
+  "text": "Lessons in the studio. Select Mode → Lessons opens the piano course: the course map and the Day's steps on the left, the stage in the middle, the lesson's text under it. Exit goes back to the song you left. 400 Days of piano. Beginner (Days 1–90) and Elementary (Days 91–400): sitting and hand shape, the five-finger positions, reading the grand staff, rhythm, chords, the pedal, scales and arpeggios, hands together and pieces to play, with a review Day every week and earlier work brought back when it is due. Listen and check, three ways. Try : the keys to play light up and the music waits for them. In time : in tempo after a count-in, every note checked against the beat. Perform : play it through, with a summary at the end. Feedback like a teacher's. Each take names the bar and the beat and gives the fix — a note missed, early or late, joined or detached, the pedal — and says what went well. Practice tools. Loop a few bars, play one hand while the stage plays the other, climb the tempo ladder (a step up after three clean takes, a step back after three misses) and watch slow demonstrations in any view with the finger numbers shown. The key names fade as you learn them. Read Aloud. Off"
  },
  {
   "url": "changelog.html#0-5-0-2026-10-15-added",
