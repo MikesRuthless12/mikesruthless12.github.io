@@ -53,9 +53,23 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-6-0-2026-10-16">v0.6.0</a></li><li><a href="#0-5-0-2026-10-15">v0.5.0</a></li><li><a href="#0-4-0-2026-10-15">v0.4.0</a></li><li><a href="#0-3-0-2026-10-14">v0.3.0</a></li><li><a href="#0-2-0-2026-10-14">v0.2.0</a></li><li><a href="#0-1-0-2026-10-12">v0.1.0</a></li></ol>
+<ol><li><a href="#0-7-0-2026-10-16">v0.7.0</a></li><li><a href="#0-6-0-2026-10-16">v0.6.0</a></li><li><a href="#0-5-0-2026-10-15">v0.5.0</a></li><li><a href="#0-4-0-2026-10-15">v0.4.0</a></li><li><a href="#0-3-0-2026-10-14">v0.3.0</a></li><li><a href="#0-2-0-2026-10-14">v0.2.0</a></li><li><a href="#0-1-0-2026-10-12">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-6-0-2026-10-16">
+<div class="releases"><article class="release release--latest" id="0-7-0-2026-10-16">
+<h2 class="release__head" data-i18n-html="changelog.9960bf9700bd"><span class="release__meta"><span class="release__ver">v0.7.0</span><time class="release__date" datetime="2026-10-16">2026-10-16</time></span></h2>
+<p data-i18n-html="changelog.89f5c24a8af1">The mixer. Every part now plays through a channel strip of its own — fader, pan, EQ, room, echo, heat, a compressor and a Granular knob — into a master, with meters, mute and solo, all kept with your project. Drag any part, or the whole mix, into your DAW as audio exactly as you hear it. Shape each part's sound with the envelope editor, and play any part on one of your own VST3 or CLAP instruments.</p>
+<h3 id="0-7-0-2026-10-16-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.8b1d7b62602b"><strong>The Mixer.</strong> Press M: every part's strip side by side and the master — a printed fader that follows your pointer, an LED meter with its clip light, the knob grid (Low, Mid, High, Room, Echo, Heat), a compressor with its gain-reduction light, pan, solo and mute. Every gesture is heard while it moves and is one undo step when you let go.</li>
+<li data-i18n-html="changelog.2869671be357"><strong>Mute and solo that glide.</strong> A part fades out and back in over 30 ms instead of cutting, and solo hears only the parts soloed — Ctrl+click adds one.</li>
+<li data-i18n-html="changelog.fcb6690799bd"><strong>The Granular knob.</strong> On every strip and on the master: from nothing at 0 % to a cloud of grains, echoes and a wash at 100 %, a sound that turns any part ambient. Seeded by the project, so a print is the same twice.</li>
+<li data-i18n-html="changelog.57a83d56df21"><strong>Audio drags.</strong> Each part's audio grip drags that part as a 24-bit WAV, printed through its strip at the song's tempo; the full mix drags as you hear it and names the parts it leaves out.</li>
+<li data-i18n-html="changelog.b2176c506737"><strong>MIDI drags that carry the mix.</strong> A part's fader and pan go into the file as CC 7 and CC 10, and the grip lists what MIDI cannot carry.</li>
+<li data-i18n-html="changelog.5b174d5cb7c6"><strong>The envelope editor.</strong> Each generator's volume, filter, pitch, pan and Granular envelopes, every one off until you switch it on: points to drag, segments to bend, a held loop, tempo-locked times, velocity and key tracking, retrigger or legato, an A/B morph, starting shapes, copy to another part, undo and redo, and a live dot for each note riding the curve.</li>
+<li data-i18n-html="changelog.747aa74c96df"><strong>Your own instruments.</strong> Each part can play one of your own VST3 or CLAP instruments instead of Handscore's: choose it on the part's tab or strip from the instruments a scan finds, open its window from there, and your project keeps the plugin and its sound. Each plugin runs in a process of its own, so one that crashes stops only itself, and its latency is compensated. The hands stay on Handscore's instrument, and that part drags as MIDI.</li>
+</ul>
+</article>
+<article class="release" id="0-6-0-2026-10-16">
 <h2 class="release__head" data-i18n-html="changelog.ddebf2581fd7"><span class="release__meta"><span class="release__ver">v0.6.0</span><time class="release__date" datetime="2026-10-16">2026-10-16</time></span></h2>
 <p data-i18n-html="changelog.1d54e0107a4f">Lessons. Handscore now teaches the piano, Day by Day, from your very first notes to about Grade 2: 400 Days in two sections, Beginner and Elementary, each a guided session of its own. The hands show you each exercise from any view, then the course listens as you play on your MIDI keyboard and moves on only when it is right. Switch on Read Aloud and your computer's own voice reads the lesson to you, each word lit as it is spoken.</p>
 <h3 id="0-6-0-2026-10-16-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -178,7 +192,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © 2026 Mike Weaver, trading as Havoc Software. Not open source.</p><p data-i18n="footer.yours">The MIDI you generate and drag into your DAW is yours. Handscore's author claims no ownership of it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.7.0</span>
         </div>
       </div>
     </footer>

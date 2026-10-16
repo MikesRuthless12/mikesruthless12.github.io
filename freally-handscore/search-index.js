@@ -87,6 +87,21 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Select Mode → Lessons opens the piano course inside the studio: the course map and the Day's steps on the left, the stage in the middle and the lesson's text under it. The course goes Day by Day — Beginner, Days 1 to 90, then Elementary, Days 91 to 400 — each Day a guided session, with a review Day every week. The first time, it opens at Day 1; after that, Continue takes you straight back to the Day, the step and the word where you stopped. Any Day can be opened from the map, and Exit lessons goes back to the song you left. Each step reads, shows or listens. Watch: the hands play the exercise in the view the step names, slowly if it says so, with the finger numbers. Try: the keys to play light up and the music waits for them. In time: in tempo after a count-in, every note checked against the beat. Perform: play it through, with a summary at the end. Every take names the bar and the beat and gives the fix. A step passes after a few correct takes in a row, and a Day passes when its main exercise is played whole — in tempo, if the Day plays it in time. To practise, loop a few bars, play one hand while the stage plays the other, or change the tempo; on a tempo ladder the beat rises aft"
  },
  {
+  "url": "documentation.html#mixer",
+  "heading": "The mixer",
+  "text": "Press M, or the Mixer tab, to see every part's channel strip side by side and the master. Each strip has a fader, a pan knob, a three-band EQ, Room, Echo and Heat, a compressor (off until you switch it on) and the Granular knob, with an LED meter and a clip light; the master has its own fader, Granular knob and meter. Drag a fader with Shift for fine moves, or double-click it for 0 dB. Mute and solo glide rather than cut; Ctrl+click a solo to add a part to it. Every change is heard while you move it and becomes one undo step when you let go, and the project keeps the mix. Under the sheets, each part's audio grip drags it into your DAW as a WAV, printed through its strip at the song's tempo; the full mix drags as you hear it and names the parts it leaves out. A MIDI drag carries the part's fader and pan as controllers and says what MIDI cannot carry."
+ },
+ {
+  "url": "documentation.html#envelopes",
+  "heading": "The envelope editor",
+  "text": "On a part's tab, the Envelopes key opens the part's envelopes: volume, filter, pitch, pan and Granular, each off until you switch it on. Drag a point, or drag a segment's diamond to bend it; double-click to add a point, or a point to take it away; choose a point to type its numbers, or move it with the arrow keys. Each envelope has a depth, a time scale, velocity and key tracking, a held loop, tempo-locked times, retrigger, legato or a reset each bar, and an A/B morph. Start from a shape, copy an envelope to another part, undo and redo, or reset to none; while the song plays, a dot for each note rides the curve."
+ },
+ {
+  "url": "documentation.html#hosted",
+  "heading": "Your own instruments",
+  "text": "Each part can play one of your own VST3 or CLAP instruments instead of Handscore's. On the part's tab or its mixer strip, its instrument key opens the picker: Handscore's own first, then every instrument a scan found in the standard plugin folders and in folders you add. Choose one and the part plays through it, its window a click away; the project keeps the plugin and its sound. Each plugin runs in a process of its own, so one that crashes stops only itself, and its latency is compensated. The hands stay on Handscore's instrument, and that part drags as MIDI. A plugin your project names that this computer does not have is replaced by Handscore's own, and the part says so. Plugin windows open on Windows in this version."
+ },
+ {
   "url": "documentation.html#shortcuts",
   "heading": "Keyboard shortcuts",
   "text": "Press ? or the Shortcuts key in the top bar to see every shortcut."
@@ -110,6 +125,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Your privacy",
   "text": "The plugin and the standalone app never use the network. If Handscore ever stops unexpectedly, a short report is kept on your computer and offered the next time it opens; nothing is sent unless you choose to report it."
+ },
+ {
+  "url": "changelog.html#0-7-0-2026-10-16-added",
+  "heading": "Added",
+  "text": "The Mixer. Press M: every part's strip side by side and the master — a printed fader that follows your pointer, an LED meter with its clip light, the knob grid (Low, Mid, High, Room, Echo, Heat), a compressor with its gain-reduction light, pan, solo and mute. Every gesture is heard while it moves and is one undo step when you let go. Mute and solo that glide. A part fades out and back in over 30 ms instead of cutting, and solo hears only the parts soloed — Ctrl+click adds one. The Granular knob. On every strip and on the master: from nothing at 0 % to a cloud of grains, echoes and a wash at 100 %, a sound that turns any part ambient. Seeded by the project, so a print is the same twice. Audio drags. Each part's audio grip drags that part as a 24-bit WAV, printed through its strip at the song's tempo; the full mix drags as you hear it and names the parts it leaves out. MIDI drags that carry the mix. A part's fader and pan go into the file as CC 7 and CC 10, and the grip lists what MIDI cannot carry. The envelope editor. Each generator's volume, filter, pitch, pan and Granular envelopes, every one off until you switch it on: points to drag, segments to bend, a held loop, tempo-locked "
  },
  {
   "url": "changelog.html#0-6-0-2026-10-16-added",

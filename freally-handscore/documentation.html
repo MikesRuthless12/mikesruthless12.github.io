@@ -46,7 +46,7 @@
 <img class="app-icon" src="handscore-icon.png" alt="" width="72" height="72" />
 <span class="label" data-i18n="kit.nav.documentation">Documentation</span>
 <h1 data-i18n-html="kit.head.documentation"><span class="hl-muted">How it works,</span> <span class="hl-bright">step by step.</span></h1>
-<p class="lead" data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.6.0 does: the pianos and the hands, the three views, generating a song, the sheets, the drag and export, the editor, the classics, the transport and the piano lessons.</p>
+<p class="lead" data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.7.0 does: the pianos and the hands, the three views, generating a song, the sheets, the drag and export, the editor, the classics, the transport, the piano lessons, the mixer, the envelope editor and your own instruments.</p>
 <div class="search">
 <div class="search__field">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -60,7 +60,7 @@
 <div class="wrap manual">
 <nav class="manual-toc" data-spy aria-label="Contents" data-i18n-attr="aria-label:kit.docs.contents">
 <span class="label" data-i18n="kit.docs.contents">Contents</span>
-<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#stage" data-i18n="docs.stage.title">The stage</a></li><li><a href="#pianos" data-i18n="docs.pianos.title">The pianos</a></li><li><a href="#play" data-i18n="docs.play.title">Playing the keys</a></li><li><a href="#hands" data-i18n="docs.hands.title">The hands</a></li><li><a href="#views" data-i18n="docs.views.title">The views</a></li><li><a href="#generate" data-i18n="docs.generate.title">Generating a song</a></li><li><a href="#sheets" data-i18n="docs.sheets.title">The sheets</a></li><li><a href="#tray" data-i18n="docs.tray.title">The sheet tray</a></li><li><a href="#drag" data-i18n="docs.drag.title">Into your DAW</a></li><li><a href="#edit" data-i18n="docs.edit.title">Editing the notes</a></li><li><a href="#lyrics" data-i18n="docs.lyrics.title">Lyrics</a></li><li><a href="#seeds" data-i18n="docs.seeds.title">Seeds and history</a></li><li><a href="#classics" data-i18n="docs.classics.title">The classics</a></li><li><a href="#transport" data-i18n="docs.transport.title">The transport</a></li><li><a href="#lessons" data-i18n="docs.lessons.title">The lessons</a></li><li><a href="#shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</a></li><li><a href="#project" data-i18n="docs.project.title">Your project</a></li><li><a href="#theme" data-i18n="docs.theme.title">Light and dark</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Your privacy</a></li></ol>
+<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#stage" data-i18n="docs.stage.title">The stage</a></li><li><a href="#pianos" data-i18n="docs.pianos.title">The pianos</a></li><li><a href="#play" data-i18n="docs.play.title">Playing the keys</a></li><li><a href="#hands" data-i18n="docs.hands.title">The hands</a></li><li><a href="#views" data-i18n="docs.views.title">The views</a></li><li><a href="#generate" data-i18n="docs.generate.title">Generating a song</a></li><li><a href="#sheets" data-i18n="docs.sheets.title">The sheets</a></li><li><a href="#tray" data-i18n="docs.tray.title">The sheet tray</a></li><li><a href="#drag" data-i18n="docs.drag.title">Into your DAW</a></li><li><a href="#edit" data-i18n="docs.edit.title">Editing the notes</a></li><li><a href="#lyrics" data-i18n="docs.lyrics.title">Lyrics</a></li><li><a href="#seeds" data-i18n="docs.seeds.title">Seeds and history</a></li><li><a href="#classics" data-i18n="docs.classics.title">The classics</a></li><li><a href="#transport" data-i18n="docs.transport.title">The transport</a></li><li><a href="#lessons" data-i18n="docs.lessons.title">The lessons</a></li><li><a href="#mixer" data-i18n="docs.mixer.title">The mixer</a></li><li><a href="#envelopes" data-i18n="docs.envelopes.title">The envelope editor</a></li><li><a href="#hosted" data-i18n="docs.hosted.title">Your own instruments</a></li><li><a href="#shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</a></li><li><a href="#project" data-i18n="docs.project.title">Your project</a></li><li><a href="#theme" data-i18n="docs.theme.title">Light and dark</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Your privacy</a></li></ol>
 </nav>
 <div class="manual-body"><section>
     <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
@@ -165,6 +165,22 @@
   </section>
 
   <section>
+    <h2 id="mixer" data-i18n="docs.mixer.title">The mixer</h2>
+    <p data-i18n="docs.mixer.p1">Press M, or the Mixer tab, to see every part's channel strip side by side and the master. Each strip has a fader, a pan knob, a three-band EQ, Room, Echo and Heat, a compressor (off until you switch it on) and the Granular knob, with an LED meter and a clip light; the master has its own fader, Granular knob and meter. Drag a fader with Shift for fine moves, or double-click it for 0 dB. Mute and solo glide rather than cut; Ctrl+click a solo to add a part to it. Every change is heard while you move it and becomes one undo step when you let go, and the project keeps the mix.</p>
+    <p data-i18n="docs.mixer.p2">Under the sheets, each part's audio grip drags it into your DAW as a WAV, printed through its strip at the song's tempo; the full mix drags as you hear it and names the parts it leaves out. A MIDI drag carries the part's fader and pan as controllers and says what MIDI cannot carry.</p>
+  </section>
+
+  <section>
+    <h2 id="envelopes" data-i18n="docs.envelopes.title">The envelope editor</h2>
+    <p data-i18n="docs.envelopes.p1">On a part's tab, the Envelopes key opens the part's envelopes: volume, filter, pitch, pan and Granular, each off until you switch it on. Drag a point, or drag a segment's diamond to bend it; double-click to add a point, or a point to take it away; choose a point to type its numbers, or move it with the arrow keys. Each envelope has a depth, a time scale, velocity and key tracking, a held loop, tempo-locked times, retrigger, legato or a reset each bar, and an A/B morph. Start from a shape, copy an envelope to another part, undo and redo, or reset to none; while the song plays, a dot for each note rides the curve.</p>
+  </section>
+
+  <section>
+    <h2 id="hosted" data-i18n="docs.hosted.title">Your own instruments</h2>
+    <p data-i18n="docs.hosted.p1">Each part can play one of your own VST3 or CLAP instruments instead of Handscore's. On the part's tab or its mixer strip, its instrument key opens the picker: Handscore's own first, then every instrument a scan found in the standard plugin folders and in folders you add. Choose one and the part plays through it, its window a click away; the project keeps the plugin and its sound. Each plugin runs in a process of its own, so one that crashes stops only itself, and its latency is compensated. The hands stay on Handscore's instrument, and that part drags as MIDI. A plugin your project names that this computer does not have is replaced by Handscore's own, and the part says so. Plugin windows open on Windows in this version.</p>
+  </section>
+
+  <section>
     <h2 id="shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</h2>
     <p data-i18n="docs.shortcuts.p1">Press ? or the Shortcuts key in the top bar to see every shortcut.</p>
   </section>
@@ -204,7 +220,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © 2026 Mike Weaver, trading as Havoc Software. Not open source.</p><p data-i18n="footer.yours">The MIDI you generate and drag into your DAW is yours. Handscore's author claims no ownership of it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.7.0</span>
         </div>
       </div>
     </footer>

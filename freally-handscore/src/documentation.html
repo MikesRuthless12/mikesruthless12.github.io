@@ -2,7 +2,7 @@
      kit's; each <section> is one chapter, its <h2> the rail's entry. -->
 
 <kit-head>
-  <kit-lede data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.6.0 does: the pianos and the hands, the three views, generating a song, the sheets, the drag and export, the editor, the classics, the transport and the piano lessons.</kit-lede>
+  <kit-lede data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.7.0 does: the pianos and the hands, the three views, generating a song, the sheets, the drag and export, the editor, the classics, the transport, the piano lessons, the mixer, the envelope editor and your own instruments.</kit-lede>
 </kit-head>
 
 <kit-manual>
@@ -106,6 +106,22 @@
     <p data-i18n="docs.lessons.p1">Select Mode → Lessons opens the piano course inside the studio: the course map and the Day's steps on the left, the stage in the middle and the lesson's text under it. The course goes Day by Day — Beginner, Days 1 to 90, then Elementary, Days 91 to 400 — each Day a guided session, with a review Day every week. The first time, it opens at Day 1; after that, Continue takes you straight back to the Day, the step and the word where you stopped. Any Day can be opened from the map, and Exit lessons goes back to the song you left.</p>
     <p data-i18n="docs.lessons.p2">Each step reads, shows or listens. Watch: the hands play the exercise in the view the step names, slowly if it says so, with the finger numbers. Try: the keys to play light up and the music waits for them. In time: in tempo after a count-in, every note checked against the beat. Perform: play it through, with a summary at the end. Every take names the bar and the beat and gives the fix. A step passes after a few correct takes in a row, and a Day passes when its main exercise is played whole — in tempo, if the Day plays it in time. To practise, loop a few bars, play one hand while the stage plays the other, or change the tempo; on a tempo ladder the beat rises after three clean takes and steps back after three misses. Try also works with the mouse on the stage's keys; In time and Perform want a MIDI keyboard.</p>
     <p data-i18n="docs.lessons.p3">Read Aloud is off until you switch it on. Then your computer's own voice reads the lesson, each word lit as it is spoken. Space plays and pauses, ⏹ stops, and holding ⏪ or ⏩ runs back or ahead; set the pace from half speed to double and choose the voice from those installed. The clocks show the time spent in this Day and in all of them, and how many days you have practised. Your progress stays on this computer, the same in the standalone and in every DAW, and never goes into a project.</p>
+  </section>
+
+  <section>
+    <h2 id="mixer" data-i18n="docs.mixer.title">The mixer</h2>
+    <p data-i18n="docs.mixer.p1">Press M, or the Mixer tab, to see every part's channel strip side by side and the master. Each strip has a fader, a pan knob, a three-band EQ, Room, Echo and Heat, a compressor (off until you switch it on) and the Granular knob, with an LED meter and a clip light; the master has its own fader, Granular knob and meter. Drag a fader with Shift for fine moves, or double-click it for 0 dB. Mute and solo glide rather than cut; Ctrl+click a solo to add a part to it. Every change is heard while you move it and becomes one undo step when you let go, and the project keeps the mix.</p>
+    <p data-i18n="docs.mixer.p2">Under the sheets, each part's audio grip drags it into your DAW as a WAV, printed through its strip at the song's tempo; the full mix drags as you hear it and names the parts it leaves out. A MIDI drag carries the part's fader and pan as controllers and says what MIDI cannot carry.</p>
+  </section>
+
+  <section>
+    <h2 id="envelopes" data-i18n="docs.envelopes.title">The envelope editor</h2>
+    <p data-i18n="docs.envelopes.p1">On a part's tab, the Envelopes key opens the part's envelopes: volume, filter, pitch, pan and Granular, each off until you switch it on. Drag a point, or drag a segment's diamond to bend it; double-click to add a point, or a point to take it away; choose a point to type its numbers, or move it with the arrow keys. Each envelope has a depth, a time scale, velocity and key tracking, a held loop, tempo-locked times, retrigger, legato or a reset each bar, and an A/B morph. Start from a shape, copy an envelope to another part, undo and redo, or reset to none; while the song plays, a dot for each note rides the curve.</p>
+  </section>
+
+  <section>
+    <h2 id="hosted" data-i18n="docs.hosted.title">Your own instruments</h2>
+    <p data-i18n="docs.hosted.p1">Each part can play one of your own VST3 or CLAP instruments instead of Handscore's. On the part's tab or its mixer strip, its instrument key opens the picker: Handscore's own first, then every instrument a scan found in the standard plugin folders and in folders you add. Choose one and the part plays through it, its window a click away; the project keeps the plugin and its sound. Each plugin runs in a process of its own, so one that crashes stops only itself, and its latency is compensated. The hands stay on Handscore's instrument, and that part drags as MIDI. A plugin your project names that this computer does not have is replaced by Handscore's own, and the part says so. Plugin windows open on Windows in this version.</p>
   </section>
 
   <section>

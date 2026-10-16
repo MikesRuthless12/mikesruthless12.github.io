@@ -42,7 +42,7 @@
       "id": "mixer",
       "version": "v0.7.0",
       "phase": "Phase 4B — The Mixer",
-      "state": "planned",
+      "state": "done",
       "summary": "A mixer for every part, with faders, pan, EQ, effects and compression, and drags that keep the mix."
     },
     {
