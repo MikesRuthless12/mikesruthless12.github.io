@@ -46,7 +46,7 @@
 <img class="app-icon" src="handscore-icon.png" alt="" width="72" height="72" />
 <span class="label" data-i18n="kit.nav.documentation">Documentation</span>
 <h1 data-i18n-html="kit.head.documentation"><span class="hl-muted">How it works,</span> <span class="hl-bright">step by step.</span></h1>
-<p class="lead" data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.4.0 does: the pianos and the hands, generating a song, the sheets, the drag and export, the editor, the classics and the transport.</p>
+<p class="lead" data-i18n="docs.intro">Handscore is growing into realistic hands on every family of instruments, with music lessons from the piano to finger drumming, songwriting and song arrangement. This manual grows with it, version by version. Right now it covers what version 0.5.0 does: the pianos and the hands, the three views, generating a song, the sheets, the drag and export, the editor, the classics and the transport.</p>
 <div class="search">
 <div class="search__field">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -60,7 +60,7 @@
 <div class="wrap manual">
 <nav class="manual-toc" data-spy aria-label="Contents" data-i18n-attr="aria-label:kit.docs.contents">
 <span class="label" data-i18n="kit.docs.contents">Contents</span>
-<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#stage" data-i18n="docs.stage.title">The stage</a></li><li><a href="#pianos" data-i18n="docs.pianos.title">The pianos</a></li><li><a href="#play" data-i18n="docs.play.title">Playing the keys</a></li><li><a href="#hands" data-i18n="docs.hands.title">The hands</a></li><li><a href="#generate" data-i18n="docs.generate.title">Generating a song</a></li><li><a href="#sheets" data-i18n="docs.sheets.title">The sheets</a></li><li><a href="#tray" data-i18n="docs.tray.title">The sheet tray</a></li><li><a href="#drag" data-i18n="docs.drag.title">Into your DAW</a></li><li><a href="#edit" data-i18n="docs.edit.title">Editing the notes</a></li><li><a href="#lyrics" data-i18n="docs.lyrics.title">Lyrics</a></li><li><a href="#seeds" data-i18n="docs.seeds.title">Seeds and history</a></li><li><a href="#classics" data-i18n="docs.classics.title">The classics</a></li><li><a href="#transport" data-i18n="docs.transport.title">The transport</a></li><li><a href="#shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</a></li><li><a href="#project" data-i18n="docs.project.title">Your project</a></li><li><a href="#theme" data-i18n="docs.theme.title">Light and dark</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Your privacy</a></li></ol>
+<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#stage" data-i18n="docs.stage.title">The stage</a></li><li><a href="#pianos" data-i18n="docs.pianos.title">The pianos</a></li><li><a href="#play" data-i18n="docs.play.title">Playing the keys</a></li><li><a href="#hands" data-i18n="docs.hands.title">The hands</a></li><li><a href="#views" data-i18n="docs.views.title">The views</a></li><li><a href="#generate" data-i18n="docs.generate.title">Generating a song</a></li><li><a href="#sheets" data-i18n="docs.sheets.title">The sheets</a></li><li><a href="#tray" data-i18n="docs.tray.title">The sheet tray</a></li><li><a href="#drag" data-i18n="docs.drag.title">Into your DAW</a></li><li><a href="#edit" data-i18n="docs.edit.title">Editing the notes</a></li><li><a href="#lyrics" data-i18n="docs.lyrics.title">Lyrics</a></li><li><a href="#seeds" data-i18n="docs.seeds.title">Seeds and history</a></li><li><a href="#classics" data-i18n="docs.classics.title">The classics</a></li><li><a href="#transport" data-i18n="docs.transport.title">The transport</a></li><li><a href="#shortcuts" data-i18n="docs.shortcuts.title">Keyboard shortcuts</a></li><li><a href="#project" data-i18n="docs.project.title">Your project</a></li><li><a href="#theme" data-i18n="docs.theme.title">Light and dark</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Your privacy</a></li></ol>
 </nav>
 <div class="manual-body"><section>
     <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
@@ -97,6 +97,12 @@
     <h2 id="hands" data-i18n="docs.hands.title">The hands</h2>
     <p data-i18n="docs.hands.p1">Two realistic hands play every note on the stage, the way a pianist would: each finger chosen for the passage, the thumb passing under on a scale, wide chords reached, and a hand lifting up and over the other when the music crosses. When nothing plays they rest on the keys, ready.</p>
     <p data-i18n="docs.hands.p2">Handscore works out which hand plays each note, and with which finger, before the music plays, so the hands arrive as the keys go down.</p>
+  </section>
+
+  <section>
+    <h2 id="views" data-i18n="docs.views.title">The views</h2>
+    <p data-i18n="docs.views.p1">Watch the stage from the front, from overhead or from the side. Turn the view knob in the stage's top-right corner, or press V for the next view and Shift+V for the one before. The camera glides from one view to the next while the music plays on, and every key, hand and lit note stays exactly in time. Your project remembers the view.</p>
+    <p data-i18n="docs.views.p2">Front is the player's view, the keyboard filling the window. Top looks straight down on the keys and the hands: a grand closes its lid for it, and the sheets lie flat on the lid, side by side, so you can read them; an upright's lie on its top lid. Side looks along the keyboard from the treble end, at the height of the keys, to show the shape of the hands — how each finger curves and how far each key goes down — with the sheets turned on the desk toward you. In Side, the From the left switch under the view knob looks from the bass end instead. Click a sheet, or press 1 to 5, to bring it close in any view.</p>
   </section>
 
   <section>
@@ -191,7 +197,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © 2026 Mike Weaver, trading as Havoc Software. Not open source.</p><p data-i18n="footer.yours">The MIDI you generate and drag into your DAW is yours. Handscore's author claims no ownership of it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.4.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.0</span>
         </div>
       </div>
     </footer>

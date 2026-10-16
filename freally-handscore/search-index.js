@@ -32,6 +32,11 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Two realistic hands play every note on the stage, the way a pianist would: each finger chosen for the passage, the thumb passing under on a scale, wide chords reached, and a hand lifting up and over the other when the music crosses. When nothing plays they rest on the keys, ready. Handscore works out which hand plays each note, and with which finger, before the music plays, so the hands arrive as the keys go down."
  },
  {
+  "url": "documentation.html#views",
+  "heading": "The views",
+  "text": "Watch the stage from the front, from overhead or from the side. Turn the view knob in the stage's top-right corner, or press V for the next view and Shift+V for the one before. The camera glides from one view to the next while the music plays on, and every key, hand and lit note stays exactly in time. Your project remembers the view. Front is the player's view, the keyboard filling the window. Top looks straight down on the keys and the hands: a grand closes its lid for it, and the sheets lie flat on the lid, side by side, so you can read them; an upright's lie on its top lid. Side looks along the keyboard from the treble end, at the height of the keys, to show the shape of the hands — how each finger curves and how far each key goes down — with the sheets turned on the desk toward you. In Side, the From the left switch under the view knob looks from the bass end instead. Click a sheet, or press 1 to 5, to bring it close in any view."
+ },
+ {
   "url": "documentation.html#generate",
   "heading": "Generating a song",
   "text": "The panel on the left (its tab on the window's edge shows and hides it) searches 73 genres, 1,507 artists and 833 producers. Choose one and press Generate, or G: four parts — chords, melody, counter-melody and bassline — are written in that style, 4 or 8 bars long, and the hands play them on the piano. The chips beside Generate set the key, the scale (41 of them), the mood, the tempo (20 to 999 BPM; drag up or down on the number), the complexity and 4 or 8 bars, and each shows what the song was made in. Follow DAW writes at your project's tempo. Playable voices the parts for two hands; Raw keeps them exactly as written."
@@ -100,6 +105,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Your privacy",
   "text": "The plugin and the standalone app never use the network. If Handscore ever stops unexpectedly, a short report is kept on your computer and offered the next time it opens; nothing is sent unless you choose to report it."
+ },
+ {
+  "url": "changelog.html#0-5-0-2026-10-15-added",
+  "heading": "Added",
+  "text": "Three views: Front, Top and Side. Turn the view knob in the stage's top-right corner, or press V for the next view and Shift+V for the one before. Your project remembers the view. A seamless switch. The camera glides from one view to the next without ever passing through the piano, and the music plays on through the move: every key, hand and lit note is exactly where it would be with the camera standing still. Top: the keys and the hands from above. A grand folds its prop, lays its music desk flat and closes its lid; the sheets lift off the desk, wait over the keys and lie down on the closed lid side by side, reading upright from where you sit. An upright's sheets lie on its top lid. Side: the hands in profile. The camera looks along the keyboard from the treble end, at the height of the keys — or from the bass end, with From the left under the view knob — and the sheets turn on the desk toward it so they stay readable. The hands from every side. They cast their shadows on the keys they play, and from above no fingertip ever sinks into a key or the case. A sheet close up in any view. Click it, or press 1 to 5; Esc goes back to the view. Smooth in every view. After each change of vi"
  },
  {
   "url": "changelog.html#0-4-0-2026-10-15-added",
