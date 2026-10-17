@@ -53,9 +53,28 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-9-0-2026-10-17">v0.9.0</a></li><li><a href="#0-8-0-2026-10-16">v0.8.0</a></li><li><a href="#0-7-0-2026-10-16">v0.7.0</a></li><li><a href="#0-6-0-2026-10-16">v0.6.0</a></li><li><a href="#0-5-0-2026-10-15">v0.5.0</a></li><li><a href="#0-4-0-2026-10-15">v0.4.0</a></li><li><a href="#0-3-0-2026-10-14">v0.3.0</a></li><li><a href="#0-2-0-2026-10-14">v0.2.0</a></li><li><a href="#0-1-0-2026-10-12">v0.1.0</a></li></ol>
+<ol><li><a href="#0-10-0-2026-10-17">v0.10.0</a></li><li><a href="#0-9-0-2026-10-17">v0.9.0</a></li><li><a href="#0-8-0-2026-10-16">v0.8.0</a></li><li><a href="#0-7-0-2026-10-16">v0.7.0</a></li><li><a href="#0-6-0-2026-10-16">v0.6.0</a></li><li><a href="#0-5-0-2026-10-15">v0.5.0</a></li><li><a href="#0-4-0-2026-10-15">v0.4.0</a></li><li><a href="#0-3-0-2026-10-14">v0.3.0</a></li><li><a href="#0-2-0-2026-10-14">v0.2.0</a></li><li><a href="#0-1-0-2026-10-12">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-9-0-2026-10-17">
+<div class="releases"><article class="release release--latest" id="0-10-0-2026-10-17">
+<h2 class="release__head" data-i18n-html="changelog.df6470b1e841"><span class="release__meta"><span class="release__ver">v0.10.0</span><time class="release__date" datetime="2026-10-17">2026-10-17</time></span></h2>
+<p data-i18n-html="changelog.6d2456347b5e">Finger drumming. A pad controller takes the stage, its sixteen pads lighting up with every hit, and realistic hands play your loop's drums on it, finger by finger. Every loop now has drums of its own, printed on a drum sheet. Play your own in on any pad controller, layer on layer as the loop comes round, and keep the takes you like. The finger-drumming course teaches it from the first beat to full grooves.</p>
+<h3 id="0-10-0-2026-10-17-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.9f50ff1513e0"><strong>The pad controller on stage.</strong> Choose it in Select Mode under Instruments, or switch it on in the Drums tab: a 4×4 pad controller, with the hands playing the loop's drums on its pads, index fingers first, each hand keeping to its side. The other parts are still heard. Your project keeps the choice.</li>
+<li data-i18n-html="changelog.e64037f005b8"><strong>Every pad lights up as it is hit.</strong> Each kit piece has its own colour, and a hit's strength sets how bright it glows before it fades, like a real pad's light. With Reduce motion the colours stay and the fades go.</li>
+<li data-i18n-html="changelog.766fe929f61e"><strong>Drums on every loop.</strong> Generate now writes the loop's drums too, from MIDI Master's drum generators. With an 808 bassline, the kick and the 808 come as one pattern, and a new take of the bassline brings new drums with it.</li>
+<li data-i18n-html="changelog.18971f931e55"><strong>The Drums tab.</strong> Sixteen pads on screen, after the Bassline tab, with its dot and its ×. Click them, play them from a MIDI controller, or switch on Keys play pads and play them from the computer keys (1 2 3 4, Q W E R, A S D F, Z X C V). Pick the Default layout (General MIDI notes 36 to 51 from the bottom-left pad) or the mirrored Performance layout. Learn maps your own controller: hit each pad when it is asked for.</li>
+<li data-i18n-html="changelog.d30547a5121a"><strong>The drum sheet.</strong> The Drums part is printed in standard drum notation, each piece on its own line or space, the hands' notes stemmed up and the feet's down. It stands on the desk with the other sheets (first, with the pad controller on stage) and has its number key like them, and it is in the tray with Solo and Mute and in the PDF. With finger numbers on, each note shows its hand and finger.</li>
+<li data-i18n-html="changelog.5fcbc2452dda"><strong>Play your own drums in.</strong> Record over the loop after a count-in: each time the loop comes round, the pass you played becomes a layer it plays on with, so you can add a kick, then a snare, then the hats. Undo pass takes the last one back, and Stop keeps the take, snapped to sixteenths if Quantise is on. Your project keeps every take with how tight it was; pick any one, or go back to the loop's own drums.</li>
+<li data-i18n-html="changelog.d5b28d4df7b8"><strong>The finger-drumming course.</strong> Days 1 to 150 in lesson mode: the index fingers, then the thumbs and middle fingers, the backbeat, kick placements, swing, accents and ghost notes, fills, genre grooves, rudiments on one pad and across pads, triplets and the shuffle, linear grooves, with the click dropping out in stages. The next pads glow before they are due, a wrong pad flashes red, and each take says how far ahead of or behind the beat you were. A take played with the mouse or the computer keys is not marked on its accents.</li>
+</ul>
+<h3 id="0-10-0-2026-10-17-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.bb31c9fcf9cb"><strong>Follow DAW is in DAWs only.</strong> The standalone has no Follow DAW switch. In a DAW, the Tempo chip stays at the DAW's tempo while Follow DAW is on; switch it off to set a tempo of your own.</li>
+<li data-i18n-html="changelog.e77d5ee11f6c"><strong>The Arrangement label's keys.</strong> Undo, Redo, Mute, Solo and the zoom's − and + are small icons on the Arrangement label's line, which stays in view while the keys below it scroll. Mute and Solo light up while they are on, and each key has its own colour under the pointer.</li>
+</ul>
+</article>
+<article class="release" id="0-9-0-2026-10-17">
 <h2 class="release__head" data-i18n-html="changelog.50f8bc668b74"><span class="release__meta"><span class="release__ver">v0.9.0</span><time class="release__date" datetime="2026-10-17">2026-10-17</time></span></h2>
 <p data-i18n-html="changelog.48baf93edf6a">Lessons beyond the piano. Nine new courses sit beside the piano course in lesson mode: reading real sheet music, rhythm, ear training, music theory for producers with the Nashville Number System, songwriting, lyric writing with a rap and flow track, song arrangement and mixing, each Day by Day from the first lesson to the end of its Elementary section. The piano course itself now runs on to about Grade 5. The creative courses are done in the Song view, on the lyric lane and in the Mixer, and checked by craft rules you can overrule; the Song view gains the songwriter's tools they use.</p>
 <h3 id="0-9-0-2026-10-17-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -224,7 +243,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © 2026 Mike Weaver, trading as Havoc Software. Not open source.</p><p data-i18n="footer.yours">The MIDI you generate and drag into your DAW is yours. Handscore's author claims no ownership of it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.9.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.10.0</span>
         </div>
       </div>
     </footer>

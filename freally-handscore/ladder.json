@@ -63,7 +63,7 @@
       "id": "finger-drumming",
       "version": "v0.10.0",
       "phase": "Phase 4E — Finger Drumming",
-      "state": "planned",
+      "state": "done",
       "summary": "Finger drumming on a pad controller whose pads light up with every hit, from the first beat to full grooves."
     },
     {
@@ -71,7 +71,7 @@
       "version": "v0.11.0",
       "phase": "Phase 4F — The Drum Kit & Percussion",
       "state": "planned",
-      "summary": "A drum kit set up and played the way a professional drummer would."
+      "summary": "A drum kit set up and played the way a professional drummer would, and a drum machine beside it, with one switch to choose which plays your drums."
     },
     {
       "id": "live-listening",
