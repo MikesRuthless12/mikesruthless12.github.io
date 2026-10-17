@@ -49,7 +49,7 @@
       "id": "song-view",
       "version": "v0.8.0",
       "phase": "Phase 4C — The Song View",
-      "state": "planned",
+      "state": "done",
       "summary": "The Song view: build a whole song from sections by hand, or start from an artist's or a genre's arrangement, then watch it played and drag it out."
     },
     {
@@ -67,50 +67,57 @@
       "summary": "Finger drumming on a pad controller whose pads light up with every hit, from the first beat to full grooves."
     },
     {
-      "id": "live-listening",
+      "id": "drum-kit",
       "version": "v0.11.0",
-      "phase": "Phase 4F — Live Listening",
+      "phase": "Phase 4F — The Drum Kit & Percussion",
+      "state": "planned",
+      "summary": "A drum kit set up and played the way a professional drummer would."
+    },
+    {
+      "id": "live-listening",
+      "version": "v0.12.0",
+      "phase": "Phase 4G — Live Listening",
       "state": "planned",
       "summary": "Live listening: play a real instrument into a microphone or an instrument cable, and the lessons hear it."
     },
     {
       "id": "guitars",
-      "version": "v0.12.0",
+      "version": "v0.13.0",
       "phase": "Phase 5 — The Guitars",
       "state": "planned",
       "summary": "The guitars: acoustic, nylon, electric and muted, with real fretting, picking and strumming."
     },
     {
       "id": "bass",
-      "version": "v0.13.0",
+      "version": "v0.14.0",
       "phase": "Phase 6 — The Bass Guitar",
       "state": "planned",
       "summary": "The bass guitar, played with the fingers and slapped."
     },
     {
       "id": "own-audio",
-      "version": "v0.14.0",
+      "version": "v0.15.0",
       "phase": "Phase 7 — Your Own Audio & MIDI",
       "state": "planned",
       "summary": "Your own audio and MIDI, read into parts and played by the hands."
     },
     {
       "id": "classics",
-      "version": "v0.15.0",
+      "version": "v0.16.0",
       "phase": "Phase 8 — The Classics",
       "state": "planned",
       "summary": "The classics: public-domain tunes to watch and listen to."
     },
     {
       "id": "realism",
-      "version": "v0.16.0",
+      "version": "v0.17.0",
       "phase": "Phase 9 — The Realism Pass",
       "state": "planned",
       "summary": "The realism pass: lighting, materials and motion held to filmed playing."
     },
     {
       "id": "finish",
-      "version": "v0.17.0",
+      "version": "v0.18.0",
       "phase": "Phase 10 — The Finish",
       "state": "planned",
       "summary": "The finish: settings, eighteen languages throughout, accessibility and the manual."
@@ -170,13 +177,8 @@
       "summary": "Trumpet, trombone, French horn and tuba."
     },
     {
+      "id": "play-along",
       "version": "v1.8.0",
-      "phase": "Phase 20 — The Drums & Percussion",
-      "state": "later",
-      "summary": "A drum kit set up and played the way a professional drummer would."
-    },
-    {
-      "version": "v1.9.0",
       "phase": "Phase 21 — Play Along & Learn Mode",
       "state": "later",
       "summary": "Play along and learn mode."

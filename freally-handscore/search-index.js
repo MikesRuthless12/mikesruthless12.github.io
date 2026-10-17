@@ -102,6 +102,16 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Each part can play one of your own VST3 or CLAP instruments instead of Handscore's. On the part's tab or its mixer strip, its instrument key opens the picker: Handscore's own first, then every instrument a scan found in the standard plugin folders and in folders you add. Choose one and the part plays through it, its window a click away; the project keeps the plugin and its sound. Each plugin runs in a process of its own, so one that crashes stops only itself, and its latency is compensated. The hands stay on Handscore's instrument, and that part drags as MIDI. A plugin your project names that this computer does not have is replaced by Handscore's own, and the part says so. Plugin windows open on Windows in this version."
  },
  {
+  "url": "documentation.html#song",
+  "heading": "The Song view",
+  "text": "Press A, or the Arrangement tab, to open the song's timeline under the stage: the piano, the hands and the sheets stay in view while you build, and the song plays while the tab is open, or from any tab while it is soloed. Generate song gives the style's whole song in its own form; pick one of its forms or its empty form, start a blank song, or drag a style from the left panel onto the timeline. Each row is a part, the Drums last, and each cell a clip. Add, insert, move, rename and resize sections from their headers and menus; copy and paste clips, make a shared clip unique, fade a clip in and out from its corners, set how many bars it loops, and lock the clips a new take keeps. Re-roll a section, loop it with ↻, or double-click a clip to hear it alone. Fill a cell by sending the loop on stage to it, by dropping a .mid or an audio file on it from the file browser in the left panel, or by playing a take into it on your MIDI keyboard. A clip's ✎ opens its notes in the part editor under the timeline, where every edit changes every section that shares the clip. Every change is one step of Undo. The sheets mark each section and turn their pages as the song plays, and Go to a section in t"
+ },
+ {
+  "url": "documentation.html#grade",
+  "heading": "The hit-readiness grade",
+  "text": "The Hit-readiness key on the Arrangement tab opens the song's grade beside the timeline: a letter and a score out of 100 from twelve checks on its form, its parts and its words, each saying what it found and what it aims for. Type the melody's words in its box, a line to a bar from bar 1, to grade them too. It is a songwriter's checklist measured on the song's own notes, and it is printed on the PDF's cover."
+ },
+ {
   "url": "documentation.html#shortcuts",
   "heading": "Keyboard shortcuts",
   "text": "Press ? or the Shortcuts key in the top bar to see every shortcut."
@@ -125,6 +135,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Your privacy",
   "text": "The plugin and the standalone app never use the network. If Handscore ever stops unexpectedly, a short report is kept on your computer and offered the next time it opens; nothing is sent unless you choose to report it."
+ },
+ {
+  "url": "changelog.html#0-8-0-2026-10-16-added",
+  "heading": "Added",
+  "text": "The Arrangement tab. Press A: the song's timeline docks under the stage, so the piano, the hands and the sheets stay in view while you build, and the song plays while the tab is open (or soloed from any tab). Generate a style's whole song, pick one of its forms or its empty form, start a blank song, or drag a style from the left panel onto the timeline. Build a song by hand. Add, insert, move, rename and resize sections; copy and paste clips, make a shared clip unique, fade a clip in and out, set how many bars it loops and lock the clips a new take keeps. Re-roll a section, loop one, or double-click a clip to hear it alone. Every change is one step of Undo. Fill a cell your way. Send the loop on stage to a section, drop a .mid or an audio file on a cell from the new file browser (audio is turned into notes), or play a take into a cell on your MIDI keyboard, quantised if you like. Edit a clip's notes in the song. A clip's ✎ opens its notes in the part editor under the timeline: pick, move, lengthen, draw, copy, paste and delete notes in every section that shares the clip, or make it unique to change one alone. Play notes in on your MIDI keyboard from the bar you choose. Sheets and h"
  },
  {
   "url": "changelog.html#0-7-0-2026-10-16-added",

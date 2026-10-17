@@ -53,9 +53,25 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-7-0-2026-10-16">v0.7.0</a></li><li><a href="#0-6-0-2026-10-16">v0.6.0</a></li><li><a href="#0-5-0-2026-10-15">v0.5.0</a></li><li><a href="#0-4-0-2026-10-15">v0.4.0</a></li><li><a href="#0-3-0-2026-10-14">v0.3.0</a></li><li><a href="#0-2-0-2026-10-14">v0.2.0</a></li><li><a href="#0-1-0-2026-10-12">v0.1.0</a></li></ol>
+<ol><li><a href="#0-8-0-2026-10-16">v0.8.0</a></li><li><a href="#0-7-0-2026-10-16">v0.7.0</a></li><li><a href="#0-6-0-2026-10-16">v0.6.0</a></li><li><a href="#0-5-0-2026-10-15">v0.5.0</a></li><li><a href="#0-4-0-2026-10-15">v0.4.0</a></li><li><a href="#0-3-0-2026-10-14">v0.3.0</a></li><li><a href="#0-2-0-2026-10-14">v0.2.0</a></li><li><a href="#0-1-0-2026-10-12">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-7-0-2026-10-16">
+<div class="releases"><article class="release release--latest" id="0-8-0-2026-10-16">
+<h2 class="release__head" data-i18n-html="changelog.b82b445328ca"><span class="release__meta"><span class="release__ver">v0.8.0</span><time class="release__date" datetime="2026-10-16">2026-10-16</time></span></h2>
+<p data-i18n-html="changelog.578b5d28a79c">The Song view. Handscore now writes, builds and plays whole songs, not only loops: generate a complete song in any style's own form, or build one section by section on the Arrangement tab's timeline, and the hands and the sheets play it from the first bar to the last, the pages turning as they go. A song has its drums on a strip of their own, drags into your DAW whole, by section or by clip, and comes with a hit-readiness grade that shows, check by check, how it measures up to the songwriter's rules of thumb.</p>
+<h3 id="0-8-0-2026-10-16-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.b62ffaa12ca0"><strong>The Arrangement tab.</strong> Press A: the song's timeline docks under the stage, so the piano, the hands and the sheets stay in view while you build, and the song plays while the tab is open (or soloed from any tab). Generate a style's whole song, pick one of its forms or its empty form, start a blank song, or drag a style from the left panel onto the timeline.</li>
+<li data-i18n-html="changelog.3711bc940735"><strong>Build a song by hand.</strong> Add, insert, move, rename and resize sections; copy and paste clips, make a shared clip unique, fade a clip in and out, set how many bars it loops and lock the clips a new take keeps. Re-roll a section, loop one, or double-click a clip to hear it alone. Every change is one step of Undo.</li>
+<li data-i18n-html="changelog.3a48bd4ed77a"><strong>Fill a cell your way.</strong> Send the loop on stage to a section, drop a <code>.mid</code> or an audio file on a cell from the new file browser (audio is turned into notes), or play a take into a cell on your MIDI keyboard, quantised if you like.</li>
+<li data-i18n-html="changelog.bcf7416c3978"><strong>Edit a clip's notes in the song.</strong> A clip's ✎ opens its notes in the part editor under the timeline: pick, move, lengthen, draw, copy, paste and delete notes in every section that shares the clip, or make it unique to change one alone. Play notes in on your MIDI keyboard from the bar you choose.</li>
+<li data-i18n-html="changelog.bda265df4980"><strong>Sheets and hands across the whole song.</strong> Every sheet marks each section after a double bar line and shows a part's rest as one bar with its count; past a page's middle its top half already turns to the next page, and <em>Go to a section</em> turns every sheet there. The hands plan their moves across sections, and a hand with nothing to play lifts off the keys and rests.</li>
+<li data-i18n-html="changelog.6a41964e3d04"><strong>The Drums row.</strong> A song's drums play on the style's drum machine, on a strip of their own in the Mixer. In Playable voicing they keep only what two hands and two feet could play; Raw keeps every hit.</li>
+<li data-i18n-html="changelog.909f3c615e53"><strong>A song into your DAW.</strong> Drag the whole song with its sections as markers, one section alone or one clip, as MIDI or as audio (up to 15 minutes). Export MIDI and Export to PDF work from the Song view too.</li>
+<li data-i18n-html="changelog.e1e1d7a49efa"><strong>Re-Dream the whole song.</strong> Three new versions of the song in its own form, key, tempo and metre, your locked clips kept; keep the one you like.</li>
+<li data-i18n-html="changelog.9d5296c87435"><strong>The hit-readiness grade.</strong> A letter and a score out of 100 from twelve checks on the song's form, its parts and its words: how often the hook returns and how early it arrives, the intro's length, contrast between sections, the tempo for the style, the melody's range and shape, and how the lyrics fit, rhyme and repeat. Each check says what it found and what it aims for, so the grade teaches; type the melody's words in its box to grade them too. It is on the PDF's cover as well.</li>
+</ul>
+</article>
+<article class="release" id="0-7-0-2026-10-16">
 <h2 class="release__head" data-i18n-html="changelog.9960bf9700bd"><span class="release__meta"><span class="release__ver">v0.7.0</span><time class="release__date" datetime="2026-10-16">2026-10-16</time></span></h2>
 <p data-i18n-html="changelog.89f5c24a8af1">The mixer. Every part now plays through a channel strip of its own — fader, pan, EQ, room, echo, heat, a compressor and a Granular knob — into a master, with meters, mute and solo, all kept with your project. Drag any part, or the whole mix, into your DAW as audio exactly as you hear it. Shape each part's sound with the envelope editor, and play any part on one of your own VST3 or CLAP instruments.</p>
 <h3 id="0-7-0-2026-10-16-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -192,7 +208,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © 2026 Mike Weaver, trading as Havoc Software. Not open source.</p><p data-i18n="footer.yours">The MIDI you generate and drag into your DAW is yours. Handscore's author claims no ownership of it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.7.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.8.0</span>
         </div>
       </div>
     </footer>
