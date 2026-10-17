@@ -9,6 +9,9 @@
   <section>
     <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
     <p data-i18n="docs.start.p1">Flipcopy runs inside your DAW as a CLAP, VST3 or AU plugin, or on its own as a standalone app. Put it on any audio track: it passes the track's audio through exactly as it arrives, so it is safe to leave in place.</p>
+    <p data-i18n="docs.start.standalone">The standalone app runs one at a time: open it again and its window comes to the front. It reopens where you left it. In Settings, Audio output chooses the device it plays through, from the next time it starts. Open a file with Flipcopy (Open with in Explorer, or a double-click once Flipcopy is the program for that kind of file) and it goes on the glass, ready for START; if Flipcopy is already open, that window takes it.</p>
+    <figure class="demo"><video src="media/feature-audio-output.webm" poster="media/feature-audio-output.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.demo.audioOutput">Audio output</figcaption></figure>
+    <p data-i18n="docs.start.linux">On Linux, a plugin's window is drawn by WebKitGTK, the weakest part of any Linux plugin. If Flipcopy's window misbehaves in your DAW, use the standalone app beside it: it does everything the plugin does except Scan from track, and its pages drag onto your tracks the same way.</p>
     <p data-i18n="docs.start.p2">There are no downloads before version 1.0.0, and the source code is private.</p>
   </section>
 
@@ -94,7 +97,8 @@
     <h2 id="browser" data-i18n="docs.browser.title">The browser</h2>
     <p data-i18n="docs.browser.p1">The browser opens on its Categories: Copies, every page and mix you have made, and Recent, the originals you last put on the glass. Under them are the folders you have added; choose + Add Folder to add one, up to 128. A folder on a drive that is not plugged in keeps its place and says it isn’t connected right now. To stop browsing a folder, right-click it, or select it and press Delete; nothing on disk is touched.</p>
     <p data-i18n="docs.browser.p2">Open a folder to walk it as a tree. Type to filter it by name, pick a tag or Starred to narrow it, and choose Show all files to see the sidecar files Flipcopy hides, such as .asd and .reapeaks. Back and Forward take you through the places you have been.</p>
-    <p data-i18n="docs.browser.p3">Walk the rows with ↑ and ↓: each row you land on plays once in the preview. → opens a folder and ← closes it. Enter puts the selected file on the glass, and so does dragging its row onto the copier.</p>
+    <p data-i18n="docs.browser.p3">Walk the rows with ↑ and ↓: each row you land on plays once in the preview. → opens a folder and ← closes it. Enter puts the selected file on the glass, and so does a double-click on it, or dragging its row onto the copier.</p>
+    <figure class="demo"><video src="media/feature-double-click.webm" poster="media/feature-double-click.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.demo.doubleClick">A double-click puts a file on the glass</figcaption></figure>
     <p data-i18n="docs.browser.p4">The first time you add a folder, Flipcopy counts its files, with a bar that shows how far it has got. It reads at most 12 folders deep and 50,000 files, and never follows a shortcut out of the folder.</p>
     <figure class="demo"><video src="media/feature-browser.webm" poster="media/feature-browser.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.browser.title">The browser</figcaption></figure>
   </section>
@@ -140,7 +144,8 @@
 
   <section>
     <h2 id="settings" data-i18n="docs.settings.title">Settings</h2>
-    <p data-i18n="docs.settings.p1">Open Settings with the gear at the top of the browser. Machine sounds turns the copier’s sounds on or off, sets their level and keeps them quiet while your DAW plays. A switch of its own turns off the soft sounds the panels and dialogs make as they open and close.</p>
+    <p data-i18n="docs.settings.p0">Open Settings with the gear at the top of the browser. Its categories run down one side (General, Appearance, Sounds, Motion, Audio output, Copies folder, About), and the one you choose opens beside them.</p>
+    <p data-i18n="docs.settings.p1">Machine sounds turns the copier’s sounds on or off, sets their level and keeps them quiet while your DAW plays. A switch of its own turns off the soft sounds the panels and dialogs make as they open and close.</p>
     <p data-i18n="docs.settings.p2">Under Motion, Quick runs the machine at its short timings, with every sound still in its place. Reduced motion follows your system’s setting, or choose Reduce to have it always: no flip, no swing of the lid, no sweep and no dimming of the room. The copier still shows each step and plays each sound, and START is still the only way to make a copy.</p>
     <p data-i18n="docs.settings.p3">Copies folder shows where your copies go. Change… picks another folder: new copies go there, and the copies already made stay where they are. Show in folder opens it. About shows the version, the third-party licences and the licence agreement.</p>
     <figure class="demo"><video src="media/feature-settings.webm" poster="media/feature-settings.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.settings.title">Settings</figcaption></figure>

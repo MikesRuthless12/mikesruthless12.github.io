@@ -53,9 +53,45 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-6-0-2026-10-09-in-every-daw">v0.6.0</a></li><li><a href="#0-5-9-2026-10-09-light-mode">v0.5.9</a></li><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
+<ol><li><a href="#0-7-0-2026-10-17-standalone-macos-linux">v0.7.0</a></li><li><a href="#0-6-0-2026-10-09-in-every-daw">v0.6.0</a></li><li><a href="#0-5-9-2026-10-09-light-mode">v0.5.9</a></li><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-6-0-2026-10-09-in-every-daw">
+<div class="releases"><article class="release release--latest" id="0-7-0-2026-10-17-standalone-macos-linux">
+<h2 class="release__head" data-i18n-html="changelog.b2cc16d94b92"><span class="release__meta"><span class="release__ver">v0.7.0</span><time class="release__date" datetime="2026-10-17">2026-10-17</time></span><span class="release__title">Standalone, macOS &amp; Linux</span></h2>
+<p data-i18n-html="changelog.4ed51e7648f7">The standalone application does everything the plugin does, on its own: one window at a time, back where you left it, playing on the output you choose, and a file opened with it goes straight onto the glass. Flipcopy is tested in the engine macOS and Linux draw it with, and Settings opens in sections.</p>
+<h3 id="0-7-0-2026-10-17-standalone-macos-linux-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.114aa4018af8"><strong>One standalone at a time.</strong> Starting Flipcopy again brings the open window to the front instead of opening a second one.</li>
+<li data-i18n-html="changelog.2e284faae100"><strong>The window comes back where you left it</strong> — its place, its size, and whether it was maximised — and only onto a screen that is still there.</li>
+<li data-i18n-html="changelog.9c78e20f68f4"><strong>Choose the audio output.</strong> <em>Settings → Audio output</em> lists your devices after <em>System default</em>; the choice is used the next time Flipcopy starts. A device that has gone is still named, and the system default plays. In a DAW the DAW owns the audio, and the section is not shown.</li>
+<li data-i18n-html="changelog.a9d2c9eefa39"><strong>Open a file with Flipcopy.</strong> <em>Open with</em> in Explorer, a double-click once Flipcopy is the program for the file, or a file dropped on Flipcopy's icon: the file goes on the glass, ready for START. If Flipcopy is already open, that window comes forward and takes it.</li>
+<li data-i18n-html="changelog.991294d43dec"><strong>Double-click a file in the browser</strong> to put it on the glass, as <code>Enter</code> does.</li>
+<li data-i18n-html="changelog.3d84696df63b"><strong>A self-test.</strong> <code>freally-flipcopy --self-test &lt;clip&gt;</code> copies a file with no window and no audio device, reads every page back from disk, and exits with an error if anything is wrong.</li>
+</ul>
+<h3 id="0-7-0-2026-10-17-standalone-macos-linux-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.62ea5e547240"><strong>Settings opens in sections.</strong> Its categories (General, Appearance, Sounds, Motion, Audio output in the standalone, Copies folder and About) run down one side, and the one you choose opens beside them, so there's nothing to scroll to.</li>
+<li data-i18n-html="changelog.37b2783764d4"><strong>macOS and Linux:</strong> Flipcopy's window is now tested in WebKit, the engine of the macOS and Linux editors, as well as in the one Windows uses.</li>
+<li data-i18n-html="changelog.72810da5590a"><strong>On Linux, the standalone is recommended</strong> wherever the plugin's window misbehaves in a host: it does everything the plugin does except <em>Scan from track</em>.</li>
+<li data-i18n-html="changelog.47c108a7cbb5"><strong>On a slow computer the copier keeps time with its sounds.</strong> Drawn at a few frames a second, the machine used to fall behind the sounds it plays.</li>
+<li data-i18n-html="changelog.f7e5955622bf"><strong>The acoustic pianos sound more like real ones.</strong> Each note rings out longer, as a piano's does (the grand longest), and the bright buzz of the strike fades as the note dies instead of lasting the whole note. Very short notes are damped. Every copy printed with an acoustic piano sounds this way, and so does a reprint of an older one; a file already in your Copies folder is never changed, and the classic pianos are untouched.</li>
+<li data-i18n-html="changelog.6d6f7c04c2b9">The knob is the same brushed silver in both themes.</li>
+</ul>
+<h3 id="0-7-0-2026-10-17-standalone-macos-linux-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.de9609b5d84e"><strong>A file dragged from Explorer onto the open standalone reaches the glass.</strong> With the current WebView2 runtime the webview took the drop itself, and the file never arrived.</li>
+<li data-i18n-html="changelog.e58dd70b9634"><strong>On Linux without hardware acceleration — an older laptop, a VM, no GPU driver — the copier draws its pages at the right size.</strong> The webview there could not draw them in perspective, so the original was a small, skewed card on the glass and the copy a sliver in the tray; Flipcopy now draws them itself.</li>
+<li data-i18n-html="changelog.24f1d9b62b67"><strong>A DAW that closes Flipcopy while the browser is still counting a large folder no longer crashes</strong> on Windows: Flipcopy stays loaded until the DAW quits, so its work in the background always finishes.</li>
+<li data-i18n-html="changelog.b4f4a49ef5c2"><strong>A second drag from the browser reaches the glass on macOS and Linux.</strong> A drag could select the text it swept over, and the next drag then started inside that selection and never arrived.</li>
+<li data-i18n-html="changelog.476242cb7321"><strong>&quot;Freally Flipcopy is already open&quot;</strong> is said in your system's language on Windows too, as the rest of the window is.</li>
+<li data-i18n-html="changelog.62133f39387e"><strong>A hung audio driver can't freeze the window:</strong> <em>Settings → Audio output</em> waits two seconds for the list of devices at most.</li>
+</ul>
+<h3 id="0-7-0-2026-10-17-standalone-macos-linux-known-issues" data-i18n-html="changelog.9e06846ba2df">Known issues</h3>
+<ul>
+<li data-i18n-html="changelog.5219a0fa3caf">macOS's Finder doesn't hand Flipcopy a file it opens yet; put it on the glass from Flipcopy's own browser instead.</li>
+<li data-i18n-html="changelog.0c25f40df598">On macOS the standalone's window may open centred rather than where you left it; this is checked on a Mac before <code>v1.0.0</code>.</li>
+</ul>
+</article>
+<article class="release" id="0-6-0-2026-10-09-in-every-daw">
 <h2 class="release__head" data-i18n-html="changelog.ad1079ac0447"><span class="release__meta"><span class="release__ver">v0.6.0</span><time class="release__date" datetime="2026-10-09">2026-10-09</time></span><span class="release__title">In Every DAW</span></h2>
 <p data-i18n-html="changelog.8e143766c735">Flipcopy behaves as a well-mannered plugin in your DAW. Your project remembers what was on the glass. Scan a few bars straight from the track the copier sits on. Drag a file from the browser straight into a track. Eight copiers at once, at a 256-sample buffer, never crackle.</p>
 <h3 id="0-6-0-2026-10-09-in-every-daw-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -292,7 +328,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.7.0</span>
         </div>
       </div>
     </footer>

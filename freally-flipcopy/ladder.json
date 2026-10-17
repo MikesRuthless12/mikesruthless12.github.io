@@ -57,9 +57,9 @@
     },
     {
       "version": "v0.7.0",
-      "phase": "Phase 6 — Standalone, macOS, Linux & the promo",
-      "state": "planned",
-      "summary": "The standalone app at full strength, macOS and Linux, and the video of the copier at work."
+      "phase": "Phase 6 — Standalone, macOS & Linux",
+      "state": "done",
+      "summary": "The standalone at full strength: one window at a time, back where you left it, the output you choose, and a file opened with it lands on the glass. Tested in WebKit, the engine of macOS and Linux, and Settings in sections."
     },
     {
       "version": "v0.8.0",
