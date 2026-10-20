@@ -77,8 +77,8 @@
       "id": "live-listening",
       "version": "v0.12.0",
       "phase": "Phase 4G — Live Listening",
-      "state": "planned",
-      "summary": "Live listening: play a real instrument into a microphone or an instrument cable, and the lessons hear it."
+      "state": "done",
+      "summary": "Live listening: play a real instrument or sing into a microphone or an instrument cable, and the lessons hear it, with a tuner and latency calibration."
     },
     {
       "id": "guitars",
