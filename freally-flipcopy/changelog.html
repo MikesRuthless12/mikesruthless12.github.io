@@ -53,9 +53,36 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-7-0-2026-10-17-standalone-macos-linux">v0.7.0</a></li><li><a href="#0-6-0-2026-10-09-in-every-daw">v0.6.0</a></li><li><a href="#0-5-9-2026-10-09-light-mode">v0.5.9</a></li><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
+<ol><li><a href="#0-8-0-2026-10-23-accuracy-realism-performance">v0.8.0</a></li><li><a href="#0-7-0-2026-10-17-standalone-macos-linux">v0.7.0</a></li><li><a href="#0-6-0-2026-10-09-in-every-daw">v0.6.0</a></li><li><a href="#0-5-9-2026-10-09-light-mode">v0.5.9</a></li><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-7-0-2026-10-17-standalone-macos-linux">
+<div class="releases"><article class="release release--latest" id="0-8-0-2026-10-23-accuracy-realism-performance">
+<h2 class="release__head" data-i18n-html="changelog.4afab12e90bf"><span class="release__meta"><span class="release__ver">v0.8.0</span><time class="release__date" datetime="2026-10-23">2026-10-23</time></span><span class="release__title">Accuracy, Realism &amp; Performance</span></h2>
+<p data-i18n-html="changelog.3b258346a600">Copies read closer to what was played, the machine looks and feels more like a real one, every copy runs at the computer's full speed, and every file Flipcopy reads has been fed damaged, random and hostile versions of itself.</p>
+<h3 id="0-8-0-2026-10-23-accuracy-realism-performance-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.1d54cae34c37"><strong>Drums print on labelled lanes.</strong> A page whose notes are all drums prints one row for each voice of the kit — kick, snare, closed hat… — named in your language and in the Studio's kit order, instead of thirty-odd rows of pitches. A drum the kit has no voice for keeps a row of its own, named by its General MIDI note. A page with any pitched note keeps its pitch rows.</li>
+<li data-i18n-html="changelog.cda06b1bdac7"><strong>A closer look at a page.</strong> Rest the pointer on a page in the tray and a lens shows the page around it, its facts large enough to read at any window size. It never gets in the way: nothing while you drag, and it goes the moment you press.</li>
+<li data-i18n-html="changelog.732164d2a729"><strong>The machine feels it.</strong> The copier gives a small knock when the lid lands (none with <em>Reduce motion</em>), a soft shadow falls where each copy bends out of the slit, and every copy lies with its own slight skew.</li>
+</ul>
+<h3 id="0-8-0-2026-10-23-accuracy-realism-performance-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.52ddae978c5b"><strong>Audio → MIDI reads closer to what was played:</strong></li>
+<li data-i18n-html="changelog.640e02623b3e">A piano line — rendered, then read back — now comes back note for note (96 % of its notes, from 11 %): a low note's overtones are no longer taken for a second melody.</li>
+<li data-i18n-html="changelog.3ad2e4d08aab">A note struck again is two notes, and a vibrato no longer splits one note into several.</li>
+<li data-i18n-html="changelog.27ce3d3b084e">A chord is held until a different one is played, so a sustained chord no longer drops out between bars (the chord roots of a keys part, 50 % → 75 % of its bars; of a brass part, 63 % → 75 %).</li>
+<li data-i18n-html="changelog.ed3abd250720">The vocal line drops its overtone slips and slivers: 99 % of a lead vocal's notes now sit in its key (from 93 %).</li>
+<li data-i18n-html="changelog.562c9c8e1291">A flute line read back: 94 % of its notes, from none.</li>
+<li data-i18n-html="changelog.4bad2257668c"><strong>Every copy at full speed.</strong> On Windows a copy ran up to four times slower when Flipcopy's window was behind another one; it no longer does. MIDI → audio renders its parts side by side: an 8-bar drum loop in about 0.4 s once its sounds are loaded.</li>
+<li data-i18n-html="changelog.26c0ec473955">The machine's light is one colour throughout: the lamp's glow, the light that leaks round the lid and the glass's edge.</li>
+</ul>
+<h3 id="0-8-0-2026-10-23-accuracy-realism-performance-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.10536aa32355">A project whose saved Flipcopy state carried a stray field no longer opens saying its state couldn't be read.</li>
+<li data-i18n-html="changelog.72a72e839ffe">A hand-edited library file can no longer slip in tags Flipcopy would refuse (empty, too long, with control characters, or more than 16 on one file).</li>
+<li data-i18n-html="changelog.2047659c2639">A copy's record edited by hand to name more pages than a copy prints is passed over, never shown.</li>
+</ul>
+</article>
+<article class="release" id="0-7-0-2026-10-17-standalone-macos-linux">
 <h2 class="release__head" data-i18n-html="changelog.b2cc16d94b92"><span class="release__meta"><span class="release__ver">v0.7.0</span><time class="release__date" datetime="2026-10-17">2026-10-17</time></span><span class="release__title">Standalone, macOS &amp; Linux</span></h2>
 <p data-i18n-html="changelog.4ed51e7648f7">The standalone application does everything the plugin does, on its own: one window at a time, back where you left it, playing on the output you choose, and a file opened with it goes straight onto the glass. Flipcopy is tested in the engine macOS and Linux draw it with, and Settings opens in sections.</p>
 <h3 id="0-7-0-2026-10-17-standalone-macos-linux-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -328,7 +355,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.7.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.8.0</span>
         </div>
       </div>
     </footer>

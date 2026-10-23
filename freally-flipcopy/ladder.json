@@ -64,8 +64,8 @@
     {
       "version": "v0.8.0",
       "phase": "Phase 7 — Accuracy, realism & performance",
-      "state": "planned",
-      "summary": "Accuracy, realism and speed: better transcriptions, a more convincing machine, and every performance budget enforced."
+      "state": "done",
+      "summary": "Closer copies, drums on named lanes and a lens on every page, a machine that knocks and casts a shadow, every copy at full speed, and every file reader tested against damaged files."
     },
     {
       "version": "v1.0.0-beta",

@@ -79,7 +79,12 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#copier",
   "heading": "Making a copy",
-  "text": "Put an audio or MIDI file on the glass: drop it from Explorer or Finder anywhere on the window, drag it from the browser or the preview strip onto the copier, press Enter on a row in the browser, or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Putting a file on the glass never starts a copy. Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass. Every page is a real file in your Copies folder (Documents/Freally Flipcopy/Copies, unless you choose another in Settings), numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once. The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings. Making a copy Audio → MIDI, in parts"
+  "text": "Put an audio or MIDI file on the glass: drop it from Explorer or Finder anywhere on the window, drag it from the browser or the preview strip onto the copier, press Enter on a row in the browser, or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Putting a file on the glass never starts a copy. Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass. Every page is a real file in your Copies folder (Documents/Freally Flipcopy/Copies, unless you choose another in Settings), numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once. The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings. The machine behaves like one: it gives a"
+ },
+ {
+  "url": "documentation.html#pages",
+  "heading": "Reading a page",
+  "text": "A page whose notes are all drums prints one row for each voice of the kit — kick, snare, closed hat and the rest — named in your language and in the Studio’s order, instead of a row for every pitch. A drum the kit has no voice for keeps a row of its own, named by its General MIDI note. The pages in the tray are printed small. Rest the pointer on one and, after a moment, a lens shows the page around the pointer, its facts large enough to read. It follows the pointer, never appears while you drag, and goes the moment you press. Reading a page"
  },
  {
   "url": "documentation.html#screen",
@@ -170,6 +175,21 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Privacy and the network",
   "text": "Flipcopy has no account and no telemetry, and the plugin and standalone app contain no networking code at all. Your files and your copies never leave your computer. It contains no AI of any kind: every copy is made by classic, deterministic signal processing, and a build gate fails if a machine-learning library is ever added."
+ },
+ {
+  "url": "changelog.html#0-8-0-2026-10-23-accuracy-realism-performance-added",
+  "heading": "Added",
+  "text": "Drums print on labelled lanes. A page whose notes are all drums prints one row for each voice of the kit — kick, snare, closed hat… — named in your language and in the Studio's kit order, instead of thirty-odd rows of pitches. A drum the kit has no voice for keeps a row of its own, named by its General MIDI note. A page with any pitched note keeps its pitch rows. A closer look at a page. Rest the pointer on a page in the tray and a lens shows the page around it, its facts large enough to read at any window size. It never gets in the way: nothing while you drag, and it goes the moment you press. The machine feels it. The copier gives a small knock when the lid lands (none with Reduce motion ), a soft shadow falls where each copy bends out of the slit, and every copy lies with its own slight skew."
+ },
+ {
+  "url": "changelog.html#0-8-0-2026-10-23-accuracy-realism-performance-changed",
+  "heading": "Changed",
+  "text": "Audio → MIDI reads closer to what was played: A piano line — rendered, then read back — now comes back note for note (96 % of its notes, from 11 %): a low note's overtones are no longer taken for a second melody. A note struck again is two notes, and a vibrato no longer splits one note into several. A chord is held until a different one is played, so a sustained chord no longer drops out between bars (the chord roots of a keys part, 50 % → 75 % of its bars; of a brass part, 63 % → 75 %). The vocal line drops its overtone slips and slivers: 99 % of a lead vocal's notes now sit in its key (from 93 %). A flute line read back: 94 % of its notes, from none. Every copy at full speed. On Windows a copy ran up to four times slower when Flipcopy's window was behind another one; it no longer does. MIDI → audio renders its parts side by side: an 8-bar drum loop in about 0.4 s once its sounds are loaded. The machine's light is one colour throughout: the lamp's glow, the light that leaks round the lid and the glass's edge."
+ },
+ {
+  "url": "changelog.html#0-8-0-2026-10-23-accuracy-realism-performance-fixed",
+  "heading": "Fixed",
+  "text": "A project whose saved Flipcopy state carried a stray field no longer opens saying its state couldn't be read. A hand-edited library file can no longer slip in tags Flipcopy would refuse (empty, too long, with control characters, or more than 16 on one file). A copy's record edited by hand to name more pages than a copy prints is passed over, never shown. v0.7.0 2026-10-17 Standalone, macOS & Linux The standalone application does everything the plugin does, on its own: one window at a time, back where you left it, playing on the output you choose, and a file opened with it goes straight onto the glass. Flipcopy is tested in the engine macOS and Linux draw it with, and Settings opens in sections."
  },
  {
   "url": "changelog.html#0-7-0-2026-10-17-standalone-macos-linux-added",

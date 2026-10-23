@@ -35,8 +35,16 @@
     <p data-i18n="docs.copier.p2">Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass.</p>
     <p data-i18n="docs.copier.p3">Every page is a real file in your Copies folder (Documents/Freally Flipcopy/Copies, unless you choose another in Settings), numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once.</p>
     <p data-i18n="docs.copier.p4">The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings.</p>
+    <p data-i18n="docs.copier.p5">The machine behaves like one: it gives a small knock when the lid lands, a soft shadow falls where each copy bends out of the slit, and every copy lies at its own slight angle. Settings → Motion → Reduce takes the knock away.</p>
     <figure class="demo"><video src="media/feature-copier.webm" poster="media/feature-copier.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.copier.title">Making a copy</figcaption></figure>
     <figure class="demo"><video src="media/feature-audio-to-midi.webm" poster="media/feature-audio-to-midi.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="featuresPage.cards.audioToMidi.title">Audio → MIDI, in parts</figcaption></figure>
+  </section>
+
+  <section>
+    <h2 id="pages" data-i18n="docs.pages.title">Reading a page</h2>
+    <p data-i18n="docs.pages.p1">A page whose notes are all drums prints one row for each voice of the kit — kick, snare, closed hat and the rest — named in your language and in the Studio’s order, instead of a row for every pitch. A drum the kit has no voice for keeps a row of its own, named by its General MIDI note.</p>
+    <p data-i18n="docs.pages.p2">The pages in the tray are printed small. Rest the pointer on one and, after a moment, a lens shows the page around the pointer, its facts large enough to read. It follows the pointer, never appears while you drag, and goes the moment you press.</p>
+    <figure class="demo"><video src="media/feature-pages.webm" poster="media/feature-pages.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.pages.title">Reading a page</figcaption></figure>
   </section>
 
   <section>
@@ -126,12 +134,12 @@
     <h3 id="saved" data-i18n="docs.daw.saved.title">Saved with your project</h3>
     <p data-i18n="docs.daw.saved.p1">The original on the glass is kept with your DAW’s project, with the Copy Settings you chose. Reopen the project and the glass shows it again. If the file has moved since, the glass says The original has moved, and Locate… finds it.</p>
     <p data-i18n="docs.daw.saved.p2">A project whose Flipcopy state can’t be read opens with an empty glass and says so; nothing from another project is ever carried over. Settings saved by a newer version of Flipcopy are kept as they are, so opening a project in an older version and saving it again loses nothing.</p>
-    <!-- ▶ No video: a project is a DAW's, and the standalone (the filmed app) has none. A Live-To-Do row instead. -->
+    <!-- ▶ No video: a project is a DAW's, and the standalone (the filmed app) has none. -->
 
     <h3 id="scan" data-i18n="docs.daw.scan.title">Scan from track</h3>
     <p data-i18n="docs.daw.scan.p1">In a DAW, Copy Settings has Scan from track. Choose 1 to 16 bars, press Arm, then press play in your DAW. As the track plays, its audio, or the MIDI notes it receives, is taken for that many bars, written as a new file in the Captures folder of your Copies folder, and put on the glass. Nothing is copied until you press the green START.</p>
     <p data-i18n="docs.daw.scan.p2">The bars are counted from your DAW’s tempo and meter: if it isn’t sending them yet, press play once, then arm. The panel says what a host won’t send. Ableton Live gives an audio effect no MIDI, so there a scan takes the track’s audio, never its notes; Logic may not run a track that isn’t live, so arm the track, or play it, before you scan. Nothing is scanned while your DAW bounces, and the standalone app has no track to scan: drop a file on the glass instead.</p>
-    <!-- ▶ No video: Scan from track needs a DAW's track, and the standalone (the filmed app) has none. A Live-To-Do row instead. -->
+    <!-- ▶ No video: Scan from track needs a DAW's track, and the standalone (the filmed app) has none. -->
 
     <h3 id="drag-out" data-i18n="docs.daw.drag.title">Drag a file straight into your DAW</h3>
     <p data-i18n="docs.daw.drag.p1">At the end of every audio and MIDI file’s row in the browser, and on the Preview strip, is a grip: Drag the file into your DAW. Drag it onto a track and the file itself lands there, just as it is on your disk. The row itself still drags onto the glass, to be copied.</p>

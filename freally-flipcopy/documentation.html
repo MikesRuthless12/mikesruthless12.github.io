@@ -60,7 +60,7 @@
 <div class="wrap manual">
 <nav class="manual-toc" data-spy aria-label="Contents" data-i18n-attr="aria-label:kit.docs.contents">
 <span class="label" data-i18n="kit.docs.contents">Contents</span>
-<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#window" data-i18n="docs.window.title">The window</a></li><li><a href="#copier" data-i18n="docs.copier.title">Making a copy</a></li><li><a href="#screen" data-i18n="docs.screen.title">The touch screen</a></li><li><a href="#copy-settings" data-i18n="docs.copySettings.title">Copy Settings</a></li><li><a href="#instruments" data-i18n="docs.instruments.title">Instruments</a></li><li><a href="#copies" data-i18n="docs.copies.title">Your copies</a></li><li><a href="#studio" data-i18n="docs.studio.title">The Studio</a></li><li><a href="#mixer" data-i18n="docs.mixer.title">The mixer and your own sounds</a></li><li><a href="#browser" data-i18n="docs.browser.title">The browser</a></li><li><a href="#preview" data-i18n="docs.preview.title">The preview player</a></li><li><a href="#daw" data-i18n="docs.daw.title">In your DAW</a></li><li><a href="#settings" data-i18n="docs.settings.title">Settings</a></li><li><a href="#appearance" data-i18n="docs.appearance.title">Light and dark</a></li><li><a href="#problems" data-i18n="docs.report.title">When something goes wrong</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li></ol>
+<ol><li><a href="#start" data-i18n="docs.start.title">Getting started</a></li><li><a href="#agreement" data-i18n="docs.agreement.title">The licence agreement</a></li><li><a href="#window" data-i18n="docs.window.title">The window</a></li><li><a href="#copier" data-i18n="docs.copier.title">Making a copy</a></li><li><a href="#pages" data-i18n="docs.pages.title">Reading a page</a></li><li><a href="#screen" data-i18n="docs.screen.title">The touch screen</a></li><li><a href="#copy-settings" data-i18n="docs.copySettings.title">Copy Settings</a></li><li><a href="#instruments" data-i18n="docs.instruments.title">Instruments</a></li><li><a href="#copies" data-i18n="docs.copies.title">Your copies</a></li><li><a href="#studio" data-i18n="docs.studio.title">The Studio</a></li><li><a href="#mixer" data-i18n="docs.mixer.title">The mixer and your own sounds</a></li><li><a href="#browser" data-i18n="docs.browser.title">The browser</a></li><li><a href="#preview" data-i18n="docs.preview.title">The preview player</a></li><li><a href="#daw" data-i18n="docs.daw.title">In your DAW</a></li><li><a href="#settings" data-i18n="docs.settings.title">Settings</a></li><li><a href="#appearance" data-i18n="docs.appearance.title">Light and dark</a></li><li><a href="#problems" data-i18n="docs.report.title">When something goes wrong</a></li><li><a href="#language" data-i18n="docs.language.title">Languages</a></li><li><a href="#privacy" data-i18n="docs.privacy.title">Privacy and the network</a></li></ol>
 </nav>
 <div class="manual-body"><section>
     <h2 id="start" data-i18n="docs.start.title">Getting started</h2>
@@ -91,8 +91,16 @@
     <p data-i18n="docs.copier.p2">Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass.</p>
     <p data-i18n="docs.copier.p3">Every page is a real file in your Copies folder (Documents/Freally Flipcopy/Copies, unless you choose another in Settings), numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once.</p>
     <p data-i18n="docs.copier.p4">The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings.</p>
+    <p data-i18n="docs.copier.p5">The machine behaves like one: it gives a small knock when the lid lands, a soft shadow falls where each copy bends out of the slit, and every copy lies at its own slight angle. Settings → Motion → Reduce takes the knock away.</p>
     <figure class="demo"><video src="media/feature-copier.webm" poster="media/feature-copier.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.copier.title">Making a copy</figcaption></figure>
     <figure class="demo"><video src="media/feature-audio-to-midi.webm" poster="media/feature-audio-to-midi.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="featuresPage.cards.audioToMidi.title">Audio → MIDI, in parts</figcaption></figure>
+  </section>
+
+  <section>
+    <h2 id="pages" data-i18n="docs.pages.title">Reading a page</h2>
+    <p data-i18n="docs.pages.p1">A page whose notes are all drums prints one row for each voice of the kit — kick, snare, closed hat and the rest — named in your language and in the Studio’s order, instead of a row for every pitch. A drum the kit has no voice for keeps a row of its own, named by its General MIDI note.</p>
+    <p data-i18n="docs.pages.p2">The pages in the tray are printed small. Rest the pointer on one and, after a moment, a lens shows the page around the pointer, its facts large enough to read. It follows the pointer, never appears while you drag, and goes the moment you press.</p>
+    <figure class="demo"><video src="media/feature-pages.webm" poster="media/feature-pages.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.pages.title">Reading a page</figcaption></figure>
   </section>
 
   <section>
@@ -242,7 +250,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.7.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.8.0</span>
         </div>
       </div>
     </footer>
