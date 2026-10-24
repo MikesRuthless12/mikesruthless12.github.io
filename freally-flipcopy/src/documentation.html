@@ -2,7 +2,7 @@
      kit's; each <section> is one chapter, its <h2> the rail's entry. -->
 
 <kit-head>
-  <kit-lede data-i18n="docs.intro">This manual grows with every version. Right now it covers what version 0.6.0 does; the full illustrated manual, with a screenshot for every step, arrives with the beta.</kit-lede>
+  <kit-lede data-i18n="docs.intro">This is Flipcopy’s manual: every part of the window, every setting and every key, with an annotated screenshot beside each procedure. It grows with every version.</kit-lede>
 </kit-head>
 
 <kit-manual>
@@ -26,6 +26,7 @@
     <h2 id="window" data-i18n="docs.window.title">The window</h2>
     <p data-i18n="docs.window.p1">On one side is the browser, with the preview player docked under it. The rest of the window is the stage, where the copier stands. Drag the line between them to make the browser wider or narrower, or focus it and use the arrow keys.</p>
     <p data-i18n="docs.window.p2">Press Ctrl+B (Cmd+B on a Mac), or the button at the browser’s edge, to fold the browser and its preview away: the stage takes the whole window. Press it again and they come back at the width you left them. Flipcopy remembers which you chose.</p>
+    <figure class="shot"><img src="img/window-01-layout.png" data-i18n-attr="alt:docs.shot.window.alt" alt="The Flipcopy window: the browser down the left boxed in red and numbered 1, the preview player docked under it numbered 2, the button at the browser’s edge that folds them away numbered 3, and the stage, where the copier stands, numbered 4." width="1400" height="875" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.window.caption">The window: the browser (1) with the preview player under it (2), the button that folds them away (3), and the stage, where the copier stands (4).</figcaption></figure>
     <figure class="demo"><video src="media/feature-window.webm" poster="media/feature-window.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.window.title">The window</figcaption></figure>
   </section>
 
@@ -33,11 +34,36 @@
     <h2 id="copier" data-i18n="docs.copier.title">Making a copy</h2>
     <p data-i18n="docs.copier.p1">Put an audio or MIDI file on the glass: drop it from Explorer or Finder anywhere on the window, drag it from the browser or the preview strip onto the copier, press Enter on a row in the browser, or press Enter on the empty glass to choose one. The copier prints the original and lays it face-down on the glass. Putting a file on the glass never starts a copy.</p>
     <p data-i18n="docs.copier.p2">Press the green START key, or Ctrl+Enter (Cmd+Enter on a Mac). The lid closes, the lamp sweeps, and the copy slides out onto the tray: an audio loop comes out as MIDI, one page for each part the copier hears; a MIDI file comes out as audio, one page for each part. Esc or the red STOP key cancels it; the grey HOME key clears the glass.</p>
+    <figure class="shot"><img src="img/copier-01-start.png" data-i18n-attr="alt:docs.shot.copierStart.alt" alt="The copier with a MIDI file on the glass: the glass, where the copier has laid the printed original face-down, boxed in red and numbered 1, the touch screen numbered 2, and the green START key numbered 3." width="776" height="600" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.copierStart.caption">The original lies face-down on the glass (1), the screen says which way it will be copied (2), and START (3) makes the copy.</figcaption></figure>
     <p data-i18n="docs.copier.p3">Every page is a real file in your Copies folder (Documents/Freally Flipcopy/Copies, unless you choose another in Settings), numbered, and never moved, overwritten or deleted. Grab a page by the lime frame round its printed clip and drag it straight onto a track in your DAW, or drag the whole stack at once.</p>
+    <figure class="shot"><img src="img/copier-02-pages.png" data-i18n-attr="alt:docs.shot.copierPages.alt" alt="The copier after a MIDI file was copied to audio, its audio pages stacked on the tray and the page on top boxed in red: grab a page by the lime frame round its printed clip and drag it onto a track." width="744" height="434" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.copierPages.caption">The copy on the tray: grab the page on top by its lime frame and drag it into your DAW.</figcaption></figure>
     <p data-i18n="docs.copier.p4">The copier’s sounds play through the plugin’s own output, quietly, never while your DAW plays and never into a bounce. Turn them off or down in Settings.</p>
     <p data-i18n="docs.copier.p5">The machine behaves like one: it gives a small knock when the lid lands, a soft shadow falls where each copy bends out of the slit, and every copy lies at its own slight angle. Settings → Motion → Reduce takes the knock away.</p>
     <figure class="demo"><video src="media/feature-copier.webm" poster="media/feature-copier.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.copier.title">Making a copy</figcaption></figure>
+  </section>
+
+  <section>
+    <h2 id="audio-to-midi" data-i18n="features.audioToMidi.title">Audio → MIDI</h2>
+    <p data-i18n="docs.audioToMidi.p1">Put an audio loop on the glass and press START: the copier listens to it and prints a MIDI page for each part it hears, in this order: drums, bassline, melody, countermelody and chords. A part it finds nothing in gets no page, and a loop with no notes in it at all is refused, never copied as a blank page.</p>
+    <p data-i18n="docs.audioToMidi.p2">The drums are written on the lanes of a General MIDI kit, kick, snare, hats and the rest, so they play on any drum rack, and their page prints a row for each voice. The bassline, the melody and the countermelody are each one line. The chords are written as a progression, which chord comes when, not the voicing that was played, and their page says so: PROGRESSION - NOT THE PLAYED VOICING. A page prints the loop’s key only when it was read clearly.</p>
+    <figure class="shot"><img src="img/audio-01-parts.png" data-i18n-attr="alt:docs.shot.audioParts.alt" alt="Copy Settings open over the copier with an audio loop on the glass, at its AUDIO &gt; MIDI settings: Parts boxed in red and numbered 1, Grid numbered 2 and Swing numbered 3." width="841" height="721" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.audioParts.caption">For an audio loop, Copy Settings chooses the Parts to copy (1), the Grid the notes are put on (2) and whether a swing is kept (3).</figcaption></figure>
+    <p data-i18n="docs.audioToMidi.p3">A sung line is not one of those parts. With Parts set to Every part, a page each, the copier hears a vocal, leaves it alone and says so on the first page: A VOCAL WAS HEARD AND LEFT ALONE. To copy the vocal itself, choose Parts → Vocal line, one note at a time: the sung line comes out as one MIDI part, one note at a time. A loop that is nothing but a sung line, copied with every part, is refused, and the screen says why.</p>
+    <p data-i18n="docs.audioToMidi.p4">The copier takes loops of up to 16 bars: one, two, four and eight-bar loops are all copied. A longer clip is refused on the glass with its length, never cut short to fit. So is a file that is silent, damaged or not audio the copier can read.</p>
+    <p data-i18n="docs.audioToMidi.p5">A copy’s tempo is the one the loop was played at, read from the audio, and its pages print it with READ beside it. Your project’s tempo only decides between two readings of the same loop, such as 70 and 140 BPM; it becomes the copy’s tempo only when nothing in the loop keeps a beat, and then the page says so. In the standalone app, the tempo in the file’s name, such as Loop 90 BPM.wav, does the same, or 120 when the name has none. Copy Settings → Tempo can choose instead: the project’s, the one in the file name, or one you set.</p>
+    <p data-i18n="docs.audioToMidi.p6">Every page is a file, and a file can be copied again. Drag an audio page from the tray back onto the glass, or drop one from your Copies, and press START: it is copied back into MIDI, and the new copy says which page it came from. Because every audio page ends on a bar line, a page read back keeps the tempo it was written at.</p>
+    <figure class="demo"><video src="media/feature-round-trip.webm" poster="media/feature-round-trip.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.demo.roundTrip">The round trip</figcaption></figure>
+    <figure class="shot"><img src="img/audio-02-pages.png" data-i18n-attr="alt:docs.shot.audioPages.alt" alt="The copier after an audio loop was copied to MIDI, a MIDI page for each part it heard stacked on the tray, the page on top boxed in red." width="720" height="435" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.audioPages.caption">An audio loop copied to MIDI: a page for each part the copier heard, ready to drag.</figcaption></figure>
     <figure class="demo"><video src="media/feature-audio-to-midi.webm" poster="media/feature-audio-to-midi.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="featuresPage.cards.audioToMidi.title">Audio → MIDI, in parts</figcaption></figure>
+  </section>
+
+  <section>
+    <h2 id="midi-to-audio" data-i18n="features.midiToAudio.title">MIDI → audio</h2>
+    <p data-i18n="docs.midiToAudio.p1">Put a MIDI file on the glass and press START: the copier plays each part of it through an instrument and prints an audio page for each part, the drums, the bassline, the melody, the countermelody and the chords, as the file has them. With the pages comes the Complete mix, every part played together: drag it by the COMPLETE MIX tab at the foot of the page on top, or every page at once by ALL PARTS. Copy Settings → Pages → Mix only makes the Complete mix alone.</p>
+    <p data-i18n="docs.midiToAudio.p2">Each pitched part plays through the instrument you choose for it in Copy Settings, Preview Piano unless you choose another, and the drums play through a drum machine: Preview Kit, a TR-909, unless you choose the 808, the 707, the 606 or a kit of your own one-shots. Every audio page prints its instrument on its TONER line. Pitch bend and the sustain pedal are played; any other controller in the file is listed on the page as not rendered, never dropped without a word.</p>
+    <figure class="shot"><img src="img/midi-01-pages-and-instruments.png" data-i18n-attr="alt:docs.shot.midiPages.alt" alt="Copy Settings with a MIDI file on the glass, at its MIDI &gt; AUDIO settings: Pages, a page per part or the mix only, boxed in red and numbered 1, and the Melody’s instrument numbered 2, between the Bassline’s and the Countermelody’s." width="841" height="721" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.midiPages.caption">For a MIDI file, Copy Settings chooses the Pages (1) and the instrument each part plays through (2).</figcaption></figure>
+    <p data-i18n="docs.midiToAudio.p3">Tail sets how long the sound rings on after the last note. Then the file runs on to the next bar line of the file’s own meter, so every audio page is a whole number of bars long: dropped into your DAW, it sits on the grid and loops cleanly, and it carries its tempo for any DAW that reads it.</p>
+    <p data-i18n="docs.midiToAudio.p4">Each page is written as WAV, AIFF, FLAC or MP3 (320 kbps), at the project’s sample rate or at 44.1, 48, 88.2 or 96 kHz, in 16 or 24-bit or 32-bit float. If a page would clip, the copier turns it down by a fixed amount, just enough to keep it under −0.3 dBFS, and prints that gain on the page. It never limits or normalises: a quiet file stays quiet.</p>
+    <figure class="shot"><img src="img/midi-02-tail-and-format.png" data-i18n-attr="alt:docs.shot.midiFormat.alt" alt="Copy Settings further down: the drum machine boxed in red and numbered 1, the Tail slider numbered 2, Format, with WAV, AIFF, FLAC and MP3, numbered 3, Sample rate numbered 4 and Bit depth numbered 5." width="841" height="721" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.midiFormat.caption">The drum machine (1), the Tail (2), and how the pages are written: Format (3), Sample rate (4) and Bit depth (5).</figcaption></figure>
   </section>
 
   <section>
@@ -50,6 +76,7 @@
   <section>
     <h2 id="screen" data-i18n="docs.screen.title">The touch screen</h2>
     <p data-i18n="docs.screen.p1">The copier’s screen says what it is doing and which way it copies: AUDIO &gt; MIDI or MIDI &gt; AUDIO. Under it are its soft keys. SETTINGS opens Copy Settings; ◀ PREV and NEXT ▶ page through your copies; SAVE, REVEAL and REPRINT work on the copy in the tray. None of them starts a copy: only START does.</p>
+    <figure class="shot"><img src="img/screen-01-soft-keys.png" data-i18n-attr="alt:docs.shot.screen.alt" alt="The copier’s touch screen after a copy, saying MIDI &gt; AUDIO, with its soft keys along the bottom: SETTINGS boxed in red and numbered 1, SAVE numbered 2 and REPRINT numbered 3; between them are PREV, NEXT and REVEAL, and STUDIO is last." width="526" height="388" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.screen.caption">The soft keys: SETTINGS (1) opens Copy Settings, SAVE (2) saves the page on top as a new file, and REPRINT (3) puts the copy’s original back on the glass.</figcaption></figure>
     <p data-i18n="docs.screen.p2">When a MIDI file has no tempo of its own but its name says one, such as Hook 127 BPM.mid, a chip beside the screen offers it. Use 127 BPM copies that file at that tempo; Keep the project’s tempo leaves it. Flipcopy never changes your DAW’s tempo, and every page prints its tempo and where that tempo came from.</p>
     <figure class="demo"><video src="media/feature-screen.webm" poster="media/feature-screen.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.screen.title">The touch screen</figcaption></figure>
   </section>
@@ -82,6 +109,7 @@
     <h2 id="studio" data-i18n="docs.studio.title">The Studio</h2>
     <p data-i18n="docs.studio.p1">Above the machine are two tabs, COPIER and STUDIO. Press Ctrl+1 or Ctrl+2 (Cmd+1 or Cmd+2 on a Mac) to reach them from anywhere in the window, or move between the tabs with the arrow keys. Switching never stops anything: a copy being scanned carries on behind the Studio, and its pages are out when you come back. Each instance of the plugin keeps its own tab.</p>
     <p data-i18n="docs.studio.p2">To open a copy, press STUDIO on the touch screen to open the copy in the tray, or select a file under Copies in the browser and press Open in Studio. A copy of an audio loop opens its MIDI pages, one part tab each, in page order; a copy of a MIDI file opens the parts of the MIDI it was made from. The notes are read from the files the copy wrote, so a copy whose files have moved or changed does not open, and the Studio says why. If the copy already open has changes you haven’t sent, opening another asks first.</p>
+    <figure class="shot"><img src="img/studio-01-parts.png" data-i18n-attr="alt:docs.shot.studio.alt" alt="The Studio with a copy open: the Melody part’s tab boxed in red and numbered 1, the piano roll numbered 2, Play numbered 3 and Send to the copier numbered 4." width="1076" height="799" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.studio.caption">Choose a part (1), edit its notes in the piano roll (2), play it (3), and send the edit to the copier (4).</figcaption></figure>
     <p data-i18n="docs.studio.p3">Each part is edited in Freally MIDI Master’s piano roll. Double-click to draw a note, and drag a note to move it. Drag its left or right edge, where the pointer becomes [ or ], to shorten or lengthen it. Select notes with a box, with Shift-click or with Ctrl-click; copy, cut and paste them; clone them with Shift+D or by dragging with Alt; delete them with Delete, Backspace or a right-click; and nudge them with the arrow keys.</p>
     <p data-i18n="docs.studio.p4">The velocity lane sits underneath, and Snap chooses the grid that notes snap to. Ctrl+Z undoes, and Ctrl+Shift+Z or Ctrl+Y redoes (Cmd on a Mac). A drum part shows its kit voices by name down the side. To change part, click its tab, or use the arrow keys, Home and End once a part tab has focus.</p>
     <p data-i18n="docs.studio.p5">Play, Stop and Loop play the parts, and every part has S to solo it and M to mute it. What plays is exactly the file the copier will be given, through the instruments the copy prints with, and a part you solo sounds exactly as its page of the copy will. Change a part’s instrument right there, and the drums’ drum machine too.</p>
@@ -93,6 +121,7 @@
     <h2 id="mixer" data-i18n="docs.mixer.title">The mixer and your own sounds</h2>
     <p data-i18n="docs.mixer.p1">The Studio has three views, Notes, Mixer and Sound, in the tabs at its top right; the arrow keys move between them. Every fader, knob and choice in them belongs to the project's Copy Settings, so what the Studio plays is exactly what START prints, and it is saved with the project.</p>
     <p data-i18n="docs.mixer.p2">The Mixer has a strip for every part of the open copy and one for the master. A pitched part's strip has Freally MIDI Master's channel strip: Low, Mid and High, the Room and Echo sends, Heat and Pitch Mod. Under it are the pan knob, the fader with its meter, and the S and M keys. The meter is green below −12 dBFS, yellow up to −3 and red above, and its clip light comes on at 0 dBFS and stays on until you click it. A part with its fader all the way down is not printed at all.</p>
+    <figure class="shot"><img src="img/mixer-01-strip.png" data-i18n-attr="alt:docs.shot.mixer.alt" alt="The Studio’s Mixer, a strip for every part and one for the master: the Melody strip’s fader boxed in red and numbered 1, its pan knob numbered 2, and its S key, with M beside it, numbered 3." width="1076" height="799" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.mixer.caption">Each part’s strip: its fader (1), its pan knob (2), and S to solo it (3), with M to mute it beside it.</figcaption></figure>
     <p data-i18n="docs.mixer.p3">Drag a fader or a knob up and down, hold Shift to move it finely, or turn the mouse wheel over it. With it focused, the arrow keys move it a step, Home and End take it to either end, and a double-click puts it back: a fader to 0 dB, a knob to its own default. Every one says its value as it moves.</p>
     <p data-i18n="docs.mixer.p4">Sound shapes the part shown. It plays through the library's instrument, with Freally MIDI Master's SYNTH page beneath it: the oscillators, the sub and noise, the filter, both envelopes, the LFOs, the macros and the effects. Every knob you move is kept with the copy's settings, and Reset puts them all back. A star marks an instrument as a favourite, and the Starred list plays one on the part.</p>
     <p data-i18n="docs.mixer.p5">Your own samples come from the browser: select an audio file and press Add to your samples. A sample must be a file on this computer, audio of up to 20 seconds; its pitch is read when it is added, and it is checked again every time it is played, so a sample that has moved or changed is never played as something else. New sampler sound plays one of your samples across the keyboard, with its root note, tuning, envelope, filter and volume. For the drums, New kit makes a kit of your one-shots: choose one for a lane, or drag a one-shot from the browser onto the lane.</p>
@@ -105,6 +134,7 @@
     <h2 id="browser" data-i18n="docs.browser.title">The browser</h2>
     <p data-i18n="docs.browser.p1">The browser opens on its Categories: Copies, every page and mix you have made, and Recent, the originals you last put on the glass. Under them are the folders you have added; choose + Add Folder to add one, up to 128. A folder on a drive that is not plugged in keeps its place and says it isn’t connected right now. To stop browsing a folder, right-click it, or select it and press Delete; nothing on disk is touched.</p>
     <p data-i18n="docs.browser.p2">Open a folder to walk it as a tree. Type to filter it by name, pick a tag or Starred to narrow it, and choose Show all files to see the sidecar files Flipcopy hides, such as .asd and .reapeaks. Back and Forward take you through the places you have been.</p>
+    <figure class="shot"><img src="img/browser-01-folder.png" data-i18n-attr="alt:docs.shot.browser.alt" alt="The browser open on a music folder: the filter box boxed in red and numbered 1, the selected MIDI file’s row numbered 2, and the grip at the end of that row, which drags the file into your DAW, numbered 3." width="572" height="496" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.browser.caption">Filter the folder by name (1), select a file (2), and drag it into your DAW by the grip at the end of its row (3).</figcaption></figure>
     <p data-i18n="docs.browser.p3">Walk the rows with ↑ and ↓: each row you land on plays once in the preview. → opens a folder and ← closes it. Enter puts the selected file on the glass, and so does a double-click on it, or dragging its row onto the copier.</p>
     <figure class="demo"><video src="media/feature-double-click.webm" poster="media/feature-double-click.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.demo.doubleClick">A double-click puts a file on the glass</figcaption></figure>
     <p data-i18n="docs.browser.p4">The first time you add a folder, Flipcopy counts its files, with a bar that shows how far it has got. It reads at most 12 folders deep and 50,000 files, and never follows a shortcut out of the folder.</p>
@@ -115,6 +145,7 @@
     <h2 id="preview" data-i18n="docs.preview.title">The preview player</h2>
     <p data-i18n="docs.preview.p1">The preview player sits under the browser. An audio file shows its real waveform. A MIDI file shows its notes and plays through Preview Piano, the same sound a copy uses unless you choose another, so you hear what the copy will sound like.</p>
     <p data-i18n="docs.preview.p2">Space plays and pauses, Stop goes back to the start, and a click or a drag on the strip moves the playhead. Loop repeats the file, Play when selected (the headphones) plays each file you select, and the slider sets the level. The preview plays through Flipcopy’s own output and never into a bounce. A WAV file of any length plays; a file in another format plays if it is five minutes or shorter.</p>
+    <figure class="shot"><img src="img/preview-01-player.png" data-i18n-attr="alt:docs.shot.preview.alt" alt="The preview player playing a MIDI file, its notes drawn on the strip: the play and pause key boxed in red and numbered 1, Loop numbered 2, Play when selected (the headphones) numbered 3 and the level slider numbered 4." width="600" height="264" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.preview.caption">Play and pause (1), Loop (2), Play when selected (3) and the level (4).</figcaption></figure>
     <p data-i18n="docs.preview.p3">Click the original on the glass, or a page on the tray, to hear it. When a copy is finished, Copy plays all its pages together and Original plays the file on the glass, from the same place in the music, so you can hear the difference before you drag. Playing it is never required: the pages can be dragged as soon as the last one lands.</p>
     <p data-i18n="docs.preview.p4">The strip wears the same lime frame as a page. Drag it onto the glass to put that file there.</p>
     <figure class="demo"><video src="media/feature-preview.webm" poster="media/feature-preview.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.preview.title">The preview player</figcaption></figure>
@@ -126,7 +157,11 @@
        media/feature-<tour>.webm with its JPG poster in a `.demo` figure whose
        caption is the section's own title key (or a `docs.demo.*` key where a
        section has more than one). ⚠ The build refuses a src that is not on the
-       site, so a figure goes in only with its file. -->
+       site, so a figure goes in only with its file.
+       ▶ ANNOTATED SCREENSHOTS: every `.shot` figure is one entry of
+       `docs/shots.config.ts`, rendered into img/ by `e2e/docs-shots.spec.ts`
+       (DOCS_SHOTS=write); its alt text is the config's, word for word, and is
+       translated through `data-i18n-attr="alt:…"`. Never hand-edit a picture. -->
   <section>
     <h2 id="daw" data-i18n="docs.daw.title">In your DAW</h2>
     <p data-i18n="docs.daw.p1">Flipcopy is made to stay in a project: what is on its glass is saved with the project, it can scan a few bars straight from the track it sits on, its browser drags any file straight onto a track, and many copiers can run in one project at once.</p>
@@ -151,11 +186,18 @@
   </section>
 
   <section>
+    <h2 id="standalone" data-i18n="docs.standalone.title">The standalone and Pro Tools</h2>
+    <p data-i18n="docs.standalone.p1">The standalone app is all of Flipcopy in a window of its own, playing through the audio output you choose in Settings: the copier, the browser and the preview, Copy Settings and the Studio. The one thing it lacks is Scan from track, which needs a DAW’s track; put a file on the glass instead. It is the way to use Flipcopy without a DAW, beside one, or with a DAW the plugin cannot load.</p>
+    <p data-i18n="docs.standalone.p2">Pro Tools loads only AAX plugins, and Flipcopy has no AAX version, so it does not appear in Pro Tools. Run the standalone app beside Pro Tools instead: drag a page from the tray, or a file from the browser by its grip, straight onto a Pro Tools track. If a drag does not land, press SAVE on the touch screen, save the page wherever you like, and import it into Pro Tools.</p>
+  </section>
+
+  <section>
     <h2 id="settings" data-i18n="docs.settings.title">Settings</h2>
     <p data-i18n="docs.settings.p0">Open Settings with the gear at the top of the browser. Its categories run down one side (General, Appearance, Sounds, Motion, Audio output, Copies folder, About), and the one you choose opens beside them.</p>
     <p data-i18n="docs.settings.p1">Machine sounds turns the copier’s sounds on or off, sets their level and keeps them quiet while your DAW plays. A switch of its own turns off the soft sounds the panels and dialogs make as they open and close.</p>
     <p data-i18n="docs.settings.p2">Under Motion, Quick runs the machine at its short timings, with every sound still in its place. Reduced motion follows your system’s setting, or choose Reduce to have it always: no flip, no swing of the lid, no sweep and no dimming of the room. The copier still shows each step and plays each sound, and START is still the only way to make a copy.</p>
     <p data-i18n="docs.settings.p3">Copies folder shows where your copies go. Change… picks another folder: new copies go there, and the copies already made stay where they are. Show in folder opens it. About shows the version, the third-party licences and the licence agreement.</p>
+    <figure class="shot"><img src="img/settings-01-copies-folder.png" data-i18n-attr="alt:docs.shot.settings.alt" alt="Settings open on its Copies folder category: the category boxed in red and numbered 1, and Change, which picks another folder for new copies, numbered 2." width="1050" height="691" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.settings.caption">Open Copies folder (1), then Change (2) to choose where new copies go.</figcaption></figure>
     <figure class="demo"><video src="media/feature-settings.webm" poster="media/feature-settings.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.settings.title">Settings</figcaption></figure>
     <figure class="demo"><video src="media/feature-sounds.webm" poster="media/feature-sounds.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.demo.sounds">The copier’s sounds and the animation sounds</figcaption></figure>
     <figure class="demo"><video src="media/feature-motion.webm" poster="media/feature-motion.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.demo.motion">Quick and Reduce</figcaption></figure>
@@ -164,14 +206,111 @@
   <section>
     <h2 id="appearance" data-i18n="docs.appearance.title">Light and dark</h2>
     <p data-i18n="docs.appearance.p1">Flipcopy has a dark mode and a light mode, both in Freally green. In Settings, under Appearance, choose Dark or Light: each is shown by its own copier. The change is immediate, with no flash of the other colour, and it is kept on this computer, the same in the plugin and the standalone app.</p>
+    <figure class="shot"><img src="img/appearance-01-themes.png" data-i18n-attr="alt:docs.shot.appearance.alt" alt="Settings open on Appearance: Dark, shown by its own copier, boxed in red and numbered 1, and Light numbered 2." width="1050" height="691" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.appearance.caption">Under Appearance, choose Dark (1) or Light (2).</figcaption></figure>
     <p data-i18n="docs.appearance.p2">The copier is rendered on each mode’s own ground, so it always stands in one room, with no box around it. The panels, the glass, the dialogs and the keys come from one design that every Freally app shares, and the knobs, faders, sliders, switches and keys are rendered for each mode. The standalone app’s title bar follows the mode too, with no title in it: the turning wordmark is the title.</p>
     <p data-i18n="docs.appearance.p3">Under Motion, Reduce lays the turning title flat: with reduced motion, whether you chose it or your system asks for it, the title stops square to you, level and still. Quick turns it in half the time, as it speeds up everything else, and reduced motion still wins over both. Under Sounds, Animation sounds turns the sounds of dialogs and panels opening and closing on or off, beside the copier’s own sounds.</p>
     <figure class="demo"><video src="media/feature-appearance.webm" poster="media/feature-appearance.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.appearance.title">Light and dark</figcaption></figure>
   </section>
 
   <section>
+    <h2 id="troubleshooting" data-i18n="docs.trouble.title">Troubleshooting</h2>
+    <p data-i18n="docs.trouble.p0">Most problems say what they are on the copier’s touch screen. These are the common ones, and what to do about each.</p>
+
+    <h3 id="trouble-refused" data-i18n="docs.trouble.refused.title">A file is refused</h3>
+    <p data-i18n="docs.trouble.refused.p1">The screen gives the reason. The copier takes loops of up to 16 bars, and refuses a file that is longer or larger than it takes, silent, damaged, or not audio or MIDI it can read. It also refuses a MIDI file with no notes, with more notes than it takes, that counts time in SMPTE frames, or that holds separate songs (format 2), and a file on a network share, which must be copied to this computer first. Shorten a long loop to 16 bars in your DAW and put that on the glass.</p>
+    <figure class="shot"><img src="img/troubleshooting-01-refused.png" data-i18n-attr="alt:docs.shot.refused.alt" alt="The copier’s touch screen, boxed in red, refusing a loop that is too long, with the reason running across it: That clip is 32 bars long — the copier takes clips of up to 16 bars." width="526" height="388" loading="lazy" decoding="async" /><figcaption data-i18n="docs.shot.refused.caption">A file the copier refuses: its screen says why.</figcaption></figure>
+
+    <h3 id="trouble-vocal" data-i18n="docs.trouble.vocal.title">A sung line was left alone</h3>
+    <p data-i18n="docs.trouble.vocal.p1">With Parts set to Every part, a page each, a vocal is heard and left alone, and the first page says so. To copy the sung line, choose Parts → Vocal line, one note at a time, in Copy Settings, and press START again.</p>
+
+    <h3 id="trouble-nothing" data-i18n="docs.trouble.nothing.title">Nothing was found</h3>
+    <p data-i18n="docs.trouble.nothing.p1">When the screen says there is nothing in a clip to copy, the copier found no notes in it. If you asked for one part only, such as Drums only, and the loop has none of it, the screen says so instead of printing a blank page: choose Every part, a page each, or another part.</p>
+
+    <h3 id="trouble-start" data-i18n="docs.trouble.start.title">START does nothing</h3>
+    <p data-i18n="docs.trouble.start.p1">START copies what is on the glass, so put a file there first. While a copy is being made the copier is busy: wait for it, or press STOP. If the file on the glass changed or moved after you put it there, put it on the glass again. Ctrl+Enter presses START only while the COPIER tab is shown.</p>
+
+    <h3 id="trouble-daw" data-i18n="docs.trouble.daw.title">Flipcopy is not in your DAW’s plugin list</h3>
+    <p data-i18n="docs.trouble.daw.p1">Make sure the plugin is in a folder your DAW scans for CLAP or VST3 plugins, or AU plugins on a Mac, then rescan your DAW’s plugins. Logic checks an AU the next time it starts. Pro Tools never lists Flipcopy: see The standalone and Pro Tools.</p>
+
+    <h3 id="trouble-drag" data-i18n="docs.trouble.drag.title">A drag doesn’t land in your DAW</h3>
+    <p data-i18n="docs.trouble.drag.p1">Some hosts don’t take a file dragged out of a plugin’s window; when Flipcopy can tell, its screen says Dragging isn’t available here — use Save As instead. Press SAVE on the touch screen to save the page on top as a new file, wherever you like and in the format you pick, then import it; REVEAL shows the copy’s own file in its folder. From the keyboard, Tab reaches Save the copy as… and Show the copy in its folder too.</p>
+  </section>
+
+  <section>
     <h2 id="problems" data-i18n="docs.report.title">When something goes wrong</h2>
     <p data-i18n="docs.report.p1">If Flipcopy itself fails, such as a copy it could not write, the screen offers Report. It opens a page in your web browser that shows exactly what the report holds; nothing is sent unless you press Send there. A file the copier refuses, because it is too long, silent or not audio, is not a failure, and the screen says why instead.</p>
+  </section>
+
+  <section>
+    <h2 id="shortcuts" data-i18n="docs.keys.title">Keyboard shortcuts</h2>
+    <p data-i18n="docs.keys.p1">Every key below works in the plugin and in the standalone app. On a Mac, press Cmd wherever this table says Ctrl. While you type in a box, such as the filter or a tempo, the keys type instead.</p>
+
+    <h3 id="keys-copier" data-i18n="docs.keys.copier">The copier</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th scope="col" data-i18n="docs.keys.col.key">Key</th><th scope="col" data-i18n="docs.keys.col.does">What it does</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>Enter</kbd></th><td data-i18n="docs.keys.start">Press START: copy what is on the glass.</td></tr>
+        <tr><th scope="row"><kbd>Esc</kbd></th><td data-i18n="docs.keys.stop">Press STOP while a copy is being made.</td></tr>
+        <tr><th scope="row"><kbd>Enter</kbd></th><td data-i18n="docs.keys.choose">On the empty glass: choose a file to put on it.</td></tr>
+        <tr><th scope="row"><kbd>[</kbd> <kbd>]</kbd></th><td data-i18n="docs.keys.page">Page back and forward through your copies.</td></tr>
+        <tr><th scope="row"><kbd>Tab</kbd></th><td data-i18n="docs.keys.tray">Reach the copy on the tray from the keyboard: Save the copy as…, Show the copy in its folder, Put the page on top on the glass, and Preview the page on top.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 id="keys-window" data-i18n="docs.keys.window">The window</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th scope="col" data-i18n="docs.keys.col.key">Key</th><th scope="col" data-i18n="docs.keys.col.does">What it does</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>1</kbd> <kbd>Ctrl</kbd>+<kbd>2</kbd></th><td data-i18n="docs.keys.tabs">Show the COPIER or the STUDIO tab.</td></tr>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>B</kbd></th><td data-i18n="docs.keys.fold">Fold the browser and the preview away, or bring them back.</td></tr>
+        <tr><th scope="row"><kbd>Space</kbd></th><td data-i18n="docs.keys.space">Play or pause the preview.</td></tr>
+        <tr><th scope="row"><kbd>Esc</kbd></th><td data-i18n="docs.keys.close">Close Copy Settings, Settings or an open list, or cancel a drag onto the glass.</td></tr>
+        <tr><th scope="row"><kbd>←</kbd> <kbd>→</kbd> <kbd>Home</kbd> <kbd>End</kbd></th><td data-i18n="docs.keys.splitter">On the line beside the browser: make the browser narrower or wider, or take it to either end.</td></tr>
+        <tr><th scope="row"><kbd>←</kbd> <kbd>→</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>Home</kbd> <kbd>End</kbd></th><td data-i18n="docs.keys.tablist">On a row of tabs or choices: move to the next or the previous one, or to either end.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 id="keys-browser" data-i18n="docs.keys.browser">The browser</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th scope="col" data-i18n="docs.keys.col.key">Key</th><th scope="col" data-i18n="docs.keys.col.does">What it does</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><kbd>↑</kbd> <kbd>↓</kbd></th><td data-i18n="docs.keys.rows">Move to the row above or below.</td></tr>
+        <tr><th scope="row"><kbd>Home</kbd> <kbd>End</kbd></th><td data-i18n="docs.keys.ends">Go to the first or the last row.</td></tr>
+        <tr><th scope="row"><kbd>→</kbd></th><td data-i18n="docs.keys.open">Open a folder, or step into an open one.</td></tr>
+        <tr><th scope="row"><kbd>←</kbd></th><td data-i18n="docs.keys.closeFolder">Close a folder, or go up to the folder it is in.</td></tr>
+        <tr><th scope="row"><kbd>Enter</kbd></th><td data-i18n="docs.keys.place">Put the selected file on the glass; on a folder, open or close it.</td></tr>
+        <tr><th scope="row"><kbd>A</kbd>–<kbd>Z</kbd></th><td data-i18n="docs.keys.filter">Start typing a name to filter the folder by it.</td></tr>
+        <tr><th scope="row"><kbd>Delete</kbd> <kbd>Backspace</kbd></th><td data-i18n="docs.keys.remove">On a folder you added: stop browsing it. Nothing on disk is touched.</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 id="keys-studio" data-i18n="docs.keys.studio">The Studio’s piano roll</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th scope="col" data-i18n="docs.keys.col.key">Key</th><th scope="col" data-i18n="docs.keys.col.does">What it does</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>Z</kbd></th><td data-i18n="docs.keys.undo">Undo.</td></tr>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>Z</kbd> <kbd>Ctrl</kbd>+<kbd>Y</kbd></th><td data-i18n="docs.keys.redo">Redo.</td></tr>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>A</kbd></th><td data-i18n="docs.keys.selectAll">Select every note of the part.</td></tr>
+        <tr><th scope="row"><kbd>Esc</kbd></th><td data-i18n="docs.keys.deselect">Clear the selection.</td></tr>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>C</kbd> <kbd>Ctrl</kbd>+<kbd>X</kbd> <kbd>Ctrl</kbd>+<kbd>V</kbd></th><td data-i18n="docs.keys.clipboard">Copy, cut and paste the selected notes; a paste lands at the playhead.</td></tr>
+        <tr><th scope="row"><kbd>Ctrl</kbd>+<kbd>D</kbd></th><td data-i18n="docs.keys.duplicate">Duplicate the selected notes where they are.</td></tr>
+        <tr><th scope="row"><kbd>Shift</kbd>+<kbd>D</kbd></th><td data-i18n="docs.keys.duplicateAfter">Duplicate the selected notes straight after themselves.</td></tr>
+        <tr><th scope="row"><kbd>Delete</kbd> <kbd>Backspace</kbd></th><td data-i18n="docs.keys.delete">Delete the selected notes.</td></tr>
+        <tr><th scope="row"><kbd>←</kbd> <kbd>→</kbd></th><td data-i18n="docs.keys.nudge">Move the selected notes a grid step earlier or later; with Shift, a whole bar.</td></tr>
+        <tr><th scope="row"><kbd>↑</kbd> <kbd>↓</kbd></th><td data-i18n="docs.keys.transpose">Move the selected notes up or down a semitone; with Shift, an octave. On a drum part they move to the kit voice above or below.</td></tr>
+        <tr><th scope="row"><kbd>*</kbd> <kbd>/</kbd></th><td data-i18n="docs.keys.stretch">Stretch the selected notes to twice their length, or squeeze them to half (the * on the number pad).</td></tr>
+      </tbody>
+    </table></div>
+
+    <h3 id="keys-controls" data-i18n="docs.keys.controls">Faders and knobs</h3>
+    <div class="table-wrap"><table>
+      <thead><tr><th scope="col" data-i18n="docs.keys.col.key">Key</th><th scope="col" data-i18n="docs.keys.col.does">What it does</th></tr></thead>
+      <tbody>
+        <tr><th scope="row"><kbd>↑</kbd> <kbd>↓</kbd> <kbd>←</kbd> <kbd>→</kbd></th><td data-i18n="docs.keys.step">Move the fader or knob that has focus one step.</td></tr>
+        <tr><th scope="row"><kbd>Page Up</kbd> <kbd>Page Down</kbd></th><td data-i18n="docs.keys.tenth">Move a fader a tenth of its travel.</td></tr>
+        <tr><th scope="row"><kbd>Home</kbd> <kbd>End</kbd></th><td data-i18n="docs.keys.toEnds">Take it to either end.</td></tr>
+      </tbody>
+    </table></div>
   </section>
 
   <section>
@@ -183,5 +322,13 @@
     <h2 id="privacy" data-i18n="docs.privacy.title">Privacy and the network</h2>
     <p data-i18n="docs.privacy.p1">Flipcopy has no account and no telemetry, and the plugin and standalone app contain no networking code at all. Your files and your copies never leave your computer.</p>
     <p data-i18n="docs.privacy.p2">It contains no AI of any kind: every copy is made by classic, deterministic signal processing, and a build gate fails if a machine-learning library is ever added.</p>
+    <p data-i18n="docs.privacy.p3">The one exception is an optional update check, and it is off until you say yes. The standalone app asks once; a DAW is never asked and never checks when it starts. A separate small program, not the plugin or the app, fetches one public file over HTTPS, freallyproducts.com/freally-flipcopy/version.json. It sends no ID, no version and nothing about your computer — only what any web request carries, your IP address. If a newer version is out, Flipcopy shows its notes and a button that opens this site; it never downloads or installs anything. Settings → Updates says when it last checked, and turns it on or off.</p>
+    <figure class="demo"><video src="media/feature-updates.webm" poster="media/feature-updates.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.demo.updates">The update check</figcaption></figure>
+  </section>
+
+  <section>
+    <h2 id="build" data-i18n="docs.build.title">Building from source</h2>
+    <p data-i18n="docs.build.p1">Flipcopy’s source code is private: it is not published, there is no public repository, and no one outside the project can build it today.</p>
+    <p data-i18n-html="docs.build.p2">For the record, a build needs Rust stable, at the exact version the source pins, and Node.js. <code>npm ci</code> installs the editor’s tools, and <code>npm run plugin:build</code> builds the editor and the plugin and copies the CLAP and the VST3, and the AU on a Mac, into your plugin folders.</p>
   </section>
 </kit-manual>

@@ -55,9 +55,39 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-8-0-2026-10-23-accuracy-realism-performance">v0.8.0</a></li><li><a href="#0-7-0-2026-10-17-standalone-macos-linux">v0.7.0</a></li><li><a href="#0-6-0-2026-10-09-in-every-daw">v0.6.0</a></li><li><a href="#0-5-9-2026-10-09-light-mode">v0.5.9</a></li><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
+<ol><li><a href="#1-0-0-beta-2026-10-24-beta-hardened">v1.0.0-beta</a></li><li><a href="#0-8-0-2026-10-23-accuracy-realism-performance">v0.8.0</a></li><li><a href="#0-7-0-2026-10-17-standalone-macos-linux">v0.7.0</a></li><li><a href="#0-6-0-2026-10-09-in-every-daw">v0.6.0</a></li><li><a href="#0-5-9-2026-10-09-light-mode">v0.5.9</a></li><li><a href="#0-5-7-2026-10-06-the-mixer-and-your-own-instruments">v0.5.7</a></li><li><a href="#0-5-5-2026-10-06-the-studio">v0.5.5</a></li><li><a href="#0-5-0-2026-10-05-the-touch-screen">v0.5.0</a></li><li><a href="#0-4-0-2026-10-05-the-file-browser-and-the-preview-player">v0.4.0</a></li><li><a href="#0-3-0-2026-10-01-audio-midi-the-magic-moment">v0.3.0</a></li><li><a href="#0-2-0-2026-09-30-the-copier-and-the-first-copy">v0.2.0</a></li><li><a href="#0-1-0-2026-09-26-foundation-ci-spine">v0.1.0</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-8-0-2026-10-23-accuracy-realism-performance">
+<div class="releases"><article class="release release--latest" id="1-0-0-beta-2026-10-24-beta-hardened">
+<h2 class="release__head" data-i18n-html="changelog.b459f6095def"><span class="release__meta"><span class="release__ver">v1.0.0-beta</span><time class="release__date" datetime="2026-10-24">2026-10-24</time></span><span class="release__title">Beta: Hardened</span></h2>
+<p data-i18n-html="changelog.af3a7d02ce5b">Every copy goes both ways, every edge the product promises to handle has a test, a crash fails one copy and never the window, and Flipcopy can now tell you when a new version is out, if you ask it to.</p>
+<h3 id="1-0-0-beta-2026-10-24-beta-hardened-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.024770404130"><strong>The round trip.</strong> Render a MIDI file to audio, drag the audio page back onto the glass and press START: the MIDI comes back, at its own tempo. A rendered page now ends on its next bar line, so a 16-bar render goes back on the glass instead of being refused as 17 bars.</li>
+<li data-i18n-html="changelog.ed89635b5fe6"><strong>Vocal line</strong> in Copy Settings' <em>Parts</em> prints a sung part as one page.</li>
+<li data-i18n-html="changelog.36b1bfb9b15f"><strong>An optional update check, off until you say yes.</strong> The standalone asks once, after the agreement; a DAW never asks and never checks when it opens. <em>Settings → Updates</em> checks when you press <em>Check for updates</em>, says when it last did, and turns the launch check on or off. A separate small program, <code>flipcopy-updater</code>, reads one public file over HTTPS and sends nothing about you. If a newer version is out, Flipcopy shows its notes as plain text and <em>Get it</em> opens the product's page. Nothing is downloaded or installed. The plugin and the standalone still contain no network code.</li>
+<li data-i18n-html="changelog.e4cd61c774b9"><strong>Installers.</strong> Windows gets a setup program (the standalone with a Start-menu entry, the VST3 and the CLAP, and an uninstaller that removes exactly what it installed and never your copies or settings). Linux gets <code>install.sh</code> and <code>uninstall.sh</code>, for you or, with <code>--system</code>, for everyone. A macOS package is written and waits for a Mac to build it on.</li>
+<li data-i18n-html="changelog.d6b2b21aaa5d"><strong>The manual is complete.</strong> Every section of the docs site, with annotated screenshots, in all 18 languages.</li>
+</ul>
+<h3 id="1-0-0-beta-2026-10-24-beta-hardened-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.0006eba558ef"><strong>A drum page read back keeps its snare.</strong> A snare or a kick struck together with a hat is now read as both, a kick is counted once, and a kick's ringing tail is no longer read as a second kick. A generated drum loop now comes back with every kick, snare and hat; a real drum loop's round trip went from 72 % to 83 % of its hits.</li>
+<li data-i18n-html="changelog.3585429713e3"><strong>The agreement is version 2</strong>, describing the optional update check: you are asked to accept it again once.</li>
+<li data-i18n-html="changelog.57942db9a760">A frame the machine draws late is no longer slowed down: the copier's animation catches up with a slow frame instead of falling behind it.</li>
+<li data-i18n-html="changelog.965dabecb34c"><strong>On macOS and Linux the title stands still</strong>, square to you, as Reduce motion shows it. Their webviews can't turn it in 3D on the graphics card, and turning, it held the whole window to about 12 frames a second; still, the window draws at 60. On Windows it turns as before.</li>
+</ul>
+<h3 id="1-0-0-beta-2026-10-24-beta-hardened-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.ac4b6a1e32ad"><strong>START after a drag-back no longer just reopens the lid.</strong> Dragging a rendered audio page back onto the glass and pressing START closed the lid and opened it again with nothing made. A piano warmed up by the preview at one sample rate played the next copy out of tune at another. The page's melody was then taken for a voice, and its odd length was read at the wrong tempo. The plugin had the same bug. Both are fixed, and the copy is made.</li>
+<li data-i18n-html="changelog.d68aa27e15df">A file dropped on the glass right after another could be replaced by the one before it, or leave the glass empty. The drop now lands every time.</li>
+<li data-i18n-html="changelog.86fc5c10f24c">A file Flipcopy can't read now shows a warning sign on its row in the browser, saying why.</li>
+<li data-i18n-html="changelog.9b516168740e">A page rendered from a MIDI file in an odd meter (7/8, 5/8, 7/16…) now tells your DAW its true length in beats, so it plays at the file's tempo. It ends on the first bar line that is also a whole beat.</li>
+<li data-i18n-html="changelog.f152da02e637">A file whose sound runs on long after its last hit is no longer let onto the glass past the 16-bar limit.</li>
+<li data-i18n-html="changelog.52d17f42195f">The Preview strip names the instrument a MIDI file is played through — a drum file's kit, not <em>Preview Piano</em>.</li>
+<li data-i18n-html="changelog.74edb79e8b6c">A failure while writing a scanned take now fails that take, and the next one works.</li>
+<li data-i18n-html="changelog.5f61489a6f5d">On macOS and Linux, the touch screen's soft-keys show which one the keyboard is on: the focused key is lit and ringed on the screen itself.</li>
+</ul>
+</article>
+<article class="release" id="0-8-0-2026-10-23-accuracy-realism-performance">
 <h2 class="release__head" data-i18n-html="changelog.4afab12e90bf"><span class="release__meta"><span class="release__ver">v0.8.0</span><time class="release__date" datetime="2026-10-23">2026-10-23</time></span><span class="release__title">Accuracy, Realism &amp; Performance</span></h2>
 <p data-i18n-html="changelog.3b258346a600">Copies read closer to what was played, the machine looks and feels more like a real one, every copy runs at the computer's full speed, and every file Flipcopy reads has been fed damaged, random and hostile versions of itself.</p>
 <h3 id="0-8-0-2026-10-23-accuracy-realism-performance-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -357,7 +387,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The copies you make are yours, as far as the files you copied were yours to use. Flipcopy's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.8.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v1.0.0-beta</span>
         </div>
       </div>
     </footer>

@@ -70,8 +70,8 @@
     {
       "version": "v1.0.0-beta",
       "phase": "Phase 8 — Beta: hardened",
-      "state": "planned",
-      "summary": "Hardened: installers for three systems, the optional update check, and the full illustrated manual. Still no downloads on this site."
+      "state": "done",
+      "summary": "Hardened: the round trip — render a MIDI file to audio, drag the page back onto the glass, press START, and it is MIDI again — and Vocal line for a sung part. An update check that stays off until you say yes and only tells you a new version is out. A Windows setup and a Linux install.sh. Every edge case tested, every step reachable from the keyboard, and all 18 languages checked. Still nothing to download before 1.0.0."
     },
     {
       "version": "v1.0.0-rc",

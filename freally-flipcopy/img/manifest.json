@@ -1,0 +1,182 @@
+{
+  "theme": "dark",
+  "renderedOn": "win32",
+  "shots": [
+    {
+      "file": "window-01-layout.png",
+      "topic": "window",
+      "step": 1,
+      "frame": "[data-testid=\"shell\"]",
+      "targets": [
+        "[data-testid=\"browser\"]",
+        "[data-testid=\"preview\"]",
+        "[data-testid=\"browser-toggle\"]",
+        "[data-testid=\"stage\"]"
+      ],
+      "alt": "The Flipcopy window: the browser down the left boxed in red and numbered 1, the preview player docked under it numbered 2, the button at the browser’s edge that folds them away numbered 3, and the stage, where the copier stands, numbered 4."
+    },
+    {
+      "file": "copier-01-start.png",
+      "topic": "copier",
+      "step": 1,
+      "frame": "[data-testid=\"stage\"]",
+      "targets": [
+        "div:has(> div > [data-testid=\"print-original\"])",
+        "[data-testid=\"touch-screen\"]",
+        "[data-testid=\"key-start\"]"
+      ],
+      "alt": "The copier with a MIDI file on the glass: the glass, where the copier has laid the printed original face-down, boxed in red and numbered 1, the touch screen numbered 2, and the green START key numbered 3."
+    },
+    {
+      "file": "copier-02-pages.png",
+      "topic": "copier",
+      "step": 2,
+      "frame": "[data-testid=\"stage\"]",
+      "targets": [
+        "[data-testid=\"print-copy\"]"
+      ],
+      "alt": "The copier after a MIDI file was copied to audio, its audio pages stacked on the tray and the page on top boxed in red: grab a page by the lime frame round its printed clip and drag it onto a track."
+    },
+    {
+      "file": "screen-01-soft-keys.png",
+      "topic": "screen",
+      "step": 1,
+      "frame": "[data-testid=\"stage\"]",
+      "targets": [
+        "[data-testid=\"soft-settings\"]",
+        "[data-testid=\"soft-save\"]",
+        "[data-testid=\"soft-reprint\"]"
+      ],
+      "alt": "The copier’s touch screen after a copy, saying MIDI > AUDIO, with its soft keys along the bottom: SETTINGS boxed in red and numbered 1, SAVE numbered 2 and REPRINT numbered 3; between them are PREV, NEXT and REVEAL, and STUDIO is last."
+    },
+    {
+      "file": "audio-01-parts.png",
+      "topic": "audio",
+      "step": 1,
+      "frame": "[data-testid=\"copy-settings\"]",
+      "targets": [
+        "[data-testid=\"copy-parts\"]",
+        "[data-testid=\"copy-grid\"]",
+        "[data-testid=\"copy-swing\"]"
+      ],
+      "alt": "Copy Settings open over the copier with an audio loop on the glass, at its AUDIO > MIDI settings: Parts boxed in red and numbered 1, Grid numbered 2 and Swing numbered 3."
+    },
+    {
+      "file": "audio-02-pages.png",
+      "topic": "audio",
+      "step": 2,
+      "frame": "[data-testid=\"stage\"]",
+      "targets": [
+        "[data-testid=\"print-copy\"]"
+      ],
+      "alt": "The copier after an audio loop was copied to MIDI, a MIDI page for each part it heard stacked on the tray, the page on top boxed in red."
+    },
+    {
+      "file": "midi-01-pages-and-instruments.png",
+      "topic": "midi",
+      "step": 1,
+      "frame": "[data-testid=\"copy-settings\"]",
+      "targets": [
+        "[data-testid=\"copy-stems\"]",
+        "[data-testid=\"copy-toner-melody\"]"
+      ],
+      "alt": "Copy Settings with a MIDI file on the glass, at its MIDI > AUDIO settings: Pages, a page per part or the mix only, boxed in red and numbered 1, and the Melody’s instrument numbered 2, between the Bassline’s and the Countermelody’s."
+    },
+    {
+      "file": "midi-02-tail-and-format.png",
+      "topic": "midi",
+      "step": 2,
+      "frame": "[data-testid=\"copy-settings\"]",
+      "targets": [
+        "[data-testid=\"copy-drums\"]",
+        "[data-testid=\"copy-tail\"]",
+        "[data-testid=\"copy-format\"]",
+        "[data-testid=\"copy-rate\"]",
+        "[data-testid=\"copy-depth\"]"
+      ],
+      "alt": "Copy Settings further down: the drum machine boxed in red and numbered 1, the Tail slider numbered 2, Format, with WAV, AIFF, FLAC and MP3, numbered 3, Sample rate numbered 4 and Bit depth numbered 5."
+    },
+    {
+      "file": "browser-01-folder.png",
+      "topic": "browser",
+      "step": 1,
+      "frame": "[data-testid=\"rail\"]",
+      "targets": [
+        "[data-testid=\"browser-filter\"]",
+        "[data-testid=\"browser-row\"][aria-selected=\"true\"]",
+        "[data-testid=\"browser-row\"][aria-selected=\"true\"] [data-testid=\"browser-grip\"]"
+      ],
+      "alt": "The browser open on a music folder: the filter box boxed in red and numbered 1, the selected MIDI file’s row numbered 2, and the grip at the end of that row, which drags the file into your DAW, numbered 3."
+    },
+    {
+      "file": "preview-01-player.png",
+      "topic": "preview",
+      "step": 1,
+      "frame": "[data-testid=\"preview\"]",
+      "targets": [
+        "[data-testid=\"preview-play\"]",
+        "[data-testid=\"preview-loop\"]",
+        "[data-testid=\"preview-autoplay\"]",
+        "[data-testid=\"preview-volume\"]"
+      ],
+      "alt": "The preview player playing a MIDI file, its notes drawn on the strip: the play and pause key boxed in red and numbered 1, Loop numbered 2, Play when selected (the headphones) numbered 3 and the level slider numbered 4."
+    },
+    {
+      "file": "studio-01-parts.png",
+      "topic": "studio",
+      "step": 1,
+      "frame": "[data-testid=\"studio\"]",
+      "targets": [
+        "[data-testid=\"studio-part-melody\"]",
+        "[data-testid=\"studio-roll\"]",
+        "[data-testid=\"studio-play\"]",
+        "[data-testid=\"studio-send\"]"
+      ],
+      "alt": "The Studio with a copy open: the Melody part’s tab boxed in red and numbered 1, the piano roll numbered 2, Play numbered 3 and Send to the copier numbered 4."
+    },
+    {
+      "file": "mixer-01-strip.png",
+      "topic": "mixer",
+      "step": 1,
+      "frame": "[data-testid=\"studio\"]",
+      "targets": [
+        "[data-testid=\"mixer-melody-fader\"]",
+        "[data-testid=\"mixer-melody-pan\"]",
+        "[data-testid=\"mixer-melody-solo\"]"
+      ],
+      "alt": "The Studio’s Mixer, a strip for every part and one for the master: the Melody strip’s fader boxed in red and numbered 1, its pan knob numbered 2, and its S key, with M beside it, numbered 3."
+    },
+    {
+      "file": "settings-01-copies-folder.png",
+      "topic": "settings",
+      "step": 1,
+      "frame": "[data-testid=\"settings\"]",
+      "targets": [
+        "[data-testid=\"settings-tab-copies\"]",
+        "[data-testid=\"settings-copies-change\"]"
+      ],
+      "alt": "Settings open on its Copies folder category: the category boxed in red and numbered 1, and Change, which picks another folder for new copies, numbered 2."
+    },
+    {
+      "file": "appearance-01-themes.png",
+      "topic": "appearance",
+      "step": 1,
+      "frame": "[data-testid=\"settings\"]",
+      "targets": [
+        "[data-testid=\"settings-theme-dark\"]",
+        "[data-testid=\"settings-theme-light\"]"
+      ],
+      "alt": "Settings open on Appearance: Dark, shown by its own copier, boxed in red and numbered 1, and Light numbered 2."
+    },
+    {
+      "file": "troubleshooting-01-refused.png",
+      "topic": "troubleshooting",
+      "step": 1,
+      "frame": "[data-testid=\"stage\"]",
+      "targets": [
+        "[data-testid=\"touch-screen\"]"
+      ],
+      "alt": "The copier’s touch screen, boxed in red, refusing a loop that is too long, with the reason running across it: That clip is 32 bars long — the copier takes clips of up to 16 bars."
+    }
+  ]
+}
