@@ -6,7 +6,8 @@
  * `Freally Bugs/site-kit/kit/kit.js`, never a site's copy.
  *
  * ⛔ NO THIRD-PARTY SCRIPT, NO ANALYTICS, NO TRACKER, NO CDN, NO FETCH. This
- * file, the generated `i18n/<code>.js` catalogues and `search-index.js` are the
+ * file, `cursor.js` (the fleet cursor, generated from Freally Bugs/cursor-kit),
+ * the generated `i18n/<code>.js` catalogues and `search-index.js` are the
  * whole of a site's JavaScript. A catalogue is a `<script>` from the site itself,
  * added only when its language is chosen, so the site also works from `file://`.
  *

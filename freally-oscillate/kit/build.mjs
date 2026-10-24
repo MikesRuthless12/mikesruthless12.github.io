@@ -303,6 +303,10 @@ function head(page) {
     '    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />',
     '    <link rel="stylesheet" href="kit/kit.css" />',
     '    <script src="kit/kit.js"></script>',
+    // the fleet cursor (owner, 2026-10-23), from Freally Bugs/cursor-kit: it
+    // mounts itself once the page is parsed
+    '    <link rel="stylesheet" href="kit/cursor.css" />',
+    '    <script src="kit/cursor.js" defer></script>',
     '  </head>',
   ]
     .filter((line) => line !== '')

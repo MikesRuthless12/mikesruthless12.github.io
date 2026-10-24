@@ -1,5 +1,5 @@
 {
-  "version": "83c060b4cf87",
+  "version": "54fec1b0fb9f",
   "files": {
     "art/chat.svg": "105d594d41d93114b20632409344e2cbed624a86bd0d5e00936e304cf8a6f0c8",
     "art/circuit.svg": "fcb87dfbfa921ebe7d7caa6f0a1ef2640cee86683c2eaf58624a7987d55c1ac0",
@@ -23,7 +23,9 @@
     "art/tracks.svg": "623a2e838003bfc14c7dd5e79c128aca3eeedae7fcf4050921482a62795e7eed",
     "art/tree.svg": "5759e8aad958fb0234b37b0b280aa8a0134a2da252e33aa40f8cf0fc8eb514f7",
     "art/wave.svg": "41ef21324837387f918d80719d09e5467d5464e7f357a618ee8c4e21f73bbfee",
-    "build.mjs": "78e6b17b0764071862a194bd637d304624064646665be76d49e2afe6154dce69",
+    "build.mjs": "aa6e262a42dc4694efbaa7d8616ef812db92bcc769d9211ad0621b6207396f96",
+    "cursor.css": "c268eb65d6197dcea6e472e06bf54ff71b7a695a075d6b48046631b7f707b945",
+    "cursor.js": "674da0fd1a5ba82533f8d862469df154e747e902bb5c731e27f58cdbf82fc044",
     "family/capture.png": "18c61a8b50499b641b9a6990dd7da15e2a33355b4a12789962b9e1b6b5052bad",
     "family/file-manager.png": "1c4b95c4db6a28e602c0b3c4f6b786f8db6fdfa5e49967119775447f1d3812bb",
     "family/flipcopy.png": "00ea64b9ac1490ee1d392a9f1d523eb71bd12700c0784888f94e79dea996827d",
@@ -69,7 +71,7 @@
     "i18n/zh-CN.json": "4d12cdbbd9b434fc4539a1ce1b22542d2e0d0c180c7be36a8ab1aba2d909af0d",
     "icons.mjs": "c04d40e691524952f6c091f8b30db54d4d210484c793779749000872a11bbdcf",
     "kit.css": "d57a48090c73c22cd3875c119eed25b4c7dadc7a604c1726ce7c9a08508616ea",
-    "kit.js": "0cfb04aea1831decdda4406926e8539305b5893fe86c15937ed60866aaf80dc2",
+    "kit.js": "5722f152320c0b51f31bca513615689b03d065128821a68710feb3ab88e963e6",
     "markdown.mjs": "9e8ccd6c50744e1fb1aa3685c20766212a5982bd3913a6bc4701050fd81925a9"
   }
 }
