@@ -84,8 +84,8 @@
       "id": "guitars",
       "version": "v0.13.0",
       "phase": "Phase 5 — The Guitars",
-      "state": "planned",
-      "summary": "The guitars: acoustic, nylon, electric and muted, with real fretting, picking and strumming."
+      "state": "done",
+      "summary": "The guitars: steel-string, nylon, electric and muted, fretted, picked and strummed by a guitarist's hands, with TAB on the sheets and two guitar courses."
     },
     {
       "id": "bass",
