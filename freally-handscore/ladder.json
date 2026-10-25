@@ -98,8 +98,8 @@
       "id": "own-audio",
       "version": "v0.15.0",
       "phase": "Phase 7 — Your Own Audio & MIDI",
-      "state": "planned",
-      "summary": "Your own audio and MIDI, read into parts and played by the hands."
+      "state": "done",
+      "summary": "Your own music: drop a recording or a MIDI file and only the parts it holds come on stage, played by the hands and ready to drag, a recording blended under its parts; a sheet read up close across the window, the hands watched from close by, the drums re-rolled like every part, and a lesson's step shown before you play it."
     },
     {
       "id": "classics",
