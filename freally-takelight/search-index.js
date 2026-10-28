@@ -14,7 +14,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "features.html#joint",
   "heading": "The Joint",
-  "text": "One rack holds the whole chain: pitch correction, three kinds of EQ, five kinds of compressor, a de-esser, a gate, saturation, an exciter, lo-fi, a limiter, a doubler, delays, reverbs, four returns and a vocal bus."
+  "text": "One rack holds the whole chain: pitch correction, four kinds of EQ, six kinds of compressor, a de-esser, a gate, saturation, an exciter, lo-fi, a limiter, a doubler, a chorus, a flanger, a phaser, an auto-pan, delays, reverbs, four returns and a vocal bus."
  },
  {
   "url": "features.html#tune",
@@ -54,7 +54,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#browser",
   "heading": "Finding a chain",
-  "text": "Type in the search at the top — an artist, a nickname or a genre — or press Ctrl+K (Cmd+K on a Mac) from anywhere. The chains appear as you type: each artist with its eras, each era with its years and its roles, such as lead, ad-lib or FX. Choose one and the whole chain loads in order, click-free, while the track plays. The arrow keys move through the list, Enter loads, and Escape closes it. With the search empty, it offers the chains you loaded last. An artist with no chain yet offers chains from their genre, and a name it does not know says so and suggests a genre. Version 0.5.6 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era, and eighteen genre chains: a lead and an ad-lib for trap (2000s and 2010s), Chicago drill, emo rap, classic R&B, modern pop, rock, country pop and reggaeton. Each chain is named for its artist or genre and its era, and nothing more. Finding a chain"
+  "text": "Type in the search at the top — an artist, a nickname or a genre — or press Ctrl+K (Cmd+K on a Mac) from anywhere. The chains appear as you type: each artist with its eras, each era with its years and its roles, such as lead, ad-lib or FX. Choose one and the whole chain loads in order, click-free, while the track plays. The arrow keys move through the list, Enter loads, and Escape closes it. With the search empty, it offers the chains you loaded last. An artist with no chain yet offers chains from their genre, and a name it does not know says so and suggests a genre. Version 0.6.0 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era; forty more artists, era by era; and a lead and an ad-lib for every one of the 73 genres, trap in two decades. The roster page lists them all. Each chain is named for its artist or genre and its era, and nothing more. Finding a chain"
  },
  {
   "url": "documentation.html#presets",
@@ -114,7 +114,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#modules",
   "heading": "The modules",
-  "text": "Version 0.5.6 has twenty-five modules. Each is Takelight's own design, and none claims to be any other product."
+  "text": "Version 0.6.0 has thirty modules. Each is Takelight's own design, and none claims to be any other product."
  },
  {
   "url": "documentation.html#module-tune",
@@ -142,6 +142,11 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Broad, gentle boosts and cuts at the low and high ends, and a tube stage for warmth."
  },
  {
+  "url": "documentation.html#module-dynamic-eq",
+  "heading": "Dynamic EQ",
+  "text": "Two bands, a bell or a shelf each, whose gain moves with the level in their own part of the vocal: a negative range cuts a harsh or boomy region only when it gets loud, a positive one lifts it as the voice rises. Each band has a frequency, Q, threshold, ratio and range, with one attack, release and output."
+ },
+ {
   "url": "documentation.html#module-opto",
   "heading": "Opto Compressor",
   "text": "Smooth levelling that follows the performance, from one Peak reduction knob, in an Opto and a Tube opto character, compressing or limiting."
@@ -155,6 +160,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#module-vca",
   "heading": "VCA Compressor",
   "text": "Clean and precise, in a Bus and a Channel character, with RMS or peak detection, a sidechain high-pass and a Mix control."
+ },
+ {
+  "url": "documentation.html#module-multiband",
+  "heading": "Multiband Compressor",
+  "text": "Splits the vocal into low, mid and high bands at two crossovers and compresses each on its own, with a threshold, ratio and gain per band and one attack, release, knee, output and mix. With nothing taken, the bands add back up to the vocal as it was."
  },
  {
   "url": "documentation.html#module-vari-mu",
@@ -189,7 +199,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#module-saturation",
   "heading": "Saturation",
-  "text": "Tape, Tube, Transformer and Inflate, oversampled so the harmonics it adds stay clean."
+  "text": "Tape, Tube, Transformer, Inflate and Clip, oversampled so the harmonics it adds stay clean; Clip holds the peaks at full scale over a short, smooth knee."
  },
  {
   "url": "documentation.html#module-exciter",
@@ -232,9 +242,24 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "A two-voice chorus, one voice rising in pitch as the other falls, with rate, depth, mix and drive; at a 50 % mix it keeps the level and sums to mono cleanly."
  },
  {
+  "url": "documentation.html#module-flanger",
+  "heading": "Flanger",
+  "text": "A short delay swept slowly up and down and fed back into itself, with rate, depth, delay, feedback and mix; the right side sweeps a quarter of a cycle ahead of the left, so a mono vocal flanges across the stereo field."
+ },
+ {
+  "url": "documentation.html#module-phaser",
+  "heading": "Phaser",
+  "text": "A chain of 4, 8 or 12 all-pass stages swept by a slow wave, fed back and blended with the vocal, with rate, depth, frequency, feedback, stages and mix; the right side sweeps a quarter of a cycle ahead of the left."
+ },
+ {
   "url": "documentation.html#module-width",
   "heading": "Width",
   "text": "Narrows or widens the stereo image, from mono at 0 % to 200 %, without changing the mono sum, and a Haas delay of up to 30 ms on the right side to spread a mono vocal."
+ },
+ {
+  "url": "documentation.html#module-autopan",
+  "heading": "Auto-pan",
+  "text": "Moves the vocal from side to side on a sine or a triangle wave, with rate and depth: a balance, so each side keeps its own sound and at the centre both pass as they came in; toward one side the other fades, never louder than it came in."
  },
  {
   "url": "documentation.html#module-shifter",
@@ -275,6 +300,21 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#problems",
   "heading": "When something goes wrong",
   "text": "Write to freallyproducts@gmail.com. When Takelight itself fails, the message it shows offers Report: it opens a page in your own browser showing everything it would send, and nothing leaves your computer until you press Send. After a crash, the next launch offers the same."
+ },
+ {
+  "url": "roster.html#roster-title",
+  "heading": "The roster",
+  "text": "All Artists Genres Style of Type Era Chains Genre Loading the roster… Artist Genre Lead Ad-lib Double Harmony FX {year}s Modern era Classic era {record} era {shown} of {total} match Nothing matches that. The roster could not be loaded. Try refreshing the page. This page is open as a local file, and browsers refuse to load the roster from a file:// page. Open it over HTTP instead."
+ },
+ {
+  "url": "changelog.html#0-6-0-2026-10-28-roster-wave-1-added",
+  "heading": "Added",
+  "text": "Forty more artists — each in the era of a record or a decade, from Adele to Twice, and Cardi B and DaBaby with an ad-lib chain too. Search a name, as before. A chain for every genre — each of the 73 genres on the roster, from afrobeats and amapiano to UK garage and West Coast club, has a lead chain and an ad-lib chain of its own; trap has both for the 2000s and the 2010s. An artist on the roster with no chain of their own yet is offered their genre's. Dynamic EQ — two bands, each a bell or a shelf, that cut or lift only while your vocal crosses their threshold, as far as their range allows. Its card draws the whole range and where each band sits now. Multiband — a compressor in three bands, low, mid and high, split where you set, each band with its own threshold, ratio and gain. With nothing taken, the three add back up to your vocal as it was. Flanger and Phaser — the Flanger sweeps a short delay against your vocal, and the Phaser sweeps 4, 8 or 12 stages around a frequency you set; each has its rate, depth, feedback and mix. Auto-pan — moves your vocal between left and right, as a sine or a triangle, at the rate and depth you set; the side it leaves fades, and neither side is eve"
+ },
+ {
+  "url": "changelog.html#0-6-0-2026-10-28-roster-wave-1-changed",
+  "heading": "Changed",
+  "text": "Four delays land on the eighth note — the ad-lib delays of Drake's modern era, classic R&B and 2010s trap, and the classic R&B lead's, now repeat on the eighth note as they were meant to, not the dotted eighth. v0.5.6 2026-10-27 Visual Cards Every module's card now shows what it does, not only its knobs: the EQs draw their curve over your vocal as it plays, the compressors show where your vocal sits and how much they take, and the rest draw their repeats, their decay, their stereo field and their curve. Each picture is worked out from the same maths that makes the sound."
  },
  {
   "url": "changelog.html#0-5-6-2026-10-27-visual-cards-added",

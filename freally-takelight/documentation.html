@@ -29,6 +29,7 @@
           <a href="index.html" data-i18n="kit.nav.home">Home</a>
           <a href="features.html" data-i18n="kit.nav.features">Features</a>
           <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="roster.html" data-i18n="kit.nav.roster">Roster</a>
           <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
         </nav>
         <div class="nav__end">
@@ -48,7 +49,7 @@
 <img class="app-icon" src="takelight-icon.png" alt="" width="72" height="72" />
 <span class="label" data-i18n="kit.nav.documentation">Documentation</span>
 <h1 data-i18n-html="kit.head.documentation"><span class="hl-muted">How it works,</span> <span class="hl-bright">step by step.</span></h1>
-<p class="lead" data-i18n="docs.intro">This manual grows with every version. Right now it covers finding a chain, your presets, Simple mode and its four knobs, A/B, the rack and what each card shows, undo, its four effect returns, Tune, Input Check and its twenty-five modules.</p>
+<p class="lead" data-i18n="docs.intro">This manual grows with every version. Right now it covers finding a chain, your presets, Simple mode and its four knobs, A/B, the rack and what each card shows, undo, its four effect returns, Tune, Input Check and its thirty modules.</p>
 <div class="search">
 <div class="search__field">
 <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
@@ -74,7 +75,7 @@
     <h2 id="browser" data-i18n="docs.browser.title">Finding a chain</h2>
     <p data-i18n="docs.browser.p1">Type in the search at the top — an artist, a nickname or a genre — or press Ctrl+K (Cmd+K on a Mac) from anywhere. The chains appear as you type: each artist with its eras, each era with its years and its roles, such as lead, ad-lib or FX. Choose one and the whole chain loads in order, click-free, while the track plays. The arrow keys move through the list, Enter loads, and Escape closes it.</p>
     <p data-i18n="docs.browser.p2">With the search empty, it offers the chains you loaded last. An artist with no chain yet offers chains from their genre, and a name it does not know says so and suggests a genre.</p>
-    <p data-i18n="docs.browser.p3">Version 0.5.6 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era, and eighteen genre chains: a lead and an ad-lib for trap (2000s and 2010s), Chicago drill, emo rap, classic R&amp;B, modern pop, rock, country pop and reggaeton. Each chain is named for its artist or genre and its era, and nothing more.</p>
+    <p data-i18n="docs.browser.p3">Version 0.6.0 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era; forty more artists, era by era; and a lead and an ad-lib for every one of the 73 genres, trap in two decades. The roster page lists them all. Each chain is named for its artist or genre and its era, and nothing more.</p>
     <figure class="demo"><video src="media/feature-browser.webm" poster="media/feature-browser.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.browser.title">Finding a chain</figcaption></figure>
   </section>
 
@@ -167,7 +168,7 @@
 
   <section>
     <h2 id="modules" data-i18n="docs.modules.title">The modules</h2>
-    <p data-i18n="docs.modules.p1">Version 0.5.6 has twenty-five modules. Each is Takelight's own design, and none claims to be any other product.</p>
+    <p data-i18n="docs.modules.p1">Version 0.6.0 has thirty modules. Each is Takelight's own design, and none claims to be any other product.</p>
     <h3 id="module-tune" data-i18n="docs.modules.tune.title">Tune</h3>
     <p data-i18n="docs.modules.tune.p1">Pitch correction to a key — Auto Key, Chromatic or one of the 24 — with Retune speed from 0 to 400 ms, Humanize and Flex, and a graph of the pitch sung and tuned. One per rack; see Tune and Auto Key above.</p>
     <h3 id="module-trim" data-i18n="docs.modules.trim.title">Trim</h3>
@@ -178,12 +179,16 @@
     <p data-i18n="docs.modules.console.p1">A mixing console's channel EQ: high- and low-pass filters and four bands, in four characters — British E, British G, Class A and Proportional Q.</p>
     <h3 id="module-program-eq" data-i18n="docs.modules.program.title">Program EQ</h3>
     <p data-i18n="docs.modules.program.p1">Broad, gentle boosts and cuts at the low and high ends, and a tube stage for warmth.</p>
+    <h3 id="module-dynamic-eq" data-i18n="docs.modules.dynamiceq.title">Dynamic EQ</h3>
+    <p data-i18n="docs.modules.dynamiceq.p1">Two bands, a bell or a shelf each, whose gain moves with the level in their own part of the vocal: a negative range cuts a harsh or boomy region only when it gets loud, a positive one lifts it as the voice rises. Each band has a frequency, Q, threshold, ratio and range, with one attack, release and output.</p>
     <h3 id="module-opto" data-i18n="docs.modules.opto.title">Opto Compressor</h3>
     <p data-i18n="docs.modules.opto.p1">Smooth levelling that follows the performance, from one Peak reduction knob, in an Opto and a Tube opto character, compressing or limiting.</p>
     <h3 id="module-fet" data-i18n="docs.modules.fet.title">FET Compressor</h3>
     <p data-i18n="docs.modules.fet.p1">Fast and forward, with fixed ratios and an All setting for aggressive compression, and a Mix control for parallel compression.</p>
     <h3 id="module-vca" data-i18n="docs.modules.vca.title">VCA Compressor</h3>
     <p data-i18n="docs.modules.vca.p1">Clean and precise, in a Bus and a Channel character, with RMS or peak detection, a sidechain high-pass and a Mix control.</p>
+    <h3 id="module-multiband" data-i18n="docs.modules.multiband.title">Multiband Compressor</h3>
+    <p data-i18n="docs.modules.multiband.p1">Splits the vocal into low, mid and high bands at two crossovers and compresses each on its own, with a threshold, ratio and gain per band and one attack, release, knee, output and mix. With nothing taken, the bands add back up to the vocal as it was.</p>
     <h3 id="module-vari-mu" data-i18n="docs.modules.varimu.title">Vari-mu Compressor</h3>
     <p data-i18n="docs.modules.varimu.p1">A tube compressor whose ratio rises the harder it works, so it starts gently and holds firm, with six time constants; 5 and 6 let go more slowly the longer it has been compressing.</p>
     <h3 id="module-punch" data-i18n="docs.modules.punch.title">Punch Compressor</h3>
@@ -197,7 +202,7 @@
     <h3 id="module-gate" data-i18n="docs.modules.gate.title">Gate</h3>
     <p data-i18n="docs.modules.gate.p1">A gate or an expander between phrases, with hold, hysteresis and sidechain filters so breaths and bleed do not open it.</p>
     <h3 id="module-saturation" data-i18n="docs.modules.saturation.title">Saturation</h3>
-    <p data-i18n="docs.modules.saturation.p1">Tape, Tube, Transformer and Inflate, oversampled so the harmonics it adds stay clean.</p>
+    <p data-i18n="docs.modules.saturation.p1">Tape, Tube, Transformer, Inflate and Clip, oversampled so the harmonics it adds stay clean; Clip holds the peaks at full scale over a short, smooth knee.</p>
     <h3 id="module-exciter" data-i18n="docs.modules.exciter.title">Exciter</h3>
     <p data-i18n="docs.modules.exciter.p1">Adds harmonics above a frequency you choose — odd, even or a blend of both — for presence and air. Only the harmonics are added; the vocal itself passes through untouched.</p>
     <h3 id="module-lo-fi" data-i18n="docs.modules.lofi.title">Lo-fi</h3>
@@ -214,8 +219,14 @@
     <p data-i18n="docs.modules.doubler.p1">Turns one take into two, three or four voices, each a little late, drifting a little in time and pitch, and spread across the stereo field, in a Tight and a Wide character. Summed to mono, it stays close to the vocal's own level.</p>
     <h3 id="module-chorus" data-i18n="docs.modules.chorus.title">Chorus</h3>
     <p data-i18n="docs.modules.chorus.p1">A two-voice chorus, one voice rising in pitch as the other falls, with rate, depth, mix and drive; at a 50 % mix it keeps the level and sums to mono cleanly.</p>
+    <h3 id="module-flanger" data-i18n="docs.modules.flanger.title">Flanger</h3>
+    <p data-i18n="docs.modules.flanger.p1">A short delay swept slowly up and down and fed back into itself, with rate, depth, delay, feedback and mix; the right side sweeps a quarter of a cycle ahead of the left, so a mono vocal flanges across the stereo field.</p>
+    <h3 id="module-phaser" data-i18n="docs.modules.phaser.title">Phaser</h3>
+    <p data-i18n="docs.modules.phaser.p1">A chain of 4, 8 or 12 all-pass stages swept by a slow wave, fed back and blended with the vocal, with rate, depth, frequency, feedback, stages and mix; the right side sweeps a quarter of a cycle ahead of the left.</p>
     <h3 id="module-width" data-i18n="docs.modules.width.title">Width</h3>
     <p data-i18n="docs.modules.width.p1">Narrows or widens the stereo image, from mono at 0 % to 200 %, without changing the mono sum, and a Haas delay of up to 30 ms on the right side to spread a mono vocal.</p>
+    <h3 id="module-autopan" data-i18n="docs.modules.autopan.title">Auto-pan</h3>
+    <p data-i18n="docs.modules.autopan.p1">Moves the vocal from side to side on a sine or a triangle wave, with rate and depth: a balance, so each side keeps its own sound and at the centre both pass as they came in; toward one side the other fades, never louder than it came in.</p>
     <h3 id="module-shifter" data-i18n="docs.modules.shifter.title">Shifter</h3>
     <p data-i18n="docs.modules.shifter.p1">Moves the voice up or down by up to two octaves, its formants moved on their own by up to an octave, with a Mix control: the ad-lib an octave down. Like Tune, it waits 21 milliseconds, or 4 while Tracking.</p>
   </section>
@@ -268,7 +279,7 @@
         <div class="footer__top">
           <div class="footer__about"><a class="nav__brand" href="index.html"><img src="takelight-icon.png" alt="" width="28" height="28" /><span>Freally Takelight</span></a><p data-i18n="site.tagline">Every era’s vocal chain. One plugin.</p>
 <p class="fineprint" data-i18n="price.note">Nothing is for sale yet. From version 1.0, Freally Takelight will be sold as a one-time licence, with a free trial of the whole plugin first.</p></div>
-          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="roster.html" data-page data-i18n="kit.nav.roster">Roster</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
           <div>
             <h2 data-i18n="kit.footer.family">The Freally family</h2>
             <ul class="footer__family"><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-handscore/">Freally Handscore</a></li><li><a href="https://freallyproducts.com/freally-takelight/" aria-current="true">Freally Takelight</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
@@ -276,7 +287,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Not open source. Contact: freallyproducts@gmail.com.</p><p data-i18n="footer.yours">The audio, presets and projects you make with Freally Takelight are yours.</p><p data-i18n="footer.disclaimer">Artist names identify a style only. Freally Takelight is not affiliated with, endorsed by or approved by any artist, producer, engineer, label, publication or plugin maker. A chain applies processing, not a voice.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.6</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.0</span>
         </div>
       </div>
     </footer>

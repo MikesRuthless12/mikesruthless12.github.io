@@ -1,0 +1,1831 @@
+{
+  "chains": 197,
+  "styles": [
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1959,
+      "genre": "60s / 70s Pop and Soul",
+      "kind": "genre",
+      "name": "60s / 70s Pop and Soul",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1979
+    },
+    {
+      "era": "21 era",
+      "eraName": {
+        "kind": "record",
+        "record": "21"
+      },
+      "from": 2010,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Adele",
+      "roles": [
+        "lead"
+      ],
+      "to": 2011
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Afro House",
+      "kind": "genre",
+      "name": "Afro House",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Afrobeats",
+      "kind": "genre",
+      "name": "Afrobeats",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2015,
+      "genre": "Afroswing",
+      "kind": "genre",
+      "name": "Afroswing",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Amapiano",
+      "kind": "genre",
+      "name": "Amapiano",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Back to Black era",
+      "eraName": {
+        "kind": "record",
+        "record": "Back to Black"
+      },
+      "from": 2006,
+      "genre": "Neo-Soul",
+      "kind": "artist",
+      "name": "Amy Winehouse",
+      "roles": [
+        "lead"
+      ],
+      "to": 2006
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "ATL Swag Rap",
+      "kind": "genre",
+      "name": "ATL Swag Rap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Baile Funk",
+      "kind": "genre",
+      "name": "Baile Funk",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2000,
+      "genre": "Baltimore Club",
+      "kind": "genre",
+      "name": "Baltimore Club",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2008
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2004,
+      "genre": "Bassline",
+      "kind": "genre",
+      "name": "Bassline",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Everything Is Love era",
+      "eraName": {
+        "kind": "record",
+        "record": "Everything Is Love"
+      },
+      "from": 2018,
+      "genre": "R&B (2000s)",
+      "kind": "artist",
+      "name": "Beyoncé",
+      "roles": [
+        "lead"
+      ],
+      "to": 2018
+    },
+    {
+      "era": "When We All Fall Asleep era",
+      "eraName": {
+        "kind": "record",
+        "record": "When We All Fall Asleep"
+      },
+      "from": 2019,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Billie Eilish",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "1990s",
+      "eraName": {
+        "kind": "decade",
+        "year": 1990
+      },
+      "from": 1990,
+      "genre": "Boom Bap",
+      "kind": "genre",
+      "name": "Boom Bap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2012,
+      "genre": "Bop",
+      "kind": "genre",
+      "name": "Bop",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2017
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Bouncy Trap",
+      "kind": "genre",
+      "name": "Bouncy Trap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Invasion of Privacy era",
+      "eraName": {
+        "kind": "record",
+        "record": "Invasion of Privacy"
+      },
+      "from": 2017,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Cardi B",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2018
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1996,
+      "genre": "Chicago Bounce",
+      "kind": "genre",
+      "name": "Chicago Bounce",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2001
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2012,
+      "genre": "Chicago Drill",
+      "kind": "genre",
+      "name": "Chicago Drill",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Indigo era",
+      "eraName": {
+        "kind": "record",
+        "record": "Indigo"
+      },
+      "from": 2019,
+      "genre": "R&B (2000s)",
+      "kind": "artist",
+      "name": "Chris Brown",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Losing Sleep era",
+      "eraName": {
+        "kind": "record",
+        "record": "Losing Sleep"
+      },
+      "from": 2017,
+      "genre": "Country Pop",
+      "kind": "artist",
+      "name": "Chris Young",
+      "roles": [
+        "lead"
+      ],
+      "to": 2017
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2011,
+      "genre": "Cloud Rap",
+      "kind": "genre",
+      "name": "Cloud Rap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1955,
+      "genre": "Country (Train Beat)",
+      "kind": "genre",
+      "name": "Country (Train Beat)",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Country Pop",
+      "kind": "genre",
+      "name": "Country Pop",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1956,
+      "genre": "Country Shuffle",
+      "kind": "genre",
+      "name": "Country Shuffle",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2000,
+      "genre": "Crunk",
+      "kind": "genre",
+      "name": "Crunk",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "KIRK era",
+      "eraName": {
+        "kind": "record",
+        "record": "KIRK"
+      },
+      "from": 2019,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "DaBaby",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Dance Pop",
+      "kind": "genre",
+      "name": "Dance Pop",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2000,
+      "genre": "Dancehall",
+      "kind": "genre",
+      "name": "Dancehall",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Dark Plugg",
+      "kind": "genre",
+      "name": "Dark Plugg",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2013,
+      "genre": "Dark Trap",
+      "kind": "genre",
+      "name": "Dark Trap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Psychodrama era",
+      "eraName": {
+        "kind": "record",
+        "record": "Psychodrama"
+      },
+      "from": 2019,
+      "genre": "UK Underground",
+      "kind": "artist",
+      "name": "Dave",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2016,
+      "genre": "Detroit Bounce",
+      "kind": "genre",
+      "name": "Detroit Bounce",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Digicore",
+      "kind": "genre",
+      "name": "Digicore",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1974,
+      "genre": "Disco",
+      "kind": "genre",
+      "name": "Disco",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1982
+    },
+    {
+      "era": "Hot Pink era",
+      "eraName": {
+        "kind": "record",
+        "record": "Hot Pink"
+      },
+      "from": 2019,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Doja Cat",
+      "roles": [
+        "lead"
+      ],
+      "to": 2020
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Dominican Dembow",
+      "kind": "genre",
+      "name": "Dominican Dembow",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "So Far Gone era",
+      "eraName": {
+        "kind": "record",
+        "record": "So Far Gone"
+      },
+      "from": 2009,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Drake",
+      "roles": [
+        "lead"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Take Care era",
+      "eraName": {
+        "kind": "record",
+        "record": "Take Care"
+      },
+      "from": 2011,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Drake",
+      "roles": [
+        "lead",
+        "fx"
+      ],
+      "to": 2011
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2016,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Drake",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "1990s",
+      "eraName": {
+        "kind": "decade",
+        "year": 1990
+      },
+      "from": 1993,
+      "genre": "Dungeon Family",
+      "kind": "genre",
+      "name": "Dungeon Family",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "EDM Rage",
+      "kind": "genre",
+      "name": "EDM Rage",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2012,
+      "genre": "EDM Trap",
+      "kind": "genre",
+      "name": "EDM Trap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2016,
+      "genre": "Emo Rap",
+      "kind": "genre",
+      "name": "Emo Rap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Infinity On High era",
+      "eraName": {
+        "kind": "record",
+        "record": "Infinity On High"
+      },
+      "from": 2007,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Fall Out Boy",
+      "roles": [
+        "lead"
+      ],
+      "to": 2007
+    },
+    {
+      "era": "The Dutchess era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Dutchess"
+      },
+      "from": 2006,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Fergie",
+      "roles": [
+        "lead"
+      ],
+      "to": 2007
+    },
+    {
+      "era": "The E.N.D. era",
+      "eraName": {
+        "kind": "record",
+        "record": "The E.N.D."
+      },
+      "from": 2009,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Fergie",
+      "roles": [
+        "lead"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Mail on Sunday era",
+      "eraName": {
+        "kind": "record",
+        "record": "Mail on Sunday"
+      },
+      "from": 2007,
+      "genre": "Dance Pop",
+      "kind": "artist",
+      "name": "Flo Rida",
+      "roles": [
+        "lead"
+      ],
+      "to": 2008
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1965,
+      "genre": "Funk",
+      "kind": "genre",
+      "name": "Funk",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1979
+    },
+    {
+      "era": "FUTURE era",
+      "eraName": {
+        "kind": "record",
+        "record": "FUTURE"
+      },
+      "from": 2017,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Future",
+      "roles": [
+        "lead"
+      ],
+      "to": 2017
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2013,
+      "genre": "Future Bass",
+      "kind": "genre",
+      "name": "Future Bass",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "1990s",
+      "eraName": {
+        "kind": "decade",
+        "year": 1990
+      },
+      "from": 1992,
+      "genre": "G-Funk",
+      "kind": "genre",
+      "name": "G-Funk",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "1990s",
+      "eraName": {
+        "kind": "decade",
+        "year": 1990
+      },
+      "from": 1990,
+      "genre": "House",
+      "kind": "genre",
+      "name": "House",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1994,
+      "genre": "Houston Screw",
+      "kind": "genre",
+      "name": "Houston Screw",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2008
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2004,
+      "genre": "Hyphy",
+      "kind": "genre",
+      "name": "Hyphy",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "The Blueprint 3 era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Blueprint 3"
+      },
+      "from": 2009,
+      "genre": "Boom Bap",
+      "kind": "artist",
+      "name": "JAY-Z",
+      "roles": [
+        "lead"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Everything Is Love era",
+      "eraName": {
+        "kind": "record",
+        "record": "Everything Is Love"
+      },
+      "from": 2018,
+      "genre": "Boom Bap",
+      "kind": "artist",
+      "name": "JAY-Z",
+      "roles": [
+        "lead"
+      ],
+      "to": 2018
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1950,
+      "genre": "Jazz",
+      "kind": "genre",
+      "name": "Jazz",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1969
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2023,
+      "genre": "Jerk",
+      "kind": "genre",
+      "name": "Jerk",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Jersey Club",
+      "kind": "genre",
+      "name": "Jersey Club",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2000,
+      "genre": "Jump-Up DnB",
+      "kind": "genre",
+      "name": "Jump-Up DnB",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "1990s",
+      "eraName": {
+        "kind": "decade",
+        "year": 1990
+      },
+      "from": 1992,
+      "genre": "Jungle",
+      "kind": "genre",
+      "name": "Jungle",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "Purpose era",
+      "eraName": {
+        "kind": "record",
+        "record": "Purpose"
+      },
+      "from": 2015,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Justin Bieber",
+      "roles": [
+        "lead"
+      ],
+      "to": 2015
+    },
+    {
+      "era": "The 20/20 Experience era",
+      "eraName": {
+        "kind": "record",
+        "record": "The 20/20 Experience"
+      },
+      "from": 2013,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Justin Timberlake",
+      "roles": [
+        "lead"
+      ],
+      "to": 2013
+    },
+    {
+      "era": "Graduation era",
+      "eraName": {
+        "kind": "record",
+        "record": "Graduation"
+      },
+      "from": 2007,
+      "genre": "Boom Bap",
+      "kind": "artist",
+      "name": "Kanye West",
+      "roles": [
+        "lead"
+      ],
+      "to": 2007
+    },
+    {
+      "era": "Black Panther: The Album era",
+      "eraName": {
+        "kind": "record",
+        "record": "Black Panther: The Album"
+      },
+      "from": 2018,
+      "genre": "West Coast Club",
+      "kind": "artist",
+      "name": "Kendrick Lamar",
+      "roles": [
+        "lead"
+      ],
+      "to": 2018
+    },
+    {
+      "era": "Rainbow era",
+      "eraName": {
+        "kind": "record",
+        "record": "Rainbow"
+      },
+      "from": 2017,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Kesha",
+      "roles": [
+        "lead"
+      ],
+      "to": 2017
+    },
+    {
+      "era": "Golden era",
+      "eraName": {
+        "kind": "record",
+        "record": "Golden"
+      },
+      "from": 2018,
+      "genre": "Dance Pop",
+      "kind": "artist",
+      "name": "Kylie Minogue",
+      "roles": [
+        "lead"
+      ],
+      "to": 2018
+    },
+    {
+      "era": "Lust For Life era",
+      "eraName": {
+        "kind": "record",
+        "record": "Lust For Life"
+      },
+      "from": 2017,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Lana Del Rey",
+      "roles": [
+        "lead"
+      ],
+      "to": 2017
+    },
+    {
+      "era": "My Turn era",
+      "eraName": {
+        "kind": "record",
+        "record": "My Turn"
+      },
+      "from": 2020,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Lil Baby",
+      "roles": [
+        "lead"
+      ],
+      "to": 2020
+    },
+    {
+      "era": "Luv Is Rage 2 era",
+      "eraName": {
+        "kind": "record",
+        "record": "Luv Is Rage 2"
+      },
+      "from": 2017,
+      "genre": "Rage",
+      "kind": "artist",
+      "name": "Lil Uzi Vert",
+      "roles": [
+        "lead"
+      ],
+      "to": 2017
+    },
+    {
+      "era": "Tha Carter IV era",
+      "eraName": {
+        "kind": "record",
+        "record": "Tha Carter IV"
+      },
+      "from": 2011,
+      "genre": "NOLA Bounce",
+      "kind": "artist",
+      "name": "Lil Wayne",
+      "roles": [
+        "lead"
+      ],
+      "to": 2011
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2000,
+      "genre": "Liquid Drum & Bass",
+      "kind": "genre",
+      "name": "Liquid Drum & Bass",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Lo-Fi Hip Hop",
+      "kind": "genre",
+      "name": "Lo-Fi Hip Hop",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Lowend",
+      "kind": "genre",
+      "name": "Lowend",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "What You See Is What You Get era",
+      "eraName": {
+        "kind": "record",
+        "record": "What You See Is What You Get"
+      },
+      "from": 2019,
+      "genre": "Country Pop",
+      "kind": "artist",
+      "name": "Luke Combs",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "It Won't Be Soon Before Long era",
+      "eraName": {
+        "kind": "record",
+        "record": "It Won't Be Soon Before Long"
+      },
+      "from": 2007,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Maroon 5",
+      "roles": [
+        "lead"
+      ],
+      "to": 2007
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1991,
+      "genre": "Memphis Rap",
+      "kind": "genre",
+      "name": "Memphis Rap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1970,
+      "genre": "Metal",
+      "kind": "genre",
+      "name": "Metal",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2015,
+      "genre": "Michigan Off-Grid",
+      "kind": "genre",
+      "name": "Michigan Off-Grid",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "The Black Parade era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Black Parade"
+      },
+      "from": 2006,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "My Chemical Romance",
+      "roles": [
+        "lead"
+      ],
+      "to": 2006
+    },
+    {
+      "era": "Year of the Gentleman era",
+      "eraName": {
+        "kind": "record",
+        "record": "Year of the Gentleman"
+      },
+      "from": 2008,
+      "genre": "R&B (2000s)",
+      "kind": "artist",
+      "name": "Ne-Yo",
+      "roles": [
+        "lead"
+      ],
+      "to": 2008
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1995,
+      "genre": "Neo-Soul",
+      "kind": "genre",
+      "name": "Neo-Soul",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2005
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Neurofunk",
+      "kind": "genre",
+      "name": "Neurofunk",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Pink Friday: Roman Reloaded era",
+      "eraName": {
+        "kind": "record",
+        "record": "Pink Friday: Roman Reloaded"
+      },
+      "from": 2012,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Nicki Minaj",
+      "roles": [
+        "lead"
+      ],
+      "to": 2012
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1993,
+      "genre": "NOLA Bounce",
+      "kind": "genre",
+      "name": "NOLA Bounce",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2005
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "NY Drill",
+      "kind": "genre",
+      "name": "NY Drill",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Paramore era",
+      "eraName": {
+        "kind": "record",
+        "record": "Paramore"
+      },
+      "from": 2013,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Paramore",
+      "roles": [
+        "lead"
+      ],
+      "to": 2013
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Philly Club",
+      "kind": "genre",
+      "name": "Philly Club",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Phonk",
+      "kind": "genre",
+      "name": "Phonk",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2015,
+      "genre": "Plugg",
+      "kind": "genre",
+      "name": "Plugg",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "PluggnB",
+      "kind": "genre",
+      "name": "PluggnB",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2000,
+      "genre": "Pop (2000s)",
+      "kind": "genre",
+      "name": "Pop (2000s)",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Pop 2020s",
+      "kind": "genre",
+      "name": "Pop 2020s",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Pop DnB",
+      "kind": "genre",
+      "name": "Pop DnB",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1969,
+      "genre": "Progressive Rock",
+      "kind": "genre",
+      "name": "Progressive Rock",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1981
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 2000,
+      "genre": "R&B (2000s)",
+      "kind": "genre",
+      "name": "R&B (2000s)",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "Rage",
+      "kind": "genre",
+      "name": "Rage",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Reggaeton",
+      "kind": "genre",
+      "name": "Reggaeton",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 2004,
+      "genre": "Ringtone Club Rap",
+      "kind": "genre",
+      "name": "Ringtone Club Rap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2000,
+      "genre": "Rock",
+      "kind": "genre",
+      "name": "Rock",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "In The Lonely Hour era",
+      "eraName": {
+        "kind": "record",
+        "record": "In The Lonely Hour"
+      },
+      "from": 2014,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Sam Smith",
+      "roles": [
+        "lead"
+      ],
+      "to": 2014
+    },
+    {
+      "era": "Rare era",
+      "eraName": {
+        "kind": "record",
+        "record": "Rare"
+      },
+      "from": 2020,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Selena Gomez",
+      "roles": [
+        "lead"
+      ],
+      "to": 2020
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2022,
+      "genre": "Sexy Drill",
+      "kind": "genre",
+      "name": "Sexy Drill",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Oral Fixation Vol. 2 era",
+      "eraName": {
+        "kind": "record",
+        "record": "Oral Fixation Vol. 2"
+      },
+      "from": 2006,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Shakira",
+      "roles": [
+        "lead"
+      ],
+      "to": 2006
+    },
+    {
+      "era": "Illuminate era",
+      "eraName": {
+        "kind": "record",
+        "record": "Illuminate"
+      },
+      "from": 2016,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Shawn Mendes",
+      "roles": [
+        "lead"
+      ],
+      "to": 2016
+    },
+    {
+      "era": "Black Panther: The Album era",
+      "eraName": {
+        "kind": "record",
+        "record": "Black Panther: The Album"
+      },
+      "from": 2018,
+      "genre": "Neo-Soul",
+      "kind": "artist",
+      "name": "SZA",
+      "roles": [
+        "lead"
+      ],
+      "to": 2018
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2007,
+      "genre": "Ringtone Club Rap",
+      "kind": "artist",
+      "name": "T-Pain",
+      "roles": [
+        "lead"
+      ],
+      "to": 2007
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1985,
+      "genre": "Techno",
+      "kind": "genre",
+      "name": "Techno",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 1999
+    },
+    {
+      "era": "The E.N.D. era",
+      "eraName": {
+        "kind": "record",
+        "record": "The E.N.D."
+      },
+      "from": 2009,
+      "genre": "Dance Pop",
+      "kind": "artist",
+      "name": "The Black Eyed Peas",
+      "roles": [
+        "lead"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "2000s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2000
+      },
+      "from": 2003,
+      "genre": "Trap",
+      "kind": "genre",
+      "name": "Trap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2010,
+      "genre": "Trap",
+      "kind": "genre",
+      "name": "Trap",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2015,
+      "genre": "Trap Soul",
+      "kind": "genre",
+      "name": "Trap Soul",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    },
+    {
+      "era": "A Love Letter To You 5 era",
+      "eraName": {
+        "kind": "record",
+        "record": "A Love Letter To You 5"
+      },
+      "from": 2023,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Trippie Redd",
+      "roles": [
+        "lead"
+      ],
+      "to": 2023
+    },
+    {
+      "era": "Formula Of Love era",
+      "eraName": {
+        "kind": "record",
+        "record": "Formula Of Love"
+      },
+      "from": 2021,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Twice",
+      "roles": [
+        "lead"
+      ],
+      "to": 2021
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2020,
+      "genre": "UK Drill",
+      "kind": "genre",
+      "name": "UK Drill",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "Classic era",
+      "eraName": {
+        "kind": "classic"
+      },
+      "from": 1997,
+      "genre": "UK Garage",
+      "kind": "genre",
+      "name": "UK Garage",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2003
+    },
+    {
+      "era": "Modern era",
+      "eraName": {
+        "kind": "modern"
+      },
+      "from": 2023,
+      "genre": "UK Underground",
+      "kind": "genre",
+      "name": "UK Underground",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2026
+    },
+    {
+      "era": "2010s",
+      "eraName": {
+        "kind": "decade",
+        "year": 2010
+      },
+      "from": 2012,
+      "genre": "West Coast Club",
+      "kind": "genre",
+      "name": "West Coast Club",
+      "roles": [
+        "lead",
+        "adlib"
+      ],
+      "to": 2019
+    }
+  ]
+}
