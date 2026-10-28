@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**Las compuertas** — sin IA, sin red, sin código prestado, nombres de producto y palabras prohibidas, sin descargas antes de la 1.0, la escalera, licencias, los crates compartidos, el kit de interfaz y el arte del hardware, idiomas y CSS lógico, la deriva de los bindings y ninguna asignación de memoria en el hilo de audio.",
   "changelog.872b0df7744d": "**CI autoalojada** — `npm run ci:local` (Windows) y `npm run ci:linux` (Docker Desktop), una sola lista de compuertas; Playwright contra el editor y contra la app independiente real.",
   "changelog.5cbd8ff53c0a": "**El camino de lanzamiento** — `npm run release:local` compila exactamente el tag, valida los paquetes, escribe la carpeta de lanzamiento con sumas de verificación, deja `target/` solo con ella e instala VST3 y CLAP con un solo aviso de UAC.",
-  "changelog.4e9699d53d2d": "**El esqueleto del sitio de documentación** y el esqueleto de los datos de cadenas (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**El esqueleto del sitio de documentación** y el esqueleto de los datos de cadenas (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — La primera ola, completa",
+  "changelog.c4df85f5a8f5": "El resto de la primera ola: cuatro módulos nuevos y dos modos nuevos, siete cadenas más que los necesitaban y doce artistas más.",
+  "changelog.40209e252617": "**Supresor de resonancias** — encuentra dónde tu voz resuena por encima de las frecuencias que la rodean y baja solo esas, solo mientras resuenan, en el rango que elijas. Nunca mira hacia adelante, así que no añade latencia y funciona mientras grabas.",
+  "changelog.b43956f634d4": "**Modelador de transitorios** — realza o suaviza el inicio de cada sonido con Attack y su resonancia con Sostenido, sea cual sea su nivel; una nota sostenida pasa intacta. Su tarjeta dibuja un golpe antes y después.",
+  "changelog.7b02441ac0e0": "**Ducker espectral** — en un retorno, un delay o una reverb se apartan del camino de tu voz solo en las frecuencias que tu voz ocupa, y vuelven entre frases.",
+  "changelog.da714ee8ef00": "**Bombeo** — baja tu voz en cada pulso, o cada compás, blanca, corchea o semicorchea, y la devuelve a lo largo de una curva, a tempo con tu proyecto. Su tarjeta dibuja las bajadas a lo largo de un compás.",
+  "changelog.ae63cc9c793a": "**Destello** — un sexto carácter de la reverb: la cola del salón da otra vuelta una octava más arriba, tanto como deje su perilla de Destello.",
+  "changelog.27fe8f8a733d": "**Compresión ascendente en el Multibanda** — cada banda eleva lo que cae por debajo de su umbral ascendente, hasta un máximo que eliges; a 1:1 no eleva nada, así que las cadenas de antes suenan como antes.",
+  "changelog.90f9e62dcb2d": "**Siete cadenas más** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha y Panic! at the Disco, cada una en la era de un disco.",
+  "changelog.394f8ff372ad": "**Doce artistas más** — Lady Gaga en dos eras, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder y Tones And I."
 }

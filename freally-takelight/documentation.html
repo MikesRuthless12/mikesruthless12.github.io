@@ -75,7 +75,7 @@
     <h2 id="browser" data-i18n="docs.browser.title">Finding a chain</h2>
     <p data-i18n="docs.browser.p1">Type in the search at the top — an artist, a nickname or a genre — or press Ctrl+K (Cmd+K on a Mac) from anywhere. The chains appear as you type: each artist with its eras, each era with its years and its roles, such as lead, ad-lib or FX. Choose one and the whole chain loads in order, click-free, while the track plays. The arrow keys move through the list, Enter loads, and Escape closes it.</p>
     <p data-i18n="docs.browser.p2">With the search empty, it offers the chains you loaded last. An artist with no chain yet offers chains from their genre, and a name it does not know says so and suggests a genre.</p>
-    <p data-i18n="docs.browser.p3">Version 0.6.0 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era; forty more artists, era by era; and a lead and an ad-lib for every one of the 73 genres, trap in two decades. The roster page lists them all. Each chain is named for its artist or genre and its era, and nothing more.</p>
+    <p data-i18n="docs.browser.p3">Version 0.6.1 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era; forty more artists, era by era; and a lead and an ad-lib for every one of the 73 genres, trap in two decades. The roster page lists them all. Each chain is named for its artist or genre and its era, and nothing more.</p>
     <figure class="demo"><video src="media/feature-browser.webm" poster="media/feature-browser.jpg" autoplay muted loop playsinline preload="metadata" width="2400" height="1350"></video><figcaption data-i18n="docs.browser.title">Finding a chain</figcaption></figure>
   </section>
 
@@ -168,7 +168,7 @@
 
   <section>
     <h2 id="modules" data-i18n="docs.modules.title">The modules</h2>
-    <p data-i18n="docs.modules.p1">Version 0.6.0 has thirty modules. Each is Takelight's own design, and none claims to be any other product.</p>
+    <p data-i18n="docs.modules.p1">Version 0.6.1 has thirty-four modules. Each is Takelight's own design, and none claims to be any other product.</p>
     <h3 id="module-tune" data-i18n="docs.modules.tune.title">Tune</h3>
     <p data-i18n="docs.modules.tune.p1">Pitch correction to a key — Auto Key, Chromatic or one of the 24 — with Retune speed from 0 to 400 ms, Humanize and Flex, and a graph of the pitch sung and tuned. One per rack; see Tune and Auto Key above.</p>
     <h3 id="module-trim" data-i18n="docs.modules.trim.title">Trim</h3>
@@ -181,6 +181,8 @@
     <p data-i18n="docs.modules.program.p1">Broad, gentle boosts and cuts at the low and high ends, and a tube stage for warmth.</p>
     <h3 id="module-dynamic-eq" data-i18n="docs.modules.dynamiceq.title">Dynamic EQ</h3>
     <p data-i18n="docs.modules.dynamiceq.p1">Two bands, a bell or a shelf each, whose gain moves with the level in their own part of the vocal: a negative range cuts a harsh or boomy region only when it gets loud, a positive one lifts it as the voice rises. Each band has a frequency, Q, threshold, ratio and range, with one attack, release and output.</p>
+    <h3 id="module-resonance-suppressor" data-i18n="docs.modules.resonance.title">Resonance Suppressor</h3>
+    <p data-i18n="docs.modules.resonance.p1">Finds where the voice rings out over the frequencies around it and turns down only those, only while they ring: 24 narrow bands across a range you set, with depth, selectivity, sharpness, attack and release. It never looks ahead, so it adds no latency and works while you record.</p>
     <h3 id="module-opto" data-i18n="docs.modules.opto.title">Opto Compressor</h3>
     <p data-i18n="docs.modules.opto.p1">Smooth levelling that follows the performance, from one Peak reduction knob, in an Opto and a Tube opto character, compressing or limiting.</p>
     <h3 id="module-fet" data-i18n="docs.modules.fet.title">FET Compressor</h3>
@@ -188,19 +190,25 @@
     <h3 id="module-vca" data-i18n="docs.modules.vca.title">VCA Compressor</h3>
     <p data-i18n="docs.modules.vca.p1">Clean and precise, in a Bus and a Channel character, with RMS or peak detection, a sidechain high-pass and a Mix control.</p>
     <h3 id="module-multiband" data-i18n="docs.modules.multiband.title">Multiband Compressor</h3>
-    <p data-i18n="docs.modules.multiband.p1">Splits the vocal into low, mid and high bands at two crossovers and compresses each on its own, with a threshold, ratio and gain per band and one attack, release, knee, output and mix. With nothing taken, the bands add back up to the vocal as it was.</p>
+    <p data-i18n="docs.modules.multiband.p1">Splits the vocal into low, mid and high bands at two crossovers and compresses each on its own, with a threshold, ratio and gain per band and one attack, release, knee, output and mix. With nothing taken, the bands add back up to the vocal as it was. Its upward half lifts what falls under each band's upward threshold, up to a most you set; at 1:1 it lifts nothing.</p>
     <h3 id="module-vari-mu" data-i18n="docs.modules.varimu.title">Vari-mu Compressor</h3>
     <p data-i18n="docs.modules.varimu.p1">A tube compressor whose ratio rises the harder it works, so it starts gently and holds firm, with six time constants; 5 and 6 let go more slowly the longer it has been compressing.</p>
     <h3 id="module-punch" data-i18n="docs.modules.punch.title">Punch Compressor</h3>
     <p data-i18n="docs.modules.punch.p1">A character compressor in five characters, from Normal to Distortion 3, with Nuke for extreme compression and a Mix control.</p>
+    <h3 id="module-transient-shaper" data-i18n="docs.modules.transient.title">Transient Shaper</h3>
+    <p data-i18n="docs.modules.transient.p1">Lifts or softens the start of each sound with Attack, and its ring-out with Sustain, whatever its level, with a Speed and an Output. A held note passes untouched, and it adds no latency.</p>
     <h3 id="module-vox-leveler" data-i18n="docs.modules.vox.title">Vox Leveler</h3>
     <p data-i18n="docs.modules.vox.p1">Evens out a vocal's level with just a threshold and an output.</p>
     <h3 id="module-level-rider" data-i18n="docs.modules.rider.title">Level Rider</h3>
     <p data-i18n="docs.modules.rider.p1">Rides the vocal's level toward a target loudness — up for the quiet words, down for the loud ones — within a range and at a speed you set, and leaves the breaths between phrases alone. An optional 10 ms look-ahead lets it move just before a word; it adds 10 ms of latency, which Takelight reports to your DAW.</p>
     <h3 id="module-de-esser" data-i18n="docs.modules.deesser.title">De-esser</h3>
     <p data-i18n="docs.modules.deesser.p1">Tames harsh "s" sounds, split-band or wideband, with a bell or a shelf, and relative or absolute detection.</p>
+    <h3 id="module-ducker" data-i18n="docs.modules.ducker.title">Spectral Ducker</h3>
+    <p data-i18n="docs.modules.ducker.p1">Moves what passes through out of the vocal's way, only at the frequencies the vocal fills, and lets it back between phrases, with an amount, threshold, attack, release and range. On a return it listens to the vocal sent there, so a delay or a reverb clears room for the words.</p>
     <h3 id="module-gate" data-i18n="docs.modules.gate.title">Gate</h3>
     <p data-i18n="docs.modules.gate.p1">A gate or an expander between phrases, with hold, hysteresis and sidechain filters so breaths and bleed do not open it.</p>
+    <h3 id="module-pump" data-i18n="docs.modules.pump.title">Pump</h3>
+    <p data-i18n="docs.modules.pump.p1">Dips the vocal on every beat — or every bar, half, eighth or sixteenth note — and brings it back along a curve, in time with your project, so the vocal moves with the kick. Depth, rate, curve, fall and an offset.</p>
     <h3 id="module-saturation" data-i18n="docs.modules.saturation.title">Saturation</h3>
     <p data-i18n="docs.modules.saturation.p1">Tape, Tube, Transformer, Inflate and Clip, oversampled so the harmonics it adds stay clean; Clip holds the peaks at full scale over a short, smooth knee.</p>
     <h3 id="module-exciter" data-i18n="docs.modules.exciter.title">Exciter</h3>
@@ -212,7 +220,7 @@
     <h3 id="module-delay" data-i18n="docs.modules.delay.title">Delay</h3>
     <p data-i18n="docs.modules.delay.p1">Five characters — Digital, Tape, Analog, Ping-pong and Slap. Its time is set in milliseconds or as a note value from 1/64 to two bars, triplets and dotted notes among them, in time with your project. Filters in the feedback, ducking under the vocal, and width; above 100 % feedback the repeats swell and hold instead of running away.</p>
     <h3 id="module-reverb" data-i18n="docs.modules.reverb.title">Reverb</h3>
-    <p data-i18n="docs.modules.reverb.p1">Five characters — Plate, Room, Hall, Chamber and Ambience — with pre-delay, a decay from 0.1 to 20 seconds, size, damping, diffusion, modulation and filters on the return. The decay is the time the tail takes to fall by 60 dB.</p>
+    <p data-i18n="docs.modules.reverb.p1">Six characters — Plate, Room, Hall, Chamber, Ambience and Shimmer — with pre-delay, a decay from 0.1 to 20 seconds, size, damping, diffusion, modulation and filters on the return. The decay is the time the tail takes to fall by 60 dB. Shimmer sends the hall's tail round again an octave up, as much as its knob lets.</p>
     <h3 id="module-reverse-gate" data-i18n="docs.modules.reversegate.title">Reverse Gate</h3>
     <p data-i18n="docs.modules.reversegate.p1">The reverse reverb: after each sound, a wash that swells over the gate length, from 50 ms to a second, and stops dead. It never looks ahead, so it adds no latency and works while you record.</p>
     <h3 id="module-doubler" data-i18n="docs.modules.doubler.title">Doubler</h3>
@@ -287,7 +295,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Not open source. Contact: freallyproducts@gmail.com.</p><p data-i18n="footer.yours">The audio, presets and projects you make with Freally Takelight are yours.</p><p data-i18n="footer.disclaimer">Artist names identify a style only. Freally Takelight is not affiliated with, endorsed by or approved by any artist, producer, engineer, label, publication or plugin maker. A chain applies processing, not a voice.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.6.1</span>
         </div>
       </div>
     </footer>

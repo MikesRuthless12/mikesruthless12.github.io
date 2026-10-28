@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**Các cổng kiểm tra** — không AI, không mạng, không mã vay mượn, tên sản phẩm và từ cấm, không tải xuống trước 1.0, bậc thang phiên bản, giấy phép, các crate dùng chung, bộ giao diện và hình ảnh phần cứng, ngôn ngữ và CSS logic, độ lệch binding và không cấp phát bộ nhớ trên luồng âm thanh.",
   "changelog.872b0df7744d": "**CI tự lưu trữ** — `npm run ci:local` (Windows) và `npm run ci:linux` (Docker Desktop), một danh sách kiểm tra; Playwright với trình chỉnh sửa và với ứng dụng độc lập thật.",
   "changelog.5cbd8ff53c0a": "**Lộ trình phát hành** — `npm run release:local` dựng đúng tag, kiểm tra các gói, ghi thư mục phát hành kèm mã băm, dọn `target/` chỉ còn thư mục đó và cài VST3 cùng CLAP qua một lời nhắc UAC duy nhất.",
-  "changelog.4e9699d53d2d": "**Khung trang tài liệu** và khung dữ liệu chuỗi (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**Khung trang tài liệu** và khung dữ liệu chuỗi (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — Đợt đầu tiên trọn vẹn",
+  "changelog.c4df85f5a8f5": "Phần còn lại của đợt đầu tiên: bốn mô-đun mới và hai chế độ mới, thêm bảy chuỗi cần đến chúng và thêm mười hai nghệ sĩ.",
+  "changelog.40209e252617": "**Bộ triệt cộng hưởng** — tìm chỗ giọng của bạn vang trội hơn các tần số xung quanh và chỉ hạ những chỗ đó, chỉ trong lúc chúng vang, trên dải tần bạn chọn. Nó không bao giờ nhìn trước, nên không thêm độ trễ và dùng được khi đang thu.",
+  "changelog.b43956f634d4": "**Bộ tạo hình transient** — nâng hoặc làm dịu phần mở đầu của mỗi âm bằng Attack, và phần ngân bằng Ngân, bất kể mức to nhỏ; nốt ngân dài đi qua nguyên vẹn. Thẻ của nó vẽ một cú đánh trước và sau.",
+  "changelog.7b02441ac0e0": "**Bộ ducker phổ** — trên một kênh trả về, delay hay reverb chỉ nhường đường cho giọng hát ở những tần số giọng hát chiếm, rồi trở lại giữa các câu.",
+  "changelog.da714ee8ef00": "**Bơm** — hạ giọng của bạn ở mỗi phách, hoặc mỗi ô nhịp, nốt trắng, móc đơn hay móc kép, rồi đưa trở lại theo một đường cong, khớp nhịp dự án của bạn. Thẻ của nó vẽ các lần hạ trên một ô nhịp.",
+  "changelog.ae63cc9c793a": "**Lấp lánh** — đặc tính thứ sáu của reverb: đuôi vang của hội trường quay vòng lại cao hơn một quãng tám, nhiều ít tùy núm Lấp lánh.",
+  "changelog.27fe8f8a733d": "**Nén hướng lên trong Đa dải** — mỗi dải nâng những gì rơi xuống dưới ngưỡng nâng của nó, tới mức tối đa bạn đặt; ở 1:1 không nâng gì, nên các chuỗi trước đây vẫn nghe như cũ.",
+  "changelog.90f9e62dcb2d": "**Thêm bảy chuỗi** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha và Panic! at the Disco, mỗi chuỗi ở thời kỳ của một album.",
+  "changelog.394f8ff372ad": "**Thêm mười hai nghệ sĩ** — Lady Gaga ở hai thời kỳ, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder và Tones And I."
 }

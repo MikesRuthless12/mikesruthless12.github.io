@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**게이트** — AI 없음, 네트워크 없음, 빌린 코드 없음, 제품 이름과 금지어, 1.0 전 다운로드 없음, 래더, 라이선스, 공유 크레이트, UI 키트와 하드웨어 아트, 언어와 논리적 CSS, 바인딩 어긋남, 오디오 스레드의 메모리 할당 없음.",
   "changelog.872b0df7744d": "**자체 호스팅 CI** — `npm run ci:local`(Windows)과 `npm run ci:linux`(Docker Desktop), 하나의 게이트 목록. 에디터와 실제 독립 실행형 앱을 대상으로 한 Playwright.",
   "changelog.5cbd8ff53c0a": "**릴리스 경로** — `npm run release:local`이 태그를 정확히 빌드하고, 번들을 검증하고, 체크섬과 함께 릴리스 폴더를 쓰고, `target/`을 그 폴더만 남기도록 정리하고, UAC 프롬프트 한 번으로 VST3와 CLAP을 설치합니다.",
-  "changelog.4e9699d53d2d": "**문서 사이트의 뼈대**와 체인 데이터의 뼈대(`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**문서 사이트의 뼈대**와 체인 데이터의 뼈대(`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — 첫 번째 물결 완성",
+  "changelog.c4df85f5a8f5": "첫 번째 물결의 나머지: 새 모듈 네 개와 새 모드 두 개, 그것이 필요했던 체인 일곱 개, 그리고 아티스트 열두 명이 더해졌습니다.",
+  "changelog.40209e252617": "**레조넌스 서프레서** — 설정한 범위 안에서 목소리가 주변 주파수보다 튀어나와 울리는 곳을 찾아, 울리는 동안에만 그 부분만 줄입니다. 앞을 미리 보지 않으므로 레이턴시를 더하지 않고 녹음 중에도 쓸 수 있습니다.",
+  "changelog.b43956f634d4": "**트랜지언트 셰이퍼** — 어택으로 각 소리의 시작을, 서스테인으로 그 여운을 레벨과 상관없이 살리거나 누그러뜨리며, 길게 끄는 음은 그대로 지나갑니다. 카드에는 한 번의 타격이 처리 전과 후로 그려집니다.",
+  "changelog.7b02441ac0e0": "**스펙트럴 더커** — 리턴의 딜레이나 리버브가 목소리가 채우는 주파수에서만 목소리의 길에서 비켜나고, 구절 사이에 다시 돌아옵니다.",
+  "changelog.da714ee8ef00": "**펌프** — 박마다, 또는 마디, 2분, 8분, 16분 음표마다 목소리를 낮췄다가 프로젝트의 템포에 맞춰 곡선을 따라 되돌립니다. 카드에는 한 마디에 걸친 하강이 그려집니다.",
+  "changelog.ae63cc9c793a": "**시머** — 리버브의 여섯 번째 캐릭터: 홀의 꼬리가 한 옥타브 위로 다시 돌며, 그 양은 시머 노브가 정합니다.",
+  "changelog.27fe8f8a733d": "**멀티밴드의 업워드 컴프레션** — 각 밴드가 업워드 스레숄드 아래로 떨어지는 부분을 설정한 최대치까지 끌어올립니다. 1:1에서는 아무것도 올리지 않으므로 이전 체인은 예전 그대로 들립니다.",
+  "changelog.90f9e62dcb2d": "**체인 일곱 개 추가** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha, Panic! at the Disco. 각각 한 음반의 시대를 담았습니다.",
+  "changelog.394f8ff372ad": "**아티스트 열두 명 추가** — 두 시대의 Lady Gaga, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder, Tones And I."
 }

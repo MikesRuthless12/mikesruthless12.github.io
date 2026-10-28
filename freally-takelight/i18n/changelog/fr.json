@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**Les contrôles** — pas d'IA, pas de réseau, pas de code emprunté, noms de produit et mots interdits, pas de téléchargement avant la 1.0, l'échelle, les licences, les crates partagés, le kit d'interface et les visuels du matériel, les langues et le CSS logique, la dérive des bindings et aucune allocation sur le thread audio.",
   "changelog.872b0df7744d": "**CI auto-hébergée** — `npm run ci:local` (Windows) et `npm run ci:linux` (Docker Desktop), une seule liste de contrôles ; Playwright contre l'éditeur et contre la vraie application autonome.",
   "changelog.5cbd8ff53c0a": "**Le chemin de sortie** — `npm run release:local` construit exactement le tag, valide les bundles, écrit le dossier de sortie avec ses sommes de contrôle, réduit `target/` à ce dossier et installe VST3 et CLAP via une seule invite UAC.",
-  "changelog.4e9699d53d2d": "**Le squelette du site de documentation** et le squelette des données de chaînes (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**Le squelette du site de documentation** et le squelette des données de chaînes (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — La première vague au complet",
+  "changelog.c4df85f5a8f5": "Le reste de la première vague : quatre nouveaux modules et deux nouveaux modes, sept chaînes de plus qui en avaient besoin, et douze artistes de plus.",
+  "changelog.40209e252617": "**Suppresseur de résonances** — repère les fréquences où votre voix résonne au-dessus de celles qui l’entourent et n’abaisse qu’elles, et seulement tant qu’elles résonnent, sur la plage que vous choisissez. Il ne regarde jamais en avant, n’ajoute donc aucune latence et fonctionne pendant l’enregistrement.",
+  "changelog.b43956f634d4": "**Façonneur de transitoires** — accentue ou adoucit le début de chaque son avec l’attaque, et sa résonance avec le maintien, quel que soit son niveau ; une note tenue passe intacte. Sa carte dessine un coup avant et après.",
+  "changelog.7b02441ac0e0": "**Ducker spectral** — sur un retour, un délai ou une réverbe s’écarte du chemin de votre voix seulement aux fréquences qu’elle occupe, et revient entre les phrases.",
+  "changelog.da714ee8ef00": "**Pompage** — abaisse votre voix à chaque temps, ou chaque mesure, blanche, croche ou double croche, et la ramène le long d’une courbe, en rythme avec votre projet. Sa carte dessine les creux sur une mesure.",
+  "changelog.ae63cc9c793a": "**Miroitement** — un sixième caractère de la réverbe : la queue de la salle repart une octave plus haut, autant que son bouton Miroitement le permet.",
+  "changelog.27fe8f8a733d": "**Compression ascendante dans le Multibande** — chaque bande remonte ce qui passe sous son seuil ascendant, jusqu’à un maximum que vous fixez ; à 1:1 elle ne remonte rien, et les chaînes d’avant sonnent comme avant.",
+  "changelog.90f9e62dcb2d": "**Sept chaînes de plus** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha et Panic! at the Disco, chacune à l’époque d’un disque.",
+  "changelog.394f8ff372ad": "**Douze artistes de plus** — Lady Gaga à deux époques, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder et Tones And I."
 }

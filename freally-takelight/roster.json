@@ -1,5 +1,5 @@
 {
-  "chains": 197,
+  "chains": 217,
   "styles": [
     {
       "era": "Classic era",
@@ -173,6 +173,21 @@
       "to": 2009
     },
     {
+      "era": "Bebe era",
+      "eraName": {
+        "kind": "record",
+        "record": "Bebe"
+      },
+      "from": 2022,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Bebe Rexha",
+      "roles": [
+        "lead"
+      ],
+      "to": 2023
+    },
+    {
       "era": "Everything Is Love era",
       "eraName": {
         "kind": "record",
@@ -249,6 +264,21 @@
         "adlib"
       ],
       "to": 2019
+    },
+    {
+      "era": "Love Yourself: Tear era",
+      "eraName": {
+        "kind": "record",
+        "record": "Love Yourself: Tear"
+      },
+      "from": 2018,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "BTS",
+      "roles": [
+        "lead"
+      ],
+      "to": 2018
     },
     {
       "era": "Invasion of Privacy era",
@@ -621,6 +651,21 @@
         "adlib"
       ],
       "to": 2026
+    },
+    {
+      "era": "Future Nostalgia era",
+      "eraName": {
+        "kind": "record",
+        "record": "Future Nostalgia"
+      },
+      "from": 2019,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Dua Lipa",
+      "roles": [
+        "lead"
+      ],
+      "to": 2020
     },
     {
       "era": "1990s",
@@ -1052,6 +1097,36 @@
       "to": 2018
     },
     {
+      "era": "The Fame era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Fame"
+      },
+      "from": 2008,
+      "genre": "Dance Pop",
+      "kind": "artist",
+      "name": "Lady Gaga",
+      "roles": [
+        "lead"
+      ],
+      "to": 2008
+    },
+    {
+      "era": "Chromatica era",
+      "eraName": {
+        "kind": "record",
+        "record": "Chromatica"
+      },
+      "from": 2018,
+      "genre": "Dance Pop",
+      "kind": "artist",
+      "name": "Lady Gaga",
+      "roles": [
+        "lead"
+      ],
+      "to": 2020
+    },
+    {
       "era": "Lust For Life era",
       "eraName": {
         "kind": "record",
@@ -1067,6 +1142,21 @@
       "to": 2017
     },
     {
+      "era": "Divinely Uninspired era",
+      "eraName": {
+        "kind": "record",
+        "record": "Divinely Uninspired"
+      },
+      "from": 2018,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Lewis Capaldi",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
+    },
+    {
       "era": "My Turn era",
       "eraName": {
         "kind": "record",
@@ -1080,6 +1170,21 @@
         "lead"
       ],
       "to": 2020
+    },
+    {
+      "era": "7 era",
+      "eraName": {
+        "kind": "record",
+        "record": "7"
+      },
+      "from": 2018,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Lil Nas X",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
     },
     {
       "era": "Luv Is Rage 2 era",
@@ -1234,6 +1339,36 @@
       "to": 2019
     },
     {
+      "era": "At Night, Alone. era",
+      "eraName": {
+        "kind": "record",
+        "record": "At Night, Alone."
+      },
+      "from": 2015,
+      "genre": "Dance Pop",
+      "kind": "artist",
+      "name": "Mike Posner",
+      "roles": [
+        "lead"
+      ],
+      "to": 2016
+    },
+    {
+      "era": "The Resistance era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Resistance"
+      },
+      "from": 2009,
+      "genre": "Rock",
+      "kind": "artist",
+      "name": "Muse",
+      "roles": [
+        "lead"
+      ],
+      "to": 2009
+    },
+    {
       "era": "The Black Parade era",
       "eraName": {
         "kind": "record",
@@ -1295,6 +1430,21 @@
       "to": 2019
     },
     {
+      "era": "The Search era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Search"
+      },
+      "from": 2019,
+      "genre": "Emo Rap",
+      "kind": "artist",
+      "name": "NF",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
+    },
+    {
       "era": "Pink Friday: Roman Reloaded era",
       "eraName": {
         "kind": "record",
@@ -1338,6 +1488,51 @@
         "adlib"
       ],
       "to": 2026
+    },
+    {
+      "era": "The Art Of Loving era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Art Of Loving"
+      },
+      "from": 2025,
+      "genre": "Neo-Soul",
+      "kind": "artist",
+      "name": "Olivia Dean",
+      "roles": [
+        "lead"
+      ],
+      "to": 2025
+    },
+    {
+      "era": "SOUR era",
+      "eraName": {
+        "kind": "record",
+        "record": "SOUR"
+      },
+      "from": 2021,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Olivia Rodrigo",
+      "roles": [
+        "lead"
+      ],
+      "to": 2021
+    },
+    {
+      "era": "Death Of A Bachelor era",
+      "eraName": {
+        "kind": "record",
+        "record": "Death Of A Bachelor"
+      },
+      "from": 2015,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Panic! at the Disco",
+      "roles": [
+        "lead"
+      ],
+      "to": 2016
     },
     {
       "era": "Paramore era",
@@ -1538,6 +1733,21 @@
       "to": 2009
     },
     {
+      "era": "Blurred Lines era",
+      "eraName": {
+        "kind": "record",
+        "record": "Blurred Lines"
+      },
+      "from": 2013,
+      "genre": "R&B (2000s)",
+      "kind": "artist",
+      "name": "Robin Thicke",
+      "roles": [
+        "lead"
+      ],
+      "to": 2013
+    },
+    {
       "era": "2000s",
       "eraName": {
         "kind": "decade",
@@ -1567,6 +1777,21 @@
         "lead"
       ],
       "to": 2014
+    },
+    {
+      "era": "Little Voice era",
+      "eraName": {
+        "kind": "record",
+        "record": "Little Voice"
+      },
+      "from": 2007,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "Sara Bareilles",
+      "roles": [
+        "lead"
+      ],
+      "to": 2007
     },
     {
       "era": "Rare era",
@@ -1659,6 +1884,21 @@
       "to": 2007
     },
     {
+      "era": "evermore era",
+      "eraName": {
+        "kind": "record",
+        "record": "evermore"
+      },
+      "from": 2020,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Taylor Swift",
+      "roles": [
+        "lead"
+      ],
+      "to": 2020
+    },
+    {
       "era": "Classic era",
       "eraName": {
         "kind": "classic"
@@ -1674,6 +1914,21 @@
       "to": 1999
     },
     {
+      "era": "The 1975 era",
+      "eraName": {
+        "kind": "record",
+        "record": "The 1975"
+      },
+      "from": 2013,
+      "genre": "Pop (2000s)",
+      "kind": "artist",
+      "name": "The 1975",
+      "roles": [
+        "lead"
+      ],
+      "to": 2013
+    },
+    {
       "era": "The E.N.D. era",
       "eraName": {
         "kind": "record",
@@ -1687,6 +1942,36 @@
         "lead"
       ],
       "to": 2009
+    },
+    {
+      "era": "Catch 22 era",
+      "eraName": {
+        "kind": "record",
+        "record": "Catch 22"
+      },
+      "from": 2009,
+      "genre": "Dance Pop",
+      "kind": "artist",
+      "name": "Tinchy Stryder",
+      "roles": [
+        "lead"
+      ],
+      "to": 2009
+    },
+    {
+      "era": "The Kids Are Coming era",
+      "eraName": {
+        "kind": "record",
+        "record": "The Kids Are Coming"
+      },
+      "from": 2019,
+      "genre": "Pop 2020s",
+      "kind": "artist",
+      "name": "Tones And I",
+      "roles": [
+        "lead"
+      ],
+      "to": 2019
     },
     {
       "era": "2000s",
@@ -1826,6 +2111,21 @@
         "adlib"
       ],
       "to": 2019
+    },
+    {
+      "era": "Slime Language 2 era",
+      "eraName": {
+        "kind": "record",
+        "record": "Slime Language 2"
+      },
+      "from": 2021,
+      "genre": "Trap",
+      "kind": "artist",
+      "name": "Young Thug",
+      "roles": [
+        "lead"
+      ],
+      "to": 2021
     }
   ]
 }

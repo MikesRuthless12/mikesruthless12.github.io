@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**Bramki** — bez AI, bez sieci, bez pożyczonego kodu, nazwy produktu i zakazane słowa, bez plików do pobrania przed 1.0, drabina, licencje, współdzielone crate'y, zestaw interfejsu i grafiki sprzętu, języki i logiczny CSS, dryf bindingów i brak alokacji w wątku audio.",
   "changelog.872b0df7744d": "**CI na własnym sprzęcie** — `npm run ci:local` (Windows) i `npm run ci:linux` (Docker Desktop), jedna lista bramek; Playwright przeciw edytorowi i przeciw prawdziwej samodzielnej aplikacji.",
   "changelog.5cbd8ff53c0a": "**Ścieżka wydania** — `npm run release:local` buduje dokładnie tag, weryfikuje paczki, zapisuje folder wydania z sumami kontrolnymi, przycina `target/` do tego folderu i instaluje VST3 oraz CLAP przez jedno okno UAC.",
-  "changelog.4e9699d53d2d": "**Szkielet strony dokumentacji** i szkielet danych łańcuchów (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**Szkielet strony dokumentacji** i szkielet danych łańcuchów (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — Pierwsza fala w komplecie",
+  "changelog.c4df85f5a8f5": "Reszta pierwszej fali: cztery nowe moduły i dwa nowe tryby, siedem kolejnych łańcuchów, które ich potrzebowały, i dwunastu kolejnych artystów.",
+  "changelog.40209e252617": "**Tłumik rezonansów** — znajduje miejsca, w których twój głos dzwoni ponad otaczającymi go częstotliwościami, i ścisza tylko je, tylko gdy dzwonią, w wybranym zakresie. Nigdy nie patrzy w przód, więc nie dodaje opóźnienia i działa podczas nagrywania.",
+  "changelog.b43956f634d4": "**Procesor transjentów** — podbija lub łagodzi atakiem początek każdego dźwięku, a wybrzmieniem jego wygasanie, niezależnie od poziomu; trzymana nuta przechodzi nietknięta. Jego karta rysuje uderzenie przed i po.",
+  "changelog.7b02441ac0e0": "**Ducker widmowy** — na powrocie delay lub pogłos ustępuje drogi twojemu wokalowi tylko na częstotliwościach, które wokal wypełnia, i wraca między frazami.",
+  "changelog.da714ee8ef00": "**Pompowanie** — ścisza twój wokal na każdą miarę, albo każdy takt, półnutę, ósemkę czy szesnastkę, i przywraca go po krzywej, w tempie projektu. Jego karta rysuje spadki na przestrzeni taktu.",
+  "changelog.ae63cc9c793a": "**Migotanie** — szósty charakter pogłosu: ogon sali krąży jeszcze raz oktawę wyżej, na tyle, na ile pozwala pokrętło Migotanie.",
+  "changelog.27fe8f8a733d": "**Kompresja w górę w Wielopasmowym** — każde pasmo podnosi to, co spada poniżej jego progu podbicia, do maksimum, które ustawisz; przy 1:1 nie podnosi niczego, więc wcześniejsze łańcuchy brzmią jak dawniej.",
+  "changelog.90f9e62dcb2d": "**Siedem kolejnych łańcuchów** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha i Panic! at the Disco, każdy w erze jednej płyty.",
+  "changelog.394f8ff372ad": "**Dwunastu kolejnych artystów** — Lady Gaga w dwóch erach, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder i Tones And I."
 }

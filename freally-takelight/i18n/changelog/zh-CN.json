@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**检查** — 没有 AI，没有网络，没有借来的代码，产品名称与禁用词，1.0 之前没有下载，版本阶梯，许可，共享 crate，UI 套件与硬件美术，语言与逻辑 CSS，绑定漂移，以及音频线程上没有内存分配。",
   "changelog.872b0df7744d": "**自托管 CI** — `npm run ci:local`（Windows）和 `npm run ci:linux`（Docker Desktop），一份检查清单；用 Playwright 测试编辑器和真正的独立应用。",
   "changelog.5cbd8ff53c0a": "**发布路径** — `npm run release:local` 精确构建该标签，验证软件包，写出带校验和的发布文件夹，把 `target/` 清理到只剩它，并通过一次 UAC 提示安装 VST3 和 CLAP。",
-  "changelog.4e9699d53d2d": "**文档网站骨架**和效果链数据骨架（`tlc validate`、`tlc import-roster`）。"
+  "changelog.4e9699d53d2d": "**文档网站骨架**和效果链数据骨架（`tlc validate`、`tlc import-roster`）。",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — 第一批完整收官",
+  "changelog.c4df85f5a8f5": "第一批的其余部分：四个新模块和两个新模式，需要它们的另外七条效果链，以及另外十二位艺人。",
+  "changelog.40209e252617": "**共振抑制器** — 在你设定的范围内，找到你的声音在周围频率之上突出鸣响的地方，只把这些地方、只在它们鸣响时压低。它从不预读，所以不增加延迟，录音时也能用。",
+  "changelog.b43956f634d4": "**瞬态塑形器** — 用启动加强或柔化每个声音的开头，用延音处理它的余韵，不论电平高低；持续的音原样通过。它的卡片画出一次敲击处理前后的样子。",
+  "changelog.7b02441ac0e0": "**频谱闪避器** — 在返回通道上，延迟或混响只在人声占据的频率上为人声让路，并在乐句之间回来。",
+  "changelog.da714ee8ef00": "**泵感** — 在每一拍，或每小节、二分、八分、十六分音符，压低你的人声，再沿一条曲线带回来，与工程同步。它的卡片画出一小节内的下压。",
+  "changelog.ae63cc9c793a": "**微光** — 混响的第六种特性：大厅的尾音升高一个八度再绕一圈，多少由微光旋钮决定。",
+  "changelog.27fe8f8a733d": "**多段压缩中的向上压缩** — 每个频段把落到其向上阈值以下的部分抬起，直到你设定的上限；在 1:1 时不抬起任何东西，所以以前的效果链听起来和原来一样。",
+  "changelog.90f9e62dcb2d": "**另外七条效果链** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha 和 Panic! at the Disco，每条都对应一张唱片的时期。",
+  "changelog.394f8ff372ad": "**另外十二位艺人** — 两个时期的 Lady Gaga、Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder 和 Tones And I。"
 }

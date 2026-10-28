@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**Gerbang** — tanpa AI, tanpa jaringan, tanpa kode pinjaman, nama produk dan kata terlarang, tanpa unduhan sebelum 1.0, tangga versi, lisensi, crate bersama, kit UI dan seni perangkat keras, bahasa dan CSS logis, pergeseran binding, dan tanpa alokasi di thread audio.",
   "changelog.872b0df7744d": "**CI yang di-host sendiri** — `npm run ci:local` (Windows) dan `npm run ci:linux` (Docker Desktop), satu daftar gerbang; Playwright terhadap editor dan terhadap aplikasi mandiri sungguhan.",
   "changelog.5cbd8ff53c0a": "**Jalur rilis** — `npm run release:local` membangun tepat tag tersebut, memvalidasi bundel, menulis folder rilis dengan checksum, memangkas `target/` hingga tinggal folder itu, dan memasang VST3 serta CLAP lewat satu prompt UAC.",
-  "changelog.4e9699d53d2d": "**Kerangka situs dokumentasi** dan kerangka data chain (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**Kerangka situs dokumentasi** dan kerangka data chain (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — Gelombang pertama lengkap",
+  "changelog.c4df85f5a8f5": "Sisa gelombang pertama: empat modul baru dan dua mode baru, tujuh chain lagi yang membutuhkannya, dan dua belas artis lagi.",
+  "changelog.40209e252617": "**Penekan Resonansi** — menemukan bagian tempat suara Anda berdengung di atas frekuensi di sekitarnya dan hanya menurunkan bagian itu, hanya selama berdengung, di rentang yang Anda tentukan. Ia tidak pernah melihat ke depan, jadi tidak menambah latensi dan bekerja saat Anda merekam.",
+  "changelog.b43956f634d4": "**Pembentuk Transien** — mengangkat atau melunakkan awal setiap suara dengan Attack, dan dengungnya dengan Tahan, apa pun levelnya; nada yang ditahan lewat tanpa diubah. Kartunya menggambar satu pukulan sebelum dan sesudah.",
+  "changelog.7b02441ac0e0": "**Ducker Spektral** — di kanal return, delay atau reverb menyingkir dari jalan vokal Anda hanya di frekuensi yang diisi vokal Anda, lalu kembali di antara frasa.",
+  "changelog.da714ee8ef00": "**Pompa** — menurunkan vokal Anda di setiap ketukan, atau setiap bar, setengah, seperdelapan, atau seperenam belas not, lalu mengembalikannya mengikuti kurva, selaras dengan proyek Anda. Kartunya menggambar penurunannya sepanjang satu bar.",
+  "changelog.ae63cc9c793a": "**Kilau** — karakter keenam reverb: ekor gaung aula berputar sekali lagi satu oktaf lebih tinggi, sebanyak yang diizinkan kenop Kilau.",
+  "changelog.27fe8f8a733d": "**Kompresi ke atas di Kompresor multiband** — setiap band mengangkat apa yang jatuh di bawah ambang naiknya, hingga batas yang Anda tentukan; pada 1:1 tidak ada yang diangkat, jadi chain sebelumnya terdengar seperti dulu.",
+  "changelog.90f9e62dcb2d": "**Tujuh chain lagi** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha, dan Panic! at the Disco, masing-masing di era sebuah album.",
+  "changelog.394f8ff372ad": "**Dua belas artis lagi** — Lady Gaga dalam dua era, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder, dan Tones And I."
 }

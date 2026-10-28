@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**Die Gates** — keine KI, kein Netzwerk, kein übernommener Code, Produktnamen und verbotene Wörter, keine Downloads vor 1.0, die Leiter, Lizenzen, die geteilten Crates, UI-Kit und Hardware-Grafiken, Sprachen und logisches CSS, Bindings-Drift und keine Allokation im Audio-Thread.",
   "changelog.872b0df7744d": "**Selbst gehostete CI** — `npm run ci:local` (Windows) und `npm run ci:linux` (Docker Desktop), eine Gate-Liste; Playwright gegen den Editor und gegen die echte Standalone-App.",
   "changelog.5cbd8ff53c0a": "**Der Release-Weg** — `npm run release:local` baut genau den Tag, validiert die Bundles, schreibt den Release-Ordner mit Prüfsummen, räumt `target/` bis auf ihn auf und installiert VST3 und CLAP über eine einzige UAC-Abfrage.",
-  "changelog.4e9699d53d2d": "**Das Gerüst der Docs-Website** und das Gerüst der Chain-Daten (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**Das Gerüst der Docs-Website** und das Gerüst der Chain-Daten (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — Erste Welle, komplett",
+  "changelog.c4df85f5a8f5": "Der Rest der ersten Welle: vier neue Module und zwei neue Modi, sieben weitere Chains, die sie brauchten, und zwölf weitere Künstler.",
+  "changelog.40209e252617": "**Resonanzunterdrücker** — findet die Stellen, an denen deine Stimme über die Frequenzen um sie herum hinausklingt, und senkt nur diese, nur solange sie klingen, in einem Bereich, den du festlegst. Er schaut nie voraus, fügt also keine Latenz hinzu und funktioniert beim Aufnehmen.",
+  "changelog.b43956f634d4": "**Transienten-Designer** — hebt oder entschärft mit Attack den Anfang jedes Klangs und mit Ausklang sein Nachklingen, unabhängig vom Pegel; ein gehaltener Ton bleibt unberührt. Seine Karte zeigt einen Schlag vorher und nachher.",
+  "changelog.7b02441ac0e0": "**Spektral-Ducker** — auf einem Return weicht ein Delay oder ein Hall deiner Stimme nur bei den Frequenzen aus, die sie füllt, und kehrt zwischen den Phrasen zurück.",
+  "changelog.da714ee8ef00": "**Pumpe** — senkt deine Stimme auf jedem Schlag, oder jedem Takt, jeder Halben, Achtel oder Sechzehntel, und bringt sie entlang einer Kurve zurück, im Takt deines Projekts. Ihre Karte zeigt die Absenkungen über einen Takt.",
+  "changelog.ae63cc9c793a": "**Schimmer** — ein sechster Charakter des Halls: die Hallfahne des Saals läuft eine Oktave höher erneut im Kreis, so viel sein Schimmer-Regler zulässt.",
+  "changelog.27fe8f8a733d": "**Aufwärtskompression im Multiband-Kompressor** — jedes Band hebt an, was unter seinen Aufwärts-Threshold fällt, bis zu einem Höchstwert, den du festlegst; bei 1:1 hebt es nichts an, sodass frühere Chains klingen wie zuvor.",
+  "changelog.90f9e62dcb2d": "**Sieben weitere Chains** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha und Panic! at the Disco, jede in der Ära einer Platte.",
+  "changelog.394f8ff372ad": "**Zwölf weitere Künstler** — Lady Gaga in zwei Ären, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder und Tones And I."
 }

@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**I controlli** — niente IA, niente rete, niente codice preso in prestito, nomi del prodotto e parole vietate, nessun download prima della 1.0, la scala, le licenze, i crate condivisi, il kit di interfaccia e la grafica dell'hardware, le lingue e il CSS logico, la deriva dei binding e nessuna allocazione sul thread audio.",
   "changelog.872b0df7744d": "**CI ospitata in proprio** — `npm run ci:local` (Windows) e `npm run ci:linux` (Docker Desktop), un solo elenco di controlli; Playwright contro l'editor e contro la vera app autonoma.",
   "changelog.5cbd8ff53c0a": "**Il percorso di rilascio** — `npm run release:local` compila esattamente il tag, convalida i bundle, scrive la cartella di rilascio con i checksum, riduce `target/` a quella cartella e installa VST3 e CLAP con un solo prompt UAC.",
-  "changelog.4e9699d53d2d": "**Lo scheletro del sito di documentazione** e lo scheletro dei dati delle catene (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**Lo scheletro del sito di documentazione** e lo scheletro dei dati delle catene (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — La prima ondata al completo",
+  "changelog.c4df85f5a8f5": "Il resto della prima ondata: quattro nuovi moduli e due nuove modalità, altre sette catene che ne avevano bisogno e altri dodici artisti.",
+  "changelog.40209e252617": "**Soppressore di risonanze** — trova dove la tua voce risuona sopra le frequenze che la circondano e abbassa solo quelle, solo finché risuonano, nell’intervallo che scegli. Non guarda mai avanti, quindi non aggiunge latenza e funziona mentre registri.",
+  "changelog.b43956f634d4": "**Modellatore di transienti** — esalta o ammorbidisce l’inizio di ogni suono con l’attacco e la sua coda con il sostegno, qualunque sia il livello; una nota tenuta passa intatta. La sua scheda disegna un colpo prima e dopo.",
+  "changelog.7b02441ac0e0": "**Ducker spettrale** — su un ritorno, un delay o un riverbero si tolgono dalla strada della tua voce solo alle frequenze che la voce occupa, e tornano tra le frasi.",
+  "changelog.da714ee8ef00": "**Pompaggio** — abbassa la tua voce a ogni battito, o a ogni battuta, minima, croma o semicroma, e la riporta lungo una curva, a tempo con il tuo progetto. La sua scheda disegna i cali lungo una battuta.",
+  "changelog.ae63cc9c793a": "**Luccichio** — un sesto carattere del riverbero: la coda della sala gira di nuovo un’ottava sopra, quanto lo consente la manopola Luccichio.",
+  "changelog.27fe8f8a733d": "**Compressione verso l’alto nel Multibanda** — ogni banda solleva ciò che scende sotto la sua soglia verso l’alto, fino a un massimo che scegli; a 1:1 non solleva nulla, così le catene di prima suonano come prima.",
+  "changelog.90f9e62dcb2d": "**Altre sette catene** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha e Panic! at the Disco, ognuna nell’era di un disco.",
+  "changelog.394f8ff372ad": "**Altri dodici artisti** — Lady Gaga in due ere, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder e Tones And I."
 }

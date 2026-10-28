@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**As verificações** — sem IA, sem rede, sem código emprestado, nomes de produto e palavras proibidas, sem downloads antes da 1.0, a escada, licenças, os crates compartilhados, o kit de interface e a arte do hardware, idiomas e CSS lógico, desvio dos bindings e nenhuma alocação na thread de áudio.",
   "changelog.872b0df7744d": "**CI auto-hospedada** — `npm run ci:local` (Windows) e `npm run ci:linux` (Docker Desktop), uma única lista de verificações; Playwright contra o editor e contra o aplicativo independente de verdade.",
   "changelog.5cbd8ff53c0a": "**O caminho de lançamento** — `npm run release:local` compila exatamente a tag, valida os bundles, grava a pasta de lançamento com checksums, reduz `target/` a ela e instala VST3 e CLAP com um único aviso do UAC.",
-  "changelog.4e9699d53d2d": "**O esqueleto do site de documentação** e o esqueleto dos dados de cadeias (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**O esqueleto do site de documentação** e o esqueleto dos dados de cadeias (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — A primeira leva completa",
+  "changelog.c4df85f5a8f5": "O resto da primeira leva: quatro módulos novos e dois modos novos, mais sete cadeias que precisavam deles e mais doze artistas.",
+  "changelog.40209e252617": "**Supressor de ressonâncias** — encontra onde sua voz ressoa acima das frequências ao redor e abaixa só essas, só enquanto ressoam, na faixa que você escolher. Nunca olha à frente, então não adiciona latência e funciona enquanto você grava.",
+  "changelog.b43956f634d4": "**Modelador de transientes** — realça ou suaviza o início de cada som com o ataque, e sua ressonância com a sustentação, qualquer que seja o nível; uma nota sustentada passa intacta. Seu cartão desenha um golpe antes e depois.",
+  "changelog.7b02441ac0e0": "**Ducker espectral** — em um retorno, um delay ou um reverb sai do caminho da sua voz só nas frequências que a voz ocupa, e volta entre as frases.",
+  "changelog.da714ee8ef00": "**Bombeamento** — abaixa sua voz em cada tempo, ou cada compasso, mínima, colcheia ou semicolcheia, e a traz de volta por uma curva, no tempo do seu projeto. Seu cartão desenha as quedas ao longo de um compasso.",
+  "changelog.ae63cc9c793a": "**Cintilante** — um sexto caráter do reverb: a cauda do salão dá outra volta uma oitava acima, tanto quanto o botão Cintilante deixar.",
+  "changelog.27fe8f8a733d": "**Compressão ascendente no Multibanda** — cada banda eleva o que cai abaixo do seu limiar ascendente, até um máximo que você define; em 1:1 não eleva nada, então as cadeias de antes soam como antes.",
+  "changelog.90f9e62dcb2d": "**Mais sete cadeias** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha e Panic! at the Disco, cada uma na era de um disco.",
+  "changelog.394f8ff372ad": "**Mais doze artistas** — Lady Gaga em duas eras, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder e Tones And I."
 }

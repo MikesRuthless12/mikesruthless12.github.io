@@ -80,5 +80,15 @@
   "changelog.ec039c3098d0": "**De gates** — geen AI, geen netwerk, geen geleende code, productnamen en verboden woorden, geen downloads vóór 1.0, de ladder, licenties, de gedeelde crates, de UI-kit en de hardware-art, talen en logische CSS, bindings-drift en geen allocatie op de audiothread.",
   "changelog.872b0df7744d": "**Zelf gehoste CI** — `npm run ci:local` (Windows) en `npm run ci:linux` (Docker Desktop), één gatelijst; Playwright tegen de editor en tegen de echte zelfstandige app.",
   "changelog.5cbd8ff53c0a": "**Het releasepad** — `npm run release:local` bouwt precies de tag, valideert de bundles, schrijft de releasemap met checksums, snoeit `target/` tot die map en installeert VST3 en CLAP via één UAC-prompt.",
-  "changelog.4e9699d53d2d": "**Het skelet van de docs-site** en het skelet van de chaindata (`tlc validate`, `tlc import-roster`)."
+  "changelog.4e9699d53d2d": "**Het skelet van de docs-site** en het skelet van de chaindata (`tlc validate`, `tlc import-roster`).",
+  "changelog.f95683ba9422": "[0.6.1] — 2026-10-28 — De eerste golf compleet",
+  "changelog.c4df85f5a8f5": "De rest van de eerste golf: vier nieuwe modules en twee nieuwe modi, zeven chains meer die ze nodig hadden, en twaalf artiesten meer.",
+  "changelog.40209e252617": "**Resonantie-onderdrukker** — vindt waar je stem boven de frequenties eromheen uitklinkt en zet alleen die zachter, alleen zolang ze klinken, over een bereik dat je kiest. Hij kijkt nooit vooruit, voegt dus geen latentie toe en werkt terwijl je opneemt.",
+  "changelog.b43956f634d4": "**Transient-shaper** — tilt of verzacht met Attack het begin van elke klank en met Uitklank zijn naklinken, op welk niveau ook; een aangehouden noot blijft onaangeroerd. Zijn kaart tekent een klap ervoor en erna.",
+  "changelog.7b02441ac0e0": "**Spectrale ducker** — op een retour gaat een delay of galm alleen op de frequenties die je stem vult uit de weg van je stem, en komt tussen de frasen terug.",
+  "changelog.da714ee8ef00": "**Pomp** — laat je stem op elke tel zakken, of elke maat, halve, achtste of zestiende noot, en brengt haar langs een curve terug, in de maat van je project. Zijn kaart tekent de dalingen over een maat.",
+  "changelog.ae63cc9c793a": "**Glinstering** — een zesde karakter van de galm: de galmstaart van de zaal gaat een octaaf hoger nog eens rond, zoveel als de knop Glinstering toelaat.",
+  "changelog.27fe8f8a733d": "**Opwaartse compressie in de Multibandcompressor** — elke band tilt op wat onder zijn opwaartse drempel valt, tot een maximum dat je kiest; bij 1:1 tilt hij niets op, zodat eerdere chains klinken als voorheen.",
+  "changelog.90f9e62dcb2d": "**Zeven chains meer** — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha en Panic! at the Disco, elk in het tijdperk van een plaat.",
+  "changelog.394f8ff372ad": "**Twaalf artiesten meer** — Lady Gaga in twee tijdperken, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lil Nas X, Robin Thicke, Olivia Dean, Muse, Tinchy Stryder en Tones And I."
 }

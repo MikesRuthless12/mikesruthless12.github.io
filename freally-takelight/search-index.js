@@ -54,7 +54,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#browser",
   "heading": "Finding a chain",
-  "text": "Type in the search at the top — an artist, a nickname or a genre — or press Ctrl+K (Cmd+K on a Mac) from anywhere. The chains appear as you type: each artist with its eras, each era with its years and its roles, such as lead, ad-lib or FX. Choose one and the whole chain loads in order, click-free, while the track plays. The arrow keys move through the list, Enter loads, and Escape closes it. With the search empty, it offers the chains you loaded last. An artist with no chain yet offers chains from their genre, and a name it does not know says so and suggests a genre. Version 0.6.0 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era; forty more artists, era by era; and a lead and an ad-lib for every one of the 73 genres, trap in two decades. The roster page lists them all. Each chain is named for its artist or genre and its era, and nothing more. Finding a chain"
+  "text": "Type in the search at the top — an artist, a nickname or a genre — or press Ctrl+K (Cmd+K on a Mac) from anywhere. The chains appear as you type: each artist with its eras, each era with its years and its roles, such as lead, ad-lib or FX. Choose one and the whole chain loads in order, click-free, while the track plays. The arrow keys move through the list, Enter loads, and Escape closes it. With the search empty, it offers the chains you loaded last. An artist with no chain yet offers chains from their genre, and a name it does not know says so and suggests a genre. Version 0.6.1 has Drake in three eras — So Far Gone (2009), Take Care (2011) and the modern era (2016–2026) — with an FX chain from the Take Care era; forty more artists, era by era; and a lead and an ad-lib for every one of the 73 genres, trap in two decades. The roster page lists them all. Each chain is named for its artist or genre and its era, and nothing more. Finding a chain"
  },
  {
   "url": "documentation.html#presets",
@@ -114,7 +114,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#modules",
   "heading": "The modules",
-  "text": "Version 0.6.0 has thirty modules. Each is Takelight's own design, and none claims to be any other product."
+  "text": "Version 0.6.1 has thirty-four modules. Each is Takelight's own design, and none claims to be any other product."
  },
  {
   "url": "documentation.html#module-tune",
@@ -147,6 +147,11 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Two bands, a bell or a shelf each, whose gain moves with the level in their own part of the vocal: a negative range cuts a harsh or boomy region only when it gets loud, a positive one lifts it as the voice rises. Each band has a frequency, Q, threshold, ratio and range, with one attack, release and output."
  },
  {
+  "url": "documentation.html#module-resonance-suppressor",
+  "heading": "Resonance Suppressor",
+  "text": "Finds where the voice rings out over the frequencies around it and turns down only those, only while they ring: 24 narrow bands across a range you set, with depth, selectivity, sharpness, attack and release. It never looks ahead, so it adds no latency and works while you record."
+ },
+ {
   "url": "documentation.html#module-opto",
   "heading": "Opto Compressor",
   "text": "Smooth levelling that follows the performance, from one Peak reduction knob, in an Opto and a Tube opto character, compressing or limiting."
@@ -164,7 +169,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#module-multiband",
   "heading": "Multiband Compressor",
-  "text": "Splits the vocal into low, mid and high bands at two crossovers and compresses each on its own, with a threshold, ratio and gain per band and one attack, release, knee, output and mix. With nothing taken, the bands add back up to the vocal as it was."
+  "text": "Splits the vocal into low, mid and high bands at two crossovers and compresses each on its own, with a threshold, ratio and gain per band and one attack, release, knee, output and mix. With nothing taken, the bands add back up to the vocal as it was. Its upward half lifts what falls under each band's upward threshold, up to a most you set; at 1:1 it lifts nothing."
  },
  {
   "url": "documentation.html#module-vari-mu",
@@ -175,6 +180,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#module-punch",
   "heading": "Punch Compressor",
   "text": "A character compressor in five characters, from Normal to Distortion 3, with Nuke for extreme compression and a Mix control."
+ },
+ {
+  "url": "documentation.html#module-transient-shaper",
+  "heading": "Transient Shaper",
+  "text": "Lifts or softens the start of each sound with Attack, and its ring-out with Sustain, whatever its level, with a Speed and an Output. A held note passes untouched, and it adds no latency."
  },
  {
   "url": "documentation.html#module-vox-leveler",
@@ -192,9 +202,19 @@ window.FREALLY_SEARCH_INDEX = [
   "text": "Tames harsh \"s\" sounds, split-band or wideband, with a bell or a shelf, and relative or absolute detection."
  },
  {
+  "url": "documentation.html#module-ducker",
+  "heading": "Spectral Ducker",
+  "text": "Moves what passes through out of the vocal's way, only at the frequencies the vocal fills, and lets it back between phrases, with an amount, threshold, attack, release and range. On a return it listens to the vocal sent there, so a delay or a reverb clears room for the words."
+ },
+ {
   "url": "documentation.html#module-gate",
   "heading": "Gate",
   "text": "A gate or an expander between phrases, with hold, hysteresis and sidechain filters so breaths and bleed do not open it."
+ },
+ {
+  "url": "documentation.html#module-pump",
+  "heading": "Pump",
+  "text": "Dips the vocal on every beat — or every bar, half, eighth or sixteenth note — and brings it back along a curve, in time with your project, so the vocal moves with the kick. Depth, rate, curve, fall and an offset."
  },
  {
   "url": "documentation.html#module-saturation",
@@ -224,7 +244,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#module-reverb",
   "heading": "Reverb",
-  "text": "Five characters — Plate, Room, Hall, Chamber and Ambience — with pre-delay, a decay from 0.1 to 20 seconds, size, damping, diffusion, modulation and filters on the return. The decay is the time the tail takes to fall by 60 dB."
+  "text": "Six characters — Plate, Room, Hall, Chamber, Ambience and Shimmer — with pre-delay, a decay from 0.1 to 20 seconds, size, damping, diffusion, modulation and filters on the return. The decay is the time the tail takes to fall by 60 dB. Shimmer sends the hall's tail round again an octave up, as much as its knob lets."
  },
  {
   "url": "documentation.html#module-reverse-gate",
@@ -305,6 +325,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "roster.html#roster-title",
   "heading": "The roster",
   "text": "All Artists Genres Style of Type Era Chains Genre Loading the roster… Artist Genre Lead Ad-lib Double Harmony FX {year}s Modern era Classic era {record} era {shown} of {total} match Nothing matches that. The roster could not be loaded. Try refreshing the page. This page is open as a local file, and browsers refuse to load the roster from a file:// page. Open it over HTTP instead."
+ },
+ {
+  "url": "changelog.html#0-6-1-2026-10-28-wave-1-whole-added",
+  "heading": "Added",
+  "text": "Resonance Suppressor — finds where your voice rings out over the frequencies around it and turns down only those, only while they ring, across a range you set. It never looks ahead, so it adds no latency and works while you record. Transient Shaper — lifts or softens the start of each sound with Attack, and its ring with Sustain, whatever its level; a held note passes untouched. Its card draws a hit before and after. Spectral Ducker — on a return, a delay or a reverb steps out of your vocal's way only at the frequencies your vocal fills, and comes back between phrases. Pump — dips your vocal on every beat, or every bar, half, eighth or sixteenth note, and brings it back along a curve, in time with your project. Its card draws the dips across a bar. Shimmer — a sixth Reverb character: the hall's tail goes round again an octave up, as much as its Shimmer knob lets. Upward compression in the Multiband — each band lifts what falls under its upward threshold, up to a most you set; at 1:1 it lifts nothing, so chains from before sound as they did. Seven more chains — Olivia Rodrigo, Taylor Swift, Dua Lipa, Young Thug, BTS, Bebe Rexha and Panic! at the Disco, each in the era of a record. T"
  },
  {
   "url": "changelog.html#0-6-0-2026-10-28-roster-wave-1-added",
