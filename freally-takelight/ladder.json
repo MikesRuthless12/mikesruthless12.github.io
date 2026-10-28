@@ -1,0 +1,145 @@
+{
+  "note": "The public version ladder. `version`, `phase` and `mvp` must equal the private roadmap's ladder, row for row (scripts/check-ladder.mjs); `summary` is written for the site and never copied from a private document. States: done, planned, goal, later.",
+  "rungs": [
+    {
+      "version": "v0.1.0",
+      "phase": "Phase 0 — Foundation, CI spine & the release path",
+      "mvp": true,
+      "state": "done",
+      "summary": "The foundation: the plugin loads as CLAP, VST3 and AU and as a standalone app, passes your audio through untouched, asks you to accept its licence, and every quality gate runs."
+    },
+    {
+      "version": "v0.2.0",
+      "phase": "Phase 1 — The Joint, the first modules & the docs site",
+      "mvp": true,
+      "state": "done",
+      "summary": "The Joint: one rack for a whole vocal chain, the first EQ, dynamics and colour modules on rendered hardware, and the take light."
+    },
+    {
+      "version": "v0.3.0",
+      "phase": "Phase 2 — Space",
+      "mvp": true,
+      "state": "done",
+      "summary": "Space: delays, reverbs, doubling, width and the four effect returns, in time with your project."
+    },
+    {
+      "version": "v0.4.0",
+      "phase": "Phase 3 — Tune",
+      "mvp": true,
+      "state": "done",
+      "summary": "Tune: pitch correction from classic signal processing, the key found from your vocal, and a low-latency mode for recording."
+    },
+    {
+      "version": "v0.5.0",
+      "phase": "Phase 4 — First Light: Drake & the browser",
+      "mvp": true,
+      "state": "done",
+      "summary": "First light: search an artist and an era, and the whole chain loads in one click. The first complete version."
+    },
+    {
+      "version": "v0.5.5",
+      "phase": "Phase 4.5 — Input Check, ad-libs & presets",
+      "mvp": false,
+      "state": "done",
+      "summary": "Input Check, ad-lib chains, your own presets, and undo."
+    },
+    {
+      "version": "v0.5.6",
+      "phase": "Phase 4.6 — Visual Cards",
+      "mvp": false,
+      "state": "done",
+      "summary": "Visual cards: every module shows what it does — the EQ curve over a live spectrum of your vocal, the compressor curve with what it takes — not just knobs."
+    },
+    {
+      "version": "v0.6.0",
+      "phase": "Phase 5 — Roster Wave 1",
+      "mvp": false,
+      "state": "planned",
+      "summary": "The first wave of artist chains, a chain for every genre, and the roster page."
+    },
+    {
+      "version": "v0.7.0",
+      "phase": "Phase 6 — In every DAW",
+      "mvp": false,
+      "state": "planned",
+      "summary": "In every DAW: saved with your project, automatable, its latency reported, and safe in many instances at once."
+    },
+    {
+      "version": "v0.8.0",
+      "phase": "Phase 7 — Standalone, macOS & Linux",
+      "mvp": false,
+      "state": "planned",
+      "summary": "The standalone app at full strength, and Takelight on macOS and Linux."
+    },
+    {
+      "version": "v0.9.0",
+      "phase": "Phase 8 — Roster Wave 2, calibration & realism",
+      "mvp": false,
+      "state": "planned",
+      "summary": "The second wave of artist chains, and a realism and performance pass."
+    },
+    {
+      "version": "v0.9.5",
+      "phase": "Phase 8.5 — Reference Match",
+      "mvp": false,
+      "state": "planned",
+      "summary": "Reference Match: load a reference, and Takelight reads the delays, the reverb, the tone and the rest of its vocal, and proposes them on its own modules."
+    },
+    {
+      "version": "v1.0.0-beta",
+      "phase": "Phase 9 — Beta: hardened",
+      "mvp": false,
+      "state": "planned",
+      "summary": "Hardened: installers for three systems, the update check, the trial and the licence, and the full manual. Still no downloads on this site."
+    },
+    {
+      "version": "v1.0.0-rc",
+      "phase": "Phase 10 — Release candidate",
+      "mvp": false,
+      "state": "planned",
+      "summary": "The release candidate: every file reviewed and every host tested by hand."
+    },
+    {
+      "version": "v1.0.0",
+      "phase": "Phase 11 — The release",
+      "mvp": false,
+      "state": "goal",
+      "summary": "The release: the free trial, the one-time licence, and the first downloads this site has ever offered."
+    },
+    {
+      "version": "v1.1.0",
+      "phase": "Post-1.0 Build 1",
+      "mvp": false,
+      "state": "later",
+      "summary": "Vocal Match: your vocal's tone set against a reference you own."
+    },
+    {
+      "version": "v1.2.0",
+      "phase": "Post-1.0 Build 2",
+      "mvp": false,
+      "state": "later",
+      "summary": "Doubles and harmonies, stacked for you."
+    },
+    {
+      "version": "v1.3.0",
+      "phase": "Post-1.0 Build 3",
+      "mvp": false,
+      "state": "later",
+      "summary": "A third wave of artist chains, and chains sent in by producers."
+    },
+    {
+      "version": "v1.4.0",
+      "phase": "Post-1.0 Build 4",
+      "mvp": false,
+      "state": "later",
+      "summary": "Bridges to Freally MIDI Master and Freally Unloop."
+    },
+    {
+      "version": "v1.5.0",
+      "phase": "Post-1.0 Build 5",
+      "mvp": false,
+      "state": "later",
+      "summary": "Pro Tools as a plugin (AAX), if Avid's terms allow it."
+    }
+  ]
+}

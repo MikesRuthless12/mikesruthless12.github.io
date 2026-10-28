@@ -1,0 +1,23 @@
+{
+  "product": "takelight",
+  "name": "Freally Takelight",
+  "url": "https://freallyproducts.com/freally-takelight/",
+  "icon": "takelight-icon.png",
+  "pages": ["index", "features", "documentation", "changelog"],
+  "changelog": "../CHANGELOG.md",
+  "ladder": "ladder.json",
+  "chips": ["CLAP", "VST3", "AU", "@hero.chipStandalone|Standalone", "Windows", "macOS", "Linux"],
+  "price": "price.note",
+  "legal": ["footer.licence", "footer.yours", "footer.disclaimer"],
+  "salesOpen": false,
+  "trialUrl": "",
+  "buyUrl": "",
+  "strings": {
+    "site.tagline": "Every era’s vocal chain. One plugin.",
+    "site.description": "One vocal plugin with a whole vocal chain for each artist and era — tuning, EQ, compression, de-essing, delays, reverbs and the vocal bus — built from its own modules. CLAP, VST3 and AU for Windows, macOS and Linux. Offline and 100% AI-free.",
+    "price.note": "Nothing is for sale yet. From version 1.0, Freally Takelight will be sold as a one-time licence, with a free trial of the whole plugin first.",
+    "footer.licence": "Proprietary — All Rights Reserved. © Mike Weaver. Not open source. Contact: freallyproducts@gmail.com.",
+    "footer.yours": "The audio, presets and projects you make with Freally Takelight are yours.",
+    "footer.disclaimer": "Artist names identify a style only. Freally Takelight is not affiliated with, endorsed by or approved by any artist, producer, engineer, label, publication or plugin maker. A chain applies processing, not a voice."
+  }
+}

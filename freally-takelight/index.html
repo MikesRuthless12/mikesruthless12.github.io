@@ -1,59 +1,216 @@
 <!doctype html>
-<html lang="en" dir="ltr">
+<html lang="en" dir="ltr" class="no-js" data-page="index" data-product="takelight" data-name="Freally Takelight" data-title-key="site.tagline">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="Content-Security-Policy"
-      content="default-src 'self'; img-src 'self'; style-src 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'"
-    />
-    <title>Freally Takelight</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#090c09" />
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:; font-src 'self'; media-src 'self'; connect-src 'self'; object-src 'none'; base-uri 'self'; form-action 'none'" />
+    <title>Freally Takelight — Every era’s vocal chain. One plugin.</title>
+    <meta name="description" content="One vocal plugin with a whole vocal chain for each artist and era — tuning, EQ, compression, de-essing, delays, reverbs and the vocal bus — built from its own modules. CLAP, VST3 and AU for Windows, macOS and Linux. Offline and 100% AI-free." />
+    <meta property="og:title" content="Freally Takelight — Every era’s vocal chain. One plugin." />
+    <meta property="og:description" content="One vocal plugin with a whole vocal chain for each artist and era — tuning, EQ, compression, de-essing, delays, reverbs and the vocal bus — built from its own modules. CLAP, VST3 and AU for Windows, macOS and Linux. Offline and 100% AI-free." />
+    <meta property="og:type" content="website" />
     <link rel="icon" href="favicon.ico" sizes="any" />
     <link rel="icon" href="favicon-192.png" type="image/png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
-    <style>
-      /* Dark only, like every Freally site (owner, 2026-10-01). */
-      :root { color-scheme: dark; --bg: #090c09; --surface: #1a211a; --border: #27302a; --text: #ecf1ec; --muted: #a3aea3; --primary: #9af524; }
-      * { box-sizing: border-box; }
-      body { margin: 0; min-height: 100vh; display: flex; flex-direction: column; background: var(--bg); color: var(--text); font: 17px/1.6 system-ui, -apple-system, 'Segoe UI', sans-serif; }
-      /* The header bar, like Freally Flipcopy's: the product left, the language right. */
-      .site-header { position: sticky; top: 0; background: color-mix(in srgb, var(--bg) 88%, transparent); backdrop-filter: blur(8px); border-block-end: 1px solid var(--border); }
-      .site-header-inner { max-width: 1100px; margin: 0 auto; padding: 12px 16px; display: flex; align-items: center; gap: 16px; }
-      .wordmark { display: flex; align-items: center; gap: 8px; font-weight: 650; color: var(--text); text-decoration: none; letter-spacing: -0.01em; font-size: 1rem; }
-      .wordmark img { width: 28px; height: 28px; }
-      select.locale { margin-inline-start: auto; background: var(--surface); color: var(--text); border: 1px solid var(--border); border-radius: 6px; padding: 4px 8px; font: inherit; font-size: 0.875rem; cursor: pointer; }
-      main { flex: 1; display: grid; place-items: center; text-align: center; padding: 48px 16px; }
-      .card { width: min(100%, 640px); }
-      .icon { display: block; width: 160px; height: 160px; margin: 0 auto 24px; }
-      h1 { font-size: 2.4rem; margin: 0 0 16px; }
-      p { color: var(--muted); margin: 0 0 28px; }
-      a { color: var(--primary); }
-    </style>
-    <!-- the fleet cursor (owner, 2026-10-23), copied from site-kit/kit by publish.py -->
-    <link rel="stylesheet" href="/report-kit/cursor.css" />
-    <script src="/report-kit/cursor.js" defer></script>
+    <link rel="preload" href="kit/fonts/inter-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="kit/kit.css" />
+    <script src="kit/kit.js"></script>
+    <link rel="stylesheet" href="kit/cursor.css" />
+    <script src="kit/cursor.js" defer></script>
   </head>
   <body>
-    <!-- A holding page (owner, 2026-10-01): this product's documentation is being
-         rebuilt in the shared Freally design, and nothing is downloadable yet. -->
-    <header class="site-header">
-      <div class="site-header-inner">
-        <a class="wordmark" href="index.html">
-          <img src="favicon-32.png" alt="" width="28" height="28" />
-          <span>Freally Takelight</span>
-        </a>
-        <!-- ⚠ Filled by holding.js: English first, the other seventeen alphabetically. -->
-        <select class="locale" aria-label="Language"></select>
+    <a class="skip" href="#main" data-i18n="kit.skip">Skip to the content</a>
+    <header class="nav">
+      <div class="wrap nav__inner">
+        <a class="nav__brand" href="index.html"><img src="takelight-icon.png" alt="" width="28" height="28" /><span>Freally Takelight</span></a>
+        <nav class="site-nav" aria-label="Site" data-i18n-attr="aria-label:kit.nav.site">
+          <a href="index.html" data-i18n="kit.nav.home">Home</a>
+          <a href="features.html" data-i18n="kit.nav.features">Features</a>
+          <a href="documentation.html" data-i18n="kit.nav.documentation">Documentation</a>
+          <a href="changelog.html" data-i18n="kit.nav.changelog">Changelog</a>
+        </nav>
+        <div class="nav__end">
+          <label class="locale-wrap">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
+            <select class="locale" aria-label="Language" data-i18n-attr="aria-label:kit.nav.language"></select>
+          </label>
+          <a class="btn btn-primary btn-sm nav__cta" href="https://freallyproducts.com/" data-i18n="kit.nav.allApps">All Freally apps</a>
+        </div>
       </div>
     </header>
-    <main>
-      <div class="card">
-        <img class="icon" src="takelight-icon.png" alt="" width="160" height="160" />
-        <h1>Freally Takelight</h1>
-        <p id="line">Documentation is coming soon. There are no downloads yet.</p>
-        <a id="home" href="../index.html">freallyproducts.com</a>
+    <main id="main">
+<section class="hero">
+<div class="hero__grid" aria-hidden="true"></div>
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap hero__inner">
+<div class="hero__copy">
+<div class="hero__brand"><img class="app-icon" src="takelight-icon.png" alt="" width="56" height="56" /><span class="hero__name">Freally Takelight</span><p class="badge"><span class="badge__dot"></span><span data-i18n="kit.badge.progress">v0.5.6 is done · v0.6.0 is next</span></p></div>
+<h1 class="display" data-i18n-html="hero.headline"><span class="hl-muted">Every era’s vocal chain.</span> <span class="cycle" data-cycle="hero.cycle" data-words="One plugin.|On your vocal.|In every DAW.">One plugin.</span></h1>
+<p class="lead" data-i18n="hero.sub">Search an artist, pick an era, press play. Takelight loads the whole vocal chain — tuning, EQ, compression, de-essing, delays, reverbs and the vocal bus — built from its own modules. Offline and 100% AI-free.</p>
+<div class="actions"><a class="btn btn-primary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="documentation.html"><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 7v14"/><path d="M3 18a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1h5a4 4 0 0 1 4 4 4 4 0 0 1 4-4h5a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1h-6a3 3 0 0 0-3 3 3 3 0 0 0-3-3z"/></svg><span data-i18n="kit.cta.docs">Read the documentation</span></a></div>
+<p class="fineprint" data-i18n="price.note">Nothing is for sale yet. From version 1.0, Freally Takelight will be sold as a one-time licence, with a free trial of the whole plugin first.</p>
+<p class="fineprint"><strong data-i18n="kit.noDownloads">There are no downloads yet, and the source code is private.</strong></p>
+<ul class="chips"><li>CLAP</li><li>VST3</li><li>AU</li><li data-i18n="hero.chipStandalone">Standalone</li><li>Windows</li><li>macOS</li><li>Linux</li></ul>
+</div>
+<div class="hero__visual" aria-hidden="true"><img class="hero__orbit" src="kit/art/orbit.svg" alt="" width="640" height="640" /><div class="hero__core"><img src="takelight-icon.png" alt="" width="200" height="200" /></div></div>
+</div>
+</section>
+<section class="section" id="what">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.overview">Overview</span>
+<div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">A raw vocal does not sound like a record, and the gap is a chain: tuning, EQs, compressors, a de-esser, delays and reverbs on sends, and a vocal bus, in the right order, at the right settings.</p>
+      <p data-i18n="what.p2">Takelight holds a whole chain for each artist and era inside one plugin, built from its own modules, so you never need another plugin to hear it.</p>
+      <p data-i18n="what.p3">Load a chain and it crossfades in without a click. Shape it with four macros, or open the rack and turn any knob.</p>
+    </div>
+    <figure class="split__art"><img src="kit/art/signal.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></figure>
+  </div>
+</div>
+</section>
+<section class="section section--surface" id="inside">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.inside">Inside</span>
+<h2 data-i18n="features.title">What is in it</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><img src="kit/art/index.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.cards.chains.title">Artist-and-era chains</h3>
+        <p data-i18n="featuresPage.cards.chains.body">Type an artist, pick an era and a role — lead or ad-lib — and the whole chain loads in order: inserts, effect returns and the vocal bus.</p>
       </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/lens.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.cards.swap.title">Swaps without a click</h3>
+        <p data-i18n="featuresPage.cards.swap.body">Change chains while the track plays. The new chain is made ready away from the audio and crossfaded in over 30 milliseconds, so nothing pops.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/faders.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.cards.joint.title">The Joint</h3>
+        <p data-i18n="featuresPage.cards.joint.body">One rack holds the whole chain: pitch correction, three kinds of EQ, five kinds of compressor, a de-esser, a gate, saturation, an exciter, lo-fi, a limiter, a doubler, delays, reverbs, four returns and a vocal bus.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/knob.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.cards.modes.title">Simple and Advanced</h3>
+        <p data-i18n="featuresPage.cards.modes.body">Simple shows four macros — Tune, Tone, Space and Amount. Advanced shows every module as rendered hardware, each card drawing what it does — the EQ curve over your vocal, the compressor's curve and what it takes — and every knob can be automated.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/horizon.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.cards.daw.title">In every DAW</h3>
+        <p data-i18n="featuresPage.cards.daw.body">CLAP and VST3 on Windows, macOS and Linux, AU on macOS, and a standalone app. Saved with your project, latency reported so your DAW lines everything up, and safe in many instances at once.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><img src="kit/art/shield.svg" alt="" width="800" height="440" loading="lazy" decoding="async" /></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.cards.offline.title">Offline, private, no AI</h3>
+        <p data-i18n="featuresPage.cards.offline.body">No account, no telemetry and no model. The plugin and the app never go online; update checks and licence activation run in a separate helper, only when you ask.</p>
+      </div>
+    </article>
+  </div>
+</div>
+</section>
+<section class="section" id="ladder">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.roadmap">Roadmap</span>
+<h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per version. This is the same ladder the private plan follows — if one moves, both move, and a build gate compares them.</p>
+  <ol class="ladder">
+<li class="rung rung--done"><code class="rung__ver">v0.1.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.1.0">The foundation: the plugin loads as CLAP, VST3 and AU and as a standalone app, passes your audio through untouched, asks you to accept its licence, and every quality gate runs.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.2.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.2.0">The Joint: one rack for a whole vocal chain, the first EQ, dynamics and colour modules on rendered hardware, and the take light.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.3.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.3.0">Space: delays, reverbs, doubling, width and the four effect returns, in time with your project.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.4.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.4.0">Tune: pitch correction from classic signal processing, the key found from your vocal, and a low-latency mode for recording.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.5.0</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.5.0">First light: search an artist and an era, and the whole chain loads in one click. The first complete version.</span></li>
+<li class="rung rung--done"><code class="rung__ver">v0.5.5</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.5.5">Input Check, ad-lib chains, your own presets, and undo.</span></li>
+<li class="rung rung--done rung--last-done"><code class="rung__ver">v0.5.6</code><span class="state state-done" data-i18n="kit.ladder.done">Done</span><span class="rung__text" data-i18n="ladder.rung.v0.5.6">Visual cards: every module shows what it does — the EQ curve over a live spectrum of your vocal, the compressor curve with what it takes — not just knobs.</span></li>
+<li class="rung rung--planned rung--next"><code class="rung__ver">v0.6.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.6.0">The first wave of artist chains, a chain for every genre, and the roster page.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.7.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.7.0">In every DAW: saved with your project, automatable, its latency reported, and safe in many instances at once.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.8.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.8.0">The standalone app at full strength, and Takelight on macOS and Linux.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.9.0</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.9.0">The second wave of artist chains, and a realism and performance pass.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v0.9.5</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v0.9.5">Reference Match: load a reference, and Takelight reads the delays, the reverb, the tone and the rest of its vocal, and proposes them on its own modules.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v1.0.0-beta</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v1.0.0-beta">Hardened: installers for three systems, the update check, the trial and the licence, and the full manual. Still no downloads on this site.</span></li>
+<li class="rung rung--planned"><code class="rung__ver">v1.0.0-rc</code><span class="state state-planned" data-i18n="kit.ladder.planned">Planned</span><span class="rung__text" data-i18n="ladder.rung.v1.0.0-rc">The release candidate: every file reviewed and every host tested by hand.</span></li>
+<li class="rung rung--goal"><code class="rung__ver">v1.0.0</code><span class="state state-goal" data-i18n="kit.ladder.goal">The goal</span><span class="rung__text" data-i18n="ladder.rung.v1.0.0">The release: the free trial, the one-time licence, and the first downloads this site has ever offered.</span></li>
+<li class="rung rung--later"><code class="rung__ver">v1.1.0</code><span class="state state-later" data-i18n="kit.ladder.later">Later</span><span class="rung__text" data-i18n="ladder.rung.v1.1.0">Vocal Match: your vocal's tone set against a reference you own.</span></li>
+<li class="rung rung--later"><code class="rung__ver">v1.2.0</code><span class="state state-later" data-i18n="kit.ladder.later">Later</span><span class="rung__text" data-i18n="ladder.rung.v1.2.0">Doubles and harmonies, stacked for you.</span></li>
+<li class="rung rung--later"><code class="rung__ver">v1.3.0</code><span class="state state-later" data-i18n="kit.ladder.later">Later</span><span class="rung__text" data-i18n="ladder.rung.v1.3.0">A third wave of artist chains, and chains sent in by producers.</span></li>
+<li class="rung rung--later"><code class="rung__ver">v1.4.0</code><span class="state state-later" data-i18n="kit.ladder.later">Later</span><span class="rung__text" data-i18n="ladder.rung.v1.4.0">Bridges to Freally MIDI Master and Freally Unloop.</span></li>
+<li class="rung rung--later"><code class="rung__ver">v1.5.0</code><span class="state state-later" data-i18n="kit.ladder.later">Later</span><span class="rung__text" data-i18n="ladder.rung.v1.5.0">Pro Tools as a plugin (AAX), if Avid's terms allow it.</span></li>
+</ol>
+  <p class="fineprint" data-i18n="ladder.note">A version that is done is built and tagged. It is not a download: there are none, and there will not be until 1.0.0.</p>
+</div>
+</section>
+<section class="section section--surface" id="honest">
+<div class="wrap">
+<span class="label" data-i18n="kit.label.honesty">Honesty</span>
+<h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><path d="M12 19v3"/></svg><span data-i18n="honest.voice.title">A chain is not a voice</span></h3>
+      <p data-i18n="honest.voice.body">A chain reproduces processing: tuning, EQ, compression, delays and reverbs. Your voice, your microphone, your room and your delivery stay yours, and no preset makes anyone sound like someone else.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 21v-7M4 10V3M12 21v-9M12 8V3M20 21v-5M20 12V3M2 14h4M10 8h4M18 16h4"/></svg><span data-i18n="honest.start.title">A chain is a starting point</span></h3>
+      <p data-i18n="honest.start.body">A chain is where your vocal starts, not a promise of a sound. Turn the macros, open the rack and make it yours; nothing you change is ever locked.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z"/><path d="m3.3 7 8.7 5 8.7-5"/><path d="M12 22V12"/></svg><span data-i18n="honest.downloads.title">There are no downloads before 1.0.0</span></h3>
+      <p data-i18n="honest.downloads.body">No beta on this page, no preview build, no early access. Version 1.0 comes with a free trial of the whole plugin and a one-time licence.</p>
+    </article>
+    <article class="note">
+      <h3><svg class="icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 20h.01"/><path d="M8.5 16.429a5 5 0 0 1 7 0"/><path d="M5 12.859a10 10 0 0 1 5.17-2.69"/><path d="M19 12.859a10 10 0 0 0-2.007-1.523"/><path d="M2 8.82a15 15 0 0 1 4.177-2.643"/><path d="M22 8.82a15 15 0 0 0-11.288-3.764"/><path d="m2 2 20 20"/></svg><span data-i18n="honest.network.title">It never goes online</span></h3>
+      <p data-i18n="honest.network.body">The plugin and the standalone app contain no networking code at all, and a build gate fails if any is added. Update checks and licence activation will live in a separate helper that acts only when you ask.</p>
+    </article>
+  </div>
+</div>
+</section>
+<section class="section section--tight family">
+<div class="wrap section-head section-head--center">
+<span class="label" data-i18n="kit.family.label">The Freally family</span>
+<h2 class="h2" data-i18n-html="kit.family.title"><span class="hl-muted">One family.</span> <span class="hl-bright">Ten apps.</span></h2>
+</div>
+<div class="marquee"><div class="marquee__track">
+<div class="marquee__group"><a class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a class="marquee__item" href="https://freallyproducts.com/freally-handscore/"><img src="kit/family/handscore.png" alt="" width="30" height="30" loading="lazy" />Freally Handscore</a><a class="marquee__item" href="https://freallyproducts.com/freally-takelight/" aria-current="true"><img src="kit/family/takelight.png" alt="" width="30" height="30" loading="lazy" />Freally Takelight</a><a class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a class="marquee__item" href="https://freallyproducts.com/freally-capture/"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+<div class="marquee__group" aria-hidden="true"><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-midi-master/"><img src="kit/family/midi-master.png" alt="" width="30" height="30" loading="lazy" />Freally MIDI Master</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-flipcopy/"><img src="kit/family/flipcopy.png" alt="" width="30" height="30" loading="lazy" />Freally Flipcopy</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-oscillate/"><img src="kit/family/oscillate.png" alt="" width="30" height="30" loading="lazy" />Freally Oscillate</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-unloop/"><img src="kit/family/unloop.png" alt="" width="30" height="30" loading="lazy" />Freally Unloop</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-handscore/"><img src="kit/family/handscore.png" alt="" width="30" height="30" loading="lazy" />Freally Handscore</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-takelight/" aria-current="true"><img src="kit/family/takelight.png" alt="" width="30" height="30" loading="lazy" />Freally Takelight</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-sourcerer/"><img src="kit/family/sourcerer.png" alt="" width="30" height="30" loading="lazy" />Freally Sourcerer</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-teleprompt/"><img src="kit/family/teleprompt.png" alt="" width="30" height="30" loading="lazy" />Freally Teleprompt</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-file-manager/"><img src="kit/family/file-manager.png" alt="" width="30" height="30" loading="lazy" />Freally File Manager</a><a tabindex="-1" class="marquee__item" href="https://freallyproducts.com/freally-capture/"><img src="kit/family/capture.png" alt="" width="30" height="30" loading="lazy" />Freally Capture</a></div>
+</div></div>
+</section>
+<section class="cta">
+<div class="orb" aria-hidden="true"></div>
+<div class="wrap">
+<span class="label" data-i18n="kit.cta.label">What changed</span>
+<h2 class="h2" data-i18n-html="kit.cta.title"><span class="hl-muted">Every version,</span> <span class="hl-bright">written down.</span></h2>
+<p class="lead" data-i18n="kit.cta.lede">The changelog lists everything that changed in Freally Takelight, version by version, in all eighteen languages.</p>
+<div class="actions"><a class="btn btn-primary" href="changelog.html"><span data-i18n="kit.cta.changelog">Read the changelog</span><svg class="icon icon--arrow" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg></a><a class="btn btn-secondary" href="features.html"><span data-i18n="kit.cta.features">See every feature</span></a></div>
+</div>
+</section>
     </main>
-    <script src="/report-kit/holding.js"></script>
+    <footer class="footer">
+      <div class="footer__panel">
+        <div class="footer__top">
+          <div class="footer__about"><a class="nav__brand" href="index.html"><img src="takelight-icon.png" alt="" width="28" height="28" /><span>Freally Takelight</span></a><p data-i18n="site.tagline">Every era’s vocal chain. One plugin.</p>
+<p class="fineprint" data-i18n="price.note">Nothing is for sale yet. From version 1.0, Freally Takelight will be sold as a one-time licence, with a free trial of the whole plugin first.</p></div>
+          <div><h2 data-i18n="kit.footer.thisApp">This app</h2><ul><li><a href="index.html" data-page data-i18n="kit.nav.home">Home</a></li><li><a href="features.html" data-page data-i18n="kit.nav.features">Features</a></li><li><a href="documentation.html" data-page data-i18n="kit.nav.documentation">Documentation</a></li><li><a href="changelog.html" data-page data-i18n="kit.nav.changelog">Changelog</a></li></ul></div>
+          <div>
+            <h2 data-i18n="kit.footer.family">The Freally family</h2>
+            <ul class="footer__family"><li><a href="https://freallyproducts.com/freally-midi-master/">Freally MIDI Master</a></li><li><a href="https://freallyproducts.com/freally-flipcopy/">Freally Flipcopy</a></li><li><a href="https://freallyproducts.com/freally-oscillate/">Freally Oscillate</a></li><li><a href="https://freallyproducts.com/freally-unloop/">Freally Unloop</a></li><li><a href="https://freallyproducts.com/freally-handscore/">Freally Handscore</a></li><li><a href="https://freallyproducts.com/freally-takelight/" aria-current="true">Freally Takelight</a></li><li><a href="https://freallyproducts.com/freally-sourcerer/">Freally Sourcerer</a></li><li><a href="https://freallyproducts.com/freally-teleprompt/">Freally Teleprompt</a></li><li><a href="https://freallyproducts.com/freally-file-manager/">Freally File Manager</a></li><li><a href="https://freallyproducts.com/freally-capture/">Freally Capture</a></li></ul>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Not open source. Contact: freallyproducts@gmail.com.</p><p data-i18n="footer.yours">The audio, presets and projects you make with Freally Takelight are yours.</p><p data-i18n="footer.disclaimer">Artist names identify a style only. Freally Takelight is not affiliated with, endorsed by or approved by any artist, producer, engineer, label, publication or plugin maker. A chain applies processing, not a voice.</p></div>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.5.6</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
