@@ -1,5 +1,5 @@
 /**
- * ⛔⛔ **EVERY ANNOTATED DOCUMENTATION SCREENSHOT, DECLARED — TASK-132A, § F-33.**
+ * ⛔⛔ **EVERY ANNOTATED DOCUMENTATION SCREENSHOT, DECLARED — § F-33.**
  *
  * ▶ § F-33: *"every step in the documentation is illustrated by a real
  * screenshot of the real application, with the thing you are being told to
@@ -27,8 +27,8 @@
  * a loudness reading — cannot be photographed here, and a shot declared for one
  * would produce a picture of an empty state that the manual then describes as
  * something else. ▶ Every entry below is a state the front end reaches on its
- * own; the ones that need a backend are named in `Live-To-Do.md` as pictures a
- * human has to take from the shipped application.
+ * own; the ones that need a backend are on the owner's list of checks made by hand,
+ * as pictures a human has to take from the shipped application.
  *
  * ⚠ **`docs/img/` is committed.** The pass is deterministic — a fixture project,
  * a pinned viewport, a fixed theme — so a re-render that differs is a change in
@@ -51,7 +51,7 @@
  * an empty panel under a caption describing a track header, which is the
  * documentation version of a green test over a broken product.
  *
- * ⚠ **They are rows in `Live-To-Do.md` now** — pictures a human takes from the
+ * ⚠ **They are rows on the owner's list of checks made by hand now** — pictures a human takes from the
  * shipped binary, where those panels have something in them.
  *
  * ## ▶ What would unlock them, and why it is not being done today
@@ -62,7 +62,7 @@
  * of state that only `seam_state` produces — so this needs a *new* way for the
  * front end to be handed a session.
  *
- * ⚠ **That is a feature, and the freeze (TASK-127) is in force.** It is also
+ * ⚠ **That is a feature, and the feature freeze is in force.** It is also
  * not a small one: a page-side project loader is a second door into the state
  * the whole product is a projection of. ▶ It belongs in Part II with a version
  * rung, and the three shots below are real in the meantime.

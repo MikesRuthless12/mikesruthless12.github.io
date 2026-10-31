@@ -1,6 +1,6 @@
 {
   "$comment": [
-    "⛔⛔ THE PUBLIC VERSION LADDER — TASK-131. ONE LADDER, AND THIS IS IT.",
+    "⛔⛔ THE PUBLIC VERSION LADDER. ONE LADDER, AND THIS IS IT.",
     "",
     "▶ The private roadmap says it in its own words: 'This is the same ladder published",
     "on the docs site. If one moves, both move.' This file is what makes that",
@@ -18,8 +18,12 @@
     "   done    — built and on this branch",
     "   planned — specified, not built",
     "   goal    — the destination",
-    "⚠ It is NOT a claim that a tag exists. Only v0.0.1 and v0.4.0 are tagged; the",
-    "site never says 'released', because charter rule 5 means nothing is."
+    "⚠ It is NOT a claim that a tag exists. Only v0.0.1 and v0.4.0 are tagged, and v1.0.0RC,",
+    "which is shelved (the merge, 2026-10-27: kept, never published). The site never says",
+    "'released', because charter rule 5 means nothing is.",
+    "",
+    "⛔ 2026-10-28: the merged ladder. v1.0.0b and v1.0.0RC gave way to v0.7.0 … v0.16.0,",
+    "then v1.0.0-beta and v1.0.0-rc (each repeats: -beta.1, -beta.2 …), the fleet's spelling."
   ],
   "rungs": [
     {
@@ -78,19 +82,69 @@
       "summary": "The family look, the same in every Freally app — Blender-rendered knobs, faders and buttons, light and dark on Freally green, interface sounds and a dark title bar — and one instrument library shared with Freally MIDI Master."
     },
     {
-      "version": "v1.0.0b",
-      "state": "planned",
-      "summary": "The public beta, the auto-updater, this site and the illustrated manual. No downloads on this page."
+      "version": "v0.7.0",
+      "state": "done",
+      "summary": "One engine — the shared audio and instrument crates pinned at one tag, the next rungs' foundations brought in, and the Freally family's cursor and toggles."
     },
     {
-      "version": "v1.0.0RC",
+      "version": "v0.8.0",
+      "state": "done",
+      "summary": "Freally MIDI Master, Flipcopy and Takelight in the box — stock plugins in the browser with a tutorial, MIDI Master's songs dragged onto the arrangement, and exports that carry hosted plugins."
+    },
+    {
+      "version": "v0.9.0",
       "state": "planned",
-      "summary": "Hardening, optimisation and the full review sweep — aimed by what the beta finds."
+      "summary": "The stage — 3D hands that play any MIDI track, new voices, an amp and a drum machine, and the instrument browser."
+    },
+    {
+      "version": "v0.10.0",
+      "state": "planned",
+      "summary": "Sheets — engraved notation, guitar TAB, the sheet reader, lyrics under the staff, and the PDF."
+    },
+    {
+      "version": "v0.11.0",
+      "state": "planned",
+      "summary": "Lessons — fifteen courses, Show me, and live listening through your own input, graded."
+    },
+    {
+      "version": "v0.12.0",
+      "state": "planned",
+      "summary": "The studio's own — pitch moves, time stretch, live analysis, a doubler and a ducker, a master for each destination, and the final checks."
+    },
+    {
+      "version": "v0.13.0",
+      "state": "planned",
+      "summary": "MixSir — the mix on your phone, paired from a QR code."
+    },
+    {
+      "version": "v0.14.0",
+      "state": "planned",
+      "summary": "New devices, wave one — the low end and the groove."
+    },
+    {
+      "version": "v0.15.0",
+      "state": "planned",
+      "summary": "New devices, wave two — instruments for the sound designer."
+    },
+    {
+      "version": "v0.16.0",
+      "state": "planned",
+      "summary": "New devices, wave three — a record button that reaches back in time, and find-similar across your sounds."
+    },
+    {
+      "version": "v1.0.0-beta",
+      "state": "planned",
+      "summary": "The beta — a new feature freeze, the whole app in one look and 18 languages, and this site rewritten. It repeats until the testing is done. No downloads on this page."
+    },
+    {
+      "version": "v1.0.0-rc",
+      "state": "planned",
+      "summary": "The release candidate — hardening, the full review sweep, and every feature tested in the release app, in Windows' engine and in macOS's and Linux's. It repeats until one survives clean."
     },
     {
       "version": "v1.0.0",
       "state": "goal",
-      "summary": "Stable. And the first downloads that have ever existed."
+      "summary": "Stable and free, with Freally MIDI Master, Flipcopy and Takelight inside. Downloads open later."
     }
   ]
 }

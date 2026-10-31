@@ -1,7 +1,7 @@
 # The VST 3 SDK licence — read, recorded, and closed
 
-⛔ **TASK-065. Nothing in Phase 6 was allowed to start until this file existed.**
-This is the "last mile" `prd.md` § 15.1 and `ATTRIBUTION.md` Q1 both defer to:
+⛔ **Nothing in Phase 6 was allowed to start until this file existed.**
+This is the "last mile" the technical plan (§ 15.1) and `ATTRIBUTION.md` Q1 both defer to:
 the terms are not recorded from a news article, they are recorded from the
 `LICENSE` file inside the exact revision this product builds against.
 
@@ -11,7 +11,7 @@ the terms are not recorded from a news article, they are recorded from the
 
 ## 1. The verdict, in one table
 
-| Question TASK-065 asks | Answer |
+| Question this file answers | Answer |
 |---|---|
 | **Licence name** | The **MIT License** |
 | **Version** | MIT has no versions. The SDK revision carrying it is **VST 3.8.0** (`v3.8.0_build_66`) |
@@ -195,7 +195,7 @@ which are hand-maintained lists that can drift:
 
 ### ⛔⛔ CORRECTED 2026-09-09 — this section described something that was not there
 
-**Until TASK-122, neither generated file contained the word *Steinberg* at all,**
+**Until the credits page was generated from the build, neither generated file contained the word *Steinberg* at all,**
 and neither named the SDK. What the graph carries is the *binding crate*, so
 what landed was `vst3 0.3.0 | MIT OR Apache-2.0` — an identifier in a table,
 with no holder and no notice anywhere near it. ⚠ The row above also claimed the
@@ -242,8 +242,8 @@ it zero times.
 
 | | |
 |---|---|
-| ✅ **`prd.md` § 15 Q1** | Answered from the licence file itself, not from public reporting |
+| ✅ **The technical plan, § 15 Q1** | Answered from the licence file itself, not from public reporting |
 | ✅ **`ATTRIBUTION.md` Q1** | Closed. The row now points here |
-| ✅ **TASK-069's binding decision** | ⛔ **The `cxx` C++ bridge is unnecessary and is not built.** `vst3` 0.3.0 ships pre-generated bindings with `build = false` and no SDK checkout — so there is no C++ toolchain in the build, none on three CI runners, and none in the README's build requirements. "The bridge is the only C++ in the repository" becomes **"there is no C++ in the repository"** |
+| ✅ **The VST 3 binding decision** | ⛔ **The `cxx` C++ bridge is unnecessary and is not built.** `vst3` 0.3.0 ships pre-generated bindings with `build = false` and no SDK checkout — so there is no C++ toolchain in the build, none on three CI runners, and none in the README's build requirements. "The bridge is the only C++ in the repository" becomes **"there is no C++ in the repository"** |
 | ⚠ **The pin** | `vst3 = "=0.3.0"`, exact, with the reason in `Cargo.toml`. ⛔ An unpinned binding is an unpinned *ABI*: a minor bump that regenerates against a newer SDK changes the COM vtables this host calls through, and that is a crash in somebody else's plugin, not a compile error |
 | ⚠ **What re-opens this file** | Bumping `vst3` past 0.3.0 (re-read the SDK revision behind it), or the owner deciding to show the VST logo (§ 4.4) |
