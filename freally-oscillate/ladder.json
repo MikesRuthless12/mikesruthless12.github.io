@@ -93,8 +93,8 @@
     },
     {
       "version": "v0.9.0",
-      "state": "planned",
-      "summary": "The stage — 3D hands that play any MIDI track, new voices, an amp and a drum machine, and the instrument browser."
+      "state": "done",
+      "summary": "The stage — 3D hands that play any MIDI track, a drum machine and a guitar amp, the instrument browser with all 1,648 instruments, a Pattern Rack that works the way FL Studio's does, and new knobs."
     },
     {
       "version": "v0.10.0",
