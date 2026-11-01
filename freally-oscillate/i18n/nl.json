@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Staat controleren bij het starten uit, dan wordt er niets benaderd en toont het paneel helemaal geen resultaat — <em>Laatst gecontroleerd</em> blijft <em>Nooit</em>. Het toont nooit \"je bent up-to-date\" over een controle die niet heeft plaatsgevonden, want dat zijn verschillende feiten en maar één ervan zou waar zijn.",
   "docs.eb1ebac609ad": "Zestien pads, ingedeeld als een padcontroller met pad 1 linksonder, die een van vier ingebouwde kits spelen: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> en <em>Wire</em>. Elke slag wordt gekozen uit drie lagen naargelang hoe hard je speelt en wisselt af tussen twee takes, zodat een roffel zich nooit precies herhaalt. Projecten die de Pad Grid gebruikten, openen op de Drum Machine met hun niveaus en chokes behouden.",
   "docs.ef86faf16227": "De weergave van het podium vooruit of terug zetten, terwijl het podium de focus heeft",
+  "docs.598372c72bff": "De weergave van het podium vooruit of terug zetten, overal zolang het podium zichtbaar is",
   "docs.ef8b2814c03b": "Selectie opheffen",
   "docs.f1972360c8eb": "Faders, meters, de Masking Radar en het luidheidspaneel.",
   "docs.f6ceafb1fe98": "Er wordt automatisch een rapport op je machine geschreven. <strong>Instellingen ▸ Algemeen</strong> noemt het meest recente en opent de map. Het rapport bevat de versie, het besturingssysteem, het audioapparaat en de pluginlijst op naam — nooit je project, nooit een pad van je schijf, nooit een ruimtecode. Het verlaat je computer alleen als jij besluit het te versturen.",

@@ -101,6 +101,7 @@
   "docs.56205fc54fb3": "<strong>Settings ▸ Updates.</strong> Oscillate looks for an update <strong>only</strong> when you press <em>Check for updates</em>, or at launch if you switch that on — and it is <strong>off by default</strong>.",
   "docs.56f9e52baa67": "Show or hide a panel — Editor, Mixer, Room",
   "docs.57ba00ce7687": "Faces",
+  "docs.598372c72bff": "Step the stage's view, forwards or back, from anywhere while the stage shows",
   "docs.5a27169c5088": "Press <strong>Loudness</strong> for integrated LUFS, short-term, the range and true peak, plus a table of what each streaming service targets and what it would do to your master. Each target carries the date it was last checked.",
   "docs.5a8b10fcbead": "Dragging a file in",
   "docs.5d740606fafb": "A dropped file is <strong>taken into the project</strong>, not referenced. Drop something out of a temporary folder and delete the original, and the clip still plays.",

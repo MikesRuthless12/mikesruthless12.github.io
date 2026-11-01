@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Başlangıçta denetim kapalıyken hiçbir yere bağlanılmaz ve panel hiçbir sonuç göstermez — <em>Son denetim</em>, <em>Hiç</em> olarak kalır. Gerçekleşmemiş bir denetimin üzerine asla “güncelsin” yazmaz, çünkü bunlar farklı olgulardır ve yalnızca biri doğru olurdu.",
   "docs.eb1ebac609ad": "Pad kontrolcüsü gibi dizilmiş, 1. pad'i sol altta olan on altı pad; dört yerleşik setten birini çalar: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> ve <em>Wire</em>. Her vuruş, ne kadar sert çaldığına göre üç katmandan seçilir ve iki çekim arasında dönüşümlü çalar; böylece bir rulo asla kendini tıpatıp tekrarlamaz. Pad Grid kullanan projeler, düzeyleri ve kesmeleri korunarak Drum Machine ile açılır.",
   "docs.ef86faf16227": "Sahne odaktayken sahnenin görünümünü ileri ya da geri değiştir",
+  "docs.598372c72bff": "Sahnenin görünümünü ileri ya da geri al, sahne görünürken her yerden",
   "docs.ef8b2814c03b": "Seçimi temizle",
   "docs.f1972360c8eb": "Fader'lar, ölçerler, Maskeleme Radarı ve ses yüksekliği paneli.",
   "docs.f6ceafb1fe98": "Bilgisayarına otomatik olarak bir rapor yazılır. <strong>Ayarlar ▸ Genel</strong> en son raporun adını gösterir ve klasörünü açar. Rapor sürümü, işletim sistemini, ses aygıtını ve eklenti listesini adlarıyla içerir — asla projeni, asla diskindeki bir yolu, asla bir oda kodunu içermez. Bilgisayarından yalnızca sen göndermeyi seçersen çıkar.",

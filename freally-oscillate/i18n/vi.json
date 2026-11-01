@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Khi tắt kiểm tra lúc khởi động, không có gì được liên hệ và bảng không hiện kết quả nào — <em>Kiểm tra lần cuối</em> vẫn là <em>Chưa bao giờ</em>. Nó không bao giờ hiện \"bạn đang dùng bản mới nhất\" cho một lần kiểm tra chưa hề diễn ra, vì đó là hai sự thật khác nhau và chỉ một trong hai là đúng.",
   "docs.eb1ebac609ad": "Mười sáu pad, sắp xếp như một bộ điều khiển pad với pad 1 ở góc dưới bên trái, chơi một trong bốn bộ trống tích hợp: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> và <em>Wire</em>. Mỗi nhát đánh được chọn từ ba lớp tuỳ theo bạn đánh mạnh tới đâu và luân phiên giữa hai take, nên một hồi vê trống không bao giờ lặp lại y hệt. Các dự án từng dùng Pad Grid sẽ mở trên Drum Machine với mức âm lượng và các nhóm chặn tiếng được giữ nguyên.",
   "docs.ef86faf16227": "Chuyển góc nhìn của sân khấu, tới hoặc lui, khi sân khấu đang có tiêu điểm",
+  "docs.598372c72bff": "Chuyển góc nhìn sân khấu tới hoặc lui, từ bất kỳ đâu khi sân khấu đang hiện",
   "docs.ef8b2814c03b": "Bỏ chọn",
   "docs.f1972360c8eb": "Fader, đồng hồ đo, Ra-đa che lấp và bảng độ lớn.",
   "docs.f6ceafb1fe98": "Một báo cáo được tự động ghi lên máy của bạn. <strong>Cài đặt ▸ Chung</strong> cho biết tên báo cáo gần nhất và mở thư mục chứa nó. Báo cáo gồm phiên bản, hệ điều hành, thiết bị âm thanh và danh sách plugin theo tên — không bao giờ có dự án của bạn, không bao giờ có đường dẫn trên đĩa của bạn, không bao giờ có mã phòng. Nó chỉ rời máy tính của bạn nếu bạn chọn gửi.",

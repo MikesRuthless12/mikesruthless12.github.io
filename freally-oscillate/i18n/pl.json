@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Gdy sprawdzanie przy starcie jest wyłączone, nie następuje żadne połączenie, a panel nie pokazuje żadnego wyniku — <em>Ostatnie sprawdzenie</em> pozostaje <em>Nigdy</em>. Nigdy nie wyświetla „masz najnowszą wersję” w miejsce sprawdzenia, które się nie odbyło, bo to różne fakty i tylko jeden z nich byłby prawdziwy.",
   "docs.eb1ebac609ad": "Szesnaście padów, ułożonych jak na kontrolerze padów, z padem 1 w lewym dolnym rogu, gra jeden z czterech wbudowanych zestawów: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> i <em>Wire</em>. Każde uderzenie jest wybierane z trzech warstw zależnie od tego, jak mocno grasz, i naprzemiennie z dwóch ujęć, więc szybka seria uderzeń nigdy nie powtarza się dokładnie. Projekty, które używały Pad Grid, otwierają się z Drum Machine, z zachowanymi poziomami i grupami wyciszania.",
   "docs.ef86faf16227": "Przełącza widok sceny do przodu lub do tyłu, gdy scena ma fokus",
+  "docs.598372c72bff": "Przełącz widok sceny dalej lub wstecz, z dowolnego miejsca, gdy scena jest widoczna",
   "docs.ef8b2814c03b": "Usuń zaznaczenie",
   "docs.f1972360c8eb": "Suwaki, mierniki, Radar maskowania i panel głośności.",
   "docs.f6ceafb1fe98": "Raport zapisuje się na twoim komputerze automatycznie. <strong>Ustawienia ▸ Ogólne</strong> podaje najnowszy z nich i otwiera folder. Raport zawiera wersję, system operacyjny, urządzenie audio i listę wtyczek z nazwy — nigdy twojego projektu, nigdy ścieżki z twojego dysku, nigdy kodu pokoju. Opuszcza twój komputer tylko wtedy, gdy zdecydujesz się go wysłać.",

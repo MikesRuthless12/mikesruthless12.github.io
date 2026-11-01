@@ -1,4 +1,9 @@
 {
+  "changelog.69c6a54708de": "[Unreleased]",
+  "changelog.b8ba10151223": "**Die Ansicht der Bühne von überall wechseln.** Solange die Bühne zu sehen ist, springt Alt+V zur nächsten Ansicht und Alt+Shift+V zurück, wo immer Sie gerade arbeiten.",
+  "changelog.420f580c3422": "**Eine niedrige Bühne zeigt das ganze Klavier.** Machen Sie die Bühne niedrig, und die Kamera fährt zurück, bis Tastatur, Hände und Notenpult ganz zu sehen sind, mittig.",
+  "changelog.88dda7027d59": "**Die Drums-Spur eines neuen Projekts ist eine Schlagzeugspur:** Die Bühne stellt dafür das Schlagzeug auf, kein Klavier.",
+  "changelog.09d0ea47cefd": "**Die Werkzeugleiste des Arrangements bleibt sichtbar**, wenn die Bühne das Arrangement niedrig macht, und das Symbol der Liedtext-Taste sitzt mittig auf ihr.",
   "changelog.6de570ed34e4": "[0.9.0] — 2026-10-31",
   "changelog.846db83f9221": "**Die Bühne — noch keine Downloads.** Eine 3D-Bühne unter dem Arrangement spielt jede MIDI-Spur mit Händen an Klavieren, Gitarren, Bässen und Schlagzeug. Daneben kommen eine Drum-Machine, ein Gitarrenverstärker, der Instrumenten-Browser mit allen 1,648 Instrumenten, ein Pattern-Rack, das wie das von FL Studio funktioniert, die Räder eines MIDI-Keyboards an jedem Instrument und neue Regler.",
   "changelog.f5738fc842ef": "**Die Bühne, aus Freally Handscore.** Ansicht ▸ Bühne (Ctrl+6) öffnet eine 3D-Bühne unter dem Arrangement. Wähle eine MIDI-Spur oder lass sie der ausgewählten folgen, und Hände spielen ihre Noten auf ihrem Instrument im Takt des Transports: durch Tempowechsel, über den Loop hinweg und überall, wohin du scrubbst. Fährst du über das Lineal der Zeitleiste, zeigt eine kleine Vorschau die Bühne in diesem Moment. Die Bühne lädt erst, wenn du sie zum ersten Mal öffnest, sodass Oscillate so schnell startet wie bisher. Unter macOS und Linux springt die Bühne an jede neue Stelle, wenn du stoppst, springst oder die Ansicht wechselst, statt mitzuspielen, und sagt das auch.",

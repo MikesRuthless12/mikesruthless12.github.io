@@ -1,4 +1,9 @@
 {
+  "changelog.69c6a54708de": "[Unreleased]",
+  "changelog.b8ba10151223": "**Wissel de weergave van het podium overal vandaan.** Zolang het podium zichtbaar is, gaat Alt+V naar de volgende weergave en Alt+Shift+V terug, waar je ook werkt.",
+  "changelog.420f580c3422": "**Een laag podium toont de hele piano.** Maak het podium laag en de camera gaat achteruit tot toetsen, handen en lessenaar helemaal in beeld zijn, gecentreerd.",
+  "changelog.88dda7027d59": "**Het Drums-spoor van een nieuw project is een drumspoor:** het podium zet er het drumstel voor neer, geen piano.",
+  "changelog.09d0ea47cefd": "**De werkbalk van het arrangement blijft in beeld** als het podium het arrangement laag maakt, en het icoon van de songtekstknop staat midden op zijn knop.",
   "changelog.6de570ed34e4": "[0.9.0] — 2026-10-31",
   "changelog.846db83f9221": "**Het podium — nog geen downloads.** Een 3D-podium onder het arrangement speelt elke MIDI-track met handen op piano's, gitaren, basgitaren en drums. Ernaast komen een drumcomputer, een gitaarversterker, de instrumentenbrowser met alle 1,648 instrumenten, een Patroonrek dat werkt zoals dat van FL Studio, de wielen van een MIDI-keyboard op elk instrument en nieuwe knoppen.",
   "changelog.f5738fc842ef": "**Het podium, uit Freally Handscore.** Beeld ▸ Podium (Ctrl+6) opent een 3D-podium onder het arrangement. Kies een MIDI-track, of laat het de geselecteerde volgen, en handen spelen de noten ervan op het instrument van die track, in de maat met het transport: door tempowisselingen heen, rond de loop en overal waar je naartoe scrubt. Beweeg je over de liniaal van de tijdlijn, dan toont een kleine voorvertoning het podium op dat moment. Het podium laadt pas de eerste keer dat je het opent, zodat Oscillate even snel start als voorheen. Op macOS en Linux springt het podium naar elke nieuwe plek wanneer je stopt, verspringt of de weergave wisselt, in plaats van mee te spelen, en dat zegt het ook.",

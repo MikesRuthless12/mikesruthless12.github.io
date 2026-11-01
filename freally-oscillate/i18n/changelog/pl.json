@@ -1,4 +1,9 @@
 {
+  "changelog.69c6a54708de": "[Unreleased]",
+  "changelog.b8ba10151223": "**Zmieniaj widok sceny z dowolnego miejsca.** Gdy scena jest widoczna, Alt+V przechodzi do następnego widoku, a Alt+Shift+V do poprzedniego, gdziekolwiek pracujesz.",
+  "changelog.420f580c3422": "**Niska scena pokazuje cały fortepian.** Zmniejsz wysokość sceny, a kamera cofa się, aż klawiatura, dłonie i pulpit będą widoczne w całości, pośrodku.",
+  "changelog.88dda7027d59": "**Ścieżka Drums w nowym projekcie jest ścieżką perkusji:** scena ustawia dla niej zestaw perkusyjny, nie fortepian.",
+  "changelog.09d0ea47cefd": "**Pasek narzędzi aranżacji pozostaje widoczny**, gdy scena zmniejsza aranżację, a ikona klawisza tekstu jest na środku klawisza.",
   "changelog.6de570ed34e4": "[0.9.0] — 2026-10-31",
   "changelog.846db83f9221": "**Scena — jeszcze bez pobierania.** Scena 3D pod aranżacją gra dowolną ścieżkę MIDI rękami na fortepianach, gitarach, basach i perkusji. Obok przychodzą automat perkusyjny, wzmacniacz gitarowy, przeglądarka instrumentów ze wszystkimi 1648 instrumentami, Rack patternów, który działa tak jak w FL Studio, kółka klawiatury MIDI na każdym instrumencie i nowe pokrętła.",
   "changelog.f5738fc842ef": "**Scena z Freally Handscore.** Widok ▸ Scena (Ctrl+6) otwiera scenę 3D pod aranżacją. Wybierz ścieżkę MIDI albo pozwól scenie podążać za zaznaczoną, a dłonie zagrają jej nuty na jej instrumencie w rytm transportu: przez zmiany tempa, dookoła pętli i wszędzie, dokąd przewiniesz. Najechanie na linijkę osi czasu pokazuje mały podgląd sceny w tej chwili. Scena wczytuje się dopiero przy pierwszym otwarciu, więc Oscillate uruchamia się tak szybko jak wcześniej. W systemach macOS i Linux scena przeskakuje do każdego nowego miejsca, gdy zatrzymujesz, przewijasz lub zmieniasz widok, zamiast grać na bieżąco, i mówi o tym.",

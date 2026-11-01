@@ -1,4 +1,9 @@
 {
+  "changelog.69c6a54708de": "[Unreleased]",
+  "changelog.b8ba10151223": "**Đổi góc nhìn sân khấu từ bất kỳ đâu.** Khi sân khấu đang hiện, Alt+V chuyển sang góc nhìn tiếp theo và Alt+Shift+V quay lại, dù bạn đang làm việc ở đâu.",
+  "changelog.420f580c3422": "**Sân khấu thấp vẫn hiện cả cây đàn piano.** Thu thấp sân khấu và máy quay lùi lại cho đến khi bàn phím, đôi tay và giá nhạc hiện đủ, ở giữa.",
+  "changelog.88dda7027d59": "**Rãnh Drums của dự án mới là rãnh trống:** sân khấu đặt bộ trống cho nó, không phải đàn piano.",
+  "changelog.09d0ea47cefd": "**Thanh công cụ của bản phối vẫn hiện trên màn hình** khi sân khấu làm bản phối thấp lại, và biểu tượng của phím lời bài hát nằm giữa phím.",
   "changelog.6de570ed34e4": "[0.9.0] — 2026-10-31",
   "changelog.846db83f9221": "**Sân khấu — chưa có bản tải xuống.** Một sân khấu 3D bên dưới bản phối chơi bất kỳ track MIDI nào bằng đôi tay trên piano, guitar, bass và trống. Bên cạnh đó là một drum machine, một bộ amp guitar, trình duyệt nhạc cụ với đủ 1,648 nhạc cụ, một Giá pattern hoạt động như của FL Studio, các bánh xe của bàn phím MIDI trên mọi nhạc cụ, và núm vặn mới.",
   "changelog.f5738fc842ef": "**Sân khấu, từ Freally Handscore.** Xem ▸ Sân khấu (Ctrl+6) mở một sân khấu 3D bên dưới bản phối. Chọn một track MIDI, hoặc để nó theo track đang được chọn, và đôi tay chơi các nốt của track đó trên nhạc cụ của nó, khớp nhịp với transport: qua các lần đổi tempo, vòng qua vòng lặp và tới bất cứ đâu bạn tua. Rê chuột lên thước của dòng thời gian sẽ hiện một bản xem trước nhỏ của sân khấu tại thời điểm đó. Sân khấu chỉ tải vào lần đầu bạn mở nó, nên Oscillate vẫn khởi động nhanh như trước. Trên macOS và Linux, sân khấu chuyển tới từng vị trí mới khi bạn dừng, nhảy tới hoặc đổi góc nhìn, thay vì chơi theo, và có nói rõ điều đó.",

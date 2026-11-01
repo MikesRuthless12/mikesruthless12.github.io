@@ -1,4 +1,9 @@
 {
+  "changelog.69c6a54708de": "[Unreleased]",
+  "changelog.b8ba10151223": "**Mude a vista do palco de qualquer lugar.** Enquanto o palco aparece, Alt+V vai para a próxima vista e Alt+Shift+V volta, onde quer que você esteja trabalhando.",
+  "changelog.420f580c3422": "**Um palco baixo mostra o piano inteiro.** Deixe o palco baixo e a câmera recua até que o teclado, as mãos e a estante de partitura apareçam inteiros, centralizados.",
+  "changelog.88dda7027d59": "**A faixa Drums de um projeto novo é uma faixa de bateria:** o palco coloca a bateria para ela, não um piano.",
+  "changelog.09d0ea47cefd": "**A barra de ferramentas do arranjo fica visível** quando o palco deixa o arranjo baixo, e o ícone da tecla de letras fica no centro da tecla.",
   "changelog.6de570ed34e4": "[0.9.0] — 2026-10-31",
   "changelog.846db83f9221": "**O palco — ainda sem downloads.** Um palco 3D sob o arranjo toca qualquer faixa MIDI com mãos em pianos, guitarras, baixos e bateria. Ao lado dele vêm uma drum machine, um amplificador de guitarra, o navegador de instrumentos com todos os 1.648 instrumentos, um Rack de padrões que funciona como o do FL Studio, as rodas de um teclado MIDI em todos os instrumentos e knobs novos.",
   "changelog.f5738fc842ef": "**O palco, do Freally Handscore.** Exibir ▸ Palco (Ctrl+6) abre um palco 3D sob o arranjo. Escolha uma faixa MIDI, ou deixe que ele siga a selecionada, e mãos tocam as notas dela no instrumento dela, no tempo do transporte: através das mudanças de andamento, na volta do loop e para onde quer que você arraste o cursor de reprodução. Passar o mouse sobre a régua da linha do tempo mostra uma pequena prévia do palco naquele momento. O palco só carrega na primeira vez que você o abre, então o Oscillate inicia tão rápido quanto antes. No macOS e no Linux, o palco vai para cada novo ponto quando você para, busca uma posição ou muda a vista, em vez de tocar junto, e avisa isso.",

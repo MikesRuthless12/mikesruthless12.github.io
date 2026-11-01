@@ -1,4 +1,9 @@
 {
+  "changelog.69c6a54708de": "[Unreleased]",
+  "changelog.b8ba10151223": "**Ganti tampilan panggung dari mana saja.** Selama panggung tampil, Alt+V pindah ke tampilan berikutnya dan Alt+Shift+V kembali, di mana pun Anda bekerja.",
+  "changelog.420f580c3422": "**Panggung yang pendek menampilkan seluruh piano.** Buat panggung pendek dan kamera mundur sampai keyboard, tangan, dan meja partitur terlihat utuh, di tengah.",
+  "changelog.88dda7027d59": "**Trek Drums di proyek baru adalah trek drum:** panggung menampilkan drum kit untuknya, bukan piano.",
+  "changelog.09d0ea47cefd": "**Bilah alat aransemen tetap terlihat** saat panggung membuat aransemen pendek, dan ikon tombol lirik berada di tengah tombolnya.",
   "changelog.6de570ed34e4": "[0.9.0] — 2026-10-31",
   "changelog.846db83f9221": "**Panggung — belum ada unduhan.** Panggung 3D di bawah aransemen memainkan trek MIDI apa pun dengan tangan di piano, gitar, bass, dan drum. Di sampingnya hadir drum machine, ampli gitar, peramban instrumen dengan seluruh 1,648 instrumen, Rak pola yang bekerja seperti milik FL Studio, roda keyboard MIDI di setiap instrumen, dan kenop baru.",
   "changelog.f5738fc842ef": "**Panggung, dari Freally Handscore.** Tampilan ▸ Panggung (Ctrl+6) membuka panggung 3D di bawah aransemen. Pilih trek MIDI, atau biarkan panggung mengikuti trek yang dipilih, dan tangan-tangan memainkan not trek itu pada instrumennya, seirama dengan transport: melewati perubahan tempo, saat loop berputar, dan ke mana pun kamu menggeser kepala pemutar. Mengarahkan kursor ke penggaris linimasa menampilkan pratinjau kecil panggung pada saat itu. Panggung baru dimuat saat pertama kali kamu membukanya, jadi Oscillate tetap mulai secepat sebelumnya. Di macOS dan Linux, panggung berpindah ke setiap posisi baru saat kamu berhenti, melompat, atau mengganti tampilan, alih-alih ikut bermain, dan panggung memberitahukannya.",

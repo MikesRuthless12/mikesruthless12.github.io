@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Com a verificação ao iniciar desligada, nada é contatado e o painel não mostra resultado nenhum — <em>Última verificação</em> continua <em>Nunca</em>. Ele nunca exibe \"você está atualizado\" sobre uma verificação que não aconteceu, porque são fatos diferentes e só um deles seria verdadeiro.",
   "docs.eb1ebac609ad": "Dezesseis pads, dispostos como num controlador de pads, com o pad 1 no canto inferior esquerdo, tocando um de quatro kits embutidos: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> e <em>Wire</em>. Cada ataque é escolhido entre três camadas pela força com que você toca e alterna entre dois takes, então um rufo nunca se repete exatamente igual. Projetos que usavam o Pad Grid abrem na Drum Machine com os níveis e os chokes preservados.",
   "docs.ef86faf16227": "Avançar ou voltar a vista do palco, enquanto o palco está em foco",
+  "docs.598372c72bff": "Avançar ou voltar a vista do palco, de qualquer lugar enquanto o palco aparece",
   "docs.ef8b2814c03b": "Limpar a seleção",
   "docs.f1972360c8eb": "Faders, medidores, o Radar de mascaramento e o painel de intensidade sonora.",
   "docs.f6ceafb1fe98": "Um relatório é gravado na sua máquina automaticamente. <strong>Configurações ▸ Geral</strong> mostra o nome do mais recente e abre a pasta. O relatório contém a versão, o sistema operacional, o dispositivo de áudio e a lista de plugins pelo nome — nunca o seu projeto, nunca um caminho do seu disco, nunca um código de sala. Ele só sai do seu computador se você escolher enviá-lo.",

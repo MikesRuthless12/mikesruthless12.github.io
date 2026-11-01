@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Con la comprobación al iniciar desactivada, no se contacta nada y el panel no muestra ningún resultado: <em>Última comprobación</em> se queda en <em>Nunca</em>. Nunca muestra «estás al día» sobre una comprobación que no ocurrió, porque son hechos distintos y solo uno de ellos sería cierto.",
   "docs.eb1ebac609ad": "Dieciséis pads, dispuestos como un controlador de pads con el pad 1 abajo a la izquierda, que tocan uno de cuatro kits integrados: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> y <em>Wire</em>. Cada golpe se elige entre tres capas según la fuerza con que tocas y alterna entre dos tomas, así que un redoble nunca se repite exactamente igual. Los proyectos que usaban el Pad Grid se abren en la Drum Machine conservando sus niveles y sus cortes.",
   "docs.ef86faf16227": "Pasar a la vista siguiente o anterior del escenario, mientras el escenario tiene el foco",
+  "docs.598372c72bff": "Avanzar o retroceder la vista del escenario, desde cualquier sitio mientras se ve el escenario",
   "docs.ef8b2814c03b": "Quitar la selección",
   "docs.f1972360c8eb": "Faders, medidores, el Radar de enmascaramiento y el panel de sonoridad.",
   "docs.f6ceafb1fe98": "Se escribe automáticamente un informe en tu equipo. <strong>Ajustes ▸ General</strong> nombra el más reciente y abre la carpeta. El informe contiene la versión, el sistema operativo, el dispositivo de audio y la lista de plugins por nombre; nunca tu proyecto, nunca una ruta de tu disco, nunca un código de sala. Solo sale de tu ordenador si decides enviarlo.",

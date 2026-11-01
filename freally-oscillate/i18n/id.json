@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Dengan pemeriksaan saat dijalankan dimatikan, tidak ada yang dihubungi dan panel sama sekali tidak menampilkan hasil — <em>Terakhir diperiksa</em> tetap <em>Belum pernah</em>. Ia tidak pernah menulis \"kamu sudah memakai versi terbaru\" di atas pemeriksaan yang tidak terjadi, karena keduanya fakta yang berbeda dan hanya salah satunya yang benar.",
   "docs.eb1ebac609ad": "Enam belas pad, ditata seperti kontroler pad dengan pad 1 di kiri bawah, memainkan salah satu dari empat kit bawaan: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> dan <em>Wire</em>. Setiap pukulan dipilih dari tiga lapisan menurut seberapa keras kamu bermain dan bergantian di antara dua take, sehingga sebuah roll tidak pernah berulang persis sama. Proyek yang memakai Pad Grid terbuka di Drum Machine dengan level dan choke-nya tetap terjaga.",
   "docs.ef86faf16227": "Ganti tampilan panggung, maju atau mundur, selama panggung memiliki fokus",
+  "docs.598372c72bff": "Memajukan atau memundurkan tampilan panggung, dari mana saja selama panggung tampil",
   "docs.ef8b2814c03b": "Hapus pilihan",
   "docs.f1972360c8eb": "Fader, meter, Masking Radar dan panel kenyaringan.",
   "docs.f6ceafb1fe98": "Sebuah laporan ditulis ke mesinmu secara otomatis. <strong>Pengaturan ▸ Umum</strong> menyebut laporan terbaru dan membuka foldernya. Laporan itu memuat versi, sistem operasi, perangkat audio dan daftar plugin menurut nama — tidak pernah proyekmu, tidak pernah jalur dari disk-mu, tidak pernah kode ruang. Ia hanya meninggalkan komputermu jika kamu memilih untuk mengirimnya.",

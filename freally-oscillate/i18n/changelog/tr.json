@@ -1,4 +1,9 @@
 {
+  "changelog.69c6a54708de": "[Unreleased]",
+  "changelog.b8ba10151223": "**Sahnenin görünümünü her yerden değiştirin.** Sahne görünürken, nerede çalışırsanız çalışın Alt+V sonraki görünüme, Alt+Shift+V öncekine geçer.",
+  "changelog.420f580c3422": "**Alçak bir sahne piyanonun tamamını gösterir.** Sahneyi alçaltın; kamera, klavye, eller ve nota sehpası tamamen ve ortada görünene kadar geri çekilir.",
+  "changelog.88dda7027d59": "**Yeni projenin Drums kanalı bir davul kanalıdır:** sahne onun için piyano değil davul seti koyar.",
+  "changelog.09d0ea47cefd": "**Aranjmanın araç çubuğu ekranda kalır** sahne aranjmanı alçalttığında; şarkı sözü tuşunun simgesi de tuşun ortasında durur.",
   "changelog.6de570ed34e4": "[0.9.0] — 2026-10-31",
   "changelog.846db83f9221": "**Sahne — henüz indirme yok.** Düzenlemenin altındaki bir 3B sahne, herhangi bir MIDI parçasını piyanolarda, gitarlarda, baslarda ve davullarda ellerle çalar. Yanında bir davul makinesi, bir gitar amfisi, 1,648 enstrümanın hepsini barındıran enstrüman tarayıcısı, FL Studio'dakinin yaptığı gibi çalışan bir Pattern rafı, her enstrümanda bir MIDI klavyenin tekerlekleri ve yeni düğmeler geliyor.",
   "changelog.f5738fc842ef": "**Freally Handscore'dan sahne.** Görünüm ▸ Sahne (Ctrl+6), düzenlemenin altında bir 3B sahne açar. Bir MIDI parçası seç ya da sahnenin seçili parçayı izlemesine izin ver; eller onun notalarını kendi enstrümanında transport ile aynı zamanda çalar: tempo değişikliklerinden geçerek, döngü boyunca ve nereye kaydırırsan orada. Zaman çizelgesinin cetvelinin üzerine gelmek, sahnenin o andaki küçük bir önizlemesini gösterir. Sahne yalnızca onu ilk açtığında yüklenir; böylece Oscillate eskisi kadar hızlı açılır. macOS ve Linux'ta sahne birlikte çalmak yerine, durdurduğunda, konum değiştirdiğinde ya da görünümü değiştirdiğinde her yeni yere geçer ve bunu söyler.",

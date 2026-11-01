@@ -229,7 +229,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#shortcuts",
   "heading": "Shortcuts",
-  "text": "Every one of these can be changed in Settings ▸ Shortcuts , and a chord that is already taken says which action has it. On macOS read Ctrl as Cmd . Chord Action Space Play or pause Ctrl + N New project Ctrl + O Open a project Ctrl + S Save Ctrl + Shift + S Save as Ctrl + Z Undo — yours, always Ctrl + Shift + Z Redo Ctrl + Shift + C Session card Ctrl + , Settings Ctrl + 1 Show or hide the File Explorer Ctrl + 2 Switch the centre between the Arrangement and the Pattern Rack Ctrl + 3 … 5 Show or hide a panel — Editor, Mixer, Room Ctrl + 6 Show or hide the Stage V / Shift + V Step the stage's view, forwards or back, while the stage has the focus B / V The blade / the pointer P Draw mode (the pencil) Home / End Bar 1 / the end of the arrangement Ctrl + A Select everything Esc Clear the selection Delete Delete what is selected Ctrl + U Quantize Ctrl + Shift + U Humanize Ctrl + L Legato Ctrl + R Reverse the notes Ctrl + K Move the notes to the scale Ctrl + D Duplicate in place Shift + D Duplicate after ← → Nudge ↑ ↓ A semitone; with Shift , an octave F Fold the roll to the scale G Ghost notes — the rest of the pattern, behind these Shift + V The velocity lane Shift + C The chance lane — h"
+  "text": "Every one of these can be changed in Settings ▸ Shortcuts , and a chord that is already taken says which action has it. On macOS read Ctrl as Cmd . Chord Action Space Play or pause Ctrl + N New project Ctrl + O Open a project Ctrl + S Save Ctrl + Shift + S Save as Ctrl + Z Undo — yours, always Ctrl + Shift + Z Redo Ctrl + Shift + C Session card Ctrl + , Settings Ctrl + 1 Show or hide the File Explorer Ctrl + 2 Switch the centre between the Arrangement and the Pattern Rack Ctrl + 3 … 5 Show or hide a panel — Editor, Mixer, Room Ctrl + 6 Show or hide the Stage V / Shift + V Step the stage's view, forwards or back, while the stage has the focus Alt + V / Alt + Shift + V Step the stage's view, forwards or back, from anywhere while the stage shows B / V The blade / the pointer P Draw mode (the pencil) Home / End Bar 1 / the end of the arrangement Ctrl + A Select everything Esc Clear the selection Delete Delete what is selected Ctrl + U Quantize Ctrl + Shift + U Humanize Ctrl + L Legato Ctrl + R Reverse the notes Ctrl + K Move the notes to the scale Ctrl + D Duplicate in place Shift + D Duplicate after ← → Nudge ↑ ↓ A semitone; with Shift , an octave F Fold the roll to the scale G Ghost "
  },
  {
   "url": "documentation.html#privacy",
@@ -245,6 +245,16 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#troubleshooting",
   "heading": "Troubleshooting",
   "text": "There is no sound Check Settings ▸ Audio first: the device, and which mode you actually got. If another application has the interface in exclusive mode, Oscillate cannot open it and says so. A track that is silent when others are not is usually soloed elsewhere, muted, or has its instrument slot empty. A plugin does not appear Settings ▸ Plugins lists the folders being scanned and what was found. A plugin that failed to load is listed as blocked with the reason, and can be unblocked to try again. Oscillate hosts VST3 and CLAP; it does not host VST2 or AU. The room will not connect Read the reason it gives — there are nine of them and they are different problems. Your network gives every server a different address means you need a relay, which goes in Settings ▸ Collaboration . Check that the code you pasted is the whole code: they are long, and a chat client that wrapped one will have broken it. Something crashed A report is written to your machine automatically. Settings ▸ General names the most recent one and opens the folder. The report contains the version, the operating system, the audio device and the plugin list by name — never your project, never a path from your disk, neve"
+ },
+ {
+  "url": "changelog.html#unreleased-added",
+  "heading": "Added",
+  "text": "Step the stage's view from anywhere. While the stage shows, Alt+V moves to its next view and Alt+Shift+V back, wherever you are working."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed",
+  "heading": "Fixed",
+  "text": "A short stage shows the whole piano. Make the stage short and the camera pulls back until the keyboard, the hands and the music desk are all in view, centred. A new project's Drums track is a drum track: the stage stands the drum kit for it, not a piano. The arrangement's toolbar stays on screen when the stage makes the arrangement short, and the lyrics key's icon sits in the middle of its key. v0.9.0 2026-10-31 The stage — there are no downloads yet. A 3D stage under the arrangement plays any MIDI track with hands on pianos, guitars, basses and drums. Beside it come a drum machine, a guitar amp, the instrument browser with all 1,648 instruments, a Pattern Rack that works the way FL Studio's does, a MIDI keyboard's wheels on every instrument, and new knobs."
  },
  {
   "url": "changelog.html#0-9-0-2026-10-31-added",

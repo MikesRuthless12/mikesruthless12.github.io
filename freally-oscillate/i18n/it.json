@@ -252,6 +252,7 @@
   "docs.eb0eedb56328": "Con il controllo all'avvio disattivato, non viene contattato nulla e il pannello non mostra alcun risultato — <em>Ultimo controllo</em> resta <em>Mai</em>. Non scrive mai «sei aggiornato» su un controllo che non è avvenuto, perché sono fatti diversi e solo uno dei due sarebbe vero.",
   "docs.eb1ebac609ad": "Sedici pad, disposti come un controller a pad con il pad 1 in basso a sinistra, che suonano uno di quattro set integrati: <em>Sub</em>, <em>Floor</em>, <em>Neon</em> e <em>Wire</em>. Ogni colpo viene scelto tra tre strati in base a quanto forte suoni e alterna tra due take, così un rullo non si ripete mai esattamente. I progetti che usavano il Pad Grid si aprono sulla Drum Machine mantenendo livelli e choke.",
   "docs.ef86faf16227": "Passa alla vista successiva o precedente del palco, mentre il palco ha il focus",
+  "docs.598372c72bff": "Passa alla vista successiva o precedente del palco, da ovunque finché il palco è visibile",
   "docs.ef8b2814c03b": "Annulla la selezione",
   "docs.f1972360c8eb": "Fader, misuratori, il Radar di mascheramento e il pannello dell'intensità sonora.",
   "docs.f6ceafb1fe98": "Un rapporto viene scritto automaticamente sul tuo computer. <strong>Impostazioni ▸ Generale</strong> indica il più recente e apre la cartella. Il rapporto contiene la versione, il sistema operativo, il dispositivo audio e l'elenco dei plugin per nome — mai il tuo progetto, mai un percorso del tuo disco, mai un codice stanza. Lascia il tuo computer solo se scegli di inviarlo.",
