@@ -249,12 +249,12 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "changelog.html#unreleased-added",
   "heading": "Added",
-  "text": "Step the stage's view from anywhere. While the stage shows, Alt+V moves to its next view and Alt+Shift+V back, wherever you are working."
+  "text": "Step the stage's view from anywhere. While the stage shows, Alt+V moves to its next view and Alt+Shift+V back, wherever you are working. The drummer wears real shoes. Laced hi-tops, black canvas on a white rubber sole and toe cap, white laces through metal eyelets up to a bow, over white socks, where a plain dark shoe was lost against the rug."
  },
  {
   "url": "changelog.html#unreleased-fixed",
   "heading": "Fixed",
-  "text": "A short stage shows the whole piano. Make the stage short and the camera pulls back until the keyboard, the hands and the music desk are all in view, centred. A new project's Drums track is a drum track: the stage stands the drum kit for it, not a piano. The arrangement's toolbar stays on screen when the stage makes the arrangement short, and the lyrics key's icon sits in the middle of its key. v0.9.0 2026-10-31 The stage — there are no downloads yet. A 3D stage under the arrangement plays any MIDI track with hands on pianos, guitars, basses and drums. Beside it come a drum machine, a guitar amp, the instrument browser with all 1,648 instruments, a Pattern Rack that works the way FL Studio's does, a MIDI keyboard's wheels on every instrument, and new knobs."
+  "text": "No keyboard across the drum kit. Open the stage straight on a drum track and the kit stands alone, without a bare piano keyboard floating over the snare. The drummer holds the sticks. Each hand closes round its stick with every finger, the stick lying across the palm as a drummer holds one, instead of pinching it between the thumb and the first finger with the rest hanging open. Fingers with nothing to play lie on the keys. Beside a chord, a hand's idle fingers no longer stand up over the keys, perch on a black key or flick up on every beat. Bending a busy kit no longer drops out. While the pitch wheel bends a busy Drum Machine groove or a big sampler chord, the quietest voices past 32 fade, as a hardware sampler's do, so the sound never breaks up. A short stage shows the whole piano. Make the stage short and the camera pulls back until the keyboard, the hands and the music desk are all in view, centred. A new project's Drums track is a drum track: the stage stands the drum kit for it, not a piano. The arrangement's toolbar stays on screen when the stage makes the arrangement short, and the lyrics key's icon sits in the middle of its key. v0.9.0 2026-10-31 The stage — there are no "
  },
  {
   "url": "changelog.html#0-9-0-2026-10-31-added",
