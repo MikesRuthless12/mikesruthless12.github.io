@@ -95,27 +95,44 @@
           <td data-i18n-html="docs.10e78b267d72">Sheets</td>
           <td data-i18n-html="docs.b696ffb49270">Any MIDI track as sheet music, following the playhead.</td>
         </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>8</kbd></td>
+          <td data-i18n-html="docs.cb4ad503e340">Lessons</td>
+          <td data-i18n-html="docs.7a7b5b9b8db5">Fifteen courses, learned a day at a time: each lesson shows you how, then listens as you play.</td>
+        </tr>
+        <tr>
+          <td><kbd>Ctrl</kbd>+<kbd>9</kbd></td>
+          <td data-i18n-html="docs.b04b9b7961b7">Final check</td>
+          <td data-i18n-html="docs.48e75eca2fe2">A master for each destination, checked as a phone and a car play it, section by section and against a delivery spec.</td>
+        </tr>
       </tbody>
     </table></div>
     <p data-i18n-html="docs.f58d0e706b34">
       On macOS every <kbd>Ctrl</kbd> below is <kbd>Cmd</kbd>.
     </p>
     <h3 data-i18n-html="docs.c06b71382c0f">Panels in windows of their own</h3>
-    <p data-i18n-html="docs.6ba26ecb69cf">
+    <p data-i18n-html="docs.80fe13adbb5b">
       The <strong>Mixer</strong>, the <strong>File Explorer</strong>, the
-      <strong>Editor</strong> and the <strong>Room</strong> live in windows of their own,
-      hidden until you open them. A panel window's <strong>✕</strong> hides it; its
+      <strong>Editor</strong>, the <strong>Room</strong> and the <strong>Final check</strong>
+      live in windows of their own, hidden until you open them. A panel window's <strong>✕</strong> hides it; its
       <strong>⇲</strong> docks the panel into the main window, showing; and a docked panel's
       <strong>⇱</strong> pops it out into its window again. The Pattern Rack docks and pops
       out the same way. Where each panel lives is remembered on this computer, and a panel
-      window keeps working on a second monitor. The Stage and the Sheets always stay in the
-      main window.
+      window keeps working on a second monitor. The Stage, the Sheets and the Lessons always
+      stay in the main window.
     </p>
     <p data-i18n-html="docs.9fcb78454332">
       A panel window first opens beside the main window, cascaded, and after that where you
       left it, or beside the main window again if that display is gone. The Editor's window
       first opens 1360 × 1014, room for the piano roll's toolbar, two octaves, the automation
       lane and two take lanes; docked, the editor keeps 260 pixels and scrolls.
+    </p>
+    <p data-i18n-html="docs.7b1c22e704ec">
+      A panel window that was open when Oscillate closed opens again at the next launch, where
+      you left it, once the main window shows and the agreement has been accepted; one whose
+      display is gone comes back beside the main window. A window you closed stays closed.
+      What was open is noted as you open and close windows, not only when you quit, so a crash
+      keeps it too.
     </p>
     <p data-i18n-html="docs.771bc108d512">
       An install from before 0.10.0 moves to this layout once, on its first launch, and keeps
@@ -317,6 +334,41 @@
   </section>
 
   <section>
+    <h2 id="waveform" data-i18n-html="docs.1a3a9fb87365">The waveform editor</h2>
+    <p data-i18n-html="docs.59321ef7fc8a">
+      Double-click an audio clip to open it in the Editor: its waveform, and under it what can
+      be done to the sound. None of it changes your file.
+    </p>
+    <h3 data-i18n-html="docs.887110a8f108">Moving the pitch</h3>
+    <p data-i18n-html="docs.d97419fdaf8a">
+      Drag across the waveform to choose a span, set <strong>Semitones</strong> (−12 to +12)
+      and <strong>Cents</strong> (−50 to +50), and press <strong>Move pitch</strong>. The span
+      moves with its formants kept, so a voice moved up a tone still sounds like the same
+      voice. The moves are drawn as a bar under the waveform, and <strong>Clear pitch
+      moves</strong> takes them all off in one press. Each move is one undo step.
+    </p>
+    <p data-i18n-html="docs.18c66cec3729">
+      Oscillate works the moved sound out away from the audio thread, with a progress bar,
+      and keeps it in its data folder; until it is ready the clip plays as it was. A trim
+      never slides a move, every export carries it, and in a room the others make the same
+      sound from the same numbers.
+    </p>
+    <h3 data-i18n-html="docs.c0a913f88834">Fitting a clip to the tempo</h3>
+    <p data-i18n-html="docs.4e3b3aca2bff">
+      <strong>Fit to tempo</strong> makes a clip follow the project's tempo once
+      <strong>Material is this many bars</strong> says how long it is. <strong>Repitch</strong>
+      plays it faster or slower, like tape, so its pitch moves with the tempo;
+      <strong>Stretch (keeps the pitch)</strong> changes its length and keeps its pitch, on
+      drums and chords as well as a single voice. The stretched sound is made the same way as
+      a pitch move. A reversed or repeating clip cannot follow the tempo yet, and says so.
+    </p>
+    <p data-i18n-html="docs.a904c7da9d0d">
+      A moved or stretched clip is still drawn as its file: the waveform shows the recording,
+      not the sound that plays.
+    </p>
+  </section>
+
+  <section>
     <h2 id="pattern-rack" data-i18n-html="docs.a40e410cd4b9">The Pattern Rack</h2>
     <p data-i18n-html="docs.5cc9827d169c">
       The rack sits docked above the arrangement, with a splitter between them, from the first
@@ -487,6 +539,21 @@
       <kbd>Ctrl</kbd>+<kbd>4</kbd>. A strip per track with a fader, a pan, mute, solo, the
       device rack and a meter that is drawn from the audio the engine actually produced —
       never from a prediction.
+    </p>
+    <h3 data-i18n-html="docs.fc9ca9fe7259">The strip's knobs</h3>
+    <p data-i18n-html="docs.ab21191b71d4">
+      Every track's strip has <strong>Low</strong>, <strong>Mid</strong>, <strong>High</strong>,
+      <strong>Room</strong>, <strong>Echo</strong>, <strong>Heat</strong>, <strong>Pitch
+      Mod</strong> and <strong>Granular</strong>, and under them a compressor of its own: its
+      switch, a light that shows when it is taking something off, and <strong>Threshold</strong>,
+      <strong>Ratio</strong>, <strong>Attack</strong>, <strong>Release</strong> and
+      <strong>Makeup</strong>. The compressor is off until you switch it on, and Granular at
+      0 % is out of the path. Every knob is saved with the project, can be automated and
+      moves in one undo step. The master's one knob is Granular.
+    </p>
+    <p data-i18n-html="docs.4e127e233a98">
+      The knobs are folded away until you press <strong>Knobs</strong>; folded, the mixer is
+      faders and meters, and the effects keep working.
     </p>
     <h3 data-i18n-html="docs.8eaced166021">The Masking Radar</h3>
     <p data-i18n-html="docs.bea60461bd8b">
@@ -736,6 +803,145 @@
   </section>
 
   <section>
+    <h2 id="lessons" data-i18n-html="docs.cb4ad503e340">Lessons</h2>
+    <p data-i18n-html="docs.b91c8440ec46">
+      <kbd>Ctrl</kbd>+<kbd>8</kbd>, <strong>View ▸ Lessons</strong>, or the Lessons key in the
+      titlebar shows the Lessons panel: fifteen courses, learned a day at a time. It opens as a
+      column beside the arrangement and always stays in the main window. Nothing of it loads
+      until you first open it, so Oscillate starts no slower for having it.
+    </p>
+    <p data-i18n-html="docs.24c8b6c0abca">
+      The lessons' own text, each step's words, is in English for now; every key, label and
+      message around it is in your language.
+    </p>
+    <h3 data-i18n-html="docs.2ef08f855c58">The courses</h3>
+    <p data-i18n-html="docs.95fc66301424">
+      The <strong>Courses</strong> tab lists the fifteen: Piano, Reading, Rhythm, Ear training,
+      Theory for producers, Songwriting, Lyric Writing, Rap &amp; Flow, Song Arrangement,
+      Mixing, Finger Drumming, Drum Kit, Guitar, Classical Guitar and Bass. Open one to see its
+      map of sections, weeks and Days, how many Days you have passed, and the clocks: this
+      lesson, all lessons and the days practised. <strong>Continue</strong> opens the Day and
+      the step where you stopped. A Day you have not reached yet still opens, and says so.
+    </p>
+    <h3 data-i18n-html="docs.2b065c7c9ce4">Today</h3>
+    <p data-i18n-html="docs.a94682304567">
+      <strong>Today</strong> plays the Day you opened, step by step: <em>Watch</em>,
+      <em>Try</em>, <em>In time</em>, <em>Perform</em>, an ear question to answer
+      (<em>Listen</em>), a song to <em>Make</em>, and the rest. A step that plays puts its
+      music on real tracks on the course's instrument, with a bar's count-in, and Oscillate's
+      own transport plays it; the stage lights the keys, the neck or the pads the step asks
+      for. Press <strong>Start</strong> and play along on a MIDI keyboard, or on your
+      instrument if the course listens. A step passes at three in a row.
+    </p>
+    <p data-i18n-html="docs.a669864312ff">
+      Beside it are the practice tools: one hand while the stage plays the other, a loop of
+      the bars you choose, and the tempo, which climbs towards the step's own as you get it
+      right. A Day you have mastered comes back later for review.
+    </p>
+    <p data-i18n-html="docs.aeffaf06d287">
+      After a take the grade says what went well and what to fix, naming the bar, the beat
+      and the fix, at most three things, the costliest first. A take heard through your input
+      says it was judged by ear. In a making step, a target you missed on purpose can be
+      marked with <strong>Mark intended</strong>, and it stops counting.
+    </p>
+    <h3 data-i18n-html="docs.b76c42cb4bf3">Show me</h3>
+    <p data-i18n-html="docs.ce107014268a">
+      <strong>Show me</strong> plays the step for you first, the hands up close on the stage,
+      at half, three-quarter or full speed, and can loop a stretch of it. Nothing is listened
+      to and nothing is graded. <strong>Back to the step</strong> returns to it.
+    </p>
+    <h3 data-i18n-html="docs.38e07b2a0ca5">Read Aloud</h3>
+    <p data-i18n-html="docs.57b7c4396a9e">
+      Switched on, <strong>Read Aloud</strong> reads the step's text in one of your computer's
+      own voices, lighting each word as it is read and keeping its line in view. No voice is
+      shipped with Oscillate: with none installed it says so, and one can be added in your
+      system's settings. Its bar has <strong>Rewind</strong>, <strong>Read</strong> and
+      <strong>Pause</strong>, <strong>Stop</strong>, <strong>Fast-forward</strong>, the pace
+      from half speed to double, the <strong>Voice</strong> and a reading clock. While the
+      focus is in the Lessons panel, <kbd>Space</kbd> reads or pauses, and
+      <kbd>Shift</kbd>+<kbd>←</kbd> and <kbd>Shift</kbd>+<kbd>→</kbd> go back or on a
+      sentence.
+    </p>
+    <h3 data-i18n-html="docs.0a4a6d09bcdb">Listening to you</h3>
+    <p data-i18n-html="docs.41d09f811435">
+      In a course that can hear you, the lesson bar's <strong>Listen</strong> switch has the
+      lesson hear your instrument or your voice in place of the MIDI keys. It hears the input
+      of the audio device chosen in <strong>Settings ▸ Audio</strong>: notes and their timing,
+      chords, the strokes of a drum kit and the syllables of a rap. <strong>Input…</strong>
+      chooses which of its channels, or every channel mixed, and shows the level and the
+      chord it hears.
+    </p>
+    <p data-i18n-html="docs.758985129d60">
+      <strong>Tuner</strong> shows how many cents sharp or flat a note is, chromatic or string
+      by string for a guitar or a bass, with A4 anywhere from 415 to 466 Hz.
+      <strong>Calibrate</strong> measures how long a sound takes to leave Oscillate and come
+      back in, so what you play lands on time: <strong>Loop back</strong> sends eight clicks
+      through a cable from the output to the input, or your speakers into the microphone;
+      <strong>Play along</strong> has you clap or play on each click. <strong>Keep</strong>
+      keeps the measurement for that input. Until an input is calibrated, Oscillate uses its
+      own estimate and labels it as one. While a lesson listens, the tuner and the
+      calibration wait.
+    </p>
+    <p data-i18n-html="docs.420e5b8d6f43">
+      The <strong>Listening</strong> light is on exactly while the input is open, and only
+      then is anything heard. What is heard is analysed on this computer as it arrives and
+      let go: nothing is recorded, kept or sent. See
+      <a href="#privacy">Privacy and the network</a>.
+    </p>
+    <p data-i18n-html="docs.72eecb4a3785">
+      <strong>Monitor</strong>, in the lesson bar, plays your input through the lesson's own
+      track so you can hear yourself, a guitar or a bass through the amp. It is off by
+      default, because a microphone feeds back through speakers: wear headphones. It is
+      remembered for each course, and it records nothing either.
+    </p>
+    <h3 data-i18n-html="docs.fb7ef24de47f">Making steps</h3>
+    <p data-i18n-html="docs.c85be82fcfea">
+      A making step opens Oscillate's own tools in the lesson's project: the arrangement with
+      the step's starting song and its sections as markers, the Lyric Lane and its flow grid,
+      or the mixer with the step's loop. <strong>Check</strong> measures what you made against
+      the step's targets, a mixing target on the mix itself, rendered and measured, and says
+      what it found. <strong>Load the example</strong> brings in an example, keeping your song
+      as it is now as a version first. In Rap &amp; Flow, <strong>Rap it</strong> hears a take
+      through your input and times each syllable against where it is placed; the take is
+      never recorded. Each making step keeps a notebook page.
+    </p>
+    <h3 data-i18n-html="docs.e715e082f478">Your project, set aside</h3>
+    <p data-i18n-html="docs.1670ea12541a">
+      A lesson works in a project of its own. Yours is set aside in memory, untouched, with
+      its unsaved changes and its undo history, and a band along the top of the panel says so
+      while a lesson is open. <strong>Back to my project</strong> puts it back exactly as it
+      was, and so do New, Open, a room and quitting. A lesson cannot open while a room is
+      shared.
+    </p>
+    <h3 data-i18n-html="docs.1f37b96dbaaf">History and the portfolio</h3>
+    <p data-i18n-html="docs.c762307fbf0f">
+      <strong>History</strong> shows your progress in each course and the clocks; every
+      notebook page, each opening its Day at its step; your song's named versions, each
+      compared with the song now and brought back in one undo step; and the lead sheet, which
+      opens in the Sheets panel. <strong>Portfolio PDF</strong> makes a PDF of your song. All
+      of it is kept in Oscillate's data folder on this computer.
+    </p>
+    <p data-i18n-html="docs.e3d7060ad727">
+      If Freally Handscore has been used on this computer, its lessons' progress, its
+      portfolio and the words you told it to keep as typed are brought over the first time
+      the lessons need them, once, and Handscore's own files are never changed.
+    </p>
+    <h3 data-i18n-html="docs.c3c5f9066bd3">The classics</h3>
+    <p data-i18n-html="docs.7e15cf2f46f6">
+      <strong>Classics</strong> holds 62 public-domain songs, searchable by title, and the
+      passages: a scale, an arpeggio, a hand crossing over and more. Open one
+      <strong>as a lesson</strong>, into the lesson's own project, or <strong>as a
+      project</strong>, added after what is already in yours in one undo step.
+    </p>
+    <p data-i18n-html="docs.9812a95cbb66">
+      Only a classic's chords may be dragged out of Oscillate. Every track a classic adds for
+      its melody stays marked as the classic's, through a rename, an undo and a save, and a
+      drag that would take one out, from its track, the arrangement, the Sheets tray or
+      <strong>Drag all</strong>, is refused and says why.
+    </p>
+  </section>
+
+  <section>
     <h2 id="plugins" data-i18n-html="docs.9514b7ff4860">Plugins</h2>
     <p data-i18n-html="docs.24653cacd405">
       Oscillate hosts <strong>VST3 and CLAP</strong>, and each plugin runs in a process of
@@ -757,28 +963,75 @@
   
   <section>
     <h2 id="devices" data-i18n-html="docs.c80fbc216c04">The stock devices</h2>
-    <p data-i18n-html="docs.39a9d7f4cf96">
-      Seventy-one instruments and effects ship inside Oscillate, including
+    <p data-i18n-html="docs.1cb6f8e058c7">
+      Seventy-three instruments and effects ship inside Oscillate, including
       <strong>Freally Secretarium</strong>. Every panel is drawn from the device's own
       description, so the readout on a knob is the number the DSP is using rather than a
       second one that agrees most of the time.
     </p>
     <h3 data-i18n-html="docs.57ba00ce7687">Faces</h3>
-    <p data-i18n-html="docs.4ce795582ea6">
-      A device shows what it is doing rather than only what it is set to: a compressor draws
-      its gain reduction, an equaliser draws its response, a stereo device draws its field.
+    <p data-i18n-html="docs.b1223c1040cb">
+      A device shows what it is doing to the sound passing through it, live, while its card is
+      showing. An equaliser or an amp draws its curve over the spectrum going in and coming
+      out; a compressor, the limiter or a gate draws its level curve with the sound riding it,
+      the reduction scrolling against the threshold, and its needle; the de-esser draws its
+      band over the spectrum; a saturator draws its transfer curve with the sound as a dot on
+      it; a stereo device draws its field and how well the two sides agree; the delays, the
+      reverbs and the modulation effects draw the level over the bar, and a reverb how fast
+      its tail falls. With reduced motion on, the readings update and nothing scrolls.
     </p>
-    <p data-i18n-html="docs.5396457a7321">
-      <strong>Some faces are deliberately blank.</strong> A transfer curve, a spectrum and a
-      scope need a measurement that does not exist yet, and drawing a plausible shape from
-      the controls would be a picture of nothing. They stay blank until the measurement is
-      real.
+    <p data-i18n-html="docs.be3ae6fa5bfb">
+      Every face is measured from the device's own sound, never drawn from its settings, and
+      drawing them costs the audio nothing you can measure. Up to sixteen show live at once;
+      past that a card is drawn at rest and says so. An export, a bounce or a freeze never
+      draws into a card.
     </p>
     <h3 data-i18n-html="docs.6a4181898f49">Recipe strings</h3>
     <p data-i18n-html="docs.3c86c1f5f519">
       A device's settings copy as one line you can paste into a chat. A whole rack — stock
       devices and hosted plugins together — saves as a file and recalls onto any track in
       one undo step, including on a machine that is missing one of its plugins.
+    </p>
+    <h3 data-i18n-html="docs.4effad823b04">Suggest</h3>
+    <p data-i18n-html="docs.a17ac75033a7">
+      Each of Oscillate's own effect cards has <strong>Suggest</strong>. It plays the track
+      alone up to that card, offline, for up to 90 seconds from where the part first sounds;
+      works out what the part is from the track's name; and suggests a setting, with its
+      reasons in sentences: an equaliser levels the worst resonance, a compressor takes the
+      reduction that suits the part, the de-esser sits on the sibilance it measured, a delay
+      lands on the tempo's grid. Nothing changes until you press <strong>Apply</strong>, which
+      sets every control it names in one undo step. A device whose job is taste says so and
+      suggests nothing, and a hosted plugin has no Suggest.
+    </p>
+    <p data-i18n-html="docs.d41fd773be92">
+      <strong>Suggest for the strip's knobs</strong>, at the top of the selected track's rack,
+      does the same for the strip's Low, High and compressor. It is arithmetic on what was
+      measured, not a model, so the same mix gets the same suggestion every time. To set the
+      whole mix at once, see <a href="#final-check">Mix it for me</a>.
+    </p>
+    <h3 data-i18n-html="docs.30b64302573c">Oscillate Doubler</h3>
+    <p data-i18n-html="docs.956a79b573ac">
+      Doubles a part as if it were sung or played again: up to four <strong>Voices</strong>,
+      each detuned by up to 30 cents (<strong>Detune</strong>), delayed by 5 to 40 ms
+      (<strong>Delay</strong>) and spread across the stereo field (<strong>Spread</strong>),
+      blended with <strong>Mix</strong>. The voices drift from the project's seed and the
+      device's own <strong>Seed</strong>, so an export prints the same every time and two
+      doublers in one song drift apart. Its presets are Tape Double, Wide Double, Stack and
+      Subtle.
+    </p>
+    <h3 data-i18n-html="docs.5841824db95a">Oscillate Ducker</h3>
+    <p data-i18n-html="docs.a5d084563a9d">
+      Turns a track down while another track plays, the bass making room for the kick. Choose
+      the other track in the card's <strong>Sidechain from</strong>: it is heard after that
+      track's devices and before its fader, so a muted kick still keys it, and the two are
+      kept in time whatever delay either track's devices add. <strong>Depth</strong>,
+      <strong>Threshold</strong>, <strong>Attack</strong>, <strong>Release</strong>,
+      <strong>Hold</strong> and <strong>Sidechain HPF</strong> shape it, and its face draws
+      what it takes off. Its presets are Kick Pump, Gentle Duck and Voice Over.
+    </p>
+    <p data-i18n-html="docs.cf62c3a32ff8">
+      The key is kept through a rename, a save and a room. If the key track is deleted, the
+      card says so and the sound passes untouched; an undo brings the key back.
     </p>
     <h3 data-i18n-html="docs.afc35db2da83">Devices that read the arrangement</h3>
     <p data-i18n-html="docs.6a537022e329">
@@ -1055,6 +1308,12 @@
       Format, sample rate, bit depth, dither and where it goes are in
       <strong>Settings ▸ Export</strong>.
     </p>
+    <p data-i18n-html="docs.d20207c90bc7">
+      A song can be any length: the companion folder and the masters are written to disk as
+      they render rather than held in memory. A WAV or AIFF file cannot pass 4 GB, and an
+      export that would is refused and leaves nothing behind. A track dragged out as audio is
+      still limited to ten minutes.
+    </p>
     <p data-i18n-html="docs.1419f63cf3ba">
       <strong>Session cards.</strong> <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>C</kbd>, or
       <strong>File ▸ Session card…</strong>, renders a 1200×630 picture of the session —
@@ -1086,6 +1345,92 @@
       <strong>File ▸ Print sheets…</strong>, or the <strong>Print</strong> key in the tray,
       sends the same pages to your system's print dialog: nothing else of the window, on white
       A4 paper in either theme. In Arabic the cover and the credits read right to left.
+    </p>
+  </section>
+
+  <section>
+    <h2 id="final-check" data-i18n-html="docs.b04b9b7961b7">Final check</h2>
+    <p data-i18n-html="docs.ba4abf191c1b">
+      <kbd>Ctrl</kbd>+<kbd>9</kbd>, <strong>View ▸ Final check</strong>, or its key in the
+      titlebar opens the Final check: a master for each place the song is going, each checked
+      before it leaves. It is a window of its own, like the Mixer, and its <strong>⇲</strong>
+      docks it under the Mixer in the main window. The destinations come first, then three
+      tabs: <strong>Speakers</strong>, <strong>Loudness Staircase</strong> and
+      <strong>Spec Gate</strong>.
+    </p>
+    <h3 data-i18n-html="docs.eaa4d72d14bf">A master for each destination</h3>
+    <p data-i18n-html="docs.c16c65aab797">
+      Tick where the song is going: Spotify, Apple Music, YouTube, Amazon Music, Tidal,
+      Deezer, SoundCloud, a CD, a club, or broadcast to EBU R 128 or ATSC A/85. Each row gives
+      its loudness target, its true-peak ceiling and the file it wants. A row says whether the
+      figure is the service's own or Oscillate's default where the service publishes none,
+      with where it came from and the day it was read. A target is guidance, never a promise
+      that a service will accept a file. What you tick is remembered on this computer.
+    </p>
+    <p data-i18n-html="docs.4455f6266bc0">
+      <strong>Export the masters</strong> makes one master for each ticked row, together, from
+      the same mix: each is limited to its ceiling, brought to its loudness and written in its
+      format, then measured from the file on disk, and the table says whether it meets its
+      row. They are saved together in one folder, named after the project, where
+      <strong>Settings ▸ Export</strong> sends your exports.
+    </p>
+    <h3 data-i18n-html="docs.a7ab3056096a">Hear it as</h3>
+    <p data-i18n-html="docs.3e5e55692062">
+      The <strong>Speakers</strong> tab plays what you are hearing as a <strong>Phone</strong>,
+      a <strong>Car</strong>, a <strong>Laptop</strong>, a <strong>Small speaker</strong> or
+      <strong>Earbuds</strong> would, or <strong>Flat</strong>, as it is. Each speaker is
+      level-matched, so a switch changes the tone and not the loudness, and the switch
+      crossfades without a click: go between a speaker and <strong>Flat (A)</strong> for an
+      A/B. It is monitoring only: what you hear here never reaches an export, a bounce or a
+      master, and every launch starts flat. Each speaker is an approximation of a kind of
+      speaker, never a measurement of any product.
+    </p>
+    <p data-i18n-html="docs.cdc6504729ef">
+      Every master exported is also checked as a phone's speaker and a car's cabin would play
+      it: how much of the bass a phone still carries, what is lost in mono, how wide the low
+      end is, and whether it builds up at 80–150 Hz or 200–400 Hz in a car, each with what to
+      do about it.
+    </p>
+    <h3 data-i18n-html="docs.85148526c29c">The Loudness Staircase</h3>
+    <p data-i18n-html="docs.2472106bcd5c">
+      <strong>Loudness Staircase</strong> measures each section of the song, from one marker
+      to the next, on its own, against a step for its kind (Intro, Verse, Pre-chorus, Chorus,
+      Bridge or Outro) within a tolerance, and checks that each chorus lifts over the verse
+      before it by the margin in <strong>Chorus over verse</strong>. Name the markers in
+      English for their kind to be known. <strong>Measure the mix</strong> draws the steps over
+      the song's loudness, with every figure in a table. The targets are kept on this
+      computer, not in the project.
+    </p>
+    <h3 data-i18n-html="docs.e4f52faad73b">The Spec Gate</h3>
+    <p data-i18n-html="docs.966ff4263e47">
+      <strong>Spec Gate</strong> checks an exported file, one of the masters or any file with
+      <strong>Check a file…</strong>, against a delivery target: streaming, loud or quiet;
+      broadcast, EBU R 128 or US (ATSC A/85); a CD master; a distributor's WAV; or your own.
+      Its thirteen rules cover the loudness, the loudest 3 seconds and 400 ms, the loudness
+      range, the true and sample peaks, the sample rate, the bit depth, the channels, the
+      length, the silence at each end and clipped samples in a row; each gives what was
+      measured, the margin and the simplest fix. Where one change of gain meets every level
+      rule it says how much, and where none can, it says that instead.
+    </p>
+    <p data-i18n-html="docs.565f3cb18dc4">
+      A target can be edited and stamped with <strong>Mark verified today</strong>; one not
+      verified for 180 days is shown as unverified. The report saves as HTML, JSON or PDF. A
+      pass means the file met the rules of the target you chose, never that a service will
+      accept it.
+    </p>
+    <h3 data-i18n-html="docs.4d70c96652da">Mix it for me</h3>
+    <p data-i18n-html="docs.80cd4454f137">
+      <strong>Mix it for me</strong>, beside <strong>Export the masters</strong>, sets the whole
+      mix for the first destination ticked: every unlocked, unmuted part's effect cards to
+      their suggestion (see <a href="#devices">Suggest</a>), each part's level by what it is,
+      and on the master a True-Peak Limiter that lands it on the row's loudness under its
+      ceiling. Locked and muted tracks are left as they are, and so is a fader with volume
+      automation; if the master's Granular is on it is turned off, because it plays after the
+      limiter. The report says what it did.
+    </p>
+    <p data-i18n-html="docs.8df50e56ff44">
+      It is one undo step: undo puts the whole mix back. It renders each part offline to
+      measure it, so on a large session it takes a while.
     </p>
   </section>
   
@@ -1177,6 +1522,8 @@
         <tr><td><kbd>Ctrl</kbd>+<kbd>3</kbd>…<kbd>5</kbd></td><td data-i18n-html="docs.56f9e52baa67">Show or hide a panel — Editor, Mixer, Room</td></tr>
         <tr><td><kbd>Ctrl</kbd>+<kbd>6</kbd></td><td data-i18n-html="docs.83e175e68d99">Show or hide the Stage</td></tr>
         <tr><td><kbd>Ctrl</kbd>+<kbd>7</kbd></td><td data-i18n-html="docs.1d966b73a9ca">Show or hide the Sheets panel</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>8</kbd></td><td data-i18n-html="docs.ef1800cc8809">Show or hide the Lessons panel</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>9</kbd></td><td data-i18n-html="docs.30da360ea376">Show or hide the Final check window</td></tr>
         <tr><td><kbd>1</kbd>…<kbd>9</kbd></td><td data-i18n-html="docs.bed27fa10d73">Open one of the first nine sheets, 1 being the full score, while the Sheets panel shows; the same key again goes back</td></tr>
         <tr><td><kbd>Esc</kbd></td><td data-i18n-html="docs.2f965c221f2d">Back from the open sheet, in the Sheets panel</td></tr>
         <tr><td><kbd>V</kbd> / <kbd>Shift</kbd>+<kbd>V</kbd></td><td data-i18n-html="docs.ef86faf16227">Step the stage's view, forwards or back, while the stage has the focus</td></tr>
@@ -1236,6 +1583,23 @@
       names. Crash reports are written to your disk, shown to you in full, and leave the
       machine only if you choose to send one.
     </p>
+    <p data-i18n-html="docs.64a02f31ce7f">
+      <strong>Live listening.</strong> When a lesson listens to you, or you use the tuner or
+      calibrate your input, Oscillate hears the input of the audio device chosen in
+      <strong>Settings ▸ Audio</strong>, and only while the listening light is on. What it
+      hears is analysed on your computer as it arrives, into notes, chords, drum strokes,
+      syllables and timing, and then let go. No recording is made, no audio is written to
+      disk, and nothing is sent anywhere.
+    </p>
+    <p data-i18n-html="docs.8d1a762df8c1">
+      The only thing listening keeps is a small settings file, <code>listen.json</code>, in
+      Oscillate's data folder on this computer: the input you chose, your A4 tuning, which
+      courses listen, each course's Monitor switch, and each input's measured latency in
+      milliseconds. That is numbers and names, never sound. Monitor, off by default, plays your
+      input through the lesson's own track so you can hear yourself; it records nothing
+      either. A build gate fails if listening's code reaches for any file but that one, and a
+      test runs a whole listening session and finds nothing else left behind.
+    </p>
   </section>
   
   <section>
@@ -1250,18 +1614,21 @@
         Oscillate does not ship one — a relay costs bandwidth forever, and that is a running
         bill a free application cannot carry.
       </li>
-      <li data-i18n-html="docs.97cfbf95503a">
-        <strong>A joiner does not receive your project.</strong> Both machines open the same
-        file before the edits mean the same thing.
-      </li>
       <li data-i18n-html="docs.12e311704eeb">
         <strong>Samples never cross the wire.</strong> A take you recorded does; a sample
         you bought does not.
       </li>
-      <li data-i18n-html="docs.c281636fd984">
+      <li data-i18n-html="docs.311b8222a5fd">
         <strong>Six devices are named and greyed with no controls</strong>, each for a
-        written reason rather than a shrug. The analyser and the gain-reduction trace are
-        not live.
+        written reason rather than a shrug.
+      </li>
+      <li data-i18n-html="docs.5aae84a23e5e">
+        <strong>The lessons' text is in English</strong> until the beta. Every control around
+        it is in your language.
+      </li>
+      <li data-i18n-html="docs.414bff17d593">
+        <strong>A moved or stretched audio clip is drawn as its file.</strong> The waveform
+        shows the recording, not the sound that plays.
       </li>
       <li data-i18n-html="docs.822c3066dfa6">
         <strong>A sampler with no file cannot be rendered to audio.</strong> Converting a
