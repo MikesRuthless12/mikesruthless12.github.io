@@ -18,8 +18,9 @@
     "   done    — built and on this branch",
     "   planned — specified, not built",
     "   goal    — the destination",
-    "⚠ It is NOT a claim that a tag exists. Only v0.0.1 and v0.4.0 are tagged, and v1.0.0RC,",
-    "which is shelved (the merge, 2026-10-27: kept, never published). The site never says",
+    "⚠ It is NOT a claim that a tag exists. A closeout of several rungs tags only its last",
+    "(v0.12.0 closed v0.11.0 with it; v0.16.0 closed v0.13.0 to v0.15.0), and v1.0.0RC is",
+    "shelved (the merge, 2026-10-27: kept, never published). The site never says",
     "'released', because charter rule 5 means nothing is.",
     "",
     "⛔ 2026-10-28: the merged ladder. v1.0.0b and v1.0.0RC gave way to v0.7.0 … v0.16.0,",
@@ -113,22 +114,22 @@
     },
     {
       "version": "v0.13.0",
-      "state": "planned",
+      "state": "done",
       "summary": "MixSir — the mix on your phone, paired from a QR code."
     },
     {
       "version": "v0.14.0",
-      "state": "planned",
+      "state": "done",
       "summary": "New devices, wave one — the low end and the groove."
     },
     {
       "version": "v0.15.0",
-      "state": "planned",
+      "state": "done",
       "summary": "New devices, wave two — instruments for the sound designer."
     },
     {
       "version": "v0.16.0",
-      "state": "planned",
+      "state": "done",
       "summary": "New devices, wave three — a record button that reaches back in time, and find-similar across your sounds."
     },
     {

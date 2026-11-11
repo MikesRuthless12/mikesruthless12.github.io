@@ -83,12 +83,12 @@
         <tr>
           <td><kbd>Ctrl</kbd>+<kbd>5</kbd></td>
           <td data-i18n-html="docs.911ea89c43d9">Room</td>
-          <td data-i18n-html="docs.42546267e696">Room codes, the roster, chat, voice, cameras and screen share.</td>
+          <td data-i18n-html="docs.b0ab31730a7d">Room codes, the roster, chat, voice, cameras and screen share, and your mix sent to your phone.</td>
         </tr>
         <tr>
           <td><kbd>Ctrl</kbd>+<kbd>6</kbd></td>
           <td data-i18n-html="docs.de838855e4a6">Stage</td>
-          <td data-i18n-html="docs.20f9135bc84c">Hands that play a MIDI track on a 3D instrument, in time with the transport.</td>
+          <td data-i18n-html="docs.5b84a6db221d">Hands that play your MIDI tracks on a 3D instrument, in time with the transport.</td>
         </tr>
         <tr>
           <td><kbd>Ctrl</kbd>+<kbd>7</kbd></td>
@@ -121,11 +121,11 @@
       window keeps working on a second monitor. The Stage, the Sheets and the Lessons always
       stay in the main window.
     </p>
-    <p data-i18n-html="docs.9fcb78454332">
+    <p data-i18n-html="docs.966384c2cfde">
       A panel window first opens beside the main window, cascaded, and after that where you
       left it, or beside the main window again if that display is gone. The Editor's window
-      first opens 1360 × 1014, room for the piano roll's toolbar, two octaves, the automation
-      lane and two take lanes; docked, the editor keeps 260 pixels and scrolls.
+      first opens 1360 × 928, room for the piano roll's toolbar, two octaves, the automation
+      lane and its take lanes; docked, the editor keeps 260 pixels and scrolls.
     </p>
     <p data-i18n-html="docs.7b1c22e704ec">
       A panel window that was open when Oscillate closed opens again at the next launch, where
@@ -165,8 +165,8 @@
       </li>
     </ul>
     <h3 data-i18n-html="docs.65ca08c3ec91">The Cut</h3>
-    <p data-i18n-html="docs.6cbcada86f4d">
-      Press <kbd>B</kbd> for the blade and drag a stroke across the arrangement. Every clip
+    <p data-i18n-html="docs.51e37ec2c2d8">
+      Press <kbd>C</kbd> for the blade and drag a stroke across the arrangement. Every clip
       the stroke crosses is split where it crossed, and the angle of the stroke sets how
       long the crossfade is: a vertical stroke is a hard cut, a shallow one is a long
       blend. Press <kbd>V</kbd> to go back to the pointer.
@@ -205,14 +205,223 @@
       still change. The lock is saved with the project, takes one press of undo, and reaches
       everyone in a room.
     </p>
+    <h3 data-i18n-html="docs.a707a40e3f2b">The tools and their keys</h3>
+    <p data-i18n-html="docs.4696ab63ac11">
+      The arrangement's toolbar holds its tools, and each has a key. The keys answer while
+      the arrangement has the focus, so elsewhere the computer keyboard keeps its notes and
+      the Editor keeps its own keys. Every one can be changed in <strong>Settings ▸
+      Shortcuts</strong>.
+    </p>
+    <div class="table-wrap"><table>
+      <thead>
+        <tr>
+          <th data-i18n-html="docs.99a52df3ff3d">Key</th>
+          <th data-i18n-html="docs.c74ea9dc9cd2">What it does</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><kbd>V</kbd></td>
+          <td data-i18n-html="docs.27a3afb9e655">Select: press a clip, drag a box, <kbd>Shift</kbd> adds</td>
+        </tr>
+        <tr>
+          <td><kbd>P</kbd></td>
+          <td data-i18n-html="docs.926996af2b7c">Draw: a new audio clip to record into</td>
+        </tr>
+        <tr>
+          <td><kbd>B</kbd></td>
+          <td data-i18n-html="docs.d268870bb66a">Paint: the picked pattern or clip, painted along a lane</td>
+        </tr>
+        <tr>
+          <td><kbd>D</kbd></td>
+          <td data-i18n-html="docs.cae171a2c418">Erase: every clip a click or a drag reaches</td>
+        </tr>
+        <tr>
+          <td><kbd>T</kbd></td>
+          <td data-i18n-html="docs.c6ff289d9370">Mute: every clip a stroke crosses, muted or unmuted</td>
+        </tr>
+        <tr>
+          <td><kbd>S</kbd></td>
+          <td data-i18n-html="docs.b750b8649775">Slip: what plays inside a clip slides; on an edge, the edge moves and what plays inside slides with it</td>
+        </tr>
+        <tr>
+          <td><kbd>C</kbd></td>
+          <td data-i18n-html="docs.36c14f300243">Cut: the blade, as in The Cut above</td>
+        </tr>
+        <tr>
+          <td><kbd>Y</kbd></td>
+          <td data-i18n-html="docs.e8cff43cb178">Audition: a pressed clip plays alone until you let go</td>
+        </tr>
+      </tbody>
+    </table></div>
+    <p data-i18n-html="docs.2d9590dbdef9">
+      With the paint or the erase tool, a right-click or a right-drag removes clips;
+      <kbd>Shift</kbd> and a right-click still opens the clip menu. A slip on an edge moves
+      only that clip; the clips around it stay where they are. An audition plays through the
+      preview, never the transport: an audio clip from where it starts in its file, a pattern
+      through its track's instrument. It is heard without the track's effects, and a
+      stretched clip at its file's own speed.
+    </p>
+    <h3 data-i18n-html="docs.3dd9a67f3b93">Painting patterns</h3>
+    <p data-i18n-html="docs.b1f731cac156">
+      The picker beside the tracks lists what can be painted: the Pattern Rack's patterns,
+      the MIDI patterns and the audio clips, the current one lit. Press one to pick it, and
+      the paint tool is chosen. A click on an empty lane drops it at the snap, and a drag
+      paints copies end to end along the lane, around the clips already there; each stroke is
+      one press of undo. The copies are linked to their pattern, as a placed pattern always
+      is: edit it and every copy changes, until you make one unique.
+    </p>
+    <p data-i18n-html="docs.9848f51e01bf">
+      Pressing a clip with the pointer, the draw or the paint tool makes its pattern the
+      current one. The picker's <strong>Show</strong> filters it by kind, <strong>Unused
+      only</strong> keeps the patterns no arrangement plays yet, <strong>Order</strong> sorts
+      it as made, by name, by length or by use, and <strong>Hear it</strong> plays the one the
+      arrow keys are on.
+    </p>
+    <h3 data-i18n-html="docs.cae463c6e49a">The zoom bar</h3>
+    <p data-i18n-html="docs.25f57d4fd0f6">
+      The bar above the ruler is the part of the song on screen. Drag its middle to scroll,
+      drag either end to zoom in or out about the other end, and double-click it to fit the
+      whole song. With the bar focused, the arrow keys, <kbd>Page Up</kbd>, <kbd>Page
+      Down</kbd>, <kbd>Home</kbd> and <kbd>End</kbd> scroll it, and <kbd>Ctrl</kbd> with an
+      arrow zooms; the zoom keys and <kbd>Ctrl</kbd>+wheel move it too. Under it is a small
+      picture of the whole song, each track's clips in its colour. Over the bar, the wheel
+      zooms in and out while its left end stays put, and <kbd>Shift</kbd>+wheel scrolls.
+    </p>
+    <h3 data-i18n-html="docs.d01650cb106c">More from a clip</h3>
+    <ul>
+      <li data-i18n-html="docs.b69a3372dea1">
+        <kbd>Alt</kbd> and an audio clip's edge stretches it to a new length with its pitch
+        kept, from a quarter to four times as long. A reversed or repeating clip cannot be
+        stretched, and says so.
+      </li>
+      <li data-i18n-html="docs.67a47eb07dd6">
+        <strong>Name and colour…</strong> on the clip menu renames a clip and gives it one of
+        the track header's colours, or the track's own.
+      </li>
+      <li data-i18n-html="docs.722bad976090">
+        <kbd>Ctrl</kbd>+<kbd>C</kbd> copies the selected clips and <kbd>Ctrl</kbd>+<kbd>V</kbd>
+        pastes them at the playhead, their spacing kept.
+      </li>
+    </ul>
+    <h3 data-i18n-html="docs.0e0083d2f7c1">The Arrange menu</h3>
+    <p data-i18n-html="docs.d052ab0af057">
+      The <strong>Arrange</strong> menu in the arrangement's toolbar works on the selected
+      clips or the selected track. Each entry that changes the song is one press of undo;
+      choosing clips, copying and zooming are not.
+    </p>
+    <ul>
+      <li data-i18n-html="docs.cdea6d45b927">
+        <strong>Chop at every snap line</strong>, <strong>at its transients</strong> (on
+        audio, by the audio editor's own detector), or <strong>at its file's regions</strong>
+        (the cue points and regions a WAV file carries).
+      </li>
+      <li data-i18n-html="docs.a81713b16dde">
+        <strong>Merge the selected patterns into one</strong>: a track's pattern clips become
+        one new pattern that plays every note they played.
+      </li>
+      <li data-i18n-html="docs.423bba8b62c0">
+        <strong>Group the selected clips</strong>: pressing one selects the group, so it
+        moves, mutes and deletes as one, until you ungroup it.
+      </li>
+      <li data-i18n-html="docs.0b4bedb80285">
+        <strong>Select every copy</strong> of a clip, <strong>the muted</strong>,
+        <strong>the overlapping</strong> or <strong>the stacked clips</strong>, or
+        <strong>Invert the selection</strong>.
+      </li>
+      <li data-i18n-html="docs.ed8f4699971e">
+        <strong>Mute</strong> and <strong>Unmute the selection</strong>, and <strong>Snap the
+        starts to the grid</strong>.
+      </li>
+      <li data-i18n-html="docs.09a71aaece1b">
+        <strong>Insert the loop's length of time</strong> moves every clip and marker after
+        the loop's start along by its length; <strong>Delete the loop's span of time</strong>
+        takes out what is inside it and closes the gap. A clip that crosses the span's edge
+        stays where it was.
+      </li>
+      <li data-i18n-html="docs.81acc44d9e0f">
+        <strong>Every track small</strong>, <strong>medium</strong> or <strong>large</strong>.
+      </li>
+      <li data-i18n-html="docs.4d5b9e912dcc">
+        <strong>Clone the selected track</strong>, with its devices, its automation and its
+        clips, right under it; <strong>Name the selected track after its first clip</strong>;
+        <strong>Move the selected track up</strong> or <strong>down</strong>.
+      </li>
+      <li data-i18n-html="docs.77c05e6e69ab">
+        <strong>Zoom to the selection</strong>, and the <strong>Previous</strong> and
+        <strong>Next marker</strong> (<kbd>Alt</kbd>+<kbd>←</kbd> and <kbd>Alt</kbd>+<kbd>→</kbd>).
+      </li>
+    </ul>
+    <p data-i18n-html="docs.7ba68fe8ebf8">
+      <strong>Snap</strong> also offers a thirty-second note, a sixth of a step, and
+      <strong>Clip edges</strong>, which lands a clip flush against another's edge when it is
+      close and on the grid elsewhere.
+    </p>
+    <h3 data-i18n-html="docs.87453fed8996">Markers that act</h3>
+    <p data-i18n-html="docs.262f0a5ac20a">
+      Right-click a marker in the ruler to choose what it does: nothing, <strong>the song
+      starts here</strong> (when you play from the top; the earliest such marker wins),
+      <strong>loop back here from the next marker</strong>, <strong>skip on to the next
+      marker</strong>, or <strong>stop here</strong>. The same right-click changes the time
+      signature from the bar under the pointer, or takes a change off where one starts.
+    </p>
+    <h3 data-i18n-html="docs.6feff1f9ed51">Several arrangements</h3>
+    <p data-i18n-html="docs.36f67f42cacb">
+      A project can hold several arrangements of the same song. The
+      <strong>Arrangement</strong> dropdown in the arrangement's toolbar switches between
+      them; the <strong>Arrangements</strong> menu beside it holds <strong>New
+      arrangement</strong>, <strong>Copy this arrangement</strong>, <strong>Rename this
+      arrangement</strong>, <strong>Delete this arrangement</strong> (not the only one), and
+      a <strong>Merge … into this one</strong> for each of the others. Each keeps its own
+      clips, markers and undo steps, over the tracks, the patterns and the mixer they share,
+      and play, bounce and export always play the one on screen. Switching, making and copying
+      one are never undo steps. A project made before this opens as one arrangement, as it
+      was.
+    </p>
+    <p data-i18n-html="docs.4b2647bad0e5">
+      In a room, a change of arrangement that would send more than 1,024 changes at once,
+      about 500 clips, is refused with a sentence saying so: a switch, a merge, a new one, a
+      copy or a delete. Close the room to change an arrangement that large.
+    </p>
+    <h3 data-i18n-html="docs.2f4a35fdf295">The clip launcher</h3>
+    <p data-i18n-html="docs.047aa27c23ee">
+      <strong>Show the clip launcher</strong>, in the arrangement's toolbar, opens a grid
+      above the timeline: a column for each audio and MIDI track, and a row for each scene.
+      Press a slot to launch its clip on its track, looping, in place of what that track was
+      playing; an empty slot stops the track. A scene's arrow launches its whole row.
+      <strong>Launch on</strong> chooses when a launch lands: <em>The next bar</em>, <em>The
+      next beat</em> or <em>At once</em> (a beat ahead while the song is playing). A launch
+      with the song stopped starts it.
+    </p>
+    <p data-i18n-html="docs.81be37a5a73c">
+      A slot says <em>Playing</em> while its clip plays and <em>Queued</em> while it waits.
+      Each column has <strong>Stop</strong> for its track, <strong>Stop every track</strong>
+      stops them all, and <strong>Back to the arrangement</strong> returns every track to the
+      arrangement. The arrow keys move between slots, and <kbd>Enter</kbd> or
+      <kbd>Space</kbd> presses one.
+    </p>
+    <p data-i18n-html="docs.c2c7a824e62c">
+      <strong>New scene from the clips under the playhead</strong> makes a row of what is
+      playing there, and <strong>New empty scene</strong> an empty one; a slot's menu puts
+      the selected clip in it, an audio clip under an audio track and a MIDI clip under a MIDI
+      track, or empties it. After 1 to 64 bars a scene can follow on by
+      itself: <em>Next scene</em>, <em>Previous scene</em>, <em>First scene</em>, <em>Any
+      scene</em> (another, at random), <em>Stop all</em>, or <em>No follow</em>.
+    </p>
+    <p data-i18n-html="docs.d0302eb0b177">
+      A launch is never an undo step. With <strong>Record the performance</strong> on, what
+      you launched is written into the arrangement where it played, in place of what those
+      tracks had there, as one press of undo; a locked track is left as it was, and says so.
+    </p>
   </section>
   
   <section>
     <h2 id="piano-roll" data-i18n-html="docs.dac11b27d868">The piano roll</h2>
-    <p data-i18n-html="docs.33738bb248c5">
-      Double-click a MIDI clip to open it. Draw notes with the pencil (<kbd>P</kbd>), or
-      double-click in the grid. The keyboard down the left side plays the instrument on the
-      track, and one key can be set to play a whole chord.
+    <p data-i18n-html="docs.2b18129f93b9">
+      Double-click a MIDI clip to open it. A click on empty grid draws a note, and
+      <kbd>P</kbd> chooses Draw, which always does; see <a href="#roll-tools">The tools</a>
+      below. The keyboard down the left side plays the instrument on the track, and one key
+      can be set to play a whole chord.
     </p>
     <h3 data-i18n-html="docs.42a0052bf1b6">Scales</h3>
     <p data-i18n-html="docs.ddbef0217d41">
@@ -271,6 +480,111 @@
       The velocity lane under the grid has a handle per note. Ghost notes from any other
       clip can be drawn behind the one you are editing, which is how you write a bassline
       against a chord part without switching back and forth.
+    </p>
+    <h3 id="roll-tools" data-i18n-html="docs.1d72dc650e42">The tools</h3>
+    <p data-i18n-html="docs.b6bd035c8802">
+      The roll's <strong>Tool</strong> is <em>Select</em>, <em>Draw</em>, <em>Paint</em>,
+      <em>Erase</em>, <em>Mute</em> or <em>Slice</em>, and <kbd>P</kbd> flips between Draw
+      and Select. Whatever the tool, a right-click or a right-drag erases the notes it
+      crosses, and <kbd>Ctrl</kbd>+drag draws a box to choose notes, <kbd>Shift</kbd> adding
+      to it. A click on empty grid draws a note the snap's length, unless notes are chosen,
+      when it clears the choice; under Draw it always draws. A drag on a note moves it, and
+      its edges, where the pointer shows [ and ], lengthen and shorten it. While a note is
+      dragged, its bars in the lanes below move with it.
+    </p>
+    <p data-i18n-html="docs.7f660c0fd5ab">
+      The tool chooses what a plain drag on empty grid does. <em>Paint</em> lays a note in
+      every snap step the drag crosses where none is; <em>Erase</em> takes off what it
+      crosses; <em>Mute</em> mutes or unmutes notes, and a muted note is drawn hollow;
+      <em>Slice</em> cuts every note it crosses. Under Erase, Mute and Slice a press on a
+      note does that tool's work too, unless <kbd>Ctrl</kbd> is held.
+    </p>
+    <p data-i18n-html="docs.41b4d9d1f165">
+      The grid draws a line at every snap step that is far enough apart to read, triplets as
+      triplets, with alternate bars shaded, or alternate beats when zoomed in, and its bars
+      follow the song's time signatures. <strong>Snap</strong> also offers 1/32, a sixteenth
+      triplet, a sixth of a step, <em>Note edges</em> and <em>Markers</em>. A clip opens at
+      sixteenths, with Select chosen and its rows 18 px tall.
+    </p>
+    <h3 data-i18n-html="docs.083fa2e74b39">Chords and colours</h3>
+    <p data-i18n-html="docs.87929e0f6173">
+      <strong>Stamp</strong> draws a chord with every click instead of one note:
+      <em>Major</em>, <em>Minor</em>, <em>Diminished</em>, <em>Augmented</em>,
+      <em>Sus4</em>, <em>Dominant 7th</em>, <em>Minor 7th</em> or <em>Octave</em>, and
+      <em>One note</em> goes back. Sixteen colours mark notes: <strong>Give the chosen notes
+      this colour</strong>, or <strong>Choose the notes of this colour</strong>. Each note is
+      named on it where its name fits, and a key of the keyboard down the left chooses every
+      note of its pitch.
+    </p>
+    <h3 data-i18n-html="docs.8f42006d363d">The Edit, More tools and Zoom menus</h3>
+    <ul>
+      <li data-i18n-html="docs.3070984d94ad">
+        <strong>Edit</strong>: <strong>Cut</strong>, <strong>Copy</strong> and <strong>Paste
+        at the first bar on screen</strong> (<kbd>Ctrl</kbd>+<kbd>X</kbd>,
+        <kbd>Ctrl</kbd>+<kbd>C</kbd>, <kbd>Ctrl</kbd>+<kbd>V</kbd>); mute or unmute the
+        chosen notes; rotate them a step left or right; choose every note, invert the choice,
+        or choose the muted notes or the notes off the beat; <strong>Note
+        properties…</strong>; group and ungroup the chosen notes, so a group moves and
+        deletes as one; and make them slide notes or glide in, or stop them.
+      </li>
+      <li data-i18n-html="docs.26835f506821">
+        <strong>More tools</strong>: <strong>Quantize halfway</strong> or <strong>with
+        swing</strong>; lengths to 25, 50, 75 or 150 %; <strong>Ends to the grid</strong>;
+        <strong>Every note one step long</strong>; velocities to 50, 80, 125 or 150 %; and
+        <strong>Limit</strong> the notes to two octaves, from C1–B2 to C5–B6.
+      </li>
+      <li data-i18n-html="docs.e1551223f247">
+        <strong>Zoom</strong>: in, out, <strong>Fit every note</strong> or <strong>Fit the
+        chosen notes</strong>.
+      </li>
+    </ul>
+    <h3 data-i18n-html="docs.fe1be326be6b">Note properties, slides and glides</h3>
+    <p data-i18n-html="docs.28b425b7cc4f">
+      Double-click a note, or press <strong>Note properties</strong>, for every number of the
+      chosen notes: start, length, pitch, velocity, release velocity, chance, velocity range,
+      pan, fine pitch, Mod X, Mod Y and colour, each typed in, with <em>Mixed</em> where the
+      chosen notes differ. <strong>Slide note</strong> makes a note strike nothing and bend
+      the track to its own pitch. <strong>Glide in (portamento)</strong> strikes a note from
+      the note before it and glides home over a sixteenth, or over its own length if that is
+      shorter.
+    </p>
+    <p data-i18n-html="docs.dbcb2e907348">
+      A slide moves the track's pitch wheel, so every note sounding on that track bends with
+      it, and a plugin follows it exactly only within its own bend range.
+    </p>
+    <h3 data-i18n-html="docs.3d8c81644dbb">More lanes</h3>
+    <p data-i18n-html="docs.189f039326bf">
+      The lanes under the grid share one splitter you drag, remembered on this computer, and
+      <strong>Add a lane</strong> also shows <strong>Pan</strong>, <strong>Fine
+      pitch</strong>, <strong>Release velocity</strong>, <strong>Mod X</strong> (the mod
+      wheel) and <strong>Mod Y</strong> (pressure). The release velocity is how fast each
+      note lets go: the One-Shot Sampler, the Multisampler, the Drum Machine, Oscillate Grain
+      Layers and Oscillate Siren ring out longer for a slow release and shorter for a fast
+      one, and your plugins are told it.
+    </p>
+    <p data-i18n-html="docs.599e5055f4d0">
+      Pan and fine pitch are heard by Oscillate's own sample-playing instruments, not by
+      plugins. Oscillate Grain Layers hears Mod X and Mod Y note by note, and Oscillate Siren
+      its Mod Y; every other instrument, and your plugins, hear them for the whole track as
+      each note is struck.
+    </p>
+    <p data-i18n-html="docs.db4c8113ce8e">
+      A CC lane can write an LFO: choose its <strong>LFO wave</strong> (sine, triangle,
+      square or saw), its <strong>LFO rate</strong> (a bar to a sixteenth note) and its
+      <strong>LFO depth</strong> (25 to 100 %), then <strong>Write the LFO across the
+      pattern</strong>, or across the chosen time, in one press of undo. A CC lane is still
+      drawn and saved but not played: no instrument reads it yet.
+    </p>
+    <h3 data-i18n-html="docs.caf0b843d7e7">The roll's ruler</h3>
+    <p data-i18n-html="docs.2b2fc69a8046">
+      The roll has a ruler of its own. Drag in it to hear the notes, and double-click it to
+      put down a marker; the song's markers show in the roll, and the playhead runs through
+      it. <kbd>Alt</kbd>+drag chooses a span of time and <kbd>Alt</kbd>+click clears it. The
+      <strong>Edit</strong> menu then inserts space over it, which makes the pattern longer;
+      slices the notes and inserts space; deletes the chosen time, which makes it shorter but
+      never past its last note; trims to it; clears it; or puts a marker at it.
+      <strong>Follow the playhead</strong> is the arrangement's own: on in one, it is on in
+      both.
     </p>
   </section>
   
@@ -495,6 +809,81 @@
   </section>
 
   <section>
+    <h2 id="retro-record" data-i18n-html="docs.724e8a91b5e7">Oscillate Retro Record</h2>
+    <p data-i18n-html="docs.9409997795f7">
+      <strong>Transport ▸ Oscillate Retro Record…</strong> opens Retro Record. It keeps the
+      last minutes of your audio input and your MIDI keyboard in this computer's memory, so a
+      take you played before you pressed record can still be saved.
+    </p>
+    <p data-i18n-html="docs.c9791d9964aa">
+      The first time, it asks <strong>Keep the last minutes of your input?</strong>, and keeps
+      nothing until you press <strong>Allow and start</strong>. After that it keeps your input
+      only while <strong>Capture</strong> is on, and it never starts capturing by itself, not
+      even at launch. Turned off, what it holds stays until <strong>Wipe everything</strong>
+      clears it from memory, at once. While it captures or holds anything, a light with its
+      state (<em>Capturing</em>, <em>Waiting</em> or <em>Holding</em>), the time held and the
+      memory it takes stays on top in every Oscillate window, and no setting hides it.
+    </p>
+    <h3 data-i18n-html="docs.d959459cef30">What it keeps</h3>
+    <p data-i18n-html="docs.1e04e7f44341">
+      <strong>Input</strong> is one input or a stereo pair of the audio device chosen in
+      <strong>Settings ▸ Audio</strong>, or <em>MIDI only</em>; your MIDI keyboard is kept
+      either way. <strong>Keep</strong> is how much, from 30 seconds to an hour, five minutes
+      unless you choose, and the memory each length takes is shown before you choose it.
+      <strong>Kept as</strong> is <em>24-bit</em>, <em>16-bit</em> or <em>32-bit float</em>,
+      and <strong>When</strong> is <em>Always</em>, <em>While playing</em> or <em>While
+      armed</em>. Changing the length, the format or the input wipes what it holds and starts it
+      again, empty, and the panel warns you of it first.
+    </p>
+    <p data-i18n-html="docs.a342ade123d1">
+      The waveform shows what is held, newest at the right. Drag across it to choose what to
+      save; the arrow keys move the choice, <kbd>Shift</kbd> with an arrow grows it, and
+      <kbd>Esc</kbd> clears it. If nothing comes in for a second and a half while it
+      captures, it says where Windows, macOS or Linux may be keeping the microphone from it.
+    </p>
+    <h3 data-i18n-html="docs.096b73624b09">Saving</h3>
+    <p data-i18n-html="docs.82e23335c315">
+      <strong>Save</strong>, or <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> in any Oscillate
+      window, saves what is held; with a stretch chosen on the waveform, <strong>Save the
+      choice</strong> saves only that. With nothing held, the key opens Retro Record instead.
+      <strong>One press saves</strong> <em>Everything held</em> or only the last stretch you
+      choose.
+    </p>
+    <p data-i18n-html="docs.705171c008eb">
+      <strong>Save as</strong> says where it goes. <em>Clip on a track</em> lands the audio on
+      the armed audio track and the notes on the armed MIDI track, or on a new track, at the
+      bar you played them, or at the playhead if the song was stopped. <em>WAV file</em>
+      writes a WAV named with the date and time, with a MIDI file beside it when you played
+      notes.
+    </p>
+    <p data-i18n-html="docs.8460d5410f82">
+      <strong>Skip silence</strong> shortens long quiet stretches as it saves, faded so a join
+      never clicks. <strong>Measure the room</strong> listens to three seconds of quiet and
+      sets the gate 9 dB above it. A save that would hold nothing, every sound skipped as quiet and
+      no note played, is refused, and says so.
+    </p>
+    <h3 data-i18n-html="docs.6b7cc94c730b">Saving from anywhere</h3>
+    <p data-i18n-html="docs.2f7eea744072">
+      A MIDI foot-switch can save too. <strong>Foot-switch</strong> is <em>Off</em> until you
+      choose <em>Sustain pedal (CC 64)</em>, or press <strong>Learn the foot-switch</strong>
+      and then the pedal or switch you want. One press is one save, however much a pedal
+      bounces.
+    </p>
+    <p data-i18n-html="docs.f5a0c0a1e073">
+      In <strong>Settings ▸ Recording</strong>, <strong>Retro Record's global hotkey</strong>
+      makes the same key save from any program, with Oscillate in the background, and
+      <strong>Retro Record in the tray</strong> puts an icon in the system tray whose menu has
+      <strong>Save Retro Record</strong> and <strong>Show Oscillate</strong>. Both are off
+      until you turn them on.
+    </p>
+    <p data-i18n-html="docs.df507f038d45">
+      Retro Record hears only the live input: a bounce or an export never reaches it. What it
+      keeps, and where a save is written, is in <a href="#privacy">Privacy and the
+      network</a>.
+    </p>
+  </section>
+
+  <section>
     <h2 id="live" data-i18n-html="docs.2f4a9c0d9ce6">Playing live</h2>
     <p data-i18n-html="docs.17b03b206557">
       Plug in a MIDI keyboard and choose it under <strong>MIDI input</strong> in
@@ -592,17 +981,22 @@
 
   <section>
     <h2 id="stage" data-i18n-html="docs.529d3ce4c95e">The Stage</h2>
-    <p data-i18n-html="docs.ab1dee22b401">
+    <p data-i18n-html="docs.bb68efe46235">
       <kbd>Ctrl</kbd>+<kbd>6</kbd>, or <strong>View ▸ Stage</strong>, opens the stage: a 3D
-      instrument and the hands that play a MIDI track on it, in time with the transport —
+      instrument and the hands that play your MIDI tracks on it, in time with the transport —
       through tempo changes, round the loop and wherever you scrub. It loads the first time
       you open it, so Oscillate starts no slower for having it.
     </p>
-    <p data-i18n-html="docs.5551268b0b7d">
-      <strong>Follow</strong> chooses the track. Left on <em>The selected track</em>, the
-      stage plays whichever MIDI track you select in the arrangement or the mixer. While the
-      stage is open, resting the pointer on the ruler shows a small picture of the stage at
-      that moment.
+    <p data-i18n-html="docs.b2c1bf6636d4">
+      <strong>Follow</strong> is a dropdown of the project's MIDI tracks with a checkbox each,
+      <em>All</em> ticked to start, and the track you select in the arrangement or the mixer
+      leads. On a piano up to four parts play together, each known by its track's name — a
+      melody, chords, a bass, a counter-melody — or else by where it sits: the bass and the
+      chords lean to the left hand, the melody and the counter to the right, and the hands
+      cross only where nothing else can play the passage. A guitar plays its one
+      <strong>Plays</strong> part and a bass the bass, and a drum track never joins them.
+      What is ticked lasts the session. While the stage is open, resting the pointer on the
+      ruler shows a small picture of the stage at that moment.
     </p>
     <h3 data-i18n-html="docs.b854e3db884e">What stands</h3>
     <p data-i18n-html="docs.fc50699f9956">
@@ -815,13 +1209,17 @@
       message around it is in your language.
     </p>
     <h3 data-i18n-html="docs.2ef08f855c58">The courses</h3>
-    <p data-i18n-html="docs.95fc66301424">
-      The <strong>Courses</strong> tab lists the fifteen: Piano, Reading, Rhythm, Ear training,
-      Theory for producers, Songwriting, Lyric Writing, Rap &amp; Flow, Song Arrangement,
-      Mixing, Finger Drumming, Drum Kit, Guitar, Classical Guitar and Bass. Open one to see its
-      map of sections, weeks and Days, how many Days you have passed, and the clocks: this
-      lesson, all lessons and the days practised. <strong>Continue</strong> opens the Day and
-      the step where you stopped. A Day you have not reached yet still opens, and says so.
+    <p data-i18n-html="docs.e8a6f7aa2805">
+      The <strong>Courses</strong> tab holds the fifteen, in a dropdown and a strip: Piano,
+      Reading, Rhythm, Ear training, Theory for producers, Songwriting, Lyric Writing, Rap
+      &amp; Flow, Song Arrangement, Mixing, Finger Drumming, Drum Kit, Guitar, Classical Guitar
+      and Bass. Each shows a progress light of ten segments and how many Days you have passed,
+      and one you have not begun says what it begins after. Under them, the open course's
+      Days run along one track, grouped by week under its sections, each told by its shape as
+      well as its colour: passed, where you are, a review, a checkpoint, or not reached yet;
+      the arrow keys move along it. The clocks show this lesson, all lessons and the days
+      practised. <strong>Continue</strong>, the panel's one key, opens the Day and the step
+      where you stopped. A Day you have not reached yet still opens, and says so.
     </p>
     <h3 data-i18n-html="docs.2b065c7c9ce4">Today</h3>
     <p data-i18n-html="docs.a94682304567">
@@ -963,8 +1361,8 @@
   
   <section>
     <h2 id="devices" data-i18n-html="docs.c80fbc216c04">The stock devices</h2>
-    <p data-i18n-html="docs.1cb6f8e058c7">
-      Seventy-three instruments and effects ship inside Oscillate, including
+    <p data-i18n-html="docs.32b612efbbdf">
+      Eighty-three instruments and effects ship inside Oscillate, including
       <strong>Freally Secretarium</strong>. Every panel is drawn from the device's own
       description, so the readout on a knob is the number the DSP is using rather than a
       second one that agrees most of the time.
@@ -1032,6 +1430,150 @@
     <p data-i18n-html="docs.cf62c3a32ff8">
       The key is kept through a rename, a save and a room. If the key track is deleted, the
       card says so and the sound passes untouched; an undo brings the key back.
+    </p>
+    <h3 data-i18n-html="docs.233e3485af27">Oscillate Kick Carve</h3>
+    <p data-i18n-html="docs.75b2088ada20">
+      Turns the bass down only in the slice of the low end the kick is sounding in, and only
+      while it rings there, so the bass's harmonics above it never move. Choose the kick in
+      the card's <strong>Sidechain from</strong>. <strong>Mode</strong> is
+      <em>Spectrum</em>, 24 bands across the low end, or <em>Bell</em>, one cut that follows
+      the kick's own pitch, and the bands while the kick has none. <strong>Depth</strong> (up
+      to 24 dB), <strong>Tune-In</strong>, <strong>Follow</strong>, <strong>Hold</strong>,
+      <strong>Width Q</strong>, <strong>Range Low</strong> and <strong>Range High</strong>
+      (20 to 400 Hz), <strong>Mid Only</strong> and up to 5 ms of
+      <strong>Lookahead</strong> shape it, and the rest of the mix is kept in time with the
+      lookahead. At a Depth of zero the bass passes bit for bit. Eight presets, from Sub
+      Pocket to Wide Bass Safe.
+    </p>
+    <h3 data-i18n-html="docs.7932b1559e62">Oscillate Bass Unison</h3>
+    <p data-i18n-html="docs.a56a284bec6e">
+      Turns a saw or an 808 into a moving reese: two to eight voices, detuned by up to 35
+      cents and turning through 4 to 12 all-pass <strong>Stages</strong> at a
+      <strong>Rate</strong> of 0.02 to 10 Hz or synced, spread wide, while everything under
+      the <strong>Crossover</strong> (40 to 300 Hz) stays mono and untouched, so a club's mono
+      sub and a phone's one speaker hear all of it. <strong>Width</strong> goes up to 150 %,
+      and <strong>Mono Guard</strong>, on to start, keeps its fold to mono from losing more
+      than 3 dB. It reports about 15 ms of latency. Eight presets, from Classic Reese to
+      Extreme Phase.
+    </p>
+    <h3 data-i18n-html="docs.2b8b78b8fed7">Oscillate Groove and its forty feels</h3>
+    <p data-i18n-html="docs.ec707d526419">
+      A note device that moves the drums played into it into a named feel.
+      <strong>Feel A</strong> is one of forty, from <em>Grid Tight</em> and <em>Laid-Back
+      Backbeat</em> to <em>Loose Drummer</em>, and can be blended with a second;
+      <strong>Depth</strong> goes up to 200 %, and each of its twelve lanes, from the kick to
+      the percussion, has its own offset and depth, interpolated or snapped. First on a
+      track, it reads the clip's notes ahead, so a note moved early needs no added delay; a
+      key played live, or a Groove later in the chain, waits by its
+      <strong>Lookahead</strong>, up to 80 ms.
+    </p>
+    <p data-i18n-html="docs.d5fdbcc59e0f">
+      <strong>Library</strong> loads a feel, <strong>Save as a feel</strong> keeps your own,
+      and <strong>Print the open clip in this feel</strong> writes the clip open in the
+      Editor, re-timed, as a new MIDI clip right after it. The forty feels were written by
+      hand for Oscillate; none was taken from a recording or another product.
+    </p>
+    <p data-i18n-html="docs.0fa45a3c7e03">
+      <strong>Oscillate Groove Kit</strong> is its partner: twelve synthesized drums on the
+      General MIDI notes, a closed hat choking an open one, and a <strong>Pattern</strong>
+      (<em>Backbeat</em>, <em>Half-Time</em>, <em>Four on the Floor</em>, <em>Boom
+      Bap</em>, <em>Shuffle</em>, <em>Two-Step</em> or <em>Sixteenths</em>) to play in a
+      feel.
+    </p>
+    <h3 data-i18n-html="docs.ba87b5cbd2e5">Oscillate Chord Trigger</h3>
+    <p data-i18n-html="docs.e034e184c3ec">
+      One key plays a whole chord with its bass, voice-led to move as little as it can. The
+      keyboard is split in three: the bass below <strong>Bass Split</strong>, the controls
+      from <strong>Control Split</strong> up (the first five keys choose the inversion, the
+      sixth latches, the seventh lets everything go), and the chords between them, laid out
+      by <strong>Chord Map</strong>: <em>Chromatic</em>, <em>Major Key</em> or <em>Minor
+      Key</em>. Twenty-seven chord shapes and eight of your own, built on a three-octave grid;
+      a strum of up to 60 ms; twelve presets.
+    </p>
+    <p data-i18n-html="docs.9184c71643db">
+      Its pads are 64 px, or 96 with <strong>Larger targets</strong>, and the number row
+      plays them. <strong>Switch scan</strong> lets it be played with <em>One switch</em>,
+      which steps by itself every 0.5 to 5 seconds, or <em>Two switches</em>, each a key, a
+      MIDI note or a controller you teach it. The pads play the armed track, and the scan's
+      settings last the session.
+    </p>
+    <h3 data-i18n-html="docs.6e6483d51004">Oscillate Glide</h3>
+    <p data-i18n-html="docs.841c74d1890b">
+      Slides for 808 lines. <strong>Slide On</strong> chooses which notes slide into the next:
+      <em>Every Note</em>, <em>Every Offbeat Note</em>, <em>Every Nth Note</em>, <em>Notes
+      Shorter Than</em>, <em>Leaps Of</em>, <em>Marked In The Lane</em> or <em>Never</em>,
+      over a <strong>Slide Time</strong> of 5 ms to 2 s or synced, on one of six curves. Its
+      face holds a lane of Slide, Hold and Skip steps up to four bars long, which rules while
+      Slide On is <em>Marked In The Lane</em>. It bends in 14-bit steps, tells your plugins
+      its <strong>Bend Range</strong> (1 to 48 semitones; Oscillate's own instruments need
+      none), and clamps or splits a slide that goes past it. Chord Trigger's bass can feed
+      it. Twelve presets.
+    </p>
+    <h3 data-i18n-html="docs.be0210423b57">Oscillate Siren</h3>
+    <p data-i18n-html="docs.d8547fe03218">
+      An instrument for police wails, air-raid, two-tone and dub sirens, on a spinning rotor
+      whose <strong>Spin-Down</strong>, 0.2 to 12 seconds, makes the rise and the fall.
+      Twelve <strong>Rotor</strong> models, a pitch envelope, glide, an LFO from 0.01 to
+      40 Hz, and <em>Mono</em>, <em>Legato</em>, <em>Poly 8</em> and <em>Latch</em>. Its face
+      holds the <strong>Sounds</strong> (sirens, dub, rave stabs, zaps and springs: sixty-two
+      presets), an <strong>Alarm pattern</strong> of 16 to 32 steps that plays while a key is
+      held, a 16-step modulation sequence and a twelve-slot modulation matrix, with two
+      envelopes and three LFOs. Its oscillators run at 4× by default, where their aliasing is
+      under −80 dB.
+    </p>
+    <h3 data-i18n-html="docs.f2c72a5ac00c">Oscillate Dispersion Delay</h3>
+    <p data-i18n-html="docs.7c0d75bc2840">
+      Up to 512 all-pass <strong>Stages</strong> smear a hit across its frequencies into a
+      laser zap: the delay runs along a line, per octave or as a bell between <strong>Low
+      Frequency</strong> and <strong>High Frequency</strong>, the lows late or the highs, with
+      its feedback limited inside the loop and the right side set off from the left by
+      <strong>Stereo Offset</strong>. Then comes a tape echo of 1 ms to 2 s, with
+      <strong>Echo Feedback</strong>, wow and flutter, <strong>HF Loss</strong>,
+      <strong>Saturation</strong> and <strong>Head Bump</strong>. Its face draws the delay
+      the stages really make, frequency by frequency (solid for the left, dashed for the
+      right, higher for later), and the stereo field. It adds no latency.
+    </p>
+    <h3 data-i18n-html="docs.046ff4ef99fb">Oscillate Grain Layers</h3>
+    <p data-i18n-html="docs.5c26c1dc2d28">
+      Up to eight of your samples stacked as rock layers, read by a drill whose depth chooses
+      what sounds. Its face groups the <strong>Column</strong>, the <strong>Geology</strong>
+      (Erosion wears the column away, Fold bends it, Fault cracks it), the
+      <strong>Grains</strong>, <strong>Playing</strong> and <strong>Expression</strong>, then
+      four LFOs, two envelopes and a sixteen-slot modulation matrix, over sixteen voices,
+      seeded so a render is the same every time. A note's Mod X moves the drill, and its Mod Y
+      goes where <strong>Pressure To</strong> says. Twelve factory presets, their layers made
+      in code.
+    </p>
+    <p data-i18n-html="docs.a8acd4c1d4ce">
+      Put a file on a layer, or the File Explorer's previewed one. <strong>Keep this layer's
+      audio inside the project</strong> carries it in the project file, and <strong>Find this
+      file again in your folders</strong> looks for one that has moved. The memory its layers take is
+      shown, up to 1 GiB. Quality is <em>Draft</em>, <em>Normal</em> or <em>High</em>, and
+      the <strong>Grain Cap</strong> is 16 to 64 grains, 48 to start. Its cross-section is
+      drawn live on Windows; with reduced motion on, and on macOS and Linux, it stands still.
+    </p>
+    <h3 data-i18n-html="docs.de620d7ae16d">Oscillate Storm</h3>
+    <p data-i18n-html="docs.874e219ea058">
+      Rain, thunder and wind made from their physics, so nothing loops and no sample is used.
+      Rain falls on eight surfaces, from a tin roof and a window to a puddle and a pond, and
+      thunder arrives as late as its bolt is far. The storm map shows <strong>Rain
+      zones</strong>, in metres, where you place the listener and up to eight zones, or
+      <strong>Lightning</strong>, in kilometres, where <strong>Draw a bolt</strong> takes a
+      click for each point and <kbd>Enter</kbd>, up to four bolts, and <strong>New
+      branches</strong> draws their branches again. Two macros, Rain and Storm.
+    </p>
+    <p data-i18n-html="docs.6ca928351fc7">
+      A key at or above <strong>Split</strong> runs the weather and lets a drop fall at its
+      pitch, kept to <strong>Root</strong>, <strong>Scale</strong> and <strong>Key
+      Snap</strong>; a key below strikes a bolt, its note choosing which of the four. The mod
+      wheel brings the storm, CC 11 the rain and CC 74 the wind, and the pitch wheel moves the
+      listener nearer or further. <strong>Output</strong> is the full storm, the rain, the
+      thunder or the wind; sixty-two presets of rain, thunder and full storms; quality
+      <em>Draft</em>, <em>Normal</em> or <em>Ultra</em>. <strong>Render the three
+      layers</strong> writes the rain, the thunder and the wind as three WAV files that add up
+      to the track, each named for the track and its layer, into the folder <strong>Settings ▸
+      Export</strong> names (or one you choose, if it names none), in place of any file of
+      that name. It is stereo only.
     </p>
     <h3 data-i18n-html="docs.afc35db2da83">Devices that read the arrangement</h3>
     <p data-i18n-html="docs.6a537022e329">
@@ -1112,13 +1654,14 @@
       <code>valve</code> finds <code>Tube Saturator</code> and <code>Amp Head</code>.
     </p>
     <h3 data-i18n-html="docs.00254cbab0ed">The preview</h3>
-    <p data-i18n-html="docs.5449342763f5">
+    <p data-i18n-html="docs.04348aea2702">
       Click a device and you hear its own demonstration — a note chosen and a length
       measured per instrument — with a waveform, a playhead, a loop, and
       <kbd>←</kbd>/<kbd>→</kbd> to run it backwards or forwards. Point it at a folder of
-      your own and it previews your samples the same way. Four of the instruments are
-      samplers and say so rather than playing silence: they cannot sound until you give them
-      a file with <strong>Add samples…</strong> on the device.
+      your own and it previews your samples the same way. Five of the instruments are
+      samplers and say so rather than playing silence: they wait for a file of yours, given
+      with <strong>Add samples…</strong> on the device or, on Oscillate Grain Layers, with
+      <strong>Choose a file for this layer…</strong>.
     </p>
     <h3 data-i18n-html="docs.008365bb240d">The instruments</h3>
     <p data-i18n-html="docs.3e31f02db58e">
@@ -1128,6 +1671,14 @@
       a row plays it too. With a MIDI track selected, what you hear is that track's own notes
       from the playhead, played through the instrument you are on. <strong>Add</strong> puts
       the instrument on the selected track.
+    </p>
+    <p data-i18n-html="docs.018dc52d1917">
+      In the instrument list and in <strong>My Sounds</strong>, <kbd>↑</kbd> and
+      <kbd>↓</kbd> walk the rows and play each one, and <kbd>←</kbd> and <kbd>→</kbd> move
+      between a row's keys; on an instrument's name they still play it backwards and
+      forwards. <kbd>Home</kbd>, <kbd>End</kbd>, <kbd>Ctrl</kbd>+<kbd>Home</kbd> and
+      <kbd>Ctrl</kbd>+<kbd>End</kbd> jump, and each list is one stop for <kbd>Tab</kbd>. The
+      family and part filters are dropdowns with a checkbox each.
     </p>
     <p data-i18n-html="docs.c45ed4856c9f">
       The star on a row puts the instrument in <strong>Starred</strong>. In
@@ -1154,6 +1705,45 @@
     <p data-i18n-html="docs.5d740606fafb">
       A dropped file is <strong>taken into the project</strong>, not referenced. Drop
       something out of a temporary folder and delete the original, and the clip still plays.
+    </p>
+    <h3 data-i18n-html="docs.b7ba15ad34d4">Find Similar</h3>
+    <p data-i18n-html="docs.6086461c1507">
+      <strong>Show Find Similar</strong> opens it in the explorer. Choose a
+      <strong>Reference</strong>, a sound or a MIDI loop from the folder you are in, and
+      press <strong>Find similar</strong>: every look-alike in the explorer's folders and the
+      bundled drum packs is ranked out of 100, up to 200 of them, each as <em>Exact
+      copy</em>, <em>Same sound</em>, <em>Similar sound</em>, <em>Pitched or stretched</em>
+      or <em>Same rhythm</em>, with its reason in words: the same audio in another file, a
+      level change, a trim, a mono copy, another sample rate, a pitch or a stretch, the tone
+      changed, the same rhythm rotated or at double time. <strong>Hear</strong> plays
+      <em>A: the reference</em>, <em>B: the look-alike</em>, or <em>A+B together</em>, lined
+      up.
+    </p>
+    <p data-i18n-html="docs.d601313e7e44">
+      The first time it opens in a session, it reads the folders in the background, and
+      after that only what is new or changed; <strong>Read the folders again</strong> reads
+      them now, and <strong>Stop reading</strong> stops. It reads WAV and MIDI files only. It
+      is measurement, with no model: pitch shifts of up to three semitones and stretches of up
+      to 12 % are found, and beyond that it promises nothing. What its index keeps is in
+      <a href="#privacy">Privacy and the network</a>.
+    </p>
+    <h3 data-i18n-html="docs.903a1771c064">Kick and Bass Match</h3>
+    <p data-i18n-html="docs.385e4ddb76c4">
+      In a folder with two sounds or more, <strong>Kick and Bass Match</strong> shows in the
+      explorer. Choose the <strong>Kick</strong> and press <strong>Rank the basses</strong>:
+      every other WAV file in the folder is read as a bass and given a
+      <strong>Score</strong> out of 100, from its <strong>Interval</strong>, how well the
+      kick's pitch sits on the bass's root, fifth or octave; its
+      <strong>Roughness</strong>, how much the two beat against each other; its
+      <strong>Overlap</strong>, the low end they share; and its <strong>Decay fit</strong>,
+      whether the kick's tail is gone before the bass settles.
+    </p>
+    <p data-i18n-html="docs.f58b0fef366e">
+      <strong>Retune</strong> gives the cents that put the kick on the bass's root, fifth or
+      octave, and <strong>Hear</strong> plays a bar of four kicks, retuned, over the bass at
+      120 BPM. A kick with no tonal body says so and offers no retune, and a file that cannot
+      be read is listed last. It reads the first four seconds of each file, up to 2,000
+      basses, and keeps nothing. It is measurement, with no model.
     </p>
   </section>
   
@@ -1207,6 +1797,67 @@
       <em>your network gives every server a different address</em>. That last one needs a
       relay in the middle; there is a field for your own in
       <strong>Settings ▸ Collaboration</strong>.
+    </p>
+  </section>
+  
+  <section>
+    <h2 id="phone" data-i18n-html="docs.c3e61cb4f392">MixSir — the mix on your phone</h2>
+    <p data-i18n-html="docs.17644a30eafc">
+      MixSir puts the song on a phone on your Wi-Fi, to listen to and to mix away from the
+      desk, with nothing to install on the phone. In the <strong>Room</strong> panel
+      (<kbd>Ctrl</kbd>+<kbd>5</kbd>), under <strong>Phone</strong>, press <strong>Send to my
+      phone</strong>. Oscillate renders the mix and one part for each track that has clips
+      on it, your plugins included, and lists them under <strong>What the phone will
+      see</strong>. When it says <strong>Ready on your network</strong>, the QR code appears.
+    </p>
+    <p data-i18n-html="docs.c1e2f9c2bdf0">
+      Scan the code with the phone's camera, on the same Wi-Fi as the computer, and the mix
+      opens in the phone's browser. Every part is loaded onto the phone as the page opens;
+      once the page says it is ready, the parts keep playing with the network off, for as
+      long as the page stays open.
+    </p>
+    <h3 data-i18n-html="docs.9126b986fc96">On the phone</h3>
+    <ul>
+      <li data-i18n-html="docs.592290a5fa7c">
+        <strong>The mixer.</strong> A strip for the mix and one for each part, with gain, pan,
+        mute and solo. Play plays the mix as it was sent. Touch a part, its gain, pan, mute or
+        solo, and the parts play instead, as you balance them; mute the mix to hear the parts,
+        or solo it to hear the mix alone. The mix and the parts never play over each other.
+      </li>
+      <li data-i18n-html="docs.27a679645074">
+        <strong>Saving a part.</strong> Each strip saves its part to the phone: as a WAV with
+        that strip's gain and pan, made on the phone itself, or as a 192 kbps MP3, fetched
+        from the computer, so it needs the network.
+      </li>
+      <li data-i18n-html="docs.fb7ea2c82263">
+        <strong>Listen at the desk</strong> plays the mix from the computer, in Opus, and
+        saves nothing.
+      </li>
+    </ul>
+    <p data-i18n-html="docs.803617a467e8">
+      The phone hears the song as it was when you pressed <strong>Send to my phone</strong>:
+      an edit after that needs another send. A song can be up to ten minutes long, with up to
+      127 tracks that have something on them; a longer song, or an empty arrangement, is
+      refused with a sentence that says so.
+    </p>
+    <h3 data-i18n-html="docs.96495dd1cb07">The code is a key</h3>
+    <p data-i18n-html="docs.34a09397f380">
+      The code carries a key made for this pairing only, and the address under it carries
+      the same key: anyone who scans the code, or has the address, can hear the song until
+      you stop or pair again. Treat it like a room code. <strong>Copy the address</strong>
+      puts it on the clipboard.
+    </p>
+    <p data-i18n-html="docs.8490e9d3c2a9">
+      <strong>Stop sending to the phone</strong>, the stop icon, ends the sharing, and so does
+      pairing again, which makes a new key and ends the old one, or closing Oscillate. Five
+      requests with a wrong key, or with none, end the pairing on their own, and the
+      panel says <strong>Stopped</strong>.
+    </p>
+    <p data-i18n-html="docs.f9a0489529f8">
+      The phone is served over plain HTTP on port 7434, on your own network. It is not
+      encrypted, so send to your phone on a network you trust. If another program holds port
+      7434, or the computer is on no network a phone could share, the panel says so. On a
+      VPN, the address may be one the phone cannot reach.
     </p>
   </section>
   
@@ -1350,22 +2001,24 @@
 
   <section>
     <h2 id="final-check" data-i18n-html="docs.b04b9b7961b7">Final check</h2>
-    <p data-i18n-html="docs.ba4abf191c1b">
+    <p data-i18n-html="docs.a5d84ebf2f4a">
       <kbd>Ctrl</kbd>+<kbd>9</kbd>, <strong>View ▸ Final check</strong>, or its key in the
       titlebar opens the Final check: a master for each place the song is going, each checked
       before it leaves. It is a window of its own, like the Mixer, and its <strong>⇲</strong>
-      docks it under the Mixer in the main window. The destinations come first, then three
-      tabs: <strong>Speakers</strong>, <strong>Loudness Staircase</strong> and
-      <strong>Spec Gate</strong>.
+      docks it under the Mixer in the main window. Its tabs are <strong>Masters</strong>,
+      <strong>Speakers</strong>, <strong>Loudness Staircase</strong> and <strong>Spec
+      Gate</strong>.
     </p>
     <h3 data-i18n-html="docs.eaa4d72d14bf">A master for each destination</h3>
-    <p data-i18n-html="docs.c16c65aab797">
-      Tick where the song is going: Spotify, Apple Music, YouTube, Amazon Music, Tidal,
-      Deezer, SoundCloud, a CD, a club, or broadcast to EBU R 128 or ATSC A/85. Each row gives
-      its loudness target, its true-peak ceiling and the file it wants. A row says whether the
-      figure is the service's own or Oscillate's default where the service publishes none,
-      with where it came from and the day it was read. A target is guidance, never a promise
-      that a service will accept a file. What you tick is remembered on this computer.
+    <p data-i18n-html="docs.515031535d57">
+      On the <strong>Masters</strong> tab, tick where the song is going in the destinations'
+      dropdown, a checkbox each or <em>All</em>: Spotify, Apple Music, YouTube, Amazon Music,
+      Tidal, Deezer, SoundCloud, a CD, a club, or broadcast to EBU R 128 or ATSC A/85. Each
+      shows its loudness target and its true-peak ceiling beside it, and the table below
+      gives each ticked row with the file it wants. A row says whether the figure is the
+      service's own or Oscillate's default where the service publishes none, with where it
+      came from and the day it was read. A target is guidance, never a promise that a service
+      will accept a file. What you tick is remembered on this computer.
     </p>
     <p data-i18n-html="docs.4455f6266bc0">
       <strong>Export the masters</strong> makes one master for each ticked row, together, from
@@ -1375,15 +2028,16 @@
       <strong>Settings ▸ Export</strong> sends your exports.
     </p>
     <h3 data-i18n-html="docs.a7ab3056096a">Hear it as</h3>
-    <p data-i18n-html="docs.3e5e55692062">
-      The <strong>Speakers</strong> tab plays what you are hearing as a <strong>Phone</strong>,
-      a <strong>Car</strong>, a <strong>Laptop</strong>, a <strong>Small speaker</strong> or
-      <strong>Earbuds</strong> would, or <strong>Flat</strong>, as it is. Each speaker is
-      level-matched, so a switch changes the tone and not the loudness, and the switch
-      crossfades without a click: go between a speaker and <strong>Flat (A)</strong> for an
-      A/B. It is monitoring only: what you hear here never reaches an export, a bounce or a
-      master, and every launch starts flat. Each speaker is an approximation of a kind of
-      speaker, never a measurement of any product.
+    <p data-i18n-html="docs.9dda3184a093">
+      On the <strong>Speakers</strong> tab, <strong>Hear it as</strong> plays what you are
+      hearing as it is, <strong>Flat</strong>, or as a <strong>Phone</strong>, a
+      <strong>Car</strong>, a <strong>Laptop</strong>, a <strong>Small speaker</strong> or
+      <strong>Earbuds</strong> would. Each speaker is level-matched, so a switch changes the
+      tone and not the loudness, and the switch crossfades without a click;
+      <strong>Compare with flat (A)</strong> goes between the speaker and Flat for an A/B. It
+      is monitoring only: what you hear here never reaches an export, a bounce or a master,
+      and every launch starts flat. Each speaker is an approximation of a kind of speaker,
+      never a measurement of any product.
     </p>
     <p data-i18n-html="docs.cdc6504729ef">
       Every master exported is also checked as a phone's speaker and a car's cabin would play
@@ -1440,6 +2094,11 @@
       <kbd>Ctrl</kbd>+<kbd>,</kbd>. Every change applies immediately and persists per
       machine. There is no <em>Apply</em> button, because a settings dialog with one is a
       settings dialog that can be wrong about what is in effect.
+    </p>
+    <p data-i18n-html="docs.d7af9297a0b1">
+      Its thirteen sections run down the side. <strong>Recording</strong> holds the
+      count-in, and Oscillate Retro Record's global hotkey and tray icon, both off until you
+      turn them on; see <a href="#retro-record">Oscillate Retro Record</a>.
     </p>
     <h3 data-i18n-html="docs.bc1b88907d3b">Audio</h3>
     <p data-i18n-html="docs.40710b1c4ea7">
@@ -1509,6 +2168,7 @@
       </thead>
       <tbody>
         <tr><td><kbd>Space</kbd></td><td data-i18n-html="docs.a78afaff2fda">Play or pause</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd></td><td data-i18n-html="docs.4b627c7915d2">Save Oscillate Retro Record — the last minutes of your input, kept after the fact</td></tr>
         <tr><td><kbd>Ctrl</kbd>+<kbd>N</kbd></td><td data-i18n-html="docs.a41eb2bf7245">New project</td></tr>
         <tr><td><kbd>Ctrl</kbd>+<kbd>O</kbd></td><td data-i18n-html="docs.c4c61e4f9081">Open a project</td></tr>
         <tr><td><kbd>Ctrl</kbd>+<kbd>S</kbd></td><td data-i18n-html="docs.1509f561f241">Save</td></tr>
@@ -1528,8 +2188,17 @@
         <tr><td><kbd>Esc</kbd></td><td data-i18n-html="docs.2f965c221f2d">Back from the open sheet, in the Sheets panel</td></tr>
         <tr><td><kbd>V</kbd> / <kbd>Shift</kbd>+<kbd>V</kbd></td><td data-i18n-html="docs.ef86faf16227">Step the stage's view, forwards or back, while the stage has the focus</td></tr>
         <tr><td><kbd>Alt</kbd>+<kbd>V</kbd> / <kbd>Alt</kbd>+<kbd>Shift</kbd>+<kbd>V</kbd></td><td data-i18n-html="docs.598372c72bff">Step the stage's view, forwards or back, from anywhere while the stage shows</td></tr>
-        <tr><td><kbd>B</kbd> / <kbd>V</kbd></td><td data-i18n-html="docs.0bb673ee3069">The blade / the pointer</td></tr>
-        <tr><td><kbd>P</kbd></td><td data-i18n-html="docs.998aaff2fcf7">Draw mode (the pencil)</td></tr>
+        <tr><td><kbd>C</kbd> / <kbd>V</kbd></td><td data-i18n-html="docs.0bb673ee3069">The blade / the pointer</td></tr>
+        <tr><td><kbd>P</kbd></td><td data-i18n-html="docs.ce13b797313a">The draw tool; in the editor, draw mode (the pencil)</td></tr>
+        <tr><td><kbd>B</kbd></td><td data-i18n-html="docs.5689a46a3b2a">The paint tool — the picked clip, painted along a lane</td></tr>
+        <tr><td><kbd>D</kbd></td><td data-i18n-html="docs.ae568d1cdc7a">The erase tool</td></tr>
+        <tr><td><kbd>T</kbd></td><td data-i18n-html="docs.2e45e8cb5822">The mute tool</td></tr>
+        <tr><td><kbd>S</kbd></td><td data-i18n-html="docs.2914595ae6ab">The slip tool — a clip’s content slides; on an edge, the edge moves with it</td></tr>
+        <tr><td><kbd>Y</kbd></td><td data-i18n-html="docs.d9e17187d41a">The audition tool — a pressed clip, heard alone</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd></td><td data-i18n-html="docs.8bda3a715fdf">Copy the selected clips</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>V</kbd></td><td data-i18n-html="docs.6a9097f78c98">Paste the clips at the playhead</td></tr>
+        <tr><td><kbd>Ctrl</kbd>+<kbd>C</kbd> / <kbd>Ctrl</kbd>+<kbd>X</kbd> / <kbd>Ctrl</kbd>+<kbd>V</kbd></td><td data-i18n-html="docs.5d4232ecd8df">In the piano roll: copy, cut and paste the chosen notes</td></tr>
+        <tr><td><kbd>Alt</kbd>+<kbd>←</kbd> / <kbd>Alt</kbd>+<kbd>→</kbd></td><td data-i18n-html="docs.c216e4b5e616">The previous / the next marker</td></tr>
         <tr><td><kbd>Home</kbd> / <kbd>End</kbd></td><td data-i18n-html="docs.63195e7ab017">Bar 1 / the end of the arrangement</td></tr>
         <tr><td><kbd>Ctrl</kbd>+<kbd>A</kbd></td><td data-i18n-html="docs.308ea67cd57c">Select everything</td></tr>
         <tr><td><kbd>Esc</kbd></td><td data-i18n-html="docs.ef8b2814c03b">Clear the selection</td></tr>
@@ -1554,12 +2223,12 @@
   
   <section>
     <h2 id="privacy" data-i18n-html="docs.69bd78234ffb">Privacy and the network</h2>
-    <p data-i18n-html="docs.72f1e2b86c3c">
+    <p data-i18n-html="docs.0c319deafe8d">
       Oscillate needs no account, collects no telemetry, and never sends your projects, your
-      audio or anything about you or your machine anywhere. Recording, editing, generation,
-      playback, mixing and export are entirely local.
+      audio or anything about you or your machine anywhere you did not send it yourself.
+      Recording, editing, playback, mixing and export are entirely local.
     </p>
-    <p data-i18n-html="docs.ac2de81c2bb6">There are exactly three occasions on which it uses the network:</p>
+    <p data-i18n-html="docs.080502306d57">There are exactly four occasions on which it uses the network:</p>
     <ol>
       <li data-i18n-html="docs.7b291aa666a0">
         <strong>A collaboration session you opened or joined.</strong> Directly to the other
@@ -1574,6 +2243,11 @@
       <li data-i18n-html="docs.e19cbd5438b8">
         <strong>An update check</strong>, only when you press the button or switch on
         checking at launch. Off by default. See <a href="#updates">Updates</a>.
+      </li>
+      <li data-i18n-html="docs.3a3b41351317">
+        <strong>MixSir, while you send to your phone.</strong> Oscillate serves the song you
+        sent to devices on your own network, on port 7434, until you stop; it contacts nothing
+        itself, and takes nothing from the phone. See <a href="#phone">MixSir</a>.
       </li>
     </ol>
     <p data-i18n-html="docs.0d97a43de208">
@@ -1599,6 +2273,35 @@
       input through the lesson's own track so you can hear yourself; it records nothing
       either. A build gate fails if listening's code reaches for any file but that one, and a
       test runs a whole listening session and finds nothing else left behind.
+    </p>
+    <p data-i18n-html="docs.caf7b4929a7d">
+      <strong>Oscillate Retro Record.</strong> While <strong>Capture</strong> is on, Retro
+      Record keeps your audio input and your MIDI keyboard in this computer's memory, 30
+      seconds to an hour of it, the newest replacing the oldest. No sound is written to disk
+      until you press <strong>Save</strong>, and nothing of it is ever sent anywhere. A save
+      as a clip writes its audio as a WAV into Oscillate's <code>Takes</code> folder, as any
+      recorded take is; a save as a WAV file writes it, with a MIDI file when you played
+      notes, into a <code>Retro Record</code> folder in Oscillate's data folder. Each file is
+      made new under a name nothing else holds, so a save never writes over a file of yours,
+      and one that fails half way leaves none of its files behind.
+    </p>
+    <p data-i18n-html="docs.e5be57430ab7">
+      <strong>Wipe everything</strong> zeroes what Retro Record holds, the few seconds still on
+      their way from the audio thread with it, and gives the memory back; changing its length,
+      its format or its input, or taking back your yes, does the same, and quitting gives the
+      memory back to the operating system. Its one other file is
+      <code>retro.json</code>: your yes, its length, format and input, the foot-switch and the
+      two switches, never sound. A bounce or an export never reaches it, and a test holds it
+      to one feeder, the live input.
+    </p>
+    <p data-i18n-html="docs.5a3b48d48644">
+      <strong>Find Similar</strong> keeps one file, <code>find-similar.index</code>, in
+      Oscillate's data folder. For each WAV and MIDI file under the explorer's folders and the
+      bundled drum packs, it holds the file's full path, size and date, hashes of its bytes and
+      of its audio or its notes, and coarse measurements: a sound's loudness and spectrum, or
+      a loop's rhythm, its tempo and the lowest note of each onset. No audio is kept in it,
+      and it is sent nowhere; deleting it costs one more read of your folders. <strong>Kick and Bass
+      Match</strong> keeps nothing at all.
     </p>
   </section>
   
@@ -1634,6 +2337,30 @@
         <strong>A sampler with no file cannot be rendered to audio.</strong> Converting a
         pattern on a track whose sampler is empty is refused by name rather than handed back
         as silence.
+      </li>
+      <li data-i18n-html="docs.a638c9f1f04c">
+        <strong>A phone hears the song as it was sent.</strong> An edit after <strong>Send to
+        my phone</strong> needs another send, and the phone is served over plain HTTP on your
+        own network, not encrypted.
+      </li>
+      <li data-i18n-html="docs.c446742f8d3c">
+        <strong>A room refuses a very large change of arrangement.</strong> A switch, a merge,
+        a new arrangement, a copy or a delete that would send more than 1,024 changes at once,
+        about 500 clips, is refused in a room; alone, any size works.
+      </li>
+      <li data-i18n-html="docs.601ee4a78c6d">
+        <strong>A note's own Mod X and Mod Y reach two instruments.</strong> Oscillate Grain
+        Layers hears both note by note and Oscillate Siren its Mod Y; every other instrument
+        and your plugins hear them for the whole track. Plugins do not hear a note's pan or
+        fine pitch.
+      </li>
+      <li data-i18n-html="docs.7ddad12c5802">
+        <strong>A slide bends the whole track.</strong> It moves the track's pitch wheel, so
+        every note sounding there bends with it.
+      </li>
+      <li data-i18n-html="docs.687899918ed2">
+        <strong>A CC lane is drawn and saved, not played.</strong> No instrument reads it yet,
+        an LFO written into one included.
       </li>
       <li data-i18n-html="docs.9596113825be">
         <strong>Screen share is Windows and Linux.</strong> macOS has no display-capture
