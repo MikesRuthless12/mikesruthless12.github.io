@@ -55,9 +55,30 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-16-0-2026-11-09">v0.16.0</a></li><li><a href="#0-12-0-2026-11-04">v0.12.0</a></li><li><a href="#0-10-0-2026-11-02">v0.10.0</a></li><li><a href="#0-9-0-2026-10-31">v0.9.0</a></li><li><a href="#0-8-0-2026-10-30">v0.8.0</a></li><li><a href="#0-7-0-2026-10-28">v0.7.0</a></li><li><a href="#1-0-0-2026-10-09">v1.0.0</a></li><li><a href="#1-0-0-rc-2026-09-25">v1.0.0-rc</a></li><li><a href="#0-1-0-2026-08-25">v0.1.0</a></li><li><a href="#0-0-1-2026-08-24">v0.0.1</a></li></ol>
+<ol><li><a href="#0-17-0-2026-11-12">v0.17.0</a></li><li><a href="#0-16-0-2026-11-09">v0.16.0</a></li><li><a href="#0-12-0-2026-11-04">v0.12.0</a></li><li><a href="#0-10-0-2026-11-02">v0.10.0</a></li><li><a href="#0-9-0-2026-10-31">v0.9.0</a></li><li><a href="#0-8-0-2026-10-30">v0.8.0</a></li><li><a href="#0-7-0-2026-10-28">v0.7.0</a></li><li><a href="#1-0-0-2026-10-09">v1.0.0</a></li><li><a href="#1-0-0-rc-2026-09-25">v1.0.0-rc</a></li><li><a href="#0-1-0-2026-08-25">v0.1.0</a></li><li><a href="#0-0-1-2026-08-24">v0.0.1</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-16-0-2026-11-09">
+<div class="releases"><article class="release release--latest" id="0-17-0-2026-11-12">
+<h2 class="release__head" data-i18n-html="changelog.9fd9a60c9a98"><span class="release__meta"><span class="release__ver">v0.17.0</span><time class="release__date" datetime="2026-11-12">2026-11-12</time></span></h2>
+<p data-i18n-html="changelog.c4015d81ec0c"><strong>The low end, as a pair — there are no downloads yet.</strong> Two new devices made to work together: Oscillate Sub puts a sub-bass under what you play, and Oscillate Width widens what sits above it without ever thinning the mono sum. Link them, on one track or across two, and they share one crossover, so nothing below it is ever widened. The phone's mix gains a Generate key for the bundled MIDI Master, and a hosted plugin now hears each note's own expression.</p>
+<h3 id="0-17-0-2026-11-12-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.a86d93475bf6"><strong>Oscillate Sub: a sub under the bass.</strong> Sub 1 follows the pitch of what comes in and plays a sine under it, shown in hertz or as a note, with its own attack, decay and glide; Align keeps it in phase with the source, so the two never cancel. Sub 2 takes a band of the source down an octave or two (or by semitones) at Best, Balanced or Light quality, in mono or stereo, and Smooth at 0 keeps a kick's attack. Tone adds harmonics so the low end still reads on a phone: Tube, Tape, Transistor or Rectifier, oversampled four times if you want. Steady evens a bassline that jumps in level, band by band under 150 Hz, and Low Mute takes the source's own low end away under the crossover. The face shows the pitch it hears, each sub's level and an analyser of the low end at three resolutions. Fifty factory presets.</li>
+<li data-i18n-html="changelog.6dcbf76fb98e"><strong>Oscillate Width: wider, never thinner in mono.</strong> Three bands, split at 400 Hz and 4 kHz to start, each widened from 0 to 200 % with the mono sum left exactly as it was; Strength sets how far the sides are pulled apart. Solo a band, hear only what was added (Side) or prove the middle never moved (Mid). Level match keeps a widened mono source as loud as it was, Active switches it in and out without a click, and a correlation meter and a goniometer show the field. No latency. Fifty factory presets.</li>
+<li data-i18n-html="changelog.56f07800a4bc"><strong>The pair.</strong> In the browser, <em>Insert the pair</em> places Sub and then Width on a track, linked. Linked, on one track or across two, they share one crossover: move it on either face and both move. Width never widens below it; Width's face shades the band Sub makes, and Sub's marks Width's crossover. Twelve pair presets set both at once. <strong>EIGHTY-FIVE OF THE NINETY-ONE ARE BUILT</strong> now.</li>
+<li data-i18n-html="changelog.ed4b1f0cb640"><strong>Generate from your phone.</strong> When the MIDI Master you host has its command door (a coming MIDI Master build), the phone's mix page shows a Generate key: press it and MIDI Master makes a new take at the desk, its window opening and the take undone in its own history like any other. Until then the page says nothing of generating.</li>
+<li data-i18n-html="changelog.c14badf75253"><strong>Each note's own expression reaches your plugins.</strong> A note's own pressure and timbre (the piano roll's per-note Mod Y and Mod X), its own bend, and a step's fine pitch and pan reach a hosted CLAP plugin as note expressions and a VST 3 as note-expression events (pressure as polyphonic pressure), on that note alone. A plugin that takes none hears what it did before; a CLAP that reads only MIDI gets a note's pressure as polyphonic aftertouch.</li>
+</ul>
+<h3 id="0-17-0-2026-11-12-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.0f032151ad10"><strong>The device labels in Dutch, Arabic, Ukrainian and Russian</strong> were read against what each control does and rewritten where they were literal, or where two controls shared one word.</li>
+<li data-i18n-html="changelog.f016cddec88d"><strong>The getting-started screenshot</strong> shows the new layout.</li>
+</ul>
+<h3 id="0-17-0-2026-11-12-security" data-i18n-html="changelog.8f6fb4eb7f42">Security</h3>
+<ul>
+<li data-i18n-html="changelog.32e5a43f5672"><strong>MixSir has one route with an effect at the desk</strong>: the phone's Generate. It needs the pairing's token like every other route, and while MIDI Master has no door it is refused like a route that does not exist.</li>
+</ul>
+</article>
+<article class="release" id="0-16-0-2026-11-09">
 <h2 class="release__head" data-i18n-html="changelog.79508d88a5b7"><span class="release__meta"><span class="release__ver">v0.16.0</span><time class="release__date" datetime="2026-11-09">2026-11-09</time></span></h2>
 <p data-i18n-html="changelog.83d578f4962d"><strong>Your mix on a phone, a new look, and ten new devices — there are no downloads yet.</strong> Send the mix and every part to a phone on your Wi-Fi from a QR code, to mix them there and save them to it as files. Every panel is laid out again, each with one main key and small icons, dropdowns and switches for the rest. The arrangement gains pattern painting, a zoom bar above the timeline, a key for every tool, several arrangements in one project and a clip launcher with scenes; the piano roll gains paint, mute and slice tools, notes that slide and glide, and a time selection of its own. The stage plays several parts at once, with hands that keep from crossing. Ten devices arrive in two waves, from a kick that carves its own room out of the bass to a storm drawn on a map. Oscillate Retro Record keeps the last minutes of what you play, so a take you never pressed record for can still be saved, and Find Similar ranks the look-alikes of a sound across your folders. This one release closes four rungs of the ladder, 0.13.0 to 0.16.0, under one tag; 0.13.0, 0.14.0 and 0.15.0 have none of their own.</p>
 <h3 id="0-16-0-2026-11-09-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
@@ -1516,7 +1537,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">What you make with it is yours. Oscillate's author claims no ownership of the projects, MIDI, audio or renders you create with it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.16.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.17.0</span>
         </div>
       </div>
     </footer>

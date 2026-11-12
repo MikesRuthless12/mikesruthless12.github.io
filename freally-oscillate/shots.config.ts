@@ -143,8 +143,10 @@ export const SHOTS: readonly Shot[] = [
     slug: 'first-window',
     setup: 'opened',
     frame: '[data-testid="app-frame"]',
-    targets: ['[data-testid="transport"]'],
-    alt: 'The Oscillate window on a first run, with the File Explorer down the left, the arrangement in the middle, and the transport controls along the bottom boxed in red.',
+    // ⚠ The layout pass moved the transport into the top bar — its Play, Stop and Record
+    // keys are the well at the top left.
+    targets: ['[data-testid="transport-cluster"]'],
+    alt: "The Oscillate window on a first run, with the transport's Play, Stop and Record keys boxed in red at the top left, the Pattern Rack under them and the arrangement below it.",
   },
   {
     topic: 'room',

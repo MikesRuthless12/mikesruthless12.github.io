@@ -81,12 +81,12 @@
       <img
         src="img/start-01-first-window.png"
         data-i18n-attr="alt:docs.shot.start"
-        alt="The Oscillate window on a first run, with the File Explorer down the left, the arrangement in the middle, and the transport controls along the bottom boxed in red."
+        alt="The Oscillate window on a first run, with the transport's Play, Stop and Record keys boxed in red at the top left, the Pattern Rack under them and the arrangement below it."
         loading="lazy"
       />
-      <figcaption data-i18n-html="docs.9edf9ef77c9f">
-        The window on a first run. The boxed strip is the transport: play, stop, record,
-        the tempo and the metronome.
+      <figcaption data-i18n-html="docs.81a2f5639f44">
+        The window on a first run. The boxed keys are the transport: play, stop and record,
+        at the top left.
       </figcaption>
     </figure>
     <p data-i18n-html="docs.a8522c985343">
@@ -1409,12 +1409,20 @@
       does not have becomes a named placeholder that still costs its samples, so a project
       opened somewhere else stays in time.
     </p>
+    <p data-i18n-html="docs.e8fa69bd1ae0">
+      Each note's own expression reaches a plugin on that note alone: its pressure and
+      timbre (the piano roll's per-note Mod Y and Mod X), its own bend, and a step's fine pitch
+      and pan. A CLAP plugin hears them as note expressions and a VST 3 as note-expression
+      events, its pressure as polyphonic pressure. A plugin that takes none hears what it
+      always did, and a CLAP that reads only MIDI gets a note's pressure as polyphonic
+      aftertouch.
+    </p>
   </section>
   
   <section>
     <h2 id="devices" data-i18n-html="docs.c80fbc216c04">The stock devices</h2>
-    <p data-i18n-html="docs.32b612efbbdf">
-      Eighty-three instruments and effects ship inside Oscillate, including
+    <p data-i18n-html="docs.dbc9556fe13a">
+      Eighty-five instruments and effects ship inside Oscillate, including
       <strong>Freally Secretarium</strong>. Every panel is drawn from the device's own
       description, so the readout on a knob is the number the DSP is using rather than a
       second one that agrees most of the time.
@@ -1626,6 +1634,52 @@
       to the track, each named for the track and its layer, into the folder <strong>Settings ▸
       Export</strong> names (or one you choose, if it names none), in place of any file of
       that name. It is stereo only.
+    </p>
+    <h3 data-i18n-html="docs.ee618caedce6">Oscillate Sub</h3>
+    <p data-i18n-html="docs.035d8010d670">
+      Puts a sub-bass under what you play. <strong>Sub 1</strong> follows the pitch of what
+      comes in and plays a sine under it, its pitch shown in hertz or as a note, with its own
+      <strong>Attack</strong>, <strong>Decay</strong> and glide; <strong>Align</strong> keeps it
+      in phase with the source, so the two never cancel, and with no pitch to follow it falls
+      silent. <strong>Sub 1 Mode</strong> <em>Fixed</em> plays one pitch you set instead.
+      <strong>Sub 2</strong> takes the band of the source around <strong>Sub 2 Freq</strong>
+      (<strong>Sub 2 Width</strong> is how wide it listens) down an octave or two, or by
+      semitones with <strong>Shift</strong>; <strong>Smooth</strong> at 0 keeps a kick's
+      attack, and it plays in mono or in <strong>Stereo</strong>.
+    </p>
+    <p data-i18n-html="docs.77fea442e4ad">
+      <strong>Quality</strong> is <em>Best</em>, <em>Balanced</em> or <em>Light</em>: Best
+      and Balanced report their latency, and Light has none. <strong>Tone</strong> adds
+      harmonics so the low end still reads on a phone, its <strong>Character</strong>
+      <em>Tube</em>, <em>Tape</em>, <em>Transistor</em> or <em>Rectifier</em>, oversampled four
+      times with <strong>Oversample</strong> on. <strong>Steady</strong> evens a bassline that
+      jumps in level, band by band under 150 Hz, and <strong>Low Mute</strong> takes the
+      source's own low end away under the <strong>Crossover</strong>. The face shows the pitch
+      it hears, each sub's level and an analyser of the low end at three resolutions. Fifty
+      presets.
+    </p>
+    <h3 data-i18n-html="docs.dd33436797ff">Oscillate Width</h3>
+    <p data-i18n-html="docs.89b76ea18568">
+      Widens what you play without ever thinning it in mono: whatever it adds to one side it
+      takes from the other, so the mono sum is exactly what came in. Three bands, split at
+      <strong>Crossover 1</strong> and <strong>Crossover 2</strong> (400 Hz and 4 kHz to
+      start), each widened from 0 to 200 % by <strong>Low Width</strong>, <strong>Mid
+      Width</strong> and <strong>High Width</strong>; <strong>Strength</strong> sets how far the
+      sides are pulled apart. Solo a band to hear it alone. <strong>Monitor</strong> plays the
+      <em>Stereo</em> result, only what was added (<em>Side</em>), or the middle, to prove it
+      never moved (<em>Mid</em>). <strong>Level Match</strong> keeps a widened mono source as
+      loud as it was, <strong>Active</strong> switches it in and out without a click, and a
+      correlation meter and a goniometer show the field. It has no latency. Fifty presets.
+    </p>
+    <h3 data-i18n-html="docs.b5736b2402bd">The low-end pair</h3>
+    <p data-i18n-html="docs.1232bc16caa2">
+      In the File Explorer, <strong>Insert the pair</strong> beside either device places
+      Oscillate Sub and then Oscillate Width on the selected track, linked. A Width can also be
+      linked to a Sub on another track, from the <strong>Linked Sub</strong> list on its face. Linked,
+      the two share one crossover: move it on either face and both move. Width never widens
+      below it, so the sub stays mono; Width's face shades the band Sub makes, and Sub's marks
+      Width's crossover. Twelve pair presets set both devices at once. Choose
+      <em>Not linked</em> to let them go their own ways.
     </p>
     <h3 data-i18n-html="docs.afc35db2da83">Devices that read the arrangement</h3>
     <p data-i18n-html="docs.6a537022e329">
@@ -1886,6 +1940,12 @@
         saves nothing.
       </li>
     </ul>
+    <p data-i18n-html="docs.69571d7ebce2">
+      <strong>Generate.</strong> When the MIDI Master you host has its command door (a coming
+      MIDI Master build), the page shows a <strong>Generate</strong> key: press it and MIDI
+      Master makes a new take at the computer, its window opening, the take undone in MIDI
+      Master's own history like any other. Until then the page says nothing of generating.
+    </p>
     <p data-i18n-html="docs.803617a467e8">
       The phone hears the song as it was when you pressed <strong>Send to my phone</strong>:
       an edit after that needs another send. A song can be up to ten minutes long, with up to
@@ -2480,7 +2540,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">What you make with it is yours. Oscillate's author claims no ownership of the projects, MIDI, audio or renders you create with it.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.16.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.17.0</span>
         </div>
       </div>
     </footer>

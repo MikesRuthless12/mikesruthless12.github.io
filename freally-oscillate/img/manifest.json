@@ -8,9 +8,9 @@
       "step": 1,
       "frame": "[data-testid=\"app-frame\"]",
       "targets": [
-        "[data-testid=\"transport\"]"
+        "[data-testid=\"transport-cluster\"]"
       ],
-      "alt": "The Oscillate window on a first run, with the File Explorer down the left, the arrangement in the middle, and the transport controls along the bottom boxed in red."
+      "alt": "The Oscillate window on a first run, with the transport's Play, Stop and Record keys boxed in red at the top left, the Pattern Rack under them and the arrangement below it."
     },
     {
       "file": "room-01-create.png",

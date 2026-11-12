@@ -133,6 +133,46 @@
       "summary": "New devices, wave three — a record button that reaches back in time, and find-similar across your sounds."
     },
     {
+      "version": "v0.17.0",
+      "state": "done",
+      "summary": "The flagship standard and the low-end pair — Oscillate Sub and Oscillate Width, linked."
+    },
+    {
+      "version": "v0.18.0",
+      "state": "planned",
+      "summary": "Flagship EQ and dynamics — every EQ, compressor, limiter, de-esser and gate raised to the best of its kind, and Oscillate Resonance."
+    },
+    {
+      "version": "v0.19.0",
+      "state": "planned",
+      "summary": "Flagship colour, space and motion — saturation, echo, reverb, modulation and filters raised; Oscillate Shaper, Voice Changer and Echo Reverb."
+    },
+    {
+      "version": "v0.20.0",
+      "state": "planned",
+      "summary": "Oscillate Wavetable — a flagship wavetable and hybrid synth."
+    },
+    {
+      "version": "v0.21.0",
+      "state": "planned",
+      "summary": "Oscillate Analog, and the layered synth, the sampler, the drums and the player raised."
+    },
+    {
+      "version": "v0.22.0",
+      "state": "planned",
+      "summary": "Oscillate Retake — Freally Retake's note editor and singer built in."
+    },
+    {
+      "version": "v0.23.0",
+      "state": "planned",
+      "summary": "Oscillate Master, the repair suite and the spectral editor, and the models trained here."
+    },
+    {
+      "version": "v0.24.0",
+      "state": "planned",
+      "summary": "Every stock device and every factory preset to the flagship bar."
+    },
+    {
       "version": "v1.0.0-beta",
       "state": "planned",
       "summary": "The beta — a new feature freeze, the whole app in one look and 18 languages, and this site rewritten. It repeats until the testing is done. No downloads on this page."
