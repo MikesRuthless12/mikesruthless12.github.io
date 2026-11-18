@@ -20,17 +20,14 @@
   'use strict';
 
   /*
-   * ⛔⛔ NOINDEX, DELIBERATELY, AND IT COSTS THE SEO ON PURPOSE. This page lists
-   * 2,413 real people's names. Describing a style to somebody already using the
-   * tool is nominative use; ranking for their names would be using their
-   * identity to pull search traffic toward a product, which is the core of what
-   * right of publicity covers. Owner's decision, 2026-09-10. The site kit
-   * writes every page's <head>, so the mark is added here.
+   * ⛔⛔ NOINDEX, DELIBERATELY, AND IT COSTS THE SEO ON PURPOSE (owner's
+   * decision, 2026-09-10): this page lists real people's names, and ranking for
+   * them would be using their identity to pull search traffic toward a product.
+   * ⚠ The mark is in the page itself — `site.json`'s `noindex` puts it in the
+   * <head> the kit writes, where a crawler that runs no script still reads it.
+   * This script used to add a second one at run time (found by the RC mark,
+   * 2026-11-12).
    */
-  var robots = document.createElement('meta');
-  robots.name = 'robots';
-  robots.content = 'noindex, follow';
-  document.head.appendChild(robots);
 
   var CHUNK = 250;
 

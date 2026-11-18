@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" fill="none">
+<style>
+@keyframes p{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes d{to{stroke-dashoffset:-200}}
+@keyframes s{from{transform:translateX(-120px)}to{transform:translateX(920px)}}
+@keyframes r{to{transform:rotate(360deg)}}
+@keyframes b{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+.p{animation:p 3.2s ease-in-out infinite}
+.d{stroke-dasharray:6 10;animation:d 9s linear infinite}
+.s{animation:s 7s linear infinite}
+.b{transform-box:fill-box;transform-origin:50% 100%;animation:b 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+<filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+<linearGradient id="lime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8cf523"/><stop offset="1" stop-color="#79d920" stop-opacity=".35"/></linearGradient>
+<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#79d920" stop-opacity=".28"/><stop offset="1" stop-color="#79d920" stop-opacity="0"/></radialGradient>
+<radialGradient id="fade" cx=".5" cy=".5" r=".62"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+<mask id="m"><rect width="800" height="440" fill="url(#fade)"/></mask>
+
+</defs>
+<path d="M40 0V440M80 0V440M120 0V440M160 0V440M200 0V440M240 0V440M280 0V440M320 0V440M360 0V440M400 0V440M440 0V440M480 0V440M520 0V440M560 0V440M600 0V440M640 0V440M680 0V440M720 0V440M760 0V440M0 40H800M0 80H800M0 120H800M0 160H800M0 200H800M0 240H800M0 280H800M0 320H800M0 360H800M0 400H800" stroke="#e8f5e1" stroke-opacity="0.06" stroke-width="1"/><g mask="url(#m)"><path d="M180 40h14l5 5h17v19h-36z" fill="#79d920" fill-opacity=".2" stroke="#8cf523" stroke-opacity="1" stroke-width="1.5"/><rect x="230" y="48" width="140" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.45"/><path d="M202 68V90H228" stroke="#e8f5e1" stroke-opacity=".18"/><path d="M236 80h14l5 5h17v19h-36z" fill="#79d920" fill-opacity=".2" stroke="#8cf523" stroke-opacity="1" stroke-width="1.5"/><rect x="286" y="88" width="193" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.45"/><path d="M258 108V130H284" stroke="#e8f5e1" stroke-opacity=".18"/><rect x="296" y="118" width="26" height="30" rx="3" stroke="#e8f5e1" stroke-opacity="0.3" stroke-width="1.5"/><rect x="342" y="128" width="246" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.14"/><path d="M258 148V170H284" stroke="#e8f5e1" stroke-opacity=".18"/><rect x="296" y="158" width="26" height="30" rx="3" stroke="#8cf523" stroke-opacity="1" stroke-width="1.5" filter="url(#g)"/><rect x="342" y="168" width="179" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.45"/><path d="M258 188V210H284" stroke="#e8f5e1" stroke-opacity=".18"/><rect x="296" y="198" width="26" height="30" rx="3" stroke="#e8f5e1" stroke-opacity="0.3" stroke-width="1.5"/><rect x="342" y="208" width="232" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.14"/><path d="M202 228V250H228" stroke="#e8f5e1" stroke-opacity=".18"/><path d="M236 240h14l5 5h17v19h-36z" fill="none" fill-opacity=".2" stroke="#79d920" stroke-opacity="0.55" stroke-width="1.5"/><rect x="286" y="248" width="165" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.14"/><path d="M258 268V290H284" stroke="#e8f5e1" stroke-opacity=".18"/><rect x="296" y="278" width="26" height="30" rx="3" stroke="#e8f5e1" stroke-opacity="0.3" stroke-width="1.5"/><rect x="342" y="288" width="218" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.14"/><path d="M202 308V330H228" stroke="#e8f5e1" stroke-opacity=".18"/><path d="M236 320h14l5 5h17v19h-36z" fill="none" fill-opacity=".2" stroke="#79d920" stroke-opacity="0.55" stroke-width="1.5"/><rect x="286" y="328" width="151" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.14"/><path d="M180 360h14l5 5h17v19h-36z" fill="none" fill-opacity=".2" stroke="#79d920" stroke-opacity="0.55" stroke-width="1.5"/><rect x="230" y="368" width="204" height="8" rx="4" fill="#e8f5e1" fill-opacity="0.14"/></g><rect x="560" y="70" width="180" height="300" rx="14" fill="#131813" stroke="#79d920" stroke-opacity=".4"/><path d="M590 190q30-60 60 0t60 0" stroke="#8cf523" stroke-width="2.5" filter="url(#g)"/>
+</svg>

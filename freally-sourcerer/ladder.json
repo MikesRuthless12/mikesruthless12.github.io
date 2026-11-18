@@ -23,12 +23,12 @@
       "version": "v0.23.0",
       "phase": "Build 3 — Must-Have, slice 3 of 3 · stable",
       "state": "done",
-      "summary": "Must-have features, part 3 of 3, and the stable release: portable mode, audio and video in the preview, Quick Look, a regular-expression builder, and a report of the folders search cannot see. Its fix release, 0.23.2, is the current version."
+      "summary": "Must-have features, part 3 of 3, and the stable release: portable mode, audio and video in the preview, Quick Look, a regular-expression builder, and a report of the folders search cannot see."
     },
     {
       "version": "v0.24.0",
       "phase": "Build 4 — Property lens: images and video",
-      "state": "planned",
+      "state": "done",
       "summary": "The property lens for images and video: dimensions, camera data, codecs and duration, searchable and shown as columns."
     },
     {

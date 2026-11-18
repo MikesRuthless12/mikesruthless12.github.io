@@ -1,0 +1,210 @@
+<!-- Freally OS — What works today: the stats, what runs now, Freally OS 1.0 next
+     to the systems people use today, and what is still coming. The shell is the
+     site kit's: kit/build.mjs. -->
+
+<kit-head>
+  <kit-lede data-i18n="featuresPage.lede">What works today, and what Freally OS 1.0 will have.</kit-lede>
+  <kit-fineprint data-i18n="featuresPage.version">Every number on this page comes from the build that produced it. There is nothing to download before version 1.0.</kit-fineprint>
+</kit-head>
+
+<kit-stats>
+  <div class="stat"><span class="stat__num" data-countup="0">0</span><span class="stat__label" data-i18n="featuresPage.numbers.outside">libraries from outside the project</span></div>
+  <div class="stat"><span class="stat__num" data-countup="0">0</span><span class="stat__label" data-i18n="featuresPage.numbers.ai">AI models</span></div>
+  <div class="stat"><span class="stat__num" data-countup="19">19</span><span class="stat__label" data-i18n="featuresPage.numbers.gates">checks on every change</span></div>
+  <div class="stat"><span class="stat__num" data-countup="30">30</span><span class="stat__label" data-i18n="featuresPage.numbers.ktests">kernel tests, run inside the kernel</span></div>
+  <div class="stat"><span class="stat__num" data-countup="8">8</span><span class="stat__label" data-i18n="featuresPage.numbers.specs">end-to-end checks on a running machine</span></div>
+  <div class="stat"><span class="stat__num">$0</span><span class="stat__label" data-i18n="featuresPage.numbers.price">price today</span></div>
+</kit-stats>
+
+<kit-section id="free" label="kit.label.free">
+  <div class="callout-band">
+    <h2 data-i18n="featuresPage.free.title">Free today</h2>
+    <p class="lead" data-i18n="featuresPage.free.body">Freally OS is free today, for everyone: no paid tier, no subscription and no account. Its code is open source under the Apache License 2.0.</p>
+  </div>
+</kit-section>
+
+<kit-section id="today" label="kit.label.inside">
+  <h2 data-i18n="featuresPage.today.title">What works today</h2>
+  <div class="cards cards--2">
+    <article class="card">
+      <div class="card__media"><kit-art name="shield"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.boot.title">Its own bootloader</h3>
+        <p data-i18n="featuresPage.today.boot.body">It reads the system image, checks its signature and every block, and shows why it refused one that fails.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="circuit"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.kernel.title">Freally Core, the kernel</h3>
+        <p data-i18n="featuresPage.today.kernel.body">Memory where nothing is both writable and runnable, interrupts and timers, a scheduler with four classes, and messages between programs.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="nodes"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.conductor.title">The first program</h3>
+        <p data-i18n="featuresPage.today.conductor.body">Conductor starts as process 1, from the signed image, in its own protected memory.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="signal"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.faults.title">Fault reports</h3>
+        <p data-i18n="featuresPage.today.faults.body">A program that crashes ends alone and leaves a report. Even a kernel stop is reported when the computer next starts.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="layers"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.desktop.title">The desktop</h3>
+        <p data-i18n="featuresPage.today.desktop.body">The Rack along the bottom with app keys and a clock, a launcher on the Super key, and windows in light and dark.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="lines"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.terminal.title">Terminal and Shell</h3>
+        <p data-i18n="featuresPage.today.terminal.body">A command line with its own shell: every process, the boot's times, the log and memory, a command away.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="spectrum"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.monitor.title">Monitor</h3>
+        <p data-i18n="featuresPage.today.monitor.body">Every process and what it's for, the boot stage by stage, every crash and the log, on Super+M.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="stack"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="featuresPage.today.cores.title">Every core</h3>
+        <p data-i18n="featuresPage.today.cores.body">Every processor core runs, each with its own queue, and one with nothing to do takes work from a busy one.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="compare" label="kit.label.compare">
+  <h2 data-i18n="featuresPage.compare.title">Next to the systems people use today</h2>
+  <p class="lead" data-i18n="featuresPage.compare.intro">Freally OS 1.0 next to the desktop systems most people use, each as its maker ships it.</p>
+  <div class="table-wrap" role="region" tabindex="0" aria-labelledby="compare-table">
+    <table class="compare" id="compare-table">
+      <thead>
+        <tr>
+          <th scope="col"><span class="visually-hidden" data-i18n="featuresPage.compare.feature">Feature</span></th>
+          <th scope="col" class="ours">Freally OS 1.0</th>
+          <th scope="col">Windows 11 Home</th>
+          <th scope="col">macOS</th>
+          <th scope="col">Ubuntu Desktop</th>
+          <th scope="col">ChromeOS</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.oneAuthor">Every line written by one author, to one charter</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.open">Open source</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.darwin">its core, Darwin, is</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.chromium">ChromiumOS is; ChromeOS adds closed parts</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.noAccount">Set up without an online account</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.msAccount">setup asks for a Microsoft account</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.optional">an account is optional</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.guest">guest mode only</span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.sealed">A verified system that apps can't change</th>
+          <td class="ours yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.admin">an administrator can change the system</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.admin">an administrator can change the system</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.windowsApps">Runs Windows apps</th>
+          <td class="ours part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.layer">standard apps, through its own layer</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.addOn">through an add-on</span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span></td>
+        </tr>
+        <tr>
+          <th scope="row" data-i18n="featuresPage.compare.row.anyPc">Runs on a PC you already own</th>
+          <td class="ours part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.drivers">PCs it has drivers for</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="no"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.no">does not</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.mac">Apple computers only</span></td>
+          <td class="yes"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.yes">has it</span></span></td>
+          <td class="part"><span class="mark"><span class="visually-hidden" data-i18n="featuresPage.compare.legend.partly">partly</span></span><span class="cell-note" data-i18n="featuresPage.compare.note.flex">supported PCs, with ChromeOS Flex</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <ul class="legend">
+    <li><span class="mark mark--yes"></span><span data-i18n="featuresPage.compare.legend.yes">has it</span></li>
+    <li><span class="mark mark--part"></span><span data-i18n="featuresPage.compare.legend.partly">partly</span></li>
+    <li><span class="mark mark--no"></span><span data-i18n="featuresPage.compare.legend.no">does not</span></li>
+  </ul>
+  <div class="notes compare-notes">
+    <article class="note note--featured">
+      <h3><kit-icon name="check"></kit-icon><span data-i18n="featuresPage.compare.summaryTitle">The short version</span></h3>
+      <p data-i18n="featuresPage.compare.summary">Only Freally OS is written entirely by one author, to one charter. That is what lets it explain every process and promise there is nothing in it from anyone else.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="info"></kit-icon><span data-i18n="featuresPage.compare.theyWinTitle">Where they win</span></h3>
+      <p data-i18n="featuresPage.compare.theyWin">Windows, macOS, Ubuntu and ChromeOS run far more apps on far more hardware, today and at Freally OS 1.0. Freally OS trades that breadth for being consistent, quiet, sealed and explained.</p>
+    </article>
+  </div>
+  <p class="fineprint" data-i18n="featuresPage.compare.asOf">Freally OS's column is version 1.0, which is not out yet. The other systems change too; this table is as of November 2026.</p>
+</kit-section>
+
+<kit-section id="why" label="kit.label.principles">
+  <h2 data-i18n="featuresPage.why.title">Why it is built the way it is</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="shield"></kit-icon><span data-i18n="featuresPage.why.refused.title">Signed or refused</span></h3>
+      <p data-i18n="featuresPage.why.refused.body">Every official build is one signed image. Before anything in it runs, the bootloader checks the signature and every block. An image that fails is never run, and the screen says why.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="lock"></kit-icon><span data-i18n="featuresPage.why.apps.title">Apps can't change the system</span></h3>
+      <p data-i18n="featuresPage.why.apps.body">Each app runs in its own sandbox with only the permissions it was given. The system itself changes only with a new signed image.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="check"></kit-icon><span data-i18n="featuresPage.why.open.title">Open and reproducible</span></h3>
+      <p data-i18n="featuresPage.why.open.body">The code is open source, and the builds are reproducible: build the official image yourself and check that it's identical.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="cpu"></kit-icon><span data-i18n="featuresPage.why.ours.title">Every line is its own</span></h3>
+      <p data-i18n="featuresPage.why.ours.body">No library from outside the project, and a build check refuses one. The only exceptions are Rust's core library and the Noto fonts, both listed in the notices.</p>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="coming" label="kit.label.limits">
+  <h2 data-i18n="featuresPage.coming.title">What is still coming</h2>
+  <p class="lead" data-i18n="featuresPage.coming.intro">Stated plainly. Freally OS is built one version at a time, and most of it isn't built yet. Each version on the road to 1.0 is marked with its state.</p>
+  <div class="cards cards--2">
+    <kit-states></kit-states>
+    <article class="card"><div class="card__body">
+      <h3 data-i18n="featuresPage.limits.title">What 1.0 does not do</h3>
+      <ul>
+        <li data-i18n="featuresPage.limits.apps">It won't run every Windows or Mac app: standard ones, through its own layers.</li>
+        <li data-i18n="featuresPage.limits.hardware">It runs on x86-64 computers it has drivers for, starting with one laptop.</li>
+        <li data-i18n="featuresPage.limits.servers">It is a desktop system: not for servers or phones.</li>
+      </ul>
+    </div></article>
+  </div>
+  <p class="fineprint" data-i18n="featuresPage.coming.downloads">There are no downloads before version 1.0, and none on this page.</p>
+</kit-section>

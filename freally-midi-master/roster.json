@@ -1,5 +1,5 @@
 {
-  "count": 2413,
+  "count": 2425,
   "models": [
     {
       "era": "2014-present",
@@ -15022,6 +15022,19 @@
       "type": "artist"
     },
     {
+      "era": "2008-present",
+      "genres": [
+        "pop",
+        "dance-pop",
+        "electropop",
+        "house"
+      ],
+      "id": "lady-gaga",
+      "name": "Lady Gaga",
+      "tier": "flagship",
+      "type": "artist"
+    },
+    {
       "era": "1994-present",
       "genres": [
         "dancehall",
@@ -15358,6 +15371,19 @@
       "type": "producer"
     },
     {
+      "era": "2017-present",
+      "genres": [
+        "pop",
+        "pop-2020s",
+        "pop ballad",
+        "soul"
+      ],
+      "id": "lewis-capaldi",
+      "name": "Lewis Capaldi",
+      "tier": "flagship",
+      "type": "artist"
+    },
+    {
       "era": "2010-present",
       "genres": [
         "rap",
@@ -15510,6 +15536,19 @@
       "id": "lil-mosey",
       "name": "Lil Mosey",
       "tier": "standard",
+      "type": "artist"
+    },
+    {
+      "era": "2018-present",
+      "genres": [
+        "rap",
+        "trap",
+        "country-rap",
+        "pop-rap"
+      ],
+      "id": "lil-nas-x",
+      "name": "Lil Nas X",
+      "tier": "flagship",
       "type": "artist"
     },
     {
@@ -17705,6 +17744,20 @@
       "type": "producer"
     },
     {
+      "era": "2009-present",
+      "genres": [
+        "pop",
+        "dance-pop",
+        "tropical house",
+        "electropop",
+        "pop-r&b"
+      ],
+      "id": "mike-posner",
+      "name": "Mike Posner",
+      "tier": "flagship",
+      "type": "artist"
+    },
+    {
       "era": "2011-present",
       "genres": [
         "rap",
@@ -18237,6 +18290,19 @@
       "id": "musa-keys",
       "name": "Musa Keys",
       "tier": "standard",
+      "type": "artist"
+    },
+    {
+      "era": "1999-present",
+      "genres": [
+        "rock",
+        "alternative rock",
+        "prog-rock",
+        "space rock"
+      ],
+      "id": "muse",
+      "name": "Muse",
+      "tier": "flagship",
       "type": "artist"
     },
     {
@@ -18798,6 +18864,19 @@
       "name": "Nez & Rio",
       "tier": "standard",
       "type": "producer"
+    },
+    {
+      "era": "2010-present",
+      "genres": [
+        "rap",
+        "hip-hop",
+        "emo-rap",
+        "cinematic rap"
+      ],
+      "id": "nf",
+      "name": "NF",
+      "tier": "flagship",
+      "type": "artist"
     },
     {
       "era": "2020-present",
@@ -19495,6 +19574,19 @@
       "name": "Oliver Heldens",
       "tier": "standard",
       "type": "producer"
+    },
+    {
+      "era": "2018-present",
+      "genres": [
+        "soul",
+        "neo-soul",
+        "rnb",
+        "pop"
+      ],
+      "id": "olivia-dean",
+      "name": "Olivia Dean",
+      "tier": "flagship",
+      "type": "artist"
     },
     {
       "era": "2020-present",
@@ -21834,6 +21926,20 @@
       "type": "producer"
     },
     {
+      "era": "2003-present",
+      "genres": [
+        "rnb",
+        "rnb-2000s",
+        "soul",
+        "pop",
+        "disco"
+      ],
+      "id": "robin-thicke",
+      "name": "Robin Thicke",
+      "tier": "flagship",
+      "type": "artist"
+    },
+    {
       "era": "1995-present",
       "genres": [
         "dance-pop",
@@ -22622,6 +22728,20 @@
       "name": "Sap",
       "tier": "standard",
       "type": "producer"
+    },
+    {
+      "era": "2007-present",
+      "genres": [
+        "pop",
+        "pop-2000s",
+        "pop-rock",
+        "soul",
+        "singer-songwriter"
+      ],
+      "id": "sara-bareilles",
+      "name": "Sara Bareilles",
+      "tier": "flagship",
+      "type": "artist"
     },
     {
       "era": "1998-2011",
@@ -25643,6 +25763,20 @@
       "type": "producer"
     },
     {
+      "era": "2012-present",
+      "genres": [
+        "pop",
+        "pop-2000s",
+        "indie pop",
+        "pop-rock",
+        "synth-pop"
+      ],
+      "id": "the-1975",
+      "name": "The 1975",
+      "tier": "flagship",
+      "type": "artist"
+    },
+    {
       "era": "2000-present",
       "genres": [
         "rap"
@@ -26350,6 +26484,20 @@
       "type": "artist"
     },
     {
+      "era": "2004-present",
+      "genres": [
+        "rap",
+        "uk rap",
+        "grime",
+        "dance-pop",
+        "electropop"
+      ],
+      "id": "tinchy-stryder",
+      "name": "Tinchy Stryder",
+      "tier": "flagship",
+      "type": "artist"
+    },
+    {
       "era": "2010-2017",
       "genres": [
         "rap",
@@ -26585,6 +26733,19 @@
       "id": "tone-stith",
       "name": "Tone Stith",
       "tier": "standard",
+      "type": "artist"
+    },
+    {
+      "era": "2019-present",
+      "genres": [
+        "pop",
+        "pop-2020s",
+        "electropop",
+        "indie pop"
+      ],
+      "id": "tones-and-i",
+      "name": "Tones And I",
+      "tier": "flagship",
       "type": "artist"
     },
     {

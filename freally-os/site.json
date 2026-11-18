@@ -1,0 +1,15 @@
+{
+  "product": "os",
+  "name": "Freally OS",
+  "icon": "os-icon.png",
+  "pages": ["index", "features", "changelog"],
+  "changelog": "../CHANGELOG.md",
+  "ladder": "ladder.json",
+  "chips": ["x86-64", "UEFI", "Rust", "Apache-2.0"],
+  "strings": {
+    "site.tagline": "A computer that's on your side.",
+    "site.description": "Freally OS starts in seconds, runs only what you asked for, and every line of it is written in-house. A new desktop operating system in Rust, open source under Apache-2.0. Nothing to download before 1.0.",
+    "footer.licence": "Open source under the Apache License 2.0. © Mike Weaver. The Freally name, icons and look are not covered by the code's licence.",
+    "footer.yours": "Your files and accounts stay on your computer. Freally OS sends nothing anywhere unless you ask it to."
+  }
+}

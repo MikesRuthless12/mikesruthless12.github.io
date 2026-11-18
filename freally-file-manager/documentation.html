@@ -255,7 +255,7 @@ freally migrate kopia  /path/to/kopia-repo  /path/to/new-repo --password &lt;pas
 
   <section>
     <h2 id="speed" data-i18n="featuresPage.speed.title">How fast it is</h2>
-    <p class="lead" data-i18n="featuresPage.speed.intro">Measured on 30 April 2026 on one Windows 11 laptop (Intel Core i9-13900HX, 32 GB of memory, a PCIe 4.0 NVMe drive), copying within the same NTFS drive. Each figure is the median of several runs, in MiB per second: higher is faster.</p>
+    <p class="lead" data-i18n="featuresPage.speed.intro">Measured on 30 April 2026 on one Windows 11 laptop, an HP OMEN Transcend 16 (Intel Core i9-13900HX with 24 cores, 32 GB of DDR5-5600 memory, a KIOXIA XG8 PCIe 4.0 NVMe drive), copying within the same NTFS drive. Each figure is the median of several runs, in MiB per second: higher is faster. It is a fast computer: most computers will measure lower.</p>
     <div class="table-wrap" role="region" tabindex="0" aria-labelledby="speed">
       <table class="compare" id="speed-table">
         <thead>
@@ -306,6 +306,42 @@ freally migrate kopia  /path/to/kopia-repo  /path/to/new-repo --password &lt;pas
     </div>
     <p data-i18n="featuresPage.speed.result">It was the fastest on the folder of files and on the 512 MB file, and a little slower than Robocopy and the Windows copy command on the 256 MB and 10 GB files. It was faster than FastCopy and TeraCopy in every test.</p>
     <p class="fineprint" data-i18n="featuresPage.speed.caveat">One machine and one drive, measured with a build from before 1.0.0, and each tool run from its own command line, start-up included. Your numbers will differ, and when the destination drive is the slowest part, every tool runs at its speed.</p>
+
+    <h3 id="speed-again" data-i18n="featuresPage.speed.againTitle">Measured again on 16 November 2026: the app against Robocopy</h3>
+    <p data-i18n="featuresPage.speed.againIntro">The same laptop and the same NVMe drive, copying from C: to C:. This time the app itself, timed by its own history from the start of the copy to its end, against Robocopy with its own settings. In seconds: lower is faster.</p>
+    <div class="table-wrap" role="region" tabindex="0" aria-labelledby="speed-again">
+      <table class="compare" id="speed-again-table">
+        <thead>
+          <tr>
+            <th scope="col" data-i18n="featuresPage.speed.workload">What was copied</th>
+            <th scope="col" class="ours">Freally File Manager</th>
+            <th scope="col">Robocopy</th>
+            <th scope="col" data-i18n="featuresPage.speed.faster">How much faster</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" data-i18n="featuresPage.speed.small10k">10,000 files of 4 KB</th>
+            <td class="ours price"><strong>6.57</strong></td>
+            <td class="price">10.71</td>
+            <td class="price">1.63×</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="featuresPage.speed.mixed1200">1,200 files of 16 KB to 1 MB (456 MB)</th>
+            <td class="ours price"><strong>0.79</strong></td>
+            <td class="price">1.26</td>
+            <td class="price">1.59×</td>
+          </tr>
+          <tr>
+            <th scope="row" data-i18n="featuresPage.speed.two512">Two 512 MB files</th>
+            <td class="ours price"><strong>0.30</strong></td>
+            <td class="price">0.49</td>
+            <td class="price">1.63×</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="fineprint" data-i18n="featuresPage.speed.againCaveat">One run of each; an earlier run that evening measured 2.0×, 1.18× and 1.5×. On the same machine, results vary by about 20 % from run to run. Every file landed, checked by count and size.</p>
   </section>
 
   <section>

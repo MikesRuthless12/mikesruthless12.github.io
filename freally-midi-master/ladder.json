@@ -24,7 +24,7 @@
     {
       "version": "v0.5.7",
       "state": "done",
-      "summary": "A vast, ultra-realistic library. Twenty-four new synthesis engines and 750 new instruments — 975 in all, from concert grands and bowed sections to modelled analog circuits — each one measured against the real thing it is named for. 1,614,600 sounds, and still not one file on your disk."
+      "summary": "A vast library. Four Factory Expansions add 1,400 instruments, each pack on a shelf of its own — analog, FM and early digital, texture and tape, voices and world instruments — for 1,648 in all, and still not one file on your disk."
     },
     {
       "version": "v0.6.0",
@@ -39,7 +39,7 @@
     {
       "version": "v0.8.0",
       "state": "done",
-      "summary": "67 genres, 2,000 artists. The full roster — the underground beside the mainstream — every one its own style model. The 67 genres are done and so are 1,250 artists and producers; the rest are arriving in batches."
+      "summary": "73 genres, 2,352 artists and producers. The full roster — the underground beside the mainstream — every one its own style model."
     },
     {
       "version": "v0.9.0",
@@ -55,6 +55,16 @@
       "version": "v1.0.0RC",
       "state": "planned",
       "summary": "Release candidate. Re-Dream lands — every generation arrives as four, the take you have plus three dreamed after it, auditioned in the track before one replaces the part. Then the manual test pass, worked end to end on real hardware in a real DAW."
+    },
+    {
+      "version": "v1.0.0-rc.2",
+      "state": "planned",
+      "summary": "The right instruments. Every artist plays the instruments their sound is known for, every genre opens on its own default sounds, and no two sounds in a kit or a bass set are alike."
+    },
+    {
+      "version": "v1.0.0-rc.3",
+      "state": "planned",
+      "summary": "The reference song. Bring in a song you love: its kit and sounds come back rebuilt from code, and a new song is written in its pocket (tempo, key, sections and chords), never a copy of it."
     },
     {
       "version": "v1.0.0",

@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" fill="none">
+<style>
+@keyframes p{0%,100%{opacity:.35}50%{opacity:1}}
+@keyframes d{to{stroke-dashoffset:-200}}
+@keyframes s{from{transform:translateX(-120px)}to{transform:translateX(920px)}}
+@keyframes r{to{transform:rotate(360deg)}}
+@keyframes b{0%,100%{transform:scaleY(.55)}50%{transform:scaleY(1)}}
+.p{animation:p 3.2s ease-in-out infinite}
+.d{stroke-dasharray:6 10;animation:d 9s linear infinite}
+.s{animation:s 7s linear infinite}
+.b{transform-box:fill-box;transform-origin:50% 100%;animation:b 2.4s ease-in-out infinite}
+@media (prefers-reduced-motion:reduce){*{animation:none!important}}
+</style>
+<defs>
+<filter id="g" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+<filter id="gs" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="8"/></filter>
+<linearGradient id="lime" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8cf523"/><stop offset="1" stop-color="#79d920" stop-opacity=".35"/></linearGradient>
+<radialGradient id="halo" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#79d920" stop-opacity=".28"/><stop offset="1" stop-color="#79d920" stop-opacity="0"/></radialGradient>
+<radialGradient id="fade" cx=".5" cy=".5" r=".62"><stop offset=".55" stop-color="#fff"/><stop offset="1" stop-color="#000"/></radialGradient>
+<mask id="m"><rect width="800" height="440" fill="url(#fade)"/></mask>
+
+</defs>
+<path d="M40 0V440M80 0V440M120 0V440M160 0V440M200 0V440M240 0V440M280 0V440M320 0V440M360 0V440M400 0V440M440 0V440M480 0V440M520 0V440M560 0V440M600 0V440M640 0V440M680 0V440M720 0V440M760 0V440M0 40H800M0 80H800M0 120H800M0 160H800M0 200H800M0 240H800M0 280H800M0 320H800M0 360H800M0 400H800" stroke="#e8f5e1" stroke-opacity="0.06" stroke-width="1"/><ellipse cx="400" cy="230" rx="260" ry="140" fill="url(#halo)"/><path d="M400 220L560 290L400 360L240 290Z" fill="#131813" fill-opacity=".92" stroke="#79d920" stroke-opacity="0.35" stroke-width="1.2"/><path d="M400 168L560 238L400 308L240 238Z" fill="#131813" fill-opacity=".92" stroke="#79d920" stroke-opacity="0.35" stroke-width="1.2"/><path d="M400 116L560 186L400 256L240 186Z" fill="#131813" fill-opacity=".92" stroke="#79d920" stroke-opacity="0.35" stroke-width="1.2"/><path d="M400 64L560 134L400 204L240 134Z" fill="#131813" fill-opacity=".92" stroke="#8cf523" stroke-opacity="1" stroke-width="2" filter="url(#g)"/>
+</svg>

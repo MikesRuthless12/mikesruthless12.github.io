@@ -59,7 +59,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#instrument",
   "heading": "The instrument",
-  "text": "It makes the sound as well as the notes. A polyphonic synthesiser with a factory library of 225 instruments across 69 genres, and each of the four melodic generators plays its own — so assigning a different sound to Melody, Countermelody, Bassline and Chords gives you four voices at once, not one shared between them. Nothing here is a sample library. Every sound is generated from a small address — an instrument, a genre, a variation, an articulation and a tone — so the whole library is a handful of integers in your project file rather than gigabytes on your disk. Thirteen synthesis engines sit behind it: a violin is a bowed-string model and a Rhodes is a physical piano model, which is why their controls behave differently from a pad's. Every address is a different sound. The twenty-four variations of one instrument in one genre tour that instrument's own range &mdash; how long a bar rings, how hard a hammer strikes, where a string is plucked &mdash; rather than rolling dice twenty-four times, and the genre reaches the model itself rather than a filter after it: a trap 808 rings and slides where a house kick is tight, and a jazz piano is softer-hammered than a metal one. All 2,729,0"
+  "text": "It makes the sound as well as the notes. A polyphonic synthesiser with a factory library of 1,648 instruments across 69 genres, and each of the four melodic generators plays its own — so assigning a different sound to Melody, Countermelody, Bassline and Chords gives you four voices at once, not one shared between them. Nothing here is a sample library. Every sound is generated from a small address — an instrument, a genre, a variation, an articulation and a tone — so the whole library is a handful of integers in your project file rather than gigabytes on your disk. Thirteen synthesis engines sit behind it: a violin is a bowed-string model and a Rhodes is a physical piano model, which is why their controls behave differently from a pad's. Every address is a different sound. The twenty-four variations of one instrument in one genre tour that instrument's own range &mdash; how long a bar rings, how hard a hammer strikes, where a string is plucked &mdash; rather than rolling dice twenty-four times, and the genre reaches the model itself rather than a filter after it: a trap 808 rings and slides where a house kick is tight, and a jazz piano is softer-hammered than a metal one. All 2,729"
  },
  {
   "url": "documentation.html#export-formats",
@@ -140,6 +140,221 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "roster.html#roster-title",
   "heading": "The roster",
   "text": "All Artists Producers Genres Flagship Standard Style of Type Era Genres Tier Loading the roster… Artist Producer Genre Flagship Standard {shown} of {total} match Nothing matches that. The roster could not be loaded. Try refreshing the page. This page is open as a local file, and browsers refuse to load the roster from a file:// page. Open it over HTTP instead."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-generating-sounds-and-the-interface-2026-11-15",
+  "heading": "Changed - generating, sounds and the interface, 2026-11-15",
+  "text": "A second Generate on the Chords tab gives another progression on the same record instead of saying none is left, and a melody, counter or bass made after it is written against the chords you hear. With the mood left to the style, a bass written after you re-roll the drums follows the kick on screen, and a melody, counter or bass written after you re-roll the chords follows the chords on screen, not the record's own. Feel turned loose now loosens the timing of a melody, a counter, a bass and the chords, not only their velocities; centred or tight, they stay on the grid. Traditional country and bluegrass styles play their bass on an upright, never a synth sub: eight that were given a Sub Bass, among them Joe Diffie, Tracy Byrd and Diamond Rio, now play an Upright Bass. A \"Default sound\" key under \"Use in\" takes a factory instrument off a part, which plays its built-in sound again. The next Generate leaves it so, and the style's own instrument comes back the next time you pick that style. The envelope in a part's sound editor now shapes a modelled instrument too, as far as you shape it: a long attack swells a flute in, a release you set ends the note, and an envelope you leave alone l"
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-window-s-engine-calls-out-far-less-2026-11-14",
+  "heading": "Fixed - the window's engine calls out far less, 2026-11-14",
+  "text": "On Windows, the window's built-in browser engine, standalone or in your DAW, used to call out on its own while you generated, played and exported. Its own background services are now switched off: its updater, its experiments, its usage and diagnostic reports, network time, autofill lookups, secure-DNS probing and its quiet sign-in. Your music and your files never left your machine. The last of them is off too: the engine no longer reaches Microsoft's account service, so while you generate, play and export, the window opens no connection off your machine."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-collaboration-2026-11-14",
+  "heading": "Fixed - collaboration, 2026-11-14",
+  "text": "On Windows, the collaboration helper no longer opens a black console window each time a room starts. Leaving a room and joining it again while a phone is still paired, or while your buddy list is on, seats you every time; about four rejoins in ten used to wait forever. A collaborator's pointer lands where they point, even when your windows are zoomed differently."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-a-narrow-window-2026-11-14",
+  "heading": "Fixed - a narrow window, 2026-11-14",
+  "text": "The right rail stays open in a window narrower than the full layout: the page zooms to fit and there is room for it, where the rail used to close. At its narrowest, the window shows the whole studio on a 150% display too. With both rails at their widest, the stage's top row wraps onto a second line instead of running over the rails."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-browser-2026-11-14",
+  "heading": "Fixed - the Browser, 2026-11-14",
+  "text": "A folder whose drive is unplugged while the app is open says it is not reachable when you open it; it used to show its old files. A folder's rows keep their whole focus outline and no longer overlap. A factory folder that collects two instrument families, such as FX and Vocal, lists and counts only those two; it used to list every instrument. In Drum Packs, ← and → no longer play an instrument you picked earlier on an instrument shelf."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-pads-sounds-and-styles-2026-11-14",
+  "heading": "Fixed - pads, sounds and styles, 2026-11-14",
+  "text": "A pad's dice never draws the sample the pad already plays, so every press changes the sound while the folder holds another; one press in six used to change nothing. An envelope stage set back to 0 plays the instrument's own stage again while you play: an attack set to 600 ms and back to 0 still rose for about half a second, though exports were already right. A style whose 808 is its bass no longer names the previous style's bass instrument on its Bassline lane. A lane the style leaves out shows its switch off, and one press adds it; the switch used to show on, so the first press turned it off. A pad edit, whether a trim, a fade, the envelope or Normalize, is one undo step, and a whole drag is one step; Undo used to skip it and undo the step before. The pad editor says when a sample slides instead of holding one pitch. The artist pane's tempo range now holds every tempo the style's moods write at (Zaytoven's reads 125–148), and the BPM chip allows all of it. A preset brings back each part's instrument and the samples on its pads, as it was saved; it used to bring back the style, the pins and the knobs and leave every part on the sound it had. A WAV the app rendered does the same whe"
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-a-copied-seed-2026-11-14",
+  "heading": "Fixed - a copied seed, 2026-11-14",
+  "text": "A seed you copy brings back the same beat when you paste it, even after you choose another artist and come back. The copy carries the record the beat was made in, its tempo, key and harmony, along with the take, as two numbers with a slash between them. A seed typed or pasted on its own works as before."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-transport-the-drum-grid-and-re-dream-2026-11-14",
+  "heading": "Fixed - the transport, the drum grid and Re-Dream, 2026-11-14",
+  "text": "Stop always puts the marker and the position readout back at the start; about one stop in five left them where they were. In the standalone, the metronome clicks at the tempo the loop plays at, where it clicked at 120. A recorded take lands where you played it when the parts play at different tempos; with the drums at 148 and the melody at 138, a note near the end of the loop landed early. A hit dragged up the drum pitch lane keeps following as the lane scrolls past the top, and lands where you let go; past about six rows it used to stop and keep nothing. A .mid selected into Re-Dream is moved into your key from the key it is really in; it used to be read as C minor whatever its key, so some of its notes fell outside yours. A part you draw in by hand fills the Re-Dream rack once you stop drawing, the way a part you play in does: one rack for the whole drawing, never one for each note."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-search-and-what-the-screen-says-2026-11-14",
+  "heading": "Fixed - search and what the screen says, 2026-11-14",
+  "text": "In the roster search, a genre whose name begins with the word you type comes first: \"detroit\" lists Detroit Bounce first, and \"chicago\" lists Chicago Drill and Chicago Bounce. On the Bass tab of a style whose 808 is its bassline, the sentence that says so (\"An 808 that is the bassline…\") is shown once, in the status bar, and no longer again on the empty stage. The shelf-name field on first launch and the Handle field in Settings › Sessions say they take up to 24 characters; a longer name used to be cut short without a word. While a song's audio stems render, the Export button says so and how far along it is (\"Rendering stems… 40%\"), instead of asking you to choose a folder you had already chosen. In the style editor, every checkbox and radio button stands a space apart from its words."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-a-room-of-two-end-to-end-2026-11-12",
+  "heading": "Fixed - a room of two, end to end, 2026-11-12",
+  "text": "A collaboration room of two now works from start to finish. Both machines are seated, an invite code is made, your reply code shows while your join waits, and Adopt this seed takes the seed on your own machine too. Generate comes back in a room, a seed you change no longer echoes back and forth, and pins, bars, mood and base reach the other machine. A refused join, a wrong reply code and a drive refused for sharing are each said at once, and everyone hears when a guest leaves or is removed. A file you share is marked yours, a shared folder's list arrives where it used to come back empty, and the room names the right machine as each file's home."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-mixsir-2026-11-12",
+  "heading": "Fixed - MixSir, 2026-11-12",
+  "text": "A whole stage now reaches the phone, five parts at 192 kHz included, and a stage too large to send is refused in a sentence on the card. The pairing card covers the window. Leaving a collaboration room no longer cuts off a paired phone, and two phones listening at once each hear the whole stream."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-web-app-2026-11-12",
+  "heading": "Fixed - the web app, 2026-11-12",
+  "text": "In the web app, Play after Generate is heard and the playhead moves, the Browser opens, and your session comes back when the page reloads. Drums play at the drum machine's pitch, where every lane below C3 sounded an octave low; the 808 rings out as it does in the plugin; and a pad click plays the style's own machine with your edits from the pad's editor. The keyboard plays each part's own sound, and each part's level and pan are heard. Save as my style saves, Generate works on a style of your own, the Pattern library and the roster search keep working once you have saved your own, and the first take can be saved to your computer."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-safety-and-stability-2026-11-12",
+  "heading": "Fixed - safety and stability, 2026-11-12",
+  "text": "A file let go outside a drop zone is refused; it used to open in place of the whole window, and in the web app it took the tab away from your session. Network paths are refused wherever a path is read, and so is a path that climbs out of its folder. Only the app's own page can talk to the plugin. A damaged or hostile project, sound or style file, or a nonsense sample rate from the host, can no longer crash your DAW, and nobody on your Wi-Fi can freeze or crash MixSir's listener. An instrument library that cannot be read is never written over, and two saves at once both keep their edits."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-default-kits-808s-2026-11-12",
+  "heading": "Fixed - the default kits' 808s, 2026-11-12",
+  "text": "The 808 in nine of the eleven default kits now plays the note that is written; it was out of tune, a minor third sharp in boom bap and a fourth in pop. The Plugg and Club 808s, which sat between two notes, are tuned to D♯1 and G1. Every default kit's samples are now well-formed WAV files, so a DAW that is strict about the format takes a pad you drag out."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-a-reopened-project-keeps-its-sounds-2026-11-12",
+  "heading": "Fixed - a reopened project keeps its sounds, 2026-11-12",
+  "text": "A reopened project keeps each part's instrument and knobs, the pads' shaping, your MIDI settings and the audio format, through its first Generate too. A save used to wipe them, so a reopened project lost its instruments and its exports fell back to the kit's pads. The standalone opens on the session it was closed with, and a tempo or swing you pinned reads back as you typed it: 92.7, not 92.69999694824219. Settings › MIDI waits for your settings before it can be changed, so a press while it opens no longer resets them."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-exporting-and-dragging-out-2026-11-12",
+  "heading": "Fixed - exporting and dragging out, 2026-11-12",
+  "text": "An export that is cancelled, undone or fails part-way puts back any earlier file it wrote over and removes only what it made; a stems export used to delete your earlier stems. Save As writes beside the file and then swaps it in, so a crash cannot leave half a MIDI file. Stems › Audio bounces each part through its own instrument, knobs and level, as a song's stems already did, never through the kit's pads. A whole song dragged out of the plugin now carries each part's sound in any host, as the song saved as one MIDI file already did, and the drag says how many files it hands over: one MIDI clip per part. A loop dragged out of the Factory Packs is named for the loop, not \"style\", and an imported song exports into a folder named for itself."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-re-dream-generating-and-undo-2026-11-12",
+  "heading": "Fixed - Re-Dream, generating and undo, 2026-11-12",
+  "text": "A generator with no take plays no dream, so undoing the Generate a dream came from silences it. The Song tab's Re-Dream row always draws its three dreams, and the per-part strip says what its dream and Keep do. The pads light only for what you hear: never for a part switched off or for the take under a chosen dream, and a short clip beside a longer one lights in time. Generate all fills the chord lane too, and a style whose 808 is its bassline says so quietly on the Bass tab instead of raising an alert. An undo pressed while a take is still generating is no longer overwritten by it. The Generate buttons name the keys you mapped them to, and a Shift shortcut such as Shift+G works while the docked keyboard is up instead of playing a note."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-kit-panel-2026-11-12",
+  "heading": "Fixed - the kit panel, 2026-11-12",
+  "text": "Kit rows keep their whole names: the controls drop to a second line when the words and the switch do not fit on one, and a melodic row names its instrument or file, never \"Not in this style\". A kit saved with Use this kit, or re-linked in Missing files, shows in Saved kits at once, and one that fails to save leaves no half-written folder. \"Every pad is locked\" and \"The kit has not loaded yet\" are in your language, and a locked pad's dice names its lane. With another lane soloed, a pad's mute button does what it says. Clear forgets a lane's sample, and a double-click puts a tone knob back to flat."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-style-editor-2026-11-12",
+  "heading": "Fixed - the style editor, 2026-11-12",
+  "text": "The style editor offers producers as bases, and a style based on one keeps that producer's genres. Train counts your kept takes part by part and turns on at thirty of one part, the number it needs; it used to add the parts together and offer Train when it could not run. A style saved with Save as my style appears in the roster at once."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-browser-and-imports-2026-11-12",
+  "heading": "Fixed - the Browser and imports, 2026-11-12",
+  "text": "The Browser's categories and folders keep a usable height with Recent, the starred favorites and the MIDI panel open. Up and Down reach the end of a long folder and walk the Factory Packs' loops. Two tags added quickly both land, and a scan stopped and started again never counts past its total. The MIDI panel's hint says a drop splits the file across the generators, an import switches off only the generators that hold a clip, and a 32-bit float WAV in the extensible format reads as audio, not noise."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-chords-in-the-session-s-key-2026-11-12",
+  "heading": "Fixed - chords in the session's key, 2026-11-12",
+  "text": "A style's chord progression now stays in your session's key. A minor progression in a major session plays from its relative minor (i VI III VII in C major is A minor, F, C, G), and in a mode, a chord whose root the mode moves is borrowed from the plain key. A session in B major used to show chords outside the key, its first chord included."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-meter-the-roll-and-the-drum-grid-2026-11-12",
+  "heading": "Fixed - the meter, the roll and the drum grid, 2026-11-12",
+  "text": "In 6/8, 12/8 and 7/8 the song ruler and the song's length show the real time; they showed twice as long. The bar.beat readout and the metronome's dots follow the meter instead of assuming 4/4. On the roll, the left stretch handle keeps a selection's end in place instead of crushing the selection onto its first beat, chord names appear at once, and the Transform menu opens in the window instead of being cut off; a greyed action says when it needs Snap. The Scale chip names a scale you pinned from the roll even when the style does not list it. A bare digit on a drum step no longer writes a tuplet; Ctrl or Cmd with it does."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-roll-the-audio-format-and-the-web-app-2026-11-12",
+  "heading": "Fixed - the roll, the audio format and the web app, 2026-11-12",
+  "text": "With the docked keyboard up, the roll shows every note of a melody that spans more than two octaves; its top and bottom notes used to fall off the edges. In Settings › MIDI, Bounced audio offers no choice until it has read the format you stored, so an early choice no longer writes the defaults over yours, and one choice never undoes another: a file type chosen right after a sample rate used to put the old rate back. In the web app, joining a room by invite says why it cannot be done there, as Find instruments in my folders says it needs the plugin."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-collaboration-contacts-nothing-before-a-room-2026-11-11",
+  "heading": "Changed - collaboration contacts nothing before a room, 2026-11-11",
+  "text": "Collaboration now contacts nothing until you open or join a room; on a first launch it used to reach two servers before any room. Collaboration switched off on the first-run card can be switched on again in Settings › Sessions, and the card lists microphones only once Voice is on. Skipping the card keeps your shelf's name. \"Start a session\" says why when it fails, after a crash or a power cut the next room starts cleanly, and a room is never refused because the app and its helper are \"from different builds\"."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-basses-play-the-written-note-2026-11-11",
+  "heading": "Fixed - the basses play the written note, 2026-11-11",
+  "text": "The wavetable basses and the Factory Expansions' synth basses play the note that is written; they sounded an octave under it, E1 at E0, about 20 Hz. A Reese still beats as it did. The 808 Sub stays in tune in every variation, where two were over a semitone flat, and its variations now differ in tail, slide, drive and click instead of in pitch."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-the-knob-and-the-pads-silent-dot-2026-11-11",
+  "heading": "Changed - the knob and the pads' silent dot, 2026-11-11",
+  "text": "The knobs have a new look: dark graphite with a green pointer and a thin, quiet green arc, on the desktop and on MixSir's page, in both themes. A drum pad's dot is gray while the pad is silent, muted or silenced by another lane's solo, and green while you hear it, like a part tab's mute light. It used to turn red."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-pad-editor-and-the-rails-2026-11-11",
+  "heading": "Fixed - the pad editor and the rails, 2026-11-11",
+  "text": "A pad's sound editor opens under its row and fills the kit panel; it used to squeeze in beside the row's buttons, shrinking the pad to a sliver behind a sideways scrollbar. Every command key in a rail sits in the middle of its panel, and no rail panel scrolls sideways. The View menu's panel rows are a choice of one, not checkboxes you could not untick."
+ },
+ {
+  "url": "changelog.html#unreleased-added-the-reference-song-2026-11-02",
+  "heading": "Added - the reference song, 2026-11-02",
+  "text": "A Reference card sits beside Song Mode. Drag a song onto it from the file explorer, or use the file selected there, and MIDI Master reads it on your computer: its tempo, key, meter, sections and chords. Its drums come back rebuilt on the drum machine and its sounds as synth patches or the nearest factory instrument, each with an A/B against the song's own in the preview player. Use the pocket sets your tempo, key, meter and swing, lays Song Mode out in the song's sections and has every part follow its chords. Use this kit saves the drums as Cloned Kit 1, and Use these sounds puts the matched sounds on your parts. The song's audio never goes into anything you export."
+ },
+ {
+  "url": "changelog.html#unreleased-added-every-part-checked-against-the-reference-2026-11-02",
+  "heading": "Added - every part checked against the reference, 2026-11-02",
+  "text": "While a reference is loaded, every part you generate, Re-Dream included, is checked against it, and a part that comes too close is drawn again, up to 8 times. If a part is still close after that, the card says which. An export's receipt records the reference file's SHA-256 (never its name), the check and the rebuilt sounds' recipes; an export made without a reference says so."
+ },
+ {
+  "url": "changelog.html#unreleased-added-a-dragged-song-keeps-its-sounds-2026-11-02",
+  "heading": "Added - a dragged song keeps its sounds, 2026-11-02",
+  "text": "Dragging a whole song out now carries each part's sound with it: its place in the factory library, or a cloned kit's or matched sound's recipe. Freally Oscillate plays the same sounds; any other DAW sees the same MIDI file as before."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-the-right-instruments-2026-11-02",
+  "heading": "Changed - the right instruments, 2026-11-02",
+  "text": "Picking an artist now loads the instruments that artist is known for on each part, and every genre opens on its own default instruments, which its default kit plays too. Fuzz, distorted, overdriven and power-chord guitars play the electric guitar. Stabs and arpeggios that used to fall back to a default play their own instruments."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-no-two-sounds-alike-2026-11-02",
+  "heading": "Changed - no two sounds alike, 2026-11-02",
+  "text": "No two drum hits in a kit, no two variations of a bass and no two instruments of one family sound alike. Bass variations spread over six lengths and four sounds, the last with a punchier attack, and the drum machine and string basses vary their decay, tone and drive. The Bright Reed opens its filter. The factory kits are tuned per genre, and their melodic pads play factory instruments."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-the-licence-2026-11-02",
+  "heading": "Changed - the licence, 2026-11-02",
+  "text": "The licence (version 2026-11-02) now says that sounds rendered from MIDI Master's own synths, drum machine and factory kits, your own cloned kits and matched sounds included, may go into sample packs you sell; that for a sound matched to a reference song, the reference's rights are yours to mind; and that no pack may carry an artist's, song's or product's name. You are asked to accept it again."
+ },
+ {
+  "url": "changelog.html#unreleased-added-twelve-new-artists-2026-10-28",
+  "heading": "Added - twelve new artists, 2026-10-28",
+  "text": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse and Tones And I join the roster. Each comes with the moods its records move between: Lady Gaga's electropop and her house singles, Lil Nas X's country trap and his pop, Muse's riff rock and their ballads, Lewis Capaldi's piano ballads and his band songs. Search finds each one by name or by the names fans use."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-p-lo-and-the-invasion-2026-10-28",
+  "heading": "Changed - P-Lo and The Invasion, 2026-10-28",
+  "text": "P-Lo and The Invasion no longer write the same melody. P-Lo's lead is a dark synth over a heavy, sliding 808 at a slightly slower tempo; The Invasion's is a soulful chopped vocal over a looser bass, with finger snaps."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-a-tab-s-mute-light-2026-10-28",
+  "heading": "Changed - a tab's mute light, 2026-10-28",
+  "text": "A part tab's mute light is gray while that part is silenced, white under the pointer, and green while you can hear it, like every other switch. It used to turn red."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-the-kit-panel-s-rows-2026-10-28",
+  "heading": "Fixed - the kit panel's rows, 2026-10-28",
+  "text": "In the kit panel every lane shows its name and its sound whole. The sound's name now sits under the lane's, where a narrow panel used to cut it to a few letters; a long file name keeps its end in view, and \"Choosing…\" reads the right way round."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-collab-rooms-2026-10-28",
+  "heading": "Fixed - collab rooms, 2026-10-28",
+  "text": "The connection a collab room makes uses an updated encryption library with a security fix, and it offers only voice, the one stream a session sends."
+ },
+ {
+  "url": "changelog.html#unreleased-added-a-new-pointer-2026-10-28",
+  "heading": "Added - a new pointer, 2026-10-28",
+  "text": "The pointer is a green ring with a dot at its heart, the same in every Freally app. It grows a little over anything you can press and shrinks while you press. Where the pointer means something it stays the system's own: the tempo's up and down, a note's edges, the panels' resize handles, the ruler and text."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-switches-that-are-on-are-green-2026-10-28",
+  "heading": "Changed - switches that are on are green, 2026-10-28",
+  "text": "Every switch that is on is Freally green, and it stays green under the pointer: a part's switch, a lane's solo and mute, a tab's mute light, Keep and a session's shares. A switch that is off is gray, and white under the pointer."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-reduce-motion-the-settings-list-and-the-title-in-arabic-2026-10-28",
+  "heading": "Fixed - Reduce motion, the Settings list and the title in Arabic, 2026-10-28",
+  "text": "Reduce motion in Settings now reaches the turning title, which stops and stands flat, facing you; the system's reduced motion does the same, where it used to leave the title tilted. The Settings categories answer the arrow keys, Home and End. In Arabic the title's version no longer runs into the name."
+ },
+ {
+  "url": "changelog.html#unreleased-changed-the-standalone-s-title-bar-2026-10-28",
+  "heading": "Changed - the standalone's title bar, 2026-10-28",
+  "text": "On Windows the standalone's own title bar follows the theme, dark in dark mode and light in light, and shows no title: the turning name at the top of the window is the title. Inside a DAW the window is the host's, and it is unchanged."
+ },
+ {
+  "url": "changelog.html#unreleased-fixed-instruments-in-tune-after-a-sample-rate-change-and-drums-read-from-audio-2",
+  "heading": "Fixed - instruments in tune after a sample-rate change, and drums read from audio, 2026-10-28",
+  "text": "When the host changes its sample rate, every modelled instrument stays in tune; it had played up to 147 cents flat. In drums read from audio, a snare struck together with a hi-hat now gives both notes, and a kick heard twice in one hit is written once."
  },
  {
   "url": "changelog.html#unreleased-changed-every-bar-of-a-part-plays-2026-10-12",

@@ -135,8 +135,8 @@
       <p data-i18n-html="index.40df2f36.b">Rooms connect your machine directly to the people you invite. If you save someone as a buddy, a small service can tell you when they are online — and it is told nothing worth knowing: a key that changes every few minutes, and an address encrypted to a secret only the two of you hold. It cannot read it, cannot list who is there, and cannot work out who knows whom. Turn it off, or never save a buddy, and you paste a code instead — which is how rooms work anyway.</p>
     </article>
     <article class="note">
-      <h3><kit-icon name="sparkles"></kit-icon><span data-i18n="index.b5d5c2d0.t">One thing that is coming, said now rather than when it ships</span></h3>
-      <p data-i18n-html="index.b5d5c2d0.b">The collaboration feature — rooms, in development and not installed by anything today — needs to learn your machine's public address before two people can connect directly, which is what a STUN server is for. When it lands, opening or joining a room will contact one; this build names Cloudflare and Google. Such a server learns only that some address is using a WebRTC application — not who you are talking to, and not what you send — and nothing is contacted until you open or join a room. The sentence above stays true for the plugin as it ships today.</p>
+      <h3><kit-icon name="sparkles"></kit-icon><span data-i18n="index.b5d5c2d0.t">What opening a room contacts</span></h3>
+      <p data-i18n-html="index.b5d5c2d0.b">Rooms are run by a small helper that is built and installed beside the plugin, never by the plugin your DAW loads. Before two people can connect directly, the helper has to learn your machine's public address, which is what a STUN server is for: opening or joining a room asks one, and this build names Cloudflare first and Google as the fallback. Such a server learns only that some address is using a WebRTC application — not who you are talking to, and not what you send — and nothing is contacted until you open or join a room. No relay ships with it, so nothing you send in a room passes through a server unless you add a relay of your own.</p>
     </article>
   </div>
 </kit-section>

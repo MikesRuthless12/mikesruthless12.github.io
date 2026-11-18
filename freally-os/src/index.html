@@ -1,0 +1,72 @@
+<!-- Freally OS — the home page's own words. The shell around them (head,
+     navigation, hero furniture, the family strip, the closing call, the footer)
+     is the site kit's: kit/build.mjs. -->
+
+<kit-hero>
+  <kit-headline data-i18n-html="hero.headline"><span class="hl-muted">A computer that's</span> <span class="hl-bright">on your side.</span></kit-headline>
+  <kit-lede data-i18n="hero.sub">Freally OS starts in seconds, runs only what you asked for, and every line of it is written in-house.</kit-lede>
+</kit-hero>
+
+<kit-section id="what" label="kit.label.overview">
+  <div class="split">
+    <div>
+      <h2 data-i18n="what.title">What it is</h2>
+      <p class="lead" data-i18n="what.p1">Freally OS is a new desktop operating system, written from the first instruction up: its own bootloader, kernel, drivers, desktop and apps, all in Rust, all in-house.</p>
+      <p data-i18n="what.p2">Apart from Rust's core library, none of its code comes from another project. That is how it can promise what other systems offer only as settings: there is no telemetry to turn off, because none was ever written.</p>
+      <p data-i18n="what.p3">It is early. Today it starts, checks its own signature, and runs its kernel and its first program. The road below shows every step to 1.0, in order.</p>
+    </div>
+    <figure class="split__art"><kit-art name="circuit"></kit-art></figure>
+  </div>
+</kit-section>
+
+<kit-section id="promises" label="kit.label.inside">
+  <h2 data-i18n="promises.title">Three promises</h2>
+  <div class="cards">
+    <article class="card">
+      <div class="card__media"><kit-art name="shield"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="promises.yours.title">Yours</h3>
+        <p data-i18n="promises.yours.body">No account, no cloud and no telemetry. Updates ask first, and every update can be undone.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="horizon"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="promises.quiet.title">Quiet</h3>
+        <p data-i18n="promises.quiet.body">Nothing runs that you didn't start, and every process says in one sentence what it does.</p>
+      </div>
+    </article>
+    <article class="card">
+      <div class="card__media"><kit-art name="signal"></kit-art></div>
+      <div class="card__body">
+        <h3 data-i18n="promises.fast.title">Fast</h3>
+        <p data-i18n="promises.fast.body">The desktop in under 3 seconds, measured on every build. A change that breaks that budget doesn't ship.</p>
+      </div>
+    </article>
+  </div>
+</kit-section>
+
+<kit-section id="ladder" label="kit.label.roadmap">
+  <h2 data-i18n="ladder.title">The road to 1.0</h2>
+  <p class="lead" data-i18n="ladder.intro">One line per version, in order. This is the same ladder the private plan follows: if one moves, both move, and a build check compares them.</p>
+  <kit-ladder></kit-ladder>
+  <p class="fineprint" data-i18n="ladder.note">A version that is done is built, tested and tagged. It is not a download: there are none, and there won't be until 1.0.</p>
+</kit-section>
+
+<kit-section id="honest" label="kit.label.honesty">
+  <h2 data-i18n="honest.title">The things most sites put at the bottom</h2>
+  <div class="notes">
+    <article class="note">
+      <h3><kit-icon name="wifi-off"></kit-icon><span data-i18n="honest.privacy.title">It collects nothing</span></h3>
+      <p data-i18n="honest.privacy.body">There is no telemetry, no crash upload, no account and no background connection. The update check, when it arrives, runs only when you turn it on, and tells you what it will download before it does. This site loads nothing from other sites and runs no analytics.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="info"></kit-icon><span data-i18n="honest.early.title">It is early</span></h3>
+      <p data-i18n="honest.early.body">Freally OS runs on its author's own computers for now. It does very little yet that you would use every day, and the road above says plainly when each part arrives.</p>
+    </article>
+    <article class="note">
+      <h3><kit-icon name="box"></kit-icon><span data-i18n="honest.downloads.title">There are no downloads before 1.0</span></h3>
+      <p data-i18n="honest.downloads.body">No beta on this page, no preview build, no early access. Each version is built and tested in private until 1.0.</p>
+    </article>
+  </div>
+</kit-section>
