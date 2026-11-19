@@ -842,5 +842,17 @@
   "changelog.fd329540d324": "Akorlar sekmesinde ikinci bir Üret, hiç kalmadığını söylemek yerine aynı kayıtta başka bir dizi verir, ve sonrasında yapılan melodi, karşı melodi ya da bas, duyduğunuz akorlara göre yazılır.",
   "changelog.e338994a9920": "Feel gevşetildiğinde artık melodi, karşı melodi, bas ve akorların yalnızca velocity’sini değil zamanlamasını da gevşetiyor; ortada ya da sıkıyken ızgarada kalırlar.",
   "changelog.cf16349821d0": "Geleneksel country ve bluegrass stilleri baslarını hiçbir zaman synth sub ile değil, upright ile çalar: Sub Bass verilen sekiz stil, aralarında Joe Diffie, Tracy Byrd ve Diamond Rio, artık Upright Bass çalıyor.",
-  "changelog.0ec145039533": "Ruh hâli tarzın olduğunda, davulu yeniden ürettikten sonra yazılan bas ekrandaki kick’i izler; akorları yeniden ürettikten sonra yazılan melodi, karşı melodi ya da bas da kaydın kendi akorlarını değil, ekrandaki akorları izler."
+  "changelog.0ec145039533": "Ruh hâli tarzın olduğunda, davulu yeniden ürettikten sonra yazılan bas ekrandaki kick’i izler; akorları yeniden ürettikten sonra yazılan melodi, karşı melodi ya da bas da kaydın kendi akorlarını değil, ekrandaki akorları izler.",
+  "changelog.0d5830024ed3": "Değişti - ekran, pencere ve oda, 2026-11-16 ile 2026-11-18 arası",
+  "changelog.3936c78a0b6b": "Müziğinden çizilen her şey tek bir ışıklı kalemle çiziliyor: bir pad’in derinlikli dalga formu, kırpmanın tuttuğu yerde ışıklı; Tarayıcı’daki ön izleme, çaldığı yere kadar ışıklı; bir partinin ve bir pad’in zarfı; EQ’nun spektrumu, bir frekans cetveli üstünde ışıklı bir eğri; Şarkı’daki ses klipleri; velocity şeridi; koyu temada parlayan piano roll notaları; ve davul ızgarasının adımları.",
+  "changelog.0b493b4614e7": "Durum çubuğundaki master ölçer, soldan sağa yeşil, sarı ve kırmızı, yanında dB seviyesiyle işlenmiş bir LED merdiveni. MixSir’in telefondaki ölçerleri de aynı ışıklar.",
+  "changelog.787d23fdecee": "Bir davul pad’inin noktası işlenmiş bir lamba: pad duyulduğu sürece yeşil, susturulduğunda ya da başka bir şeridin solosu onu susturduğunda sönük.",
+  "changelog.928651791626": "Ayarlar’da Varsayılanları geri yükle, Tamam, İptal ve Uygula var. Orada değiştirdiğin hiçbir şey Uygula ya da Tamam’a basana kadar tutulmaz; İptal, Escape ya da kapatma düğmesi her şeyi, denediğin tema ve dil dahil, eski hâline getirir.",
+  "changelog.08f418465da9": "Lisans sözleşmesi, her Freally uygulamasının kullandığı form; metni bir belge gibi dizilmiş ve \"I Agree\" sonuna kadar okumanı bekliyor.",
+  "changelog.84edfedb7183": "Bağımsız uygulama kendi girişiyle açılıyor: simgesi sekiz saniye boyunca bir trap ritmi çalıyor, ilk kareden son kareye aynı boyutta. Ayarlar, Genel, Girişi atla onu bir kez gördükten sonra kapatır, Hareketi azalt ise onu durgun ve sessiz gösterir.",
+  "changelog.16c5ca84e0e2": "Windows’ta bağımsız uygulama kendi başlık çubuğunu çiziyor: üzerinde Freally halkası görünüyor, açık ve koyu temayı izliyor; Simge durumuna küçült, Ekranı kapla, Kapat, sürükleme, kenara yaslama ve çift tıklama eskisi gibi çalışıyor.",
+  "changelog.31940ca7bec3": "Her davul şeridinin adı, on sekiz dilin hepsinde ızgaraya tam sığıyor.",
+  "changelog.a51cdf3fb5ea": "Bir odada, başka bir yapımcının satırındaki Kişi olarak tut, birbirinizi tutmayı önerir. O evet dediğinde ikiniz de birbirinizi tutarsınız ve iki makine de sunduğu anahtarı kanıtlayana kadar hiçbir şey tutulmaz.",
+  "changelog.44df38fcd909": "Bir odada paylaşılan bir seed, içinde yapıldığı kaydı taşır; böylece öbür makine aynı melodiyi yapar.",
+  "changelog.b3e67a23961b": "Bir çökme kaydı, çökmenin olduğu iş parçacığını adlandırır ve uygulamanın kendi kodundaki her yeri o sürümün geri okuyabileceği biçimde verir."
 }

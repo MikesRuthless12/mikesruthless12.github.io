@@ -842,5 +842,17 @@
   "changelog.fd329540d324": "Lần tạo thứ hai ở thẻ Hợp âm cho một vòng hợp âm khác trên cùng bản thu thay vì báo rằng không còn gì, và giai điệu, giai điệu đối hay bass làm sau đó được viết theo hợp âm bạn đang nghe.",
   "changelog.e338994a9920": "Feel khi nới lỏng nay làm lỏng cả nhịp của giai điệu, giai điệu đối, bass và hợp âm, không chỉ cường độ; ở giữa hoặc siết chặt, chúng vẫn nằm trên lưới.",
   "changelog.cf16349821d0": "Các phong cách country truyền thống và bluegrass chơi bass trên upright, không bao giờ trên sub của synth: tám phong cách từng được gán Sub Bass, trong đó có Joe Diffie, Tracy Byrd và Diamond Rio, nay chơi Upright Bass.",
-  "changelog.0ec145039533": "Khi tâm trạng là của phong cách, bass viết sau khi bạn tạo lại trống sẽ theo tiếng kick trên màn hình, và giai điệu, giai điệu đối hay bass viết sau khi tạo lại hợp âm sẽ theo hợp âm trên màn hình, không phải của chính bản thu."
+  "changelog.0ec145039533": "Khi tâm trạng là của phong cách, bass viết sau khi bạn tạo lại trống sẽ theo tiếng kick trên màn hình, và giai điệu, giai điệu đối hay bass viết sau khi tạo lại hợp âm sẽ theo hợp âm trên màn hình, không phải của chính bản thu.",
+  "changelog.0d5830024ed3": "Thay đổi - hiển thị, cửa sổ và phòng, 2026-11-16 đến 2026-11-18",
+  "changelog.3936c78a0b6b": "Mọi thứ được vẽ từ nhạc của bạn giờ được vẽ bằng một nét bút phát sáng: dạng sóng của pad có chiều sâu, sáng ở phần được giữ sau khi cắt; bản nghe thử trong Trình duyệt, sáng đến chỗ đã phát; đường bao của một phần và của một pad; phổ của EQ, một đường cong phát sáng trên thước tần số; các clip âm thanh của Bài hát; làn velocity; các nốt của piano roll, rực lên trong giao diện tối; và các bước của lưới trống.",
+  "changelog.0b493b4614e7": "Đồng hồ master trên thanh trạng thái là một thang đèn LED được kết xuất, xanh lá, vàng rồi đỏ từ trái sang phải, bên cạnh là mức tính bằng dB. Đồng hồ của MixSir trên điện thoại là cùng những ngọn đèn ấy.",
+  "changelog.787d23fdecee": "Chấm trên một pad trống là một bóng đèn được kết xuất: sáng xanh khi pad còn nghe được, tắt khi bị tắt tiếng hoặc bị solo của một làn khác làm im.",
+  "changelog.928651791626": "Cài đặt có Khôi phục mặc định, OK, Hủy và Áp dụng. Không thay đổi nào ở đó được lưu cho đến khi bạn nhấn Áp dụng hoặc OK, còn Hủy, Escape hay nút đóng đưa mọi thứ về như cũ, kể cả giao diện và ngôn ngữ bạn đang thử.",
+  "changelog.08f418465da9": "Thỏa thuận cấp phép là biểu mẫu mà mọi ứng dụng Freally dùng, văn bản được trình bày như một tài liệu, và \"I Agree\" chờ đến khi bạn đọc đến cuối.",
+  "changelog.84edfedb7183": "Ứng dụng độc lập mở bằng phần mở đầu riêng: biểu tượng của nó chơi một nhịp trap trong tám giây, cùng một kích thước từ khung hình đầu đến khung hình cuối. Cài đặt, Chung, Bỏ qua phần mở đầu tắt nó sau khi bạn đã xem, còn Giảm chuyển động hiển thị nó đứng yên và im lặng.",
+  "changelog.16c5ca84e0e2": "Trên Windows, ứng dụng độc lập tự vẽ thanh tiêu đề: vòng Freally hiện lên trên đó, nó theo giao diện sáng và tối, còn Thu nhỏ, Phóng to, Đóng, kéo, bám cạnh và nhấp đúp vẫn hoạt động như trước.",
+  "changelog.31940ca7bec3": "Tên của mỗi làn trống nằm trọn trong lưới, ở cả mười tám ngôn ngữ.",
+  "changelog.a51cdf3fb5ea": "Trong một phòng, Giữ làm liên hệ trên hàng của một nhà sản xuất khác đề nghị hai người giữ nhau. Khi họ đồng ý, mỗi người giữ người kia, và không có gì được giữ cho đến khi cả hai máy chứng minh được khóa mình đưa ra.",
+  "changelog.44df38fcd909": "Một seed được chia sẻ trong phòng mang theo bản thu nơi nó được tạo, nên máy kia tạo ra cùng một giai điệu.",
+  "changelog.b3e67a23961b": "Nhật ký sự cố nêu tên luồng xảy ra sự cố và ghi mỗi vị trí trong mã của chính ứng dụng theo cách mà bản phát hành đó có thể đọc lại."
 }
