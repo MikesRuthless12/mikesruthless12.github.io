@@ -55,9 +55,19 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-28-0-2026-11-23-build-8-tags-notes-and-collections">v0.28.0</a></li><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
+<ol><li><a href="#0-29-0-2026-11-23-build-9-power-query">v0.29.0</a></li><li><a href="#0-28-0-2026-11-23-build-8-tags-notes-and-collections">v0.28.0</a></li><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-28-0-2026-11-23-build-8-tags-notes-and-collections">
+<div class="releases"><article class="release release--latest" id="0-29-0-2026-11-23-build-9-power-query">
+<h2 class="release__head" data-i18n-html="changelog.f22a7cc4e090"><span class="release__meta"><span class="release__ver">v0.29.0</span><time class="release__date" datetime="2026-11-23">2026-11-23</time></span><span class="release__title">Build 9 · Power query</span></h2>
+<h3 id="0-29-0-2026-11-23-build-9-power-query-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.aa91499eca55"><strong>[all platforms]</strong> <strong>Macros.</strong> <strong>Search › Organize Macros…</strong> names a search, and typing the name with a colon uses it inside any other: with <code>work</code> standing for <code>ext:pdf;docx path:Documents</code>, <code>work: taxes</code> finds your work documents about taxes. Write <code>$1$</code> in a macro's search for it to take a value, as in <code>by:lovelace</code>. The <code>freally</code> command reads the same macros and offers them as you type.</li>
+<li data-i18n-html="changelog.15b5b985e4ed"><strong>[all platforms]</strong> <strong>Snapshots.</strong> <strong>File › Save Snapshot…</strong> keeps what the search on screen finds now. <strong>Search › Snapshots…</strong> lists them, and <strong>Compare with Now</strong> shows what was added, what is gone and what changed since. <code>snapshot:&quot;name&quot;</code> finds the files a snapshot holds that still exist. None is taken while Privacy mode is on.</li>
+<li data-i18n-html="changelog.20c150649a01"><strong>[all platforms]</strong> <strong>Monitors.</strong> <strong>Search › Monitor This Search…</strong> keeps watching a search: the sidebar's <strong>Monitors</strong> counts the new files each has found since you last opened it, a note says so while Sourcerer is open, and opening one lists them. Counted from the index, never by reading the disk; paused while Privacy mode is on.</li>
+<li data-i18n-html="changelog.4f79a5bdc99f"><strong>[all platforms]</strong> <strong>File hashes.</strong> <code>sha256:</code>, <code>sha1:</code>, <code>md5:</code> and <code>crc32:</code> find a file by the checksum you were given, from its first 8 digits, reading only the files the rest of the search keeps; a search that would read more than 10,000 files or 10 GB asks first. <code>freally search --hash sha256</code> prints them.</li>
+</ul>
+</article>
+<article class="release" id="0-28-0-2026-11-23-build-8-tags-notes-and-collections">
 <h2 class="release__head" data-i18n-html="changelog.422fab7e30cd"><span class="release__meta"><span class="release__ver">v0.28.0</span><time class="release__date" datetime="2026-11-23">2026-11-23</time></span><span class="release__title">Build 8 · Tags, notes and collections</span></h2>
 <h3 id="0-28-0-2026-11-23-build-8-tags-notes-and-collections-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
 <ul>
@@ -873,7 +883,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.28.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.29.0</span>
         </div>
       </div>
     </footer>

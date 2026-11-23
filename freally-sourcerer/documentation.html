@@ -151,9 +151,13 @@
           <tr><td><code>child-count:</code></td><td data-i18n-html="docs.syntax.mod.children">Folders by how many items they hold directly; <code>descendant-count:</code> at any depth</td><td><code>child-count:&gt;500</code></td></tr>
           <tr><td><code>volume:</code></td><td data-i18n="docs.syntax.mod.volume">Files on one drive, by its name, even when it is unplugged</td><td><code>volume:orange</code></td></tr>
           <tr><td><code>tag:</code> <code>note:</code> <code>collection:</code></td><td data-i18n-html="docs.syntax.mod.annotations">What you gave a file: one of its tags, a word in its note, or a collection it is in (quoted when the name has spaces)</td><td><code>tag:work ext:pdf</code></td></tr>
+          <tr><td><code>snapshot:</code></td><td data-i18n-html="docs.syntax.mod.snapshot">The files a snapshot you saved still holds (quoted when the name has spaces)</td><td><code>snapshot:"before cleanup"</code></td></tr>
+          <tr><td><code>sha256:</code> <code>sha1:</code> <code>md5:</code> <code>crc32:</code></td><td data-i18n-html="docs.syntax.mod.hashes">A file by the checksum you were given, from its first 8 hex digits; only the files the rest of the search keeps are read, and a search that would read more than 10,000 files or 10 GB asks first</td><td><code>sha256:9f86d081 ext:iso</code></td></tr>
         </tbody>
       </table>
     </div>
+    <h3 id="syntax-macros" data-i18n="docs.syntax.macros.title">Macros</h3>
+    <p data-i18n-html="docs.syntax.macros.body"><strong>Search › Organize Macros…</strong> names a search, and typing its name with a colon uses it inside any other: with <code>work</code> standing for <code>ext:pdf;docx path:Documents</code>, <code>work: taxes</code> finds your work documents about taxes. Write <code>$1$</code> in a macro's search for it to take one value, as in <code>by:lovelace</code>. A name is letters, digits and dashes, never one the syntax already has (<code>ext</code>, <code>audio</code>, <code>docs</code>…); the <code>freally</code> command reads the same macros and offers them as you type.</p>
     <h3 id="syntax-modes" data-i18n="docs.syntax.modes">Match modes</h3>
     <ul>
       <li data-i18n-html="docs.syntax.modesMenu">The <strong>Search</strong> menu toggles Match Case (<kbd>Ctrl+I</kbd>), Match Whole Word (<kbd>Ctrl+B</kbd>), Match Path (<kbd>Ctrl+U</kbd>) and Match Diacritics (<kbd>Ctrl+M</kbd>).</li>
@@ -186,6 +190,8 @@
       <li data-i18n-html="docs.bookmarks.sidebar"><strong>View → Sidebar</strong> shows a column with your bookmarks, the quick filters, your drives and your recent searches. Drag bookmarks to reorder them; click a drive to search only that drive.</li>
       <li data-i18n="docs.bookmarks.history">Recent searches are not recorded while Privacy Mode is on or search history is switched off.</li>
       <li data-i18n-html="docs.bookmarks.annotations">Right-click a result for <strong>Tags…</strong>, <strong>Note…</strong> and <strong>Add to collection</strong>. A collection is a named set of files, where a bookmark is a saved search: the sidebar's <strong>Collections</strong> opens each one, renames it or deletes it (its files stay where they are). Tags, notes and collections are kept beside the index, never in your files, and follow a file when it is renamed; <code>tag:</code>, <code>note:</code> and <code>collection:</code> find them.</li>
+      <li data-i18n-html="docs.bookmarks.snapshots"><strong>File › Save Snapshot…</strong> keeps what the search on screen finds now: each file, its size and when it was changed. <strong>Search › Snapshots…</strong> lists them, and <strong>Compare with Now</strong> runs the same search again and shows what was added, what is gone and what changed since. Snapshots are kept beside the index, never sent anywhere, and none is taken while Privacy mode is on.</li>
+      <li data-i18n-html="docs.bookmarks.monitors"><strong>Search › Monitor This Search…</strong> keeps watching the search on screen. The sidebar's <strong>Monitors</strong> shows how many new files each has found since you last opened it (a file that appears, or is renamed into the search), a note says so while Sourcerer is open, and opening one lists them. The count comes from the index the journal keeps current, never from reading the disk, and stops while Privacy mode is on.</li>
     </ul>
     <figure class="demo">
       <video src="demos/bookmarks.webm" poster="demos/bookmarks.jpg" width="1650" height="1080" autoplay muted loop playsinline preload="metadata"></video>
@@ -333,6 +339,7 @@ freally completions bash</code></pre>
     <p data-i18n-html="docs.faq.smaller.body">Exclude folders full of files you never look for, such as <code>node_modules</code> and <code>.git</code>, under <strong>Settings → Indexes → Exclude</strong>.</p>
     <h3 id="faq-rebuild" data-i18n="docs.faq.rebuild.title">How do I start the index again?</h3>
     <p data-i18n="docs.faq.rebuild.kept">Your tags, notes and collections are not part of the index: a rebuild, a verify or a compact keeps every one.</p>
+    <p data-i18n="docs.faq.rebuild.kept2">Your snapshots, monitors and macros are kept beside it too.</p>
     <p data-i18n-html="docs.faq.rebuild.body"><strong>Tools → Index maintenance → Force Rebuild Index…</strong> clears the index and builds it again from the start. <strong>Verify Index…</strong> and <strong>Compact Index…</strong> in the same menu check it and make it smaller.</p>
   </section></div>
 </div>
@@ -351,7 +358,7 @@ freally completions bash</code></pre>
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.28.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.29.0</span>
         </div>
       </div>
     </footer>
