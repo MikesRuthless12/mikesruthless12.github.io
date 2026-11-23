@@ -59,7 +59,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "features.html#cli",
   "heading": "A command line for scripts",
-  "text": "The freally command copies, moves and verifies, plans a job before running it, serves folders and imports backups, and reports in JSON lines with documented exit codes. Compare Side by side with the commercial tools Freally File Manager 1.0.0 next to six commercial tools people buy to copy, check, sync and manage their files. Every cell for another product comes from its maker's own pages, checked on 2 October 2026, and prices are US list prices as of October 2026. Feature Freally File Manager 1.0.0 TeraCopy Pro 4 Directory Opus 13 Total Commander 11 ForkLift 4 Beyond Compare 5 Pro GoodSync Personal Price (USD, October 2026) Free today $49.95 not verified sold in Australian dollars not verified sold in euros $19.95 one year of updates $70 $29.95 a year, up to five devices Checks each copy against a checksum has it optional, eight checksums has it not verified has it partly a checksum tool, not after each copy not verified has it Windows, macOS and Linux has it Windows · macOS · Linux partly Windows · macOS the Mac app is older partly Windows partly Windows partly macOS has it Windows · macOS · Linux partly Windows · macOS Linux: web interface only Resumes a copy after a crash or a "
+  "text": "The freally command copies, moves and verifies, plans a job before running it, serves folders and imports backups, and reports in JSON lines with documented exit codes. Compare Side by side with the commercial tools Freally File Manager 1.1.0 next to six commercial tools people buy to copy, check, sync and manage their files. Every cell for another product comes from its maker's own pages, checked on 2 October 2026, and prices are US list prices as of October 2026. Feature Freally File Manager 1.0.0 TeraCopy Pro 4 Directory Opus 13 Total Commander 11 ForkLift 4 Beyond Compare 5 Pro GoodSync Personal Price (USD, October 2026) Free today $49.95 not verified sold in Australian dollars not verified sold in euros $19.95 one year of updates $70 $29.95 a year, up to five devices Checks each copy against a checksum has it optional, eight checksums has it not verified has it partly a checksum tool, not after each copy not verified has it Windows, macOS and Linux has it Windows · macOS · Linux partly Windows · macOS the Mac app is older partly Windows partly Windows partly macOS has it Windows · macOS · Linux partly Windows · macOS Linux: web interface only Resumes a copy after a crash or a "
  },
  {
   "url": "documentation.html#start",
@@ -74,7 +74,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#move",
   "heading": "Move files",
-  "text": "Moving works like copying: in the Transfer dropped items dialog, set Operation to Move, pick a destination and click Start moving. Each file is copied first, and the original is deleted only after the copy has succeeded. If anything fails, the original stays where it was and the row is marked as failed. To make every move recoverable, switch on Send moved source files to Trash in Settings → Secure delete: the originals then go to the Recycle Bin or Trash instead of being deleted."
+  "text": "Moving works like copying: in the Transfer dropped items dialog, set Operation to Move, pick a destination and click Start moving. Each file is copied first, and the original is deleted only after the copy has succeeded. If anything fails, the original stays where it was and the row is marked as failed. To make every move recoverable, switch on Send moved source files to Trash in Settings → Transfer: the originals then go to the Recycle Bin or Trash instead of being deleted."
  },
  {
   "url": "documentation.html#verify",
@@ -129,7 +129,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#settings",
   "heading": "Settings",
-  "text": "The gear in the footer opens Settings. Changes take effect at once, with no restart. The tabs you will use most: General: language, the app's theme, start at login, minimize to the tray, how errors are shown, the paste shortcut and the clipboard watcher. Transfer: verification, buffer size, how many files copy at once, clones, timestamps and permissions, sparse files, locked files and the security marks a file carries. Filters: what to include and exclude. Shell: the right-click menu and taking over Windows' own copy. Network: a speed limit, fixed or on a schedule. Server: the built-in file server. Updates: the daily update check, and a button to check now. Profiles: save your settings under a name, switch between them, and import or export them."
+  "text": "The gear in the footer opens Settings. A change is kept when you press Apply or OK; Cancel or Escape puts everything back as it was. The tabs you will use most: General: language, the app's theme, start at login, minimize to the tray, how errors are shown, the paste shortcut and the clipboard watcher. Transfer: verification, buffer size, how many files copy at once, clones, timestamps and permissions, sparse files, locked files and the security marks a file carries. Filters: what to include and exclude. Shell: the right-click menu and taking over Windows' own copy. Network: a speed limit, fixed or on a schedule. Server: the built-in file server. Updates: the daily update check, and a button to check now. Profiles: save your settings under a name, switch between them, and import or export them."
  },
  {
   "url": "documentation.html#shortcuts",
@@ -143,8 +143,8 @@ window.FREALLY_SEARCH_INDEX = [
  },
  {
   "url": "documentation.html#speed-again",
-  "heading": "Measured again on 16 November 2026: the app against Robocopy",
-  "text": "The same laptop and the same NVMe drive, copying from C: to C:. This time the app itself, timed by its own history from the start of the copy to its end, against Robocopy with its own settings. In seconds: lower is faster. What was copied Freally File Manager Robocopy How much faster 10,000 files of 4 KB 6.57 10.71 1.63× 1,200 files of 16 KB to 1 MB (456 MB) 0.79 1.26 1.59× Two 512 MB files 0.30 0.49 1.63× One run of each; an earlier run that evening measured 2.0×, 1.18× and 1.5×. On the same machine, results vary by about 20 % from run to run. Every file landed, checked by count and size."
+  "heading": "Measured again on 22 November 2026, on a quiet PC: the app against Robocopy",
+  "text": "The same laptop and the same NVMe drive, copying from C: to C:. This time the app itself, timed by its own history from the start of the copy to its end, against Robocopy with its own settings. In seconds: lower is faster. What was copied Freally File Manager Robocopy How much faster 10,000 files of 4 KB 5.89 5.41 ≈ 1.0× 1,200 files of 16 KB to 1 MB (456 MB) 0.82 1.56 1.90× Two 512 MB files 0.38 0.48 1.26× One run of each, with nothing else running. On the 10,000 small files Robocopy took between 5.2 and 6.0 s across the night, so there the two are level; the figures of 16 November were measured while other builds slowed Robocopy down. Every file landed, checked by count and size."
  },
  {
   "url": "documentation.html#troubleshooting",
@@ -185,6 +185,21 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#privacy",
   "heading": "Privacy and the network",
   "text": "Freally File Manager has no account and no telemetry. The telemetry switch in its settings is permanently off: a value written into the settings file by hand is ignored. Copying, moving and verifying files on your own drives make no network requests. The app goes online for the things you set up, such as the file server or testing a cloud account, and to check for updates when it starts, at most once a day. The update check reads only the list of releases, sends none of your files or paths, and can be switched off in Settings → Updates. It contains no AI: everything it decides comes from checksums, sizes and timestamps, and no machine-learning library is part of it."
+ },
+ {
+  "url": "changelog.html#1-1-0-2026-11-18-the-new-window-and-explorer-s-copies-added",
+  "heading": "Added",
+  "text": "A new main window. Past jobs in a column on the left; the job in hand on the right, with its files, its destination, its options, its figures and its log, each in a tab. A compact view shows a job and the files in flight, and the window can run one job at a time, the next waiting its turn. Explorer's copies. Freally File Manager can answer Explorer's paste and drag: ask each time, or always copy with Freally. It has its own entries in the right-click menu, Windows 11's first menu included, and can be set up the same way on macOS and Linux. Its own intro. A short animated opening with its own music. It can be skipped in Settings → General once it has played. Chain of custody. A copy can write a signed list of every file and its checksum beside the destination, with your own signing key and, if you like, a timestamp from a timestamping service, so anyone can check later that nothing changed. Compare two versions. When a copy or a sync finds a clash between two images, sound files, videos, PDFs or Photoshop files, Compare shows them side by side: an image blended or its changes lit, two waveforms, a clip's length and frames, a document's pages, a Photoshop file's layers. Conflict prof"
+ },
+ {
+  "url": "changelog.html#1-1-0-2026-11-18-the-new-window-and-explorer-s-copies-changed",
+  "heading": "Changed",
+  "text": "The program's name. It is now freally-file-manager.exe . An update from 1.0 replaces the old program. Speed. Measured against Robocopy, it copies about 1.6 times as fast on every tree we tried. The folder scan that nothing in the window could start was taken out. Taken out, because they did nothing: Settings → Secure delete (no file was ever shredded; its two safety switches moved to Transfer), Library → Versions (no version was ever recorded), a favorite's Shortcut (never registered as a key), and the recovery page's Download and Restore (they could not find or restore anything; the page shows your copy history)."
+ },
+ {
+  "url": "changelog.html#1-1-0-2026-11-18-the-new-window-and-explorer-s-copies-fixed",
+  "heading": "Fixed",
+  "text": "After a crash. Files a crashed run left half written are copied again, never skipped as already there. Bandwidth cap. A cap now holds for every copy, the fastest path included. Moves. A move on the same drive reports every file it moved, so Undo and History see them. A move never deletes what it did not move. A move to another drive used to delete the whole source after copying, including files skipped at a clash or that failed: they were lost. Now only files really moved leave their source, the job's own clash and error choices answer each file, and a folder can be moved into one that already exists (merged). One file is asked about too. Copying or moving a single file onto one already there replaced it without asking; now it follows your choice (skip, keep both, ask, replace). The tray menu speaks your language. Console windows. Nothing the app starts on Windows flashes a console window. Mount. Mount is offered only where it works. Before, it said \"mounted\" while nothing appeared. Prune now shows what it will remove and asks first. It used to prune on one press. Large files. Comparing, sealing or opening a very large file no longer tries to read it whole into memory; past 256 MB "
  },
  {
   "url": "changelog.html#1-0-0-2026-08-22-the-correctness-release-fixed",

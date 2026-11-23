@@ -94,13 +94,13 @@
 
   <section>
     <h2 id="lenses" data-i18n="docs.lenses.title">The five lenses</h2>
-    <p data-i18n="docs.lenses.intro">Sourcerer has five lenses, all reading the same index. Today the file-name, audio and property lenses answer your searches; the content and similarity lenses are built but not yet connected to the search bar — that comes on the road to 1.0.</p>
+    <p data-i18n="docs.lenses.intro">Sourcerer has five lenses, all reading the same index. Today the file-name, audio, property and similarity lenses answer your searches; the content lens is built but not yet connected to the search bar — that comes on the road to 1.0.</p>
     <ul>
       <li data-i18n="docs.lenses.filename">File name: names and paths, with wildcards, regular expressions and Everything's modifiers. The fastest of the five.</li>
       <li data-i18n="docs.lenses.content">Content: the text inside PDFs, Word, Excel and PowerPoint files, plain text and Markdown, source code in 32 languages, JSON, CSV and YAML, mail, and zip, 7z and tar archives, without unpacking them. Not yet connected to the search bar.</li>
       <li data-i18n="docs.lenses.audio">Audio: what an audio file measures — loudness in LUFS, silence, dynamic range, length, codec and sample rate — worked out the first time a search asks, and kept until the file changes.</li>
       <li data-i18n="docs.lenses.properties">Properties: what a file's own header says — eighty-three properties across images, camera data, video, documents, programs, installers, shortcuts, archives, fonts, mail, SQLite databases and music.</li>
-      <li data-i18n="docs.lenses.similar">Similarity: names close to what you typed, for when you remember a file only roughly. Not yet connected to the search bar; until it is, a search that finds nothing offers the closest real name instead.</li>
+      <li data-i18n="docs.lenses.similar">Similarity: names close to what you typed, for when you remember a file only roughly. Search one word and they are listed under You might mean, each with how alike it is; similar: asks for them directly, and a search that finds nothing offers the closest real name.</li>
     </ul>
     <p data-i18n-html="docs.lenses.prefix">Lenses can be switched on and off in <strong>View → Lenses</strong>.</p>
     <figure class="demo">
@@ -146,7 +146,7 @@
           <tr><td><code>artist:</code> <code>album:</code> <code>genre:</code> …</td><td data-i18n="docs.syntax.mod.music">A song's tags: artist, album, album artist, title, genre, year, track and composer, from MP3, FLAC, Ogg, Opus, M4A and WAV</td><td><code>artist:lovelace year:&gt;1990</code></td></tr>
           <tr><td><code>loop:</code> <code>root-note:</code> <code>tempo:</code> <code>beats:</code></td><td data-i18n="docs.syntax.mod.sample">A sample's loop, root note, tempo and beats, from a WAV's sampler and ACID chunks</td><td><code>loop:yes tempo:120</code></td></tr>
           <tr><td><code>width:</code> <code>camera-model:</code> …</td><td data-i18n-html="docs.syntax.mod.property">Any of the eighty-three properties; <code>property:</code> is the long form</td><td><code>width:&gt;1920</code></td></tr>
-          <tr><td><code>dupe:</code></td><td data-i18n-html="docs.syntax.mod.dupe">Files that share a name and a size; <code>name-dupe:</code> and <code>size-dupe:</code> match on one of the two</td><td><code>dupe: ext:pdf</code></td></tr>
+          <tr><td><code>dupe:</code></td><td data-i18n-html="docs.syntax.mod.dupe">Files that share a name and a size; <code>name-dupe:</code> and <code>size-dupe:</code> match on one of the two, and <code>dupe:content</code> on the same bytes</td><td><code>dupe: ext:pdf</code></td></tr>
           <tr><td><code>empty:</code></td><td data-i18n-html="docs.syntax.mod.empty">Empty files and folders; <code>empty:roots</code> finds the top of each chain of folders that holds no files</td><td><code>empty:folder</code></td></tr>
           <tr><td><code>child-count:</code></td><td data-i18n-html="docs.syntax.mod.children">Folders by how many items they hold directly; <code>descendant-count:</code> at any depth</td><td><code>child-count:&gt;500</code></td></tr>
           <tr><td><code>volume:</code></td><td data-i18n="docs.syntax.mod.volume">Files on one drive, by its name, even when it is unplugged</td><td><code>volume:orange</code></td></tr>
@@ -203,6 +203,7 @@
       <li data-i18n="docs.results.delete">Delete sends a file to the Trash or the Recycle Bin.</li>
     </ul>
     <p data-i18n-html="docs.results.view">Drag a row into another app as if from your file manager. Click a column header to sort, or use <kbd>Ctrl+1</kbd> to <kbd>Ctrl+9</kbd>; the <strong>+</strong> at the end of the header row adds a property as a column. The <strong>View</strong> menu switches between details and thumbnails. Click the result count in the status bar for statistics on the whole result set: sizes and counts by type, the largest, oldest and newest files.</p>
+    <p data-i18n-html="docs.results.dupes">In a duplicate search (<code>dupe:content</code>, say), <strong>Edit › Select Duplicates</strong> keeps one copy of each — the oldest, the newest or the shortest path — and selects the rest, and the statistics say what deleting them frees. Delete asks first, and <strong>Edit › Undo</strong> brings back what it sent away.</p>
     <figure class="demo">
       <video src="demos/results.webm" poster="demos/results.jpg" width="1650" height="1080" autoplay muted loop playsinline preload="metadata"></video>
       <figcaption data-i18n="docs.results.demo">Right-click a result for everything you can do with it.</figcaption>
@@ -347,7 +348,7 @@ freally completions bash</code></pre>
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.24.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.27.0</span>
         </div>
       </div>
     </footer>

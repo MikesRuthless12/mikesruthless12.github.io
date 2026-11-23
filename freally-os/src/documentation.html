@@ -1,0 +1,29 @@
+<!-- Freally OS — Documentation: what it collects (nothing), why it has no
+     network yet, and how to check an official image against the source
+     (TASK-116). The shell is the site kit's: kit/build.mjs. -->
+
+<kit-head>
+  <kit-lede data-i18n="docsPage.lede">What Freally OS keeps, why it has no network yet, and how to check that an image is ours.</kit-lede>
+</kit-head>
+
+<kit-manual>
+  <section>
+    <h2 id="privacy" data-i18n="docsPage.privacy.title">Privacy</h2>
+    <p data-i18n="docsPage.privacy.p1">Freally OS collects nothing. There is no telemetry, no crash upload, no account with us and no background connection: none of it was ever written.</p>
+    <p data-i18n="docsPage.privacy.p2">Your accounts and files stay on your computer, each account's home encrypted with a key only its password opens.</p>
+    <p data-i18n="docsPage.privacy.p3">The hardware report in Settings is text you can read before you send it, and it goes only where you send it.</p>
+    <p data-i18n="docsPage.privacy.p4">The tester sign-up, when it opens, keeps an email address and nothing else, only for the tester programme, and deletes it when you ask.</p>
+    <p data-i18n="docsPage.privacy.p5">This site loads nothing from other sites and runs no analytics.</p>
+  </section>
+  <section>
+    <h2 id="network" data-i18n="docsPage.network.title">The network</h2>
+    <p data-i18n="docsPage.network.p1">Freally OS can't make network connections yet. It has no network driver and no network stack: they arrive later on the road to 1.0, and the update check will ask before it ever connects.</p>
+    <p data-i18n="docsPage.network.p2">You can check it yourself: start it in a virtual machine with a network adapter, and watch the host's traffic for that machine (Wireshark will do). It sends nothing.</p>
+  </section>
+  <section>
+    <h2 id="verify" data-i18n="docsPage.verify.title">Checking an official image</h2>
+    <p data-i18n="docsPage.verify.p1">Every official image is built from the public source, and the build is reproducible: the same commit gives the same bootloader and the same image, byte for byte, apart from the image's signature.</p>
+    <p data-i18n="docsPage.verify.p2">To check one, check out the version's tag, run cargo xtask hashes --unsigned, and compare the two SHA-256 sums on its release line (the bootloader's, and the image's with its signature left out) with the ones published beside the image. They must be equal.</p>
+    <p data-i18n="docsPage.verify.p3">Then the signature: the bootloader refuses any image not signed by a key it trusts, and says so on the screen. A changed byte anywhere in the image is caught before Freally OS starts.</p>
+  </section>
+</kit-manual>

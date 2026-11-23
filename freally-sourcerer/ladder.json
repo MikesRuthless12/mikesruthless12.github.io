@@ -32,22 +32,16 @@
       "summary": "The property lens for images and video: dimensions, camera data, codecs and duration, searchable and shown as columns."
     },
     {
-      "version": "v0.25.0",
-      "phase": "Build 5 — Property lens: documents, binaries and packages",
-      "state": "planned",
-      "summary": "The property lens for documents, programs and packages: authors and page counts, architectures and signatures, installers, shortcuts, archives, fonts, mail and databases."
-    },
-    {
       "version": "v0.26.0",
-      "phase": "Build 6 — Music tags and audio pro",
-      "state": "planned",
-      "summary": "Music tags, and more for people who work with audio."
+      "phase": "Builds 5, 5.9 and 6 — documents and programs, light and dark, music tags (one release: v0.25.0 and v0.25.9 were never made on their own)",
+      "state": "done",
+      "summary": "The property lens for documents, programs and packages: authors and page counts, architectures and signatures, installers, shortcuts, archives, fonts, mail and databases. The app in light and dark, in Freally green. Music tags, and more for people who work with audio."
     },
     {
       "version": "v0.27.0",
       "phase": "Build 7 — Duplicates and disk hygiene",
-      "state": "planned",
-      "summary": "Duplicates and disk clean-up."
+      "state": "done",
+      "summary": "Duplicates found by their contents, names that are only close (You might mean), and a careful clean-up: keep one copy of each, send the rest to the Recycle Bin, undo."
     },
     {
       "version": "v0.28.0",

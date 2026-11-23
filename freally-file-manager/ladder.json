@@ -25,6 +25,11 @@
       "version": "v1.0.0",
       "state": "done",
       "summary": "The correctness release: a full review of the code, section by section, and every fix that came out of it."
+    },
+    {
+      "version": "v1.1.0",
+      "state": "done",
+      "summary": "The new window and Explorer's copies: a main window built around the job in hand, Freally answering Explorer's paste and drag, and every setting and button traced to the code behind it."
     }
   ]
 }

@@ -2,7 +2,7 @@
   "product": "os",
   "name": "Freally OS",
   "icon": "os-icon.png",
-  "pages": ["index", "features", "changelog"],
+  "pages": ["index", "features", "documentation", "changelog"],
   "changelog": "../CHANGELOG.md",
   "ladder": "ladder.json",
   "chips": ["x86-64", "UEFI", "Rust", "Apache-2.0"],

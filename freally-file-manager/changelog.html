@@ -55,9 +55,73 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#1-0-0-2026-08-22-the-correctness-release">v1.0.0</a></li><li><a href="#0-22-0-2026-08-19-hashing-reports-scheduling-and-portability">v0.22.0</a></li><li><a href="#0-20-0-2026-07-20-safety-nets">v0.20.0</a></li><li><a href="#0-19-85-2026-07-01-the-library-and-backup-tools">v0.19.85</a></li><li><a href="#0-19-84-2026-06-27-the-first-release">v0.19.84</a></li></ol>
+<ol><li><a href="#1-1-0-2026-11-18-the-new-window-and-explorer-s-copies">v1.1.0</a></li><li><a href="#1-0-0-2026-08-22-the-correctness-release">v1.0.0</a></li><li><a href="#0-22-0-2026-08-19-hashing-reports-scheduling-and-portability">v0.22.0</a></li><li><a href="#0-20-0-2026-07-20-safety-nets">v0.20.0</a></li><li><a href="#0-19-85-2026-07-01-the-library-and-backup-tools">v0.19.85</a></li><li><a href="#0-19-84-2026-06-27-the-first-release">v0.19.84</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="1-0-0-2026-08-22-the-correctness-release">
+<div class="releases"><article class="release release--latest" id="1-1-0-2026-11-18-the-new-window-and-explorer-s-copies">
+<h2 class="release__head" data-i18n-html="changelog.92cb9e5e7bed"><span class="release__meta"><span class="release__ver">v1.1.0</span><time class="release__date" datetime="2026-11-18">2026-11-18</time></span><span class="release__title">The new window, and Explorer's copies</span></h2>
+<p data-i18n-html="changelog.5c5b77e54418">Freally File Manager has a new main window, takes over Explorer's copies when you ask it to, and every setting and button in it now does what it says. Before this release, every part of the app was traced from its button to the code behind it, and what was missing was finished or taken out.</p>
+<h3 id="1-1-0-2026-11-18-the-new-window-and-explorer-s-copies-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.1441fb4943e4"><strong>A new main window.</strong> Past jobs in a column on the left; the job in hand on the right, with its files, its destination, its options, its figures and its log, each in a tab. A compact view shows a job and the files in flight, and the window can run one job at a time, the next waiting its turn.</li>
+<li data-i18n-html="changelog.49f61b291e05"><strong>Explorer's copies.</strong> Freally File Manager can answer Explorer's paste and drag: ask each time, or always copy with Freally. It has its own entries in the right-click menu, Windows 11's first menu included, and can be set up the same way on macOS and Linux.</li>
+<li data-i18n-html="changelog.b177af6a3057"><strong>Its own intro.</strong> A short animated opening with its own music. It can be skipped in Settings → General once it has played.</li>
+<li data-i18n-html="changelog.7222857b0f50"><strong>Chain of custody.</strong> A copy can write a signed list of every file and its checksum beside the destination, with your own signing key and, if you like, a timestamp from a timestamping service, so anyone can check later that nothing changed.</li>
+<li data-i18n-html="changelog.9f14893e9e03"><strong>Compare two versions.</strong> When a copy or a sync finds a clash between two images, sound files, videos, PDFs or Photoshop files, Compare shows them side by side: an image blended or its changes lit, two waveforms, a clip's length and frames, a document's pages, a Photoshop file's layers.</li>
+<li data-i18n-html="changelog.a1e887594957"><strong>Conflict profiles.</strong> Rules saved from the conflict dialog can now be chosen in Settings → Transfer, so every new job answers clashes by them, and deleted there.</li>
+<li data-i18n-html="changelog.9794385e0dec"><strong>Sync.</strong> A running pass shows how many of its files are done, and can be paused and resumed. A conflict can be settled from its list: keep the left, keep the right, or keep both. The three-tree conflict engine can be chosen.</li>
+<li data-i18n-html="changelog.2568cceef179"><strong>Team files.</strong> Seal a file so everyone on your team can open it, or open one sealed for you, from Settings → Collaboration.</li>
+<li data-i18n-html="changelog.63a8c1fa63eb"><strong>The recovery page.</strong> The page that shows your copy history in a browser, for when the window cannot open, can now be turned on in Settings → Server, with its address and a new token on request.</li>
+<li data-i18n-html="changelog.4ae35a282acd"><strong>Cloud files.</strong> Send a file to a cloud remote, or fetch one from it, by its name there, from Settings → Remotes.</li>
+<li data-i18n-html="changelog.1954dcebac22"><strong>Library.</strong> A backup source can be edited.</li>
+<li data-i18n-html="changelog.b6f9cc4a823d"><strong>Settings.</strong> Restore Defaults, OK, Apply and Cancel: nothing is saved until Apply or OK, and Cancel or Escape puts everything back.</li>
+<li data-i18n-html="changelog.a1792d5d5561"><strong>A notice when a job ends.</strong> With the window behind others, Windows shows when a copy finishes or fails (Settings → Shell → Notify on job completion).</li>
+<li data-i18n-html="changelog.20b50405a454"><strong>Access lists.</strong> Preserve ACLs (Settings → Transfer) now gives a copy its file's own Windows permissions.</li>
+<li data-i18n-html="changelog.3f6262d7526b"><strong>The family look.</strong> Keys and switches drawn from the Freally hardware set, the Freally cursor, interface sounds, and charts drawn with one pen across the app.</li>
+</ul>
+<h3 id="1-1-0-2026-11-18-the-new-window-and-explorer-s-copies-changed" data-i18n-html="changelog.2a6141e43be0">Changed</h3>
+<ul>
+<li data-i18n-html="changelog.f0bab7c16717"><strong>The program's name.</strong> It is now <code>freally-file-manager.exe</code>. An update from 1.0 replaces the old program.</li>
+<li data-i18n-html="changelog.9a2210f4661d"><strong>Speed.</strong> Measured against Robocopy, it copies about 1.6 times as fast on every tree we tried.</li>
+<li data-i18n-html="changelog.12157fc61bd3"><strong>The folder scan</strong> that nothing in the window could start was taken out.</li>
+<li data-i18n-html="changelog.a3060a2e9482"><strong>Taken out, because they did nothing:</strong> Settings → Secure delete (no file was ever shredded; its two safety switches moved to Transfer), Library → Versions (no version was ever recorded), a favorite's Shortcut (never registered as a key), and the recovery page's Download and Restore (they could not find or restore anything; the page shows your copy history).</li>
+</ul>
+<h3 id="1-1-0-2026-11-18-the-new-window-and-explorer-s-copies-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.1bbafa935e72"><strong>After a crash.</strong> Files a crashed run left half written are copied again, never skipped as already there.</li>
+<li data-i18n-html="changelog.ebb62a7f9527"><strong>Bandwidth cap.</strong> A cap now holds for every copy, the fastest path included.</li>
+<li data-i18n-html="changelog.0e2493652ff4"><strong>Moves.</strong> A move on the same drive reports every file it moved, so Undo and History see them.</li>
+<li data-i18n-html="changelog.9d4f61e65f5e"><strong>A move never deletes what it did not move.</strong> A move to another drive used to delete the whole source after copying, including files skipped at a clash or that failed: they were lost. Now only files really moved leave their source, the job's own clash and error choices answer each file, and a folder can be moved into one that already exists (merged).</li>
+<li data-i18n-html="changelog.fd932bb5f921"><strong>One file is asked about too.</strong> Copying or moving a single file onto one already there replaced it without asking; now it follows your choice (skip, keep both, ask, replace).</li>
+<li data-i18n-html="changelog.22e3a1f33304"><strong>The tray menu</strong> speaks your language.</li>
+<li data-i18n-html="changelog.3c3edd428d67"><strong>Console windows.</strong> Nothing the app starts on Windows flashes a console window.</li>
+<li data-i18n-html="changelog.37cf4f0600a6"><strong>Mount.</strong> Mount is offered only where it works. Before, it said &quot;mounted&quot; while nothing appeared.</li>
+<li data-i18n-html="changelog.e540648e4afb"><strong>Prune now</strong> shows what it will remove and asks first. It used to prune on one press.</li>
+<li data-i18n-html="changelog.674c97fbd471"><strong>Large files.</strong> Comparing, sealing or opening a very large file no longer tries to read it whole into memory; past 256 MB those actions say so instead.</li>
+<li data-i18n-html="changelog.e3aa89e9bfdb"><strong>Security.</strong> A timestamp answer is read only up to its limit; a conflict's kept copy, if it is a link, is never put back in place; a path with a quote can no longer add its own arguments to Explorer; the elevated helper's start-up is safe from quotes PowerShell reads in names; the libraries with known advisories were updated.</li>
+<li data-i18n-html="changelog.2ebaef58257a"><strong>Screen readers.</strong> The window's name is read correctly from the first moment.</li>
+<li data-i18n-html="changelog.c1bce5bbfb22"><strong>A cancelled job no longer holds the queue.</strong> Cancelling a job while it was asking about a clash or an error left it waiting forever, and every copy after it waited behind it.</li>
+<li data-i18n-html="changelog.637c7bbba594"><strong>Sync never writes through a link.</strong> A folder on one side that is a link or junction out of the pair is refused, never written or deleted through.</li>
+<li data-i18n-html="changelog.23363775add0"><strong>A sync of many small files</strong> no longer waits for the disk after each one: a pass over 4,500 small files took 18 seconds instead of 30.</li>
+<li data-i18n-html="changelog.cca5085f0c13"><strong>Settings that did nothing now work:</strong> Log level, Single running instance, History retention and the history's database path.</li>
+<li data-i18n-html="changelog.b9b243b76666"><strong>A folder into itself.</strong> Copying or moving a folder into one of its own folders is refused before anything is written; it used to copy into its own copy without end.</li>
+<li data-i18n-html="changelog.41fae8ae199f"><strong>Resuming after a crash reads the source again.</strong> A file changed since the crash is copied again whole, never finished from its old start and its new end.</li>
+<li data-i18n-html="changelog.5ccd2414551d"><strong>Sync stops when asked.</strong> A pass cancelled or paused while it reads its folders stops there; it used to read every file first.</li>
+<li data-i18n-html="changelog.08ef018ca336"><strong>A read or write error in a large copy</strong> (a drive unplugged, a bad sector) ends the copy with that error; it could crash the app.</li>
+<li data-i18n-html="changelog.518ed97eb369"><strong>The bandwidth cap, changed during a copy,</strong> reaches that copy within a second; a read already waiting kept the old rate to its end.</li>
+<li data-i18n-html="changelog.c047e67ab7e3"><strong>Backups.</strong> Changing a repository’s passphrase or keys can no longer leave it unopenable if the app stops halfway, and importing another tool’s backup refuses a damaged index instead of running out of memory.</li>
+<li data-i18n-html="changelog.9b821f591082"><strong>The cloud offload template</strong> (Settings → Remotes) is made for your remotes; it showed an error instead.</li>
+<li data-i18n-html="changelog.844a7055981a"><strong>The Drop Stack window</strong> speaks your language; it showed its messages’ internal names.</li>
+<li data-i18n-html="changelog.277e6727344c"><strong>Paths too long for Windows.</strong> A copy into a folder past Windows’ old 260-character limit works; it failed with “The system cannot find the path specified”. Settings → Transfer chooses what happens to a path too long for Windows’ other programs (kept long, its file name shortened to fit, or the file skipped with why) and turns Windows’ own long paths on (Windows asks once).</li>
+<li data-i18n-html="changelog.4bc24400fdd2"><strong>Verify after copy shows in the progress.</strong> With it on, the bar is the copy and the verify as two halves, the running job says each one’s percent, and the time left counts both; a verify used to start the bar again at 0 %, and in a folder it made the bar jump.</li>
+<li data-i18n-html="changelog.fd31e723fdbb"><strong>Freally stays your copier after a restart.</strong> Windows’ start-up entry and Explorer’s link to the copy handler now name the installed app; a copy of Freally run from elsewhere could take them, and once it was gone Windows copied again.</li>
+<li data-i18n-html="changelog.0c334a0b7cf0"><strong>Open and Save dialogs</strong> no longer risk a crash after showing Freally’s right-click entries: the menu’s library stays loaded while the program runs.</li>
+<li data-i18n-html="changelog.74c42811f2c9"><strong>Clear empties the activity list for good</strong>; rows of a just-finished copy could keep arriving.</li>
+<li data-i18n-html="changelog.3410bf349fc0"><strong>Settings’ switches line up</strong>, one line per tab.</li>
+<li data-i18n-html="changelog.bd17549e16cc"><strong>Faster with many small files.</strong> A folder of 10,000 small files copies about a fifth faster: the copier asks Windows less about each file.</li>
+<li data-i18n-html="changelog.fec661663c9d"><strong>An open window no longer slows your copies.</strong> The window kept drawing while idle, and every copy on the PC ran slower while it was open; it now draws only what changes, and the wordmark stands still.</li>
+</ul>
+</article>
+<article class="release" id="1-0-0-2026-08-22-the-correctness-release">
 <h2 class="release__head" data-i18n-html="changelog.086fc6b9eb45"><span class="release__meta"><span class="release__ver">v1.0.0</span><time class="release__date" datetime="2026-08-22">2026-08-22</time></span><span class="release__title">The correctness release</span></h2>
 <p data-i18n-html="changelog.490081990d07">Every feature from 0.22.0 is here. What changed is a full review of the code, section by section, and the fixes that came out of it. Several of them could lose data without ever showing an error.</p>
 <h3 id="1-0-0-2026-08-22-the-correctness-release-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
@@ -175,7 +239,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.yours">The files you copy, sync and serve stay yours. Freally File Manager's author claims no ownership of them.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v1.0.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v1.1.0</span>
         </div>
       </div>
     </footer>
