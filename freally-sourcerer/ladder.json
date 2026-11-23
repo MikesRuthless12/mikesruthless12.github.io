@@ -58,8 +58,8 @@
     {
       "version": "v0.30.0",
       "phase": "Build 10 — Views and windows",
-      "state": "planned",
-      "summary": "Views and windows."
+      "state": "done",
+      "summary": "Thumbnails of your results, and a second search window."
     },
     {
       "version": "v0.31.0",

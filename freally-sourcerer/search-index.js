@@ -114,7 +114,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#results",
   "heading": "Working with results",
-  "text": "Every row is a real file on your disk. Right-click a row for what you can do with it: Open, Reveal in file manager, and Open with, which lists the apps your system has registered for that kind of file. Copy contents for a text file's body, Copy as file to paste the file itself into a folder, and Copy path list — one per line, quoted, space-separated or shell-escaped. View hits in context shows every match in a document; F3 and Shift+F3 step through them. Open terminal here opens a terminal in the file's folder. Commands of your own, from Settings → General → Custom Commands , with {path} , {dir} , {name} , {stem} and {ext} in their arguments. Each runs as a program with arguments, never as a shell line, and the app asks once before a program runs for the first time. Delete sends a file to the Trash or the Recycle Bin. Drag a row into another app as if from your file manager. Click a column header to sort, or use Ctrl+1 to Ctrl+9 ; the + at the end of the header row adds a property as a column. The View menu switches between details and thumbnails. Click the result count in the status bar for statistics on the whole result set: sizes and counts by type, the largest, oldest and newes"
+  "text": "Every row is a real file on your disk. Right-click a row for what you can do with it: Open, Reveal in file manager, and Open with, which lists the apps your system has registered for that kind of file. Copy contents for a text file's body, Copy as file to paste the file itself into a folder, and Copy path list — one per line, quoted, space-separated or shell-escaped. View hits in context shows every match in a document; F3 and Shift+F3 step through them. Open terminal here opens a terminal in the file's folder. Commands of your own, from Settings → General → Custom Commands , with {path} , {dir} , {name} , {stem} and {ext} in their arguments. Each runs as a program with arguments, never as a shell line, and the app asks once before a program runs for the first time. Delete sends a file to the Trash or the Recycle Bin. Drag a row into another app as if from your file manager. Click a column header to sort, or pick an order from View › Sort by ( Ctrl+1 to Ctrl+6 for name, path, size, extension, type and date modified); the + at the end of the header row adds a property as a column. Click the result count in the status bar for statistics on the whole result set: sizes and counts by ty"
  },
  {
   "url": "documentation.html#rename",
@@ -185,6 +185,21 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#faq-rebuild",
   "heading": "How do I start the index again?",
   "text": "Your tags, notes and collections are not part of the index: a rebuild, a verify or a compact keeps every one. Your snapshots, monitors and macros are kept beside it too. Tools → Index maintenance → Force Rebuild Index… clears the index and builds it again from the start. Verify Index… and Compact Index… in the same menu check it and make it smaller."
+ },
+ {
+  "url": "changelog.html#0-30-0-2026-11-23-build-10-views-and-windows-added",
+  "heading": "Added",
+  "text": "[all platforms] Thumbnails. View › Extra Large, Large and Medium Thumbnails ( Ctrl+Shift+1 to Ctrl+Shift+3 ) show the results as tiles: on Windows each picture, video and document drawn small as Explorer draws it, and any other file with its type's icon (on macOS and Linux, its type's icon for now). A tile is selected, opened and right-clicked as a row is. View › Details brings back the rows, and the menu ticks the view you chose. [all platforms] A second search window. File › New Search Window ( Ctrl+N ) opens another window with a search of its own over the same index. Each closes on its own; closing the first closes them all."
+ },
+ {
+  "url": "changelog.html#0-30-0-2026-11-23-build-10-views-and-windows-fixed",
+  "heading": "Fixed",
+  "text": "[all platforms] View › Sort by › Attributes and Length sorted by name; they sort by a file's attributes and by its length."
+ },
+ {
+  "url": "changelog.html#0-30-0-2026-11-23-build-10-views-and-windows-removed",
+  "heading": "Removed",
+  "text": "[all platforms] Seven Sort by choices that sorted by name: Date Created, Date Accessed, Date Recently Changed, Run Count, Date Run, File List Filename and LUFS. The index keeps none of these to sort by; they come back when it does. lufs: still finds loud and quiet audio. v0.29.0 2026-11-23 Build 9 · Power query"
  },
  {
   "url": "changelog.html#0-29-0-2026-11-23-build-9-power-query-added",

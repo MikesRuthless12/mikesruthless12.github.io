@@ -55,9 +55,25 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-29-0-2026-11-23-build-9-power-query">v0.29.0</a></li><li><a href="#0-28-0-2026-11-23-build-8-tags-notes-and-collections">v0.28.0</a></li><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
+<ol><li><a href="#0-30-0-2026-11-23-build-10-views-and-windows">v0.30.0</a></li><li><a href="#0-29-0-2026-11-23-build-9-power-query">v0.29.0</a></li><li><a href="#0-28-0-2026-11-23-build-8-tags-notes-and-collections">v0.28.0</a></li><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-29-0-2026-11-23-build-9-power-query">
+<div class="releases"><article class="release release--latest" id="0-30-0-2026-11-23-build-10-views-and-windows">
+<h2 class="release__head" data-i18n-html="changelog.eb15a04b84ef"><span class="release__meta"><span class="release__ver">v0.30.0</span><time class="release__date" datetime="2026-11-23">2026-11-23</time></span><span class="release__title">Build 10 · Views and windows</span></h2>
+<h3 id="0-30-0-2026-11-23-build-10-views-and-windows-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.d8b26acefbad"><strong>[all platforms]</strong> <strong>Thumbnails.</strong> <strong>View › Extra Large, Large and Medium Thumbnails</strong> (<code>Ctrl+Shift+1</code> to <code>Ctrl+Shift+3</code>) show the results as tiles: on Windows each picture, video and document drawn small as Explorer draws it, and any other file with its type's icon (on macOS and Linux, its type's icon for now). A tile is selected, opened and right-clicked as a row is. <strong>View › Details</strong> brings back the rows, and the menu ticks the view you chose.</li>
+<li data-i18n-html="changelog.d2fa614d92e7"><strong>[all platforms]</strong> <strong>A second search window.</strong> <strong>File › New Search Window</strong> (<code>Ctrl+N</code>) opens another window with a search of its own over the same index. Each closes on its own; closing the first closes them all.</li>
+</ul>
+<h3 id="0-30-0-2026-11-23-build-10-views-and-windows-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.307f38530453"><strong>[all platforms]</strong> <strong>View › Sort by › Attributes</strong> and <strong>Length</strong> sorted by name; they sort by a file's attributes and by its length.</li>
+</ul>
+<h3 id="0-30-0-2026-11-23-build-10-views-and-windows-removed" data-i18n-html="changelog.4118fb4fed0e">Removed</h3>
+<ul>
+<li data-i18n-html="changelog.85b0617df628"><strong>[all platforms]</strong> <strong>Seven Sort by choices that sorted by name:</strong> Date Created, Date Accessed, Date Recently Changed, Run Count, Date Run, File List Filename and LUFS. The index keeps none of these to sort by; they come back when it does. <code>lufs:</code> still finds loud and quiet audio.</li>
+</ul>
+</article>
+<article class="release" id="0-29-0-2026-11-23-build-9-power-query">
 <h2 class="release__head" data-i18n-html="changelog.f22a7cc4e090"><span class="release__meta"><span class="release__ver">v0.29.0</span><time class="release__date" datetime="2026-11-23">2026-11-23</time></span><span class="release__title">Build 9 · Power query</span></h2>
 <h3 id="0-29-0-2026-11-23-build-9-power-query-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
 <ul>
@@ -883,7 +899,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.29.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.30.0</span>
         </div>
       </div>
     </footer>
