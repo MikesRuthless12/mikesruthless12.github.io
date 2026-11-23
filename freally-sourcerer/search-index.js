@@ -104,7 +104,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#bookmarks",
   "heading": "Bookmarks and the sidebar",
-  "text": "Ctrl+D saves the current search as a bookmark, and Ctrl+Shift+B organizes them. Type : followed by a bookmark's name to run it. View → Sidebar shows a column with your bookmarks, the quick filters, your drives and your recent searches. Drag bookmarks to reorder them; click a drive to search only that drive. Recent searches are not recorded while Privacy Mode is on or search history is switched off. Organize Bookmarks keeps the searches you saved."
+  "text": "Ctrl+D saves the current search as a bookmark, and Ctrl+Shift+B organizes them. Type : followed by a bookmark's name to run it. View → Sidebar shows a column with your bookmarks, the quick filters, your drives and your recent searches. Drag bookmarks to reorder them; click a drive to search only that drive. Recent searches are not recorded while Privacy Mode is on or search history is switched off. Right-click a result for Tags… , Note… and Add to collection . A collection is a named set of files, where a bookmark is a saved search: the sidebar's Collections opens each one, renames it or deletes it (its files stay where they are). Tags, notes and collections are kept beside the index, never in your files, and follow a file when it is renamed; tag: , note: and collection: find them. Organize Bookmarks keeps the searches you saved."
  },
  {
   "url": "documentation.html#results",
@@ -179,7 +179,17 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#faq-rebuild",
   "heading": "How do I start the index again?",
-  "text": "Tools → Index maintenance → Force Rebuild Index… clears the index and builds it again from the start. Verify Index… and Compact Index… in the same menu check it and make it smaller."
+  "text": "Your tags, notes and collections are not part of the index: a rebuild, a verify or a compact keeps every one. Tools → Index maintenance → Force Rebuild Index… clears the index and builds it again from the start. Verify Index… and Compact Index… in the same menu check it and make it smaller."
+ },
+ {
+  "url": "changelog.html#0-28-0-2026-11-23-build-8-tags-notes-and-collections-added",
+  "heading": "Added",
+  "text": "[all platforms] Tags. Right-click a result and choose Tags… to give it tags, or give them to every selected file at once, separated by commas. tag:work finds them, with any other part of a search. A tag is kept beside the index, never written into the file, and follows the file when it is renamed. [all platforms] Notes. Note… keeps a note on a file, up to 4,096 characters; note: finds a word in it. [all platforms] Collections. Add to collection gathers files into a named set, listed in the sidebar under Collections : open one to see its files, rename it, take a file out from the result menu, or delete it (its files stay where they are). collection:\"Taxes 2026\" finds them too. A bookmark is still a saved search. [all platforms] Kept. Tags, notes and collections are kept through Force Rebuild Index, Verify, Compact, a restart and a settings export and import, and a portable copy keeps them in its own Data folder. An indexer shared by every user of a computer keeps none, and says so."
+ },
+ {
+  "url": "changelog.html#0-28-0-2026-11-23-build-8-tags-notes-and-collections-fixed",
+  "heading": "Fixed",
+  "text": "[all platforms] Exports and imports in Options. Export settings , Import settings , Export bookmarks bundle and Import bookmarks bundle (Options › Backup, Export, Reset) and File List Editor… (Options › File Lists) said they were not allowed and did nothing. Each now saves or opens the file you pick. v0.27.0 2026-11-22 Build 7 · Duplicates and disk hygiene"
  },
  {
   "url": "changelog.html#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene-added",

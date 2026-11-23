@@ -1,5 +1,6 @@
 {
   "docs.bookmarks.add": "<kbd>Ctrl+D</kbd> saves the current search as a bookmark, and <kbd>Ctrl+Shift+B</kbd> organizes them.",
+  "docs.bookmarks.annotations": "Right-click a result for <strong>Tags…</strong>, <strong>Note…</strong> and <strong>Add to collection</strong>. A collection is a named set of files, where a bookmark is a saved search: the sidebar's <strong>Collections</strong> opens each one, renames it or deletes it (its files stay where they are). Tags, notes and collections are kept beside the index, never in your files, and follow a file when it is renamed; <code>tag:</code>, <code>note:</code> and <code>collection:</code> find them.",
   "docs.bookmarks.demo": "Organize Bookmarks keeps the searches you saved.",
   "docs.bookmarks.history": "Recent searches are not recorded while Privacy Mode is on or search history is switched off.",
   "docs.bookmarks.recall": "Type <code>:</code> followed by a bookmark's name to run it.",
@@ -20,6 +21,7 @@
   "docs.faq.missing.roots": "Its folder may not be indexed: check the folders, drives and exclusions under <strong>Settings → Indexes</strong>.",
   "docs.faq.missing.title": "Why is a file missing from the results?",
   "docs.faq.rebuild.body": "<strong>Tools → Index maintenance → Force Rebuild Index…</strong> clears the index and builds it again from the start. <strong>Verify Index…</strong> and <strong>Compact Index…</strong> in the same menu check it and make it smaller.",
+  "docs.faq.rebuild.kept": "Your tags, notes and collections are not part of the index: a rebuild, a verify or a compact keeps every one.",
   "docs.faq.rebuild.title": "How do I start the index again?",
   "docs.faq.smaller.body": "Exclude folders full of files you never look for, such as <code>node_modules</code> and <code>.git</code>, under <strong>Settings → Indexes → Exclude</strong>.",
   "docs.faq.smaller.title": "How do I make the index smaller?",
@@ -112,6 +114,7 @@
   "docs.syntax.ignore": "<strong>Ignore Punctuation</strong> lets <code>foobar</code> find <code>foo-bar</code>, and <strong>Ignore Whitespace</strong> lets <code>myreport</code> find <code>my report</code>. Both are off by default.",
   "docs.syntax.intro": "Sourcerer understands voidtools' Everything syntax, and adds modifiers for its other lenses.",
   "docs.syntax.mod.anchors": "The name starts with, or ends with, the text",
+  "docs.syntax.mod.annotations": "What you gave a file: one of its tags, a word in its note, or a collection it is in (quoted when the name has spaces)",
   "docs.syntax.mod.attrib": "File attributes, such as hidden",
   "docs.syntax.mod.children": "Folders by how many items they hold directly; <code>descendant-count:</code> at any depth",
   "docs.syntax.mod.codec": "Audio codec, and sample rate in Hz",

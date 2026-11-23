@@ -55,9 +55,23 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
+<ol><li><a href="#0-28-0-2026-11-23-build-8-tags-notes-and-collections">v0.28.0</a></li><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">
+<div class="releases"><article class="release release--latest" id="0-28-0-2026-11-23-build-8-tags-notes-and-collections">
+<h2 class="release__head" data-i18n-html="changelog.422fab7e30cd"><span class="release__meta"><span class="release__ver">v0.28.0</span><time class="release__date" datetime="2026-11-23">2026-11-23</time></span><span class="release__title">Build 8 · Tags, notes and collections</span></h2>
+<h3 id="0-28-0-2026-11-23-build-8-tags-notes-and-collections-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.ae6ff194f2d3"><strong>[all platforms]</strong> <strong>Tags.</strong> Right-click a result and choose <strong>Tags…</strong> to give it tags, or give them to every selected file at once, separated by commas. <code>tag:work</code> finds them, with any other part of a search. A tag is kept beside the index, never written into the file, and follows the file when it is renamed.</li>
+<li data-i18n-html="changelog.1d7b9992bd83"><strong>[all platforms]</strong> <strong>Notes.</strong> <strong>Note…</strong> keeps a note on a file, up to 4,096 characters; <code>note:</code> finds a word in it.</li>
+<li data-i18n-html="changelog.29ebf24b6cc7"><strong>[all platforms]</strong> <strong>Collections.</strong> <strong>Add to collection</strong> gathers files into a named set, listed in the sidebar under <strong>Collections</strong>: open one to see its files, rename it, take a file out from the result menu, or delete it (its files stay where they are). <code>collection:&quot;Taxes 2026&quot;</code> finds them too. A bookmark is still a saved search.</li>
+<li data-i18n-html="changelog.b7335f130817"><strong>[all platforms]</strong> <strong>Kept.</strong> Tags, notes and collections are kept through Force Rebuild Index, Verify, Compact, a restart and a settings export and import, and a portable copy keeps them in its own <code>Data</code> folder. An indexer shared by every user of a computer keeps none, and says so.</li>
+</ul>
+<h3 id="0-28-0-2026-11-23-build-8-tags-notes-and-collections-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.a896513faf7c"><strong>[all platforms]</strong> <strong>Exports and imports in Options.</strong> <strong>Export settings</strong>, <strong>Import settings</strong>, <strong>Export bookmarks bundle</strong> and <strong>Import bookmarks bundle</strong> (Options › Backup, Export, Reset) and <strong>File List Editor…</strong> (Options › File Lists) said they were not allowed and did nothing. Each now saves or opens the file you pick.</li>
+</ul>
+</article>
+<article class="release" id="0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">
 <h2 class="release__head" data-i18n-html="changelog.0565b9ed6245"><span class="release__meta"><span class="release__ver">v0.27.0</span><time class="release__date" datetime="2026-11-22">2026-11-22</time></span><span class="release__title">Build 7 · Duplicates and disk hygiene</span></h2>
 <h3 id="0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
 <ul>
@@ -859,7 +873,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.27.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.28.0</span>
         </div>
       </div>
     </footer>

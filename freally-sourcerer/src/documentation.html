@@ -92,6 +92,7 @@
           <tr><td><code>empty:</code></td><td data-i18n-html="docs.syntax.mod.empty">Empty files and folders; <code>empty:roots</code> finds the top of each chain of folders that holds no files</td><td><code>empty:folder</code></td></tr>
           <tr><td><code>child-count:</code></td><td data-i18n-html="docs.syntax.mod.children">Folders by how many items they hold directly; <code>descendant-count:</code> at any depth</td><td><code>child-count:&gt;500</code></td></tr>
           <tr><td><code>volume:</code></td><td data-i18n="docs.syntax.mod.volume">Files on one drive, by its name, even when it is unplugged</td><td><code>volume:orange</code></td></tr>
+          <tr><td><code>tag:</code> <code>note:</code> <code>collection:</code></td><td data-i18n-html="docs.syntax.mod.annotations">What you gave a file: one of its tags, a word in its note, or a collection it is in (quoted when the name has spaces)</td><td><code>tag:work ext:pdf</code></td></tr>
         </tbody>
       </table>
     </div>
@@ -126,6 +127,7 @@
       <li data-i18n-html="docs.bookmarks.recall">Type <code>:</code> followed by a bookmark's name to run it.</li>
       <li data-i18n-html="docs.bookmarks.sidebar"><strong>View → Sidebar</strong> shows a column with your bookmarks, the quick filters, your drives and your recent searches. Drag bookmarks to reorder them; click a drive to search only that drive.</li>
       <li data-i18n="docs.bookmarks.history">Recent searches are not recorded while Privacy Mode is on or search history is switched off.</li>
+      <li data-i18n-html="docs.bookmarks.annotations">Right-click a result for <strong>Tags…</strong>, <strong>Note…</strong> and <strong>Add to collection</strong>. A collection is a named set of files, where a bookmark is a saved search: the sidebar's <strong>Collections</strong> opens each one, renames it or deletes it (its files stay where they are). Tags, notes and collections are kept beside the index, never in your files, and follow a file when it is renamed; <code>tag:</code>, <code>note:</code> and <code>collection:</code> find them.</li>
     </ul>
     <figure class="demo">
       <video src="demos/bookmarks.webm" poster="demos/bookmarks.jpg" width="1650" height="1080" autoplay muted loop playsinline preload="metadata"></video>
@@ -272,6 +274,7 @@ freally completions bash</code></pre>
     <h3 id="faq-smaller" data-i18n="docs.faq.smaller.title">How do I make the index smaller?</h3>
     <p data-i18n-html="docs.faq.smaller.body">Exclude folders full of files you never look for, such as <code>node_modules</code> and <code>.git</code>, under <strong>Settings → Indexes → Exclude</strong>.</p>
     <h3 id="faq-rebuild" data-i18n="docs.faq.rebuild.title">How do I start the index again?</h3>
+    <p data-i18n="docs.faq.rebuild.kept">Your tags, notes and collections are not part of the index: a rebuild, a verify or a compact keeps every one.</p>
     <p data-i18n-html="docs.faq.rebuild.body"><strong>Tools → Index maintenance → Force Rebuild Index…</strong> clears the index and builds it again from the start. <strong>Verify Index…</strong> and <strong>Compact Index…</strong> in the same menu check it and make it smaller.</p>
   </section>
 </kit-manual>
