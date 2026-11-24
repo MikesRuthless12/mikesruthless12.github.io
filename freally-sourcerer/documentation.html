@@ -305,12 +305,15 @@
 freally search --json --fields path,size "*.rs"
 freally search -0 "ext:log" | xargs -0 grep ERROR
 freally search --strict-everything "report ext:pdf"
+freally search --bookmark Reports
+code "$(freally tui)"
 freally index status
 freally completions bash</code></pre>
     <ul>
       <li data-i18n-html="docs.cli.formats"><code>--json</code>, <code>--ndjson</code> and <code>--csv</code> print results for scripts, <code>-0</code> prints NUL-separated paths for <code>xargs -0</code>, and <code>--fields</code> chooses the columns. The exit code says whether anything matched.</li>
       <li data-i18n-html="docs.cli.strict"><code>--strict-everything</code> refuses any query that uses something Everything does not have, and names it — the way to check that a query works in both.</li>
-      <li data-i18n-html="docs.cli.manage"><code>freally index</code> shows the indexer's status and can pause, resume, verify, compact or rebuild it; <code>freally bookmark</code> saves, lists and deletes bookmarks.</li>
+      <li data-i18n-html="docs.cli.manage"><code>freally index</code> shows the indexer's status and can pause, resume, verify, compact or rebuild it; <code>freally bookmark list</code> lists the bookmarks you keep in the app, and <code>freally search --bookmark</code> runs one by its name; they are saved and deleted in the app.</li>
+      <li data-i18n-html="docs.cli.tui"><code>freally tui</code> searches in the terminal: the results by lens as you type, moved through with the arrow keys and <kbd>Tab</kbd>. <kbd>Enter</kbd> prints the chosen file's path and ends, so <code>code "$(freally tui)"</code> opens it in your editor; <kbd>Esc</kbd> ends printing nothing. It speaks the app's language, or the one <code>--lang</code> names.</li>
       <li data-i18n-html="docs.cli.completions"><code>freally completions</code> prints completions for bash, zsh, fish and PowerShell, including modifier names and your bookmarks.</li>
     </ul>
   </section>
@@ -361,7 +364,7 @@ freally completions bash</code></pre>
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.31.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.32.0</span>
         </div>
       </div>
     </footer>

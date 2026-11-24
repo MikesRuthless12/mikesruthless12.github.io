@@ -154,7 +154,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#cli",
   "heading": "The command line",
-  "text": "The freally command searches the same index as the app, through the same indexer, in the same query language. freally search \"report ext:pdf size:>1mb\" freally search --json --fields path,size \"*.rs\" freally search -0 \"ext:log\" | xargs -0 grep ERROR freally search --strict-everything \"report ext:pdf\" freally index status freally completions bash --json , --ndjson and --csv print results for scripts, -0 prints NUL-separated paths for xargs -0 , and --fields chooses the columns. The exit code says whether anything matched. --strict-everything refuses any query that uses something Everything does not have, and names it — the way to check that a query works in both. freally index shows the indexer's status and can pause, resume, verify, compact or rebuild it; freally bookmark saves, lists and deletes bookmarks. freally completions prints completions for bash, zsh, fish and PowerShell, including modifier names and your bookmarks."
+  "text": "The freally command searches the same index as the app, through the same indexer, in the same query language. freally search \"report ext:pdf size:>1mb\" freally search --json --fields path,size \"*.rs\" freally search -0 \"ext:log\" | xargs -0 grep ERROR freally search --strict-everything \"report ext:pdf\" freally search --bookmark Reports code \"$(freally tui)\" freally index status freally completions bash --json , --ndjson and --csv print results for scripts, -0 prints NUL-separated paths for xargs -0 , and --fields chooses the columns. The exit code says whether anything matched. --strict-everything refuses any query that uses something Everything does not have, and names it — the way to check that a query works in both. freally index shows the indexer's status and can pause, resume, verify, compact or rebuild it; freally bookmark list lists the bookmarks you keep in the app, and freally search --bookmark runs one by its name; they are saved and deleted in the app. freally tui searches in the terminal: the results by lens as you type, moved through with the arrow keys and Tab . Enter prints the chosen file's path and ends, so code \"$(freally tui)\" opens it in your editor; Esc ends prin"
  },
  {
   "url": "documentation.html#privacy",
@@ -185,6 +185,16 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#faq-rebuild",
   "heading": "How do I start the index again?",
   "text": "Your tags, notes and collections are not part of the index: a rebuild, a verify or a compact keeps every one. Your snapshots, monitors and macros are kept beside it too. Tools → Index maintenance → Force Rebuild Index… clears the index and builds it again from the start. Verify Index… and Compact Index… in the same menu check it and make it smaller."
+ },
+ {
+  "url": "changelog.html#0-32-0-2026-11-23-build-12-cli-tui-and-automation-added",
+  "heading": "Added",
+  "text": "[all platforms] The terminal interface. freally tui searches in a terminal: the results by lens as you type, moved through with the arrow keys and Tab. Enter prints the chosen file's path, so code \"$(freally tui)\" opens it; Escape prints nothing. It speaks the app's language, or the one --lang names. [all platforms] Bookmarks from the command line. freally bookmark list lists the bookmarks you keep in the app, and freally search --bookmark <name> runs one."
+ },
+ {
+  "url": "changelog.html#0-32-0-2026-11-23-build-12-cli-tui-and-automation-fixed",
+  "heading": "Fixed",
+  "text": "[all platforms] | means OR , as the documentation always said: (budget | forecast) !draft read the bar as a word and found nothing. [all platforms] freally bookmark did nothing. save , list and delete printed a note and ended as if they had worked. list works now; save and delete say that bookmarks are saved and deleted in the app. v0.31.0 2026-11-23 Build 11 · Launcher and OS integration"
  },
  {
   "url": "changelog.html#0-31-0-2026-11-23-build-11-launcher-and-os-integration-added",

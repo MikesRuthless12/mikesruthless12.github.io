@@ -55,9 +55,22 @@
 <div class="wrap changelog">
 <nav class="changelog__rail" data-spy aria-label="Versions" data-i18n-attr="aria-label:kit.changelog.versions">
 <span class="label" data-i18n="kit.changelog.versions">Versions</span>
-<ol><li><a href="#0-31-0-2026-11-23-build-11-launcher-and-os-integration">v0.31.0</a></li><li><a href="#0-30-0-2026-11-23-build-10-views-and-windows">v0.30.0</a></li><li><a href="#0-29-0-2026-11-23-build-9-power-query">v0.29.0</a></li><li><a href="#0-28-0-2026-11-23-build-8-tags-notes-and-collections">v0.28.0</a></li><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
+<ol><li><a href="#0-32-0-2026-11-23-build-12-cli-tui-and-automation">v0.32.0</a></li><li><a href="#0-31-0-2026-11-23-build-11-launcher-and-os-integration">v0.31.0</a></li><li><a href="#0-30-0-2026-11-23-build-10-views-and-windows">v0.30.0</a></li><li><a href="#0-29-0-2026-11-23-build-9-power-query">v0.29.0</a></li><li><a href="#0-28-0-2026-11-23-build-8-tags-notes-and-collections">v0.28.0</a></li><li><a href="#0-27-0-2026-11-22-build-7-duplicates-and-disk-hygiene">v0.27.0</a></li><li><a href="#0-26-0-2026-11-18-builds-5-5-9-and-6-documents-and-programs-light-and-dark-music">v0.26.0</a></li><li><a href="#0-24-0-2026-11-18-build-4-property-lens-images-and-video">v0.24.0</a></li><li><a href="#0-23-2-2026-08-19-updater-key-rotation-and-ci-repair">v0.23.2</a></li><li><a href="#0-23-1-2026-08-19-build-4-groundwork-the-build-3-handoff-closed-out">v0.23.1</a></li><li><a href="#0-23-0-2026-08-03-build-3-must-have-stable-gate-slice-3-of-3">v0.23.0</a></li><li><a href="#0-22-0-2026-08-02-build-2-must-have-stable-gate-slice-2-of-3">v0.22.0</a></li><li><a href="#0-21-0-2026-07-31-build-1-must-have-stable-gate-slice-1-of-3">v0.21.0</a></li><li><a href="#0-20-1-2026-07-10">v0.20.1</a></li><li><a href="#0-20-0-2026-07-01">v0.20.0</a></li><li><a href="#0-19-84-2026-06-21-phases-0-12-the-first-public-build">v0.19.84</a></li></ol>
 </nav>
-<div class="releases"><article class="release release--latest" id="0-31-0-2026-11-23-build-11-launcher-and-os-integration">
+<div class="releases"><article class="release release--latest" id="0-32-0-2026-11-23-build-12-cli-tui-and-automation">
+<h2 class="release__head" data-i18n-html="changelog.32482887a871"><span class="release__meta"><span class="release__ver">v0.32.0</span><time class="release__date" datetime="2026-11-23">2026-11-23</time></span><span class="release__title">Build 12 · CLI, TUI and automation</span></h2>
+<h3 id="0-32-0-2026-11-23-build-12-cli-tui-and-automation-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
+<ul>
+<li data-i18n-html="changelog.97e576defa25"><strong>[all platforms]</strong> <strong>The terminal interface.</strong> <code>freally tui</code> searches in a terminal: the results by lens as you type, moved through with the arrow keys and Tab. Enter prints the chosen file's path, so <code>code &quot;$(freally tui)&quot;</code> opens it; Escape prints nothing. It speaks the app's language, or the one <code>--lang</code> names.</li>
+<li data-i18n-html="changelog.7a3586e76507"><strong>[all platforms]</strong> <strong>Bookmarks from the command line.</strong> <code>freally bookmark list</code> lists the bookmarks you keep in the app, and <code>freally search --bookmark &lt;name&gt;</code> runs one.</li>
+</ul>
+<h3 id="0-32-0-2026-11-23-build-12-cli-tui-and-automation-fixed" data-i18n-html="changelog.1246fc93bca0">Fixed</h3>
+<ul>
+<li data-i18n-html="changelog.78e7ee660166"><strong>[all platforms]</strong> <strong><code>|</code> means OR</strong>, as the documentation always said: <code>(budget | forecast) !draft</code> read the bar as a word and found nothing.</li>
+<li data-i18n-html="changelog.224ee763f3e7"><strong>[all platforms]</strong> <strong><code>freally bookmark</code> did nothing.</strong> <code>save</code>, <code>list</code> and <code>delete</code> printed a note and ended as if they had worked. <code>list</code> works now; <code>save</code> and <code>delete</code> say that bookmarks are saved and deleted in the app.</li>
+</ul>
+</article>
+<article class="release" id="0-31-0-2026-11-23-build-11-launcher-and-os-integration">
 <h2 class="release__head" data-i18n-html="changelog.38bfbeef7587"><span class="release__meta"><span class="release__ver">v0.31.0</span><time class="release__date" datetime="2026-11-23">2026-11-23</time></span><span class="release__title">Build 11 · Launcher and OS integration</span></h2>
 <h3 id="0-31-0-2026-11-23-build-11-launcher-and-os-integration-added" data-i18n-html="changelog.6b02e0d363a4">Added</h3>
 <ul>
@@ -907,7 +920,7 @@
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.31.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.32.0</span>
         </div>
       </div>
     </footer>

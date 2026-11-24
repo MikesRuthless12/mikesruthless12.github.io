@@ -70,8 +70,8 @@
     {
       "version": "v0.32.0",
       "phase": "Build 12 — CLI, TUI and automation",
-      "state": "planned",
-      "summary": "The command line, a terminal interface, and automation."
+      "state": "done",
+      "summary": "A search in the terminal, and the command line agreeing with the app."
     },
     {
       "version": "v0.33.0",
