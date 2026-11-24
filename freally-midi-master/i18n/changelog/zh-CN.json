@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[未发布]",
+  "changelog.3a86e4724181": "变更 - 静止的窗口与开场动画，2026-11-24",
+  "changelog.d88e44778fdd": "没有任何变化时，窗口什么也不绘制。顶部的名称静止不动、正对着你；在房间里，其他制作人的光标只在移动时才绘制，所以闲置的窗口不再占用你电脑的处理器和显卡。",
+  "changelog.cac4c2e3eaa5": "开场动画不接收鼠标：播放期间，它上方的指针是下方内容的指针，每一次点击都会穿过它，到达后面的应用或桌面。",
+  "changelog.8d7692caa2e3": "跳过开场动画会和你的其他偏好设置一起保存，开启后应用会立即打开，无需等待开场动画。",
   "changelog.d59733083629": "新增 - 12 位新艺人，2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder、Lewis Capaldi、Sara Bareilles、The 1975、NF、Mike Posner、Lady Gaga、Lil Nas X、Robin Thicke、Olivia Dean、Muse 和 Tones And I 加入风格清单。每位都带着自己唱片之间来回切换的氛围：Lady Gaga 的 electropop 和她的 house 单曲、Lil Nas X 的 country trap 和他的 pop、Muse 的 riff rock 和他们的抒情曲、Lewis Capaldi 的钢琴抒情曲和他的乐队歌曲。搜索既能按名字找到每一位，也能按歌迷常用的叫法找到。",
   "changelog.4c1f0f4f684f": "变更 - P-Lo 和 The Invasion，2026-10-28",

@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[Yayımlanmadı]",
+  "changelog.3a86e4724181": "Değişti - dinlenen bir pencere ve giriş, 2026-11-24",
+  "changelog.d88e44778fdd": "Hiçbir şey değişmedikçe pencere hiçbir şey çizmez. Üstteki ad sana dönük olarak sabit durur, bir odada başka bir yapımcının imleci yalnızca hareket ederken çizilir; böylece boşta duran bir pencere artık bilgisayarının işlemcisini ve grafiğini meşgul etmez.",
+  "changelog.cac4c2e3eaa5": "Giriş fareyi almaz: oynarken üzerindeki işaretçi altındakine aittir ve her tıklama arkasındaki uygulamaya ya da masaüstüne geçer.",
+  "changelog.8d7692caa2e3": "Girişi atla diğer tercihlerinle birlikte saklanır; açık olduğunda uygulama girişi beklemeden hemen açılır.",
   "changelog.d59733083629": "Eklendi - on iki yeni sanatçı, 2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse ve Tones And I tarz listesine katılıyor. Her biri, kayıtlarının gidip geldiği ruh halleriyle birlikte geliyor: Lady Gaga’nın electropop’u ve house single’ları, Lil Nas X’in country trap’i ve pop’u, Muse’un riff rock’ı ve baladları, Lewis Capaldi’nin piyano baladları ve grupla yaptığı şarkılar. Arama her birini adıyla ya da hayranların kullandığı adlarla bulur.",
   "changelog.4c1f0f4f684f": "Değişti - P-Lo ve The Invasion, 2026-10-28",

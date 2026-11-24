@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[Niewydana]",
+  "changelog.3a86e4724181": "Zmienione - okno w spoczynku i intro, 2026-11-24",
+  "changelog.d88e44778fdd": "Okno nic nie rysuje, dopóki nic się nie zmienia. Nazwa u góry stoi nieruchomo, zwrócona do ciebie, a w pokoju kursor innego producenta jest rysowany tylko wtedy, gdy się porusza, więc bezczynne okno nie zajmuje już procesora ani grafiki twojego komputera.",
+  "changelog.cac4c2e3eaa5": "Intro nie przejmuje myszy: gdy gra, wskaźnik nad nim należy do tego, co jest pod spodem, a każde kliknięcie trafia do aplikacji albo pulpitu za nim.",
+  "changelog.8d7692caa2e3": "Pomiń intro jest zapisywane razem z innymi twoimi ustawieniami, więc gdy jest włączone, aplikacja otwiera się od razu, bez czekania na intro.",
   "changelog.d59733083629": "Dodano - dwunastu nowych artystów, 2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse i Tones And I dołączają do listy stylów. Każdy przychodzi z nastrojami, między którymi poruszają się jego płyty: Lady Gaga — electropop i single house, Lil Nas X — country trap i pop, Muse — riff rock i ballady, Lewis Capaldi — ballady fortepianowe i piosenki z zespołem. Wyszukiwanie znajduje każdego po nazwie albo po nazwach, których używają fani.",
   "changelog.4c1f0f4f684f": "Zmieniono - P-Lo i The Invasion, 2026-10-28",

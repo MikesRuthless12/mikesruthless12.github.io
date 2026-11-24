@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[Belum dirilis]",
+  "changelog.3a86e4724181": "Diubah - jendela yang diam dan intro, 2026-11-24",
+  "changelog.d88e44778fdd": "Jendela tidak menggambar apa pun selama tidak ada yang berubah. Nama di bagian atas diam menghadapmu, dan di ruang kursor produser lain hanya digambar saat bergerak, jadi jendela yang menganggur tidak lagi membuat prosesor dan grafis komputermu sibuk.",
+  "changelog.cac4c2e3eaa5": "Intro tidak mengambil mouse: selama diputar, penunjuk di atasnya adalah milik apa pun yang ada di bawahnya, dan setiap klik diteruskan ke aplikasi atau desktop di belakangnya.",
+  "changelog.8d7692caa2e3": "Lewati intro disimpan bersama preferensimu yang lain, jadi begitu dinyalakan aplikasi langsung terbuka tanpa menunggu intro.",
   "changelog.d59733083629": "Ditambahkan - dua belas artis baru, 2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse, dan Tones And I bergabung ke daftar gaya. Masing-masing datang dengan suasana yang dijelajahi rekaman-rekamannya: electropop Lady Gaga dan singel house-nya, country trap Lil Nas X dan pop-nya, riff rock Muse dan balada mereka, balada piano Lewis Capaldi dan lagu-lagu bersama band-nya. Pencarian menemukan masing-masing lewat namanya atau lewat nama yang dipakai para penggemar.",
   "changelog.4c1f0f4f684f": "Diubah - P-Lo dan The Invasion, 2026-10-28",

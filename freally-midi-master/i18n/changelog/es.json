@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[Sin publicar]",
+  "changelog.3a86e4724181": "Cambiado - una ventana en reposo y la introducción, 2026-11-24",
+  "changelog.d88e44778fdd": "La ventana no dibuja nada mientras nada cambia. El nombre de arriba se queda quieto, de frente a ti, y en una sala el cursor de otro productor solo se dibuja mientras se mueve, así que una ventana inactiva ya no mantiene ocupados el procesador ni los gráficos de tu ordenador.",
+  "changelog.cac4c2e3eaa5": "La introducción no toma el ratón: mientras suena, el puntero sobre ella es el de lo que hay debajo, y cada clic pasa a la app o al escritorio que hay detrás.",
+  "changelog.8d7692caa2e3": "Omitir la introducción se guarda con tus demás preferencias, así que una vez activado la app se abre al instante, sin esperar a la introducción.",
   "changelog.d59733083629": "Añadido - doce artistas nuevos, 2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse y Tones And I se suman al catálogo. Cada uno trae los estados de ánimo entre los que se mueven sus discos: el electropop de Lady Gaga y sus sencillos de house, el country trap de Lil Nas X y su pop, el riff rock de Muse y sus baladas, las baladas de piano de Lewis Capaldi y sus canciones con banda. La búsqueda encuentra a cada uno por su nombre o por los nombres que usan sus fans.",
   "changelog.4c1f0f4f684f": "Cambiado - P-Lo y The Invasion, 2026-10-28",

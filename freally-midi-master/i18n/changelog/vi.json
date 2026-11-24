@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[Chưa phát hành]",
+  "changelog.3a86e4724181": "Thay đổi - cửa sổ khi nghỉ và phần mở đầu, 2026-11-24",
+  "changelog.d88e44778fdd": "Cửa sổ không vẽ gì khi không có gì thay đổi. Tên ở trên cùng đứng yên, hướng về phía bạn, và trong phòng con trỏ của nhà sản xuất khác chỉ được vẽ khi nó di chuyển, nên một cửa sổ đang rảnh không còn khiến bộ xử lý và đồ họa của máy bạn bận rộn.",
+  "changelog.cac4c2e3eaa5": "Phần mở đầu không nhận chuột: trong lúc phát, con trỏ phía trên là của thứ nằm bên dưới, và mọi cú nhấp đều đi xuyên qua tới ứng dụng hoặc màn hình nền phía sau.",
+  "changelog.8d7692caa2e3": "Bỏ qua phần mở đầu được lưu cùng các tùy chọn khác của bạn, nên khi đã bật, ứng dụng mở ngay mà không phải chờ phần mở đầu.",
   "changelog.d59733083629": "Thêm - mười hai nghệ sĩ mới, 2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse và Tones And I gia nhập danh mục. Mỗi nghệ sĩ đến cùng những sắc thái mà đĩa nhạc của họ chuyển qua lại: electropop của Lady Gaga và các đĩa đơn house của cô, country trap của Lil Nas X và nhạc pop của anh, riff rock của Muse và các bản ballad của họ, các bản ballad piano của Lewis Capaldi và các bài hát cùng ban nhạc của anh. Tìm kiếm tìm ra từng nghệ sĩ theo tên hoặc theo những cái tên người hâm mộ hay dùng.",
   "changelog.4c1f0f4f684f": "Thay đổi - P-Lo và The Invasion, 2026-10-28",

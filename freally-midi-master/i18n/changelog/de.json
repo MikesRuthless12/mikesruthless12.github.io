@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[Unveröffentlicht]",
+  "changelog.3a86e4724181": "Geändert - ein ruhendes Fenster und das Intro, 2026-11-24",
+  "changelog.d88e44778fdd": "Das Fenster zeichnet nichts, solange sich nichts ändert. Der Name oben steht still und schaut dich an, und in einem Raum wird der Cursor eines anderen Produzenten nur gezeichnet, während er sich bewegt. Ein ruhendes Fenster hält Prozessor und Grafik deines Computers nicht mehr beschäftigt.",
+  "changelog.cac4c2e3eaa5": "Das Intro nimmt keine Maus: Solange es läuft, ist der Zeiger darüber der des Fensters darunter, und jeder Klick geht durch zur App oder zum Desktop dahinter.",
+  "changelog.8d7692caa2e3": "„Intro überspringen“ wird bei deinen anderen Einstellungen gespeichert. Ist es an, öffnet die App sofort, ohne auf das Intro zu warten.",
   "changelog.d59733083629": "Hinzugefügt - zwölf neue Künstler, 2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse und Tones And I kommen in die Stilliste. Jeder bringt die Stimmungen mit, zwischen denen sich seine Platten bewegen: der Electropop von Lady Gaga und ihre House-Singles, der Country-Trap von Lil Nas X und sein Pop, der Riff-Rock von Muse und ihre Balladen, die Klavierballaden von Lewis Capaldi und seine Bandsongs. Die Suche findet jeden über den Namen oder über die Namen, die Fans benutzen.",
   "changelog.4c1f0f4f684f": "Geändert - P-Lo und The Invasion, 2026-10-28",

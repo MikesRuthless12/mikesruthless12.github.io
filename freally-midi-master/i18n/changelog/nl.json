@@ -1,5 +1,9 @@
 {
   "changelog.69c6a54708de": "[Niet uitgebracht]",
+  "changelog.3a86e4724181": "Gewijzigd - een venster in rust en de intro, 2026-11-24",
+  "changelog.d88e44778fdd": "Het venster tekent niets zolang er niets verandert. De naam bovenaan staat stil, naar je toe gekeerd, en in een ruimte wordt de cursor van een andere producer alleen getekend terwijl hij beweegt, dus een stilstaand venster houdt de processor en de grafische kaart van je computer niet meer bezig.",
+  "changelog.cac4c2e3eaa5": "De intro neemt de muis niet: zolang hij speelt, is de aanwijzer erboven die van wat eronder ligt, en elke klik gaat door naar de app of het bureaublad erachter.",
+  "changelog.8d7692caa2e3": "Intro overslaan wordt bij je andere voorkeuren bewaard, dus staat het aan, dan opent de app meteen, zonder op de intro te wachten.",
   "changelog.d59733083629": "Toegevoegd - twaalf nieuwe artiesten, 2026-10-28",
   "changelog.f81411455d1c": "Tinchy Stryder, Lewis Capaldi, Sara Bareilles, The 1975, NF, Mike Posner, Lady Gaga, Lil Nas X, Robin Thicke, Olivia Dean, Muse en Tones And I komen erbij in de stijllijst. Ieder van hen komt met de sferen waartussen hun platen bewegen: de electropop van Lady Gaga en haar housesingles, de countrytrap van Lil Nas X en zijn pop, de riffrock van Muse en hun ballads, de pianoballads van Lewis Capaldi en zijn nummers met band. Zoeken vindt ieder van hen op naam of op de namen die fans gebruiken.",
   "changelog.4c1f0f4f684f": "Gewijzigd - P-Lo en The Invasion, 2026-10-28",
