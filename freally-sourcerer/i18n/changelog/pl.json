@@ -1,6 +1,9 @@
 {
-  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Widoki i okna",
+  "changelog.38bfbeef7587": "[0.31.0] — 2026-11-23 — Build 11 · Program uruchamiający i integracja z systemem",
   "changelog.6b02e0d363a4": "Dodano",
+  "changelog.4a7f5d304388": "**[wszystkie platformy]** **Historia uruchomień.** Każdy wynik otwarty z aplikacji poleceniem Otwórz lub Otwórz za pomocą liczy się jako uruchomienie. **Widok › Sortuj według › Liczba uruchomień** i **Data uruchomienia** sortują według tego, jak często i jak niedawno uruchamiano każdy plik. Nic nie jest liczone, gdy włączony jest Tryb prywatny lub wyłączona jest historia uruchomień, a **Ustawienia › Historia › Wyczyść teraz** zapomina wszystkie uruchomienia.",
+  "changelog.a9518ea83c95": "**[wszystkie platformy]** **Ikona w zasobniku.** **Ustawienia › Ogólne › Interfejs › Zasobnik / pasek menu** pokazuje ikonę w obszarze powiadomień systemu Windows, na pasku menu systemu macOS i na pulpitach Linuksa, które pokazują wskaźniki. Kliknięcie przywołuje aplikację na wierzch albo otwiera nowe okno wyszukiwania; jej menu zawiera Pokaż Freally Sourcerer, Nowe okno wyszukiwania, Opcje… i Zakończ. Jej trzy ustawienia istniały już wcześniej i nic nie robiły.",
+  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Widoki i okna",
   "changelog.d8b26acefbad": "**[wszystkie platformy]** **Miniatury.** **Widok › Bardzo duże miniatury, Duże miniatury i Średnie miniatury** (`Ctrl+Shift+1` do `Ctrl+Shift+3`) pokazują wyniki jako kafelki: w systemie Windows każdy obraz, film i dokument narysowany w małym rozmiarze tak, jak rysuje go Eksplorator, a każdy inny plik z ikoną swojego typu (w systemach macOS i Linux na razie z ikoną swojego typu). Kafelek zaznacza się, otwiera i obsługuje prawym przyciskiem tak jak wiersz. **Widok › Szczegóły** przywraca wiersze, a menu zaznacza wybrany widok.",
   "changelog.d2fa614d92e7": "**[wszystkie platformy]** **Drugie okno wyszukiwania.** **Plik › Nowe okno wyszukiwania** (`Ctrl+N`) otwiera kolejne okno z własnym wyszukiwaniem w tym samym indeksie. Każde zamyka się osobno; zamknięcie pierwszego zamyka wszystkie.",
   "changelog.1246fc93bca0": "Naprawiono",

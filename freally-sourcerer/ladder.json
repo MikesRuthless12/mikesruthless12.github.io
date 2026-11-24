@@ -64,8 +64,8 @@
     {
       "version": "v0.31.0",
       "phase": "Build 11 — Launcher and OS integration",
-      "state": "planned",
-      "summary": "A launcher, and closer ties to your operating system."
+      "state": "done",
+      "summary": "A run history to sort by, and a tray icon."
     },
     {
       "version": "v0.32.0",

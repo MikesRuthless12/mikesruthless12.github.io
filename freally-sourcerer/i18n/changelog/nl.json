@@ -1,6 +1,9 @@
 {
-  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Weergaven en vensters",
+  "changelog.38bfbeef7587": "[0.31.0] — 2026-11-23 — Build 11 · Starter en integratie met het besturingssysteem",
   "changelog.6b02e0d363a4": "Toegevoegd",
+  "changelog.4a7f5d304388": "**[alle platforms]** **Uitvoergeschiedenis.** Elk resultaat dat je vanuit de app opent, met Openen of Openen met, telt als een uitvoering. **Beeld › Sorteren op › Aantal uitvoeringen** en **Datum uitgevoerd** sorteren op hoe vaak en hoe recent elk bestand is uitgevoerd. Er wordt niets geteld zolang de Privacymodus aan staat of de uitvoergeschiedenis uitgeschakeld is, en **Instellingen › Geschiedenis › Nu wissen** vergeet elke uitvoering.",
+  "changelog.a9518ea83c95": "**[alle platforms]** **Het pictogram in het systeemvak.** **Instellingen › Algemeen › UI › Systeemvak/menubalk** toont een pictogram in het systeemvak van Windows, in de menubalk van macOS en op Linux-bureaubladen die indicatoren tonen. Een klik haalt de app naar voren of opent een nieuw zoekvenster; het menu bevat Freally Sourcerer weergeven, Nieuw zoekvenster, Opties… en Afsluiten. De drie instellingen ervan waren er al en deden niets.",
+  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Weergaven en vensters",
   "changelog.d8b26acefbad": "**[alle platforms]** **Miniaturen.** **Beeld › Extra grote miniaturen, Grote miniaturen en Middelgrote miniaturen** (`Ctrl+Shift+1` tot `Ctrl+Shift+3`) tonen de resultaten als tegels: op Windows elke afbeelding, video en elk document klein getekend zoals Verkenner het tekent, en elk ander bestand met het pictogram van zijn type (op macOS en Linux voorlopig het pictogram van zijn type). Een tegel selecteer, open en rechtsklik je net als een rij. **Beeld › Details** brengt de rijen terug, en het menu vinkt de gekozen weergave aan.",
   "changelog.d2fa614d92e7": "**[alle platforms]** **Een tweede zoekvenster.** **Bestand › Nieuw zoekvenster** (`Ctrl+N`) opent nog een venster met een eigen zoekopdracht over dezelfde index. Elk venster sluit op zichzelf; het eerste sluiten sluit ze allemaal.",
   "changelog.1246fc93bca0": "Opgelost",

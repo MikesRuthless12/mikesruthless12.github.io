@@ -1,6 +1,9 @@
 {
-  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Görünümler ve pencereler",
+  "changelog.38bfbeef7587": "[0.31.0] — 2026-11-23 — Build 11 · Başlatıcı ve işletim sistemi tümleştirmesi",
   "changelog.6b02e0d363a4": "Eklendi",
+  "changelog.4a7f5d304388": "**[tüm platformlar]** **Çalıştırma geçmişi.** Uygulamadan Aç ya da Birlikte aç ile açtığınız her sonuç bir çalıştırma sayılır. **Görünüm › Sıralama ölçütü › Çalıştırma Sayısı** ve **Çalıştırılma Tarihi**, her dosyanın ne sıklıkla ve en son ne zaman çalıştırıldığına göre sıralar. Gizlilik modu açıkken ya da çalıştırma geçmişi kapalıyken hiçbir şey sayılmaz; **Ayarlar › Geçmiş › Şimdi Temizle** her çalıştırmayı unutur.",
+  "changelog.a9518ea83c95": "**[tüm platformlar]** **Tepsi simgesi.** **Ayarlar › Genel › Arayüz › Tepsi / Menü Çubuğu**, Windows'un bildirim alanında, macOS'un menü çubuğunda ve göstergeleri gösteren Linux masaüstlerinde bir simge gösterir. Bir tıklama uygulamayı öne getirir ya da yeni bir arama penceresi açar; menüsünde Freally Sourcerer'ı göster, Yeni Arama Penceresi, Seçenekler… ve Çıkış bulunur. Üç ayarı daha önce de vardı ve hiçbir şey yapmıyordu.",
+  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Görünümler ve pencereler",
   "changelog.d8b26acefbad": "**[tüm platformlar]** **Küçük resimler.** **Görünüm › Çok Büyük Küçük Resimler, Büyük Küçük Resimler ve Orta Küçük Resimler** (`Ctrl+Shift+1` ile `Ctrl+Shift+3` arası) sonuçları kutucuklar halinde gösterir: Windows'ta her resim, video ve belge Dosya Gezgini'nin çizdiği gibi küçük çizilir, diğer her dosya ise türünün simgesiyle gösterilir (macOS ve Linux'ta şimdilik türünün simgesiyle). Bir kutucuk, bir satır gibi seçilir, açılır ve sağ tıklanır. **Görünüm › Ayrıntılar** satırları geri getirir ve menü seçtiğiniz görünümü işaretler.",
   "changelog.d2fa614d92e7": "**[tüm platformlar]** **İkinci bir arama penceresi.** **Dosya › Yeni Arama Penceresi** (`Ctrl+N`) aynı dizin üzerinde kendi aramasıyla başka bir pencere açar. Her biri kendi başına kapanır; ilkini kapatmak hepsini kapatır.",
   "changelog.1246fc93bca0": "Düzeltildi",

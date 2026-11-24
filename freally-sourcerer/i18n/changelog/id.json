@@ -1,6 +1,9 @@
 {
-  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Tampilan dan jendela",
+  "changelog.38bfbeef7587": "[0.31.0] — 2026-11-23 — Build 11 · Peluncur dan integrasi sistem operasi",
   "changelog.6b02e0d363a4": "Ditambahkan",
+  "changelog.4a7f5d304388": "**[semua platform]** **Riwayat jalankan.** Setiap hasil yang Anda buka dari aplikasi, dengan Buka atau Buka dengan, dihitung sebagai satu kali jalankan. **Tampilan › Urutkan berdasarkan › Jumlah Jalankan** dan **Tanggal Jalankan** mengurutkan menurut seberapa sering dan kapan terakhir setiap berkas dijalankan. Tidak ada yang dihitung selama Mode privasi aktif atau riwayat jalankan dinonaktifkan, dan **Pengaturan › Riwayat › Hapus Sekarang** melupakan semua jalankan.",
+  "changelog.a9518ea83c95": "**[semua platform]** **Ikon baki.** **Pengaturan › Umum › UI › Baki / Bilah Menu** menampilkan ikon di area notifikasi Windows, di bilah menu macOS, dan pada desktop Linux yang menampilkan indikator. Satu klik memunculkan aplikasi atau membuka jendela pencarian baru; menunya berisi Tampilkan Freally Sourcerer, Jendela Pencarian Baru, Opsi…, dan Keluar. Ketiga pengaturannya sudah ada sebelumnya dan tidak berbuat apa-apa.",
+  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Tampilan dan jendela",
   "changelog.d8b26acefbad": "**[semua platform]** **Gambar mini.** **Tampilan › Gambar Mini Ekstra Besar, Gambar Mini Besar, dan Gambar Mini Sedang** (`Ctrl+Shift+1` hingga `Ctrl+Shift+3`) menampilkan hasil sebagai ubin: di Windows setiap gambar, video, dan dokumen digambar kecil seperti Explorer menggambarnya, dan berkas lainnya dengan ikon jenisnya (di macOS dan Linux, untuk sementara dengan ikon jenisnya). Ubin dipilih, dibuka, dan diklik kanan seperti baris. **Tampilan › Detail** mengembalikan baris, dan menu mencentang tampilan yang Anda pilih.",
   "changelog.d2fa614d92e7": "**[semua platform]** **Jendela pencarian kedua.** **Berkas › Jendela Pencarian Baru** (`Ctrl+N`) membuka jendela lain dengan pencariannya sendiri atas indeks yang sama. Masing-masing tertutup sendiri; menutup yang pertama menutup semuanya.",
   "changelog.1246fc93bca0": "Diperbaiki",

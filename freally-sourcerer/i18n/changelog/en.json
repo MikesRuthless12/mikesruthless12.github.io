@@ -1,6 +1,9 @@
 {
-  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Views and windows",
+  "changelog.38bfbeef7587": "[0.31.0] — 2026-11-23 — Build 11 · Launcher and OS integration",
   "changelog.6b02e0d363a4": "Added",
+  "changelog.4a7f5d304388": "**[all platforms]** **Run history.** Every result you open from the app, with Open or Open with, counts as a run. **View › Sort by › Run Count** and **Date Run** sort by how often and how lately each file ran. Nothing is counted while Privacy Mode is on or run history is switched off, and **Settings › History › Clear Now** forgets every run.",
+  "changelog.a9518ea83c95": "**[all platforms]** **The tray icon.** **Settings › General › UI › Tray / Menu Bar** shows an icon in Windows' notification area, in macOS's menu bar, and on Linux desktops that show indicators. A click brings the app forward, or opens a new search window; its menu has Show Freally Sourcerer, New Search Window, Options… and Exit. Its three settings were there before and did nothing.",
+  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Views and windows",
   "changelog.d8b26acefbad": "**[all platforms]** **Thumbnails.** **View › Extra Large, Large and Medium Thumbnails** (`Ctrl+Shift+1` to `Ctrl+Shift+3`) show the results as tiles: on Windows each picture, video and document drawn small as Explorer draws it, and any other file with its type's icon (on macOS and Linux, its type's icon for now). A tile is selected, opened and right-clicked as a row is. **View › Details** brings back the rows, and the menu ticks the view you chose.",
   "changelog.d2fa614d92e7": "**[all platforms]** **A second search window.** **File › New Search Window** (`Ctrl+N`) opens another window with a search of its own over the same index. Each closes on its own; closing the first closes them all.",
   "changelog.1246fc93bca0": "Fixed",

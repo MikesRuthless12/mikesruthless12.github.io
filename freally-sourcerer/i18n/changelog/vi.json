@@ -1,6 +1,9 @@
 {
-  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Khung xem và cửa sổ",
+  "changelog.38bfbeef7587": "[0.31.0] — 2026-11-23 — Build 11 · Trình khởi chạy và tích hợp hệ điều hành",
   "changelog.6b02e0d363a4": "Đã thêm",
+  "changelog.4a7f5d304388": "**[mọi nền tảng]** **Lịch sử chạy.** Mỗi kết quả bạn mở từ ứng dụng, bằng Mở hoặc Mở bằng, được tính là một lần chạy. **Xem › Sắp xếp theo › Số lần chạy** và **Ngày chạy** sắp xếp theo số lần và thời điểm gần nhất mỗi tệp được chạy. Không có gì được tính khi Chế độ riêng tư đang bật hoặc lịch sử chạy đã tắt, và **Cài đặt › Lịch sử › Xóa ngay** sẽ quên mọi lần chạy.",
+  "changelog.a9518ea83c95": "**[mọi nền tảng]** **Biểu tượng khay.** **Cài đặt › Chung › Giao diện › Khay / Thanh menu** hiển thị một biểu tượng trong vùng thông báo của Windows, trên thanh menu của macOS và trên các màn hình nền Linux có hiển thị chỉ báo. Một lần nhấp đưa ứng dụng lên phía trước hoặc mở một cửa sổ tìm kiếm mới; menu của nó có Hiện Freally Sourcerer, Cửa sổ tìm kiếm mới, Tùy chọn… và Thoát. Ba cài đặt của nó đã có từ trước và không làm gì cả.",
+  "changelog.eb15a04b84ef": "[0.30.0] — 2026-11-23 — Build 10 · Khung xem và cửa sổ",
   "changelog.d8b26acefbad": "**[mọi nền tảng]** **Hình thu nhỏ.** **Xem › Hình thu nhỏ cực lớn, Hình thu nhỏ lớn và Hình thu nhỏ vừa** (`Ctrl+Shift+1` đến `Ctrl+Shift+3`) hiển thị kết quả dưới dạng ô: trên Windows, mỗi hình ảnh, video và tài liệu được vẽ nhỏ như File Explorer vẽ, và mọi tệp khác hiện biểu tượng loại của nó (trên macOS và Linux, tạm thời là biểu tượng loại của nó). Một ô được chọn, mở và nhấp chuột phải giống như một hàng. **Xem › Chi tiết** đưa các hàng trở lại, và menu đánh dấu chế độ xem bạn đã chọn.",
   "changelog.d2fa614d92e7": "**[mọi nền tảng]** **Cửa sổ tìm kiếm thứ hai.** **Tệp › Cửa sổ tìm kiếm mới** (`Ctrl+N`) mở một cửa sổ khác với tìm kiếm riêng trên cùng chỉ mục. Mỗi cửa sổ tự đóng riêng; đóng cửa sổ đầu tiên sẽ đóng tất cả.",
   "changelog.1246fc93bca0": "Đã sửa",

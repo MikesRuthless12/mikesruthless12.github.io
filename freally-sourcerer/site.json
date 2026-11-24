@@ -5,7 +5,7 @@
   "pages": ["index", "features", "documentation", "changelog"],
   "changelog": "CHANGELOG.md",
   "ladder": "ladder.json",
-  "version": "v0.30.0",
+  "version": "v0.31.0",
   "chips": [
     "Windows",
     "macOS",

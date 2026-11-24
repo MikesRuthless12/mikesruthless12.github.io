@@ -144,7 +144,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#settings",
   "heading": "Settings and the hotkey",
-  "text": "Tools → Options… ( Ctrl+, ) opens Settings, laid out like Everything's Options: a tree of panels on the left, a box above it that filters panels and options as you type, and OK , Cancel and Apply . The panels cover the look of the app, search behaviour, results, keyboard shortcuts, the folders, drives and exclusions that make up the index, each lens, privacy and updates, logs, backup and reset, and the language. A global hotkey brings the app forward from anywhere, with the search bar ready. Set it in Settings → General → Keyboard . A link of the form freally://search?q=… opens the app with that search. Options opens on a tree of panels, with OK, Cancel and Apply at its foot."
+  "text": "Tools → Options… ( Ctrl+, ) opens Settings, laid out like Everything's Options: a tree of panels on the left, a box above it that filters panels and options as you type, and OK , Cancel and Apply . The panels cover the look of the app, search behaviour, results, keyboard shortcuts, the folders, drives and exclusions that make up the index, each lens, privacy and updates, logs, backup and reset, and the language. A global hotkey brings the app forward from anywhere, with the search bar ready. Set it in Settings → General → Keyboard . A link of the form freally://search?q=… opens the app with that search. The tray icon (in the menu bar on macOS) brings the app forward, or opens a new search window, as Settings → General → UI → Tray / Menu Bar says: on Windows a double click, or a single one if you choose. Its menu has Show Freally Sourcerer, New Search Window, Options… and Exit. On Linux it shows on desktops that show indicators; GNOME as it ships does not. Closing the window still quits the app. Options opens on a tree of panels, with OK, Cancel and Apply at its foot."
  },
  {
   "url": "documentation.html#language",
@@ -159,7 +159,7 @@ window.FREALLY_SEARCH_INDEX = [
  {
   "url": "documentation.html#privacy",
   "heading": "Privacy and the network",
-  "text": "There is no telemetry. The index is built and kept on your own computer, and nothing about your files or your searches is sent anywhere. The app asks whether a newer version exists once a day; in Settings → Privacy & Updates you can make that weekly, monthly or never, or check now. It asks before installing anything, naming both versions, and a portable copy never checks. Privacy Mode stops recording recent searches and switches off the property lens, which reads inside files."
+  "text": "There is no telemetry. The index is built and kept on your own computer, and nothing about your files or your searches is sent anywhere. The app asks whether a newer version exists once a day; in Settings → Privacy & Updates you can make that weekly, monthly or never, or check now. It asks before installing anything, naming both versions, and a portable copy never checks. Privacy Mode stops recording recent searches and the files you open, and switches off the property lens, which reads inside files."
  },
  {
   "url": "documentation.html#privacy-reports",
@@ -185,6 +185,11 @@ window.FREALLY_SEARCH_INDEX = [
   "url": "documentation.html#faq-rebuild",
   "heading": "How do I start the index again?",
   "text": "Your tags, notes and collections are not part of the index: a rebuild, a verify or a compact keeps every one. Your snapshots, monitors and macros are kept beside it too. Tools → Index maintenance → Force Rebuild Index… clears the index and builds it again from the start. Verify Index… and Compact Index… in the same menu check it and make it smaller."
+ },
+ {
+  "url": "changelog.html#0-31-0-2026-11-23-build-11-launcher-and-os-integration-added",
+  "heading": "Added",
+  "text": "[all platforms] Run history. Every result you open from the app, with Open or Open with, counts as a run. View › Sort by › Run Count and Date Run sort by how often and how lately each file ran. Nothing is counted while Privacy Mode is on or run history is switched off, and Settings › History › Clear Now forgets every run. [all platforms] The tray icon. Settings › General › UI › Tray / Menu Bar shows an icon in Windows' notification area, in macOS's menu bar, and on Linux desktops that show indicators. A click brings the app forward, or opens a new search window; its menu has Show Freally Sourcerer, New Search Window, Options… and Exit. Its three settings were there before and did nothing. v0.30.0 2026-11-23 Build 10 · Views and windows"
  },
  {
   "url": "changelog.html#0-30-0-2026-11-23-build-10-views-and-windows-added",

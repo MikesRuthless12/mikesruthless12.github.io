@@ -212,6 +212,7 @@
     </ul>
     <p data-i18n-html="docs.results.view">Drag a row into another app as if from your file manager. Click a column header to sort, or pick an order from <strong>View › Sort by</strong> (<kbd>Ctrl+1</kbd> to <kbd>Ctrl+6</kbd> for name, path, size, extension, type and date modified); the <strong>+</strong> at the end of the header row adds a property as a column. Click the result count in the status bar for statistics on the whole result set: sizes and counts by type, the largest, oldest and newest files.</p>
     <p data-i18n-html="docs.results.tiles"><strong>View › Extra Large Thumbnails</strong>, <strong>Large Thumbnails</strong> and <strong>Medium Thumbnails</strong> (<kbd>Ctrl+Shift+1</kbd> to <kbd>Ctrl+Shift+3</kbd>) show the results as tiles: on Windows each picture, video and document drawn small as Explorer draws it, and any other file with its type's icon (on macOS and Linux, its type's icon for now). <strong>View › Details</strong> (<kbd>Ctrl+Shift+6</kbd>) brings back the rows. <strong>File › New Search Window</strong> (<kbd>Ctrl+N</kbd>) opens another window with a search of its own over the same index; closing the first window closes them all.</p>
+    <p data-i18n-html="docs.results.runs"><strong>View › Sort by › Run Count</strong> and <strong>Date Run</strong> sort by how often and how lately you opened each file from the app: every Open, and every Open with, counts as a run. Nothing is counted while Privacy Mode is on or run history is switched off in <strong>Settings → History</strong>, and <strong>Clear Now</strong> there forgets every run.</p>
     <p data-i18n-html="docs.results.dupes">In a duplicate search (<code>dupe:content</code>, say), <strong>Edit › Select Duplicates</strong> keeps one copy of each — the oldest, the newest or the shortest path — and selects the rest, and the statistics say what deleting them frees. Delete asks first, and <strong>Edit › Undo</strong> brings back what it sent away.</p>
     <figure class="demo">
       <video src="demos/results.webm" poster="demos/results.jpg" width="1650" height="1080" autoplay muted loop playsinline preload="metadata"></video>
@@ -281,6 +282,7 @@
     <p data-i18n-html="docs.settings.open"><strong>Tools → Options…</strong> (<kbd>Ctrl+,</kbd>) opens Settings, laid out like Everything's Options: a tree of panels on the left, a box above it that filters panels and options as you type, and <strong>OK</strong>, <strong>Cancel</strong> and <strong>Apply</strong>.</p>
     <p data-i18n="docs.settings.panels">The panels cover the look of the app, search behaviour, results, keyboard shortcuts, the folders, drives and exclusions that make up the index, each lens, privacy and updates, logs, backup and reset, and the language.</p>
     <p data-i18n-html="docs.settings.hotkey">A global hotkey brings the app forward from anywhere, with the search bar ready. Set it in <strong>Settings → General → Keyboard</strong>. A link of the form <code>freally://search?q=…</code> opens the app with that search.</p>
+    <p data-i18n-html="docs.settings.tray">The tray icon (in the menu bar on macOS) brings the app forward, or opens a new search window, as <strong>Settings → General → UI → Tray / Menu Bar</strong> says: on Windows a double click, or a single one if you choose. Its menu has Show Freally Sourcerer, New Search Window, Options… and Exit. On Linux it shows on desktops that show indicators; GNOME as it ships does not. Closing the window still quits the app.</p>
     <figure class="demo">
       <video src="demos/settings.webm" poster="demos/settings.jpg" width="1650" height="1080" autoplay muted loop playsinline preload="metadata"></video>
       <figcaption data-i18n="docs.settings.demo">Options opens on a tree of panels, with OK, Cancel and Apply at its foot.</figcaption>
@@ -318,7 +320,7 @@ freally completions bash</code></pre>
     <ul>
       <li data-i18n="docs.privacy.telemetry">There is no telemetry. The index is built and kept on your own computer, and nothing about your files or your searches is sent anywhere.</li>
       <li data-i18n-html="docs.privacy.updates">The app asks whether a newer version exists once a day; in <strong>Settings → Privacy &amp; Updates</strong> you can make that weekly, monthly or never, or check now. It asks before installing anything, naming both versions, and a portable copy never checks.</li>
-      <li data-i18n="docs.privacy.mode">Privacy Mode stops recording recent searches and switches off the property lens, which reads inside files.</li>
+      <li data-i18n="docs.privacy.mode">Privacy Mode stops recording recent searches and the files you open, and switches off the property lens, which reads inside files.</li>
     </ul>
     <h3 id="privacy-reports" data-i18n="docs.privacy.reports.title">Reporting a problem</h3>
     <ul>
@@ -359,7 +361,7 @@ freally completions bash</code></pre>
         </div>
         <div class="footer__bottom">
           <div class="footer__legal"><p data-i18n="footer.licence">Proprietary — All Rights Reserved. © Mike Weaver. Free to use today; future versions may be sold. Not open source.</p><p data-i18n="footer.everything">Everything is a trademark of voidtools, named here only to compare. Freally Sourcerer is not affiliated with voidtools.</p></div>
-          <span class="status" data-i18n="kit.status.devVersion">In development · v0.30.0</span>
+          <span class="status" data-i18n="kit.status.devVersion">In development · v0.31.0</span>
         </div>
       </div>
     </footer>
